@@ -1,0 +1,598 @@
+[
+  {
+    "reasons": ["h"],
+    "name": "12 Stones Consulting",
+    "li": "https://www.linkedin.com/company/12-stones-consulting/",
+    "fb": "",
+    "ws": "https://www.12stonesconsulting.co.il/",
+    "tw": "",
+    "founderIds": [],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Adama",
+    "li": "https://www.linkedin.com/company/adama---site-characterization-and-remediation/",
+    "fb": "",
+    "ws": "https://adama-israel.co.il/",
+    "tw": "",
+    "founderIds": [],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "AST",
+    "li": "https://www.linkedin.com/company/ast--clean-water-technologies/",
+    "fb": "",
+    "ws": "http://www.ast-water.com/",
+    "tw": "",
+    "founderIds": [
+      {
+        "name": "Boaz Shitzer",
+        "link": "https://www.crunchbase.com/person/boaz-shitzer"
+      }
+    ],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "B24Cyber",
+    "li": "https://www.linkedin.com/company/b24cyber/",
+    "fb": "",
+    "ws": "https://b24cyber.com/",
+    "tw": "",
+    "founderIds": [],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Candolim Glitter Sand",
+    "li": "",
+    "fb": "",
+    "ws": "https://candolim-glitter-sand.business.site/",
+    "tw": "",
+    "founderIds": [],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "ComposeDoc",
+    "li": "https://www.linkedin.com/company/composedoc-ltd./",
+    "fb": "",
+    "ws": "http://www.composedoc.com/",
+    "tw": "",
+    "founderIds": [
+      {
+        "name": "Gaby Mizrahie",
+        "link": "https://www.crunchbase.com/person/gaby-mizrahie"
+      }
+    ],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "ContaJ",
+    "li": "",
+    "fb": "",
+    "ws": "http://contaj.com/",
+    "tw": "",
+    "founderIds": [
+      {
+        "name": "Rony Sperling",
+        "link": "https://www.crunchbase.com/person/rony-sperling"
+      }
+    ],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Dataforce",
+    "li": "https://www.linkedin.com/company/dataforce-ltd",
+    "fb": "https://www.facebook.com/profile.php?id=100069031286871&paipv=0&eav=Afbmym5LxUqLSjTOjiR_PgkD4r1T53qhTEhRujqjSlvdPaNLsI7sXuZ36_zRRtFRGDE",
+    "ws": "https://www.dataforce-solutions.com/",
+    "tw": "",
+    "founderIds": [
+      {
+        "name": "Raanan Altagar",
+        "link": "https://www.crunchbase.com/person/raanan-altagar"
+      },
+      {
+        "name": "Shauli Bergman",
+        "link": "https://www.crunchbase.com/person/shauli-bergman"
+      }
+    ],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Dcode consulting",
+    "li": "https://www.linkedin.com/company/dcodeconsulting",
+    "fb": "",
+    "ws": "https://www.dcode.tech/",
+    "tw": "",
+    "founderIds": [],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "DeepOncology AI",
+    "li": "https://www.linkedin.com/company/bayesian-io/",
+    "fb": "",
+    "ws": "https://www.deeponcology.ai/",
+    "tw": "https://twitter.com/DeepOncologyAI",
+    "founderIds": [
+      {
+        "name": "Shlomo Kashani",
+        "link": "https://www.crunchbase.com/person/shlomo-kashani"
+      }
+    ],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Eli Gervits",
+    "li": "https://www.linkedin.com/company/%D0%B0%D0%B4%D0%B2%D0%BE%D0%BA%D0%B0%D1%82%D1%81%D0%BA%D0%B0%D1%8F-%D0%BA%D0%BE%D0%BB%D0%BB%D0%B5%D0%B3%D0%B8%D1%8F-%D1%8D%D0%BB%D0%B8-%D0%B8%D0%BB%D1%8C%D1%8F-%D0%B3%D0%B5%D1%80%D0%B2%D0%B8%D1%86",
+    "fb": "",
+    "ws": "https://zakon.co.il/",
+    "tw": "",
+    "founderIds": [],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Emilion Group",
+    "li": "https://www.linkedin.com/company/emilion-ltd",
+    "fb": "",
+    "ws": "https://emilion.co.il/",
+    "tw": "",
+    "founderIds": [],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Epolac",
+    "li": "https://www.linkedin.com/company/epolac",
+    "fb": "",
+    "ws": "http://www.epolac.com/",
+    "tw": "",
+    "founderIds": [],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Followear",
+    "li": "https://www.linkedin.com/company/followear/",
+    "fb": "",
+    "ws": "https://www.followear.com/",
+    "tw": "",
+    "founderIds": [],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "GetBus",
+    "li": "https://www.linkedin.com/company/get-bus",
+    "fb": "https://www.facebook.com/getbus",
+    "ws": "http://www.get-bus.co.il/",
+    "tw": "",
+    "founderIds": [
+      {
+        "name": "Jack Yulzari",
+        "link": "https://www.crunchbase.com/person/jack-yulzari"
+      },
+      {
+        "name": "Yishai Boasson",
+        "link": "https://www.crunchbase.com/person/yishai-boasson"
+      }
+    ],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Gravity",
+    "li": "https://www.linkedin.com/company/gravity_3/",
+    "fb": "https://www.facebook.com/GravityCreativeSpace/",
+    "ws": "https://www.gravity.co.il/",
+    "tw": "",
+    "founderIds": [],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Illuminea",
+    "li": "http://www.linkedin.com/company/286951",
+    "fb": "http://www.facebook.com/illuminea",
+    "ws": "http://illuminea.com/",
+    "tw": "http://twitter.com/miriamschwab",
+    "founderIds": [],
+    "investorIds": [],
+    "acquirerIds": [
+      {
+        "name": "LeverageIT",
+        "link": "https://www.crunchbase.com/organization/leverageit"
+      }
+    ]
+  },
+  {
+    "reasons": ["h"],
+    "name": "iMingle",
+    "li": "http://www.linkedin.com/company/imingle",
+    "fb": "",
+    "ws": "http://www.imingle-app.com/imingle/home/index.html",
+    "tw": "http://twitter.com/iMingleApp",
+    "founderIds": [
+      {
+        "name": "Pini Mogilevsky",
+        "link": "https://www.crunchbase.com/person/pini-mogilevsky"
+      }
+    ],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Ishlav Insurance Agency",
+    "li": "https://www.linkedin.com/company/ishlav-insurance-agency-ltd",
+    "fb": "",
+    "ws": "http://www.ishlav.co.il/",
+    "tw": "",
+    "founderIds": [],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "JTLV",
+    "li": "https://www.linkedin.com/company/jtlv-investment",
+    "fb": "https://www.facebook.com/JTLV.investments",
+    "ws": "https://jtlv.co.il/en",
+    "tw": "",
+    "founderIds": [],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Magic Line",
+    "li": "https://www.linkedin.com/company/magic-line/",
+    "fb": "",
+    "ws": "https://magicline.co.il/",
+    "tw": "https://www.twitter.com/magicline_",
+    "founderIds": [],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Mailog",
+    "li": "https://www.linkedin.com/company/mailog-ltd",
+    "fb": "https://www.facebook.com/we.are.mailog",
+    "ws": "https://www.mailogs.com/",
+    "tw": "",
+    "founderIds": [
+      {
+        "name": "Guy Bar-Or",
+        "link": "https://www.crunchbase.com/person/guy-bar-or"
+      },
+      {
+        "name": "Ofir Raviel",
+        "link": "https://www.crunchbase.com/person/ofir-raviel"
+      }
+    ],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Medigel Laboratories",
+    "li": "",
+    "fb": "https://www.facebook.com/%D7%9E%D7%A2%D7%91%D7%93%D7%95%D7%AA-%D7%9E%D7%93%D7%99%D7%92%D7%9C-%D7%91%D7%A2%D7%9E-Medigel-laboratories-LTD-1404688059782476/",
+    "ws": "http://www.medigelab.com/",
+    "tw": "",
+    "founderIds": [
+      {
+        "name": "Tal Sagie",
+        "link": "https://www.crunchbase.com/person/tal-sagie"
+      }
+    ],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Minga",
+    "li": "https://www.linkedin.com/company/minga-social-bussiness-labs/",
+    "fb": "https://www.facebook.com/mingaSB/",
+    "ws": "https://www.minga.co.il/",
+    "tw": "https://twitter.com/mingasb",
+    "founderIds": [
+      {
+        "name": "Yoram Lavi",
+        "link": "https://www.crunchbase.com/person/yoram-lavi"
+      }
+    ],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "MYT Capital Group",
+    "li": "https://www.linkedin.com/company/myt-group",
+    "fb": "",
+    "ws": "http://myt-gp.com/",
+    "tw": "",
+    "founderIds": [],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Nation-E",
+    "li": "http://www.linkedin.com/company/nation-e-ag",
+    "fb": "http://www.facebook.com/pages/Nation-E/291216450906761",
+    "ws": "http://www.nation-e.com/",
+    "tw": "https://twitter.com/Nation_E_",
+    "founderIds": [
+      {
+        "name": "Daniel Jammerwho",
+        "link": "https://www.crunchbase.com/person/daniel-jammerwho"
+      }
+    ],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Nayo Organic",
+    "li": "https://www.linkedin.com/company/nayo-organic/?originalSubdomain=il",
+    "fb": "https://www.facebook.com/nayoorganic",
+    "ws": "http://www.nayo-organic.com/",
+    "tw": "https://x.com/NayoOrganic",
+    "founderIds": [],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "New Seo",
+    "li": "https://www.linkedin.com/company/new-seo-%D7%A7%D7%99%D7%93%D7%95%D7%9D-%D7%90%D7%AA%D7%A8%D7%99%D7%9D/",
+    "fb": "https://www.facebook.com/yoram.new.seo",
+    "ws": "https://www.new-seo.co.il/",
+    "tw": "https://twitter.com/YoramNewSEO",
+    "founderIds": [
+      {
+        "name": "yoram ben abu",
+        "link": "https://www.crunchbase.com/person/yoram-ben-abu"
+      }
+    ],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Peled Technical Supply",
+    "li": "https://www.linkedin.com/company/peled-technical-supply/",
+    "fb": "https://www.facebook.com/signet.peledtech/",
+    "ws": "https://peledtech.com/",
+    "tw": "",
+    "founderIds": [],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "PowerNet",
+    "li": "",
+    "fb": "",
+    "ws": "http://www.powernet.co.il/",
+    "tw": "",
+    "founderIds": [
+      {
+        "name": "Norman Mandel",
+        "link": "https://www.crunchbase.com/person/norman-mandel"
+      }
+    ],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "PWM",
+    "li": "https://www.linkedin.com/company/pwm-il",
+    "fb": "",
+    "ws": "https://www.pwm-it.com/",
+    "tw": "",
+    "founderIds": [],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Pythagor",
+    "li": "https://www.linkedin.com/company/cybro-medical-ltd-",
+    "fb": "",
+    "ws": "http://www.pythagor.co.il/",
+    "tw": "",
+    "founderIds": [
+      {
+        "name": "Aki Lahav",
+        "link": "https://www.crunchbase.com/person/aki-lahav"
+      }
+    ],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Retorno",
+    "li": "https://www.linkedin.com/company/retorno-jewish-center-for-addictions/",
+    "fb": "https://www.facebook.com/RetornoCenter/",
+    "ws": "https://retorno.org/",
+    "tw": "https://twitter.com/RetornoCenter",
+    "founderIds": [],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "RIDARTECH",
+    "li": "https://www.linkedin.com/company/3220414",
+    "fb": "http://www.facebook.com/ridartech",
+    "ws": "http://www.ridartech.com/",
+    "tw": "https://twitter.com/RIDARTECH",
+    "founderIds": [
+      {
+        "name": "Gershon Charitan",
+        "link": "https://www.crunchbase.com/person/gershon-charitan"
+      },
+      {
+        "name": "Ran Hadary",
+        "link": "https://www.crunchbase.com/person/ran-hadary"
+      },
+      {
+        "name": "Yorai Gabriel",
+        "link": "https://www.crunchbase.com/person/yorai-gabriel"
+      }
+    ],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Romold",
+    "li": "",
+    "fb": "",
+    "ws": "http://eng.romold.co.il/",
+    "tw": "",
+    "founderIds": [
+      {
+        "name": "Dovi Frumovich",
+        "link": "https://www.crunchbase.com/person/dovi-frumovich"
+      }
+    ],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Sebach Agencies",
+    "li": "https://www.linkedin.com/company/sebach-agencies-ltd/",
+    "fb": "https://www.facebook.com/sebachome/",
+    "ws": "https://www.sebach.co.il/",
+    "tw": "",
+    "founderIds": [],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Simplisico",
+    "li": "",
+    "fb": "http://www.facebook.com/simplisico",
+    "ws": "http://www.simplisico.com/",
+    "tw": "",
+    "founderIds": [
+      {
+        "name": "Idan Givati",
+        "link": "https://www.crunchbase.com/person/idan-givati"
+      },
+      {
+        "name": "Offir Goldstein",
+        "link": "https://www.crunchbase.com/person/offir-goldstein"
+      }
+    ],
+    "investorIds": [
+      {
+        "name": "MindCET",
+        "link": "https://www.crunchbase.com/organization/mindcet"
+      }
+    ],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Techmind",
+    "li": "https://www.linkedin.com/company/techmind/",
+    "fb": "",
+    "ws": "http://techmind.co.il/",
+    "tw": "",
+    "founderIds": [
+      {
+        "name": "Eyal Kedem",
+        "link": "https://www.crunchbase.com/person/eyal-kedem-9e54"
+      }
+    ],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Tomagi",
+    "li": "https://www.linkedin.com/company/tomagi-ltd.",
+    "fb": "http://www.facebook.com/%D7%98%D7%95%D7%9E%D7%92%D7%99-%D7%91%D7%A2%D7%9E-%D7%9E%D7%A2%D7%A8%D7%9B%D7%95%D7%AA-%D7%A0%D7%99%D7%94%D7%95%D7%9C%D7%91%D7%A7%D7%A8%D7%94-%D7%95%D7%A9%D7%9C%D7%99%D7%98%D7%94-%D7%91%D7%90%D7%A8%D7%92%D7%95%D7%9F/23628688",
+    "ws": "http://www.tomagi.com/",
+    "tw": "http://twitter.com/TOMAGI_IS",
+    "founderIds": [
+      {
+        "name": "Giora Rozensweig",
+        "link": "https://www.crunchbase.com/person/giora-rozensweig"
+      }
+    ],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Uniti Smart",
+    "li": "https://www.linkedin.com/company/uniti-smart",
+    "fb": "https://www.facebook.com/Unitismarthome",
+    "ws": "https://www.unitismart.com/",
+    "tw": "https://twitter.com/Unitismart",
+    "founderIds": [],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "V4Scale",
+    "li": "https://www.linkedin.com/company/v4scale/",
+    "fb": "https://www.facebook.com/V4Scale",
+    "ws": "http://v4scale.com/",
+    "tw": "",
+    "founderIds": [
+      {
+        "name": "Vadim Eidlin",
+        "link": "https://www.crunchbase.com/person/vadim-eidlin"
+      }
+    ],
+    "investorIds": [],
+    "acquirerIds": []
+  },
+  {
+    "reasons": ["h"],
+    "name": "Zamir Mobility",
+    "li": "",
+    "fb": "https://www.facebook.com/zamirmobility",
+    "ws": "https://www.zamir.cc/",
+    "tw": "",
+    "founderIds": [],
+    "investorIds": [],
+    "acquirerIds": []
+  }
+]
