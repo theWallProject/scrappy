@@ -1,9 +1,10 @@
 import { error, log } from "./helper";
 import { run as scrap } from "./tasks/1_scrap";
-import { run as merge } from "./tasks/2_merge_results";
-import { run as extractSocial } from "./tasks/3_extract_social";
-import { run as extractFlagged } from "./tasks/4_extract_flagged";
-import { run as copyToAddon } from "./tasks/5_copy_to_addon";
+import { run as genStatic } from "./tasks/2_inject_static";
+import { run as merge } from "./tasks/3_merge_results";
+import { run as extractSocial } from "./tasks/4_extract_social";
+import { run as extractFlagged } from "./tasks/5_extract_flagged";
+import { run as copyToAddon } from "./tasks/6_copy_to_addon";
 import inquirer from "inquirer";
 
 process.on("unhandledRejection", (reason) => {
@@ -28,19 +29,22 @@ const main = async () => {
   log(answer);
 
   if (answer === "yes") {
+    log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 1: Scraping...");
     await scrap();
   }
+  log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 2: Generate Static...");
+  await genStatic();
 
-  log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 1: Merging...");
+  log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 3: Merging...");
   const sorted = await merge();
 
-  log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 2: Extracting Social Links...");
+  log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 4: Extracting Social Links...");
   await extractSocial(sorted);
 
-  log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 3: Extracting Domains...");
+  log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 5: Extracting Domains...");
   await extractFlagged(sorted);
 
-  log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 4: Copy to Addon...");
+  log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 6: Copy to Addon...");
   await copyToAddon();
 };
 // process.stdin.once("data", () => log("done"));

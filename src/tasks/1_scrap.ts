@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 import { format } from "prettier";
 import { ScrappedItemType } from "../types";
-import { APIListOfReasons } from "@thewall/common";
+import { APIListOfReasons } from "@theWallProject/addonCommon";
 import { error, log, warn } from "../helper";
 
 type ScrappingConfig = {

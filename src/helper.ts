@@ -16,9 +16,9 @@ export function warn(...params: unknown[]) {
   // debugger
 }
 
-export function cleanWebsite(website: string) {
+export function cleanWebsite(website?: string) {
   return website
-    .replace(/^https?:\/\//, "")
+    ?.replace(/^https?:\/\//, "")
     .replace(/\/$/, "")
     .split("/?")[0];
 }

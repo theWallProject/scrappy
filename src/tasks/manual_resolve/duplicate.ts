@@ -2,7 +2,7 @@ import { ScrappedItemType } from "../../types";
 
 export const manualDeleteNames = ["Corvid", "Tradeos"];
 
-export const WEBSITES: {
+export const DUPLICATE_WEBSITES: {
   [key: string]: ScrappedItemType;
 } = {
   ["www.goperfect.com"]: {
