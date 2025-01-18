@@ -38,13 +38,22 @@ export const APIScrapperFileDataSchema = z.array(ScrappedItemSchema);
 
 export const ManualItemSchema = z.object({
   reasons: ReasonsSchema,
-  name: z.string(),
+  name: z.string().min(1, { message: "String cannot be empty" }),
   li: z.array(z.string()).optional(),
-  ws: z.array(z.string()),
+  ws: z.array(z.string()).min(1, { message: "String cannot be empty" }),
   fb: z.array(z.string()).optional(),
   tw: z.array(z.string()).optional(),
 });
 
+export const BuyIsraeliTechSchema = z.array(
+  z.object({
+    Name: z.string().min(1, { message: "String cannot be empty" }),
+    Link: z.string().min(1, { message: "String cannot be empty" }),
+    IsraelRelation: z.union([z.literal("HQ"), z.literal("Satellite Office")]),
+  }),
+);
+
 export type ManualItemType = z.infer<typeof ManualItemSchema>;
 export type ScrappedItemType = z.infer<typeof ScrappedItemSchema>;
 export type ScrappedFileType = z.infer<typeof APIScrapperFileDataSchema>;
+export type BuyIsraeliTechType = z.infer<typeof BuyIsraeliTechSchema>;

@@ -102,15 +102,17 @@ export async function run() {
   const page = await browser.newPage();
 
   page.on("error", (err) => {
-    error("Page error occurred:", err);
+    error("Scrap browser error occurred:", err);
+    throw new Error("Scrap browser error occurred");
   });
 
   page.on("close", () => {
-    log("Page was closed unexpectedly!");
+    warn("Page was closed unexpectedly!");
   });
 
   browser.on("disconnected", () => {
     error("Browser was disconnected!");
+    throw new Error("Browser was disconnected");
   });
 
   await page.setViewport({ width: 1800, height: 1000 });
@@ -132,9 +134,6 @@ export async function run() {
   for await (const stage of filterStages) {
     log("processing stage:", stage);
 
-    await page.goto(stage.cbSearchUrl, { waitUntil: "domcontentloaded" });
-    await new Promise((resolve) => setTimeout(resolve, 3000));
-
     let batchNum = 1;
 
     for (const [from, to] of stage.cbSteps) {
@@ -146,11 +145,18 @@ export async function run() {
           ),
         )
       ) {
-        log(`Skipping stage ${stage.fileName}_${batchNum}...`);
+        warn(`Skipping stage ${stage.fileName}_${batchNum}...`);
         batchNum += 1;
 
         continue;
       }
+
+      log(`before naviagting to ${stage.cbSearchUrl}`);
+
+      await page.goto(stage.cbSearchUrl, { waitUntil: "domcontentloaded" });
+
+      // log("before reloading");
+      // await page.reload({ waitUntil: "domcontentloaded" });
 
       await setFilter(page, 0, from);
       log("after setting from");
@@ -189,8 +195,8 @@ export async function run() {
       batchNum += 1;
     }
 
-    await page.goto(stage.cbSearchUrl, { waitUntil: "domcontentloaded" });
-    await new Promise((resolve) => setTimeout(resolve, 10000));
+    // await page.goto(stage.cbSearchUrl, { waitUntil: "domcontentloaded" });
+    // await new Promise((resolve) => setTimeout(resolve, 10000));
   }
 
   // await browser.close();
@@ -216,15 +222,15 @@ async function clickSearchButton(page: Page): Promise<void> {
   const searchButtonSelector = '[data-cy="search-button"]';
   await page.waitForSelector(searchButtonSelector, { timeout: 500 });
 
-  // try {
-  await page.click(searchButtonSelector);
-  log("Search button clicked, waiting for results to load...");
-  // } catch (error) {
-  //   log(
-  //     "Couldnt click search button button, waiting for results to load...",
-  //     error,
-  //   );
-  // }
+  try {
+    await page.click(searchButtonSelector);
+    log("Search button clicked, waiting for results to load...");
+  } catch (error) {
+    warn(
+      "Couldnt click search button button, waiting for results to load...",
+      error,
+    );
+  }
   await new Promise((resolve) => setTimeout(resolve, 5000));
 }
 

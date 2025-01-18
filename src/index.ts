@@ -9,10 +9,12 @@ import inquirer from "inquirer";
 
 process.on("unhandledRejection", (reason) => {
   error("INDEX_ERROR Unhandled Rejection:", reason);
+  throw new Error("INDEX_ERROR Unhandled Rejection");
 });
 
 process.on("uncaughtException", (err) => {
   error("INDEX_ERROR Uncaught Exception:", err);
+  throw new Error("INDEX_ERROR Uncaught Exception");
 });
 
 const main = async () => {
