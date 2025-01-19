@@ -1,36 +1,5 @@
 [
   {
-    "name": "",
-    "reasons": [
-      "b"
-    ],
-    "ws": "sabra.com"
-  },
-  {
-    "name": "",
-    "reasons": [
-      "b"
-    ],
-    "li": "www.linkedin.com/company/sabra-dipping-company-llc",
-    "ws": ""
-  },
-  {
-    "name": "",
-    "reasons": [
-      "b"
-    ],
-    "fb": "www.facebook.com/Sabra",
-    "ws": ""
-  },
-  {
-    "name": "",
-    "reasons": [
-      "b"
-    ],
-    "tw": "x.com/Sabra",
-    "ws": ""
-  },
-  {
     "name": "AHAV",
     "reasons": [
       "b"
@@ -51,14 +20,6 @@
       "b"
     ],
     "fb": "www.facebook.com/ahavagermany",
-    "ws": ""
-  },
-  {
-    "name": "AHAV",
-    "reasons": [
-      "b"
-    ],
-    "tw": "",
     "ws": ""
   },
   {
@@ -639,6 +600,37 @@
     "ws": ""
   },
   {
+    "name": "Sabra",
+    "reasons": [
+      "b"
+    ],
+    "ws": "sabra.com"
+  },
+  {
+    "name": "Sabra",
+    "reasons": [
+      "b"
+    ],
+    "li": "www.linkedin.com/company/sabra-dipping-company-llc",
+    "ws": ""
+  },
+  {
+    "name": "Sabra",
+    "reasons": [
+      "b"
+    ],
+    "fb": "www.facebook.com/Sabra",
+    "ws": ""
+  },
+  {
+    "name": "Sabra",
+    "reasons": [
+      "b"
+    ],
+    "tw": "x.com/Sabra",
+    "ws": ""
+  },
+  {
     "name": "Siemens",
     "reasons": [
       "b"
@@ -763,5 +755,12 @@
     ],
     "tw": "x.com/Siemens",
     "ws": ""
+  },
+  {
+    "name": "Wixsite (hosting)",
+    "reasons": [
+      "b"
+    ],
+    "ws": "wixsite.com"
   }
 ]

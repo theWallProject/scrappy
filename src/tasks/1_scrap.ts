@@ -5,6 +5,7 @@ import { format } from "prettier";
 import { ScrappedItemType } from "../types";
 import { APIListOfReasons } from "@theWallProject/addonCommon";
 import { error, log, warn } from "../helper";
+import dotenv from "dotenv";
 
 type ScrappingConfig = {
   cbSearchUrl: string;
@@ -17,49 +18,73 @@ type ScrappingConfig = {
 const homeUrl = "https://www.crunchbase.com";
 const filterStages: ScrappingConfig[] = [
   // isBlank
+  // {
+  //   cbSearchUrl:
+  //     "https://www.crunchbase.com/lists/isr/f584e097-e942-47f5-a3a1-c3083b960430/organization.companies",
+  //   reasons: [APIListOfReasons.HeadQuarterInIL],
+  //   fileName: "HQ_ISR",
+  //   cbSteps: [
+  //     [1, 60000],
+  //     [60001, 144000],
+  //     [144001, 240000],
+  //     [240001, 355000],
+  //     [355001, 480000],
+  //     [480001, 640000],
+  //     [640001, 800000],
+  //     [800001, 1000000],
+  //     [1000001, 1200000],
+  //     [1200001, 1400000],
+  //     [1400001, 1600000],
+  //     [1600001, 1800000],
+  //     [1800001, 2000000],
+  //     [2000001, 2200000],
+  //     [2200001, 2400000],
+  //     [2400001, 2600000],
+  //     [2600001, 2800000],
+  //     [2800001, 3000000],
+  //     [3000001, 3200000],
+  //     [3200001, 3400000],
+  //     [3400001, 99999999],
+  //   ],
+  // },
+  // {
+  //   cbSearchUrl:
+  //     "https://www.crunchbase.com/lists/isr-founder/4a567c09-b27f-4192-b60d-116133a09db6/organization.companies",
+  //   reasons: [APIListOfReasons.FounderInIL],
+  //   fileName: "FOUNDER_ISR",
+  //   cbSteps: [
+  //     [1, 30000],
+  //     [30001, 130000],
+  //     [130001, 999999999],
+  //   ],
+  // },
   {
     cbSearchUrl:
-      "https://www.crunchbase.com/lists/isr/f584e097-e942-47f5-a3a1-c3083b960430/organization.companies",
-    reasons: [APIListOfReasons.HeadQuarterInIL],
-    fileName: "HQ_ISR",
-    cbSteps: [
-      [1, 60000],
-      [60001, 144000],
-      [144001, 240000],
-      [240001, 355000],
-      [355001, 480000],
-      [480001, 640000],
-      [640001, 800000],
-      [800001, 1000000],
-      [1000001, 1200000],
-      [1200001, 1400000],
-      [1400001, 1600000],
-      [1600001, 1800000],
-      [1800001, 2000000],
-      [2000001, 2200000],
-      [2200001, 2400000],
-      [2400001, 2600000],
-      [2600001, 2800000],
-      [2800001, 3000000],
-      [3000001, 3200000],
-      [3200001, 3400000],
-      [3400001, 99999999],
-    ],
-  },
-  {
-    cbSearchUrl:
-      "https://www.crunchbase.com/lists/isr-founder/4a567c09-b27f-4192-b60d-116133a09db6/organization.companies",
+      "https://www.crunchbase.com/lists/berlin-halal-friendly/6dab6829-5be0-4038-a408-edf172fb269a/organization.companies",
     reasons: [APIListOfReasons.FounderInIL],
-    fileName: "FOUNDER_ISR",
+    fileName: "TMP_BERLIN",
     cbSteps: [
-      [1, 30000],
-      [30001, 130000],
-      [130001, 999999999],
+      [1, 130000],
+      [130001, 320000],
+      [320001, 550000],
+      [550001, 840000],
+      [840001, 1120000],
+      [1120001, 1420000],
+      [1420001, 1700000],
+      [1700001, 1950000],
+      [1950001, 2220000],
+      [2220001, 2480000],
+      [2480001, 2730000],
+      [2730001, 3000000],
+      [3000001, 3300000],
+      [3300001, 999999999],
     ],
   },
 ];
 
 export async function run() {
+  dotenv.config();
+
   const EMAIL = process.env.EMAIL;
   const PASSWORD = process.env.PASSWORD;
 
@@ -77,15 +102,17 @@ export async function run() {
   const page = await browser.newPage();
 
   page.on("error", (err) => {
-    error("Page error occurred:", err);
+    error("Scrap browser error occurred:", err);
+    throw new Error("Scrap browser error occurred");
   });
 
   page.on("close", () => {
-    log("Page was closed unexpectedly!");
+    warn("Page was closed unexpectedly!");
   });
 
   browser.on("disconnected", () => {
     error("Browser was disconnected!");
+    throw new Error("Browser was disconnected");
   });
 
   await page.setViewport({ width: 1800, height: 1000 });
@@ -107,9 +134,6 @@ export async function run() {
   for await (const stage of filterStages) {
     log("processing stage:", stage);
 
-    await page.goto(stage.cbSearchUrl, { waitUntil: "domcontentloaded" });
-    await new Promise((resolve) => setTimeout(resolve, 3000));
-
     let batchNum = 1;
 
     for (const [from, to] of stage.cbSteps) {
@@ -121,11 +145,18 @@ export async function run() {
           ),
         )
       ) {
-        log(`Skipping stage ${stage.fileName}_${batchNum}...`);
+        warn(`Skipping stage ${stage.fileName}_${batchNum}...`);
         batchNum += 1;
 
         continue;
       }
+
+      log(`before naviagting to ${stage.cbSearchUrl}`);
+
+      await page.goto(stage.cbSearchUrl, { waitUntil: "domcontentloaded" });
+
+      // log("before reloading");
+      // await page.reload({ waitUntil: "domcontentloaded" });
 
       await setFilter(page, 0, from);
       log("after setting from");
@@ -164,8 +195,8 @@ export async function run() {
       batchNum += 1;
     }
 
-    await page.goto(stage.cbSearchUrl, { waitUntil: "domcontentloaded" });
-    await new Promise((resolve) => setTimeout(resolve, 10000));
+    // await page.goto(stage.cbSearchUrl, { waitUntil: "domcontentloaded" });
+    // await new Promise((resolve) => setTimeout(resolve, 10000));
   }
 
   // await browser.close();
@@ -191,15 +222,15 @@ async function clickSearchButton(page: Page): Promise<void> {
   const searchButtonSelector = '[data-cy="search-button"]';
   await page.waitForSelector(searchButtonSelector, { timeout: 500 });
 
-  // try {
-  await page.click(searchButtonSelector);
-  log("Search button clicked, waiting for results to load...");
-  // } catch (error) {
-  //   log(
-  //     "Couldnt click search button button, waiting for results to load...",
-  //     error,
-  //   );
-  // }
+  try {
+    await page.click(searchButtonSelector);
+    log("Search button clicked, waiting for results to load...");
+  } catch (error) {
+    warn(
+      "Couldnt click search button button, waiting for results to load...",
+      error,
+    );
+  }
   await new Promise((resolve) => setTimeout(resolve, 5000));
 }
 

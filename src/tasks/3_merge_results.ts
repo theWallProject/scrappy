@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { ScrappedItemType, APIScrapperFileDataSchema } from "../types";
-import { log, error, cleanWebsite } from "../helper";
+import { log, cleanWebsite } from "../helper";
 import {
   manualDeleteNames,
   DUPLICATE_WEBSITES,
@@ -25,40 +25,43 @@ const loadJsonFiles = (folderPath: string) => {
     const filePath = path.join(folderPath, file);
     const fileContent = fs.readFileSync(filePath, "utf-8");
 
-    try {
-      const parsedData = APIScrapperFileDataSchema.parse(
-        JSON.parse(fileContent),
+    const parsedData = APIScrapperFileDataSchema.parse(JSON.parse(fileContent));
+    log(`File ${file} has ${parsedData.length} rows`);
+
+    for (const newRow of parsedData) {
+      const existingIndex = combinedArray.findIndex((existingObj) =>
+        areDuplicates(existingObj, newRow),
       );
-      log(`File ${file} has ${parsedData.length} rows`);
-      combinedArray = combinedArray.concat(parsedData);
-    } catch (err) {
-      error(`Error parsing file ${file}:`, err);
+
+      if (existingIndex !== -1) {
+        combinedArray[existingIndex] = mergeObjects(
+          combinedArray[existingIndex],
+          newRow,
+        );
+      } else {
+        combinedArray.push(newRow);
+      }
     }
   });
 
-  const tmpArr: ScrappedItemType[] = [];
+  // const tmpArr: ScrappedItemType[] = [];
   const deDubeArray = combinedArray.flatMap((row) => {
     row.li = cleanWebsite(row.li);
     row.ws = cleanWebsite(row.ws);
     row.fb = cleanWebsite(row.fb);
     row.tw = cleanWebsite(row.tw);
 
-    const { name, li, ws, fb, tw } = row;
+    const { name, ws } = row;
 
     if (manualDeleteNames.includes(name)) return [];
     if (ws && DUPLICATE_WEBSITES[ws]) {
       return [];
     }
-    // const dubNameWebsite = tmpArr.find(
-    //   (row) => row.name === name && row.ws === ws,
-    // );
     // const dubName = tmpArr.find((row) => row.name === name);
-    const dubWebsite = tmpArr.find((row) => row.ws === ws && ws);
-    const dubFb = tmpArr.find((row) => row.fb === fb && fb);
-    const dubLi = tmpArr.find((row) => row.li === li && li);
-    const dubTw = tmpArr.find((row) => row.tw === tw && tw);
-    // const dubWebsite = tmpArr.find((row) => row.ws === ws);
-    // const dubWebsite = tmpArr.find((row) => row.ws === ws);
+    // const dubWebsite = tmpArr.find((row) => row.ws === ws && ws);
+    // const dubFb = tmpArr.find((row) => row.fb === fb && fb);
+    // const dubLi = tmpArr.find((row) => row.li === li && li);
+    // const dubTw = tmpArr.find((row) => row.tw === tw && tw);
 
     // if (dubNameWebsite) {
     //   error(`Duplicate name and website: ${row.name} ${row.ws}`, {
@@ -85,62 +88,62 @@ const loadJsonFiles = (folderPath: string) => {
     //   });
     //   return [];
     // } else
-    if (dubWebsite) {
-      error(`Duplicate website: ${row.ws}`, {
-        nameIgnored: row.name,
-        nameSaved: dubWebsite.name,
-        liIgnored: row.li,
-        liSaved: dubWebsite.li,
-        fbIgnored: row.fb,
-        fbSaved: dubWebsite.fb,
-        twIgnored: row.tw,
-        twSaved: dubWebsite.tw,
-        reasonsIgnored: row.reasons,
-        reasonsSaved: dubWebsite.reasons,
-      });
+    // if (dubWebsite) {
+    //   error(`Duplicate website: ${row.ws}`, {
+    //     nameIgnored: row.name,
+    //     nameSaved: dubWebsite.name,
+    //     liIgnored: row.li,
+    //     liSaved: dubWebsite.li,
+    //     fbIgnored: row.fb,
+    //     fbSaved: dubWebsite.fb,
+    //     twIgnored: row.tw,
+    //     twSaved: dubWebsite.tw,
+    //     reasonsIgnored: row.reasons,
+    //     reasonsSaved: dubWebsite.reasons,
+    //   });
 
-      return [];
-    } else if (dubFb) {
-      error(`Duplicate Facebook: ${row.fb}`, {
-        nameIgnored: row.name,
-        nameSaved: dubFb.name,
-        liIgnored: row.li,
-        liSaved: dubFb.li,
-        twIgnored: row.tw,
-        twSaved: dubFb.tw,
-        reasonsIgnored: row.reasons,
-        reasonsSaved: dubFb.reasons,
-      });
-      return [];
-    } else if (dubLi) {
-      error(`Duplicate LinkedIn: ${row.li}`, {
-        nameIgnored: row.name,
-        nameSaved: dubLi.name,
-        fbIgnored: row.fb,
-        fbSaved: dubLi.fb,
-        twIgnored: row.tw,
-        twSaved: dubLi.tw,
-        reasonsIgnored: row.reasons,
-        reasonsSaved: dubLi.reasons,
-      });
-      return [];
-    } else if (dubTw) {
-      error(`Duplicate Twitter: ${row.tw}`, {
-        nameIgnored: row.name,
-        nameSaved: dubTw.name,
-        fbIgnored: row.fb,
-        fbSaved: dubTw.fb,
-        twIgnored: row.tw,
-        twSaved: dubTw.tw,
-        reasonsIgnored: row.reasons,
-        reasonsSaved: dubTw.reasons,
-      });
-      return [];
-    } else {
-      tmpArr.push(row);
+    //   // return [];
+    // } else if (dubFb) {
+    //   error(`Duplicate Facebook: ${row.fb}`, {
+    //     nameIgnored: row.name,
+    //     nameSaved: dubFb.name,
+    //     liIgnored: row.li,
+    //     liSaved: dubFb.li,
+    //     twIgnored: row.tw,
+    //     twSaved: dubFb.tw,
+    //     reasonsIgnored: row.reasons,
+    //     reasonsSaved: dubFb.reasons,
+    //   });
+    //   // return [];
+    // } else if (dubLi) {
+    //   error(`Duplicate LinkedIn: ${row.li}`, {
+    //     nameIgnored: row.name,
+    //     nameSaved: dubLi.name,
+    //     fbIgnored: row.fb,
+    //     fbSaved: dubLi.fb,
+    //     twIgnored: row.tw,
+    //     twSaved: dubLi.tw,
+    //     reasonsIgnored: row.reasons,
+    //     reasonsSaved: dubLi.reasons,
+    //   });
+    //   // return [];
+    // } else if (dubTw) {
+    //   error(`Duplicate Twitter: ${row.tw}`, {
+    //     nameIgnored: row.name,
+    //     nameSaved: dubTw.name,
+    //     fbIgnored: row.fb,
+    //     fbSaved: dubTw.fb,
+    //     twIgnored: row.tw,
+    //     twSaved: dubTw.tw,
+    //     reasonsIgnored: row.reasons,
+    //     reasonsSaved: dubTw.reasons,
+    //   });
+    //   // return [];
+    // } else {
+    // tmpArr.push(row);
 
-      return [row];
-    }
+    return [row];
+    // }
   });
 
   for (const website in DUPLICATE_WEBSITES) {
@@ -159,6 +162,50 @@ const saveJsonToFile = (data: unknown, outputFilePath: string) => {
   fs.writeFileSync(outputFilePath, JSON.stringify(data, null, 2), "utf-8");
   log(`Data successfully written to ${outputFilePath}`);
 };
+
+function mergeObjects(
+  obj1: ScrappedItemType,
+  obj2: ScrappedItemType,
+): ScrappedItemType {
+  const merged: ScrappedItemType = { ...obj1 };
+
+  for (const key of Object.keys(obj2) as (keyof ScrappedItemType)[]) {
+    if (
+      key === "reasons"
+      // Array.isArray(obj2Value) &&
+      // Array.isArray(obj1Value)
+    ) {
+      // Merge reasons arrays and remove duplicates
+
+      merged.reasons = Array.from(new Set([...merged[key], ...obj2[key]]));
+    } else if (!obj2[key] || obj2[key] === "") {
+      // Skip empty fields in obj2
+      continue;
+    } else if (!merged[key] || merged[key] === "") {
+      // Fill empty fields in obj1
+      // @ts-expect-error -- fix later
+      merged[key] = obj2[key];
+    }
+  }
+
+  return merged;
+}
+
+function areDuplicates(
+  row1: ScrappedItemType,
+  row2: ScrappedItemType,
+): boolean {
+  const keysToCompare: (keyof ScrappedItemType)[] = [
+    // "name",
+    "li",
+    "ws",
+    "fb",
+    "tw",
+  ];
+  return keysToCompare.some(
+    (key) => row1[key] && row2[key] && row1[key] === row2[key],
+  );
+}
 
 export async function run() {
   return loadJsonFiles(folderPath);

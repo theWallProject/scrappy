@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { ScrappedFileType } from "../types";
+import { ManualItemSchema, ScrappedFileType } from "../types";
 import { log, cleanWebsite } from "../helper";
 import { BDS } from "../static_data/BDS";
 
@@ -13,7 +13,9 @@ const injectStaticRows = () => {
   const merged: ScrappedFileType = [];
 
   for (const item of BDS) {
-    const { name, reasons, ws, li, fb, tw } = item;
+    const safeItem = ManualItemSchema.parse(item);
+
+    const { name, reasons, ws, li, fb, tw } = safeItem;
 
     for (const website of ws) {
       const _website = cleanWebsite(website) as string;
@@ -27,34 +29,40 @@ const injectStaticRows = () => {
 
     if (li) {
       for (const linkedIn of li) {
-        merged.push({
-          name,
-          reasons,
-          li: cleanWebsite(linkedIn),
-          ws: "",
-        });
+        if (linkedIn) {
+          merged.push({
+            name,
+            reasons,
+            li: cleanWebsite(linkedIn),
+            ws: "",
+          });
+        }
       }
     }
 
     if (fb) {
       for (const facebook of fb) {
-        merged.push({
-          name,
-          reasons,
-          fb: cleanWebsite(facebook),
-          ws: "",
-        });
+        if (facebook) {
+          merged.push({
+            name,
+            reasons,
+            fb: cleanWebsite(facebook),
+            ws: "",
+          });
+        }
       }
     }
 
     if (tw) {
       for (const twitter of tw) {
-        merged.push({
-          name,
-          reasons,
-          tw: cleanWebsite(twitter),
-          ws: "",
-        });
+        if (twitter) {
+          merged.push({
+            name,
+            reasons,
+            tw: cleanWebsite(twitter),
+            ws: "",
+          });
+        }
       }
     }
   }

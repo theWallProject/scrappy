@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@theWallProject/addonCommon": "github:theWallProject/addonCommon",
+    "dotenv": "^16.4.7",
     "inquirer": "^12.2.0",
     "puppeteer": "^23.9.0",
     "terminal-image": "^3.0.0",

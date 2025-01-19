@@ -1,0 +1,940 @@
+[
+  {
+    "name": "8fig",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://8fig.io"
+  },
+  {
+    "name": "A.Team",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://a.team"
+  },
+  {
+    "name": "Affogata",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://affogata.com"
+  },
+  {
+    "name": "AI21 Labs",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://ai21.com"
+  },
+  {
+    "name": "Aidoc",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://aidoc.com"
+  },
+  {
+    "name": "Aligned",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://www.alignedup.com/"
+  },
+  {
+    "name": "Amdocs",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://amdocs.com"
+  },
+  {
+    "name": "Anima",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://animaapp.com"
+  },
+  {
+    "name": "Apiiro",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://apiiro.com"
+  },
+  {
+    "name": "Appsflyer",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://appsflyer.com"
+  },
+  {
+    "name": "Appwrite",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://appwrite.io/"
+  },
+  {
+    "name": "Aqua Security",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://aquasec.com"
+  },
+  {
+    "name": "Axonius",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://axonius.com"
+  },
+  {
+    "name": "Balance",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://getbalance.com"
+  },
+  {
+    "name": "BigPanda",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://bigpanda.com"
+  },
+  {
+    "name": "Blink Ops",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://blinkops.com"
+  },
+  {
+    "name": "Bob",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://hibob.com"
+  },
+  {
+    "name": "Bringg",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://bringg.com"
+  },
+  {
+    "name": "Celery",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://Celery.cc"
+  },
+  {
+    "name": "Chargeflow",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://chargeflow.io"
+  },
+  {
+    "name": "CheckPoint",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://checkpoint.com"
+  },
+  {
+    "name": "Claroty",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://claroty.com"
+  },
+  {
+    "name": "Cloudinary",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://cloudinary.com/"
+  },
+  {
+    "name": "Codium",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://codium.ai"
+  },
+  {
+    "name": "Connecteam",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://connecteam.com"
+  },
+  {
+    "name": "Coralogix",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://coralogix.com"
+  },
+  {
+    "name": "CyberArk",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://cyberark.com"
+  },
+  {
+    "name": "Cybereason",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://cybereason.com"
+  },
+  {
+    "name": "DagsHub",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://dagshub.com"
+  },
+  {
+    "name": "Dany",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://dany.ai"
+  },
+  {
+    "name": "Dealhub",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://dealhub.io"
+  },
+  {
+    "name": "Deel",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://Deel.com"
+  },
+  {
+    "name": "DeepCure",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://deepcure.ai"
+  },
+  {
+    "name": "Demoleap",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://demoleap.com"
+  },
+  {
+    "name": "Descope",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://descope.com"
+  },
+  {
+    "name": "Dig Security",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://www.dig.security/"
+  },
+  {
+    "name": "Draftboard",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://draftboard.com"
+  },
+  {
+    "name": "Droxi.ai",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://Droxi.ai"
+  },
+  {
+    "name": "Elementor",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://elementor.com"
+  },
+  {
+    "name": "Eleos Health",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://eleos.health"
+  },
+  {
+    "name": "Explorium",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://explorium.ai"
+  },
+  {
+    "name": "Fabric",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://getfabric.com"
+  },
+  {
+    "name": "Finaloop",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://www.finaloop.com/"
+  },
+  {
+    "name": "Finout",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://finout.io"
+  },
+  {
+    "name": "Fintastic",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://fintastic.ai"
+  },
+  {
+    "name": "Firebolt",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://firebolt.io/"
+  },
+  {
+    "name": "Firefly",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://firefly.ai"
+  },
+  {
+    "name": "Fiverr",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://fiverr.com"
+  },
+  {
+    "name": "Forter",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://forter.com"
+  },
+  {
+    "name": "Frontegg",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://frontegg.com"
+  },
+  {
+    "name": "Fundbox",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://fundbox.com"
+  },
+  {
+    "name": "FundGuard",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://fundguard.com"
+  },
+  {
+    "name": "Gelt",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://www.joingelt.com"
+  },
+  {
+    "name": "Global-e",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://global-e.com"
+  },
+  {
+    "name": "Gloww",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://gloww.com"
+  },
+  {
+    "name": "Gong",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://gong.io"
+  },
+  {
+    "name": "Graphiti",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://graphiti.ai"
+  },
+  {
+    "name": "Groove",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://Groove.ooo"
+  },
+  {
+    "name": "GrowthSpace",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://growthspace.com"
+  },
+  {
+    "name": "Healthy.io",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://healthy.io"
+  },
+  {
+    "name": "Honeybook",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://honeybook.com"
+  },
+  {
+    "name": "Immunai",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://immunai.com"
+  },
+  {
+    "name": "Imperva",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://imperva.com"
+  },
+  {
+    "name": "Indeitq",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://identiq.com"
+  },
+  {
+    "name": "Intail.ai",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://intail.ai"
+  },
+  {
+    "name": "JFrog",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://jfrog.com"
+  },
+  {
+    "name": "Jifiti",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://jifiti.com"
+  },
+  {
+    "name": "K Health",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://khealth.com"
+  },
+  {
+    "name": "Kaltura",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://corp.kaltura.com"
+  },
+  {
+    "name": "Komodor",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://komodor.com"
+  },
+  {
+    "name": "Lightricks",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://lightricks.com"
+  },
+  {
+    "name": "Logz.io",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://logz.io"
+  },
+  {
+    "name": "Lusha",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://lusha.com"
+  },
+  {
+    "name": "Mapme",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://mapme.com"
+  },
+  {
+    "name": "Melio",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://meliopayments.com"
+  },
+  {
+    "name": "Mesh Payments",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://meshpayments.com"
+  },
+  {
+    "name": "Mixtiles",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://mixtiles.com"
+  },
+  {
+    "name": "Monday.com",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://monday.com"
+  },
+  {
+    "name": "Monto",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://montopay.com"
+  },
+  {
+    "name": "myInterview",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://myinterview.com"
+  },
+  {
+    "name": "myQuest",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://myquest.co"
+  },
+  {
+    "name": "Navina",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://navina.ai"
+  },
+  {
+    "name": "Nexite",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://nexite.io"
+  },
+  {
+    "name": "Nice Systems",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://nice.com"
+  },
+  {
+    "name": "Noble",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://benoblel.io"
+  },
+  {
+    "name": "Noname Security",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://nonamesecurity.com"
+  },
+  {
+    "name": "Optimove",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://optimove.com"
+  },
+  {
+    "name": "Pagaya",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://pagaya.com"
+  },
+  {
+    "name": "Panoray",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://panorays.com"
+  },
+  {
+    "name": "Papaya Global",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://papayaglobal.com"
+  },
+  {
+    "name": "PayEm",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://payem.co"
+  },
+  {
+    "name": "PDQ",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://prettydamnquick.com"
+  },
+  {
+    "name": "PeerSpot",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://peerspot.com"
+  },
+  {
+    "name": "Permit.io",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://permit.io"
+  },
+  {
+    "name": "Placer.ai",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://Placer.ai"
+  },
+  {
+    "name": "Powtoon",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://powtoon.com"
+  },
+  {
+    "name": "Qwak",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://qwak.com/"
+  },
+  {
+    "name": "Rapyd",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://rapyd.net"
+  },
+  {
+    "name": "Receive",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://www.nowreceive.com/"
+  },
+  {
+    "name": "Regatta Data",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://regatta.dev"
+  },
+  {
+    "name": "Riskified",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://riskified.com"
+  },
+  {
+    "name": "Ritual",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://heyritual.com"
+  },
+  {
+    "name": "Riverside.fm",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://riverside.fm"
+  },
+  {
+    "name": "Rivery",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://rivery.io"
+  },
+  {
+    "name": "Rupert",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://hirupert.co"
+  },
+  {
+    "name": "Salt Security",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://salt.security"
+  },
+  {
+    "name": "Salto",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://salto.io"
+  },
+  {
+    "name": "Sentra",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://sentra.io"
+  },
+  {
+    "name": "Silverfort",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://silverfort.com"
+  },
+  {
+    "name": "Similarweb",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://similarweb.com"
+  },
+  {
+    "name": "Sisense",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://sisense.com"
+  },
+  {
+    "name": "Snyk",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://snyk.io"
+  },
+  {
+    "name": "Stuff That Works",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://www.stuffthatworks.health/"
+  },
+  {
+    "name": "Substrata",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://substrata.me"
+  },
+  {
+    "name": "Sweep",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://sweep.io"
+  },
+  {
+    "name": "Swimm",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://Swimm.io"
+  },
+  {
+    "name": "Talon",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://talon-sec.com"
+  },
+  {
+    "name": "TimeOS",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://timeos.ai"
+  },
+  {
+    "name": "Tipalti",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://tipalti.com"
+  },
+  {
+    "name": "Tolstoy",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://tolstoy.com"
+  },
+  {
+    "name": "Trendemon",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://trendemon.com"
+  },
+  {
+    "name": "Trigo",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://trigoretail.com"
+  },
+  {
+    "name": "TripleWhale",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://triplewhale.com"
+  },
+  {
+    "name": "Trullion",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://trullion.com"
+  },
+  {
+    "name": "Tufin",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://tufin.com"
+  },
+  {
+    "name": "Unit",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://unit.co"
+  },
+  {
+    "name": "Verbit",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://verbit.ai"
+  },
+  {
+    "name": "Walkme",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://walkme.com"
+  },
+  {
+    "name": "Walnut",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://walnut.io"
+  },
+  {
+    "name": "Wilco",
+    "reasons": [
+      "h"
+    ],
+    "ws": "http://trywilco.com/"
+  },
+  {
+    "name": "Wix",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://wix.com"
+  },
+  {
+    "name": "Wiz",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://wiz.io"
+  },
+  {
+    "name": "Yotpo",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://yotpo.com"
+  },
+  {
+    "name": "Zesty",
+    "reasons": [
+      "h"
+    ],
+    "ws": "https://zesty.co"
+  }
+]

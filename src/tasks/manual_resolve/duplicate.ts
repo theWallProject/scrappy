@@ -1,6 +1,6 @@
 import { ScrappedItemType } from "../../types";
 
-export const manualDeleteNames = ["Corvid", "Tradeos"];
+export const manualDeleteNames = ["Corvid", "Tradeos", "ARJeannie Ltd."];
 
 export const DUPLICATE_WEBSITES: {
   [key: string]: ScrappedItemType;
