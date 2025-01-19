@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { BuyIsraeliTechSchema, ScrappedFileType } from "../types";
-import { log, cleanWebsite } from "../helper";
+import { log } from "../helper";
 import BIT from "../static_data/external/buyIsraeliTech.json";
 
 const outputFilePath = path.join(
@@ -15,11 +15,11 @@ const injectStaticRows = () => {
 
   for (const item of SafeBIT) {
     const { Name, Link, IsraelRelation } = item;
-    if (IsraelRelation === "HQ") {
+    if (IsraelRelation === "HQ" && typeof Link === "string") {
       merged.push({
         name: Name,
         reasons: ["h"],
-        ws: cleanWebsite(Link),
+        ws: Link,
       });
     } else {
       // todo: add satellite office

@@ -17,7 +17,6 @@ export const BDS: ManualItemType[] = [
   {
     name: "HP",
     reasons: ["b"],
-
     ws: [
       "https://www.hp.com",
       "https://www.omen.com",
@@ -152,7 +151,7 @@ export const BDS: ManualItemType[] = [
     fb: ["https://www.facebook.com/ahavagermany"],
   },
   {
-    name: "",
+    name: "Sabra",
     reasons: ["b"],
 
     ws: ["https://sabra.com/"],
@@ -161,6 +160,15 @@ export const BDS: ManualItemType[] = [
     fb: ["https://www.facebook.com/Sabra/"],
     // https://www.instagram.com/sabra/
     // https://www.tiktok.com/@sabra
+  },
+  {
+    name: "Wixsite (hosting)",
+    reasons: ["b"],
+
+    ws: ["wixsite.com"],
+    li: [""],
+    tw: [""],
+    fb: [""],
   },
 ];
 

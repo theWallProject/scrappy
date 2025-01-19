@@ -48,7 +48,10 @@ export const ManualItemSchema = z.object({
 export const BuyIsraeliTechSchema = z.array(
   z.object({
     Name: z.string().min(1, { message: "String cannot be empty" }),
-    Link: z.string().min(1, { message: "String cannot be empty" }),
+    Link: z.union([
+      z.string().min(1, { message: "String cannot be empty" }),
+      z.null(),
+    ]),
     IsraelRelation: z.union([z.literal("HQ"), z.literal("Satellite Office")]),
   }),
 );

@@ -1,6 +1,7 @@
 import { error, log } from "./helper";
 import { run as scrap } from "./tasks/1_scrap";
 import { run as genStatic } from "./tasks/2_inject_static";
+import { run as genStaticBIT } from "./tasks/2_1_inject_buyIsraeliTech";
 import { run as merge } from "./tasks/3_merge_results";
 import { run as extractSocial } from "./tasks/4_extract_social";
 import { run as extractFlagged } from "./tasks/5_extract_flagged";
@@ -71,6 +72,7 @@ const main = async () => {
   if (shouldGenStatic) {
     log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 2: Generate Static...");
     await genStatic();
+    await genStaticBIT();
   }
 
   if (shouldMerge) {
