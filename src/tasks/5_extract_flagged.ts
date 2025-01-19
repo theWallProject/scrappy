@@ -61,10 +61,10 @@ export const run = async (merged: ScrappedFileType) => {
       //   // log(`Website Domain extracted ${website} => ${domain}`);
       // }
 
-      if (websites[website]) {
-        error(`Duplicate website [flagged]: ${website}`);
+      if (websites[domain]) {
+        error(`Duplicate domain [flagged]: ${domain} of website ${website}`);
       } else {
-        websites[website] = true;
+        websites[domain] = true;
       }
 
       return {
