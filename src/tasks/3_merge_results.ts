@@ -5,6 +5,7 @@ import { log, cleanWebsite } from "../helper";
 import {
   manualDeleteNames,
   DUPLICATE_WEBSITES,
+  manualOverrides,
 } from "./manual_resolve/duplicate";
 
 const folderPath = path.join(__dirname, "../../results/1_batches");
@@ -152,10 +153,21 @@ const loadJsonFiles = (folderPath: string) => {
 
   const sortedArray = deDubeArray.sort((a, b) => a.name.localeCompare(b.name));
 
-  saveJsonToFile(sortedArray, outputFilePath);
-  log(`Wrote ${sortedArray.length} rows to ${outputFilePath}...`);
+  const manuallyUpdatedArray = sortedArray.map((row) => {
+    const result = manualOverrides.find(([name]) => name === row.name);
 
-  return sortedArray;
+    if (result) {
+      log(`Manually updated ${row.name}`);
+      return { ...row, ...result[1] };
+    } else {
+      return row;
+    }
+  });
+
+  saveJsonToFile(manuallyUpdatedArray, outputFilePath);
+  log(`Wrote ${manuallyUpdatedArray.length} rows to ${outputFilePath}...`);
+
+  return manuallyUpdatedArray;
 };
 
 const saveJsonToFile = (data: unknown, outputFilePath: string) => {

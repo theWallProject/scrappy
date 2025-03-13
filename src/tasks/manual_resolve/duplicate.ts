@@ -1,6 +1,10 @@
 import { ScrappedItemType } from "../../types";
 
 export const manualDeleteNames = ["Corvid", "Tradeos", "ARJeannie Ltd."];
+export const manualOverrides: [string, Partial<ScrappedItemType>][] = [
+  ["Somite", { tw: "https://x.com/somiteai" }],
+  ["fiverr", { fb: "http://www.facebook.com/Fiverr" }],
+];
 
 export const DUPLICATE_WEBSITES: {
   [key: string]: ScrappedItemType;
