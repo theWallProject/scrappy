@@ -4,6 +4,7 @@ export const manualDeleteNames = ["Corvid", "Tradeos", "ARJeannie Ltd."];
 export const manualOverrides: [string, Partial<ScrappedItemType>][] = [
   ["Somite", { tw: "https://x.com/somiteai" }],
   ["Fiverr", { fb: "https://www.facebook.com/Fiverr" }],
+  ["Maris Tech Ltd.", { fb: "https://www.facebook.com/MarisTech" }],
   ["Wix", { tw: "https://x.com/Wix" }],
 ];
 

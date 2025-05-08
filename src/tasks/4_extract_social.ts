@@ -83,6 +83,7 @@ const extractSocialLinks = (data: ScrappedFileType) => {
             "pages",
             "search",
             "people",
+            "share",
           ].includes(result)
         ) {
           // warn("skipping facebook group link for now");
