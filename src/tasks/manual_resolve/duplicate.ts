@@ -6,6 +6,7 @@ export const manualOverrides: [string, Partial<ScrappedItemType>][] = [
   ["Fiverr", { fb: "https://www.facebook.com/Fiverr" }],
   ["Maris Tech Ltd.", { fb: "https://www.facebook.com/MarisTech" }],
   ["Wix", { tw: "https://x.com/Wix" }],
+  ["MyHeritage", { li: "https://www.linkedin.com/company/myheritage" }],
 ];
 
 export const DUPLICATE_WEBSITES: {
