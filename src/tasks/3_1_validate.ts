@@ -45,8 +45,9 @@ const validateUrl = async (url: string): Promise<ValidationResult> => {
       url,
       result: response.status,
     };
-  } catch (e) {
-    error(`Error validating URL ${url}:`, e);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  } catch (e: any) {
+    error(`Error validating URL ${url}:`, e.code || e.message);
     return {
       url: url,
       result: `error ${e instanceof Error ? e.message : "Unknown error"}`,
@@ -92,18 +93,6 @@ export async function run() {
 
     saveJsonToFile(results, outputFilePath);
     log(`Validation complete. Results saved to ${outputFilePath}`);
-
-    // Print summary
-    const summary = results.reduce(
-      (acc, curr) => {
-        const key = curr.result;
-        acc[key] = (acc[key] || 0) + 1;
-        return acc;
-      },
-      {} as Record<string | number, number>,
-    );
-
-    log("Summary:", summary);
   } catch (err) {
     error("Error during validation:", err);
     throw err;
