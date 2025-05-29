@@ -3,6 +3,7 @@ import { run as scrap } from "./tasks/1_scrap";
 import { run as genStatic } from "./tasks/2_inject_static";
 import { run as genStaticBIT } from "./tasks/2_1_inject_buyIsraeliTech";
 import { run as merge } from "./tasks/3_merge_results";
+import { run as validate } from "./tasks/3_1_validate";
 import { run as extractSocial } from "./tasks/4_extract_social";
 import { run as extractFlagged } from "./tasks/5_extract_flagged";
 import { run as copyToAddon } from "./tasks/6_copy_to_addon";
@@ -19,13 +20,11 @@ process.on("uncaughtException", (err) => {
 });
 
 const main = async () => {
-  // const terminalImage = await import("terminal-image");
-  // console.log(await terminalImage.file("li.png", { width: 30 }));
-
   const {
     shouldScrap,
     shouldGenStatic,
     shouldMerge,
+    shouldValidate,
     shouldExtractSocial,
     shouldExtractFlagged,
     shouldCopyToAddon,
@@ -44,6 +43,11 @@ const main = async () => {
       type: "confirm",
       name: "shouldMerge",
       message: "Merge files?",
+    },
+    {
+      type: "confirm",
+      name: "shouldValidate",
+      message: "Validate URLs?",
     },
     {
       type: "confirm",
@@ -78,6 +82,12 @@ const main = async () => {
   if (shouldMerge) {
     log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 3: Merging...");
     const sorted = await merge();
+
+    if (shouldValidate) {
+      log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 3.1: Validating URLs...");
+      await validate();
+    }
+
     if (shouldExtractSocial) {
       log(
         ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 4: Extracting Social Links...",
