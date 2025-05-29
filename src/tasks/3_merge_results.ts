@@ -155,6 +155,9 @@ const loadJsonFiles = (folderPath: string) => {
 
   const manuallyUpdatedArray = sortedArray.map((row) => {
     const result = manualOverrides.find(([name]) => name === row.name);
+    row.tw = row.tw
+      ?.replace("www.twitter.com", "x.com")
+      ?.replace("twitter.com", "x.com");
 
     if (result) {
       log(`Manually updated ${row.name}`);
