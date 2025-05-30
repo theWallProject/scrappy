@@ -36,6 +36,17 @@ async function filterReport(filePath) {
           // );
           return false;
         }
+
+        if (
+          row.result.split("https://www.")[1] &&
+          row.result.split("https://www.")[1] === row.url.split("https://")[1]
+        ) {
+          // console.log(
+          //   row.result.split("https://")[1],
+          //   row.url.split("https://www.")[1],
+          // );
+          return false;
+        }
       }
 
       return true;

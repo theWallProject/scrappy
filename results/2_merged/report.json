@@ -28,20 +28,12 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://123completed.com",
-    "result": "https://www.123completed.com"
-  },
-  {
     "url": "https://www.facebook.com/profile.php?id=100064841132396",
     "result": 400
   },
   {
     "url": "https://www.linkedin.com/company/100xlabs",
     "result": "https://il.linkedin.com/company/tallk"
-  },
-  {
-    "url": "https://101therapeutics.com",
-    "result": "https://www.101therapeutics.com"
   },
   {
     "url": "https://www.102trust.com",
@@ -148,10 +140,6 @@
     "result": 400
   },
   {
-    "url": "https://200apps.com",
-    "result": "https://www.200apps.com"
-  },
-  {
     "url": "https://www.facebook.com/200AppsLtd",
     "result": 400
   },
@@ -222,10 +210,6 @@
   {
     "url": "https://www.2p2d.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://qlipso.com",
-    "result": "https://www.qlipso.com"
   },
   {
     "url": "https://www.2sens.co",
@@ -492,10 +476,6 @@
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F4cast-solutions%2Fabout"
   },
   {
-    "url": "https://4chef.co.il",
-    "result": "https://www.4chef.co.il"
-  },
-  {
     "url": "https://www.facebook.com/4Chef",
     "result": 400
   },
@@ -626,10 +606,6 @@
   {
     "url": "https://www.facebook.com/7Twenty2017",
     "result": 400
-  },
-  {
-    "url": "https://8200.org.il",
-    "result": "https://www.8200.org.il"
   },
   {
     "url": "https://www.facebook.com/8200alumni",
@@ -764,10 +740,6 @@
     "result": 400
   },
   {
-    "url": "https://a.team",
-    "result": "https://www.a.team"
-  },
-  {
     "url": "https://www.facebook.com/people/AY-Electronics/100057352604675",
     "result": 400
   },
@@ -790,10 +762,6 @@
   {
     "url": "https://www.facebook.com/A2Z-Advanced-solutions-625403374574560",
     "result": 400
-  },
-  {
-    "url": "https://a2z-design.com",
-    "result": "https://www.a2z-design.com"
   },
   {
     "url": "https://www.facebook.com/profile.php?id=100038357395600",
@@ -970,10 +938,6 @@
   {
     "url": "https://www.facebook.com/Accelium-763418247090979",
     "result": 400
-  },
-  {
-    "url": "https://accellix.com",
-    "result": "https://www.accellix.com"
   },
   {
     "url": "https://www.facebook.com/Accellix-by-LeukoDx-1630405383882153",
@@ -1464,10 +1428,6 @@
     "result": 400
   },
   {
-    "url": "https://adaswap.com",
-    "result": "https://www.adaswap.com"
-  },
-  {
     "url": "https://www.facebook.com/adaswapapp",
     "result": 400
   },
@@ -1792,10 +1752,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://adtecho.com",
-    "result": "https://www.adtecho.com"
-  },
-  {
     "url": "https://adti.me",
     "error": "fetch failed"
   },
@@ -1856,10 +1812,6 @@
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F3268645"
   },
   {
-    "url": "https://apt-il.com",
-    "result": "https://www.apt-il.com"
-  },
-  {
     "url": "https://www.facebook.com/AST-Advanced-Semiconductor-Technology-Ltd-193332530707801",
     "result": 400
   },
@@ -1898,10 +1850,6 @@
   {
     "url": "https://www.facebook.com/AdventureFeeds-933369400039258",
     "result": 400
-  },
-  {
-    "url": "https://adverland.co.il",
-    "result": "https://www.adverland.co.il"
   },
   {
     "url": "https://www.facebook.com/adverland.il",
@@ -2140,10 +2088,6 @@
     "result": 400
   },
   {
-    "url": "https://affilomania.com",
-    "result": "https://www.affilomania.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/affilomania1",
     "result": 404
   },
@@ -2158,14 +2102,6 @@
   {
     "url": "https://www.linkedin.com/company/3259517",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F3259517"
-  },
-  {
-    "url": "https://affogata.com",
-    "result": "https://www.affogata.com"
-  },
-  {
-    "url": "https://affogata.com",
-    "result": "https://www.affogata.com"
   },
   {
     "url": "https://www.facebook.com/AffogataTeam",
@@ -2274,10 +2210,6 @@
   {
     "url": "https://www.facebook.com/agamaextreme",
     "result": 400
-  },
-  {
-    "url": "https://linkedin.com/company/agamon",
-    "result": "https://www.linkedin.com/company/agamon"
   },
   {
     "url": "https://www.facebook.com/agamonhealth",
@@ -2552,20 +2484,12 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://linkedin.com/company/ai-predator",
-    "result": "https://www.linkedin.com/company/ai-predator"
-  },
-  {
     "url": "https://www.linkedin.com/company/1196833",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F1196833"
   },
   {
     "url": "https://www.facebook.com/pages/AItype/110948935625544",
     "result": 400
-  },
-  {
-    "url": "https://ai21.com",
-    "result": "https://www.ai21.com"
   },
   {
     "url": "https://www.facebook.com/AI21Labs",
@@ -2596,10 +2520,6 @@
     "result": 400
   },
   {
-    "url": "https://aidgenomics.com",
-    "result": "https://www.aidgenomics.com"
-  },
-  {
     "url": "https://aidoc.com",
     "result": "https://www.aidoc.com/eu"
   },
@@ -2622,10 +2542,6 @@
   {
     "url": "https://aidtes.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://linkedin.com/company/aidtes",
-    "result": "https://www.linkedin.com/company/aidtes"
   },
   {
     "url": "https://aif-fintech.com",
@@ -2690,10 +2606,6 @@
   {
     "url": "https://www.facebook.com/aiqoo.platform",
     "result": 400
-  },
-  {
-    "url": "https://air-dr.com",
-    "result": "https://www.air-dr.com"
   },
   {
     "url": "https://www.facebook.com/airdoctorltd",
@@ -2824,10 +2736,6 @@
     "result": 400
   },
   {
-    "url": "https://ajoby.com",
-    "result": "https://www.ajoby.com"
-  },
-  {
     "url": "https://www.facebook.com/AjobyInterview",
     "result": 400
   },
@@ -2956,10 +2864,6 @@
     "result": 404
   },
   {
-    "url": "https://albe.io",
-    "result": "https://www.albe.io"
-  },
-  {
     "url": "https://www.change.co.il",
     "result": "https://www.change.co.il/he"
   },
@@ -3048,10 +2952,6 @@
     "result": 400
   },
   {
-    "url": "https://alephbot.com",
-    "result": "https://www.alephbot.com"
-  },
-  {
     "url": "https://www.facebook.com/alexoriginalltd",
     "result": 400
   },
@@ -3090,10 +2990,6 @@
   {
     "url": "https://algalo.com",
     "result": "https://www.atom.com/name/Algalo"
-  },
-  {
-    "url": "https://algatech.com",
-    "result": "https://www.algatech.com"
   },
   {
     "url": "https://www.linkedin.com/company/2447089?trkInfo=tas%3Aalgatec%2Cidx%3A1-2-2&trk=tyah",
@@ -3152,10 +3048,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://algoretail.io",
-    "result": "https://www.algoretail.io"
-  },
-  {
     "url": "https://algosave.com",
     "error": "fetch failed"
   },
@@ -3212,10 +3104,6 @@
     "result": 400
   },
   {
-    "url": "https://algoz.io",
-    "result": "https://www.algoz.io"
-  },
-  {
     "url": "https://www.linkedin.com/company/algoz-liquidity-marketplace",
     "result": 404
   },
@@ -3254,10 +3142,6 @@
   {
     "url": "https://www.alignment-labs.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://alike.health",
-    "result": "https://www.alike.health"
   },
   {
     "url": "https://www.facebook.com/Alike.Health",
@@ -3398,10 +3282,6 @@
   {
     "url": "https://allero.io",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://linkedin.com/company/allero-io",
-    "result": "https://www.linkedin.com/company/allero-io"
   },
   {
     "url": "https://allevetix-medical.com",
@@ -3656,10 +3536,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://alsomine.com",
-    "result": "https://www.alsomine.com"
-  },
-  {
     "url": "https://www.facebook.com/altaagency",
     "result": 400
   },
@@ -3848,10 +3724,6 @@
     "result": 400
   },
   {
-    "url": "https://aman-amanet.co.il",
-    "result": "https://www.aman-amanet.co.il"
-  },
-  {
     "url": "https://www.linkedin.com/company/aman-amanet-group-solutions",
     "result": 404
   },
@@ -3932,14 +3804,6 @@
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F888110%3Ftrk%3Dppro_cprof"
   },
   {
-    "url": "https://amdocs.com",
-    "result": "https://www.amdocs.com"
-  },
-  {
-    "url": "https://amenityanalytics.com",
-    "result": "https://www.amenityanalytics.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/amenity-analytics-llc",
     "result": 404
   },
@@ -3950,10 +3814,6 @@
   {
     "url": "https://www.facebook.com/AMLIsrael",
     "result": 400
-  },
-  {
-    "url": "https://ami.co.il",
-    "result": "https://www.ami.co.il"
   },
   {
     "url": "https://www.facebook.com/pages/Amiad-Water-Systems-Ltd/2944079206",
@@ -4036,10 +3896,6 @@
     "result": 400
   },
   {
-    "url": "https://amitim.com",
-    "result": "https://www.amitim.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/amixr-io",
     "result": 404
   },
@@ -4086,10 +3942,6 @@
   {
     "url": "https://www.facebook.com/AmountTeam",
     "result": 400
-  },
-  {
-    "url": "https://ampeersenergy.de",
-    "result": "https://www.ampeersenergy.de"
   },
   {
     "url": "https://www.facebook.com/Ampeers-Energy-GmbH-109135650540629",
@@ -4148,10 +4000,6 @@
     "result": 400
   },
   {
-    "url": "https://amylyx.com",
-    "result": "https://www.amylyx.com"
-  },
-  {
     "url": "https://www.anagal.com",
     "result": "https://www.abra-it.com"
   },
@@ -4196,10 +4044,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://anandata.io",
-    "result": "https://www.anandata.io"
-  },
-  {
     "url": "https://www.ananda.net",
     "error": "fetch failed"
   },
@@ -4222,10 +4066,6 @@
   {
     "url": "https://www.facebook.com/sayanchor",
     "result": 400
-  },
-  {
-    "url": "https://ancient8.gg",
-    "result": "https://www.ancient8.gg"
   },
   {
     "url": "https://www.facebook.com/Ancient8.gg",
@@ -4296,20 +4136,8 @@
     "result": 400
   },
   {
-    "url": "https://anibone.com",
-    "result": "https://www.anibone.com"
-  },
-  {
     "url": "https://www.facebook.com/aniccaemotionalhealth",
     "result": 400
-  },
-  {
-    "url": "https://animaapp.com",
-    "result": "https://www.animaapp.com"
-  },
-  {
-    "url": "https://linkedin.com/company/anima-app",
-    "result": "https://www.linkedin.com/company/anima-app"
   },
   {
     "url": "https://www.facebook.com/animaapp",
@@ -4334,10 +4162,6 @@
   {
     "url": "https://www.facebook.com/animationbot",
     "result": 400
-  },
-  {
-    "url": "https://animo-tech.com",
-    "result": "https://www.animo-tech.com"
   },
   {
     "url": "https://www.facebook.com/Animo-417047219149678",
@@ -4390,10 +4214,6 @@
   {
     "url": "https://www.facebook.com/annu.model",
     "result": 400
-  },
-  {
-    "url": "https://annabella-pump.com",
-    "result": "https://www.annabella-pump.com"
   },
   {
     "url": "https://www.facebook.com/AnnabellaPump",
@@ -4460,10 +4280,6 @@
     "result": 400
   },
   {
-    "url": "https://anova.co.il",
-    "result": "https://www.anova.co.il"
-  },
-  {
     "url": "https://www.facebook.com/anovaWebDevelopment?fref=ts",
     "result": 400
   },
@@ -4482,10 +4298,6 @@
   {
     "url": "https://www.facebook.com/AnswersDotCom",
     "result": 400
-  },
-  {
-    "url": "https://antaris.space",
-    "result": "https://www.antaris.space"
   },
   {
     "url": "https://www.antic.xyz",
@@ -4576,16 +4388,8 @@
     "result": "https://www.b4x.com"
   },
   {
-    "url": "https://anyword.com",
-    "result": "https://www.anyword.com"
-  },
-  {
     "url": "https://www.facebook.com/gokeywee",
     "result": 400
-  },
-  {
-    "url": "https://anzu.io",
-    "result": "https://www.anzu.io"
   },
   {
     "url": "https://www.facebook.com/anzu.io",
@@ -4800,10 +4604,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://appcharge.com",
-    "result": "https://www.appcharge.com"
-  },
-  {
     "url": "https://www.facebook.com/profile.php?id=61561199398476",
     "result": 400
   },
@@ -4842,10 +4642,6 @@
   {
     "url": "https://www.facebook.com/appiryon.il",
     "result": 400
-  },
-  {
-    "url": "https://appixia.com",
-    "result": "https://www.appixia.com"
   },
   {
     "url": "https://www.applango.com",
@@ -5124,10 +4920,6 @@
     "result": 400
   },
   {
-    "url": "https://appyvent.com",
-    "result": "https://www.appyvent.com"
-  },
-  {
     "url": "https://www.facebook.com/appyvent",
     "result": 400
   },
@@ -5192,10 +4984,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://aquasec.com",
-    "result": "https://www.aquasec.com"
-  },
-  {
     "url": "https://www.facebook.com/AquaSecTeam",
     "result": 400
   },
@@ -5208,10 +4996,6 @@
     "result": 400
   },
   {
-    "url": "https://aquahd.net",
-    "result": "https://www.aquahd.net"
-  },
-  {
     "url": "https://www.aqualitas.tech",
     "result": "http://ww25.aqualitas.tech/?subid1=20250529-1318-0244-84df-65b953039d26"
   },
@@ -5222,10 +5006,6 @@
   {
     "url": "https://www.aquallence.com",
     "result": 404
-  },
-  {
-    "url": "https://aquamaof.com",
-    "result": "https://www.aquamaof.com"
   },
   {
     "url": "https://www.aqua-mor.com",
@@ -5264,10 +5044,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://aquestia.com",
-    "result": "https://www.aquestia.com"
-  },
-  {
     "url": "https://www.facebook.com/aquestia.directing.the.flow",
     "result": 400
   },
@@ -5294,10 +5070,6 @@
   {
     "url": "https://www.linkedin.com/company/guide-in-medical",
     "result": 404
-  },
-  {
-    "url": "https://ar-sw.com",
-    "result": "https://www.ar-sw.com"
   },
   {
     "url": "https://www.arabinvestors.ps",
@@ -5392,10 +5164,6 @@
     "result": 400
   },
   {
-    "url": "https://arboxapp.com",
-    "result": "https://www.arboxapp.com"
-  },
-  {
     "url": "https://www.facebook.com/arboxapp",
     "result": 400
   },
@@ -5432,16 +5200,8 @@
     "result": 400
   },
   {
-    "url": "https://arcee.ai",
-    "result": "https://www.arcee.ai"
-  },
-  {
     "url": "https://www.linkedin.com/in/ilya-volokin-8b298b106",
     "result": 999
-  },
-  {
-    "url": "https://archimedesfi.com",
-    "result": "https://www.archimedesfi.com"
   },
   {
     "url": "https://archon-technologies.com",
@@ -5466,10 +5226,6 @@
   {
     "url": "https://www.facebook.com/Arcreative",
     "result": 400
-  },
-  {
-    "url": "https://ardantech.com",
-    "result": "https://www.ardantech.com"
   },
   {
     "url": "https://www.facebook.com/Ardix-266910046696789",
@@ -5684,10 +5440,6 @@
     "result": 400
   },
   {
-    "url": "https://armosec.io",
-    "result": "https://www.armosec.io"
-  },
-  {
     "url": "https://www.facebook.com/ArmourSense",
     "result": 400
   },
@@ -5724,10 +5476,6 @@
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Farpalus%2Fabout"
   },
   {
-    "url": "https://arpeely.com",
-    "result": "https://www.arpeely.com"
-  },
-  {
     "url": "https://www.facebook.com/arpiltech",
     "result": 400
   },
@@ -5746,10 +5494,6 @@
   {
     "url": "https://arrivin.com",
     "result": 530
-  },
-  {
-    "url": "https://linkedin.com/company/arrivin",
-    "result": "https://www.linkedin.com/company/arrivin"
   },
   {
     "url": "https://www.facebook.com/arc2002ltd",
@@ -5912,10 +5656,6 @@
     "result": 400
   },
   {
-    "url": "https://arugga.com",
-    "result": "https://www.arugga.com"
-  },
-  {
     "url": "https://www.facebook.com/IsraelNationalNews",
     "result": 400
   },
@@ -5958,10 +5698,6 @@
   {
     "url": "https://www.facebook.com/asgardsys",
     "result": 400
-  },
-  {
-    "url": "https://ashdar.co.il",
-    "result": "https://www.ashdar.co.il"
   },
   {
     "url": "https://www.facebook.com/Ashdar.Ashtrom",
@@ -6134,10 +5870,6 @@
   {
     "url": "https://www.e.aspen.co.il",
     "result": 404
-  },
-  {
-    "url": "https://asperii.com",
-    "result": "https://www.asperii.com"
   },
   {
     "url": "https://www.asrr.co.il",
@@ -6376,10 +6108,6 @@
     "result": 400
   },
   {
-    "url": "https://atidot.com",
-    "result": "https://www.atidot.com"
-  },
-  {
     "url": "https://www.facebook.com/atlantisisrael",
     "result": 400
   },
@@ -6466,10 +6194,6 @@
   {
     "url": "https://www.facebook.com/atomationconnect",
     "result": 400
-  },
-  {
-    "url": "https://atomi.co.il",
-    "result": "https://www.atomi.co.il"
   },
   {
     "url": "https://www.facebook.com/AtomiDigitalMarketing",
@@ -6592,10 +6316,6 @@
     "result": 400
   },
   {
-    "url": "https://audiocodes.com",
-    "result": "https://www.audiocodes.com"
-  },
-  {
     "url": "https://www.facebook.com/audiocodes",
     "result": 400
   },
@@ -6694,10 +6414,6 @@
   {
     "url": "https://www.facebook.com/AurenIsrael",
     "result": 400
-  },
-  {
-    "url": "https://aurontx.com",
-    "result": "https://www.aurontx.com"
   },
   {
     "url": "https://www.linkedin.com/company/auron-therapeutics/about",
@@ -6844,10 +6560,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://autonomi.xyz",
-    "result": "https://www.autonomi.xyz"
-  },
-  {
     "url": "https://www.linkedin.com/company/autonomouspivot/about",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fautonomouspivot%2Fabout"
   },
@@ -6944,10 +6656,6 @@
     "result": 400
   },
   {
-    "url": "https://linkedin.com/company/avdor-helet",
-    "result": "https://www.linkedin.com/company/avdor-helet"
-  },
-  {
     "url": "https://www.facebook.com/avdor.hlt",
     "result": 400
   },
@@ -6958,10 +6666,6 @@
   {
     "url": "https://www.facebook.com/AvenewsGT",
     "result": 400
-  },
-  {
-    "url": "https://avertto.com",
-    "result": "https://www.avertto.com"
   },
   {
     "url": "https://www.linkedin.com/company/stroke-alert",
@@ -7224,10 +6928,6 @@
     "result": 404
   },
   {
-    "url": "https://axon-vision.com",
-    "result": "https://www.axon-vision.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/11324368",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F11324368"
   },
@@ -7238,10 +6938,6 @@
   {
     "url": "https://axonite.io",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://axonius.com",
-    "result": "https://www.axonius.com"
   },
   {
     "url": "https://www.facebook.com/Axonius",
@@ -7640,10 +7336,6 @@
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F7225412%3Ftrk%3Dppro_cprof"
   },
   {
-    "url": "https://getbalance.com",
-    "result": "https://www.getbalance.com"
-  },
-  {
     "url": "https://www.facebook.com/GetBalanceHQ",
     "result": 400
   },
@@ -7748,10 +7440,6 @@
     "result": 400
   },
   {
-    "url": "https://banana-splash.com",
-    "result": "https://www.banana-splash.com"
-  },
-  {
     "url": "https://bananacakemedia.com",
     "error": "fetch failed"
   },
@@ -7848,10 +7536,6 @@
     "result": 400
   },
   {
-    "url": "https://barangroup.com",
-    "result": "https://www.barangroup.com"
-  },
-  {
     "url": "https://www.facebook.com/BaranetzM",
     "result": 400
   },
@@ -7940,10 +7624,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://bary.ai",
-    "result": "https://www.bary.ai"
-  },
-  {
     "url": "https://www.facebook.com/BARZILAI.Exhibition.Experts",
     "result": 400
   },
@@ -7962,10 +7642,6 @@
   {
     "url": "https://hi-in.facebook.com/Bascula.We.Create",
     "result": 400
-  },
-  {
-    "url": "https://base.ai/about",
-    "result": "https://www.base.ai/about"
   },
   {
     "url": "https://x.com/base_CLG",
@@ -8006,10 +7682,6 @@
   {
     "url": "https://www.facebook.com/basico",
     "result": 400
-  },
-  {
-    "url": "https://btdesign.co.il",
-    "result": "https://www.btdesign.co.il"
   },
   {
     "url": "https://www.facebook.com/Basman-Tenenbaum-Graphics-Design-258762430820999",
@@ -8154,10 +7826,6 @@
   {
     "url": "https://www.facebook.com/pages/Argan-Oil-100-Pure-Organic-Argan-O",
     "result": 404
-  },
-  {
-    "url": "https://bdiverse.com",
-    "result": "https://www.bdiverse.com"
   },
   {
     "url": "https://www.facebook.com/bdo.co.il",
@@ -8314,10 +7982,6 @@
   {
     "url": "https://www.facebook.com/beamrvideo",
     "result": 400
-  },
-  {
-    "url": "https://beanstock.com/fr",
-    "result": "https://www.beanstock.com/fr"
   },
   {
     "url": "https://www.facebook.com/Beanstock-114816833541446",
@@ -8680,10 +8344,6 @@
     "result": "https://il.linkedin.com/company/theguruz"
   },
   {
-    "url": "https://bemyvega.com/en",
-    "result": "https://www.bemyvega.com/en"
-  },
-  {
     "url": "https://www.facebook.com/bemyvegacom",
     "result": 400
   },
@@ -8746,10 +8406,6 @@
   {
     "url": "https://www.ben-tovim.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://benda.co.il/english",
-    "result": "https://www.benda.co.il/english"
   },
   {
     "url": "https://www.facebook.com/Benda-Magnetic-315767251858913",
@@ -8874,10 +8530,6 @@
   {
     "url": "https://www.facebook.com/jagranpartylucknow",
     "result": 400
-  },
-  {
-    "url": "https://bestsite.co.il",
-    "result": "https://www.bestsite.co.il"
   },
   {
     "url": "https://www.linkedin.com/company/best-it-israel-",
@@ -9034,10 +8686,6 @@
   {
     "url": "https://www.facebook.com/betterintelligence",
     "result": 400
-  },
-  {
-    "url": "https://better-juice.com",
-    "result": "https://www.better-juice.com"
   },
   {
     "url": "https://www.linkedin.com/company/better-life-partners-inc",
@@ -9352,10 +9000,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://bigpanda.io",
-    "result": "https://www.bigpanda.io"
-  },
-  {
     "url": "https://www.facebook.com/bigpandaio",
     "result": 400
   },
@@ -9540,20 +9184,12 @@
     "result": 400
   },
   {
-    "url": "https://bio-guard.net",
-    "result": "https://www.bio-guard.net"
-  },
-  {
     "url": "https://www.bio-nexus.com",
     "error": "fetch failed"
   },
   {
     "url": "https://www.facebook.com/BotanicalSlowRelease",
     "result": 400
-  },
-  {
-    "url": "https://bioatla.com",
-    "result": "https://www.bioatla.com"
   },
   {
     "url": "https://www.facebook.com/pages/BioAtla-LLC/175225865910397",
@@ -9638,10 +9274,6 @@
   {
     "url": "https://www.facebook.com/bioforumIL",
     "result": 400
-  },
-  {
-    "url": "https://bioforumgroup.com",
-    "result": "https://www.bioforumgroup.com"
   },
   {
     "url": "https://www.facebook.com/BiogalGaledLabs",
@@ -9738,10 +9370,6 @@
   {
     "url": "https://www.facebook.com/biometrixmedical",
     "result": 400
-  },
-  {
-    "url": "https://biomx.com",
-    "result": "https://www.biomx.com"
   },
   {
     "url": "https://biondmetric.com",
@@ -10100,10 +9728,6 @@
     "result": "https://www.linkedin.com/company/blackblot"
   },
   {
-    "url": "https://blackboardvfx.com",
-    "result": "https://www.blackboardvfx.com"
-  },
-  {
     "url": "https://www.facebook.com/blackboardvfx",
     "result": 400
   },
@@ -10114,10 +9738,6 @@
   {
     "url": "https://www.facebook.com/BALCARcheck",
     "result": 400
-  },
-  {
-    "url": "https://blackswantechnologies.ai",
-    "result": "https://www.blackswantechnologies.ai"
   },
   {
     "url": "https://www.linkedin.com/company/blackswan-technologies.ai",
@@ -10138,10 +9758,6 @@
   {
     "url": "https://www.facebook.com/blastpoint",
     "result": 400
-  },
-  {
-    "url": "https://blazemeter.com",
-    "result": "https://www.blazemeter.com"
   },
   {
     "url": "https://www.linkedin.com/company/blazemeter",
@@ -10170,10 +9786,6 @@
   {
     "url": "https://blnd.ai",
     "result": 403
-  },
-  {
-    "url": "https://linkedin.com/company/blendai",
-    "result": "https://www.linkedin.com/company/blendai"
   },
   {
     "url": "https://www.facebook.com/BlendLocalization",
@@ -10232,10 +9844,6 @@
     "result": 404
   },
   {
-    "url": "https://blings.io",
-    "result": "https://www.blings.io"
-  },
-  {
     "url": "https://www.linkedin.com/company/blings-io/about",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fblings-io%2Fabout"
   },
@@ -10256,20 +9864,12 @@
     "result": 400
   },
   {
-    "url": "https://blinkops.com",
-    "result": "https://www.blinkops.com"
-  },
-  {
     "url": "https://www.blink-wire.com",
     "error": "fetch failed"
   },
   {
     "url": "https://www.facebook.com/blinkWire",
     "result": 400
-  },
-  {
-    "url": "https://blinq.io",
-    "result": "https://www.blinq.io"
   },
   {
     "url": "https://www.linkedin.com/company/blisswayco/about",
@@ -10492,10 +10092,6 @@
     "result": 400
   },
   {
-    "url": "https://bluebricks.co",
-    "result": "https://www.bluebricks.co"
-  },
-  {
     "url": "https://www.bluecom.co.il",
     "error": "fetch failed"
   },
@@ -10692,10 +10288,6 @@
     "result": 400
   },
   {
-    "url": "https://hibob.com",
-    "result": "https://www.hibob.com"
-  },
-  {
     "url": "https://www.facebook.com/bobetech",
     "result": 400
   },
@@ -10710,10 +10302,6 @@
   {
     "url": "https://www.facebook.com/Bogolog",
     "result": 400
-  },
-  {
-    "url": "https://boldintel.com",
-    "result": "https://www.boldintel.com"
   },
   {
     "url": "https://www.facebook.com/boldcare.official",
@@ -10988,10 +10576,6 @@
     "result": 400
   },
   {
-    "url": "https://bostonmetal.com",
-    "result": "https://www.bostonmetal.com"
-  },
-  {
     "url": "https://www.botanocap.com",
     "error": "fetch failed"
   },
@@ -11100,10 +10684,6 @@
     "result": 400
   },
   {
-    "url": "https://braincast.ai",
-    "result": "https://www.braincast.ai"
-  },
-  {
     "url": "https://www.linkedin.com/company/braincast/about",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fbraincast%2Fabout"
   },
@@ -11176,10 +10756,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://en.bram.co.il",
-    "result": "https://www.en.bram.co.il"
-  },
-  {
     "url": "https://branddna.app",
     "error": "fetch failed"
   },
@@ -11248,10 +10824,6 @@
     "result": 400
   },
   {
-    "url": "https://thebrave.io",
-    "result": "https://www.thebrave.io"
-  },
-  {
     "url": "https://www.bravocomm.com",
     "error": "fetch failed"
   },
@@ -11286,10 +10858,6 @@
   {
     "url": "https://www.facebook.com/pg/BreatheVision-102681974517364",
     "result": 400
-  },
-  {
-    "url": "https://linkedin.com/company/zuz-bitcoin",
-    "result": "https://www.linkedin.com/company/zuz-bitcoin"
   },
   {
     "url": "https://www.linkedin.com/company/breeze-marine-insurance/about",
@@ -11496,10 +11064,6 @@
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fbring-it-on-games%2Fabout"
   },
   {
-    "url": "https://bringg.com",
-    "result": "https://www.bringg.com"
-  },
-  {
     "url": "https://www.facebook.com/bringgapp",
     "result": 400
   },
@@ -11534,10 +11098,6 @@
   {
     "url": "https://www.facebook.com/briskapplication",
     "result": 400
-  },
-  {
-    "url": "https://briskwhale.com",
-    "result": "https://www.briskwhale.com"
   },
   {
     "url": "https://www.facebook.com/BriskWhale",
@@ -11616,16 +11176,8 @@
     "result": 404
   },
   {
-    "url": "https://brocali.co",
-    "result": "https://www.brocali.co"
-  },
-  {
     "url": "https://www.facebook.com/Brocaliwebsite",
     "result": 400
-  },
-  {
-    "url": "https://brodmann17.com",
-    "result": "https://www.brodmann17.com"
   },
   {
     "url": "https://www.linkedin.com/company/17885823",
@@ -11796,10 +11348,6 @@
     "result": 400
   },
   {
-    "url": "https://buff.game",
-    "result": "https://www.buff.game"
-  },
-  {
     "url": "https://www.facebook.com/buff.game",
     "result": 400
   },
@@ -11866,10 +11414,6 @@
   {
     "url": "https://www.facebook.com/buildots",
     "result": 400
-  },
-  {
-    "url": "https://bujeti.com",
-    "result": "https://www.bujeti.com"
   },
   {
     "url": "https://www.bukisa.com",
@@ -12600,10 +12144,6 @@
     "result": 400
   },
   {
-    "url": "https://candis.io",
-    "result": "https://www.candis.io"
-  },
-  {
     "url": "https://www.facebook.com/CandisDeutschland",
     "result": 400
   },
@@ -12860,20 +12400,12 @@
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F79783340"
   },
   {
-    "url": "https://captainfresh.in",
-    "result": "https://www.captainfresh.in"
-  },
-  {
     "url": "https://www.facebook.com/captainup",
     "result": 400
   },
   {
     "url": "https://www.facebook.com/CaptainWordsOfficial",
     "result": 400
-  },
-  {
-    "url": "https://captain-eye.com",
-    "result": "https://www.captain-eye.com"
   },
   {
     "url": "https://www.captivebred-marine.com",
@@ -12916,10 +12448,6 @@
     "result": 400
   },
   {
-    "url": "https://carambola.com",
-    "result": "https://www.carambola.com"
-  },
-  {
     "url": "https://www.facebook.com/carambolamedia",
     "result": 400
   },
@@ -12954,10 +12482,6 @@
   {
     "url": "https://www.facebook.com/people/CarbonBlue/100091003662932",
     "result": 400
-  },
-  {
-    "url": "https://carbonable.io",
-    "result": "https://www.carbonable.io"
   },
   {
     "url": "https://www.facebook.com/Carbosup",
@@ -13000,10 +12524,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://linkedin.com/company/cardinalops",
-    "result": "https://www.linkedin.com/company/cardinalops"
-  },
-  {
     "url": "https://www.cardioart.com",
     "error": "fetch failed"
   },
@@ -13034,10 +12554,6 @@
   {
     "url": "https://www.cardionova.ru",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://cardioscale.com",
-    "result": "https://www.cardioscale.com"
   },
   {
     "url": "https://www.linkedin.com/company/cardioscale-ltd-",
@@ -13408,10 +12924,6 @@
     "result": 404
   },
   {
-    "url": "https://linkedin.com/company/cast-time",
-    "result": "https://www.linkedin.com/company/cast-time"
-  },
-  {
     "url": "https://castling-vet.com",
     "error": "fetch failed"
   },
@@ -13760,10 +13272,6 @@
     "result": 400
   },
   {
-    "url": "https://cellxpert.com",
-    "result": "https://www.cellxpert.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/5274504",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F5274504"
   },
@@ -13900,10 +13408,6 @@
     "result": 400
   },
   {
-    "url": "https://wecertify.app",
-    "result": "https://www.wecertify.app"
-  },
-  {
     "url": "https://www.linkedin.com/company/certify-know-your-partner",
     "result": "https://www.linkedin.com/company/certify-health-status"
   },
@@ -14006,14 +13510,6 @@
   {
     "url": "https://www.facebook.com/ChargeAfter",
     "result": 400
-  },
-  {
-    "url": "https://chargeflow.io",
-    "result": "https://www.chargeflow.io"
-  },
-  {
-    "url": "https://chargeflow.io",
-    "result": "https://www.chargeflow.io"
   },
   {
     "url": "https://www.facebook.com/chargeflow",
@@ -14152,10 +13648,6 @@
     "result": 400
   },
   {
-    "url": "https://checkpoint.com",
-    "result": "https://www.checkpoint.com"
-  },
-  {
     "url": "https://www.cheesy.co.il",
     "error": "fetch failed"
   },
@@ -14218,10 +13710,6 @@
   {
     "url": "https://www.facebook.com/cherrecore",
     "result": 400
-  },
-  {
-    "url": "https://cherrypick-consulting.com",
-    "result": "https://www.cherrypick-consulting.com"
   },
   {
     "url": "https://www.chi2gel.com",
@@ -14338,10 +13826,6 @@
   {
     "url": "https://www.linkedin.com/company/chronisense-medical",
     "result": "https://il.linkedin.com/company/polso-health"
-  },
-  {
-    "url": "https://chronom.ai",
-    "result": "https://www.chronom.ai"
   },
   {
     "url": "https://chronus-imaging.com",
@@ -14468,10 +13952,6 @@
     "result": 400
   },
   {
-    "url": "https://circle-star.com",
-    "result": "https://www.circle-star.com"
-  },
-  {
     "url": "https://www.facebook.com/circlestarltd",
     "result": 400
   },
@@ -14486,10 +13966,6 @@
   {
     "url": "https://mobile.x.com/circonomydao",
     "result": "https://x.com/circonomydao"
-  },
-  {
-    "url": "https://circuitmind.io",
-    "result": "https://www.circuitmind.io"
   },
   {
     "url": "https://circuitbiotech.com",
@@ -14546,10 +14022,6 @@
   {
     "url": "https://www.linkedin.com/company/citrow/mycompany",
     "result": "https://www.linkedin.com/company/citrow"
-  },
-  {
-    "url": "https://citrusx.ai",
-    "result": "https://www.citrusx.ai"
   },
   {
     "url": "https://city-2-city-industrial-repair.business.site",
@@ -14732,16 +14204,8 @@
     "result": 400
   },
   {
-    "url": "https://getclarity.ai",
-    "result": "https://www.getclarity.ai"
-  },
-  {
     "url": "https://www.facebook.com/ClarityOS",
     "result": 400
-  },
-  {
-    "url": "https://clarity-sec.com",
-    "result": "https://www.clarity-sec.com"
   },
   {
     "url": "https://www.clarityray.com",
@@ -14796,10 +14260,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://classoos.com",
-    "result": "https://www.classoos.com"
-  },
-  {
     "url": "https://www.facebook.com/classoosUK",
     "result": 400
   },
@@ -14826,10 +14286,6 @@
   {
     "url": "https://www.linkedin.com/company/1431699?trk=ppro_cprof",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F1431699%3Ftrk%3Dppro_cprof"
-  },
-  {
-    "url": "https://cleapapp.com",
-    "result": "https://www.cleapapp.com"
   },
   {
     "url": "https://www.facebook.com/cleapapp",
@@ -14960,10 +14416,6 @@
     "result": 400
   },
   {
-    "url": "https://clickrender.com",
-    "result": "https://www.clickrender.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/rasbula-rbs-group",
     "result": "https://il.linkedin.com/company/rasbula"
   },
@@ -14974,14 +14426,6 @@
   {
     "url": "https://www.linkedin.com/company/click-bi-technologies",
     "result": "https://il.linkedin.com/company/simm-bi-tech"
-  },
-  {
-    "url": "https://click-ins.com",
-    "result": "https://www.click-ins.com"
-  },
-  {
-    "url": "https://linkedin.com/company/click-ins-ltd",
-    "result": "https://www.linkedin.com/company/click-ins-ltd"
   },
   {
     "url": "https://www.facebook.com/automaticvehicledamageassessment",
@@ -15112,10 +14556,6 @@
     "result": 404
   },
   {
-    "url": "https://clinx.io",
-    "result": "https://www.clinx.io"
-  },
-  {
     "url": "https://www.cliotech.com",
     "error": "fetch failed"
   },
@@ -15232,16 +14672,8 @@
     "result": 400
   },
   {
-    "url": "https://cloudance.co.il",
-    "result": "https://www.cloudance.co.il"
-  },
-  {
     "url": "https://www.facebook.com/cloudance.co.il",
     "result": 400
-  },
-  {
-    "url": "https://cloudbeat.io",
-    "result": "https://www.cloudbeat.io"
   },
   {
     "url": "https://www.facebook.com/CloudBuzzONE",
@@ -15390,10 +14822,6 @@
   {
     "url": "https://www.cloud-wise.co",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://cloudwize.io",
-    "result": "https://www.cloudwize.io"
   },
   {
     "url": "https://www.cloudyn.com",
@@ -15784,10 +15212,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://cogniteam.com",
-    "result": "https://www.cogniteam.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/5085458",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F5085458"
   },
@@ -15850,14 +15274,6 @@
   {
     "url": "https://www.facebook.com/cohen1979",
     "result": 400
-  },
-  {
-    "url": "https://cdh.co.il",
-    "result": "https://www.cdh.co.il"
-  },
-  {
-    "url": "https://coho.ai",
-    "result": "https://www.coho.ai"
   },
   {
     "url": "https://www.linkedin.com/company/hummingbot",
@@ -16120,10 +15536,6 @@
     "result": 400
   },
   {
-    "url": "https://committed-digital.com",
-    "result": "https://www.committed-digital.com"
-  },
-  {
     "url": "https://www.facebook.com/committedsolutions",
     "result": 400
   },
@@ -16170,10 +15582,6 @@
   {
     "url": "https://www.facebook.com/commtact-106278886075871",
     "result": 400
-  },
-  {
-    "url": "https://cyber.commugen.com",
-    "result": "https://www.cyber.commugen.com"
   },
   {
     "url": "https://www.facebook.com/Commugen",
@@ -16300,10 +15708,6 @@
     "result": 400
   },
   {
-    "url": "https://compedia.net",
-    "result": "https://www.compedia.net"
-  },
-  {
     "url": "https://www.linkedin.com/company-beta/67814",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany-beta%2F67814"
   },
@@ -16326,10 +15730,6 @@
   {
     "url": "https://www.facebook.com/CG-Compugraphic-913819685434329",
     "result": 400
-  },
-  {
-    "url": "https://compiralabs.com",
-    "result": "https://www.compiralabs.com"
   },
   {
     "url": "https://www.facebook.com/compiralabs",
@@ -16542,10 +15942,6 @@
   {
     "url": "https://www.facebook.com/pg/coneuron/community",
     "result": 400
-  },
-  {
-    "url": "https://conexiontravel.com",
-    "result": "https://www.conexiontravel.com"
   },
   {
     "url": "https://www.facebook.com/meda.conferences.marketing",
@@ -16900,10 +16296,6 @@
     "result": 400
   },
   {
-    "url": "https://convertixmedia.com",
-    "result": "https://www.convertixmedia.com"
-  },
-  {
     "url": "https://www.facebook.com/ConvertixMedia",
     "result": 400
   },
@@ -17072,10 +16464,6 @@
     "result": 404
   },
   {
-    "url": "https://copprint.com",
-    "result": "https://www.copprint.com"
-  },
-  {
     "url": "https://www.copterpix.co.il",
     "error": "fetch failed"
   },
@@ -17090,10 +16478,6 @@
   {
     "url": "https://www.facebook.com/copyleaks",
     "result": 400
-  },
-  {
-    "url": "https://copyscape.com",
-    "result": "https://www.copyscape.com"
   },
   {
     "url": "https://www.facebook.com/pages/Copyscape/124093657617002",
@@ -17304,10 +16688,6 @@
     "result": 404
   },
   {
-    "url": "https://corsight.ai",
-    "result": "https://www.corsight.ai"
-  },
-  {
     "url": "https://www.facebook.com/Corsight-AI-113467260354333",
     "result": 400
   },
@@ -17334,10 +16714,6 @@
   {
     "url": "https://www.facebook.com/Corvus-Insurance-105283472153290",
     "result": 400
-  },
-  {
-    "url": "https://corygroup.co",
-    "result": "https://www.corygroup.co"
   },
   {
     "url": "https://www.facebook.com/corygroup",
@@ -17444,10 +16820,6 @@
     "result": 400
   },
   {
-    "url": "https://covver.io",
-    "result": "https://www.covver.io"
-  },
-  {
     "url": "https://www.facebook.com/cowebsites",
     "result": 400
   },
@@ -17486,10 +16858,6 @@
   {
     "url": "https://www.linkedin.com/company/cpc-hmi",
     "result": 404
-  },
-  {
-    "url": "https://cps.co.il",
-    "result": "https://www.cps.co.il"
   },
   {
     "url": "https://www.facebook.com/cpsjobs",
@@ -17568,20 +16936,12 @@
     "result": 400
   },
   {
-    "url": "https://creativeecommerce.com",
-    "result": "https://www.creativeecommerce.com"
-  },
-  {
     "url": "https://www.facebook.com/creativehousegroup",
     "result": 400
   },
   {
     "url": "https://www.cic3d.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://creativelabs.co.il",
-    "result": "https://www.creativelabs.co.il"
   },
   {
     "url": "https://www.facebook.com/CreativeLabsIsrael",
@@ -17634,10 +16994,6 @@
   {
     "url": "https://www.facebook.com/Credible-1486069678363260",
     "result": 400
-  },
-  {
-    "url": "https://crediclub.com",
-    "result": "https://www.crediclub.com"
   },
   {
     "url": "https://www.facebook.com/FinancieraCrediclub",
@@ -17820,10 +17176,6 @@
     "result": 400
   },
   {
-    "url": "https://crossriver.com",
-    "result": "https://www.crossriver.com"
-  },
-  {
     "url": "https://www.facebook.com/crossriversocial",
     "result": 400
   },
@@ -17952,10 +17304,6 @@
     "result": 400
   },
   {
-    "url": "https://cryptoquantique.com",
-    "result": "https://www.cryptoquantique.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/cryptoforest",
     "result": 404
   },
@@ -18072,10 +17420,6 @@
     "result": 400
   },
   {
-    "url": "https://gocubic.io",
-    "result": "https://www.gocubic.io"
-  },
-  {
     "url": "https://cubus.co.il",
     "error": "fetch failed"
   },
@@ -18162,10 +17506,6 @@
   {
     "url": "https://www.linkedin.com/company/curical-technologies-ltd-",
     "result": 404
-  },
-  {
-    "url": "https://curiosity-robotics.com",
-    "result": "https://www.curiosity-robotics.com"
   },
   {
     "url": "https://www.linkedin.com/company/curiyo",
@@ -18328,10 +17668,6 @@
     "result": 400
   },
   {
-    "url": "https://cyberit.co.il",
-    "result": "https://www.cyberit.co.il"
-  },
-  {
     "url": "https://www.linkedin.com/company/28158868",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F28158868"
   },
@@ -18364,10 +17700,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://cyberark.com",
-    "result": "https://www.cyberark.com"
-  },
-  {
     "url": "https://www.facebook.com/CyberArk",
     "result": 400
   },
@@ -18386,10 +17718,6 @@
   {
     "url": "https://www.facebook.com/AutonomousTraining",
     "result": 400
-  },
-  {
-    "url": "https://cybereason.com",
-    "result": "https://www.cybereason.com"
   },
   {
     "url": "https://www.facebook.com/Cybereason",
@@ -18426,10 +17754,6 @@
   {
     "url": "https://www.facebook.com/CybergymIEC",
     "result": 400
-  },
-  {
-    "url": "https://cyberillium.com",
-    "result": "https://www.cyberillium.com"
   },
   {
     "url": "https://www.facebook.com/Cyberint",
@@ -18576,10 +17900,6 @@
     "result": 400
   },
   {
-    "url": "https://cyclops.security",
-    "result": "https://www.cyclops.security"
-  },
-  {
     "url": "https://cycode.com",
     "result": 522
   },
@@ -18628,10 +17948,6 @@
     "result": 400
   },
   {
-    "url": "https://cyfluencer.com",
-    "result": "https://www.cyfluencer.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/cyfox-cybersecurity/mycompany",
     "result": "https://www.linkedin.com/company/cyfox-cybersecurity"
   },
@@ -18674,10 +17990,6 @@
   {
     "url": "https://www.facebook.com/cymbiotcc",
     "result": 400
-  },
-  {
-    "url": "https://cymotive.com",
-    "result": "https://www.cymotive.com"
   },
   {
     "url": "https://www.facebook.com/CYMOTIVE",
@@ -18778,10 +18090,6 @@
   {
     "url": "https://www.linkedin.com/company/385874",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F385874"
-  },
-  {
-    "url": "https://cysrc.com",
-    "result": "https://www.cysrc.com"
   },
   {
     "url": "https://www.linkedin.com/company/cysource/about",
@@ -19112,14 +18420,6 @@
     "result": 400
   },
   {
-    "url": "https://danyel.co.il",
-    "result": "https://www.danyel.co.il"
-  },
-  {
-    "url": "https://danzigeronline.com",
-    "result": "https://www.danzigeronline.com"
-  },
-  {
     "url": "https://www.facebook.com/Danziger.CutFlowers",
     "result": 400
   },
@@ -19188,16 +18488,8 @@
     "result": 400
   },
   {
-    "url": "https://darplast.com",
-    "result": "https://www.darplast.com"
-  },
-  {
     "url": "https://www.facebook.com/DR.PLAST",
     "result": 400
-  },
-  {
-    "url": "https://darrow.ai",
-    "result": "https://www.darrow.ai"
   },
   {
     "url": "https://www.darulabs.com",
@@ -19360,10 +18652,6 @@
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F2903540"
   },
   {
-    "url": "https://dataworks.co.il",
-    "result": "https://www.dataworks.co.il"
-  },
-  {
     "url": "https://www.facebook.com/profile.php?id=100063945643868",
     "result": 400
   },
@@ -19426,10 +18714,6 @@
   {
     "url": "https://datum-orthobiologics.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://datumate.com",
-    "result": "https://www.datumate.com"
   },
   {
     "url": "https://www.facebook.com/datumate",
@@ -19796,10 +19080,6 @@
     "result": "http://ww25.deep-health.co/?subid1=20250529-2153-46cc-ae06-57e34abfd279"
   },
   {
-    "url": "https://deepoptics.com",
-    "result": "https://www.deepoptics.com"
-  },
-  {
     "url": "https://www.facebook.com/32Neyewear",
     "result": 400
   },
@@ -19818,10 +19098,6 @@
   {
     "url": "https://deepcure.ai",
     "result": "https://deepcure.com"
-  },
-  {
-    "url": "https://deepdrive.tech",
-    "result": "https://www.deepdrive.tech"
   },
   {
     "url": "https://www.facebook.com/deepdub.ai.company",
@@ -19844,10 +19120,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://deepscenario.com",
-    "result": "https://www.deepscenario.com"
-  },
-  {
     "url": "https://www.facebook.com/Mia.deepTalk",
     "result": 400
   },
@@ -19858,10 +19130,6 @@
   {
     "url": "https://www.facebook.com/deepvoice.whale.research",
     "result": 400
-  },
-  {
-    "url": "https://defencecore.com",
-    "result": "https://www.defencecore.com"
   },
   {
     "url": "https://www.defensoft.com",
@@ -19882,10 +19150,6 @@
   {
     "url": "https://www.linkedin.com/company-beta/2566820",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany-beta%2F2566820"
-  },
-  {
-    "url": "https://definity.ai",
-    "result": "https://www.definity.ai"
   },
   {
     "url": "https://www.facebook.com/DeganiaMedical",
@@ -20008,10 +19272,6 @@
     "result": 404
   },
   {
-    "url": "https://denommeeplumbing.com",
-    "result": "https://www.denommeeplumbing.com"
-  },
-  {
     "url": "https://www.facebook.com/DenommeePlumbingHeatingInc",
     "result": 400
   },
@@ -20072,10 +19332,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://dermafence.com",
-    "result": "https://www.dermafence.com"
-  },
-  {
     "url": "https://www.facebook.com/Dermazor.il",
     "result": 400
   },
@@ -20090,10 +19346,6 @@
   {
     "url": "https://www.linkedin.com/company/desalitech-ltd",
     "result": 404
-  },
-  {
-    "url": "https://descope.com",
-    "result": "https://www.descope.com"
   },
   {
     "url": "https://www.facebook.com/descopeinc",
@@ -20118,10 +19370,6 @@
   {
     "url": "https://www.linkedin.com/company/designart-networks",
     "result": 404
-  },
-  {
-    "url": "https://deskfirst.com",
-    "result": "https://www.deskfirst.com"
   },
   {
     "url": "https://www.deskforce.com",
@@ -20168,10 +19416,6 @@
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F4987595"
   },
   {
-    "url": "https://detelix.com",
-    "result": "https://www.detelix.com"
-  },
-  {
     "url": "https://devarchitects.business.site",
     "result": 404
   },
@@ -20206,10 +19450,6 @@
   {
     "url": "https://www.facebook.com/DeviceTotal",
     "result": 400
-  },
-  {
-    "url": "https://devocean.security",
-    "result": "https://www.devocean.security"
   },
   {
     "url": "https://www.devsense.co.il",
@@ -20440,10 +19680,6 @@
     "result": 404
   },
   {
-    "url": "https://linkedin.com/company/dlbnigeria",
-    "result": "https://www.linkedin.com/company/dlbnigeria"
-  },
-  {
     "url": "https://www.facebook.com/digitalmosesagency",
     "result": 400
   },
@@ -20508,10 +19744,6 @@
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F6142779"
   },
   {
-    "url": "https://diligent.com",
-    "result": "https://www.diligent.com"
-  },
-  {
     "url": "https://www.facebook.com/diligentcorporation",
     "result": 400
   },
@@ -20526,10 +19758,6 @@
   {
     "url": "https://dimentor.com/sb",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://dimerhealth.com",
-    "result": "https://www.dimerhealth.com"
   },
   {
     "url": "https://www.facebook.com/DIMERHEALTH",
@@ -20582,10 +19810,6 @@
   {
     "url": "https://diplomat.co.il",
     "result": "https://www.diplomat.co.il/he"
-  },
-  {
-    "url": "https://dipole-ltd.com",
-    "result": "https://www.dipole-ltd.com"
   },
   {
     "url": "https://www.dip-see.com",
@@ -20696,10 +19920,6 @@
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F10331706"
   },
   {
-    "url": "https://ditatoo.com",
-    "result": "https://www.ditatoo.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/1303771",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F1303771"
   },
@@ -20778,10 +19998,6 @@
   {
     "url": "https://apps.facebook.com/best_casino",
     "result": 400
-  },
-  {
-    "url": "https://dln.co.il",
-    "result": "https://www.dln.co.il"
   },
   {
     "url": "https://www.dlt360consulting.com",
@@ -20950,10 +20166,6 @@
   {
     "url": "https://www.docustar.co.il",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://dofinity.com",
-    "result": "https://www.dofinity.com"
   },
   {
     "url": "https://www.facebook.com/dofinity",
@@ -21272,10 +20484,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://dc-ts.com",
-    "result": "https://www.dc-ts.com"
-  },
-  {
     "url": "https://www.facebook.com/Double-Check-Thermal-Solutions-133253736831476",
     "result": 400
   },
@@ -21396,14 +20604,6 @@
     "result": 400
   },
   {
-    "url": "https://draftboard.com",
-    "result": "https://www.draftboard.com"
-  },
-  {
-    "url": "https://draftt.io",
-    "result": "https://www.draftt.io"
-  },
-  {
     "url": "https://x.com/draftt_io",
     "result": 400
   },
@@ -21414,10 +20614,6 @@
   {
     "url": "https://www.dragonera.com",
     "result": 522
-  },
-  {
-    "url": "https://dragonflydb.io",
-    "result": "https://www.dragonflydb.io"
   },
   {
     "url": "https://www.dragonplay.com",
@@ -21648,10 +20844,6 @@
     "result": "https://www.droxi.ai"
   },
   {
-    "url": "https://drp.co.il",
-    "result": "https://www.drp.co.il"
-  },
-  {
     "url": "https://www.facebook.com/drp.internet",
     "result": 400
   },
@@ -21720,10 +20912,6 @@
     "result": 400
   },
   {
-    "url": "https://duedealisense.com",
-    "result": "https://www.duedealisense.com"
-  },
-  {
     "url": "https://www.duedo.com",
     "error": "fetch failed"
   },
@@ -21738,10 +20926,6 @@
   {
     "url": "https://www.facebook.com/duetoAI",
     "result": 400
-  },
-  {
-    "url": "https://duetti.co",
-    "result": "https://www.duetti.co"
   },
   {
     "url": "https://duffer-hackers.business.site",
@@ -21778,10 +20962,6 @@
   {
     "url": "https://www.facebook.com/dungbeRecycle",
     "result": 400
-  },
-  {
-    "url": "https://dunietz.co.il",
-    "result": "https://www.dunietz.co.il"
   },
   {
     "url": "https://www.facebook.com/%D7%90%D7%97%D7%99%D7%9D-%D7%93%D7%95%D7%A0%D7%99%D7%A5-%D7%91%D7%A0%D7%99%D7%94-%D7%A4%D7%99%D7%AA%D7%95%D7%97-%D7%95%D7%99%D7%96%D7%9E%D7%95%D7%AA-Dunietz-105322930808530",
@@ -21886,10 +21066,6 @@
   {
     "url": "https://www.facebook.com/DynamicYield",
     "result": 400
-  },
-  {
-    "url": "https://dynami-cam.com",
-    "result": "https://www.dynami-cam.com"
   },
   {
     "url": "https://www.facebook.com/dynamicamsystem",
@@ -22072,10 +21248,6 @@
     "result": 400
   },
   {
-    "url": "https://easychannel.com",
-    "result": "https://www.easychannel.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/easychannel/about",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Feasychannel%2Fabout"
   },
@@ -22110,10 +21282,6 @@
   {
     "url": "https://www.facebook.com/easywed",
     "result": 400
-  },
-  {
-    "url": "https://eatnfit.co.il",
-    "result": "https://www.eatnfit.co.il"
   },
   {
     "url": "https://www.facebook.com/eatnfitisrael",
@@ -22202,10 +21370,6 @@
   {
     "url": "https://www.facebook.com/ecitelecom",
     "result": 400
-  },
-  {
-    "url": "https://eclipsefi.io",
-    "result": "https://www.eclipsefi.io"
   },
   {
     "url": "https://ecocamp.us",
@@ -22428,10 +21592,6 @@
     "result": "https://x.com/ednapasher"
   },
   {
-    "url": "https://edocate.com",
-    "result": "https://www.edocate.com"
-  },
-  {
     "url": "https://www.facebook.com/Edomcosmetics",
     "result": 400
   },
@@ -22568,10 +21728,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://joinehouse.com",
-    "result": "https://www.joinehouse.com"
-  },
-  {
     "url": "https://www.facebook.com/ehouse.space",
     "result": 400
   },
@@ -22650,10 +21806,6 @@
   {
     "url": "https://www.linkedin.com/company/eitan",
     "result": 404
-  },
-  {
-    "url": "https://ipest.co.il",
-    "result": "https://www.ipest.co.il"
   },
   {
     "url": "https://www.facebook.com/profile.php?id=100040885695813",
@@ -22748,10 +21900,6 @@
     "result": "https://www.exosens.com/brands/el-mul"
   },
   {
-    "url": "https://elapharma.com",
-    "result": "https://www.elapharma.com"
-  },
-  {
     "url": "https://www.linkedin.com/school/netcraftacademy",
     "result": 999
   },
@@ -22786,10 +21934,6 @@
   {
     "url": "https://www.evs.co.il",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://elcam3d.com",
-    "result": "https://www.elcam3d.com"
   },
   {
     "url": "https://www.facebook.com/profile.php?id=100044258659944&fref=ts",
@@ -22908,10 +22052,6 @@
     "result": 400
   },
   {
-    "url": "https://elektro.co.il",
-    "result": "https://www.elektro.co.il"
-  },
-  {
     "url": "https://www.linkedin.com/company/elektro-seo",
     "result": 404
   },
@@ -23018,10 +22158,6 @@
   {
     "url": "https://www.facebook.com/people/Elgarissy-Co/100054299330386",
     "result": 400
-  },
-  {
-    "url": "https://elgo.co.il",
-    "result": "https://www.elgo.co.il"
   },
   {
     "url": "https://zakon.co.il",
@@ -23172,10 +22308,6 @@
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F2754812"
   },
   {
-    "url": "https://elpc-networks.co.il",
-    "result": "https://www.elpc-networks.co.il"
-  },
-  {
     "url": "https://www.linkedin.com/company/elpcnetworks",
     "result": "https://il.linkedin.com/company/elpcnetworksltd"
   },
@@ -23258,10 +22390,6 @@
   {
     "url": "https://eltivu.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://elul.com/slider1/elul-technologies-ltd",
-    "result": "https://www.elul.com/slider1/elul-technologies-ltd"
   },
   {
     "url": "https://www.linkedin.com/company/elv8",
@@ -23366,10 +22494,6 @@
   {
     "url": "https://www.facebook.com/getemerj",
     "result": 400
-  },
-  {
-    "url": "https://emet.co.il",
-    "result": "https://www.emet.co.il"
   },
   {
     "url": "https://www.facebook.com/EM-Computing-Ltd-%D7%90%D7%9E%D7%AA-%D7%9E%D7%99%D7%97%D7%A9%D7%95%D7%91-%D7%91%D7%A2%D7%9E-118384071515703",
@@ -23696,10 +22820,6 @@
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F6368236"
   },
   {
-    "url": "https://enova.co.il",
-    "result": "https://www.enova.co.il"
-  },
-  {
     "url": "https://www.facebook.com/ForYourFirm",
     "result": 400
   },
@@ -23722,10 +22842,6 @@
   {
     "url": "https://www.facebook.com/ensilo",
     "result": 400
-  },
-  {
-    "url": "https://enso.bot",
-    "result": "https://www.enso.bot"
   },
   {
     "url": "https://www.enso.security",
@@ -23776,10 +22892,6 @@
     "result": 400
   },
   {
-    "url": "https://entitle.io",
-    "result": "https://www.entitle.io"
-  },
-  {
     "url": "https://www.facebook.com/profile.php?id=100088554567692",
     "result": 400
   },
@@ -23804,20 +22916,12 @@
     "result": 400
   },
   {
-    "url": "https://entrio.io",
-    "result": "https://www.entrio.io"
-  },
-  {
     "url": "https://www.linkedin.com/company/entro-security",
     "result": "https://www.linkedin.com/company/entro-security-non-human-identities"
   },
   {
     "url": "https://www.facebook.com/entropy.co.il",
     "result": 400
-  },
-  {
-    "url": "https://entrypoint.co.il",
-    "result": "https://www.entrypoint.co.il"
   },
   {
     "url": "https://www.facebook.com/entrypoint.systems",
@@ -23910,10 +23014,6 @@
   {
     "url": "https://www.eo-technologies.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://eon.io",
-    "result": "https://www.eon.io"
   },
   {
     "url": "https://www.linkedin.com/company/epaper-ltd---print-management-solutions-software-&-hardware/about",
@@ -24096,10 +23196,6 @@
     "result": 400
   },
   {
-    "url": "https://eran.org.il",
-    "result": "https://www.eran.org.il"
-  },
-  {
     "url": "https://www.linkedin.com/company/eran-emotional-first-aid-by-telephone-",
     "result": "https://il.linkedin.com/company/eran-emotional-first-aid"
   },
@@ -24162,10 +23258,6 @@
   {
     "url": "https://www.facebook.com/ErlichPhotography",
     "result": 400
-  },
-  {
-    "url": "https://ermtelematics.com",
-    "result": "https://www.ermtelematics.com"
   },
   {
     "url": "https://www.linkedin.com/company/erm-electronic-systems",
@@ -24276,10 +23368,6 @@
     "result": 400
   },
   {
-    "url": "https://eshet.com",
-    "result": "https://www.eshet.com"
-  },
-  {
     "url": "https://www.facebook.com/Eshet.Tours",
     "result": 400
   },
@@ -24350,10 +23438,6 @@
   {
     "url": "https://www.facebook.com/EsrCyber",
     "result": 400
-  },
-  {
-    "url": "https://essence-grp.com",
-    "result": "https://www.essence-grp.com"
   },
   {
     "url": "https://www.facebook.com/essencegrp",
@@ -24764,20 +23848,12 @@
     "result": 400
   },
   {
-    "url": "https://everads-therapy.com",
-    "result": "https://www.everads-therapy.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/everads-therapy/about",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Feverads-therapy%2Fabout"
   },
   {
     "url": "https://www.facebook.com/everafterai",
     "result": 400
-  },
-  {
-    "url": "https://everc.com",
-    "result": "https://www.everc.com"
   },
   {
     "url": "https://www.facebook.com/EverCTeam",
@@ -24802,10 +23878,6 @@
   {
     "url": "https://www.facebook.com/everestsearchpartners/info?tab=page_info",
     "result": 400
-  },
-  {
-    "url": "https://everflow.global",
-    "result": "https://www.everflow.global"
   },
   {
     "url": "https://www.linkedin.com/company/18967213/admin",
@@ -24872,10 +23944,6 @@
     "result": 400
   },
   {
-    "url": "https://everysight.com",
-    "result": "https://www.everysight.com"
-  },
-  {
     "url": "https://www.linkedin.com/company-beta/9495827",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany-beta%2F9495827"
   },
@@ -24902,10 +23970,6 @@
   {
     "url": "https://www.facebook.com/EverythingMe",
     "result": 400
-  },
-  {
-    "url": "https://evigence.com",
-    "result": "https://www.evigence.com"
   },
   {
     "url": "https://www.facebook.com/EvigenceSensors",
@@ -25018,10 +24082,6 @@
   {
     "url": "https://www.facebook.com/profile.php?id=100063841871757",
     "result": 400
-  },
-  {
-    "url": "https://ewise.co.il",
-    "result": "https://www.ewise.co.il"
   },
   {
     "url": "https://www.facebook.com/IMewise",
@@ -25312,10 +24372,6 @@
     "result": 400
   },
   {
-    "url": "https://expert.co.il",
-    "result": "https://www.expert.co.il"
-  },
-  {
     "url": "https://www.facebook.com/EXPERT.CO.IL",
     "result": 400
   },
@@ -25356,16 +24412,8 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://explo.co",
-    "result": "https://www.explo.co"
-  },
-  {
     "url": "https://exploreventures.co.il/en",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://explorium.ai",
-    "result": "https://www.explorium.ai"
   },
   {
     "url": "https://www.facebook.com/exploriumai",
@@ -25422,10 +24470,6 @@
   {
     "url": "https://www.linkedin.com/company/exsiliotx",
     "result": "https://www.linkedin.com/company/avernatx"
-  },
-  {
-    "url": "https://exsitu.co.il",
-    "result": "https://www.exsitu.co.il"
   },
   {
     "url": "https://www.facebook.com/Exsitu.israel",
@@ -25522,10 +24566,6 @@
   {
     "url": "https://www.facebook.com/pages/Eyecam/112310188858475",
     "result": 400
-  },
-  {
-    "url": "https://eyecan.tech",
-    "result": "https://www.eyecan.tech"
   },
   {
     "url": "https://www.facebook.com/eyeconapp",
@@ -25752,18 +24792,6 @@
     "result": 400
   },
   {
-    "url": "https://getfabric.com",
-    "result": "https://www.getfabric.com"
-  },
-  {
-    "url": "https://getfabric.com",
-    "result": "https://www.getfabric.com"
-  },
-  {
-    "url": "https://linkedin.com/company/fabriclogistics",
-    "result": "https://www.linkedin.com/company/fabriclogistics"
-  },
-  {
     "url": "https://www.facebook.com/peopleoffabric",
     "result": 400
   },
@@ -25812,10 +24840,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://grantthornton.co.il",
-    "result": "https://www.grantthornton.co.il"
-  },
-  {
     "url": "https://www.facebook.com/fahnkanne",
     "result": 400
   },
@@ -25838,10 +24862,6 @@
   {
     "url": "https://www.linkedin.com/mwlite/company/fairgen",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Forganization-guest%2Fmwlite%2Fcompany%2Ffairgen"
-  },
-  {
-    "url": "https://fairmatic.com",
-    "result": "https://www.fairmatic.com"
   },
   {
     "url": "https://www.facebook.com/fairmatic",
@@ -26260,10 +25280,6 @@
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Ffeel-right%2Fabout"
   },
   {
-    "url": "https://feelhome.co.il",
-    "result": "https://www.feelhome.co.il"
-  },
-  {
     "url": "https://www.facebook.com/feelhome.co.il",
     "result": 400
   },
@@ -26274,10 +25290,6 @@
   {
     "url": "https://www.facebook.com/FeelterSystems?fref=ts",
     "result": 400
-  },
-  {
-    "url": "https://feelthere.live",
-    "result": "https://www.feelthere.live"
   },
   {
     "url": "https://www.facebook.com/FeelThere.Live",
@@ -26332,10 +25344,6 @@
     "result": 403
   },
   {
-    "url": "https://femselect.com",
-    "result": "https://www.femselect.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/pop-medical-solutions",
     "result": "https://il.linkedin.com/company/femselect"
   },
@@ -26366,10 +25374,6 @@
   {
     "url": "https://www.ferit.co.il",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://fermata.tech",
-    "result": "https://www.fermata.tech"
   },
   {
     "url": "https://www.facebook.com/FermataTechnology",
@@ -26410,10 +25414,6 @@
   {
     "url": "https://www.facebook.com/fetchmyhome",
     "result": 400
-  },
-  {
-    "url": "https://fetcherr.io",
-    "result": "https://www.fetcherr.io"
   },
   {
     "url": "https://shipwithfetchy.com",
@@ -26800,10 +25800,6 @@
     "result": "http://www.finout.io"
   },
   {
-    "url": "https://linkedin.com/company/finout-io",
-    "result": "https://www.linkedin.com/company/finout-io"
-  },
-  {
     "url": "https://www.facebook.com/finqai",
     "result": 400
   },
@@ -26828,10 +25824,6 @@
     "result": 404
   },
   {
-    "url": "https://fintastic.ai",
-    "result": "https://www.fintastic.ai"
-  },
-  {
     "url": "https://www.linkedin.com/company-beta/17925795",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany-beta%2F17925795"
   },
@@ -26848,16 +25840,8 @@
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany-beta%2F17949976"
   },
   {
-    "url": "https://fintek.co.il",
-    "result": "https://www.fintek.co.il"
-  },
-  {
     "url": "https://www.facebook.com/FintekDigital",
     "result": 400
-  },
-  {
-    "url": "https://finupp.com",
-    "result": "https://www.finupp.com"
   },
   {
     "url": "https://www.facebook.com/finupppage",
@@ -26866,10 +25850,6 @@
   {
     "url": "https://www.linkedin.com/company/%E6%8B%8D%E6%8B%8D%E8%B4%B7",
     "result": "https://cn.linkedin.com/company/%E4%BF%A1%E4%B9%9F%E7%A7%91%E6%8A%80"
-  },
-  {
-    "url": "https://finyx.io",
-    "result": "https://www.finyx.io"
   },
   {
     "url": "https://www.finzor.com",
@@ -26906,14 +25886,6 @@
   {
     "url": "https://www.facebook.com/FireblocksHQ",
     "result": 400
-  },
-  {
-    "url": "https://firebolt.io",
-    "result": "https://www.firebolt.io"
-  },
-  {
-    "url": "https://firefly.ai",
-    "result": "https://www.firefly.ai"
   },
   {
     "url": "https://fire.glass",
@@ -27176,10 +26148,6 @@
     "result": 400
   },
   {
-    "url": "https://fiverr.com",
-    "result": "https://www.fiverr.com"
-  },
-  {
     "url": "https://www.facebook.com/Fiverr",
     "result": 400
   },
@@ -27262,10 +26230,6 @@
   {
     "url": "https://www.flatspace.xyz",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://flatworld.co",
-    "result": "https://www.flatworld.co"
   },
   {
     "url": "https://www.facebook.com/FlatWorldCo",
@@ -27424,10 +26388,6 @@
     "result": 400
   },
   {
-    "url": "https://flometrica.co.il",
-    "result": "https://www.flometrica.co.il"
-  },
-  {
     "url": "https://www.joinfloodlight.com",
     "result": 404
   },
@@ -27490,10 +26450,6 @@
   {
     "url": "https://x.com/flycotech",
     "result": 400
-  },
-  {
-    "url": "https://flying-cargo.com",
-    "result": "https://www.flying-cargo.com"
   },
   {
     "url": "https://www.linkedin.com/company-beta/10590861",
@@ -27598,10 +26554,6 @@
   {
     "url": "https://www.facebook.com/FogelIP",
     "result": 400
-  },
-  {
-    "url": "https://foliage.dev",
-    "result": "https://www.foliage.dev"
   },
   {
     "url": "https://foliist.com",
@@ -27852,20 +26804,12 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://forseafoods.com",
-    "result": "https://www.forseafoods.com"
-  },
-  {
     "url": "https://forttriumph.com",
     "error": "fetch failed"
   },
   {
     "url": "https://www.facebook.com/FortTriumph",
     "result": 400
-  },
-  {
-    "url": "https://forte.io",
-    "result": "https://www.forte.io"
   },
   {
     "url": "https://www.linkedin.com/company/forteplatform",
@@ -27878,10 +26822,6 @@
   {
     "url": "https://fortephest.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://forter.com",
-    "result": "https://www.forter.com"
   },
   {
     "url": "https://www.facebook.com/globalforter",
@@ -28006,10 +26946,6 @@
   {
     "url": "https://www.frankmobileapp.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://frateit.com",
-    "result": "https://www.frateit.com"
   },
   {
     "url": "https://www.facebook.com/FRATEIT",
@@ -28280,10 +27216,6 @@
     "result": 400
   },
   {
-    "url": "https://frontitude.com",
-    "result": "https://www.frontitude.com"
-  },
-  {
     "url": "https://www.facebook.com/frontitude",
     "result": 400
   },
@@ -28416,10 +27348,6 @@
     "result": 400
   },
   {
-    "url": "https://fullpath.com",
-    "result": "https://www.fullpath.com"
-  },
-  {
     "url": "https://www.facebook.com/fullpathcdxp",
     "result": 400
   },
@@ -28462,10 +27390,6 @@
   {
     "url": "https://x.com/fundercoil?",
     "result": "https://x.com/fundercoil"
-  },
-  {
-    "url": "https://fundguard.com",
-    "result": "https://www.fundguard.com"
   },
   {
     "url": "https://www.facebook.com/pg/FundGuardPlatform",
@@ -28528,10 +27452,6 @@
     "result": 404
   },
   {
-    "url": "https://fuseautotech.com",
-    "result": "https://www.fuseautotech.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/71402078/admin",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F71402078%2Fadmin"
   },
@@ -28566,10 +27486,6 @@
   {
     "url": "https://www.fusionpartners.co",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://linkedin.com/company/futura-genetics",
-    "result": "https://www.linkedin.com/company/futura-genetics"
   },
   {
     "url": "https://www.facebook.com/futuragenetics",
@@ -28652,10 +27568,6 @@
     "result": 400
   },
   {
-    "url": "https://g-med.com",
-    "result": "https://www.g-med.com"
-  },
-  {
     "url": "https://www.facebook.com/GMedPhysicians",
     "result": 400
   },
@@ -28682,10 +27594,6 @@
   {
     "url": "https://www.willi-food.co.il",
     "result": 403
-  },
-  {
-    "url": "https://ggds.co.il",
-    "result": "https://www.ggds.co.il"
   },
   {
     "url": "https://www.facebook.com/ggds.co.il",
@@ -28930,10 +27838,6 @@
   {
     "url": "https://www.facebook.com/GaliLeasingcars",
     "result": 400
-  },
-  {
-    "url": "https://galialahav.com/en",
-    "result": "https://www.galialahav.com/en"
   },
   {
     "url": "https://www.facebook.com/galialahavdesigns",
@@ -29196,10 +28100,6 @@
     "result": 400
   },
   {
-    "url": "https://globalgtl.com",
-    "result": "https://www.globalgtl.com"
-  },
-  {
     "url": "https://www.facebook.com/profile.php?id=100063715133092",
     "result": 400
   },
@@ -29238,10 +28138,6 @@
   {
     "url": "https://www.gatfoods.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://sellgauge.com",
-    "result": "https://www.sellgauge.com"
   },
   {
     "url": "https://www.linkedin.com/company/gaugeautomotive",
@@ -29484,10 +28380,6 @@
     "result": 404
   },
   {
-    "url": "https://gengalactic.com",
-    "result": "https://www.gengalactic.com"
-  },
-  {
     "url": "https://www.generkal.co.il",
     "error": "fetch failed"
   },
@@ -29598,10 +28490,6 @@
   {
     "url": "https://www.facebook.com/mygenieo",
     "result": 400
-  },
-  {
-    "url": "https://genio.co.il",
-    "result": "https://www.genio.co.il"
   },
   {
     "url": "https://www.facebook.com/genio.co.il",
@@ -29790,10 +28678,6 @@
   {
     "url": "https://www.facebook.com/gethelpisrael",
     "result": 400
-  },
-  {
-    "url": "https://getsat.com",
-    "result": "https://www.getsat.com"
   },
   {
     "url": "https://get-service.co.il",
@@ -30196,10 +29080,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://ginosaragro.com",
-    "result": "https://www.ginosaragro.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/ginosar-agro/about",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fginosar-agro%2Fabout"
   },
@@ -30216,10 +29096,6 @@
     "result": 400
   },
   {
-    "url": "https://giraffic.com",
-    "result": "https://www.giraffic.com"
-  },
-  {
     "url": "https://www.girit-tech.com",
     "result": "https://girit.biz"
   },
@@ -30230,10 +29106,6 @@
   {
     "url": "https://www.facebook.com/www.gishashona.co.il",
     "result": 400
-  },
-  {
-    "url": "https://giskard.ai",
-    "result": "https://www.giskard.ai"
   },
   {
     "url": "https://www.gistit.co",
@@ -30484,10 +29356,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://global-medical.com",
-    "result": "https://www.global-medical.com"
-  },
-  {
     "url": "https://www.facebook.com/GlobalMedicalOrganization",
     "result": 400
   },
@@ -30614,10 +29482,6 @@
   {
     "url": "https://www.facebook.com/globrands-ltd-209637719075406",
     "result": 400
-  },
-  {
-    "url": "https://globusmarketing.net",
-    "result": "https://www.globusmarketing.net"
   },
   {
     "url": "https://www.facebook.com/globus.translations",
@@ -30964,10 +29828,6 @@
     "result": 400
   },
   {
-    "url": "https://golfgroup.co.il",
-    "result": "https://www.golfgroup.co.il"
-  },
-  {
     "url": "https://www.facebook.com/golf.il",
     "result": 400
   },
@@ -30998,10 +29858,6 @@
   {
     "url": "https://www.facebook.com/GoMobile3",
     "result": 400
-  },
-  {
-    "url": "https://gong.io",
-    "result": "https://www.gong.io"
   },
   {
     "url": "https://www.facebook.com/To.GongIO",
@@ -31126,10 +29982,6 @@
   {
     "url": "https://www.facebook.com/GordonToursIsrael",
     "result": 400
-  },
-  {
-    "url": "https://goren-kidon.com",
-    "result": "https://www.goren-kidon.com"
   },
   {
     "url": "https://www.gorillaplay.com",
@@ -31334,10 +30186,6 @@
   {
     "url": "https://www.facebook.com/GraphiTech-1251305361551854",
     "result": 400
-  },
-  {
-    "url": "https://graphiti.ai",
-    "result": "https://www.graphiti.ai"
   },
   {
     "url": "https://www.grappigis.com",
@@ -31628,16 +30476,8 @@
     "result": "http://www.grid4c.com"
   },
   {
-    "url": "https://griiip.com",
-    "result": "https://www.griiip.com"
-  },
-  {
     "url": "https://www.facebook.com/GriiipAdrenaline",
     "result": 400
-  },
-  {
-    "url": "https://get-grin.com",
-    "result": "https://www.get-grin.com"
   },
   {
     "url": "https://www.facebook.com/getgrinortho",
@@ -31650,10 +30490,6 @@
   {
     "url": "https://www.facebook.com/gritmind",
     "result": 400
-  },
-  {
-    "url": "https://grivo.co.il",
-    "result": "https://www.grivo.co.il"
   },
   {
     "url": "https://www.groboot.com",
@@ -31748,10 +30584,6 @@
     "result": 400
   },
   {
-    "url": "https://growfishanywhere.com",
-    "result": "https://www.growfishanywhere.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/grow-fish-anywhere-gfa-ltd-",
     "result": 404
   },
@@ -31786,10 +30618,6 @@
   {
     "url": "https://www.linkedin.com/company/growor",
     "result": "https://il.linkedin.com/company/groworinc"
-  },
-  {
-    "url": "https://growthspace.com",
-    "result": "https://www.growthspace.com"
   },
   {
     "url": "https://www.facebook.com/GrowthSpace.us",
@@ -32256,10 +31084,6 @@
     "result": 400
   },
   {
-    "url": "https://hagarin.co.il",
-    "result": "https://www.hagarin.co.il"
-  },
-  {
     "url": "https://www.facebook.com/hagarin.ltd?mibextid=LQQJ4d",
     "result": 400
   },
@@ -32334,10 +31158,6 @@
   {
     "url": "https://www.hallo.co.il",
     "result": "https://015.co.il"
-  },
-  {
-    "url": "https://hallura.com",
-    "result": "https://www.hallura.com"
   },
   {
     "url": "https://halmanaldubi.com",
@@ -32436,10 +31256,6 @@
     "result": 400
   },
   {
-    "url": "https://hamutzim.co.il",
-    "result": "https://www.hamutzim.co.il"
-  },
-  {
     "url": "https://www.linkedin.com/company/1240299",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F1240299"
   },
@@ -32492,10 +31308,6 @@
     "result": 400
   },
   {
-    "url": "https://hansabiopharma.com",
-    "result": "https://www.hansabiopharma.com"
-  },
-  {
     "url": "https://www.facebook.com/hansonil",
     "result": 400
   },
@@ -32546,10 +31358,6 @@
   {
     "url": "https://www.facebook.com/Happyintelaviv",
     "result": 400
-  },
-  {
-    "url": "https://happy-kidz.com",
-    "result": "https://www.happy-kidz.com"
   },
   {
     "url": "https://www.facebook.com/HappyKidz",
@@ -32706,10 +31514,6 @@
   {
     "url": "https://www.facebook.com/hasodstore",
     "result": 400
-  },
-  {
-    "url": "https://hasoub.org",
-    "result": "https://www.hasoub.org"
   },
   {
     "url": "https://www.linkedin.com/company/5340052",
@@ -32904,10 +31708,6 @@
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F10426078"
   },
   {
-    "url": "https://hear.ai",
-    "result": "https://www.hear.ai"
-  },
-  {
     "url": "https://x.com/home",
     "result": 400
   },
@@ -33038,10 +31838,6 @@
   {
     "url": "https://www.facebook.com/profile.php?id=61564949341674",
     "result": 400
-  },
-  {
-    "url": "https://hellometer.io",
-    "result": "https://www.hellometer.io"
   },
   {
     "url": "https://www.hellorented.com",
@@ -33224,10 +32020,6 @@
     "result": 404
   },
   {
-    "url": "https://hever.co.il",
-    "result": "https://www.hever.co.il"
-  },
-  {
     "url": "https://www.facebook.com/groups/havermi",
     "result": 400
   },
@@ -33250,10 +32042,6 @@
   {
     "url": "https://www.facebook.com/Hexadite",
     "result": 400
-  },
-  {
-    "url": "https://hexagate.com",
-    "result": "https://www.hexagate.com"
   },
   {
     "url": "https://www.hexalock.com",
@@ -33416,10 +32204,6 @@
     "result": 400
   },
   {
-    "url": "https://highnetsystems.com",
-    "result": "https://www.highnetsystems.com"
-  },
-  {
     "url": "https://www.linkedin.com/company-beta/1043358",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany-beta%2F1043358"
   },
@@ -33446,10 +32230,6 @@
   {
     "url": "https://www.facebook.com/GetHiGrade",
     "result": 400
-  },
-  {
-    "url": "https://hikari.co.il",
-    "result": "https://www.hikari.co.il"
   },
   {
     "url": "https://www.linkedin.com/company/hikari-laboratories/about",
@@ -33570,10 +32350,6 @@
   {
     "url": "https://www.facebook.com/hitechstrategies",
     "result": 400
-  },
-  {
-    "url": "https://htzone.co.il",
-    "result": "https://www.htzone.co.il"
   },
   {
     "url": "https://www.linkedin.com/company/hitech-zone-ltd.",
@@ -33848,10 +32624,6 @@
     "result": 400
   },
   {
-    "url": "https://honeybook.com",
-    "result": "https://www.honeybook.com"
-  },
-  {
     "url": "https://www.facebook.com/honeybook.co",
     "result": 400
   },
@@ -33886,10 +32658,6 @@
   {
     "url": "https://www.linkedin.com/company/hoopatwork.com",
     "result": 404
-  },
-  {
-    "url": "https://hoopo.tech",
-    "result": "https://www.hoopo.tech"
   },
   {
     "url": "https://www.facebook.com/hoopoSystems",
@@ -33938,10 +32706,6 @@
   {
     "url": "https://hornes-homestyle-catering.business.site",
     "result": 404
-  },
-  {
-    "url": "https://heu-law.com",
-    "result": "https://www.heu-law.com"
   },
   {
     "url": "https://www.facebook.com/heulaw",
@@ -34096,10 +32860,6 @@
     "result": 400
   },
   {
-    "url": "https://yambluecapital.com",
-    "result": "https://www.yambluecapital.com"
-  },
-  {
     "url": "https://www.hozelito.co.il",
     "error": "fetch failed"
   },
@@ -34202,14 +32962,6 @@
   {
     "url": "https://www.linkedin.com/company/1715578",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F1715578"
-  },
-  {
-    "url": "https://hsfinances.com",
-    "result": "https://www.hsfinances.com"
-  },
-  {
-    "url": "https://htbioimaging.com",
-    "result": "https://www.htbioimaging.com"
   },
   {
     "url": "https://www.linkedin.com/company/hubsecurityio",
@@ -34352,10 +33104,6 @@
     "result": 400
   },
   {
-    "url": "https://hutzpe.co.il",
-    "result": "https://www.hutzpe.co.il"
-  },
-  {
     "url": "https://www.facebook.com/hutzpe",
     "result": 400
   },
@@ -34440,20 +33188,12 @@
     "result": 400
   },
   {
-    "url": "https://hyper-robotics.com",
-    "result": "https://www.hyper-robotics.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/49121473/admin",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F49121473%2Fadmin"
   },
   {
     "url": "https://www.facebook.com/HyperFoodRobotics",
     "result": 400
-  },
-  {
-    "url": "https://hypertech.co.il",
-    "result": "https://www.hypertech.co.il"
   },
   {
     "url": "https://www.hyperbanner.net",
@@ -34466,10 +33206,6 @@
   {
     "url": "https://www.facebook.com/hypercoreai",
     "result": 400
-  },
-  {
-    "url": "https://hyperguest.com",
-    "result": "https://www.hyperguest.com"
   },
   {
     "url": "https://www.facebook.com/pages/Hypermedia-GSM-Gateway-SMS-Gateway",
@@ -34772,10 +33508,6 @@
     "result": "http://ww25.ibrainy.org/?subid1=20250529-2343-21cd-9d47-1f832da1cbd9"
   },
   {
-    "url": "https://ibrick-k.com",
-    "result": "https://www.ibrick-k.com"
-  },
-  {
     "url": "https://www.facebook.com/ibrick-112880743751809",
     "result": 400
   },
@@ -34832,10 +33564,6 @@
     "result": 400
   },
   {
-    "url": "https://icecure-medical.com",
-    "result": "https://www.icecure-medical.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/461122",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F461122"
   },
@@ -34850,10 +33578,6 @@
   {
     "url": "https://www.facebook.com/iCelebrateIsrael",
     "result": 400
-  },
-  {
-    "url": "https://iceq.co.il",
-    "result": "https://www.iceq.co.il"
   },
   {
     "url": "https://www.ichooseapp.com",
@@ -34886,10 +33610,6 @@
   {
     "url": "https://www.facebook.com/icl.cargo.logistics",
     "result": 400
-  },
-  {
-    "url": "https://icl-group.com",
-    "result": "https://www.icl-group.com"
   },
   {
     "url": "https://www.facebook.com/GROUPICL",
@@ -34974,10 +33694,6 @@
   {
     "url": "https://www.linkedin.com/company/5141804",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F5141804"
-  },
-  {
-    "url": "https://ictsandbox.com",
-    "result": "https://www.ictsandbox.com"
   },
   {
     "url": "https://www.facebook.com/ictbit",
@@ -35100,10 +33816,6 @@
     "result": 400
   },
   {
-    "url": "https://ideeza.com",
-    "result": "https://www.ideeza.com"
-  },
-  {
     "url": "https://www.facebook.com/makeideeza",
     "result": 400
   },
@@ -35114,10 +33826,6 @@
   {
     "url": "https://identick.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://linkedin.com/company/identick",
-    "result": "https://www.linkedin.com/company/identick"
   },
   {
     "url": "https://www.facebook.com/identiqprotocol",
@@ -35392,10 +34100,6 @@
     "result": 400
   },
   {
-    "url": "https://illumigyn.com",
-    "result": "https://www.illumigyn.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/286951",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F286951"
   },
@@ -35472,10 +34176,6 @@
     "result": 400
   },
   {
-    "url": "https://linkedin.com/company/imagene-ai",
-    "result": "https://www.linkedin.com/company/imagene-ai"
-  },
-  {
     "url": "https://www.imagenet.org.il",
     "error": "fetch failed"
   },
@@ -35486,10 +34186,6 @@
   {
     "url": "https://www.facebook.com/imagesatintl",
     "result": 400
-  },
-  {
-    "url": "https://imagineusa.com",
-    "result": "https://www.imagineusa.com"
   },
   {
     "url": "https://www.facebook.com/imaginecommscorp",
@@ -35544,10 +34240,6 @@
     "result": 400
   },
   {
-    "url": "https://imd-tec.com",
-    "result": "https://www.imd-tec.com"
-  },
-  {
     "url": "https://www.facebook.com/iMeasure-1889113318032870",
     "result": 400
   },
@@ -35582,10 +34274,6 @@
   {
     "url": "https://www.facebook.com/Img.Ads",
     "result": 400
-  },
-  {
-    "url": "https://imgix.com",
-    "result": "https://www.imgix.com"
   },
   {
     "url": "https://www.facebook.com/imgix",
@@ -35736,10 +34424,6 @@
     "result": 400
   },
   {
-    "url": "https://impact-networks.co.il",
-    "result": "https://www.impact-networks.co.il"
-  },
-  {
     "url": "https://www.facebook.com/ImpactNetworks",
     "result": 400
   },
@@ -35762,10 +34446,6 @@
   {
     "url": "https://www.facebook.com/ImperialBanking",
     "result": 400
-  },
-  {
-    "url": "https://imperva.com",
-    "result": "https://www.imperva.com"
   },
   {
     "url": "https://www.implant-b.com",
@@ -35880,20 +34560,12 @@
     "result": 400
   },
   {
-    "url": "https://in3d-tech.com",
-    "result": "https://www.in3d-tech.com"
-  },
-  {
     "url": "https://www.inaamed.co.il",
     "result": 403
   },
   {
     "url": "https://www.facebook.com/inaamed",
     "result": 400
-  },
-  {
-    "url": "https://inango.com",
-    "result": "https://www.inango.com"
   },
   {
     "url": "https://www.facebook.com/ChangeMat",
@@ -35942,10 +34614,6 @@
   {
     "url": "https://www.facebook.com/IncentivesSolutionsLtd",
     "result": 400
-  },
-  {
-    "url": "https://inceptionxr.com",
-    "result": "https://www.inceptionxr.com"
   },
   {
     "url": "https://www.linkedin.com/company/inception-xr",
@@ -36004,10 +34672,6 @@
     "result": 400
   },
   {
-    "url": "https://identiq.com",
-    "result": "https://www.identiq.com"
-  },
-  {
     "url": "https://www.indeni.com",
     "result": "http://indeni.com"
   },
@@ -36028,16 +34692,8 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://indietlv.com",
-    "result": "https://www.indietlv.com"
-  },
-  {
     "url": "https://www.facebook.com/groups/indietlv",
     "result": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2Findietlv"
-  },
-  {
-    "url": "https://indieflow.me",
-    "result": "https://www.indieflow.me"
   },
   {
     "url": "https://www.facebook.com/weareindieflow",
@@ -36304,10 +34960,6 @@
     "result": 400
   },
   {
-    "url": "https://infovere.com",
-    "result": "https://www.infovere.com"
-  },
-  {
     "url": "https://www.infrontcompliance.com",
     "error": "fetch failed"
   },
@@ -36330,10 +34982,6 @@
   {
     "url": "https://ingeo.io",
     "result": "https://hi88y.live"
-  },
-  {
-    "url": "https://ingrediome.com",
-    "result": "https://www.ingrediome.com"
   },
   {
     "url": "https://www.facebook.com/initechsoftware",
@@ -36408,10 +35056,6 @@
     "result": "https://www.nhaccodien.info"
   },
   {
-    "url": "https://linkedin.com/company/inner-circleio",
-    "result": "https://www.linkedin.com/company/inner-circleio"
-  },
-  {
     "url": "https://www.facebook.com/innercircleplatform",
     "result": 400
   },
@@ -36470,10 +35114,6 @@
   {
     "url": "https://www.innohale.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://innonation.io",
-    "result": "https://www.innonation.io"
   },
   {
     "url": "https://www.facebook.com/innonationio",
@@ -36748,20 +35388,8 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://insidepacket.com",
-    "result": "https://www.insidepacket.com"
-  },
-  {
-    "url": "https://insidetracker.com",
-    "result": "https://www.insidetracker.com"
-  },
-  {
     "url": "https://www.facebook.com/InsideTracker",
     "result": 400
-  },
-  {
-    "url": "https://insight-sparks.com",
-    "result": "https://www.insight-sparks.com"
   },
   {
     "url": "https://www.facebook.com/insightcat",
@@ -36778,10 +35406,6 @@
   {
     "url": "https://www.facebook.com/Insightera",
     "result": 400
-  },
-  {
-    "url": "https://insights.us",
-    "result": "https://www.insights.us"
   },
   {
     "url": "https://www.linkedin.com/company/insights-powering-collective-thi",
@@ -36900,10 +35524,6 @@
     "result": 400
   },
   {
-    "url": "https://intango.com",
-    "result": "https://www.intango.com"
-  },
-  {
     "url": "https://www.facebook.com/Intango-855010531283314",
     "result": 400
   },
@@ -36974,10 +35594,6 @@
   {
     "url": "https://www.linkedin.com/company/intelichain-labs/about",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fintelichain-labs%2Fabout"
-  },
-  {
-    "url": "https://inteligels.com",
-    "result": "https://www.inteligels.com"
   },
   {
     "url": "https://www.facebook.com/people/Inteligels/100063812751107",
@@ -37344,10 +35960,6 @@
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F406759"
   },
   {
-    "url": "https://inuitive-tech.com",
-    "result": "https://www.inuitive-tech.com"
-  },
-  {
     "url": "https://www.linkedin.com/company-beta/10252340",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany-beta%2F10252340"
   },
@@ -37358,10 +35970,6 @@
   {
     "url": "https://www.facebook.com/Invaya",
     "result": 400
-  },
-  {
-    "url": "https://invent.co.il",
-    "result": "https://www.invent.co.il"
   },
   {
     "url": "https://www.inventech.co.il",
@@ -37496,10 +36104,6 @@
     "result": 523
   },
   {
-    "url": "https://ionoterra.com",
-    "result": "https://www.ionoterra.com"
-  },
-  {
     "url": "https://www.facebook.com/ionoterra.eq",
     "result": 400
   },
@@ -37510,10 +36114,6 @@
   {
     "url": "https://www.facebook.com/pages/IOnRoad/225637417446324",
     "result": 400
-  },
-  {
-    "url": "https://ionsec.io",
-    "result": "https://www.ionsec.io"
   },
   {
     "url": "https://www.facebook.com/ionsec.io",
@@ -37792,10 +36392,6 @@
     "result": 404
   },
   {
-    "url": "https://island.io",
-    "result": "https://www.island.io"
-  },
-  {
     "url": "https://www.facebook.com/Islandio-103033632127708",
     "result": 400
   },
@@ -37818,10 +36414,6 @@
   {
     "url": "https://www.linkedin.com/company/isotopia-molecular-imaging-ltd",
     "result": "https://www.linkedin.com/company/isotopia-molecular-imaging"
-  },
-  {
-    "url": "https://ispal.net",
-    "result": "https://www.ispal.net"
   },
   {
     "url": "https://www.facebook.com/IsraHomeTours",
@@ -38280,10 +36872,6 @@
     "result": 400
   },
   {
-    "url": "https://iahlt.org",
-    "result": "https://www.iahlt.org"
-  },
-  {
     "url": "https://www.israelbar.org.il",
     "result": 403
   },
@@ -38306,10 +36894,6 @@
   {
     "url": "https://www.facebook.com/Israeli.Bookkeepers.Association",
     "result": 400
-  },
-  {
-    "url": "https://israelichildrensfund.org",
-    "result": "https://www.israelichildrensfund.org"
   },
   {
     "url": "https://www.facebook.com/israelichildrensfund",
@@ -38414,10 +36998,6 @@
   {
     "url": "https://www.facebook.com/isratourist",
     "result": 400
-  },
-  {
-    "url": "https://isratransfer.com",
-    "result": "https://www.isratransfer.com"
   },
   {
     "url": "https://www.facebook.com/pg/IsraTransfer/about",
@@ -38528,10 +37108,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://itfsgroup.com",
-    "result": "https://www.itfsgroup.com"
-  },
-  {
     "url": "https://www.facebook.com/databasesecure",
     "result": 400
   },
@@ -38554,10 +37130,6 @@
   {
     "url": "https://www.linkedin.com/company-beta/554862",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany-beta%2F554862"
-  },
-  {
-    "url": "https://ytong.co.il",
-    "result": "https://www.ytong.co.il"
   },
   {
     "url": "https://www.facebook.com/ytong.israel",
@@ -39100,10 +37672,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://linkedin.com/company/go-find-it-technologies",
-    "result": "https://www.linkedin.com/company/go-find-it-technologies"
-  },
-  {
     "url": "https://www.facebook.com/JETSIsraelLearning",
     "result": 400
   },
@@ -39168,10 +37736,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://jifiti.com",
-    "result": "https://www.jifiti.com"
-  },
-  {
     "url": "https://www.facebook.com/jifiti",
     "result": 400
   },
@@ -39194,10 +37758,6 @@
   {
     "url": "https://www.facebook.com/www.jika.io",
     "result": 400
-  },
-  {
-    "url": "https://linkedin.com/company/jiminihealth",
-    "result": "https://www.linkedin.com/company/jiminihealth"
   },
   {
     "url": "https://m.facebook.com/61554491237623",
@@ -39374,10 +37934,6 @@
   {
     "url": "https://www.linkedin.com/company/5232448",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F5232448"
-  },
-  {
-    "url": "https://joinweb.co.il",
-    "result": "https://www.joinweb.co.il"
   },
   {
     "url": "https://www.linkedin.com/company/jojoba-desert-a.c.s-ltd.",
@@ -39688,10 +38244,6 @@
     "result": 404
   },
   {
-    "url": "https://justmanage.com",
-    "result": "https://www.justmanage.com"
-  },
-  {
     "url": "https://www.facebook.com/Just2Manage",
     "result": 400
   },
@@ -39812,10 +38364,6 @@
     "result": 400
   },
   {
-    "url": "https://ka-dynamiccolor.com",
-    "result": "https://www.ka-dynamiccolor.com"
-  },
-  {
     "url": "https://www.facebook.com/kaa888",
     "result": 400
   },
@@ -39892,10 +38440,6 @@
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fkahr-medical-ltd-%2Fabout"
   },
   {
-    "url": "https://kahun.com",
-    "result": "https://www.kahun.com"
-  },
-  {
     "url": "https://m.facebook.com/kahunail?eav=Afbiy4FL1_ehJNlRQP9X7AiHw1PBEaNggauqUtvZLO7kC7qr8mX3eB7VLNVFdl3yXRU&paipv=0&_rdr",
     "result": 400
   },
@@ -39934,10 +38478,6 @@
   {
     "url": "https://www.facebook.com/kalderonglass",
     "result": 400
-  },
-  {
-    "url": "https://kaldrop.com",
-    "result": "https://www.kaldrop.com"
   },
   {
     "url": "https://www.facebook.com/KalDropTool",
@@ -39990,10 +38530,6 @@
   {
     "url": "https://www.facebook.com/kama.mindful",
     "result": 400
-  },
-  {
-    "url": "https://kamada.com",
-    "result": "https://www.kamada.com"
   },
   {
     "url": "https://www.linkedin.com/company/117855",
@@ -40102,10 +38638,6 @@
   {
     "url": "https://www.facebook.com/kanafem",
     "result": 400
-  },
-  {
-    "url": "https://kando.eco",
-    "result": "https://www.kando.eco"
   },
   {
     "url": "https://www.facebook.com/Kandoclearupstream",
@@ -40820,10 +39352,6 @@
     "result": 400
   },
   {
-    "url": "https://kibotu.ai",
-    "result": "https://www.kibotu.ai"
-  },
-  {
     "url": "https://www.facebook.com/kidasnet",
     "result": 400
   },
@@ -40842,10 +39370,6 @@
   {
     "url": "https://www.facebook.com/pg/kiddiz.me",
     "result": 400
-  },
-  {
-    "url": "https://kiddod-eng.com",
-    "result": "https://www.kiddod-eng.com"
   },
   {
     "url": "https://www.linkedin.com/company/42109319",
@@ -40932,10 +39456,6 @@
     "result": 400
   },
   {
-    "url": "https://kima.finance",
-    "result": "https://www.kima.finance"
-  },
-  {
     "url": "https://www.facebook.com/Camp.Kimama.Israel",
     "result": 400
   },
@@ -40954,10 +39474,6 @@
   {
     "url": "https://www.linkedin.com/company/kimonex",
     "result": 404
-  },
-  {
-    "url": "https://kimron-consulting.com",
-    "result": "https://www.kimron-consulting.com"
   },
   {
     "url": "https://www.kin.org",
@@ -41008,16 +39524,8 @@
     "result": 400
   },
   {
-    "url": "https://linkedin.com/company/kipp-authorize-more",
-    "result": "https://www.linkedin.com/company/kipp-authorize-more"
-  },
-  {
     "url": "https://kiptui-kipkemei-co-advocates.business.site",
     "result": 404
-  },
-  {
-    "url": "https://kirobo.io",
-    "result": "https://www.kirobo.io"
   },
   {
     "url": "https://www.linkedin.com/company/kirobo",
@@ -41588,10 +40096,6 @@
     "result": 400
   },
   {
-    "url": "https://kryptomon.co",
-    "result": "https://www.kryptomon.co"
-  },
-  {
     "url": "https://www.linkedin.com/company/73212275",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F73212275"
   },
@@ -41602,10 +40106,6 @@
   {
     "url": "https://www.ksoft.co.il",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://ktrust.io",
-    "result": "https://www.ktrust.io"
   },
   {
     "url": "https://www.kuapp.me",
@@ -41626,10 +40126,6 @@
   {
     "url": "https://www.facebook.com/kubbabafood",
     "result": 400
-  },
-  {
-    "url": "https://kubiyax.com",
-    "result": "https://www.kubiyax.com"
   },
   {
     "url": "https://www.facebook.com/kubiyaux",
@@ -41812,10 +40308,6 @@
     "result": 400
   },
   {
-    "url": "https://ls-lawfirm.co.il",
-    "result": "https://www.ls-lawfirm.co.il"
-  },
-  {
     "url": "https://www.facebook.com/SandeLawLS",
     "result": 400
   },
@@ -41972,14 +40464,6 @@
     "result": 400
   },
   {
-    "url": "https://lahakx.com",
-    "result": "https://www.lahakx.com"
-  },
-  {
-    "url": "https://lahat.com",
-    "result": "https://www.lahat.com"
-  },
-  {
     "url": "https://www.lahavgroup.com",
     "error": "fetch failed"
   },
@@ -41990,10 +40474,6 @@
   {
     "url": "https://www.facebook.com/lalalama",
     "result": 400
-  },
-  {
-    "url": "https://linkedin.com/company/lamaai",
-    "result": "https://www.linkedin.com/company/lamaai"
   },
   {
     "url": "https://www.facebook.com/lambdatest",
@@ -42212,16 +40692,8 @@
     "result": 400
   },
   {
-    "url": "https://linkedin.com/company/lavaa",
-    "result": "https://www.linkedin.com/company/lavaa"
-  },
-  {
     "url": "https://www.facebook.com/Labotal",
     "result": 400
-  },
-  {
-    "url": "https://lavi-capital.com",
-    "result": "https://www.lavi-capital.com"
   },
   {
     "url": "https://www.facebook.com/LavieLabsCosmetics",
@@ -42286,10 +40758,6 @@
   {
     "url": "https://www.facebook.com/profile.php?id=100054391786047",
     "result": 400
-  },
-  {
-    "url": "https://leadmanager.co.il",
-    "result": "https://www.leadmanager.co.il"
   },
   {
     "url": "https://www.leadpackaging.com",
@@ -42732,10 +41200,6 @@
     "result": 400
   },
   {
-    "url": "https://leukotech.com",
-    "result": "https://www.leukotech.com"
-  },
-  {
     "url": "https://www.leumit.co.il",
     "result": "https://legalnew.leumit.co.il/accessdenied.html"
   },
@@ -42992,10 +41456,6 @@
     "result": 404
   },
   {
-    "url": "https://libonea.ai",
-    "result": "https://www.libonea.ai"
-  },
-  {
     "url": "https://www.lbr.co.il",
     "result": 403
   },
@@ -43050,10 +41510,6 @@
   {
     "url": "https://www.linkedin.com/company/37410901/admin",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F37410901%2Fadmin"
-  },
-  {
-    "url": "https://lifebiotic.com",
-    "result": "https://www.lifebiotic.com"
   },
   {
     "url": "https://www.lifecanmedical.com",
@@ -43128,10 +41584,6 @@
     "result": 400
   },
   {
-    "url": "https://lightricks.com",
-    "result": "https://www.lightricks.com"
-  },
-  {
     "url": "https://www.facebook.com/Lightricks.Global",
     "result": 400
   },
@@ -43180,10 +41632,6 @@
     "result": 400
   },
   {
-    "url": "https://wish2be.com",
-    "result": "https://www.wish2be.com"
-  },
-  {
     "url": "https://www.facebook.com/Wish2BEcom",
     "result": 400
   },
@@ -43206,10 +41654,6 @@
   {
     "url": "https://www.facebook.com/lili.jewelry",
     "result": 400
-  },
-  {
-    "url": "https://lilit.co.il",
-    "result": "https://www.lilit.co.il"
   },
   {
     "url": "https://www.facebook.com/LilitCosmetics",
@@ -43344,10 +41788,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://linx.co.il",
-    "result": "https://www.linx.co.il"
-  },
-  {
     "url": "https://www.facebook.com/linx.research.strategy",
     "result": 400
   },
@@ -43406,10 +41846,6 @@
   {
     "url": "https://lipsight.com",
     "result": 522
-  },
-  {
-    "url": "https://liquality.io",
-    "result": "https://www.liquality.io"
   },
   {
     "url": "https://www.facebook.com/Liquid360-104973817902319",
@@ -43652,10 +42088,6 @@
     "result": 400
   },
   {
-    "url": "https://lnet.co.il",
-    "result": "https://www.lnet.co.il"
-  },
-  {
     "url": "https://www.facebook.com/Lnet-937445179666471",
     "result": 400
   },
@@ -43664,20 +42096,12 @@
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F17999721"
   },
   {
-    "url": "https://vocalreferences.com",
-    "result": "https://www.vocalreferences.com"
-  },
-  {
     "url": "https://www.facebook.com/VocalReferences",
     "result": 400
   },
   {
     "url": "https://thelocalport.com",
     "result": 403
-  },
-  {
-    "url": "https://localtimeline.com/en/eng",
-    "result": "https://www.localtimeline.com/en/eng"
   },
   {
     "url": "https://www.localive.net",
@@ -43964,10 +42388,6 @@
     "result": 400
   },
   {
-    "url": "https://getloops.ai",
-    "result": "https://www.getloops.ai"
-  },
-  {
     "url": "https://www.facebook.com/people/Loops/100076213206074",
     "result": 400
   },
@@ -44030,10 +42450,6 @@
   {
     "url": "https://louie7ai.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://linkedin.com/company/louie7",
-    "result": "https://www.linkedin.com/company/louie7"
   },
   {
     "url": "https://www.facebook.com/LoungeBuddy",
@@ -44288,20 +42704,8 @@
     "result": 400
   },
   {
-    "url": "https://lunasite.co.il",
-    "result": "https://www.lunasite.co.il"
-  },
-  {
-    "url": "https://lupa.co.il",
-    "result": "https://www.lupa.co.il"
-  },
-  {
     "url": "https://www.facebook.com/lupayou",
     "result": 400
-  },
-  {
-    "url": "https://lusha.com",
-    "result": "https://www.lusha.com"
   },
   {
     "url": "https://www.facebook.com/LushaData",
@@ -44350,10 +42754,6 @@
   {
     "url": "https://www.facebook.com/Lycored",
     "result": 400
-  },
-  {
-    "url": "https://lyfegen.com",
-    "result": "https://www.lyfegen.com"
   },
   {
     "url": "https://www.facebook.com/lyfegen",
@@ -44568,10 +42968,6 @@
     "result": 400
   },
   {
-    "url": "https://madaanalytics.com",
-    "result": "https://www.madaanalytics.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/mpp-israel",
     "result": 404
   },
@@ -44602,10 +42998,6 @@
   {
     "url": "https://www.facebook.com/MadeFinance",
     "result": 400
-  },
-  {
-    "url": "https://madeinjlm.org",
-    "result": "https://www.madeinjlm.org"
   },
   {
     "url": "https://www.linkedin.com/company/made-in-jerusalem",
@@ -44996,10 +43388,6 @@
     "result": 400
   },
   {
-    "url": "https://malam-payroll.com",
-    "result": "https://www.malam-payroll.com"
-  },
-  {
     "url": "https://www.facebook.com/MalamPayroll",
     "result": 400
   },
@@ -45034,10 +43422,6 @@
   {
     "url": "https://www.facebook.com/mamapplication",
     "result": 400
-  },
-  {
-    "url": "https://tastegage.com",
-    "result": "https://www.tastegage.com"
   },
   {
     "url": "https://www.facebook.com/mammothbiosci",
@@ -45392,10 +43776,6 @@
     "result": 400
   },
   {
-    "url": "https://marketman.com",
-    "result": "https://www.marketman.com"
-  },
-  {
     "url": "https://www.facebook.com/getmarketman",
     "result": 400
   },
@@ -45596,10 +43976,6 @@
     "result": 400
   },
   {
-    "url": "https://massivit3d.com",
-    "result": "https://www.massivit3d.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/9383658",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F9383658"
   },
@@ -45650,10 +44026,6 @@
   {
     "url": "https://www.facebook.com/matan2018",
     "result": 400
-  },
-  {
-    "url": "https://matan-consulting.com",
-    "result": "https://www.matan-consulting.com"
   },
   {
     "url": "https://www.facebook.com/matanconsulting",
@@ -45914,10 +44286,6 @@
   {
     "url": "https://www.facebook.com/MayafoodsLtd",
     "result": 400
-  },
-  {
-    "url": "https://maya-security.com",
-    "result": "https://www.maya-security.com"
   },
   {
     "url": "https://www.facebook.com/Maya.Sec",
@@ -46268,10 +44636,6 @@
     "result": 400
   },
   {
-    "url": "https://mediacrush.co.il",
-    "result": "https://www.mediacrush.co.il"
-  },
-  {
     "url": "https://www.linkedin.com/company/media-crush-group",
     "result": "https://il.linkedin.com/company/media-crush-marketing"
   },
@@ -46496,10 +44860,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://medisonpharma.com",
-    "result": "https://www.medisonpharma.com"
-  },
-  {
     "url": "https://www.facebook.com/MedisonPharma.Israel",
     "result": 400
   },
@@ -46564,10 +44924,6 @@
     "result": 400
   },
   {
-    "url": "https://mediwound.com",
-    "result": "https://www.mediwound.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/1644054",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F1644054"
   },
@@ -46598,10 +44954,6 @@
   {
     "url": "https://www.facebook.com/MedocLtd",
     "result": 400
-  },
-  {
-    "url": "https://medone.co.il",
-    "result": "https://www.medone.co.il"
   },
   {
     "url": "https://www.facebook.com/MedOne-1827249500863489",
@@ -46666,10 +45018,6 @@
   {
     "url": "https://www.meemix.biz",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://meet.mit.edu",
-    "result": "https://www.meet.mit.edu"
   },
   {
     "url": "https://www.linkedin.com/company/856976",
@@ -46826,10 +45174,6 @@
   {
     "url": "https://www.facebook.com/mehusgan",
     "result": 400
-  },
-  {
-    "url": "https://mei-avivim.co.il",
-    "result": "https://www.mei-avivim.co.il"
   },
   {
     "url": "https://www.facebook.com/mei.avivim",
@@ -47100,10 +45444,6 @@
     "result": 400
   },
   {
-    "url": "https://mennenmedical.com",
-    "result": "https://www.mennenmedical.com"
-  },
-  {
     "url": "https://www.facebook.com/pages/Mennen-Medical/407017672722916",
     "result": 400
   },
@@ -47158,10 +45498,6 @@
   {
     "url": "https://www.facebook.com/mentaglobal1",
     "result": 400
-  },
-  {
-    "url": "https://mentad.com",
-    "result": "https://www.mentad.com"
   },
   {
     "url": "https://www.facebook.com/pages/MentAd/157412167669414",
@@ -47222,10 +45558,6 @@
   {
     "url": "https://www.facebook.com/MercuryIL",
     "result": 400
-  },
-  {
-    "url": "https://mereobiopharma.com",
-    "result": "https://www.mereobiopharma.com"
   },
   {
     "url": "https://www.facebook.com/asakim4u",
@@ -47472,10 +45804,6 @@
     "result": 400
   },
   {
-    "url": "https://meteorops.com",
-    "result": "https://www.meteorops.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/72457572/admin",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F72457572%2Fadmin"
   },
@@ -47500,20 +45828,12 @@
     "result": 404
   },
   {
-    "url": "https://linkedin.com/company/metissio",
-    "result": "https://www.linkedin.com/company/metissio"
-  },
-  {
     "url": "https://www.linkedin.com/company/metomotion--greenhouse-robotics/about",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fmetomotion--greenhouse-robotics%2Fabout"
   },
   {
     "url": "https://www.excel-premiumutilities.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://metriport.com",
-    "result": "https://www.metriport.com"
   },
   {
     "url": "https://www.metro-skyways.com",
@@ -47678,10 +45998,6 @@
   {
     "url": "https://www.lawmhn.com",
     "result": "https://www.hunterlaw.co.il"
-  },
-  {
-    "url": "https://michaelkand.com",
-    "result": "https://www.michaelkand.com"
   },
   {
     "url": "https://www.michalnegrin.com",
@@ -48044,10 +46360,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://mindojo.com",
-    "result": "https://www.mindojo.com"
-  },
-  {
     "url": "https://www.facebook.com/Mindojo",
     "result": 400
   },
@@ -48100,10 +46412,6 @@
     "result": 400
   },
   {
-    "url": "https://minereye.com",
-    "result": "https://www.minereye.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/5255831",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F5255831"
   },
@@ -48114,10 +46422,6 @@
   {
     "url": "https://www.facebook.com/MNRVLabs",
     "result": 400
-  },
-  {
-    "url": "https://minervaneurosciences.com",
-    "result": "https://www.minervaneurosciences.com"
   },
   {
     "url": "https://www.facebook.com/mingaSB",
@@ -48346,10 +46650,6 @@
   {
     "url": "https://www.facebook.com/miro.foodsinternational",
     "result": 400
-  },
-  {
-    "url": "https://mirobot.co.il",
-    "result": "https://www.mirobot.co.il"
   },
   {
     "url": "https://www.facebook.com/mirrorai",
@@ -48596,10 +46896,6 @@
     "result": 400
   },
   {
-    "url": "https://mndl.bio",
-    "result": "https://www.mndl.bio"
-  },
-  {
     "url": "https://www.linkedin.com/company/mndl-bio/posts",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fmndl-bio%2Fposts"
   },
@@ -48630,10 +46926,6 @@
   {
     "url": "https://www.facebook.com/mobcomedia",
     "result": 400
-  },
-  {
-    "url": "https://mobeego.com",
-    "result": "https://www.mobeego.com"
   },
   {
     "url": "https://www.linkedin.com/company/mobeego",
@@ -48826,10 +47118,6 @@
   {
     "url": "https://www.facebook.com/Mobiwol",
     "result": 400
-  },
-  {
-    "url": "https://mobixon.com",
-    "result": "https://www.mobixon.com"
   },
   {
     "url": "https://www.linkedin.com/company/2248624",
@@ -49240,10 +47528,6 @@
     "result": 400
   },
   {
-    "url": "https://moonactive.com",
-    "result": "https://www.moonactive.com"
-  },
-  {
     "url": "https://www.facebook.com/moonactiveofficial",
     "result": 400
   },
@@ -49262,10 +47546,6 @@
   {
     "url": "https://www.moondo.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://moonee.io",
-    "result": "https://www.moonee.io"
   },
   {
     "url": "https://www.facebook.com/moonee.io",
@@ -49294,10 +47574,6 @@
   {
     "url": "https://www.facebook.com/theMoonRun",
     "result": 400
-  },
-  {
-    "url": "https://moonshinemeadery.com",
-    "result": "https://www.moonshinemeadery.com"
   },
   {
     "url": "https://www.linkedin.com/company/moonshine-meadery",
@@ -49456,10 +47732,6 @@
     "result": 400
   },
   {
-    "url": "https://mosaics.pro",
-    "result": "https://www.mosaics.pro"
-  },
-  {
     "url": "https://www.facebook.com/mosescommunication",
     "result": 400
   },
@@ -49572,16 +47844,8 @@
     "result": 400
   },
   {
-    "url": "https://mouseoc.co.il",
-    "result": "https://www.mouseoc.co.il"
-  },
-  {
     "url": "https://www.facebook.com/MouseOfComputers",
     "result": 400
-  },
-  {
-    "url": "https://mov.ai",
-    "result": "https://www.mov.ai"
   },
   {
     "url": "https://www.facebook.com/MovAIRobotics",
@@ -49682,10 +47946,6 @@
   {
     "url": "https://mozaic.cc",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://mozi.co.il",
-    "result": "https://www.mozi.co.il"
   },
   {
     "url": "https://www.facebook.com/MoziBouton.Safety",
@@ -49856,10 +48116,6 @@
     "result": 400
   },
   {
-    "url": "https://mfcsolar.com",
-    "result": "https://www.mfcsolar.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/m-f-c-multi-functional-cases",
     "result": 404
   },
@@ -49886,10 +48142,6 @@
   {
     "url": "https://www.withmultiply.com",
     "result": "https://www.multiplymortgage.com"
-  },
-  {
-    "url": "https://multiplymii.com",
-    "result": "https://www.multiplymii.com"
   },
   {
     "url": "https://www.facebook.com/multiplymiicareers",
@@ -49926,10 +48178,6 @@
   {
     "url": "https://www.facebook.com/mundimotocom",
     "result": 400
-  },
-  {
-    "url": "https://linkedin.com/company/munevo",
-    "result": "https://www.linkedin.com/company/munevo"
   },
   {
     "url": "https://www.facebook.com/munevo.social",
@@ -50324,10 +48572,6 @@
     "result": 400
   },
   {
-    "url": "https://myherb.co.il",
-    "result": "https://www.myherb.co.il"
-  },
-  {
     "url": "https://www.facebook.com/myHerb.co.il",
     "result": 400
   },
@@ -50346,10 +48590,6 @@
   {
     "url": "https://www.my-homedoc.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://myinterview.com",
-    "result": "https://www.myinterview.com"
   },
   {
     "url": "https://www.facebook.com/myinterview.social",
@@ -50438,10 +48678,6 @@
   {
     "url": "https://www.facebook.com/MyPwrLTD",
     "result": 400
-  },
-  {
-    "url": "https://myquest.co",
-    "result": "https://www.myquest.co"
   },
   {
     "url": "https://www.facebook.com/myquestworld",
@@ -50836,10 +49072,6 @@
     "result": 400
   },
   {
-    "url": "https://nansen.ai",
-    "result": "https://www.nansen.ai"
-  },
-  {
     "url": "https://www.nantocleantech.com",
     "result": "https://www.nantocleantech.us"
   },
@@ -50998,10 +49230,6 @@
   {
     "url": "https://www.facebook.com/navinapp",
     "result": 400
-  },
-  {
-    "url": "https://navina.ai",
-    "result": "https://www.navina.ai"
   },
   {
     "url": "https://www.facebook.com/navines.world",
@@ -51508,10 +49736,6 @@
     "result": 400
   },
   {
-    "url": "https://neto.work",
-    "result": "https://www.neto.work"
-  },
-  {
     "url": "https://www.facebook.com/NETO.WORK1",
     "result": 400
   },
@@ -51752,10 +49976,6 @@
     "result": 400
   },
   {
-    "url": "https://nevelab.com",
-    "result": "https://www.nevelab.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/nevelabtechnologies",
     "result": "https://il.linkedin.com/company/wild-intelligence"
   },
@@ -51864,10 +50084,6 @@
     "result": 400
   },
   {
-    "url": "https://newco2fuels.co.il",
-    "result": "https://www.newco2fuels.co.il"
-  },
-  {
     "url": "https://www.linkedin.com/company/newledge/about",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fnewledge%2Fabout"
   },
@@ -51878,10 +50094,6 @@
   {
     "url": "https://www.newpolygen.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://newrocket.co.il",
-    "result": "https://www.newrocket.co.il"
   },
   {
     "url": "https://www.linkedin.com/company/newrocket/about",
@@ -51950,10 +50162,6 @@
   {
     "url": "https://www.facebook.com/nexa3d",
     "result": 400
-  },
-  {
-    "url": "https://getnexar.com",
-    "result": "https://www.getnexar.com"
   },
   {
     "url": "https://www.linkedin.com/company/10460529",
@@ -52188,10 +50396,6 @@
     "result": 400
   },
   {
-    "url": "https://nice.com",
-    "result": "https://www.nice.com"
-  },
-  {
     "url": "https://www.facebook.com/nicklas.team",
     "result": 400
   },
@@ -52260,10 +50464,6 @@
     "result": "https://il.linkedin.com/company/nilospayments"
   },
   {
-    "url": "https://nimblebeauty.com",
-    "result": "https://www.nimblebeauty.com"
-  },
-  {
     "url": "https://www.facebook.com/nimblebeauty",
     "result": 400
   },
@@ -52314,10 +50514,6 @@
   {
     "url": "https://www.facebook.com/Nir-Nursery-434391543265879",
     "result": 400
-  },
-  {
-    "url": "https://nirsolar.com",
-    "result": "https://www.nirsolar.com"
   },
   {
     "url": "https://www.facebook.com/nirsolar",
@@ -52494,10 +50690,6 @@
   {
     "url": "https://benoblel.io",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://benoble.io",
-    "result": "https://www.benoble.io"
   },
   {
     "url": "https://www.facebook.com/nobrandisrael",
@@ -52724,10 +50916,6 @@
     "result": 400
   },
   {
-    "url": "https://novacy.io",
-    "result": "https://www.novacy.io"
-  },
-  {
     "url": "https://www.novafora.com",
     "result": "http://www.cohere-tech.com"
   },
@@ -52784,10 +50972,6 @@
     "result": 400
   },
   {
-    "url": "https://novellustx.com",
-    "result": "https://www.novellustx.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/novelsat",
     "result": "https://il.linkedin.com/company/novelsat-ayecka"
   },
@@ -52802,10 +50986,6 @@
   {
     "url": "https://www.linkedin.com/company/1228122?trk=ppro_cprof",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F1228122%3Ftrk%3Dppro_cprof"
-  },
-  {
-    "url": "https://noveto.com",
-    "result": "https://www.noveto.com"
   },
   {
     "url": "https://www.noveto.biz",
@@ -52880,10 +51060,6 @@
     "result": 400
   },
   {
-    "url": "https://novos.gg",
-    "result": "https://www.novos.gg"
-  },
-  {
     "url": "https://www.linkedin.com/company/novoskill",
     "result": 404
   },
@@ -52954,10 +51130,6 @@
   {
     "url": "https://www.nrg1.co.il",
     "result": "?file=kop1.php"
-  },
-  {
-    "url": "https://nrgspring.com",
-    "result": "https://www.nrgspring.com"
   },
   {
     "url": "https://www.facebook.com/NRGENE-288307071303551/timeline",
@@ -53144,10 +51316,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://nutrinohealth.com",
-    "result": "https://www.nutrinohealth.com"
-  },
-  {
     "url": "https://www.facebook.com/nutrino.co",
     "result": 400
   },
@@ -53276,10 +51444,6 @@
     "result": 404
   },
   {
-    "url": "https://o2rintelligence.com",
-    "result": "https://www.o2rintelligence.com"
-  },
-  {
     "url": "https://www.facebook.com/O2R-Intelligence-101780915193446",
     "result": 400
   },
@@ -53290,10 +51454,6 @@
   {
     "url": "https://oakmill.io",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://oxs.co.il",
-    "result": "https://www.oxs.co.il"
   },
   {
     "url": "https://www.linkedin.com/company/oxs-for-the-condo-building",
@@ -53368,10 +51528,6 @@
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Foblicore%2Fabout"
   },
   {
-    "url": "https://myobligo.com",
-    "result": "https://www.myobligo.com"
-  },
-  {
     "url": "https://www.facebook.com/Myobligo",
     "result": 400
   },
@@ -53396,16 +51552,8 @@
     "result": 404
   },
   {
-    "url": "https://oceangenomics.com",
-    "result": "https://www.oceangenomics.com"
-  },
-  {
     "url": "https://www.facebook.com/OceanSecretsIsrael",
     "result": 400
-  },
-  {
-    "url": "https://oceandrop.com.br",
-    "result": "https://www.oceandrop.com.br"
   },
   {
     "url": "https://www.facebook.com/myoceandrop",
@@ -53418,10 +51566,6 @@
   {
     "url": "https://www.facebook.com/ocon.medical",
     "result": 400
-  },
-  {
-    "url": "https://octa-code.com",
-    "result": "https://www.octa-code.com"
   },
   {
     "url": "https://www.octabox.com",
@@ -53660,10 +51804,6 @@
     "result": ""
   },
   {
-    "url": "https://ogen.org/en",
-    "result": "https://www.ogen.org/en"
-  },
-  {
     "url": "https://www.facebook.com/OgenIsraelFund",
     "result": 400
   },
@@ -53710,10 +51850,6 @@
   {
     "url": "https://www.facebook.com/ok2goIsrael",
     "result": 400
-  },
-  {
-    "url": "https://okamigames.io",
-    "result": "https://www.okamigames.io"
   },
   {
     "url": "https://www.facebook.com/OkamurapicTokyo",
@@ -53852,10 +51988,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://omadahealth.com",
-    "result": "https://www.omadahealth.com"
-  },
-  {
     "url": "https://www.facebook.com/omadahealth",
     "result": 400
   },
@@ -53984,14 +52116,6 @@
     "result": 400
   },
   {
-    "url": "https://oncld.io",
-    "result": "https://www.oncld.io"
-  },
-  {
-    "url": "https://oncohost.com",
-    "result": "https://www.oncohost.com"
-  },
-  {
     "url": "https://www.facebook.com/OncoHost",
     "result": 400
   },
@@ -54040,10 +52164,6 @@
     "result": 400
   },
   {
-    "url": "https://onehamsa.com",
-    "result": "https://www.onehamsa.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/18392132",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F18392132"
   },
@@ -54066,10 +52186,6 @@
   {
     "url": "https://www.facebook.com/roadprotectisrael",
     "result": 400
-  },
-  {
-    "url": "https://one-submit.com",
-    "result": "https://www.one-submit.com"
   },
   {
     "url": "https://www.facebook.com/One-Submit-100501992116412",
@@ -54250,10 +52366,6 @@
   {
     "url": "https://oolo.io",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://ooona.net",
-    "result": "https://www.ooona.net"
   },
   {
     "url": "https://www.facebook.com/ooona.net",
@@ -54476,10 +52588,6 @@
     "result": 400
   },
   {
-    "url": "https://opslabs.io",
-    "result": "https://www.opslabs.io"
-  },
-  {
     "url": "https://www.facebook.com/WeAreOpsLabs",
     "result": 400
   },
@@ -54488,20 +52596,12 @@
     "result": 400
   },
   {
-    "url": "https://opsschool.org.il",
-    "result": "https://www.opsschool.org.il"
-  },
-  {
     "url": "https://www.linkedin.com/school/opsschool",
     "result": 999
   },
   {
     "url": "https://www.facebook.com/theOpsSchool",
     "result": 400
-  },
-  {
-    "url": "https://linkedin.com/company/opster",
-    "result": "https://www.linkedin.com/company/opster"
   },
   {
     "url": "https://www.facebook.com/OpsterHQ",
@@ -54564,10 +52664,6 @@
     "result": 400
   },
   {
-    "url": "https://optimalq.com",
-    "result": "https://www.optimalq.com"
-  },
-  {
     "url": "https://www.facebook.com/OptimalQ-244560932964336",
     "result": 400
   },
@@ -54596,20 +52692,12 @@
     "result": 400
   },
   {
-    "url": "https://optimove.com",
-    "result": "https://www.optimove.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/227901",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F227901"
   },
   {
     "url": "https://www.facebook.com/optimove",
     "result": 400
-  },
-  {
-    "url": "https://optimusq.com",
-    "result": "https://www.optimusq.com"
   },
   {
     "url": "https://en-gb.facebook.com/OptimusQ-102611068886340",
@@ -54684,10 +52772,6 @@
     "result": "https://ophtalmic-lenses.optix-online.com"
   },
   {
-    "url": "https://optoacoustics.com",
-    "result": "https://www.optoacoustics.com"
-  },
-  {
     "url": "https://www.linkedin.com/company-beta/771292",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany-beta%2F771292"
   },
@@ -54714,14 +52798,6 @@
   {
     "url": "https://www.facebook.com/OpusProjects",
     "result": 400
-  },
-  {
-    "url": "https://opus.security",
-    "result": "https://www.opus.security"
-  },
-  {
-    "url": "https://opyomind.com",
-    "result": "https://www.opyomind.com"
   },
   {
     "url": "https://www.orcapitalhcp.com",
@@ -54900,14 +52976,6 @@
     "result": 400
   },
   {
-    "url": "https://ori.co",
-    "result": "https://www.ori.co"
-  },
-  {
-    "url": "https://orirelocation.com",
-    "result": "https://www.orirelocation.com"
-  },
-  {
     "url": "https://www.facebook.com/profile.php?id=100035021606983",
     "result": 400
   },
@@ -54978,10 +53046,6 @@
   {
     "url": "https://originalconcepts.co.il",
     "result": "https://onlinestore.co.il"
-  },
-  {
-    "url": "https://original.works",
-    "result": "https://www.original.works"
   },
   {
     "url": "https://www.facebook.com/originalworksnetwork",
@@ -55180,10 +53244,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://linkedin.com/company/orthotreat",
-    "result": "https://www.linkedin.com/company/orthotreat"
-  },
-  {
     "url": "https://www.linkedin.com/company/10684596",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F10684596"
   },
@@ -55364,16 +53424,8 @@
     "result": 400
   },
   {
-    "url": "https://ottek-gi.com",
-    "result": "https://www.ottek-gi.com"
-  },
-  {
     "url": "https://www.facebook.com/OTTO-PERL-1555219394539668",
     "result": 400
-  },
-  {
-    "url": "https://ottopia.tech",
-    "result": "https://www.ottopia.tech"
   },
   {
     "url": "https://ouna.io",
@@ -55452,10 +53504,6 @@
     "result": 400
   },
   {
-    "url": "https://outofscreens.com",
-    "result": "https://www.outofscreens.com"
-  },
-  {
     "url": "https://www.facebook.com/outopia.outdoor.kitchens",
     "result": 400
   },
@@ -55532,10 +53580,6 @@
     "result": 400
   },
   {
-    "url": "https://overwolf.com",
-    "result": "https://www.overwolf.com"
-  },
-  {
     "url": "https://www.facebook.com/Overwolf",
     "result": 400
   },
@@ -55568,10 +53612,6 @@
     "result": 404
   },
   {
-    "url": "https://ovvio.io",
-    "result": "https://www.ovvio.io"
-  },
-  {
     "url": "https://www.facebook.com/ovvio.io",
     "result": 400
   },
@@ -55594,10 +53634,6 @@
   {
     "url": "https://www.facebook.com/theOwnCompany",
     "result": 400
-  },
-  {
-    "url": "https://owna.health",
-    "result": "https://www.owna.health"
   },
   {
     "url": "https://www.ownerhood.co",
@@ -56204,10 +54240,6 @@
     "result": 400
   },
   {
-    "url": "https://parametrixinsurance.com",
-    "result": "https://www.parametrixinsurance.com"
-  },
-  {
     "url": "https://www.facebook.com/Parametrixinsurance",
     "result": 400
   },
@@ -56270,10 +54302,6 @@
   {
     "url": "https://www.facebook.com/paretogroupltd",
     "result": 400
-  },
-  {
-    "url": "https://paretos.com",
-    "result": "https://www.paretos.com"
   },
   {
     "url": "https://www.linkedin.com/paritrip-ai",
@@ -56388,10 +54416,6 @@
     "result": 400
   },
   {
-    "url": "https://partners500.com",
-    "result": "https://www.partners500.com"
-  },
-  {
     "url": "https://www.facebook.com/Partners500",
     "result": 400
   },
@@ -56458,10 +54482,6 @@
   {
     "url": "https://www.facebook.com/PassporToGo",
     "result": 400
-  },
-  {
-    "url": "https://passright.com",
-    "result": "https://www.passright.com"
   },
   {
     "url": "https://www.facebook.com/PassRightVisa",
@@ -56568,10 +54588,6 @@
     "result": 522
   },
   {
-    "url": "https://payboxapp.com",
-    "result": "https://www.payboxapp.com"
-  },
-  {
     "url": "https://www.facebook.com/payboxapp",
     "result": 400
   },
@@ -56594,14 +54610,6 @@
   {
     "url": "https://www.facebook.com/paycor",
     "result": 400
-  },
-  {
-    "url": "https://payem.co",
-    "result": "https://www.payem.co"
-  },
-  {
-    "url": "https://payem.co",
-    "result": "https://www.payem.co"
   },
   {
     "url": "https://www.facebook.com/Payfinder-2021918871234216",
@@ -56776,10 +54784,6 @@
     "result": 404
   },
   {
-    "url": "https://prettydamnquick.com",
-    "result": "https://www.prettydamnquick.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/14836782/admin",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F14836782%2Fadmin"
   },
@@ -56842,10 +54846,6 @@
   {
     "url": "https://peer-say.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://peerspot.com",
-    "result": "https://www.peerspot.com"
   },
   {
     "url": "https://www.peertv.com",
@@ -57160,10 +55160,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://permit.io",
-    "result": "https://www.permit.io"
-  },
-  {
     "url": "https://www.facebook.com/permitlabs",
     "result": 400
   },
@@ -57210,10 +55206,6 @@
   {
     "url": "https://www.personalinx.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://personasmedia.co.il",
-    "result": "https://www.personasmedia.co.il"
   },
   {
     "url": "https://www.linkedin.com/company/personetics-technologies",
@@ -57380,16 +55372,8 @@
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F2437891"
   },
   {
-    "url": "https://phasevtrials.com",
-    "result": "https://www.phasevtrials.com"
-  },
-  {
     "url": "https://www.facebook.com/profile.php?id=100083186477792%20Website%20Developer",
     "result": 400
-  },
-  {
-    "url": "https://pheno.ai",
-    "result": "https://www.pheno.ai"
   },
   {
     "url": "https://phenome-networks.com",
@@ -57410,10 +55394,6 @@
   {
     "url": "https://www.linkedin.com/company/phi-g",
     "result": 404
-  },
-  {
-    "url": "https://pstein.com",
-    "result": "https://www.pstein.com"
   },
   {
     "url": "https://www.facebook.com/PhilipSteinCPA",
@@ -57796,10 +55776,6 @@
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fpigmentum-ltd%2Fabout"
   },
   {
-    "url": "https://piiano.com",
-    "result": "https://www.piiano.com"
-  },
-  {
     "url": "https://www.facebook.com/PiianoPrivacy",
     "result": 400
   },
@@ -57834,10 +55810,6 @@
   {
     "url": "https://www.linkedin.com/company/pil-marketplace-ltd",
     "result": "https://il.linkedin.com/company/globalpil"
-  },
-  {
-    "url": "https://pilat.co.il",
-    "result": "https://www.pilat.co.il"
   },
   {
     "url": "https://www.facebook.com/pilatgroup",
@@ -57952,10 +55924,6 @@
     "result": 400
   },
   {
-    "url": "https://pionix.com",
-    "result": "https://www.pionix.com"
-  },
-  {
     "url": "https://www.facebook.com/Pionix_GmbH",
     "result": 400
   },
@@ -58036,10 +56004,6 @@
     "result": 400
   },
   {
-    "url": "https://pixellot.tv",
-    "result": "https://www.pixellot.tv"
-  },
-  {
     "url": "https://www.facebook.com/pixellotltd",
     "result": 400
   },
@@ -58116,16 +56080,8 @@
     "result": 400
   },
   {
-    "url": "https://pladot.co.il",
-    "result": "https://www.pladot.co.il"
-  },
-  {
     "url": "https://www.facebook.com/PlainTextOffenders",
     "result": 400
-  },
-  {
-    "url": "https://plainid.com",
-    "result": "https://www.plainid.com"
   },
   {
     "url": "https://www.facebook.com/PlainID",
@@ -58138,10 +56094,6 @@
   {
     "url": "https://plaiview.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://planckdata.com",
-    "result": "https://www.planckdata.com"
   },
   {
     "url": "https://www.facebook.com/planckresolution",
@@ -58192,10 +56144,6 @@
     "result": "https://x.com/planr_ai"
   },
   {
-    "url": "https://plant-ditech.com",
-    "result": "https://www.plant-ditech.com"
-  },
-  {
     "url": "https://www.linkedin.com/company-beta/18029372",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany-beta%2F18029372"
   },
@@ -58224,20 +56172,12 @@
     "result": 400
   },
   {
-    "url": "https://plasgad.com",
-    "result": "https://www.plasgad.com"
-  },
-  {
     "url": "https://www.facebook.com/plasgadplasticsolutions",
     "result": 400
   },
   {
     "url": "https://www.facebook.com/Plasgan",
     "result": 400
-  },
-  {
-    "url": "https://plasmatica.com",
-    "result": "https://www.plasmatica.com"
   },
   {
     "url": "https://www.facebook.com/PlassonLtd",
@@ -58354,10 +56294,6 @@
   {
     "url": "https://www.facebook.com/iplayback",
     "result": 400
-  },
-  {
-    "url": "https://playcast-media.com",
-    "result": "https://www.playcast-media.com"
   },
   {
     "url": "https://www.linkedin.com/company/447384",
@@ -58864,10 +56800,6 @@
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F83044701%2Fadmin%2Ffeed%2Fposts"
   },
   {
-    "url": "https://polygon-technologies.com",
-    "result": "https://www.polygon-technologies.com"
-  },
-  {
     "url": "https://www.facebook.com/PTR-Polygon-TR-Israel-1837399793008011",
     "result": 400
   },
@@ -59200,10 +57132,6 @@
     "result": 400
   },
   {
-    "url": "https://powtoon.com",
-    "result": "https://www.powtoon.com"
-  },
-  {
     "url": "https://studiopowwow.com",
     "error": "fetch failed"
   },
@@ -59436,10 +57364,6 @@
     "result": "https://x.com/preql_"
   },
   {
-    "url": "https://pres.global/en",
-    "result": "https://www.pres.global/en"
-  },
-  {
     "url": "https://www.facebook.com/ticketing.innovation",
     "result": 400
   },
@@ -59608,10 +57532,6 @@
     "result": 400
   },
   {
-    "url": "https://printcb.com",
-    "result": "https://www.printcb.com"
-  },
-  {
     "url": "https://printhug.com",
     "error": "fetch failed"
   },
@@ -59650,10 +57570,6 @@
   {
     "url": "https://www.facebook.com/Priority-Software-ERP-Software-769670056428316",
     "result": 400
-  },
-  {
-    "url": "https://priory-team.com",
-    "result": "https://www.priory-team.com"
   },
   {
     "url": "https://www.facebook.com/prioryteam",
@@ -59984,10 +57900,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://promisneurosciences.com",
-    "result": "https://www.promisneurosciences.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/50247",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F50247"
   },
@@ -60102,10 +58014,6 @@
   {
     "url": "https://www.facebook.com/propellerdrones1",
     "result": 400
-  },
-  {
-    "url": "https://propharm.co.il",
-    "result": "https://www.propharm.co.il"
   },
   {
     "url": "https://www.facebook.com/profile.php?id=100063767455489",
@@ -60276,10 +58184,6 @@
     "result": 400
   },
   {
-    "url": "https://proximo.co.il",
-    "result": "https://www.proximo.co.il"
-  },
-  {
     "url": "https://www.linkedin.com/company/purple-interactive",
     "result": "https://il.linkedin.com/company/prplisrael"
   },
@@ -60330,10 +58234,6 @@
   {
     "url": "https://www.linkedin.com/company/pskiss",
     "result": 404
-  },
-  {
-    "url": "https://psyable.com",
-    "result": "https://www.psyable.com"
   },
   {
     "url": "https://psychomaster.co.il",
@@ -60424,16 +58324,8 @@
     "result": 400
   },
   {
-    "url": "https://pubmint.com",
-    "result": "https://www.pubmint.com"
-  },
-  {
     "url": "https://www.facebook.com/Pubmint-2136597959697905",
     "result": 400
-  },
-  {
-    "url": "https://pubplus.com",
-    "result": "https://www.pubplus.com"
   },
   {
     "url": "https://www.facebook.com/GoPubPlus",
@@ -60724,10 +58616,6 @@
     "result": 400
   },
   {
-    "url": "https://qashio.com",
-    "result": "https://www.qashio.com"
-  },
-  {
     "url": "https://www.facebook.com/profile.php?id=100086358915228",
     "result": 400
   },
@@ -60782,10 +58670,6 @@
   {
     "url": "https://www.qilindo.com",
     "result": 524
-  },
-  {
-    "url": "https://qinflow.com",
-    "result": "https://www.qinflow.com"
   },
   {
     "url": "https://www.facebook.com/Qiradotcom",
@@ -60856,10 +58740,6 @@
     "result": 400
   },
   {
-    "url": "https://qlog.co",
-    "result": "https://www.qlog.co"
-  },
-  {
     "url": "https://www.linkedin.com/company/qlog_co",
     "result": "https://il.linkedin.com/company/qlog-co"
   },
@@ -60890,10 +58770,6 @@
   {
     "url": "https://www.linkedin.com/company/qoof/about",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fqoof%2Fabout"
-  },
-  {
-    "url": "https://qpoint.co.il",
-    "result": "https://www.qpoint.co.il"
   },
   {
     "url": "https://www.facebook.com/QpointTechnologies",
@@ -60960,10 +58836,6 @@
     "result": 400
   },
   {
-    "url": "https://qualifire.ai",
-    "result": "https://www.qualifire.ai"
-  },
-  {
     "url": "https://www.linkedin.com/company/qualifire-ai/posts",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fqualifire-ai%2Fposts"
   },
@@ -61002,10 +58874,6 @@
   {
     "url": "https://www.facebook.com/profile.php?id=100066384515161",
     "result": 400
-  },
-  {
-    "url": "https://qualy.co",
-    "result": "https://www.qualy.co"
   },
   {
     "url": "https://www.linkedin.com/company/qualy",
@@ -61196,10 +59064,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://quik.co.il",
-    "result": "https://www.quik.co.il"
-  },
-  {
     "url": "https://www.facebook.com/quilliup-563881226991917",
     "result": 400
   },
@@ -61250,10 +59114,6 @@
   {
     "url": "https://www.quze.ai",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://qwak.com",
-    "result": "https://www.qwak.com"
   },
   {
     "url": "https://www.linkedin.com/company/qwak-ai",
@@ -61408,14 +59268,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://radlogics.com",
-    "result": "https://www.radlogics.com"
-  },
-  {
-    "url": "https://linkedin.com/company/radlogics",
-    "result": "https://www.linkedin.com/company/radlogics"
-  },
-  {
     "url": "https://www.linkedin.com/company/radcub",
     "result": "https://il.linkedin.com/company/radomatics"
   },
@@ -61548,10 +59400,6 @@
     "result": 400
   },
   {
-    "url": "https://ramdor.co.il",
-    "result": "https://www.ramdor.co.il"
-  },
-  {
     "url": "https://www.rami-levy.co.il",
     "result": 502
   },
@@ -61596,16 +59444,8 @@
     "result": 400
   },
   {
-    "url": "https://ranbotanicals.com",
-    "result": "https://www.ranbotanicals.com"
-  },
-  {
     "url": "https://www.facebook.com/ranbotanicals",
     "result": 400
-  },
-  {
-    "url": "https://randa.mu",
-    "result": "https://www.randa.mu"
   },
   {
     "url": "https://www.facebook.com/Reizkind",
@@ -61782,10 +59622,6 @@
   {
     "url": "https://www.facebook.com/265907650186374",
     "result": 400
-  },
-  {
-    "url": "https://ravin.ai",
-    "result": "https://www.ravin.ai"
   },
   {
     "url": "https://www.facebook.com/profile.php?id=100073814210104",
@@ -62038,10 +59874,6 @@
   {
     "url": "https://www.facebook.com/Readymix-Industries-%D7%AA%D7%A2%D7%A9%D7%99%D7%95%D7%AA-%D7%A8%D7%93%D7%99%D7%9E%D7%99%D7%A7%D7%A1-423866968218156",
     "result": 400
-  },
-  {
-    "url": "https://reagenics.com",
-    "result": "https://www.reagenics.com"
   },
   {
     "url": "https://www.facebook.com/ReaGenics-295784954453040",
@@ -62324,10 +60156,6 @@
     "result": 404
   },
   {
-    "url": "https://redstone.finance",
-    "result": "https://www.redstone.finance"
-  },
-  {
     "url": "https://www.facebook.com/redstrings.io",
     "result": 400
   },
@@ -62382,10 +60210,6 @@
   {
     "url": "https://x.com/refineintel",
     "result": 400
-  },
-  {
-    "url": "https://meetreflect.com",
-    "result": "https://www.meetreflect.com"
   },
   {
     "url": "https://www.facebook.com/meetreflect",
@@ -62536,16 +60360,8 @@
     "result": "https://topxr.co.il"
   },
   {
-    "url": "https://linkedin.com/company/rels-advanced-technologies-ltd",
-    "result": "https://www.linkedin.com/company/rels-advanced-technologies-ltd"
-  },
-  {
     "url": "https://www.facebook.com/RELSTec",
     "result": 400
-  },
-  {
-    "url": "https://relyon.ai",
-    "result": "https://www.relyon.ai"
   },
   {
     "url": "https://www.facebook.com/profile.php?id=100063686348116",
@@ -62566,10 +60382,6 @@
   {
     "url": "https://www.facebook.com/RemeantCT",
     "result": 400
-  },
-  {
-    "url": "https://remesh.ai",
-    "result": "https://www.remesh.ai"
   },
   {
     "url": "https://www.linkedin.com/company/5245293",
@@ -62606,10 +60418,6 @@
   {
     "url": "https://www.facebook.com/Remotemdr-103479694786939",
     "result": 400
-  },
-  {
-    "url": "https://remotion.io",
-    "result": "https://www.remotion.io"
   },
   {
     "url": "https://www.remotrapp.com",
@@ -62672,10 +60480,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://rentsafe.co.il",
-    "result": "https://www.rentsafe.co.il"
-  },
-  {
     "url": "https://www.facebook.com/rntsafe",
     "result": 400
   },
@@ -62710,10 +60514,6 @@
   {
     "url": "https://www.facebook.com/RepnUp",
     "result": 400
-  },
-  {
-    "url": "https://repair-carbon.com",
-    "result": "https://www.repair-carbon.com"
   },
   {
     "url": "https://www.facebook.com/RepAirCarbonCapture",
@@ -62758,10 +60558,6 @@
   {
     "url": "https://www.linkedin.com/company/replixio/about",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Freplixio%2Fabout"
-  },
-  {
-    "url": "https://replydesk.com",
-    "result": "https://www.replydesk.com"
   },
   {
     "url": "https://www.facebook.com/ReplyDesk",
@@ -62860,16 +60656,8 @@
     "result": 400
   },
   {
-    "url": "https://resmetrix-medical.com",
-    "result": "https://www.resmetrix-medical.com"
-  },
-  {
     "url": "https://www.resolutenetworks.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://resolutiongames.com",
-    "result": "https://www.resolutiongames.com"
   },
   {
     "url": "https://www.facebook.com/resolutiongamesdotcom",
@@ -62942,10 +60730,6 @@
   {
     "url": "https://www.restore-med.com",
     "result": "https://www.boosteromale.com/blog/enhancing-surgical-efficiency-with-innovative-sterilization-solutions"
-  },
-  {
-    "url": "https://resugar.com",
-    "result": "https://www.resugar.com"
   },
   {
     "url": "https://www.linkedin.com/company/resultsdigital",
@@ -63226,10 +61010,6 @@
   {
     "url": "https://www.facebook.com/ChamilaRFW",
     "result": 400
-  },
-  {
-    "url": "https://rgbtotal.com",
-    "result": "https://www.rgbtotal.com"
   },
   {
     "url": "https://www.facebook.com/rgbtotal",
@@ -63544,10 +61324,6 @@
     "result": 400
   },
   {
-    "url": "https://riskified.com",
-    "result": "https://www.riskified.com"
-  },
-  {
     "url": "https://www.facebook.com/RiskifiedInc",
     "result": 400
   },
@@ -63594,10 +61370,6 @@
   {
     "url": "https://www.facebook.com/profile.php?id=100083001085425",
     "result": 400
-  },
-  {
-    "url": "https://rivulis.com",
-    "result": "https://www.rivulis.com"
   },
   {
     "url": "https://www.linkedin.com/company/rivulis-irrigation",
@@ -63720,10 +61492,6 @@
     "result": 400
   },
   {
-    "url": "https://robologics.com",
-    "result": "https://www.robologics.com"
-  },
-  {
     "url": "https://www.linkedin.com/company-beta/10181054",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany-beta%2F10181054"
   },
@@ -63756,10 +61524,6 @@
     "result": 400
   },
   {
-    "url": "https://rocketdollar.com",
-    "result": "https://www.rocketdollar.com"
-  },
-  {
     "url": "https://www.facebook.com/rocket401k",
     "result": 400
   },
@@ -63786,10 +61550,6 @@
   {
     "url": "https://www.rodmarine.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://roeto.co.il",
-    "result": "https://www.roeto.co.il"
   },
   {
     "url": "https://www.facebook.com/roetotech",
@@ -64212,10 +61972,6 @@
     "result": 400
   },
   {
-    "url": "https://rpt-tech.co.il",
-    "result": "https://www.rpt-tech.co.il"
-  },
-  {
     "url": "https://www.linkedin.com/company/rpt-technologies",
     "result": 404
   },
@@ -64230,10 +61986,6 @@
   {
     "url": "https://www.linkedin.com/company/25618",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F25618"
-  },
-  {
-    "url": "https://rsipvision.com",
-    "result": "https://www.rsipvision.com"
   },
   {
     "url": "https://www.facebook.com/RSIPvision",
@@ -64354,14 +62106,6 @@
   {
     "url": "https://www.facebook.com/RunMaxiIL",
     "result": 400
-  },
-  {
-    "url": "https://hirupert.co",
-    "result": "https://www.hirupert.co"
-  },
-  {
-    "url": "https://rusafe.co.il",
-    "result": "https://www.rusafe.co.il"
   },
   {
     "url": "https://www.facebook.com/RUsafecompany",
@@ -64510,10 +62254,6 @@
   {
     "url": "https://www.facebook.com/saasgrowthagency",
     "result": 400
-  },
-  {
-    "url": "https://sabahabib.com",
-    "result": "https://www.sabahabib.com"
   },
   {
     "url": "https://www.facebook.com/SabatierGroup",
@@ -64880,10 +62620,6 @@
     "result": 400
   },
   {
-    "url": "https://salignostics.com",
-    "result": "https://www.salignostics.com"
-  },
-  {
     "url": "https://www.facebook.com/Salignostics",
     "result": 400
   },
@@ -64910,14 +62646,6 @@
   {
     "url": "https://www.facebook.com/SaltAPIProtectionInc",
     "result": 400
-  },
-  {
-    "url": "https://salto.io",
-    "result": "https://www.salto.io"
-  },
-  {
-    "url": "https://salto.io",
-    "result": "https://www.salto.io"
   },
   {
     "url": "https://www.facebook.com/SaludBeverages",
@@ -64972,10 +62700,6 @@
     "result": 400
   },
   {
-    "url": "https://samplead.co",
-    "result": "https://www.samplead.co"
-  },
-  {
     "url": "https://www.facebook.com/samplesolibrary",
     "result": 400
   },
@@ -64994,10 +62718,6 @@
   {
     "url": "https://www.facebook.com/runway.samsung",
     "result": 400
-  },
-  {
-    "url": "https://neaman.org.il",
-    "result": "https://www.neaman.org.il"
   },
   {
     "url": "https://www.facebook.com/NeamanInstitute",
@@ -65132,10 +62852,6 @@
     "result": 400
   },
   {
-    "url": "https://sarahnoked.com",
-    "result": "https://www.sarahnoked.com"
-  },
-  {
     "url": "https://www.facebook.com/SaridResearch",
     "result": 400
   },
@@ -65246,10 +62962,6 @@
   {
     "url": "https://www.linkedin.com/company/54099853",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F54099853"
-  },
-  {
-    "url": "https://savvy.security",
-    "result": "https://www.savvy.security"
   },
   {
     "url": "https://www.linkedin.com/company/savvy-security/mycompany",
@@ -65380,10 +63092,6 @@
     "result": 400
   },
   {
-    "url": "https://scaleops.ai",
-    "result": "https://www.scaleops.ai"
-  },
-  {
     "url": "https://www.linkedin.com/company/scalesmedia",
     "result": 404
   },
@@ -65462,10 +63170,6 @@
   {
     "url": "https://www.facebook.com/scherfcomm",
     "result": 400
-  },
-  {
-    "url": "https://schneider.org.il",
-    "result": "https://www.schneider.org.il"
   },
   {
     "url": "https://schollab.app",
@@ -65658,10 +63362,6 @@
   {
     "url": "https://www.facebook.com/scrnz",
     "result": 400
-  },
-  {
-    "url": "https://screenz.live",
-    "result": "https://www.screenz.live"
   },
   {
     "url": "https://www.facebook.com/screenzlive",
@@ -66160,10 +63860,6 @@
     "result": 400
   },
   {
-    "url": "https://linkedin.com/company/seecares",
-    "result": "https://www.linkedin.com/company/seecares"
-  },
-  {
     "url": "https://seed.co",
     "error": "fetch failed"
   },
@@ -66288,10 +63984,6 @@
     "result": 400
   },
   {
-    "url": "https://seevix.com",
-    "result": "https://www.seevix.com"
-  },
-  {
     "url": "https://www.seevoov.com",
     "result": 404
   },
@@ -66362,10 +64054,6 @@
   {
     "url": "https://www.facebook.com/selacloud",
     "result": 400
-  },
-  {
-    "url": "https://sela-concrete.co.il",
-    "result": "https://www.sela-concrete.co.il"
   },
   {
     "url": "https://www.facebook.com/Selamedical",
@@ -66488,10 +64176,6 @@
     "result": 400
   },
   {
-    "url": "https://linkedin.com/company/semicom",
-    "result": "https://www.linkedin.com/company/semicom"
-  },
-  {
     "url": "https://www.scd.co.il",
     "error": "fetch failed"
   },
@@ -66538,10 +64222,6 @@
   {
     "url": "https://mobile.x.com/sendemo_llc",
     "result": "https://x.com/sendemo_llc"
-  },
-  {
-    "url": "https://sendi.io",
-    "result": "https://www.sendi.io"
   },
   {
     "url": "https://www.facebook.com/sendi.io2",
@@ -66720,10 +64400,6 @@
     "result": 400
   },
   {
-    "url": "https://sentra.io",
-    "result": "https://www.sentra.io"
-  },
-  {
     "url": "https://www.sentrix.com",
     "error": "fetch failed"
   },
@@ -66872,10 +64548,6 @@
     "result": 400
   },
   {
-    "url": "https://seragon.com",
-    "result": "https://www.seragon.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/seragon-pharmaceuticals-inc.",
     "result": "https://www.linkedin.com/company/seragon"
   },
@@ -66982,10 +64654,6 @@
   {
     "url": "https://www.facebook.com/Session42.music",
     "result": 400
-  },
-  {
-    "url": "https://setbone.com",
-    "result": "https://www.setbone.com"
   },
   {
     "url": "https://www.linkedin.com/company/75860698/admin",
@@ -67184,10 +64852,6 @@
     "result": 400
   },
   {
-    "url": "https://srvc.co.il",
-    "result": "https://www.srvc.co.il"
-  },
-  {
     "url": "https://www.linkedin.com/company/srvc-shaked-raanan-visual-communications-ltd-",
     "result": "https://il.linkedin.com/company/srvc-graphic-design"
   },
@@ -67214,10 +64878,6 @@
   {
     "url": "https://www.facebook.com/ShalevSoft",
     "result": 400
-  },
-  {
-    "url": "https://hartman.org.il",
-    "result": "https://www.hartman.org.il"
   },
   {
     "url": "https://www.facebook.com/shalomhartmaninstitute",
@@ -67282,10 +64942,6 @@
   {
     "url": "https://eytam.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://shapeshift.co.za",
-    "result": "https://www.shapeshift.co.za"
   },
   {
     "url": "https://www.facebook.com/shapeshiftdigital",
@@ -67828,10 +65484,6 @@
     "result": 400
   },
   {
-    "url": "https://shockwave.cloud",
-    "result": "https://www.shockwave.cloud"
-  },
-  {
     "url": "https://site.shoesandships.com",
     "error": "fetch failed"
   },
@@ -67858,10 +65510,6 @@
   {
     "url": "https://www.shohet-familyoffice.org",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://ssn-law.co.il",
-    "result": "https://www.ssn-law.co.il"
   },
   {
     "url": "https://www.linkedin.com/company/3187699",
@@ -68070,10 +65718,6 @@
   {
     "url": "https://shree-ganpati-real-estate.business.site",
     "result": 404
-  },
-  {
-    "url": "https://shrewdthings.com",
-    "result": "https://www.shrewdthings.com"
   },
   {
     "url": "https://www.shrinkmeapp.co.il",
@@ -68468,10 +66112,6 @@
     "result": 400
   },
   {
-    "url": "https://silueta.co.il",
-    "result": "https://www.silueta.co.il"
-  },
-  {
     "url": "https://www.facebook.com/silueta.films",
     "result": 400
   },
@@ -68506,10 +66146,6 @@
   {
     "url": "https://www.facebook.com/Silverbyte.Israel",
     "result": 400
-  },
-  {
-    "url": "https://silverfort.com",
-    "result": "https://www.silverfort.com"
   },
   {
     "url": "https://www.facebook.com/silverfort",
@@ -68788,10 +66424,6 @@
     "result": 400
   },
   {
-    "url": "https://singular.live",
-    "result": "https://www.singular.live"
-  },
-  {
     "url": "https://www.linkedin.com/company/singular.live",
     "result": "https://www.linkedin.com/company/singular-live"
   },
@@ -68884,10 +66516,6 @@
     "result": 404
   },
   {
-    "url": "https://sisense.com",
-    "result": "https://www.sisense.com"
-  },
-  {
     "url": "https://www.facebook.com/Sisense",
     "result": 400
   },
@@ -68962,10 +66590,6 @@
   {
     "url": "https://www.linkedin.com/company/11200888",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F11200888"
-  },
-  {
-    "url": "https://sixfigures.io",
-    "result": "https://www.sixfigures.io"
   },
   {
     "url": "https://www.facebook.com/SixFiguresSchool",
@@ -69124,10 +66748,6 @@
     "result": "https://www.brandbucket.com/names/skurt?s=ext"
   },
   {
-    "url": "https://linkedin.com/company/skurt",
-    "result": "https://www.linkedin.com/company/skurt"
-  },
-  {
     "url": "https://www.linkedin.com/company-beta/4991059",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany-beta%2F4991059"
   },
@@ -69196,10 +66816,6 @@
     "result": "https://skcockpit.com"
   },
   {
-    "url": "https://skylinerobotics.com",
-    "result": "https://www.skylinerobotics.com"
-  },
-  {
     "url": "https://www.facebook.com/SkylineRobotics",
     "result": 400
   },
@@ -69250,10 +66866,6 @@
   {
     "url": "https://www.slatescience.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://slauth.io",
-    "result": "https://www.slauth.io"
   },
   {
     "url": "https://www.facebook.com/slavshikum",
@@ -69338,10 +66950,6 @@
   {
     "url": "https://www.facebook.com/Slitled",
     "result": 400
-  },
-  {
-    "url": "https://sloyd.ai",
-    "result": "https://www.sloyd.ai"
   },
   {
     "url": "https://www.facebook.com/Sloyd3D",
@@ -69668,10 +67276,6 @@
     "result": 400
   },
   {
-    "url": "https://smartthings.com",
-    "result": "https://www.smartthings.com"
-  },
-  {
     "url": "https://www.facebook.com/smartthings",
     "result": 400
   },
@@ -69852,10 +67456,6 @@
     "result": 400
   },
   {
-    "url": "https://snook.gg",
-    "result": "https://www.snook.gg"
-  },
-  {
     "url": "https://www.facebook.com/Snookgg",
     "result": 400
   },
@@ -69956,10 +67556,6 @@
     "result": 400
   },
   {
-    "url": "https://socialvalley.co.il",
-    "result": "https://www.socialvalley.co.il"
-  },
-  {
     "url": "https://www.facebook.com/socialvalley1",
     "result": 400
   },
@@ -69990,10 +67586,6 @@
   {
     "url": "https://www.facebook.com/sodinu",
     "result": 400
-  },
-  {
-    "url": "https://sodot.dev",
-    "result": "https://www.sodot.dev"
   },
   {
     "url": "https://www.linkedin.com/company-beta/3295996",
@@ -70112,10 +67704,6 @@
     "result": 400
   },
   {
-    "url": "https://sogoservices.com",
-    "result": "https://www.sogoservices.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/sogo-services",
     "result": "https://il.linkedin.com/company/sogoservices"
   },
@@ -70228,10 +67816,6 @@
     "result": 400
   },
   {
-    "url": "https://solcold.co",
-    "result": "https://www.solcold.co"
-  },
-  {
     "url": "https://www.facebook.com/SolColdInnovation",
     "result": 400
   },
@@ -70280,10 +67864,6 @@
     "result": 400
   },
   {
-    "url": "https://solidcam.com",
-    "result": "https://www.solidcam.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/solidcam-usa",
     "result": "https://www.linkedin.com/company/solidcam"
   },
@@ -70326,10 +67906,6 @@
   {
     "url": "https://sol-logic.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://solomon-capital.com",
-    "result": "https://www.solomon-capital.com"
   },
   {
     "url": "https://www.solomoto.com",
@@ -70392,10 +67968,6 @@
     "result": 400
   },
   {
-    "url": "https://somite.ai",
-    "result": "https://www.somite.ai"
-  },
-  {
     "url": "https://x.com/somiteai",
     "result": 400
   },
@@ -70448,16 +68020,8 @@
     "result": 400
   },
   {
-    "url": "https://linkedin.com/in/sonnerie-pro-8416a11a8",
-    "result": "https://www.linkedin.com/in/sonnerie-pro-8416a11a8"
-  },
-  {
     "url": "https://www.facebook.com/sonneriepro",
     "result": 400
-  },
-  {
-    "url": "https://sonol.co.il",
-    "result": "https://www.sonol.co.il"
   },
   {
     "url": "https://www.sonotronndt.com",
@@ -70544,16 +68108,8 @@
     "result": 400
   },
   {
-    "url": "https://sosa.co",
-    "result": "https://www.sosa.co"
-  },
-  {
     "url": "https://www.facebook.com/sosashocken13?ref=hl",
     "result": 400
-  },
-  {
-    "url": "https://sosense.co",
-    "result": "https://www.sosense.co"
   },
   {
     "url": "https://www.linkedin.com/company/soterosoft",
@@ -70590,10 +68146,6 @@
   {
     "url": "https://www.soundtrackai.com",
     "result": 404
-  },
-  {
-    "url": "https://souppe.ai",
-    "result": "https://www.souppe.ai"
   },
   {
     "url": "https://www.souq.gg",
@@ -70652,10 +68204,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://sowillo.com",
-    "result": "https://www.sowillo.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/10271259",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F10271259"
   },
@@ -70674,10 +68222,6 @@
   {
     "url": "https://www.spacecowboysstudio.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://spaceforge.co.uk",
-    "result": "https://www.spaceforge.co.uk"
   },
   {
     "url": "https://www.linkedin.com/company/space-forge-ltd/about",
@@ -70702,10 +68246,6 @@
   {
     "url": "https://www.facebook.com/spaceekltd/info",
     "result": 400
-  },
-  {
-    "url": "https://spaceil.com",
-    "result": "https://www.spaceil.com"
   },
   {
     "url": "https://www.facebook.com/SpaceIL",
@@ -70734,10 +68274,6 @@
   {
     "url": "https://www.facebook.com/pg/SpacingIl",
     "result": 400
-  },
-  {
-    "url": "https://spank.co.il",
-    "result": "https://www.spank.co.il"
   },
   {
     "url": "https://www.facebook.com/Spankagency",
@@ -71024,20 +68560,12 @@
     "result": "https://www.spherextech.com"
   },
   {
-    "url": "https://spheron.network",
-    "result": "https://www.spheron.network"
-  },
-  {
     "url": "https://www.facebook.com/profile.php?id=100063635255955",
     "result": 400
   },
   {
     "url": "https://www.sphinx-smarthead.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://sphoonx.com",
-    "result": "https://www.sphoonx.com"
   },
   {
     "url": "https://www.facebook.com/sphoonxeducation",
@@ -71084,10 +68612,6 @@
     "result": 400
   },
   {
-    "url": "https://spikenow.com",
-    "result": "https://www.spikenow.com"
-  },
-  {
     "url": "https://www.facebook.com/Spike",
     "result": 400
   },
@@ -71106,10 +68630,6 @@
   {
     "url": "https://www.facebook.com/spines.official",
     "result": 400
-  },
-  {
-    "url": "https://spiral.us",
-    "result": "https://www.spiral.us"
   },
   {
     "url": "https://www.facebook.com/spiralgives",
@@ -71380,10 +68900,6 @@
     "result": 400
   },
   {
-    "url": "https://spotitearly.com",
-    "result": "https://www.spotitearly.com"
-  },
-  {
     "url": "https://www.spotonaction.com",
     "error": "fetch failed"
   },
@@ -71490,10 +69006,6 @@
   {
     "url": "https://www.facebook.com/SpykeGames",
     "result": 400
-  },
-  {
-    "url": "https://spyre.group",
-    "result": "https://www.spyre.group"
   },
   {
     "url": "https://www.spythenet.com",
@@ -71636,10 +69148,6 @@
     "result": 404
   },
   {
-    "url": "https://staex.io",
-    "result": "https://www.staex.io"
-  },
-  {
     "url": "https://www.facebook.com/Staex.io",
     "result": 400
   },
@@ -71656,10 +69164,6 @@
     "result": 400
   },
   {
-    "url": "https://stakewise.io",
-    "result": "https://www.stakewise.io"
-  },
-  {
     "url": "https://www.linkedin.com/company/stammbiotech",
     "result": "https://www.linkedin.com/company/stammbio"
   },
@@ -71670,10 +69174,6 @@
   {
     "url": "https://www.facebook.com/stamp.ee",
     "result": 400
-  },
-  {
-    "url": "https://standsapp.org",
-    "result": "https://www.standsapp.org"
   },
   {
     "url": "https://www.facebook.com/stndzapp",
@@ -71698,10 +69198,6 @@
   {
     "url": "https://www.facebook.com/starplast.global",
     "result": 400
-  },
-  {
-    "url": "https://startreeventures.com",
-    "result": "https://www.startreeventures.com"
   },
   {
     "url": "https://www.starboard-technologies.com",
@@ -71812,10 +69308,6 @@
     "result": 400
   },
   {
-    "url": "https://startisrael.co.il",
-    "result": "https://www.startisrael.co.il"
-  },
-  {
     "url": "https://www.facebook.com/start.israel.co.il",
     "result": 400
   },
@@ -71906,10 +69398,6 @@
   {
     "url": "https://www.facebook.com/startupstash",
     "result": 400
-  },
-  {
-    "url": "https://startupblink.com",
-    "result": "https://www.startupblink.com"
   },
   {
     "url": "https://www.facebook.com/Startupblink",
@@ -72156,10 +69644,6 @@
     "result": 400
   },
   {
-    "url": "https://stki.info",
-    "result": "https://www.stki.info"
-  },
-  {
     "url": "https://www.linkedin.com/company/294940",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F294940"
   },
@@ -72206,10 +69690,6 @@
   {
     "url": "https://www.facebook.com/stoketalent",
     "result": 400
-  },
-  {
-    "url": "https://linkedin.com/company/stoke-therapeutics",
-    "result": "https://www.linkedin.com/company/stoke-therapeutics"
   },
   {
     "url": "https://www.stonegallery.co.il",
@@ -72286,10 +69766,6 @@
   {
     "url": "https://www.facebook.com/storkplatform",
     "result": 400
-  },
-  {
-    "url": "https://keerbot.com/stork01/index.html",
-    "result": "https://www.keerbot.com/stork01/index.html"
   },
   {
     "url": "https://www.facebook.com/keerbot",
@@ -72404,10 +69880,6 @@
     "result": 400
   },
   {
-    "url": "https://strauss-group.com",
-    "result": "https://www.strauss-group.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/strauss-group-inc.",
     "result": "https://www.linkedin.com/company/strauss-group"
   },
@@ -72484,10 +69956,6 @@
     "result": 400
   },
   {
-    "url": "https://streetlife.com",
-    "result": "https://www.streetlife.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/streetlife.com",
     "result": 404
   },
@@ -72510,10 +69978,6 @@
   {
     "url": "https://stressfactor.me",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://strigo.io",
-    "result": "https://www.strigo.io"
   },
   {
     "url": "https://www.facebook.com/strigoio",
@@ -72618,10 +70082,6 @@
   {
     "url": "https://x.com/ComxStudio",
     "result": 400
-  },
-  {
-    "url": "https://studioelefant.com",
-    "result": "https://www.studioelefant.com"
   },
   {
     "url": "https://www.facebook.com/studioelefantlv",
@@ -72744,10 +70204,6 @@
     "result": 400
   },
   {
-    "url": "https://su-pad.co.il",
-    "result": "https://www.su-pad.co.il"
-  },
-  {
     "url": "https://www.facebook.com/SUPADLTD",
     "result": 400
   },
@@ -72776,10 +70232,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://getsubsalt.com",
-    "result": "https://www.getsubsalt.com"
-  },
-  {
     "url": "https://www.facebook.com/subsmash",
     "result": 400
   },
@@ -72792,20 +70244,12 @@
     "result": "https://ch.linkedin.com/company/hellosqd"
   },
   {
-    "url": "https://substrata.me",
-    "result": "https://www.substrata.me"
-  },
-  {
     "url": "https://www.linkedin.com/company/13997175",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F13997175"
   },
   {
     "url": "https://www.facebook.com/SubStrata-1115376515335790",
     "result": 400
-  },
-  {
-    "url": "https://subzee.io",
-    "result": "https://www.subzee.io"
   },
   {
     "url": "https://www.linkedin.com/company/subzee",
@@ -72878,10 +70322,6 @@
   {
     "url": "https://www.facebook.com/Sumo.Logic",
     "result": 400
-  },
-  {
-    "url": "https://suneffect.co.il",
-    "result": "https://www.suneffect.co.il"
   },
   {
     "url": "https://www.facebook.com/Sunwhispers",
@@ -73008,10 +70448,6 @@
     "result": 400
   },
   {
-    "url": "https://supercreator.ai",
-    "result": "https://www.supercreator.ai"
-  },
-  {
     "url": "https://www.facebook.com/supercreatorai",
     "result": 400
   },
@@ -73096,10 +70532,6 @@
     "result": 400
   },
   {
-    "url": "https://superplug.in",
-    "result": "https://www.superplug.in"
-  },
-  {
     "url": "https://www.facebook.com/superplugin",
     "result": 400
   },
@@ -73138,14 +70570,6 @@
   {
     "url": "https://www.facebook.com/studiossupersonic",
     "result": 400
-  },
-  {
-    "url": "https://superstream.ai",
-    "result": "https://www.superstream.ai"
-  },
-  {
-    "url": "https://supertenant.com",
-    "result": "https://www.supertenant.com"
   },
   {
     "url": "https://www.linkedin.com/company/supertenant",
@@ -73364,16 +70788,8 @@
     "result": 400
   },
   {
-    "url": "https://sweefit.com",
-    "result": "https://www.sweefit.com"
-  },
-  {
     "url": "https://www.facebook.com/Sweefit",
     "result": 400
-  },
-  {
-    "url": "https://sweep.io",
-    "result": "https://www.sweep.io"
   },
   {
     "url": "https://www.sweetartma.com",
@@ -73404,20 +70820,12 @@
     "result": 400
   },
   {
-    "url": "https://sweet.security",
-    "result": "https://www.sweet.security"
-  },
-  {
     "url": "https://www.facebook.com/sweetvictorygum",
     "result": 400
   },
   {
     "url": "https://www.facebook.com/Sweetango.il",
     "result": 400
-  },
-  {
-    "url": "https://sweetch.com",
-    "result": "https://www.sweetch.com"
   },
   {
     "url": "https://www.facebook.com/SweetchHealth",
@@ -73524,10 +70932,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://sygnia.co",
-    "result": "https://www.sygnia.co"
-  },
-  {
     "url": "https://www.linkedin.com/company/symania/about",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fsymania%2Fabout"
   },
@@ -73584,10 +70988,6 @@
     "result": "https://aistacked.com"
   },
   {
-    "url": "https://synced.vision",
-    "result": "https://www.synced.vision"
-  },
-  {
     "url": "https://www.facebook.com/synced.vision",
     "result": 400
   },
@@ -73642,10 +71042,6 @@
   {
     "url": "https://www.facebook.com/synergybeam",
     "result": 400
-  },
-  {
-    "url": "https://synergy.co.il",
-    "result": "https://www.synergy.co.il"
   },
   {
     "url": "https://www.facebook.com/Synergyrm.group",
@@ -73772,10 +71168,6 @@
     "result": 400
   },
   {
-    "url": "https://sh-ze.co.il",
-    "result": "https://www.sh-ze.co.il"
-  },
-  {
     "url": "https://www.facebook.com/shze.accountants",
     "result": 400
   },
@@ -73802,10 +71194,6 @@
   {
     "url": "https://www.linkedin.com/company/tgw-holdings",
     "result": "https://il.linkedin.com/company/tgw-groups"
-  },
-  {
-    "url": "https://tethysdesal.com",
-    "result": "https://www.tethysdesal.com"
   },
   {
     "url": "https://www.linkedin.com/company/5894756",
@@ -73962,10 +71350,6 @@
   {
     "url": "https://www.facebook.com/pages/Tadbik/552749554777878",
     "result": 400
-  },
-  {
-    "url": "https://tadiad.co.il",
-    "result": "https://www.tadiad.co.il"
   },
   {
     "url": "https://www.facebook.com/TadiadDevelopmentCenter",
@@ -74144,10 +71528,6 @@
     "result": "https://il.linkedin.com/company/taktika-cyber"
   },
   {
-    "url": "https://tal-and-hadas.com",
-    "result": "https://www.tal-and-hadas.com"
-  },
-  {
     "url": "https://www.facebook.com/talandhadas",
     "result": 400
   },
@@ -74178,10 +71558,6 @@
   {
     "url": "https://www.facebook.com/Taldor",
     "result": 400
-  },
-  {
-    "url": "https://taldor.co.il",
-    "result": "https://www.taldor.co.il"
   },
   {
     "url": "https://www.talent-mg.co.il",
@@ -74280,10 +71656,6 @@
     "result": 400
   },
   {
-    "url": "https://talkspace.com",
-    "result": "https://www.talkspace.com"
-  },
-  {
     "url": "https://www.facebook.com/Talkspacetherapy",
     "result": 400
   },
@@ -74324,10 +71696,6 @@
     "result": 400
   },
   {
-    "url": "https://tamar-group.com",
-    "result": "https://www.tamar-group.com"
-  },
-  {
     "url": "https://www.tamarestelecom.com",
     "result": "https://www.exelera.net"
   },
@@ -74366,10 +71734,6 @@
   {
     "url": "https://www.facebook.com/TamirRental",
     "result": 400
-  },
-  {
-    "url": "https://tamiz.co.il",
-    "result": "https://www.tamiz.co.il"
   },
   {
     "url": "https://www.facebook.com/tamiz.vegan.cheese",
@@ -74592,10 +71956,6 @@
     "result": "https://www.atom.com/name/Targetize"
   },
   {
-    "url": "https://targo-consulting.co.il",
-    "result": "https://www.targo-consulting.co.il"
-  },
-  {
     "url": "https://www.facebook.com/TARGO-Consulting-374771925949856",
     "result": 400
   },
@@ -74690,10 +72050,6 @@
   {
     "url": "https://www.facebook.com/TAVDENTAL",
     "result": 400
-  },
-  {
-    "url": "https://tavopo.com",
-    "result": "https://www.tavopo.com"
   },
   {
     "url": "https://www.tavormed.com",
@@ -75248,10 +72604,6 @@
     "result": 400
   },
   {
-    "url": "https://tenasors.com",
-    "result": "https://www.tenasors.com"
-  },
-  {
     "url": "https://www.tencure.co.il",
     "error": "fetch failed"
   },
@@ -75440,10 +72792,6 @@
     "result": 400
   },
   {
-    "url": "https://testim.io",
-    "result": "https://www.testim.io"
-  },
-  {
     "url": "https://www.facebook.com/testimdotio",
     "result": 400
   },
@@ -75530,10 +72878,6 @@
   {
     "url": "https://www.facebook.com/irrigationcontrol",
     "result": 400
-  },
-  {
-    "url": "https://tevel-tech.com",
-    "result": "https://www.tevel-tech.com"
   },
   {
     "url": "https://www.facebook.com/TevelGlobal",
@@ -75660,10 +73004,6 @@
     "result": 403
   },
   {
-    "url": "https://linkedin.com/company/thebouqsco",
-    "result": "https://www.linkedin.com/company/thebouqsco"
-  },
-  {
     "url": "https://www.facebook.com/TheBouqsCo",
     "result": 400
   },
@@ -75760,10 +73100,6 @@
     "result": 400
   },
   {
-    "url": "https://democratic.co.il",
-    "result": "https://www.democratic.co.il"
-  },
-  {
     "url": "https://www.facebook.com/Democraticinstitute",
     "result": 400
   },
@@ -75790,10 +73126,6 @@
   {
     "url": "https://www.facebook.com/dioceseofjerusalem",
     "result": 400
-  },
-  {
-    "url": "https://exclosure.io",
-    "result": "https://www.exclosure.io"
   },
   {
     "url": "https://www.fishman1.co.il",
@@ -76120,10 +73452,6 @@
     "result": 404
   },
   {
-    "url": "https://signatureglass.com",
-    "result": "https://www.signatureglass.com"
-  },
-  {
     "url": "https://www.facebook.com/TheSignatureGlassCompany",
     "result": 400
   },
@@ -76280,10 +73608,6 @@
     "result": 400
   },
   {
-    "url": "https://themisai.io",
-    "result": "https://www.themisai.io"
-  },
-  {
     "url": "https://x.com/Themis_AI",
     "result": 400
   },
@@ -76336,10 +73660,6 @@
     "result": "https://www.thermoterra.com"
   },
   {
-    "url": "https://theroadtlv.com",
-    "result": "https://www.theroadtlv.com"
-  },
-  {
     "url": "https://www.facebook.com/theroadtlv",
     "result": 400
   },
@@ -76366,10 +73686,6 @@
   {
     "url": "https://tvillage.info",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://linkedin.com/company-beta/18099308",
-    "result": "https://www.linkedin.com/company-beta/18099308"
   },
   {
     "url": "https://www.facebook.com/TheySaySocial",
@@ -76404,10 +73720,6 @@
     "result": 400
   },
   {
-    "url": "https://therapnea.net",
-    "result": "https://www.therapnea.net"
-  },
-  {
     "url": "https://www.linkedin.com/company/72089",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F72089"
   },
@@ -76416,16 +73728,8 @@
     "result": 400
   },
   {
-    "url": "https://thoughtleaders.io",
-    "result": "https://www.thoughtleaders.io"
-  },
-  {
     "url": "https://www.facebook.com/ThoughtLeaders.io",
     "result": 400
-  },
-  {
-    "url": "https://thoughtriver.com",
-    "result": "https://www.thoughtriver.com"
   },
   {
     "url": "https://www.facebook.com/ThoughtRiver1",
@@ -76960,10 +74264,6 @@
     "result": 400
   },
   {
-    "url": "https://tltboard.com",
-    "result": "https://www.tltboard.com"
-  },
-  {
     "url": "https://www.facebook.com/tltboardeng",
     "result": 400
   },
@@ -77112,10 +74412,6 @@
     "result": 400
   },
   {
-    "url": "https://tokagroup.com",
-    "result": "https://www.tokagroup.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/tokacyber",
     "result": "https://il.linkedin.com/company/tokagroup"
   },
@@ -77130,10 +74426,6 @@
   {
     "url": "https://www.facebook.com/TokabotFootball",
     "result": 400
-  },
-  {
-    "url": "https://token.security",
-    "result": "https://www.token.security"
   },
   {
     "url": "https://tokpayapp.com",
@@ -77248,10 +74540,6 @@
     "result": 400
   },
   {
-    "url": "https://tonkean.com",
-    "result": "https://www.tonkean.com"
-  },
-  {
     "url": "https://www.facebook.com/tonkean.com",
     "result": 400
   },
@@ -77364,10 +74652,6 @@
     "result": 400
   },
   {
-    "url": "https://topisraelinterns.com",
-    "result": "https://www.topisraelinterns.com"
-  },
-  {
     "url": "https://www.facebook.com/Top.Israel.Interns.Masa.positions",
     "result": 400
   },
@@ -77432,10 +74716,6 @@
     "result": "https://il.linkedin.com/company/dexworld"
   },
   {
-    "url": "https://topeak.co.il",
-    "result": "https://www.topeak.co.il"
-  },
-  {
     "url": "https://www.facebook.com/topeak",
     "result": 400
   },
@@ -77480,10 +74760,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://tor4you.co.il",
-    "result": "https://www.tor4you.co.il"
-  },
-  {
     "url": "https://www.facebook.com/Tor4You",
     "result": 400
   },
@@ -77502,10 +74778,6 @@
   {
     "url": "https://www.linkedin.com/company-beta/13202159",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany-beta%2F13202159"
-  },
-  {
-    "url": "https://toriihq.com",
-    "result": "https://www.toriihq.com"
   },
   {
     "url": "https://www.facebook.com/pg/toriiapp",
@@ -77912,10 +75184,6 @@
     "result": 400
   },
   {
-    "url": "https://tradisgat.com",
-    "result": "https://www.tradisgat.com"
-  },
-  {
     "url": "https://www.facebook.com/TradisGatTradisGat",
     "result": 400
   },
@@ -78050,10 +75318,6 @@
   {
     "url": "https://www.transisrael.co.il",
     "result": 403
-  },
-  {
-    "url": "https://transactionlink.io",
-    "result": "https://www.transactionlink.io"
   },
   {
     "url": "https://www.linkedin.com/company/transalgae-israel-ltd.",
@@ -78304,10 +75568,6 @@
     "result": 400
   },
   {
-    "url": "https://treetoscope.com",
-    "result": "https://www.treetoscope.com"
-  },
-  {
     "url": "https://www.facebook.com/tregobikes-545189638956634",
     "result": 400
   },
@@ -78384,10 +75644,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://trialog.co.il",
-    "result": "https://www.trialog.co.il"
-  },
-  {
     "url": "https://www.linkedin.com/company/1316849",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F1316849"
   },
@@ -78448,10 +75704,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://trichomeshell.com",
-    "result": "https://www.trichomeshell.com"
-  },
-  {
     "url": "https://best-interior-designer-in-chandigarh.business.site",
     "result": 404
   },
@@ -78504,10 +75756,6 @@
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Ftriggerplus%2Fabout"
   },
   {
-    "url": "https://trigoretail.com",
-    "result": "https://www.trigoretail.com"
-  },
-  {
     "url": "https://www.facebook.com/trigoretail",
     "result": 400
   },
@@ -78518,10 +75766,6 @@
   {
     "url": "https://www.linkedin.com/company/trillionic-group",
     "result": 404
-  },
-  {
-    "url": "https://trinityaudio.ai",
-    "result": "https://www.trinityaudio.ai"
   },
   {
     "url": "https://www.facebook.com/TheTrinityAudio",
@@ -78620,10 +75864,6 @@
     "result": 400
   },
   {
-    "url": "https://triplet.co.il",
-    "result": "https://www.triplet.co.il"
-  },
-  {
     "url": "https://www.linkedin.com/company/triple-t-ltd.",
     "result": 404
   },
@@ -78670,10 +75910,6 @@
   {
     "url": "https://www.linkedin.com/company/3plw-ltd-",
     "result": "https://il.linkedin.com/company/triplew-ltd"
-  },
-  {
-    "url": "https://triplewhale.com",
-    "result": "https://www.triplewhale.com"
   },
   {
     "url": "https://www.triplights.com",
@@ -78860,10 +76096,6 @@
     "result": 400
   },
   {
-    "url": "https://trustedpartners.com",
-    "result": "https://www.trustedpartners.com"
-  },
-  {
     "url": "https://www.trustedid.com",
     "error": "fetch failed"
   },
@@ -78878,10 +76110,6 @@
   {
     "url": "https://www.linkedin.com/company/trusteer",
     "result": 404
-  },
-  {
-    "url": "https://trusti.com",
-    "result": "https://www.trusti.com"
   },
   {
     "url": "https://www.facebook.com/trustisolution",
@@ -78988,10 +76216,6 @@
     "result": 400
   },
   {
-    "url": "https://tufin.com",
-    "result": "https://www.tufin.com"
-  },
-  {
     "url": "https://www.facebook.com/Tufintech",
     "result": 400
   },
@@ -79038,10 +76262,6 @@
   {
     "url": "https://www.facebook.com/ituqqi",
     "result": 400
-  },
-  {
-    "url": "https://turintech.ai",
-    "result": "https://www.turintech.ai"
   },
   {
     "url": "https://www.facebook.com/turnkeylinux",
@@ -79158,10 +76378,6 @@
   {
     "url": "https://www.facebook.com/TweegeeNational",
     "result": 400
-  },
-  {
-    "url": "https://tween-id.com",
-    "result": "https://www.tween-id.com"
   },
   {
     "url": "https://www.facebook.com/tweenid",
@@ -79760,10 +76976,6 @@
     "result": 400
   },
   {
-    "url": "https://unit.co",
-    "result": "https://www.unit.co"
-  },
-  {
     "url": "https://www.facebook.com/UNITGroup.co.il",
     "result": 400
   },
@@ -79838,10 +77050,6 @@
   {
     "url": "https://www.facebook.com/UniversalIsrael",
     "result": 400
-  },
-  {
-    "url": "https://onuniverse.com",
-    "result": "https://www.onuniverse.com"
   },
   {
     "url": "https://www.facebook.com/onuniverseapp",
@@ -80108,10 +77316,6 @@
     "result": 400
   },
   {
-    "url": "https://urcreative.com",
-    "result": "https://www.urcreative.com"
-  },
-  {
     "url": "https://www.facebook.com/urcreative",
     "result": 400
   },
@@ -80340,10 +77544,6 @@
     "result": "https://il.linkedin.com/company/validitai"
   },
   {
-    "url": "https://validic.com",
-    "result": "https://www.validic.com"
-  },
-  {
     "url": "https://www.facebook.com/motsci",
     "result": 400
   },
@@ -80536,10 +77736,6 @@
     "result": 400
   },
   {
-    "url": "https://vata.one",
-    "result": "https://www.vata.one"
-  },
-  {
     "url": "https://www.facebook.com/vatkin.co.il",
     "result": 400
   },
@@ -80610,10 +77806,6 @@
   {
     "url": "https://www.facebook.com/vascularbiogenics",
     "result": 400
-  },
-  {
-    "url": "https://vbookz.com",
-    "result": "https://www.vbookz.com"
   },
   {
     "url": "https://www.facebook.com/vBookz-107374222620036",
@@ -80698,10 +77890,6 @@
   {
     "url": "https://www.facebook.com/iVeecaMe",
     "result": 400
-  },
-  {
-    "url": "https://veedda.com",
-    "result": "https://www.veedda.com"
   },
   {
     "url": "https://www.linkedin.com/company/102144654",
@@ -80808,10 +77996,6 @@
     "result": 400
   },
   {
-    "url": "https://velotix.ai",
-    "result": "https://www.velotix.ai"
-  },
-  {
     "url": "https://www.velti.com",
     "result": "http://www.velti.ai/"
   },
@@ -80898,10 +78082,6 @@
   {
     "url": "https://www.facebook.com/verbit.inc",
     "result": 400
-  },
-  {
-    "url": "https://veriests.com",
-    "result": "https://www.veriests.com"
   },
   {
     "url": "https://www.facebook.com/Veriest",
@@ -81014,10 +78194,6 @@
   {
     "url": "https://www.facebook.com/verticalloop",
     "result": 400
-  },
-  {
-    "url": "https://verto.ai",
-    "result": "https://www.verto.ai"
   },
   {
     "url": "https://www.facebook.com/verto3d",
@@ -81272,10 +78448,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://videodubber.com",
-    "result": "https://www.videodubber.com"
-  },
-  {
     "url": "https://www.linkedin.com/company/videodubber",
     "result": 404
   },
@@ -81302,10 +78474,6 @@
   {
     "url": "https://www.facebook.com/VideoJam.tv",
     "result": 400
-  },
-  {
-    "url": "https://videosparks.net",
-    "result": "https://www.videosparks.net"
   },
   {
     "url": "https://videostir.com",
@@ -81404,10 +78572,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://vii.events",
-    "result": "https://www.vii.events"
-  },
-  {
     "url": "https://www.linkedin.com/company/vii-events",
     "result": "https://il.linkedin.com/company/viidigital"
   },
@@ -81430,10 +78594,6 @@
   {
     "url": "https://villiger.io",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://vilog.io",
-    "result": "https://www.vilog.io"
   },
   {
     "url": "https://www.facebook.com/vilonor.il",
@@ -81478,10 +78638,6 @@
   {
     "url": "https://www.facebook.com/vinsent.wine",
     "result": 400
-  },
-  {
-    "url": "https://vinvo.me",
-    "result": "https://www.vinvo.me"
   },
   {
     "url": "https://www.facebook.com/Vinvo.me",
@@ -81660,10 +78816,6 @@
     "result": 400
   },
   {
-    "url": "https://virusight.co.il",
-    "result": "https://www.virusight.co.il"
-  },
-  {
     "url": "https://www.linkedin.com/company/68043917/admin",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F68043917%2Fadmin"
   },
@@ -81718,14 +78870,6 @@
   {
     "url": "https://www.vision-it.co.il",
     "result": "https://www.vision-it.global"
-  },
-  {
-    "url": "https://vision.bi",
-    "result": "https://www.vision.bi"
-  },
-  {
-    "url": "https://visionbit.co.il",
-    "result": "https://www.visionbit.co.il"
   },
   {
     "url": "https://www.facebook.com/p/Vision-Bit-100071935856510",
@@ -82012,10 +79156,6 @@
     "result": 500
   },
   {
-    "url": "https://vnnsports.net",
-    "result": "https://www.vnnsports.net"
-  },
-  {
     "url": "https://www.linkedin.com/company/varsity-news-network",
     "result": "https://www.linkedin.com/company/vnn-sports"
   },
@@ -82038,10 +79178,6 @@
   {
     "url": "https://www.vocabularybot.com",
     "result": "https://www.hugedomains.com/domain_profile.cfm?d=vocabularybot.com&utm_source=hdrhttpstest"
-  },
-  {
-    "url": "https://vocai.tech",
-    "result": "https://www.vocai.tech"
   },
   {
     "url": "https://www.linkedin.com/company/vocalis-health",
@@ -82112,10 +79248,6 @@
     "result": 400
   },
   {
-    "url": "https://voicespin.com",
-    "result": "https://www.voicespin.com"
-  },
-  {
     "url": "https://www.linkedin.com/company-beta/1032685",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany-beta%2F1032685"
   },
@@ -82170,10 +79302,6 @@
   {
     "url": "https://www.vollee.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://volleygames.com",
-    "result": "https://www.volleygames.com"
   },
   {
     "url": "https://www.facebook.com/volleyfmshortcasts",
@@ -82248,24 +79376,12 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://vorpal-corp.com",
-    "result": "https://www.vorpal-corp.com"
-  },
-  {
-    "url": "https://vortex-imaging.com",
-    "result": "https://www.vortex-imaging.com"
-  },
-  {
     "url": "https://x.com/vorteximaging",
     "result": 400
   },
   {
     "url": "https://votalix.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://votis.net",
-    "result": "https://www.votis.net"
   },
   {
     "url": "https://www.linkedin.com/company/votis-subdermal-imaging-technologies-ltd/about",
@@ -82374,10 +79490,6 @@
   {
     "url": "https://www.facebook.com/Vrtechbiz-167175626634956",
     "result": 400
-  },
-  {
-    "url": "https://linkedin.com/company/vsllabs",
-    "result": "https://www.linkedin.com/company/vsllabs"
   },
   {
     "url": "https://www.facebook.com/VSMnewmedia",
@@ -82544,10 +79656,6 @@
     "result": 400
   },
   {
-    "url": "https://walkme.com",
-    "result": "https://www.walkme.com"
-  },
-  {
     "url": "https://www.facebook.com/WalkMe",
     "result": 400
   },
@@ -82610,14 +79718,6 @@
   {
     "url": "https://www.wally-interactive.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://walnut.io",
-    "result": "https://www.walnut.io"
-  },
-  {
-    "url": "https://walnut.io",
-    "result": "https://www.walnut.io"
   },
   {
     "url": "https://www.facebook.com/WalnutAI",
@@ -82698,10 +79798,6 @@
   {
     "url": "https://www.facebook.com/WatchDox",
     "result": 400
-  },
-  {
-    "url": "https://watchful.ai",
-    "result": "https://www.watchful.ai"
   },
   {
     "url": "https://www.facebook.com/watchfulltd",
@@ -82826,10 +79922,6 @@
   {
     "url": "https://www.facebook.com/wayupinc",
     "result": 400
-  },
-  {
-    "url": "https://waze.com",
-    "result": "https://www.waze.com"
   },
   {
     "url": "https://www.linkedin.com/company/379681",
@@ -83024,10 +80116,6 @@
     "result": 400
   },
   {
-    "url": "https://web3m.io",
-    "result": "https://www.web3m.io"
-  },
-  {
     "url": "https://www.linkedin.com/company/3482424",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F3482424"
   },
@@ -83050,10 +80138,6 @@
   {
     "url": "https://www.linkedin.com/company/webcand/about",
     "result": "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fwebcand%2Fabout"
-  },
-  {
-    "url": "https://webclub.co.il",
-    "result": "https://www.webclub.co.il"
   },
   {
     "url": "https://www.facebook.com/webclub.co.il",
@@ -83150,10 +80234,6 @@
   {
     "url": "https://www.facebook.com/webmind28",
     "result": 400
-  },
-  {
-    "url": "https://webo-tech.com",
-    "result": "https://www.webo-tech.com"
   },
   {
     "url": "https://www.facebook.com/p/Webo-Tech-100063490154774",
@@ -83416,10 +80496,6 @@
     "result": 400
   },
   {
-    "url": "https://wekast.com",
-    "result": "https://www.wekast.com"
-  },
-  {
     "url": "https://www.facebook.com/WeKastPresent",
     "result": 400
   },
@@ -83572,20 +80648,12 @@
     "result": 400
   },
   {
-    "url": "https://wework.cn",
-    "result": "https://www.wework.cn"
-  },
-  {
     "url": "https://www.facebook.com/WeWorkIndia",
     "result": 400
   },
   {
     "url": "https://www.facebook.com/WHALEAPPLTD",
     "result": 400
-  },
-  {
-    "url": "https://whalo.com",
-    "result": "https://www.whalo.com"
   },
   {
     "url": "https://www.facebook.com/FishOfFortune",
@@ -83668,10 +80736,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://whitestream.io",
-    "result": "https://www.whitestream.io"
-  },
-  {
     "url": "https://www.linkedin.com/company/753653",
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F753653"
   },
@@ -83718,10 +80782,6 @@
   {
     "url": "https://www.facebook.com/Whstl",
     "result": 400
-  },
-  {
-    "url": "https://wi-charge.com",
-    "result": "https://www.wi-charge.com"
   },
   {
     "url": "https://www.facebook.com/WiCharge",
@@ -83804,10 +80864,6 @@
     "result": 400
   },
   {
-    "url": "https://wiggles.in",
-    "result": "https://www.wiggles.in"
-  },
-  {
     "url": "https://www.facebook.com/pg/India.Wiggles",
     "result": 400
   },
@@ -83836,24 +80892,12 @@
     "result": 400
   },
   {
-    "url": "https://wikisales.biz",
-    "result": "https://www.wikisales.biz"
-  },
-  {
     "url": "https://www.facebook.com/GetDreamJobNow",
     "result": 400
   },
   {
     "url": "https://www.facebook.com/wikiwandapp",
     "result": 400
-  },
-  {
-    "url": "https://trywilco.com",
-    "result": "https://www.trywilco.com"
-  },
-  {
-    "url": "https://trywilco.com",
-    "result": "https://www.trywilco.com"
   },
   {
     "url": "https://www.facebook.com/trywilco",
@@ -83994,10 +81038,6 @@
   {
     "url": "https://www.facebook.com/WiCnet",
     "result": 400
-  },
-  {
-    "url": "https://winvid.tv",
-    "result": "https://www.winvid.tv"
   },
   {
     "url": "https://www.facebook.com/Winvidmedia",
@@ -84164,10 +81204,6 @@
     "result": 400
   },
   {
-    "url": "https://wisio.com",
-    "result": "https://www.wisio.com"
-  },
-  {
     "url": "https://www.facebook.com/Wisio.official",
     "result": 400
   },
@@ -84236,10 +81272,6 @@
     "result": 400
   },
   {
-    "url": "https://wix.com",
-    "result": "https://www.wix.com"
-  },
-  {
     "url": "https://x.com/Wix",
     "result": 400
   },
@@ -84254,10 +81286,6 @@
   {
     "url": "https://wixsite.com",
     "error": "fetch failed"
-  },
-  {
-    "url": "https://wiz.io",
-    "result": "https://www.wiz.io"
   },
   {
     "url": "https://www.facebook.com/wiz.io.sec",
@@ -84286,10 +81314,6 @@
   {
     "url": "https://www.facebook.com/wizcall",
     "result": 400
-  },
-  {
-    "url": "https://wizcomtech.com",
-    "result": "https://www.wizcomtech.com"
   },
   {
     "url": "https://www.linkedin.com/company/wizcom-technologies?trk=fc_badge",
@@ -84608,10 +81632,6 @@
     "result": 400
   },
   {
-    "url": "https://workiz.com",
-    "result": "https://www.workiz.com"
-  },
-  {
     "url": "https://www.facebook.com/workiz",
     "result": 400
   },
@@ -84630,10 +81650,6 @@
   {
     "url": "https://www.facebook.com/workplus.co.il",
     "result": 400
-  },
-  {
-    "url": "https://linkedin.com/company/autoproof",
-    "result": "https://www.linkedin.com/company/autoproof"
   },
   {
     "url": "https://www.worldofmarathon.com",
@@ -84810,10 +81826,6 @@
   {
     "url": "https://www.facebook.com/96462647125",
     "result": 400
-  },
-  {
-    "url": "https://xeniago.com",
-    "result": "https://www.xeniago.com"
   },
   {
     "url": "https://www.xenolithmedical.com",
@@ -85104,10 +82116,6 @@
     "error": "fetch failed"
   },
   {
-    "url": "https://xyte.io",
-    "result": "https://www.xyte.io"
-  },
-  {
     "url": "https://www.facebook.com/xyte.io",
     "result": 400
   },
@@ -85258,10 +82266,6 @@
   {
     "url": "https://www.linkedin.com/company/yalgae",
     "result": 404
-  },
-  {
-    "url": "https://yalla.co.il",
-    "result": "https://www.yalla.co.il"
   },
   {
     "url": "https://yalla.do",
@@ -85438,10 +82442,6 @@
   {
     "url": "https://www.facebook.com/yeda.rnd",
     "result": 400
-  },
-  {
-    "url": "https://aolanswers.com",
-    "result": "https://www.aolanswers.com"
   },
   {
     "url": "https://www.facebook.com/jewishYbook",
@@ -85644,14 +82644,6 @@
     "result": "https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F5104737"
   },
   {
-    "url": "https://yodfatengineers.com",
-    "result": "https://www.yodfatengineers.com"
-  },
-  {
-    "url": "https://geva.co.il",
-    "result": "https://www.geva.co.il"
-  },
-  {
     "url": "https://www.facebook.com/geva.bagrut",
     "result": 400
   },
@@ -85702,14 +82694,6 @@
   {
     "url": "https://www.facebook.com/yonacogroup",
     "result": 400
-  },
-  {
-    "url": "https://yonalink.com",
-    "result": "https://www.yonalink.com"
-  },
-  {
-    "url": "https://yonani.com",
-    "result": "https://www.yonani.com"
   },
   {
     "url": "https://www.facebook.com/yonanindustries",
@@ -85788,10 +82772,6 @@
     "result": 400
   },
   {
-    "url": "https://yottaenergy.com",
-    "result": "https://www.yottaenergy.com"
-  },
-  {
     "url": "https://yottagreen.com",
     "error": "fetch failed"
   },
@@ -85830,10 +82810,6 @@
   {
     "url": "https://www.facebook.com/AppYouMe",
     "result": 400
-  },
-  {
-    "url": "https://yourasset.com",
-    "result": "https://www.yourasset.com"
   },
   {
     "url": "https://www.facebook.com/yourstorygroup",
@@ -86184,10 +83160,6 @@
     "result": 400
   },
   {
-    "url": "https://zeekrlife.com",
-    "result": "https://www.zeekrlife.com"
-  },
-  {
     "url": "https://www.facebook.com/zeekruniverse",
     "result": 400
   },
@@ -86276,10 +83248,6 @@
     "result": 400
   },
   {
-    "url": "https://zenzap.co",
-    "result": "https://www.zenzap.co"
-  },
-  {
     "url": "https://www.zepa.co.il",
     "result": 403
   },
@@ -86364,10 +83332,6 @@
     "result": 400
   },
   {
-    "url": "https://zerve.ai",
-    "result": "https://www.zerve.ai"
-  },
-  {
     "url": "https://www.linkedin.com/company/zerve-io",
     "result": 404
   },
@@ -86438,10 +83402,6 @@
   {
     "url": "https://www.facebook.com/ZigguratCoordination",
     "result": 400
-  },
-  {
-    "url": "https://zigit.co.il",
-    "result": "https://www.zigit.co.il"
   },
   {
     "url": "https://www.linkedin.com/company/zigit/about",
