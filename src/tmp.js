@@ -18,7 +18,7 @@ async function filterReport(filePath) {
     // Filter out rows where the result is 200
     const filteredData = data.filter((row) => {
       return row.result !== 200 &&
-        row.result !== row.url &&
+        row.result === row.url &&
         typeof row.result === "string"
         ? !row.result.startsWith("/")
         : true;
