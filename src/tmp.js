@@ -25,6 +25,19 @@ async function filterReport(filePath) {
         return false;
       }
 
+      if (typeof row.result === "string") {
+        if (
+          row.result.split("https://")[1] &&
+          row.result.split("https://")[1] === row.url.split("https://www.")[1]
+        ) {
+          // console.log(
+          //   row.result.split("https://")[1],
+          //   row.url.split("https://www.")[1],
+          // );
+          return false;
+        }
+      }
+
       return true;
 
       // return  &&
