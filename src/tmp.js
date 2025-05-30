@@ -50,8 +50,25 @@ async function filterReport(filePath) {
       //   : true;
     });
 
-    // Write the filtered data back to the original file, overwriting it
-    fs.writeFileSync(filePath, JSON.stringify(filteredData, null, 2)); // Use null, 2 for pretty printing
+    // Sort the filtered data
+    const sortedData = filteredData.sort((a, b) => {
+      // First sort by result
+      if (typeof a.result === "number" && typeof b.result === "number") {
+        if (a.result !== b.result) return a.result - b.result;
+      } else {
+        const resultComp = String(a.result).localeCompare(String(b.result));
+        if (resultComp !== 0) return resultComp;
+      }
+
+      // Then sort by error if it exists
+      if (a.error && b.error) return a.error.localeCompare(b.error);
+      if (a.error) return -1;
+      if (b.error) return 1;
+      return 0;
+    });
+
+    // Write the sorted and filtered data back to the original file
+    fs.writeFileSync(filePath, JSON.stringify(sortedData, null, 2)); // Use null, 2 for pretty printing
 
     console.log("The JSON file was filtered and overwritten successfully");
   } catch (err) {
