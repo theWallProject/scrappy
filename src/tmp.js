@@ -16,7 +16,13 @@ async function filterReport(filePath) {
     const data = JSON.parse(rawData);
 
     // Filter out rows where the result is 200
-    const filteredData = data.filter((row) => row.result !== 200);
+    const filteredData = data.filter((row) => {
+      return row.result !== 200 &&
+        row.result !== row.url &&
+        typeof row.result === "string"
+        ? !row.result.startsWith("/")
+        : true;
+    });
 
     // Write the filtered data back to the original file, overwriting it
     fs.writeFileSync(filePath, JSON.stringify(filteredData, null, 2)); // Use null, 2 for pretty printing
