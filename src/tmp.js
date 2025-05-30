@@ -15,13 +15,23 @@ async function filterReport(filePath) {
     const rawData = fs.readFileSync(filePath);
     const data = JSON.parse(rawData);
 
-    // Filter out rows where the result is 200
+    // Lines to REMOVE
     const filteredData = data.filter((row) => {
-      return row.result !== 200 &&
-        row.result === row.url &&
-        typeof row.result === "string"
-        ? !row.result.startsWith("/")
-        : true;
+      if (row.result === 200) {
+        return false;
+      }
+
+      if (row.result === row.url) {
+        return false;
+      }
+
+      return true;
+
+      // return  &&
+      //   row.result !== row.url &&
+      //   typeof row.result === "string"
+      //   ? !row.result.startsWith("/")
+      //   : true;
     });
 
     // Write the filtered data back to the original file, overwriting it
