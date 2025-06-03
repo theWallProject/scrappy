@@ -25,6 +25,10 @@ async function filterReport(filePath) {
         return false;
       }
 
+      if (row.result.endsWith(".il")) {
+        return false;
+      }
+
       if (typeof row.result === "string") {
         if (
           row.result.split("https://")[1] &&
@@ -76,7 +80,9 @@ async function filterReport(filePath) {
   }
 }
 
-// Example usage:
-const filePath = path.join(__dirname, "../results/2_merged/report.json"); // Adjust the path as per your repo structure
+const filePath = path.join(
+  __dirname,
+  "../results/2_merged/report_websites.json",
+); // Adjust the path as per your repo structure
 
 filterReport(filePath).catch((err) => console.error(err));
