@@ -2,6 +2,17 @@
 const fs = require("fs");
 const path = require("path");
 
+function extractDomain(url) {
+  try {
+    const { hostname } = new URL(
+      url.startsWith("http") ? url : "https://" + url,
+    );
+    return `https://${hostname}`;
+  } catch {
+    return url;
+  }
+}
+
 /**
  * Processes a JSON report file, removing rows where the 'result' field is equal to 200,
  * and overwrites the original file with the filtered data.
@@ -16,43 +27,52 @@ async function filterReport(filePath) {
     const data = JSON.parse(rawData);
 
     // Lines to REMOVE
-    const filteredData = data.filter((row) => {
-      if (row.result === 200) {
-        return false;
-      }
-
-      if (row.result === row.url) {
-        return false;
-      }
-
-      if (row.result.endsWith(".il")) {
-        return false;
-      }
-
-      if (typeof row.result === "string") {
-        if (
-          row.result.split("https://")[1] &&
-          row.result.split("https://")[1] === row.url.split("https://www.")[1]
-        ) {
+    const filteredData = data
+      .filter((row) => {
+        if (row.result === 200) {
           return false;
         }
 
-        if (
-          row.result.split("https://www.")[1] &&
-          row.result.split("https://www.")[1] === row.url.split("https://")[1]
-        ) {
+        if (row.result === row.url) {
           return false;
         }
-      }
 
-      return true;
+        if (extractDomain(row.result).endsWith(".il")) {
+          return false;
+        }
 
-      // return  &&
-      //   row.result !== row.url &&
-      //   typeof row.result === "string"
-      //   ? !row.result.startsWith("/")
-      //   : true;
-    });
+        if (typeof row.result === "string") {
+          if (
+            row.result.split("https://")[1] &&
+            row.result.split("https://")[1] === row.url.split("https://www.")[1]
+          ) {
+            return false;
+          }
+
+          if (
+            row.result.split("https://www.")[1] &&
+            row.result.split("https://www.")[1] === row.url.split("https://")[1]
+          ) {
+            return false;
+          }
+        }
+
+        return true;
+
+        // return  &&
+        //   row.result !== row.url &&
+        //   typeof row.result === "string"
+        //   ? !row.result.startsWith("/")
+        //   : true;
+      })
+      .map((row) => {
+        const { url, result } = row;
+        return {
+          ...row,
+          url: extractDomain(url),
+          result: extractDomain(result),
+        };
+      });
 
     // Sort the filtered data
     const sortedData = filteredData.sort((a, b) => {

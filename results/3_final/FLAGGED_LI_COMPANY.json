@@ -154,6 +154,13 @@
     ]
   },
   {
+    "selector": "2970413",
+    "name": "1item",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "1push",
     "name": "1push",
     "reasons": [
@@ -263,6 +270,13 @@
     "name": "2Peer (Qlipso)",
     "reasons": [
       "f"
+    ]
+  },
+  {
+    "selector": "10588794",
+    "name": "2Sens",
+    "reasons": [
+      "h"
     ]
   },
   {
@@ -1575,6 +1589,13 @@
     ]
   },
   {
+    "selector": "1762758",
+    "name": "Actiview",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "actiview-io",
     "name": "ActiView",
     "reasons": [
@@ -2556,6 +2577,13 @@
     ]
   },
   {
+    "selector": "7951242",
+    "name": "Aero sentinel",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "aerosol-composite-materials",
     "name": "Aero Sol",
     "reasons": [
@@ -2600,6 +2628,13 @@
   {
     "selector": "aeromaoz",
     "name": "Aeromaoz",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "38488",
+    "name": "Aeronautics Ltd.",
     "reasons": [
       "h"
     ]
@@ -2808,6 +2843,13 @@
     ]
   },
   {
+    "selector": "1043449",
+    "name": "AfterDownload",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "afteru",
     "name": "Afteru",
     "reasons": [
@@ -2887,6 +2929,13 @@
   {
     "selector": "agchimedes",
     "name": "AgChimedes",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "5322008",
+    "name": "Agency 1948",
     "reasons": [
       "h"
     ]
@@ -5762,6 +5811,13 @@
     ]
   },
   {
+    "selector": "9278233",
+    "name": "Anonyme",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "anoud-games",
     "name": "Anoud Games",
     "reasons": [
@@ -6469,6 +6525,13 @@
     ]
   },
   {
+    "selector": "5322594",
+    "name": "Appove",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "apprentai",
     "name": "apprentAI",
     "reasons": [
@@ -6761,6 +6824,20 @@
     "name": "Aquant",
     "reasons": [
       "f"
+    ]
+  },
+  {
+    "selector": "4839401",
+    "name": "Aquarius Engines - Energy Generation",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "10012107",
+    "name": "Aquarius Spectrum",
+    "reasons": [
+      "h"
     ]
   },
   {
@@ -7716,6 +7793,13 @@
     ]
   },
   {
+    "selector": "141764",
+    "name": "ARTSYS 360°",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "artwaresoft",
     "name": "Artware",
     "reasons": [
@@ -8381,6 +8465,13 @@
     ]
   },
   {
+    "selector": "17965134",
+    "name": "Atlas Dynamics",
+    "reasons": [
+      "f"
+    ]
+  },
+  {
     "selector": "atlas-hotels-israel",
     "name": "Atlas Hotels Israel",
     "reasons": [
@@ -8850,6 +8941,13 @@
     ]
   },
   {
+    "selector": "5344406",
+    "name": "AutoAgronom",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "autobahnsoftwareltd",
     "name": "Autobahn Software Inc.",
     "reasons": [
@@ -9090,6 +9188,13 @@
   {
     "selector": "avemus",
     "name": "Avemus",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "10961166",
+    "name": "Avenews",
     "reasons": [
       "h"
     ]
@@ -9942,6 +10047,13 @@
     ]
   },
   {
+    "selector": "4785858",
+    "name": "Babator",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "babico",
     "name": "Babico",
     "reasons": [
@@ -10467,6 +10579,13 @@
     ]
   },
   {
+    "selector": "140903",
+    "name": "Barnea Jaffa Lande & Co.",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "barnoam",
     "name": "Barnoam",
     "reasons": [
@@ -10721,6 +10840,13 @@
   {
     "selector": "bconduct-ltd",
     "name": "Bconduct",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "2878498",
+    "name": "BD Innovations",
     "reasons": [
       "h"
     ]
@@ -13338,6 +13464,13 @@
     ]
   },
   {
+    "selector": "1066608",
+    "name": "Blink Digital Marketing",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "blink-ops",
     "name": "Blink Ops",
     "reasons": [
@@ -13653,6 +13786,13 @@
     ]
   },
   {
+    "selector": "3077622",
+    "name": "BlueBird Aero Systems",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "bluebird-finance-and-projects-ltd",
     "name": "Bluebird Finance & Projects",
     "reasons": [
@@ -13748,6 +13888,13 @@
     "name": "Bluesky",
     "reasons": [
       "f"
+    ]
+  },
+  {
+    "selector": "18071218",
+    "name": "BlueskyStory",
+    "reasons": [
+      "h"
     ]
   },
   {
@@ -14409,6 +14556,13 @@
     ]
   },
   {
+    "selector": "319267",
+    "name": "Boxee",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "boyo-life-ltd",
     "name": "boyo.life",
     "reasons": [
@@ -14623,6 +14777,13 @@
     "name": "BrandShield",
     "reasons": [
       "h"
+    ]
+  },
+  {
+    "selector": "17903650",
+    "name": "BrandTotal",
+    "reasons": [
+      "f"
     ]
   },
   {
@@ -15071,6 +15232,13 @@
     "name": "Broadcust",
     "reasons": [
       "h"
+    ]
+  },
+  {
+    "selector": "23518",
+    "name": "BroadLight",
+    "reasons": [
+      "f"
     ]
   },
   {
@@ -15543,6 +15711,13 @@
     ]
   },
   {
+    "selector": "17909086",
+    "name": "Butterfly Medical",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "butterfly-real-estate-investments",
     "name": "Butterfly Real Estate Investments",
     "reasons": [
@@ -15652,6 +15827,13 @@
     "name": "BWith AI",
     "reasons": [
       "h"
+    ]
+  },
+  {
+    "selector": "10936124",
+    "name": "bxblue",
+    "reasons": [
+      "f"
     ]
   },
   {
@@ -16021,6 +16203,13 @@
   {
     "selector": "calltech-sw",
     "name": "CallTech",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "113537",
+    "name": "Callup",
     "reasons": [
       "h"
     ]
@@ -18595,6 +18784,13 @@
     ]
   },
   {
+    "selector": "10555372",
+    "name": "Cinema2Go",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "cinet-network",
     "name": "CiNet Network",
     "reasons": [
@@ -19127,6 +19323,13 @@
     ]
   },
   {
+    "selector": "18012381",
+    "name": "ClearVuze",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "clearya",
     "name": "Clearya",
     "reasons": [
@@ -19220,6 +19423,13 @@
   {
     "selector": "click-ins-ltd",
     "name": "Click-Ins",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "10691781",
+    "name": "Click'nGo",
     "reasons": [
       "h"
     ]
@@ -20730,6 +20940,13 @@
     ]
   },
   {
+    "selector": "67814",
+    "name": "Compedia",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "competehr",
     "name": "Compete HR",
     "reasons": [
@@ -21346,6 +21563,13 @@
     ]
   },
   {
+    "selector": "5470797",
+    "name": "Control Bit Technologies",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "control-plane-corporation",
     "name": "Control Plane Corporation",
     "reasons": [
@@ -21425,6 +21649,13 @@
   {
     "selector": "conversions-first",
     "name": "Conversions First",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "18123548",
+    "name": "Convertise Ltd.",
     "reasons": [
       "h"
     ]
@@ -22417,6 +22648,13 @@
     ]
   },
   {
+    "selector": "10684086",
+    "name": "CRITIFENCE",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "crm-period",
     "name": "CRM-Period",
     "reasons": [
@@ -22433,6 +22671,13 @@
   {
     "selector": "cronus-cyber-technologies",
     "name": "Cronus Cyber Technologies",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "10018111",
+    "name": "Cronus Media",
     "reasons": [
       "h"
     ]
@@ -22566,6 +22811,13 @@
   {
     "selector": "crunchmind",
     "name": "CrunchMind",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "17969790",
+    "name": "Crusoe Security",
     "reasons": [
       "h"
     ]
@@ -24308,6 +24560,13 @@
     ]
   },
   {
+    "selector": "3648223",
+    "name": "DataPro Proximity",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "datarails",
     "name": "Datarails",
     "reasons": [
@@ -24317,6 +24576,13 @@
   {
     "selector": "datasya",
     "name": "Datasya",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "10214855",
+    "name": "DataToCapital",
     "reasons": [
       "h"
     ]
@@ -24457,6 +24723,13 @@
   {
     "selector": "day-three-labs-innovation",
     "name": "Day Three Labs",
+    "reasons": [
+      "f"
+    ]
+  },
+  {
+    "selector": "10652107",
+    "name": "Day Zero Diagnostics",
     "reasons": [
       "f"
     ]
@@ -24625,6 +24898,13 @@
   {
     "selector": "dcodeconsulting",
     "name": "Dcode consulting",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "10233928",
+    "name": "Dcoya",
     "reasons": [
       "h"
     ]
@@ -25031,6 +25311,13 @@
   {
     "selector": "143114",
     "name": "DefenSoft",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "2566820",
+    "name": "Definiti Media",
     "reasons": [
       "h"
     ]
@@ -26219,6 +26506,13 @@
     ]
   },
   {
+    "selector": "968771",
+    "name": "Diwip",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "dizengoff-tel-aviv-fc",
     "name": "Dizengoff Tel Aviv F.C",
     "reasons": [
@@ -26949,6 +27243,13 @@
   {
     "selector": "draco",
     "name": "Draco Group",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "10395668",
+    "name": "Draft Fantasy Inc.",
     "reasons": [
       "h"
     ]
@@ -28230,6 +28531,13 @@
   {
     "selector": "edgeless-systems",
     "name": "Edgeless Systems",
+    "reasons": [
+      "f"
+    ]
+  },
+  {
+    "selector": "18007861",
+    "name": "Edgybees",
     "reasons": [
       "f"
     ]
@@ -31623,6 +31931,13 @@
     ]
   },
   {
+    "selector": "9495827",
+    "name": "Everysight",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "everytable",
     "name": "Everytable",
     "reasons": [
@@ -32488,6 +32803,13 @@
     "name": "EZChip",
     "reasons": [
       "f"
+    ]
+  },
+  {
+    "selector": "10278130",
+    "name": "EZCount",
+    "reasons": [
+      "h"
     ]
   },
   {
@@ -33829,6 +34151,20 @@
     ]
   },
   {
+    "selector": "17925795",
+    "name": "FinTech Aviv",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "17949976",
+    "name": "FinTech Junction",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "fintek-digital",
     "name": "Fintek Digital",
     "reasons": [
@@ -33964,6 +34300,13 @@
   {
     "selector": "firmbase-io",
     "name": "Firmbase",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "9178536",
+    "name": "Firmitas Cyber Solutions",
     "reasons": [
       "h"
     ]
@@ -34116,6 +34459,13 @@
     ]
   },
   {
+    "selector": "10831176",
+    "name": "Fitch",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "footware",
     "name": "Fitfully",
     "reasons": [
@@ -34174,6 +34524,13 @@
   {
     "selector": "fitto-world",
     "name": "fitto",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "10527442",
+    "name": "FituUp",
     "reasons": [
       "h"
     ]
@@ -34671,6 +35028,13 @@
   {
     "selector": "flying-cargo",
     "name": "Flying Cargo",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "10590861",
+    "name": "Flying production",
     "reasons": [
       "h"
     ]
@@ -35672,6 +36036,13 @@
   {
     "selector": "fruitful-personalized-fertility",
     "name": "Fruitful Way",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "9350388",
+    "name": "Fruition Business Group",
     "reasons": [
       "h"
     ]
@@ -37161,6 +37532,13 @@
     ]
   },
   {
+    "selector": "153365",
+    "name": "Genesis EW",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "genesis-investment-consultants",
     "name": "Genesis Investment Consultants",
     "reasons": [
@@ -37170,6 +37548,13 @@
   {
     "selector": "genesis-seeds-ltd-",
     "name": "Genesis Seeds",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "4852006",
+    "name": "GeneSort Ltd.",
     "reasons": [
       "h"
     ]
@@ -37361,6 +37746,13 @@
     "name": "Geophysical Institute of Israel",
     "reasons": [
       "h"
+    ]
+  },
+  {
+    "selector": "11114903",
+    "name": "GeoQuant",
+    "reasons": [
+      "f"
     ]
   },
   {
@@ -38414,6 +38806,13 @@
     ]
   },
   {
+    "selector": "6599304",
+    "name": "GlobeKeeper",
+    "reasons": [
+      "f"
+    ]
+  },
+  {
     "selector": "globes",
     "name": "Globes",
     "reasons": [
@@ -39072,6 +39471,13 @@
     ]
   },
   {
+    "selector": "10313111",
+    "name": "Gorilla Play",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "gornitzky",
     "name": "Gornitzky & Co",
     "reasons": [
@@ -39081,6 +39487,13 @@
   {
     "selector": "gosociali",
     "name": "GoSociali",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "10270378",
+    "name": "Gossip Media",
     "reasons": [
       "h"
     ]
@@ -40097,6 +40510,13 @@
   {
     "selector": "guez-partners",
     "name": "Guez Partners",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "10225543",
+    "name": "Guggy",
     "reasons": [
       "h"
     ]
@@ -41320,6 +41740,13 @@
     ]
   },
   {
+    "selector": "17972108",
+    "name": "Heat Intelligence",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "hebraicosimples",
     "name": "HebraicoSimples.com",
     "reasons": [
@@ -41945,6 +42372,13 @@
   {
     "selector": "highlight-films",
     "name": "Highlight Films",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "1043358",
+    "name": "Highnet Systems",
     "reasons": [
       "h"
     ]
@@ -42577,6 +43011,13 @@
     "name": "Homie",
     "reasons": [
       "f"
+    ]
+  },
+  {
+    "selector": "5197514",
+    "name": "HomiSmart",
+    "reasons": [
+      "h"
     ]
   },
   {
@@ -43870,6 +44311,13 @@
   {
     "selector": "icebow-ltd.",
     "name": "IceBow",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "11170247",
+    "name": "Icebreax",
     "reasons": [
       "h"
     ]
@@ -45506,6 +45954,20 @@
     ]
   },
   {
+    "selector": "9497183",
+    "name": "Infinityleap",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "18003220",
+    "name": "Inflowz",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "influactive",
     "name": "Influactive",
     "reasons": [
@@ -45842,6 +46304,13 @@
     ]
   },
   {
+    "selector": "681013",
+    "name": "Innocon",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "innoging",
     "name": "iNNOGING Medical",
     "reasons": [
@@ -46094,6 +46563,13 @@
     ]
   },
   {
+    "selector": "8882923",
+    "name": "Inplane Photonics",
+    "reasons": [
+      "f"
+    ]
+  },
+  {
     "selector": "inpris",
     "name": "Inpris",
     "reasons": [
@@ -46313,6 +46789,13 @@
   {
     "selector": "instalemarketing",
     "name": "Instale",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "207181",
+    "name": "InstallFree",
     "reasons": [
       "h"
     ]
@@ -46990,6 +47473,13 @@
     ]
   },
   {
+    "selector": "10252340",
+    "name": "Inuitive",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "invaya",
     "name": "Invaya Technologies",
     "reasons": [
@@ -47020,6 +47510,13 @@
   {
     "selector": "inverseting",
     "name": "Inverseting.com",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "10588713",
+    "name": "Invertex",
     "reasons": [
       "h"
     ]
@@ -48488,6 +48985,13 @@
     ]
   },
   {
+    "selector": "554862",
+    "name": "ITNavigator",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "itolerance",
     "name": "iTolerance",
     "reasons": [
@@ -49132,6 +49636,13 @@
     ]
   },
   {
+    "selector": "19131",
+    "name": "Jewish Agency",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "jezinternationalltd",
     "name": "Jez V",
     "reasons": [
@@ -49624,6 +50135,13 @@
   {
     "selector": "7000110",
     "name": "Juko.fm",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "4866691",
+    "name": "Julbox",
     "reasons": [
       "h"
     ]
@@ -50345,6 +50863,13 @@
   {
     "selector": "karma-assistant",
     "name": "Karma",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "10504299",
+    "name": "Karma Technologies",
     "reasons": [
       "h"
     ]
@@ -51442,6 +51967,13 @@
     ]
   },
   {
+    "selector": "2082514",
+    "name": "Kitely",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "kite-pride",
     "name": "KitePride",
     "reasons": [
@@ -52233,6 +52765,13 @@
     ]
   },
   {
+    "selector": "3666787",
+    "name": "Kueri.me",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "kukupal",
     "name": "Kukupal",
     "reasons": [
@@ -52536,6 +53075,13 @@
   {
     "selector": "lahat-technologies",
     "name": "Lahat Technologies",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "3318142",
+    "name": "Lalalama",
     "reasons": [
       "h"
     ]
@@ -53199,6 +53745,13 @@
     ]
   },
   {
+    "selector": "4841579",
+    "name": "Learni",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "learningzone",
     "name": "LearningZone",
     "reasons": [
@@ -53231,6 +53784,13 @@
     "name": "Ledger",
     "reasons": [
       "f"
+    ]
+  },
+  {
+    "selector": "10800240",
+    "name": "LedSwim",
+    "reasons": [
+      "h"
     ]
   },
   {
@@ -53509,6 +54069,13 @@
   {
     "selector": "lernercapital",
     "name": "Lerner Group",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "2439570",
+    "name": "Lesico CleanTech",
     "reasons": [
       "h"
     ]
@@ -53819,6 +54386,13 @@
     "name": "LianBio",
     "reasons": [
       "f"
+    ]
+  },
+  {
+    "selector": "5209197",
+    "name": "Liberated Dimensions",
+    "reasons": [
+      "h"
     ]
   },
   {
@@ -54732,6 +55306,13 @@
     ]
   },
   {
+    "selector": "12953786",
+    "name": "Locodor",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "locusview",
     "name": "Locusview",
     "reasons": [
@@ -55140,6 +55721,13 @@
   {
     "selector": "10084",
     "name": "LucidLogix Technologies",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "9371649",
+    "name": "Luck Genome Ltd.",
     "reasons": [
       "h"
     ]
@@ -56154,6 +56742,13 @@
     ]
   },
   {
+    "selector": "1746999",
+    "name": "Magos Systems",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "maia360",
     "name": "Maia360",
     "reasons": [
@@ -56450,6 +57045,13 @@
   {
     "selector": "avi-cranes",
     "name": "Manofi Avi",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "3005176",
+    "name": "Manor Medical Center",
     "reasons": [
       "h"
     ]
@@ -57351,6 +57953,13 @@
     ]
   },
   {
+    "selector": "3299709",
+    "name": "MayaJo",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "onexpress-ltd",
     "name": "Mayan Group",
     "reasons": [
@@ -57855,6 +58464,13 @@
     ]
   },
   {
+    "selector": "7959149",
+    "name": "Medial EarlySign",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "medial-research",
     "name": "Medial Research",
     "reasons": [
@@ -58296,6 +58912,13 @@
     ]
   },
   {
+    "selector": "2872943",
+    "name": "Meetey",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "meeting-angels",
     "name": "Meeting Angels",
     "reasons": [
@@ -58312,6 +58935,13 @@
   {
     "selector": "18033321",
     "name": "Meetinkz",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "5095947",
+    "name": "MeetMeet",
     "reasons": [
       "h"
     ]
@@ -59738,6 +60368,13 @@
     ]
   },
   {
+    "selector": "13345454",
+    "name": "Mighty Bear Games",
+    "reasons": [
+      "f"
+    ]
+  },
+  {
     "selector": "migvan-technologies-&-engineering-ltd-",
     "name": "MIGVAN",
     "reasons": [
@@ -60097,6 +60734,13 @@
   {
     "selector": "minimax-stool",
     "name": "Minimax Stool",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "10383261",
+    "name": "Minimum Viable Communications",
     "reasons": [
       "h"
     ]
@@ -61334,6 +61978,13 @@
     ]
   },
   {
+    "selector": "2413967",
+    "name": "Moola",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "moon-active",
     "name": "Moon Active",
     "reasons": [
@@ -61366,6 +62017,13 @@
     "name": "MoonPay",
     "reasons": [
       "f"
+    ]
+  },
+  {
+    "selector": "18027418",
+    "name": "MoonRun",
+    "reasons": [
+      "h"
     ]
   },
   {
@@ -61958,6 +62616,13 @@
     ]
   },
   {
+    "selector": "2221838",
+    "name": "MTC Industries and Research Carmiel",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "mtech-fire-detection-systems-ltd",
     "name": "MTech Fire Detection Systems",
     "reasons": [
@@ -61986,6 +62651,13 @@
     ]
   },
   {
+    "selector": "13275635",
+    "name": "MTTech Interactive Multimedia Systems Ltd.",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "much-marketing",
     "name": "muchmarketing",
     "reasons": [
@@ -61997,6 +62669,13 @@
     "name": "MugglePay",
     "reasons": [
       "f"
+    ]
+  },
+  {
+    "selector": "18057584",
+    "name": "MUGO Inc.",
+    "reasons": [
+      "h"
     ]
   },
   {
@@ -62154,10 +62833,24 @@
     ]
   },
   {
+    "selector": "5335510",
+    "name": "Museloop",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "trusper-inc",
     "name": "Musely",
     "reasons": [
       "f"
+    ]
+  },
+  {
+    "selector": "4853780",
+    "name": "MuseValley",
+    "reasons": [
+      "h"
     ]
   },
   {
@@ -62742,6 +63435,13 @@
     ]
   },
   {
+    "selector": "3142329",
+    "name": "N2W Software",
+    "reasons": [
+      "f"
+    ]
+  },
+  {
     "selector": "n3group",
     "name": "N3 Interactive",
     "reasons": [
@@ -63110,6 +63810,13 @@
     "name": "Nas Company (Formerly Nas Academy)",
     "reasons": [
       "f"
+    ]
+  },
+  {
+    "selector": "207281",
+    "name": "Nascent Group",
+    "reasons": [
+      "h"
     ]
   },
   {
@@ -64954,6 +65661,13 @@
     ]
   },
   {
+    "selector": "17931607",
+    "name": "NIP Global Ltd",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "nipendo-ltd",
     "name": "Nipendo",
     "reasons": [
@@ -65350,6 +66064,13 @@
     "name": "Nomis",
     "reasons": [
       "f"
+    ]
+  },
+  {
+    "selector": "10695464",
+    "name": "Non.Agency",
+    "reasons": [
+      "h"
     ]
   },
   {
@@ -66201,6 +66922,13 @@
     ]
   },
   {
+    "selector": "18004681",
+    "name": "NVentoo",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "nvision-imaging-technologies",
     "name": "NVision Imaging Technologies",
     "reasons": [
@@ -66525,6 +67253,13 @@
   {
     "selector": "octopus-health",
     "name": "Octopus.Health",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "10998320",
+    "name": "Octosense",
     "reasons": [
       "h"
     ]
@@ -68106,6 +68841,13 @@
     ]
   },
   {
+    "selector": "771292",
+    "name": "Optoacoustics",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "optolight-vision",
     "name": "OptoLight Vision",
     "reasons": [
@@ -68794,6 +69536,13 @@
   {
     "selector": "otoma",
     "name": "Otoma",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "10530761",
+    "name": "Otomato",
     "reasons": [
       "h"
     ]
@@ -69997,6 +70746,13 @@
     ]
   },
   {
+    "selector": "5261640",
+    "name": "ParkLife",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "2993720",
     "name": "Parko",
     "reasons": [
@@ -70559,6 +71315,13 @@
   {
     "selector": "peas-of-bean",
     "name": "Peas of Bean Ltd.",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "2867392",
+    "name": "Pebbles Interfaces",
     "reasons": [
       "h"
     ]
@@ -72077,6 +72840,13 @@
     ]
   },
   {
+    "selector": "10043699",
+    "name": "Pixtier",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "placense",
     "name": "Placense",
     "reasons": [
@@ -72198,6 +72968,13 @@
   {
     "selector": "huminn-convergence-innovation",
     "name": "Plantae by Huminn",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "18029372",
+    "name": "PlantArcBio",
     "reasons": [
       "h"
     ]
@@ -75339,6 +76116,13 @@
     ]
   },
   {
+    "selector": "275756",
+    "name": "PureSight",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "puretec-water-engineering-ltd.",
     "name": "Puretec Water Engineering",
     "reasons": [
@@ -75549,6 +76333,13 @@
     ]
   },
   {
+    "selector": "10703171",
+    "name": "Q-IT",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "q-trials-ltd.",
     "name": "Q-Trials",
     "reasons": [
@@ -75742,6 +76533,13 @@
     "name": "Qlik Israel",
     "reasons": [
       "h"
+    ]
+  },
+  {
+    "selector": "5310310",
+    "name": "Qlika",
+    "reasons": [
+      "f"
     ]
   },
   {
@@ -76382,6 +77180,13 @@
     ]
   },
   {
+    "selector": "226262",
+    "name": "Racana",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "254873",
     "name": "Rachip",
     "reasons": [
@@ -76433,6 +77238,13 @@
   {
     "selector": "radex-importer-of-premium-beer-in-israel",
     "name": "Radex",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "9176365",
+    "name": "Radgreen",
     "reasons": [
       "h"
     ]
@@ -77194,6 +78006,13 @@
     ]
   },
   {
+    "selector": "2668687",
+    "name": "RDV Systems",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "rdvc-",
     "name": "RDVC",
     "reasons": [
@@ -77406,6 +78225,13 @@
   {
     "selector": "reali-technologies-ltd.",
     "name": "Reali Technologies",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "15214408",
+    "name": "ReaLife3D",
     "reasons": [
       "h"
     ]
@@ -78273,6 +79099,13 @@
     ]
   },
   {
+    "selector": "5027261",
+    "name": "RescueDose",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "re-sec-technologies-ltd",
     "name": "Resec",
     "reasons": [
@@ -78840,6 +79673,13 @@
     ]
   },
   {
+    "selector": "2709745",
+    "name": "RFKeeper",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "rfoptic",
     "name": "RFOptic",
     "reasons": [
@@ -79183,6 +80023,13 @@
     ]
   },
   {
+    "selector": "2439344",
+    "name": "Ripplify",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "risco-group",
     "name": "RISCO Group",
     "reasons": [
@@ -79400,8 +80247,22 @@
     ]
   },
   {
+    "selector": "3528812",
+    "name": "RoadMetric",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "roadsense-advanced-technologies",
     "name": "RoadSense",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "3673788",
+    "name": "RoadShows",
     "reasons": [
       "h"
     ]
@@ -79458,6 +80319,13 @@
   {
     "selector": "robotai",
     "name": "RobotAI",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "10181054",
+    "name": "RoboTiCan",
     "reasons": [
       "h"
     ]
@@ -79955,6 +80823,13 @@
   {
     "selector": "rotemshani",
     "name": "Rotem Shani Entrepreneurship & Investment",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "85102",
+    "name": "Rotem Strategy",
     "reasons": [
       "h"
     ]
@@ -80884,6 +81759,13 @@
     ]
   },
   {
+    "selector": "1793067",
+    "name": "Saloona",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "salt-of-the-earth-ltd.",
     "name": "Salt of the Earth",
     "reasons": [
@@ -81556,6 +82438,13 @@
     ]
   },
   {
+    "selector": "753684",
+    "name": "Scanmarker",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "scanmaster-systems",
     "name": "ScanMaster",
     "reasons": [
@@ -81579,6 +82468,13 @@
   {
     "selector": "scenaric",
     "name": "Scenaric",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "9506015",
+    "name": "ScenseIT",
     "reasons": [
       "h"
     ]
@@ -82253,6 +83149,13 @@
     "name": "Secure Islands Technologies",
     "reasons": [
       "h"
+    ]
+  },
+  {
+    "selector": "9187630",
+    "name": "SecuredTouch",
+    "reasons": [
+      "f"
     ]
   },
   {
@@ -83369,6 +84272,13 @@
     ]
   },
   {
+    "selector": "94651",
+    "name": "Sergata",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "servc-fund-administrator",
     "name": "SerVC",
     "reasons": [
@@ -84111,6 +85021,13 @@
     ]
   },
   {
+    "selector": "791170",
+    "name": "Shell Egg",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "shellanoo-group",
     "name": "Shellanoo Investment Group",
     "reasons": [
@@ -84197,6 +85114,13 @@
   {
     "selector": "805392",
     "name": "Sherut.net",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "5102124",
+    "name": "SHEvooking",
     "reasons": [
       "h"
     ]
@@ -84538,6 +85462,13 @@
     ]
   },
   {
+    "selector": "7946295",
+    "name": "Shoodoo Analytics",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "shoof-creative-video",
     "name": "Shoof",
     "reasons": [
@@ -84652,6 +85583,13 @@
   {
     "selector": "shopupz",
     "name": "shopUpz",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "17957181",
+    "name": "ShopyFox",
     "reasons": [
       "h"
     ]
@@ -84986,6 +85924,13 @@
     ]
   },
   {
+    "selector": "15237215",
+    "name": "SIGA OT Solutions",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "sigawi-sigawi-advertising-company",
     "name": "Sigawi & Sigawi",
     "reasons": [
@@ -85114,6 +86059,13 @@
   {
     "selector": "signifer",
     "name": "Signifer",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "11168601",
+    "name": "SignifiKa",
     "reasons": [
       "h"
     ]
@@ -85382,6 +86334,13 @@
     "name": "Similarweb",
     "reasons": [
       "f"
+    ]
+  },
+  {
+    "selector": "18037334",
+    "name": "Simlat",
+    "reasons": [
+      "h"
     ]
   },
   {
@@ -85994,6 +86953,13 @@
     ]
   },
   {
+    "selector": "1848175",
+    "name": "Skills App",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "skillset-media",
     "name": "Skillset",
     "reasons": [
@@ -86054,6 +87020,13 @@
     "name": "Skurt",
     "reasons": [
       "f"
+    ]
+  },
+  {
+    "selector": "4991059",
+    "name": "Sky Sapience",
+    "reasons": [
+      "h"
     ]
   },
   {
@@ -86772,6 +87745,13 @@
     ]
   },
   {
+    "selector": "17980942",
+    "name": "SnatchApp",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "snatchbot",
     "name": "SnatchBot",
     "reasons": [
@@ -86970,6 +87950,13 @@
   {
     "selector": "sodot",
     "name": "Sodot",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "3295996",
+    "name": "Sodyo",
     "reasons": [
       "h"
     ]
@@ -87185,6 +88172,13 @@
     ]
   },
   {
+    "selector": "361424",
+    "name": "SolarEdge Technologies",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "solargik",
     "name": "SolarGik",
     "reasons": [
@@ -87301,6 +88295,13 @@
     "name": "SoleSearch",
     "reasons": [
       "f"
+    ]
+  },
+  {
+    "selector": "4985764",
+    "name": "SOLIAIR™",
+    "reasons": [
+      "h"
     ]
   },
   {
@@ -87913,6 +88914,13 @@
     ]
   },
   {
+    "selector": "10408185",
+    "name": "SpacePharma",
+    "reasons": [
+      "f"
+    ]
+  },
+  {
     "selector": "spacing_il",
     "name": "SPACING digital ltd.",
     "reasons": [
@@ -88403,6 +89411,13 @@
     ]
   },
   {
+    "selector": "1354979",
+    "name": "Spiral frame",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "spiral-interactive",
     "name": "Spiral Interactive",
     "reasons": [
@@ -88858,6 +89873,13 @@
     ]
   },
   {
+    "selector": "10433353",
+    "name": "Squaredfit",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "squashbond",
     "name": "SquashBond",
     "reasons": [
@@ -89089,6 +90111,13 @@
     ]
   },
   {
+    "selector": "164804",
+    "name": "Starhome Mach",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "stari-world",
     "name": "Stari",
     "reasons": [
@@ -89147,6 +90176,13 @@
   {
     "selector": "start-up-beer-sheva",
     "name": "Start Up Beer Sheva",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "5147602",
+    "name": "Start-Up Nation Central",
     "reasons": [
       "h"
     ]
@@ -89266,6 +90302,13 @@
   {
     "selector": "stb-union",
     "name": "STB Union",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "1218454",
+    "name": "Steadicopter",
     "reasons": [
       "h"
     ]
@@ -89392,6 +90435,13 @@
   {
     "selector": "stepin",
     "name": "Stepin inc",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "10158198",
+    "name": "Steps&",
     "reasons": [
       "h"
     ]
@@ -89670,6 +90720,13 @@
     ]
   },
   {
+    "selector": "2639134",
+    "name": "storyboard",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "storycards-app",
     "name": "Storycards",
     "reasons": [
@@ -89847,6 +90904,13 @@
   {
     "selector": "stream-yachts",
     "name": "Stream Yachts",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "10499653",
+    "name": "Streameet",
     "reasons": [
       "h"
     ]
@@ -90169,6 +91233,13 @@
   {
     "selector": "stylift",
     "name": "Stylift",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "2585536",
+    "name": "Stylog",
     "reasons": [
       "h"
     ]
@@ -90700,6 +91771,13 @@
     ]
   },
   {
+    "selector": "2526365",
+    "name": "Support Machines",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "supportspace-ltd.",
     "name": "Support Space",
     "reasons": [
@@ -90746,6 +91824,13 @@
     "name": "SURGE Therapeutics",
     "reasons": [
       "f"
+    ]
+  },
+  {
+    "selector": "2802589",
+    "name": "Surgent",
+    "reasons": [
+      "h"
     ]
   },
   {
@@ -90954,6 +92039,13 @@
   {
     "selector": "swiftduct",
     "name": "Swift Duct",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "17962377",
+    "name": "Swiftic",
     "reasons": [
       "h"
     ]
@@ -91171,6 +92263,13 @@
   {
     "selector": "syncleo",
     "name": "Syncleo",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "5092690",
+    "name": "Syndu",
     "reasons": [
       "h"
     ]
@@ -91855,6 +92954,13 @@
     ]
   },
   {
+    "selector": "2476756",
+    "name": "Talent",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "talentz.io",
     "name": "TALENTZ",
     "reasons": [
@@ -92198,6 +93304,13 @@
     ]
   },
   {
+    "selector": "10271106",
+    "name": "TapAway",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "tapdog",
     "name": "TapDog",
     "reasons": [
@@ -92209,6 +93322,13 @@
     "name": "Tapingo",
     "reasons": [
       "f"
+    ]
+  },
+  {
+    "selector": "2994530",
+    "name": "TapMyBiz",
+    "reasons": [
+      "h"
     ]
   },
   {
@@ -92285,6 +93405,13 @@
   {
     "selector": "target-audience-ltd",
     "name": "Target Audience",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "6181424",
+    "name": "Target Conferences Ltd.",
     "reasons": [
       "h"
     ]
@@ -93410,6 +94537,13 @@
     ]
   },
   {
+    "selector": "9413073",
+    "name": "Terrascan",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "terrazone",
     "name": "TerraZone",
     "reasons": [
@@ -93510,6 +94644,13 @@
   {
     "selector": "testrtc",
     "name": "testRTC",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "305296",
+    "name": "Testuff",
     "reasons": [
       "h"
     ]
@@ -94152,6 +95293,13 @@
     ]
   },
   {
+    "selector": "2800225",
+    "name": "The PeaceTube Project",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "the-place---the-jerusalem-center-for-emotional-wellbeing",
     "name": "The Place",
     "reasons": [
@@ -94509,6 +95657,13 @@
     ]
   },
   {
+    "selector": "18099308",
+    "name": "TheWhollySee",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "theysay",
     "name": "TheySay",
     "reasons": [
@@ -94660,6 +95815,13 @@
     "name": "Ticket-Compare",
     "reasons": [
       "h"
+    ]
+  },
+  {
+    "selector": "480970",
+    "name": "Ticket2Final",
+    "reasons": [
+      "f"
     ]
   },
   {
@@ -95174,6 +96336,13 @@
     ]
   },
   {
+    "selector": "12906820",
+    "name": "Tline",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "telemassociation",
     "name": "TLM",
     "reasons": [
@@ -95657,6 +96826,13 @@
     ]
   },
   {
+    "selector": "8283223",
+    "name": "Top I Vision",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "top-image-systems",
     "name": "Top Image Systems",
     "reasons": [
@@ -95790,6 +96966,13 @@
     ]
   },
   {
+    "selector": "13202159",
+    "name": "Tori Online",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "toriihq",
     "name": "Torii",
     "reasons": [
@@ -95883,6 +97066,13 @@
   {
     "selector": "total-media-solutions-tms",
     "name": "Total Media Solutions",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "5042723",
+    "name": "Total-Viz",
     "reasons": [
       "h"
     ]
@@ -96210,6 +97400,13 @@
     ]
   },
   {
+    "selector": "2719635",
+    "name": "Tradus",
+    "reasons": [
+      "f"
+    ]
+  },
+  {
     "selector": "traffic-bandits-ltd",
     "name": "Traffic Bandtis",
     "reasons": [
@@ -96275,6 +97472,13 @@
   {
     "selector": "traido",
     "name": "Traido",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "10086849",
+    "name": "Trailquest",
     "reasons": [
       "h"
     ]
@@ -97008,6 +98212,13 @@
     ]
   },
   {
+    "selector": "9184798",
+    "name": "Triple+",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "triplecheck-ltd-",
     "name": "TripleCheck",
     "reasons": [
@@ -97080,6 +98291,13 @@
   {
     "selector": "tritone-technologies",
     "name": "Tritone Technologies",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "9404498",
+    "name": "Triventy",
     "reasons": [
       "h"
     ]
@@ -97295,6 +98513,13 @@
     ]
   },
   {
+    "selector": "96248",
+    "name": "TrustedID",
+    "reasons": [
+      "f"
+    ]
+  },
+  {
     "selector": "trusteer",
     "name": "Trusteer",
     "reasons": [
@@ -97360,6 +98585,13 @@
   {
     "selector": "truyoins-venture",
     "name": "Truyoins Ventures",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "17952306",
+    "name": "Tryna Grub LTD",
     "reasons": [
       "h"
     ]
@@ -97614,6 +98846,13 @@
     "name": "Tuttipuffs",
     "reasons": [
       "h"
+    ]
+  },
+  {
+    "selector": "78424",
+    "name": "Tuttnauer",
+    "reasons": [
+      "f"
     ]
   },
   {
@@ -97906,6 +99145,13 @@
   {
     "selector": "uibc",
     "name": "UAE-Israel Business Council",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "1879987",
+    "name": "UAS Technologies",
     "reasons": [
       "h"
     ]
@@ -98408,6 +99654,13 @@
     ]
   },
   {
+    "selector": "31504",
+    "name": "Unisfair",
+    "reasons": [
+      "f"
+    ]
+  },
+  {
     "selector": "unisor",
     "name": "Unisor Multisystems",
     "reasons": [
@@ -98573,6 +99826,13 @@
     "name": "UNLIMIT",
     "reasons": [
       "h"
+    ]
+  },
+  {
+    "selector": "17972468",
+    "name": "Unlimited Reality",
+    "reasons": [
+      "f"
     ]
   },
   {
@@ -99000,6 +100260,13 @@
     "name": "UVeye",
     "reasons": [
       "f"
+    ]
+  },
+  {
+    "selector": "10473452",
+    "name": "UVision Air",
+    "reasons": [
+      "h"
     ]
   },
   {
@@ -99984,6 +101251,13 @@
     ]
   },
   {
+    "selector": "12898089",
+    "name": "Verifyoo",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "verimix",
     "name": "VeriMiX",
     "reasons": [
@@ -100044,6 +101318,13 @@
     "name": "Verofax Limited",
     "reasons": [
       "f"
+    ]
+  },
+  {
+    "selector": "1875577",
+    "name": "Versafe",
+    "reasons": [
+      "h"
     ]
   },
   {
@@ -100558,6 +101839,13 @@
     ]
   },
   {
+    "selector": "9285006",
+    "name": "Viewdeos",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "viewfinity",
     "name": "Viewfinity",
     "reasons": [
@@ -100810,6 +102098,13 @@
     ]
   },
   {
+    "selector": "10327360",
+    "name": "Virtuality New Space",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "virtuality-fashion",
     "name": "Virtuality.Fashion",
     "reasons": [
@@ -100819,6 +102114,13 @@
   {
     "selector": "virtual-spirits",
     "name": "VirtualSpirits",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "16220166",
+    "name": "Virtuka",
     "reasons": [
       "h"
     ]
@@ -101300,6 +102602,13 @@
     ]
   },
   {
+    "selector": "10690579",
+    "name": "VocaSee",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "vocavu",
     "name": "Vocavu Solutions",
     "reasons": [
@@ -101351,6 +102660,20 @@
   {
     "selector": "voicesense",
     "name": "VoiceSense",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "1032685",
+    "name": "Voicespin",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "2952779",
+    "name": "Voicio",
     "reasons": [
       "h"
     ]
@@ -101568,6 +102891,13 @@
   {
     "selector": "vpop-networks",
     "name": "vPOP Networks",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "2944441",
+    "name": "VPSign",
     "reasons": [
       "h"
     ]
@@ -102168,6 +103498,13 @@
     ]
   },
   {
+    "selector": "10036445",
+    "name": "Wazimo",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "wb%E2%80%94tech",
     "name": "WB—Tech",
     "reasons": [
@@ -102569,6 +103906,13 @@
   {
     "selector": "webselenese",
     "name": "Webselenese",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "2281967",
+    "name": "WebShed IT",
     "reasons": [
       "h"
     ]
@@ -104618,6 +105962,13 @@
     ]
   },
   {
+    "selector": "263385",
+    "name": "XPlace",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "xplenty",
     "name": "Xplenty",
     "reasons": [
@@ -105556,6 +106907,13 @@
     ]
   },
   {
+    "selector": "1471862",
+    "name": "Yonaco Group",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "yonalink",
     "name": "Yonalink",
     "reasons": [
@@ -105747,6 +107105,13 @@
   {
     "selector": "yowxr",
     "name": "YOW",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "5200657",
+    "name": "Yowza",
     "reasons": [
       "h"
     ]

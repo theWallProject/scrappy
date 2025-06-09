@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { getMainDomain } from "@theWallProject/addonCommon";
 import { ScrappedItemType, APIScrapperFileDataSchema } from "../types";
 import { log, cleanWebsite } from "../helper";
 import {
@@ -7,7 +8,6 @@ import {
   DUPLICATE_WEBSITES,
   manualOverrides,
 } from "./manual_resolve/duplicate";
-
 const folderPath = path.join(__dirname, "../../results/1_batches");
 
 const outputFilePath = path.join(
@@ -151,13 +151,17 @@ const loadJsonFiles = (folderPath: string) => {
     deDubeArray.push(DUPLICATE_WEBSITES[website]);
   }
 
-  const sortedArray = deDubeArray.sort((a, b) => a.name.localeCompare(b.name));
-
-  const manuallyUpdatedArray = sortedArray.map((row) => {
+  const manuallyUpdatedArray = deDubeArray.map((row) => {
     const result = manualOverrides.find(([name]) => name === row.name);
     row.tw = row.tw
       ?.replace("www.twitter.com", "x.com")
       ?.replace("twitter.com", "x.com");
+
+    row.li = row.li?.replace("/company-beta/", "/company/");
+
+    if (row.ws) {
+      row.ws = getMainDomain(row.ws);
+    }
 
     if (result) {
       log(`Manually updated ${row.name}`);
@@ -167,10 +171,14 @@ const loadJsonFiles = (folderPath: string) => {
     }
   });
 
-  saveJsonToFile(manuallyUpdatedArray, outputFilePath);
-  log(`Wrote ${manuallyUpdatedArray.length} rows to ${outputFilePath}...`);
+  const sortedArray = manuallyUpdatedArray.sort((a, b) =>
+    a.name.localeCompare(b.name),
+  );
 
-  return manuallyUpdatedArray;
+  saveJsonToFile(sortedArray, outputFilePath);
+  log(`Wrote ${sortedArray.length} rows to ${outputFilePath}...`);
+
+  return sortedArray;
 };
 
 const saveJsonToFile = (data: unknown, outputFilePath: string) => {
