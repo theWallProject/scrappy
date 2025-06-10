@@ -3,7 +3,8 @@ import { z } from "zod";
 
 const ScrappedItemSchema = z.object({
   name: z.string(),
-  link: z.string().optional(),
+  id: z.string(),
+  cbLink: z.string().optional(),
   reasons: ReasonsSchema,
   li: z.string().optional(),
   ws: z.string().optional(),
@@ -37,30 +38,16 @@ const ScrappedItemSchema = z.object({
   description: z.string().optional(),
 
   /** rank_org_company */
-  cb: z.string().optional(),
+  cbRank: z.string().optional(),
 
   /** revenue_range */
   estRevenue: z.string().optional(),
 
   /** categories */
-  industries: z
-    .array(
-      z.object({
-        name: z.string(),
-        link: z.string().url(),
-      }),
-    )
-    .optional(),
+  industries: z.array(z.string()).optional(),
 
   /** category_groups */
-  industryGroups: z
-    .array(
-      z.object({
-        name: z.string(),
-        link: z.string().url(),
-      }),
-    )
-    .optional(),
+  industryGroups: z.array(z.string()).optional(),
 });
 
 export const APIScrapperFileDataSchema = z.array(ScrappedItemSchema);

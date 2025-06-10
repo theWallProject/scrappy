@@ -26,8 +26,8 @@ const filterStages: ScrappingConfig[] = [
       [1, 60000],
       [60001, 145000],
       [145001, 290000],
-      [290001, 450000],
-      [450001, 590000],
+      [290001, 440000],
+      [440001, 590000],
       [590001, 750000],
       [750001, 920000],
       [920001, 1000000],
@@ -117,15 +117,17 @@ export async function run() {
 
   // Navigate to the page
   await page.goto(homeUrl, { waitUntil: "domcontentloaded" });
+  await page.waitForNetworkIdle({ timeout: 5000 }).catch(() => {});
+
   await page.waitForSelector('[aria-label="Log In"]');
   await page.click('[aria-label="Log In"]');
   await page.waitForSelector('[type="email"]');
   await new Promise((resolve) => setTimeout(resolve, 3000));
 
-  await page.type('[type="email"]', EMAIL, { delay: 100 });
-  await page.type('[type="password"]', PASSWORD, { delay: 100 });
+  await page.type('[type="email"]', EMAIL, { delay: 50 });
+  await page.type('[type="password"]', PASSWORD, { delay: 50 });
   await page.click('[type="submit"]');
-  await new Promise((resolve) => setTimeout(resolve, 3000));
+  await page.waitForNetworkIdle({ timeout: 5000 }).catch(() => {});
 
   log("Continuing after login...");
   const stageCounts = [];
@@ -181,7 +183,10 @@ export async function run() {
       );
       log("Results info text:", resultsInfoText);
       // extract number from pattern "of 789,76 results"
-      const strCountFromResultsInfo = resultsInfoText?.match(/\d+/)?.[0];
+      const strCountFromResultsInfo = resultsInfoText
+        ?.split("of")[1]
+        .match(/\d+/)?.[0];
+
       if (!strCountFromResultsInfo) {
         throw new Error("no number from results info found");
       }
@@ -206,8 +211,8 @@ export async function run() {
 
       results.sort((a, b) => a.name.localeCompare(b.name));
       if (results.length !== countFromResultsInfo) {
-        throw new Error(
-          `results.length !== countFromResultsInfo: ${results.length} !== ${countFromResultsInfo}`,
+        warn(
+          `Size mismatch [${from}]: ${results.length} !== ${countFromResultsInfo}`,
         );
       }
 
@@ -265,37 +270,37 @@ async function setFilter(
   const selector = ".component--number-input .mdc-text-field__input";
 
   log(`Setting filter for ${selector} with value ${value}[${index}]`);
+
+  // Wait for element to be ready with increased timeout
   await page.waitForSelector(selector);
+
+  // Use page.$$ to get fresh handles each time
   const fields = await page.$$(selector);
-  const field = fields[index];
-  await field.click();
-  await new Promise((resolve) => setTimeout(resolve, 300));
+  if (!fields[index]) {
+    throw new Error(`Field at index ${index} not found`);
+  }
 
-  await field.press("ArrowRight", { delay: 100 });
-  await field.press("ArrowRight", { delay: 100 });
-  await field.press("ArrowRight", { delay: 100 });
-  await field.press("ArrowRight", { delay: 100 });
-  await field.press("ArrowRight", { delay: 100 });
-  await field.press("ArrowRight", { delay: 100 });
-  await field.press("ArrowRight", { delay: 100 });
-  await field.press("ArrowRight", { delay: 100 });
-  await field.press("Backspace", { delay: 100 });
-  await field.press("Backspace", { delay: 100 });
-  await field.press("Backspace", { delay: 100 });
-  await field.press("Backspace", { delay: 100 });
-  await field.press("Backspace", { delay: 100 });
-  await field.press("Backspace", { delay: 100 });
-  await field.press("Backspace", { delay: 100 });
-  await field.press("Backspace", { delay: 100 });
-  await field.press("Backspace", { delay: 100 });
-  await field.press("Backspace", { delay: 100 });
-  await field.type(`${value}`, { delay: 100 });
-  await new Promise((resolve) => setTimeout(resolve, 300));
+  // Focus and click using page.evaluate with proper type casting
+  await page.evaluate((element) => {
+    const inputElement = element as HTMLInputElement;
+    inputElement.focus();
+    inputElement.select();
+  }, fields[index]);
 
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+
+  // Clear existing value
+  await page.keyboard.press("Backspace");
+
+  // Type new value directly
+  await page.keyboard.type(value.toString(), { delay: 100 });
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+
+  // Click away to trigger any change events
   if (index === 1) {
     await page.mouse.click(500, 100);
   }
-  await new Promise((resolve) => setTimeout(resolve, 500));
+  await page.waitForNetworkIdle({ timeout: 5000 }).catch(() => {});
 }
 
 async function processTable(
@@ -308,13 +313,14 @@ async function processTable(
 
   while (hasMore) {
     log("waiting for table body...");
+    await page.waitForNetworkIdle({ timeout: 5000 }).catch(() => {});
 
     await page.waitForSelector(".body-wrapper");
     await page.waitForSelector(".body-wrapper grid-row");
 
     const rows = await page.$$(".body-wrapper grid-row");
 
-    log("processing rows...");
+    log(`processing [${rows.length}] rows...`);
     for (const row of rows) {
       const rowData: ScrappedItemType = await page.evaluate(
         (row, stg) => {
@@ -334,7 +340,11 @@ async function processTable(
           const result: ScrappedItemType = {
             reasons: stg.reasons,
             name: getData("[data-columnid=identifier]"),
-            link: getLinks("[data-columnid=identifier] a")[0].link,
+            cbLink: getLinks("[data-columnid=identifier] a")[0].link,
+            id: getLinks("[data-columnid=identifier] a")[0].link.replace(
+              "https://www.crunchbase.com/organization/",
+              "",
+            ),
             li:
               row.querySelector<HTMLAnchorElement>("[data-columnid=linkedin] a")
                 ?.href || "",
@@ -351,7 +361,20 @@ async function processTable(
             investorIds: getLinks("[data-columnid=investor_identifiers] a"),
             acquirerIds: getLinks("[data-columnid=acquirer_identifier] a"),
             description: getData("[data-columnid=short_description]"),
-            cb: getData("[data-columnid=rank_org_company]"),
+            cbRank: getData("[data-columnid=rank_org_company]").replaceAll(
+              ",",
+              "",
+            ),
+            estRevenue: getData("[data-columnid=revenue_range]").replace(
+              "—",
+              "",
+            ),
+            industries: getLinks("[data-columnid=categories] a").map(
+              (link) => link.name,
+            ),
+            industryGroups: getLinks("[data-columnid=category_groups] a").map(
+              (link) => link.name,
+            ),
           };
 
           return result;
@@ -396,7 +419,7 @@ async function processTable(
       );
 
       log("waiting for content to load...");
-      await new Promise((resolve) => setTimeout(resolve, 500));
+      await page.waitForNetworkIdle({ timeout: 5000 }).catch(() => {});
     }
   }
 

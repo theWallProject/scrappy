@@ -4,937 +4,1071 @@
     "reasons": [
       "h"
     ],
-    "ws": "https://8fig.io"
+    "ws": "https://8fig.io",
+    "id": "8fig"
   },
   {
     "name": "A.Team",
     "reasons": [
       "h"
     ],
-    "ws": "https://a.team"
+    "ws": "https://a.team",
+    "id": "A.Team"
   },
   {
     "name": "Affogata",
     "reasons": [
       "h"
     ],
-    "ws": "https://affogata.com"
+    "ws": "https://affogata.com",
+    "id": "Affogata"
   },
   {
     "name": "AI21 Labs",
     "reasons": [
       "h"
     ],
-    "ws": "https://ai21.com"
+    "ws": "https://ai21.com",
+    "id": "AI21 Labs"
   },
   {
     "name": "Aidoc",
     "reasons": [
       "h"
     ],
-    "ws": "https://aidoc.com"
+    "ws": "https://aidoc.com",
+    "id": "Aidoc"
   },
   {
     "name": "Aligned",
     "reasons": [
       "h"
     ],
-    "ws": "https://www.alignedup.com/"
+    "ws": "https://www.alignedup.com/",
+    "id": "Aligned"
   },
   {
     "name": "Amdocs",
     "reasons": [
       "h"
     ],
-    "ws": "https://amdocs.com"
+    "ws": "https://amdocs.com",
+    "id": "Amdocs"
   },
   {
     "name": "Anima",
     "reasons": [
       "h"
     ],
-    "ws": "https://animaapp.com"
+    "ws": "https://animaapp.com",
+    "id": "Anima"
   },
   {
     "name": "Apiiro",
     "reasons": [
       "h"
     ],
-    "ws": "https://apiiro.com"
+    "ws": "https://apiiro.com",
+    "id": "Apiiro"
   },
   {
     "name": "Appsflyer",
     "reasons": [
       "h"
     ],
-    "ws": "https://appsflyer.com"
+    "ws": "https://appsflyer.com",
+    "id": "Appsflyer"
   },
   {
     "name": "Appwrite",
     "reasons": [
       "h"
     ],
-    "ws": "https://appwrite.io/"
+    "ws": "https://appwrite.io/",
+    "id": "Appwrite"
   },
   {
     "name": "Aqua Security",
     "reasons": [
       "h"
     ],
-    "ws": "https://aquasec.com"
+    "ws": "https://aquasec.com",
+    "id": "Aqua Security"
   },
   {
     "name": "Axonius",
     "reasons": [
       "h"
     ],
-    "ws": "https://axonius.com"
+    "ws": "https://axonius.com",
+    "id": "Axonius"
   },
   {
     "name": "Balance",
     "reasons": [
       "h"
     ],
-    "ws": "https://getbalance.com"
+    "ws": "https://getbalance.com",
+    "id": "Balance"
   },
   {
     "name": "BigPanda",
     "reasons": [
       "h"
     ],
-    "ws": "https://bigpanda.com"
+    "ws": "https://bigpanda.com",
+    "id": "BigPanda"
   },
   {
     "name": "Blink Ops",
     "reasons": [
       "h"
     ],
-    "ws": "https://blinkops.com"
+    "ws": "https://blinkops.com",
+    "id": "Blink Ops"
   },
   {
     "name": "Bob",
     "reasons": [
       "h"
     ],
-    "ws": "https://hibob.com"
+    "ws": "https://hibob.com",
+    "id": "Bob"
   },
   {
     "name": "Bringg",
     "reasons": [
       "h"
     ],
-    "ws": "https://bringg.com"
+    "ws": "https://bringg.com",
+    "id": "Bringg"
   },
   {
     "name": "Celery",
     "reasons": [
       "h"
     ],
-    "ws": "https://Celery.cc"
+    "ws": "https://Celery.cc",
+    "id": "Celery"
   },
   {
     "name": "Chargeflow",
     "reasons": [
       "h"
     ],
-    "ws": "https://chargeflow.io"
+    "ws": "https://chargeflow.io",
+    "id": "Chargeflow"
   },
   {
     "name": "CheckPoint",
     "reasons": [
       "h"
     ],
-    "ws": "https://checkpoint.com"
+    "ws": "https://checkpoint.com",
+    "id": "CheckPoint"
   },
   {
     "name": "Claroty",
     "reasons": [
       "h"
     ],
-    "ws": "https://claroty.com"
+    "ws": "https://claroty.com",
+    "id": "Claroty"
   },
   {
     "name": "Cloudinary",
     "reasons": [
       "h"
     ],
-    "ws": "https://cloudinary.com/"
+    "ws": "https://cloudinary.com/",
+    "id": "Cloudinary"
   },
   {
     "name": "Codium",
     "reasons": [
       "h"
     ],
-    "ws": "https://codium.ai"
+    "ws": "https://codium.ai",
+    "id": "Codium"
   },
   {
     "name": "Connecteam",
     "reasons": [
       "h"
     ],
-    "ws": "https://connecteam.com"
+    "ws": "https://connecteam.com",
+    "id": "Connecteam"
   },
   {
     "name": "Coralogix",
     "reasons": [
       "h"
     ],
-    "ws": "https://coralogix.com"
+    "ws": "https://coralogix.com",
+    "id": "Coralogix"
   },
   {
     "name": "CyberArk",
     "reasons": [
       "h"
     ],
-    "ws": "https://cyberark.com"
+    "ws": "https://cyberark.com",
+    "id": "CyberArk"
   },
   {
     "name": "Cybereason",
     "reasons": [
       "h"
     ],
-    "ws": "https://cybereason.com"
+    "ws": "https://cybereason.com",
+    "id": "Cybereason"
   },
   {
     "name": "DagsHub",
     "reasons": [
       "h"
     ],
-    "ws": "https://dagshub.com"
+    "ws": "https://dagshub.com",
+    "id": "DagsHub"
   },
   {
     "name": "Dany",
     "reasons": [
       "h"
     ],
-    "ws": "https://dany.ai"
+    "ws": "https://dany.ai",
+    "id": "Dany"
   },
   {
     "name": "Dealhub",
     "reasons": [
       "h"
     ],
-    "ws": "https://dealhub.io"
+    "ws": "https://dealhub.io",
+    "id": "Dealhub"
   },
   {
     "name": "Deel",
     "reasons": [
       "h"
     ],
-    "ws": "https://Deel.com"
+    "ws": "https://Deel.com",
+    "id": "Deel"
   },
   {
     "name": "DeepCure",
     "reasons": [
       "h"
     ],
-    "ws": "https://deepcure.ai"
+    "ws": "https://deepcure.ai",
+    "id": "DeepCure"
   },
   {
     "name": "Demoleap",
     "reasons": [
       "h"
     ],
-    "ws": "https://demoleap.com"
+    "ws": "https://demoleap.com",
+    "id": "Demoleap"
   },
   {
     "name": "Descope",
     "reasons": [
       "h"
     ],
-    "ws": "https://descope.com"
+    "ws": "https://descope.com",
+    "id": "Descope"
   },
   {
     "name": "Dig Security",
     "reasons": [
       "h"
     ],
-    "ws": "https://www.dig.security/"
+    "ws": "https://www.dig.security/",
+    "id": "Dig Security"
   },
   {
     "name": "Draftboard",
     "reasons": [
       "h"
     ],
-    "ws": "https://draftboard.com"
+    "ws": "https://draftboard.com",
+    "id": "Draftboard"
   },
   {
     "name": "Droxi.ai",
     "reasons": [
       "h"
     ],
-    "ws": "https://Droxi.ai"
+    "ws": "https://Droxi.ai",
+    "id": "Droxi.ai"
   },
   {
     "name": "Elementor",
     "reasons": [
       "h"
     ],
-    "ws": "https://elementor.com"
+    "ws": "https://elementor.com",
+    "id": "Elementor"
   },
   {
     "name": "Eleos Health",
     "reasons": [
       "h"
     ],
-    "ws": "https://eleos.health"
+    "ws": "https://eleos.health",
+    "id": "Eleos Health"
   },
   {
     "name": "Explorium",
     "reasons": [
       "h"
     ],
-    "ws": "https://explorium.ai"
+    "ws": "https://explorium.ai",
+    "id": "Explorium"
   },
   {
     "name": "Fabric",
     "reasons": [
       "h"
     ],
-    "ws": "https://getfabric.com"
+    "ws": "https://getfabric.com",
+    "id": "Fabric"
   },
   {
     "name": "Finaloop",
     "reasons": [
       "h"
     ],
-    "ws": "https://www.finaloop.com/"
+    "ws": "https://www.finaloop.com/",
+    "id": "Finaloop"
   },
   {
     "name": "Finout",
     "reasons": [
       "h"
     ],
-    "ws": "https://finout.io"
+    "ws": "https://finout.io",
+    "id": "Finout"
   },
   {
     "name": "Fintastic",
     "reasons": [
       "h"
     ],
-    "ws": "https://fintastic.ai"
+    "ws": "https://fintastic.ai",
+    "id": "Fintastic"
   },
   {
     "name": "Firebolt",
     "reasons": [
       "h"
     ],
-    "ws": "https://firebolt.io/"
+    "ws": "https://firebolt.io/",
+    "id": "Firebolt"
   },
   {
     "name": "Firefly",
     "reasons": [
       "h"
     ],
-    "ws": "https://firefly.ai"
+    "ws": "https://firefly.ai",
+    "id": "Firefly"
   },
   {
     "name": "Fiverr",
     "reasons": [
       "h"
     ],
-    "ws": "https://fiverr.com"
+    "ws": "https://fiverr.com",
+    "id": "Fiverr"
   },
   {
     "name": "Forter",
     "reasons": [
       "h"
     ],
-    "ws": "https://forter.com"
+    "ws": "https://forter.com",
+    "id": "Forter"
   },
   {
     "name": "Frontegg",
     "reasons": [
       "h"
     ],
-    "ws": "https://frontegg.com"
+    "ws": "https://frontegg.com",
+    "id": "Frontegg"
   },
   {
     "name": "Fundbox",
     "reasons": [
       "h"
     ],
-    "ws": "https://fundbox.com"
+    "ws": "https://fundbox.com",
+    "id": "Fundbox"
   },
   {
     "name": "FundGuard",
     "reasons": [
       "h"
     ],
-    "ws": "https://fundguard.com"
+    "ws": "https://fundguard.com",
+    "id": "FundGuard"
   },
   {
     "name": "Gelt",
     "reasons": [
       "h"
     ],
-    "ws": "https://www.joingelt.com"
+    "ws": "https://www.joingelt.com",
+    "id": "Gelt"
   },
   {
     "name": "Global-e",
     "reasons": [
       "h"
     ],
-    "ws": "https://global-e.com"
+    "ws": "https://global-e.com",
+    "id": "Global-e"
   },
   {
     "name": "Gloww",
     "reasons": [
       "h"
     ],
-    "ws": "https://gloww.com"
+    "ws": "https://gloww.com",
+    "id": "Gloww"
   },
   {
     "name": "Gong",
     "reasons": [
       "h"
     ],
-    "ws": "https://gong.io"
+    "ws": "https://gong.io",
+    "id": "Gong"
   },
   {
     "name": "Graphiti",
     "reasons": [
       "h"
     ],
-    "ws": "https://graphiti.ai"
+    "ws": "https://graphiti.ai",
+    "id": "Graphiti"
   },
   {
     "name": "Groove",
     "reasons": [
       "h"
     ],
-    "ws": "https://Groove.ooo"
+    "ws": "https://Groove.ooo",
+    "id": "Groove"
   },
   {
     "name": "GrowthSpace",
     "reasons": [
       "h"
     ],
-    "ws": "https://growthspace.com"
+    "ws": "https://growthspace.com",
+    "id": "GrowthSpace"
   },
   {
     "name": "Healthy.io",
     "reasons": [
       "h"
     ],
-    "ws": "https://healthy.io"
+    "ws": "https://healthy.io",
+    "id": "Healthy.io"
   },
   {
     "name": "Honeybook",
     "reasons": [
       "h"
     ],
-    "ws": "https://honeybook.com"
+    "ws": "https://honeybook.com",
+    "id": "Honeybook"
   },
   {
     "name": "Immunai",
     "reasons": [
       "h"
     ],
-    "ws": "https://immunai.com"
+    "ws": "https://immunai.com",
+    "id": "Immunai"
   },
   {
     "name": "Imperva",
     "reasons": [
       "h"
     ],
-    "ws": "https://imperva.com"
+    "ws": "https://imperva.com",
+    "id": "Imperva"
   },
   {
     "name": "Indeitq",
     "reasons": [
       "h"
     ],
-    "ws": "https://identiq.com"
+    "ws": "https://identiq.com",
+    "id": "Indeitq"
   },
   {
     "name": "Intail.ai",
     "reasons": [
       "h"
     ],
-    "ws": "https://intail.ai"
+    "ws": "https://intail.ai",
+    "id": "Intail.ai"
   },
   {
     "name": "JFrog",
     "reasons": [
       "h"
     ],
-    "ws": "https://jfrog.com"
+    "ws": "https://jfrog.com",
+    "id": "JFrog"
   },
   {
     "name": "Jifiti",
     "reasons": [
       "h"
     ],
-    "ws": "https://jifiti.com"
+    "ws": "https://jifiti.com",
+    "id": "Jifiti"
   },
   {
     "name": "K Health",
     "reasons": [
       "h"
     ],
-    "ws": "https://khealth.com"
+    "ws": "https://khealth.com",
+    "id": "K Health"
   },
   {
     "name": "Kaltura",
     "reasons": [
       "h"
     ],
-    "ws": "https://corp.kaltura.com"
+    "ws": "https://corp.kaltura.com",
+    "id": "Kaltura"
   },
   {
     "name": "Komodor",
     "reasons": [
       "h"
     ],
-    "ws": "https://komodor.com"
+    "ws": "https://komodor.com",
+    "id": "Komodor"
   },
   {
     "name": "Lightricks",
     "reasons": [
       "h"
     ],
-    "ws": "https://lightricks.com"
+    "ws": "https://lightricks.com",
+    "id": "Lightricks"
   },
   {
     "name": "Logz.io",
     "reasons": [
       "h"
     ],
-    "ws": "https://logz.io"
+    "ws": "https://logz.io",
+    "id": "Logz.io"
   },
   {
     "name": "Lusha",
     "reasons": [
       "h"
     ],
-    "ws": "https://lusha.com"
+    "ws": "https://lusha.com",
+    "id": "Lusha"
   },
   {
     "name": "Mapme",
     "reasons": [
       "h"
     ],
-    "ws": "https://mapme.com"
+    "ws": "https://mapme.com",
+    "id": "Mapme"
   },
   {
     "name": "Melio",
     "reasons": [
       "h"
     ],
-    "ws": "https://meliopayments.com"
+    "ws": "https://meliopayments.com",
+    "id": "Melio"
   },
   {
     "name": "Mesh Payments",
     "reasons": [
       "h"
     ],
-    "ws": "https://meshpayments.com"
+    "ws": "https://meshpayments.com",
+    "id": "Mesh Payments"
   },
   {
     "name": "Mixtiles",
     "reasons": [
       "h"
     ],
-    "ws": "https://mixtiles.com"
+    "ws": "https://mixtiles.com",
+    "id": "Mixtiles"
   },
   {
     "name": "Monday.com",
     "reasons": [
       "h"
     ],
-    "ws": "https://monday.com"
+    "ws": "https://monday.com",
+    "id": "Monday.com"
   },
   {
     "name": "Monto",
     "reasons": [
       "h"
     ],
-    "ws": "https://montopay.com"
+    "ws": "https://montopay.com",
+    "id": "Monto"
   },
   {
     "name": "myInterview",
     "reasons": [
       "h"
     ],
-    "ws": "https://myinterview.com"
+    "ws": "https://myinterview.com",
+    "id": "myInterview"
   },
   {
     "name": "myQuest",
     "reasons": [
       "h"
     ],
-    "ws": "https://myquest.co"
+    "ws": "https://myquest.co",
+    "id": "myQuest"
   },
   {
     "name": "Navina",
     "reasons": [
       "h"
     ],
-    "ws": "https://navina.ai"
+    "ws": "https://navina.ai",
+    "id": "Navina"
   },
   {
     "name": "Nexite",
     "reasons": [
       "h"
     ],
-    "ws": "https://nexite.io"
+    "ws": "https://nexite.io",
+    "id": "Nexite"
   },
   {
     "name": "Nice Systems",
     "reasons": [
       "h"
     ],
-    "ws": "https://nice.com"
+    "ws": "https://nice.com",
+    "id": "Nice Systems"
   },
   {
     "name": "Noble",
     "reasons": [
       "h"
     ],
-    "ws": "https://benoblel.io"
+    "ws": "https://benoblel.io",
+    "id": "Noble"
   },
   {
     "name": "Noname Security",
     "reasons": [
       "h"
     ],
-    "ws": "https://nonamesecurity.com"
+    "ws": "https://nonamesecurity.com",
+    "id": "Noname Security"
   },
   {
     "name": "Optimove",
     "reasons": [
       "h"
     ],
-    "ws": "https://optimove.com"
+    "ws": "https://optimove.com",
+    "id": "Optimove"
   },
   {
     "name": "Pagaya",
     "reasons": [
       "h"
     ],
-    "ws": "https://pagaya.com"
+    "ws": "https://pagaya.com",
+    "id": "Pagaya"
   },
   {
     "name": "Panoray",
     "reasons": [
       "h"
     ],
-    "ws": "https://panorays.com"
+    "ws": "https://panorays.com",
+    "id": "Panoray"
   },
   {
     "name": "Papaya Global",
     "reasons": [
       "h"
     ],
-    "ws": "https://papayaglobal.com"
+    "ws": "https://papayaglobal.com",
+    "id": "Papaya Global"
   },
   {
     "name": "PayEm",
     "reasons": [
       "h"
     ],
-    "ws": "https://payem.co"
+    "ws": "https://payem.co",
+    "id": "PayEm"
   },
   {
     "name": "PDQ",
     "reasons": [
       "h"
     ],
-    "ws": "https://prettydamnquick.com"
+    "ws": "https://prettydamnquick.com",
+    "id": "PDQ"
   },
   {
     "name": "PeerSpot",
     "reasons": [
       "h"
     ],
-    "ws": "https://peerspot.com"
+    "ws": "https://peerspot.com",
+    "id": "PeerSpot"
   },
   {
     "name": "Permit.io",
     "reasons": [
       "h"
     ],
-    "ws": "https://permit.io"
+    "ws": "https://permit.io",
+    "id": "Permit.io"
   },
   {
     "name": "Placer.ai",
     "reasons": [
       "h"
     ],
-    "ws": "https://Placer.ai"
+    "ws": "https://Placer.ai",
+    "id": "Placer.ai"
   },
   {
     "name": "Powtoon",
     "reasons": [
       "h"
     ],
-    "ws": "https://powtoon.com"
+    "ws": "https://powtoon.com",
+    "id": "Powtoon"
   },
   {
     "name": "Qwak",
     "reasons": [
       "h"
     ],
-    "ws": "https://qwak.com/"
+    "ws": "https://qwak.com/",
+    "id": "Qwak"
   },
   {
     "name": "Rapyd",
     "reasons": [
       "h"
     ],
-    "ws": "https://rapyd.net"
+    "ws": "https://rapyd.net",
+    "id": "Rapyd"
   },
   {
     "name": "Receive",
     "reasons": [
       "h"
     ],
-    "ws": "https://www.nowreceive.com/"
+    "ws": "https://www.nowreceive.com/",
+    "id": "Receive"
   },
   {
     "name": "Regatta Data",
     "reasons": [
       "h"
     ],
-    "ws": "https://regatta.dev"
+    "ws": "https://regatta.dev",
+    "id": "Regatta Data"
   },
   {
     "name": "Riskified",
     "reasons": [
       "h"
     ],
-    "ws": "https://riskified.com"
+    "ws": "https://riskified.com",
+    "id": "Riskified"
   },
   {
     "name": "Ritual",
     "reasons": [
       "h"
     ],
-    "ws": "https://heyritual.com"
+    "ws": "https://heyritual.com",
+    "id": "Ritual"
   },
   {
     "name": "Riverside.fm",
     "reasons": [
       "h"
     ],
-    "ws": "https://riverside.fm"
+    "ws": "https://riverside.fm",
+    "id": "Riverside.fm"
   },
   {
     "name": "Rivery",
     "reasons": [
       "h"
     ],
-    "ws": "https://rivery.io"
+    "ws": "https://rivery.io",
+    "id": "Rivery"
   },
   {
     "name": "Rupert",
     "reasons": [
       "h"
     ],
-    "ws": "https://hirupert.co"
+    "ws": "https://hirupert.co",
+    "id": "Rupert"
   },
   {
     "name": "Salt Security",
     "reasons": [
       "h"
     ],
-    "ws": "https://salt.security"
+    "ws": "https://salt.security",
+    "id": "Salt Security"
   },
   {
     "name": "Salto",
     "reasons": [
       "h"
     ],
-    "ws": "https://salto.io"
+    "ws": "https://salto.io",
+    "id": "Salto"
   },
   {
     "name": "Sentra",
     "reasons": [
       "h"
     ],
-    "ws": "https://sentra.io"
+    "ws": "https://sentra.io",
+    "id": "Sentra"
   },
   {
     "name": "Silverfort",
     "reasons": [
       "h"
     ],
-    "ws": "https://silverfort.com"
+    "ws": "https://silverfort.com",
+    "id": "Silverfort"
   },
   {
     "name": "Similarweb",
     "reasons": [
       "h"
     ],
-    "ws": "https://similarweb.com"
+    "ws": "https://similarweb.com",
+    "id": "Similarweb"
   },
   {
     "name": "Sisense",
     "reasons": [
       "h"
     ],
-    "ws": "https://sisense.com"
+    "ws": "https://sisense.com",
+    "id": "Sisense"
   },
   {
     "name": "Snyk",
     "reasons": [
       "h"
     ],
-    "ws": "https://snyk.io"
+    "ws": "https://snyk.io",
+    "id": "Snyk"
   },
   {
     "name": "Stuff That Works",
     "reasons": [
       "h"
     ],
-    "ws": "https://www.stuffthatworks.health/"
+    "ws": "https://www.stuffthatworks.health/",
+    "id": "Stuff That Works"
   },
   {
     "name": "Substrata",
     "reasons": [
       "h"
     ],
-    "ws": "https://substrata.me"
+    "ws": "https://substrata.me",
+    "id": "Substrata"
   },
   {
     "name": "Sweep",
     "reasons": [
       "h"
     ],
-    "ws": "https://sweep.io"
+    "ws": "https://sweep.io",
+    "id": "Sweep"
   },
   {
     "name": "Swimm",
     "reasons": [
       "h"
     ],
-    "ws": "https://Swimm.io"
+    "ws": "https://Swimm.io",
+    "id": "Swimm"
   },
   {
     "name": "Talon",
     "reasons": [
       "h"
     ],
-    "ws": "https://talon-sec.com"
+    "ws": "https://talon-sec.com",
+    "id": "Talon"
   },
   {
     "name": "TimeOS",
     "reasons": [
       "h"
     ],
-    "ws": "https://timeos.ai"
+    "ws": "https://timeos.ai",
+    "id": "TimeOS"
   },
   {
     "name": "Tipalti",
     "reasons": [
       "h"
     ],
-    "ws": "https://tipalti.com"
+    "ws": "https://tipalti.com",
+    "id": "Tipalti"
   },
   {
     "name": "Tolstoy",
     "reasons": [
       "h"
     ],
-    "ws": "https://tolstoy.com"
+    "ws": "https://tolstoy.com",
+    "id": "Tolstoy"
   },
   {
     "name": "Trendemon",
     "reasons": [
       "h"
     ],
-    "ws": "https://trendemon.com"
+    "ws": "https://trendemon.com",
+    "id": "Trendemon"
   },
   {
     "name": "Trigo",
     "reasons": [
       "h"
     ],
-    "ws": "https://trigoretail.com"
+    "ws": "https://trigoretail.com",
+    "id": "Trigo"
   },
   {
     "name": "TripleWhale",
     "reasons": [
       "h"
     ],
-    "ws": "https://triplewhale.com"
+    "ws": "https://triplewhale.com",
+    "id": "TripleWhale"
   },
   {
     "name": "Trullion",
     "reasons": [
       "h"
     ],
-    "ws": "https://trullion.com"
+    "ws": "https://trullion.com",
+    "id": "Trullion"
   },
   {
     "name": "Tufin",
     "reasons": [
       "h"
     ],
-    "ws": "https://tufin.com"
+    "ws": "https://tufin.com",
+    "id": "Tufin"
   },
   {
     "name": "Unit",
     "reasons": [
       "h"
     ],
-    "ws": "https://unit.co"
+    "ws": "https://unit.co",
+    "id": "Unit"
   },
   {
     "name": "Verbit",
     "reasons": [
       "h"
     ],
-    "ws": "https://verbit.ai"
+    "ws": "https://verbit.ai",
+    "id": "Verbit"
   },
   {
     "name": "Walkme",
     "reasons": [
       "h"
     ],
-    "ws": "https://walkme.com"
+    "ws": "https://walkme.com",
+    "id": "Walkme"
   },
   {
     "name": "Walnut",
     "reasons": [
       "h"
     ],
-    "ws": "https://walnut.io"
+    "ws": "https://walnut.io",
+    "id": "Walnut"
   },
   {
     "name": "Wilco",
     "reasons": [
       "h"
     ],
-    "ws": "http://trywilco.com/"
+    "ws": "http://trywilco.com/",
+    "id": "Wilco"
   },
   {
     "name": "Wix",
     "reasons": [
       "h"
     ],
-    "ws": "https://wix.com"
+    "ws": "https://wix.com",
+    "id": "Wix"
   },
   {
     "name": "Wiz",
     "reasons": [
       "h"
     ],
-    "ws": "https://wiz.io"
+    "ws": "https://wiz.io",
+    "id": "Wiz"
   },
   {
     "name": "Yotpo",
     "reasons": [
       "h"
     ],
-    "ws": "https://yotpo.com"
+    "ws": "https://yotpo.com",
+    "id": "Yotpo"
   },
   {
     "name": "Zesty",
     "reasons": [
       "h"
     ],
-    "ws": "https://zesty.co"
+    "ws": "https://zesty.co",
+    "id": "Zesty"
   }
 ]
