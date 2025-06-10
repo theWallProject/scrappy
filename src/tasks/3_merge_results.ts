@@ -3,11 +3,7 @@ import path from "path";
 import { getMainDomain } from "@theWallProject/addonCommon";
 import { ScrappedItemType, APIScrapperFileDataSchema } from "../types";
 import { log, cleanWebsite } from "../helper";
-import {
-  manualDeleteNames,
-  DUPLICATE_WEBSITES,
-  manualOverrides,
-} from "./manual_resolve/duplicate";
+import { manualDeleteNames, manualOverrides } from "./manual_resolve/duplicate";
 const folderPath = path.join(__dirname, "../../results/1_batches");
 
 const outputFilePath = path.join(
@@ -52,12 +48,10 @@ const loadJsonFiles = (folderPath: string) => {
     row.fb = cleanWebsite(row.fb);
     row.tw = cleanWebsite(row.tw);
 
-    const { name, ws } = row;
+    const { name } = row;
 
     if (manualDeleteNames.includes(name)) return [];
-    if (ws && DUPLICATE_WEBSITES[ws]) {
-      return [];
-    }
+
     // const dubName = tmpArr.find((row) => row.name === name);
     // const dubWebsite = tmpArr.find((row) => row.ws === ws && ws);
     // const dubFb = tmpArr.find((row) => row.fb === fb && fb);
@@ -147,12 +141,9 @@ const loadJsonFiles = (folderPath: string) => {
     // }
   });
 
-  for (const website in DUPLICATE_WEBSITES) {
-    deDubeArray.push(DUPLICATE_WEBSITES[website]);
-  }
-
   const manuallyUpdatedArray = deDubeArray.map((row) => {
     const result = manualOverrides.find(([name]) => name === row.name);
+
     row.tw = row.tw
       ?.replace("www.twitter.com", "x.com")
       ?.replace("twitter.com", "x.com");

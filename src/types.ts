@@ -3,6 +3,7 @@ import { z } from "zod";
 
 const ScrappedItemSchema = z.object({
   name: z.string(),
+  link: z.string().optional(),
   reasons: ReasonsSchema,
   li: z.string().optional(),
   ws: z.string().optional(),
@@ -25,6 +26,34 @@ const ScrappedItemSchema = z.object({
     )
     .optional(),
   acquirerIds: z
+    .array(
+      z.object({
+        name: z.string(),
+        link: z.string().url(),
+      }),
+    )
+    .optional(),
+  /** short_description */
+  description: z.string().optional(),
+
+  /** rank_org_company */
+  cb: z.string().optional(),
+
+  /** revenue_range */
+  estRevenue: z.string().optional(),
+
+  /** categories */
+  industries: z
+    .array(
+      z.object({
+        name: z.string(),
+        link: z.string().url(),
+      }),
+    )
+    .optional(),
+
+  /** category_groups */
+  industryGroups: z
     .array(
       z.object({
         name: z.string(),

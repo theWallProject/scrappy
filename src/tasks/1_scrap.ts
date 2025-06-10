@@ -17,36 +17,33 @@ type ScrappingConfig = {
 
 const homeUrl = "https://www.crunchbase.com";
 const filterStages: ScrappingConfig[] = [
-  // isBlank
-  // {
-  //   cbSearchUrl:
-  //     "https://www.crunchbase.com/lists/isr/f584e097-e942-47f5-a3a1-c3083b960430/organization.companies",
-  //   reasons: [APIListOfReasons.HeadQuarterInIL],
-  //   fileName: "HQ_ISR",
-  //   cbSteps: [
-  //     [1, 60000],
-  //     [60001, 144000],
-  //     [144001, 240000],
-  //     [240001, 355000],
-  //     [355001, 480000],
-  //     [480001, 640000],
-  //     [640001, 800000],
-  //     [800001, 1000000],
-  //     [1000001, 1200000],
-  //     [1200001, 1400000],
-  //     [1400001, 1600000],
-  //     [1600001, 1800000],
-  //     [1800001, 2000000],
-  //     [2000001, 2200000],
-  //     [2200001, 2400000],
-  //     [2400001, 2600000],
-  //     [2600001, 2800000],
-  //     [2800001, 3000000],
-  //     [3000001, 3200000],
-  //     [3200001, 3400000],
-  //     [3400001, 99999999],
-  //   ],
-  // },
+  {
+    cbSearchUrl:
+      "https://www.crunchbase.com/discover/saved/israel-active/ec0496b1-5137-4e73-a3eb-a9e7ea6b2900",
+    reasons: [APIListOfReasons.HeadQuarterInIL],
+    fileName: "HQ_ISR",
+    cbSteps: [
+      [1, 60000],
+      [60001, 145000],
+      [145001, 290000],
+      [290001, 450000],
+      [450001, 590000],
+      [590001, 750000],
+      [750001, 920000],
+      [920001, 1000000],
+      [1000001, 1100000],
+      [1100001, 1300000],
+      [1300001, 1530000],
+      [1530001, 1800000],
+      [1800001, 2050000],
+      [2050001, 2290000],
+      [2290001, 2580000],
+      [2580001, 2850000],
+      [2850001, 3180000],
+      [3180001, 3540000],
+      [3540001, 9999999],
+    ],
+  },
   // {
   //   cbSearchUrl:
   //     "https://www.crunchbase.com/lists/isr-founder/4a567c09-b27f-4192-b60d-116133a09db6/organization.companies",
@@ -58,28 +55,29 @@ const filterStages: ScrappingConfig[] = [
   //     [130001, 999999999],
   //   ],
   // },
-  {
-    cbSearchUrl:
-      "https://www.crunchbase.com/lists/berlin-halal-friendly/6dab6829-5be0-4038-a408-edf172fb269a/organization.companies",
-    reasons: [APIListOfReasons.FounderInIL],
-    fileName: "TMP_BERLIN",
-    cbSteps: [
-      [1, 130000],
-      [130001, 320000],
-      [320001, 550000],
-      [550001, 840000],
-      [840001, 1120000],
-      [1120001, 1420000],
-      [1420001, 1700000],
-      [1700001, 1950000],
-      [1950001, 2220000],
-      [2220001, 2480000],
-      [2480001, 2730000],
-      [2730001, 3000000],
-      [3000001, 3300000],
-      [3300001, 999999999],
-    ],
-  },
+
+  // {
+  //   cbSearchUrl:
+  //     "https://www.crunchbase.com/lists/berlin-halal-friendly/6dab6829-5be0-4038-a408-edf172fb269a/organization.companies",
+  //   reasons: [APIListOfReasons.FounderInIL],
+  //   fileName: "TMP_BERLIN",
+  //   cbSteps: [
+  //     [1, 130000],
+  //     [130001, 320000],
+  //     [320001, 550000],
+  //     [550001, 840000],
+  //     [840001, 1120000],
+  //     [1120001, 1420000],
+  //     [1420001, 1700000],
+  //     [1700001, 1950000],
+  //     [1950001, 2220000],
+  //     [2220001, 2480000],
+  //     [2480001, 2730000],
+  //     [2730001, 3000000],
+  //     [3000001, 3300000],
+  //     [3300001, 999999999],
+  //   ],
+  // },
 ];
 
 export async function run() {
@@ -94,7 +92,7 @@ export async function run() {
 
   const browser = await puppeteer.launch({
     headless: false,
-    executablePath: "/usr/bin/google-chrome",
+    // executablePath: "/usr/bin/google-chrome",
     // args: ["--start-maximized"],
     args: ["--window-size=1800,1000"],
     // userDataDir,
@@ -130,6 +128,7 @@ export async function run() {
   await new Promise((resolve) => setTimeout(resolve, 3000));
 
   log("Continuing after login...");
+  const stageCounts = [];
 
   for await (const stage of filterStages) {
     log("processing stage:", stage);
@@ -170,9 +169,25 @@ export async function run() {
         warn("couldnt click search, skipping", error);
       }
 
-      // const resultsInfo = await page.waitForSelector(
-      //   ".component--results-info",
-      // );
+      const resultsInfo = await page.waitForSelector(
+        ".component--results-info",
+      );
+      if (!resultsInfo) {
+        throw new Error("no results info found");
+      }
+
+      const resultsInfoText = await resultsInfo.evaluate((el) =>
+        el.textContent?.trim(),
+      );
+      log("Results info text:", resultsInfoText);
+      // extract number from pattern "of 789,76 results"
+      const strCountFromResultsInfo = resultsInfoText?.match(/\d+/)?.[0];
+      if (!strCountFromResultsInfo) {
+        throw new Error("no number from results info found");
+      }
+      const countFromResultsInfo = parseInt(strCountFromResultsInfo);
+
+      stageCounts.push({ batchNum, countFromResultsInfo });
 
       // if (resultsInfo) {
       const textNodes = await page.evaluate(() => {
@@ -190,11 +205,17 @@ export async function run() {
       log("after processTable");
 
       results.sort((a, b) => a.name.localeCompare(b.name));
+      if (results.length !== countFromResultsInfo) {
+        throw new Error(
+          `results.length !== countFromResultsInfo: ${results.length} !== ${countFromResultsInfo}`,
+        );
+      }
 
       await saveResultsToFile(results, `${stage.fileName}_${batchNum}.json`);
       batchNum += 1;
     }
 
+    log("stageCounts", stageCounts);
     // await page.goto(stage.cbSearchUrl, { waitUntil: "domcontentloaded" });
     // await new Promise((resolve) => setTimeout(resolve, 10000));
   }
@@ -220,7 +241,9 @@ async function saveResultsToFile(
 async function clickSearchButton(page: Page): Promise<void> {
   log("Clicking the search button...");
   const searchButtonSelector = '[data-cy="search-button"]';
-  await page.waitForSelector(searchButtonSelector, { timeout: 500 });
+
+  await new Promise((resolve) => setTimeout(resolve, 2000));
+  await page.waitForSelector(searchButtonSelector, { timeout: 1000 });
 
   try {
     await page.click(searchButtonSelector);
@@ -311,6 +334,7 @@ async function processTable(
           const result: ScrappedItemType = {
             reasons: stg.reasons,
             name: getData("[data-columnid=identifier]"),
+            link: getLinks("[data-columnid=identifier] a")[0].link,
             li:
               row.querySelector<HTMLAnchorElement>("[data-columnid=linkedin] a")
                 ?.href || "",
@@ -326,6 +350,8 @@ async function processTable(
             founderIds: getLinks("[data-columnid=founder_identifiers] a"),
             investorIds: getLinks("[data-columnid=investor_identifiers] a"),
             acquirerIds: getLinks("[data-columnid=acquirer_identifier] a"),
+            description: getData("[data-columnid=short_description]"),
+            cb: getData("[data-columnid=rank_org_company]"),
           };
 
           return result;
