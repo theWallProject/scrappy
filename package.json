@@ -4,11 +4,11 @@
   "description": "Puppeteer script to get data from Crunchbase",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "ts-node-dev src/index.ts",
+    "dev": "ts-node src/index.ts",
     "merge": "ts-node-dev src/merge_results.ts",
     "convert": "ts-node-dev src/convertDB.ts",
     "build": "tsc",
-    "start": "node dist/index.js",
+    "start": "npm run build && node dist/index.js",
     "preinstall": "npm install github:theWallProject/addonCommon --force"
   },
   "engines": {

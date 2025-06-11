@@ -892,6 +892,11 @@
   {
     "selector": "acaitravel.com",
     "name": "Acai Travel",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "acaitravel.com",
+    "name": "Acai Travel",
     "reasons": ["f", "i"]
   },
   {
@@ -1013,6 +1018,11 @@
     "selector": "accubeat.com",
     "name": "AccuBeat",
     "reasons": ["h"]
+  },
+  {
+    "selector": "acculine-medical.com",
+    "name": "AccuLine",
+    "reasons": ["f"]
   },
   {
     "selector": "acculine-medical.com",
@@ -1187,6 +1197,11 @@
   {
     "selector": "activefence.com",
     "name": "ActiveFence",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "activefence.com",
+    "name": "ActiveFence",
     "reasons": ["f", "i"]
   },
   {
@@ -1213,6 +1228,11 @@
     "selector": "actualsignal.com",
     "name": "Actual Signal",
     "reasons": ["h"]
+  },
+  {
+    "selector": "actusdigital.com",
+    "name": "Actus Digital",
+    "reasons": ["f"]
   },
   {
     "selector": "actusdigital.com",
@@ -1368,6 +1388,11 @@
     "selector": "add-on-optics.com",
     "name": "Addon Optics",
     "reasons": ["h"]
+  },
+  {
+    "selector": "addionics.com",
+    "name": "Addionics",
+    "reasons": ["f"]
   },
   {
     "selector": "addionics.com",
@@ -1802,6 +1827,11 @@
   {
     "selector": "aeroscout.com",
     "name": "AeroScout",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "aeroscout.com",
+    "name": "AeroScout",
     "reasons": ["f", "i"]
   },
   {
@@ -1887,11 +1917,6 @@
   {
     "selector": "affixmedical.com",
     "name": "Affix Medical",
-    "reasons": ["h"]
-  },
-  {
-    "selector": "affogata.com",
-    "name": "Affogata",
     "reasons": ["h"]
   },
   {
@@ -2002,6 +2027,11 @@
   {
     "selector": "agamonhealth.com",
     "name": "Agamon Health",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "agamonhealth.com",
+    "name": "Agamon Health",
     "reasons": ["f", "i"]
   },
   {
@@ -2023,6 +2053,11 @@
     "selector": "agavecoin.io",
     "name": "Stable Capital",
     "reasons": ["h"]
+  },
+  {
+    "selector": "agavehealth.com",
+    "name": "Agave Health",
+    "reasons": ["f"]
   },
   {
     "selector": "agavehealth.com",
@@ -2343,11 +2378,6 @@
     "selector": "aidia.com",
     "name": "Aidia",
     "reasons": ["f"]
-  },
-  {
-    "selector": "aidoc.com",
-    "name": "Aidoc",
-    "reasons": ["h"]
   },
   {
     "selector": "aidoc.com",
@@ -2947,6 +2977,11 @@
   {
     "selector": "algosec.com",
     "name": "Algosec",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "algosec.com",
+    "name": "Algosec",
     "reasons": ["f", "i"]
   },
   {
@@ -2968,6 +3003,11 @@
     "selector": "algotrace.com",
     "name": "AlgoTrace",
     "reasons": ["h"]
+  },
+  {
+    "selector": "algovalue.com",
+    "name": "AlgoValue",
+    "reasons": ["f"]
   },
   {
     "selector": "algovalue.com",
@@ -3002,12 +3042,12 @@
   {
     "selector": "alignedup.com",
     "name": "Aligned",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "alignedup.com",
     "name": "Aligned",
-    "reasons": ["f"]
+    "reasons": ["f", "h"]
   },
   {
     "selector": "alignment-labs.com",
@@ -3112,6 +3152,11 @@
   {
     "selector": "allevetix-medical.com",
     "name": "Allevetix Medical",
+    "reasons": ["h"]
+  },
+  {
+    "selector": "allflex.global",
+    "name": "Allflex",
     "reasons": ["h"]
   },
   {
@@ -3372,6 +3417,11 @@
   {
     "selector": "altahq.com",
     "name": "Alta",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "altahq.com",
+    "name": "Alta",
     "reasons": ["f", "i"]
   },
   {
@@ -3562,12 +3612,12 @@
   {
     "selector": "amdocs.com",
     "name": "Amdocs",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "amdocs.com",
     "name": "Amdocs",
-    "reasons": ["f"]
+    "reasons": ["f", "h"]
   },
   {
     "selector": "ameetee.io",
@@ -3662,6 +3712,11 @@
   {
     "selector": "amobee.com",
     "name": "Amobee",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "amobee.com",
+    "name": "Amobee",
     "reasons": ["f", "i"]
   },
   {
@@ -3727,6 +3782,11 @@
   {
     "selector": "amplifyeyecare.com",
     "name": "Amplify EyeCare",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "ampliolearning.com",
+    "name": "Amplio",
     "reasons": ["f"]
   },
   {
@@ -4001,8 +4061,8 @@
   },
   {
     "selector": "animaapp.com",
-    "name": "Anima App",
-    "reasons": ["f", "i"]
+    "name": "Anima",
+    "reasons": ["h", "f", "i"]
   },
   {
     "selector": "animabiotech.com",
@@ -4133,6 +4193,11 @@
     "selector": "anstc.com",
     "name": "ANS Tech",
     "reasons": ["h"]
+  },
+  {
+    "selector": "answers.com",
+    "name": "Answers Corporation",
+    "reasons": ["f"]
   },
   {
     "selector": "answers.com",
@@ -4292,6 +4357,11 @@
   {
     "selector": "anyword.com",
     "name": "Anyword",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "anyword.com",
+    "name": "Anyword",
     "reasons": ["f", "i"]
   },
   {
@@ -4308,6 +4378,11 @@
     "selector": "aora-solar.com",
     "name": "AORA",
     "reasons": ["h"]
+  },
+  {
+    "selector": "apartable.com",
+    "name": "Apartable",
+    "reasons": ["f"]
   },
   {
     "selector": "apartable.com",
@@ -4337,12 +4412,22 @@
   {
     "selector": "aperio.ai",
     "name": "APERIO",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "aperio.ai",
+    "name": "APERIO",
     "reasons": ["f", "i"]
   },
   {
     "selector": "apesrevenge.com",
     "name": "Veryo Studios",
     "reasons": ["h"]
+  },
+  {
+    "selector": "apester.com",
+    "name": "Apester",
+    "reasons": ["f"]
   },
   {
     "selector": "apester.com",
@@ -4387,12 +4472,12 @@
   {
     "selector": "apiiro.com",
     "name": "Apiiro",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "apiiro.com",
     "name": "Apiiro",
-    "reasons": ["f"]
+    "reasons": ["f", "h"]
   },
   {
     "selector": "aplica.media",
@@ -4432,6 +4517,11 @@
   {
     "selector": "apolloshield.com",
     "name": "ApolloShield",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "apono.io",
+    "name": "Apono",
     "reasons": ["f"]
   },
   {
@@ -4542,6 +4632,11 @@
   {
     "selector": "appdome.com",
     "name": "Appdome",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "appdome.com",
+    "name": "Appdome",
     "reasons": ["f", "i"]
   },
   {
@@ -4618,6 +4713,11 @@
     "selector": "appletec.com",
     "name": "Appletec",
     "reasons": ["h"]
+  },
+  {
+    "selector": "applicaster.com",
+    "name": "Applicaster",
+    "reasons": ["f"]
   },
   {
     "selector": "applicaster.com",
@@ -4712,6 +4812,11 @@
   {
     "selector": "approve.com",
     "name": "Approve.com",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "approve.com",
+    "name": "Approve.com",
     "reasons": ["f", "i"]
   },
   {
@@ -4761,8 +4866,8 @@
   },
   {
     "selector": "appsflyer.com",
-    "name": "AppsFlyer",
-    "reasons": ["f", "i"]
+    "name": "Appsflyer",
+    "reasons": ["h", "f", "i"]
   },
   {
     "selector": "appsgrade.com",
@@ -4812,7 +4917,7 @@
   {
     "selector": "appwrite.io",
     "name": "Appwrite",
-    "reasons": ["h", "f"]
+    "reasons": ["f"]
   },
   {
     "selector": "appy.cc",
@@ -5417,6 +5522,11 @@
   {
     "selector": "armis.com",
     "name": "Armis",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "armis.com",
+    "name": "Armis",
     "reasons": ["f", "i"]
   },
   {
@@ -5548,6 +5658,11 @@
     "selector": "artafinance.com",
     "name": "Arta Finance",
     "reasons": ["i"]
+  },
+  {
+    "selector": "artaigallery.com",
+    "name": "ART AI",
+    "reasons": ["f"]
   },
   {
     "selector": "artaigallery.com",
@@ -5967,6 +6082,11 @@
   {
     "selector": "at-bay.com",
     "name": "At-Bay",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "at-bay.com",
+    "name": "At-Bay",
     "reasons": ["f", "i"]
   },
   {
@@ -6026,7 +6146,12 @@
   },
   {
     "selector": "atidim.org",
-    "name": "Atidim Alumni Association",
+    "name": "Atidim",
+    "reasons": ["h"]
+  },
+  {
+    "selector": "atidim.org",
+    "name": "Atidim",
     "reasons": ["h"]
   },
   {
@@ -6098,6 +6223,11 @@
     "selector": "atmosfir.net",
     "name": "Atmosfir",
     "reasons": ["h"]
+  },
+  {
+    "selector": "atomation.net",
+    "name": "Atomation",
+    "reasons": ["f"]
   },
   {
     "selector": "atomation.net",
@@ -6273,6 +6403,11 @@
     "selector": "augmind.me",
     "name": "Augmind",
     "reasons": ["h"]
+  },
+  {
+    "selector": "augury.com",
+    "name": "Augury",
+    "reasons": ["f"]
   },
   {
     "selector": "augury.com",
@@ -6641,7 +6776,12 @@
   },
   {
     "selector": "avt-inc.com",
-    "name": "AVT",
+    "name": "Advanced Vision Technology",
+    "reasons": ["h"]
+  },
+  {
+    "selector": "avt-inc.com",
+    "name": "Advanced Vision Technology",
     "reasons": ["h"]
   },
   {
@@ -6747,12 +6887,12 @@
   {
     "selector": "axonius.com",
     "name": "Axonius",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "axonius.com",
     "name": "Axonius",
-    "reasons": ["f"]
+    "reasons": ["f", "h"]
   },
   {
     "selector": "axonize.com",
@@ -6987,6 +7127,11 @@
   {
     "selector": "backline.ai",
     "name": "Backline AI",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "backline.ai",
+    "name": "Backline AI",
     "reasons": ["f", "i"]
   },
   {
@@ -7130,6 +7275,11 @@
     "reasons": ["h"]
   },
   {
+    "selector": "bamboo-cloud.com",
+    "name": "Bamboo Cloud",
+    "reasons": ["h"]
+  },
+  {
     "selector": "bamya.io",
     "name": "bamya",
     "reasons": ["h"]
@@ -7178,6 +7328,11 @@
     "selector": "bankhapoalim.com",
     "name": "Bank Hapoalim",
     "reasons": ["h"]
+  },
+  {
+    "selector": "bankingcrowded.com",
+    "name": "Crowded",
+    "reasons": ["f"]
   },
   {
     "selector": "bankingcrowded.com",
@@ -7335,6 +7490,11 @@
     "reasons": ["h"]
   },
   {
+    "selector": "base.ai",
+    "name": "Base",
+    "reasons": ["h"]
+  },
+  {
     "selector": "base.la",
     "name": "Base",
     "reasons": ["h"]
@@ -7357,7 +7517,7 @@
   {
     "selector": "basesdk.com",
     "name": "BASE",
-    "reasons": ["f", "h"]
+    "reasons": ["f"]
   },
   {
     "selector": "bashanpro.com",
@@ -7692,6 +7852,11 @@
   {
     "selector": "become.co",
     "name": "Become",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "become.co",
+    "name": "Become",
     "reasons": ["f", "i"]
   },
   {
@@ -7763,6 +7928,11 @@
     "selector": "beegris.com",
     "name": "Beegris",
     "reasons": ["h"]
+  },
+  {
+    "selector": "beehero.io",
+    "name": "BeeHero",
+    "reasons": ["f"]
   },
   {
     "selector": "beehero.io",
@@ -8177,6 +8347,11 @@
   {
     "selector": "bewith.io",
     "name": "With AI (bewith.io)",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "bewith.io",
+    "name": "With AI (bewith.io)",
     "reasons": ["f", "i"]
   },
   {
@@ -8452,6 +8627,11 @@
   {
     "selector": "bigid.com",
     "name": "BigID",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "bigid.com",
+    "name": "BigID",
     "reasons": ["f", "i"]
   },
   {
@@ -8463,6 +8643,11 @@
     "selector": "bigpanda.com",
     "name": "BigPanda",
     "reasons": ["h"]
+  },
+  {
+    "selector": "bigpanda.io",
+    "name": "BigPanda",
+    "reasons": ["f"]
   },
   {
     "selector": "bigpanda.io",
@@ -8523,6 +8708,11 @@
     "selector": "billbeez.com",
     "name": "Billbeez",
     "reasons": ["h"]
+  },
+  {
+    "selector": "billguard.com",
+    "name": "BillGuard",
+    "reasons": ["f"]
   },
   {
     "selector": "billguard.com",
@@ -9052,6 +9242,11 @@
   {
     "selector": "biscience.com",
     "name": "BIScience",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "biscience.com",
+    "name": "BIScience",
     "reasons": ["f", "i"]
   },
   {
@@ -9182,6 +9377,11 @@
   {
     "selector": "bizzabo.com",
     "name": "Bizzabo",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "bizzabo.com",
+    "name": "Bizzabo",
     "reasons": ["f", "i"]
   },
   {
@@ -9202,6 +9402,11 @@
   {
     "selector": "blab.co",
     "name": "Book Like A Boss",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "black-label.io",
+    "name": "Black Label",
     "reasons": ["f"]
   },
   {
@@ -9287,7 +9492,7 @@
   {
     "selector": "blazepod.com",
     "name": "BlazePod Inc",
-    "reasons": ["f", "h"]
+    "reasons": ["f"]
   },
   {
     "selector": "bldgmanagement.com",
@@ -9340,6 +9545,11 @@
     "reasons": ["h"]
   },
   {
+    "selector": "blink.gg",
+    "name": "Blink",
+    "reasons": ["h"]
+  },
+  {
     "selector": "blinkeye.com",
     "name": "Blink Technologies",
     "reasons": ["i"]
@@ -9347,12 +9557,12 @@
   {
     "selector": "blinkops.com",
     "name": "Blink Ops",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "blinkops.com",
     "name": "Blink Ops",
-    "reasons": ["f"]
+    "reasons": ["f", "h"]
   },
   {
     "selector": "blinq.io",
@@ -9402,6 +9612,11 @@
   {
     "selector": "blocka.com",
     "name": "block a",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "blocka.com",
+    "name": "block a",
     "reasons": ["f", "i"]
   },
   {
@@ -9431,7 +9646,12 @@
   },
   {
     "selector": "blockchainisrael.org",
-    "name": "Blockchain Israel",
+    "name": "Blockchain Academy",
+    "reasons": ["h"]
+  },
+  {
+    "selector": "blockchainisrael.org",
+    "name": "Blockchain Academy",
     "reasons": ["h"]
   },
   {
@@ -9642,6 +9862,11 @@
   {
     "selector": "bluethrone.io",
     "name": "BlueThrone",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "bluethrone.io",
+    "name": "BlueThrone",
     "reasons": ["f", "i"]
   },
   {
@@ -9653,6 +9878,11 @@
     "selector": "bluetree-tech.com",
     "name": "Blue Tree Technologies Ltd.",
     "reasons": ["h"]
+  },
+  {
+    "selector": "bluevine.com",
+    "name": "Bluevine",
+    "reasons": ["f"]
   },
   {
     "selector": "bluevine.com",
@@ -10313,6 +10543,11 @@
     "selector": "breeze-animation.com",
     "name": "Breeze Animation",
     "reasons": ["h"]
+  },
+  {
+    "selector": "breezeai.com",
+    "name": "Breeze",
+    "reasons": ["f"]
   },
   {
     "selector": "breezeai.com",
@@ -11107,6 +11342,11 @@
   {
     "selector": "byondxr.com",
     "name": "ByondXR",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "byondxr.com",
+    "name": "ByondXR",
     "reasons": ["f", "i"]
   },
   {
@@ -11152,6 +11392,11 @@
   {
     "selector": "c2communities.com",
     "name": "C2 Communities",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "c2i-genomics.com",
+    "name": "C2i Genomics",
     "reasons": ["f"]
   },
   {
@@ -11293,6 +11538,11 @@
     "selector": "calma.telem-hit.net",
     "name": "Calma",
     "reasons": ["h"]
+  },
+  {
+    "selector": "calmigo.com",
+    "name": "CalmiGo",
+    "reasons": ["f"]
   },
   {
     "selector": "calmigo.com",
@@ -11682,6 +11932,11 @@
   {
     "selector": "capstack.ai",
     "name": "CapStack Technologies",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "capstack.ai",
+    "name": "CapStack Technologies",
     "reasons": ["f", "i"]
   },
   {
@@ -11782,6 +12037,11 @@
   {
     "selector": "carbuzz.com",
     "name": "CarBuzz",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "carbyne.com",
+    "name": "Carbyne",
     "reasons": ["f"]
   },
   {
@@ -11908,6 +12168,11 @@
     "selector": "careader.com",
     "name": "CaReader",
     "reasons": ["h"]
+  },
+  {
+    "selector": "carebyclay.com",
+    "name": "Clay",
+    "reasons": ["f"]
   },
   {
     "selector": "carebyclay.com",
@@ -12840,14 +13105,14 @@
     "reasons": ["h"]
   },
   {
-    "selector": "chargeflow.io",
-    "name": "Chargeflow",
-    "reasons": ["h"]
-  },
-  {
     "selector": "chargel.me",
     "name": "Chargel",
     "reasons": ["i"]
+  },
+  {
+    "selector": "charmsecurity.com",
+    "name": "Charm Security",
+    "reasons": ["f"]
   },
   {
     "selector": "charmsecurity.com",
@@ -12952,12 +13217,12 @@
   {
     "selector": "checkpoint.com",
     "name": "Check Point Software Technologies",
-    "reasons": ["f", "h"]
+    "reasons": ["f"]
   },
   {
     "selector": "checkpoint.com",
-    "name": "CheckPoint",
-    "reasons": ["h"]
+    "name": "Check Point Software Technologies",
+    "reasons": ["f", "h"]
   },
   {
     "selector": "chefglobal.com",
@@ -13028,6 +13293,11 @@
     "selector": "chief-group.com",
     "name": "Chief Applications",
     "reasons": ["h"]
+  },
+  {
+    "selector": "chiefyteam.com",
+    "name": "Chiefy",
+    "reasons": ["f"]
   },
   {
     "selector": "chiefyteam.com",
@@ -13188,6 +13458,11 @@
     "selector": "cimtgroup.com",
     "name": "CIMT Group",
     "reasons": ["h"]
+  },
+  {
+    "selector": "cinchwallet.com",
+    "name": "Cinch Technologies",
+    "reasons": ["f"]
   },
   {
     "selector": "cinchwallet.com",
@@ -13407,17 +13682,12 @@
   {
     "selector": "claroty.com",
     "name": "Claroty",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "claroty.com",
     "name": "Claroty",
     "reasons": ["f", "i"]
-  },
-  {
-    "selector": "claroty.com",
-    "name": "Medigate by Claroty",
-    "reasons": ["f"]
   },
   {
     "selector": "clarus.io",
@@ -13512,6 +13782,11 @@
   {
     "selector": "clearitty.com",
     "name": "Clearitty",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "clearly.earth",
+    "name": "Clearly.Earth",
     "reasons": ["f"]
   },
   {
@@ -13862,7 +14137,7 @@
   {
     "selector": "cloudinary.com",
     "name": "Cloudinary",
-    "reasons": ["h", "f"]
+    "reasons": ["f"]
   },
   {
     "selector": "cloudingnow.com",
@@ -13902,6 +14177,11 @@
   {
     "selector": "cloudquery.io",
     "name": "Cloudquery",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "cloudshare.com",
+    "name": "CloudShare",
     "reasons": ["f"]
   },
   {
@@ -14103,6 +14383,11 @@
     "selector": "codecaged.com",
     "name": "CodeCaged",
     "reasons": ["h"]
+  },
+  {
+    "selector": "codefresh.io",
+    "name": "Codefresh",
+    "reasons": ["f"]
   },
   {
     "selector": "codefresh.io",
@@ -14333,6 +14618,11 @@
     "selector": "cointelligence.com",
     "name": "Cointelligence",
     "reasons": ["h"]
+  },
+  {
+    "selector": "colabo.com",
+    "name": "Colabo",
+    "reasons": ["f"]
   },
   {
     "selector": "colabo.com",
@@ -14847,6 +15137,11 @@
   {
     "selector": "concertio.com",
     "name": "Concertio",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "concertio.com",
+    "name": "Concertio",
     "reasons": ["f", "i"]
   },
   {
@@ -14942,6 +15237,11 @@
   {
     "selector": "conifers.ai",
     "name": "Conifers.Ai",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "conifers.ai",
+    "name": "Conifers.Ai",
     "reasons": ["f", "i"]
   },
   {
@@ -14957,11 +15257,6 @@
   {
     "selector": "connect.cn.com",
     "name": "Connect",
-    "reasons": ["h"]
-  },
-  {
-    "selector": "connecteam.com",
-    "name": "Connecteam",
     "reasons": ["h"]
   },
   {
@@ -15147,6 +15442,11 @@
   {
     "selector": "continueai.com",
     "name": "Continue AI",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "continueai.com",
+    "name": "Continue AI",
     "reasons": ["f", "i"]
   },
   {
@@ -15203,6 +15503,11 @@
     "selector": "controp.com",
     "name": "Controp Ltd",
     "reasons": ["h"]
+  },
+  {
+    "selector": "converge-bio.com",
+    "name": "Converge Bio",
+    "reasons": ["f"]
   },
   {
     "selector": "converge-bio.com",
@@ -15342,6 +15647,11 @@
   {
     "selector": "copilot.cx",
     "name": "Copilot.cx",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "copilot.cx",
+    "name": "Copilot.cx",
     "reasons": ["f", "i"]
   },
   {
@@ -15368,6 +15678,11 @@
     "selector": "copula.ai",
     "name": "Copula AI",
     "reasons": ["h"]
+  },
+  {
+    "selector": "copyleaks.com",
+    "name": "Copyleaks",
+    "reasons": ["f"]
   },
   {
     "selector": "copyleaks.com",
@@ -15465,6 +15780,11 @@
     "reasons": ["h"]
   },
   {
+    "selector": "coreflow.com",
+    "name": "CoreDF",
+    "reasons": ["h"]
+  },
+  {
     "selector": "corepeek.com",
     "name": "CorePeek Technologies",
     "reasons": ["h"]
@@ -15517,6 +15837,11 @@
   {
     "selector": "coro.net",
     "name": "Coro",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "coro.net",
+    "name": "Coro",
     "reasons": ["f", "i"]
   },
   {
@@ -15542,11 +15867,6 @@
   {
     "selector": "corp.easy2hike.com",
     "name": "Easy2Hike",
-    "reasons": ["h"]
-  },
-  {
-    "selector": "corp.kaltura.com",
-    "name": "Kaltura",
     "reasons": ["h"]
   },
   {
@@ -15720,6 +16040,11 @@
     "reasons": ["i"]
   },
   {
+    "selector": "coyotta.com",
+    "name": "Coyotta",
+    "reasons": ["h"]
+  },
+  {
     "selector": "coze.tech",
     "name": "Coze",
     "reasons": ["h"]
@@ -15832,6 +16157,11 @@
   {
     "selector": "credcompare.com",
     "name": "CredCompare",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "credcompare.com",
+    "name": "CredCompare",
     "reasons": ["f", "i"]
   },
   {
@@ -15846,7 +16176,12 @@
   },
   {
     "selector": "credible.eu.com",
-    "name": "Credible.eu.com",
+    "name": "Credible",
+    "reasons": ["h"]
+  },
+  {
+    "selector": "credible.eu.com",
+    "name": "Credible",
     "reasons": ["h"]
   },
   {
@@ -15878,6 +16213,11 @@
     "selector": "credorax.com",
     "name": "Credorax",
     "reasons": ["h"]
+  },
+  {
+    "selector": "creednz.com",
+    "name": "Creednz",
+    "reasons": ["f"]
   },
   {
     "selector": "creednz.com",
@@ -15917,6 +16257,11 @@
   {
     "selector": "crispify.io",
     "name": "Crispify",
+    "reasons": ["h"]
+  },
+  {
+    "selector": "critifence.com",
+    "name": "CRITIFENCE",
     "reasons": ["h"]
   },
   {
@@ -16315,6 +16660,11 @@
     "reasons": ["h"]
   },
   {
+    "selector": "curespec.info",
+    "name": "Curespec",
+    "reasons": ["h"]
+  },
+  {
     "selector": "curesponse.com",
     "name": "CuResponse",
     "reasons": ["h"]
@@ -16487,12 +16837,12 @@
   {
     "selector": "cyberark.com",
     "name": "CyberArk",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "cyberark.com",
     "name": "CyberArk",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i", "h"]
   },
   {
     "selector": "cyberbee.space",
@@ -16532,12 +16882,12 @@
   {
     "selector": "cybereason.com",
     "name": "Cybereason",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "cybereason.com",
     "name": "Cybereason",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i", "h"]
   },
   {
     "selector": "cyberess.com",
@@ -16612,6 +16962,11 @@
   {
     "selector": "cybermdx.com",
     "name": "CyberMDX",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "cybermdx.com",
+    "name": "CyberMDX",
     "reasons": ["f", "i"]
   },
   {
@@ -16667,6 +17022,11 @@
   {
     "selector": "cyberwrite.com",
     "name": "Cyberwrite",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "cyberx-labs.com",
+    "name": "CyberX",
     "reasons": ["f"]
   },
   {
@@ -16862,6 +17222,11 @@
   {
     "selector": "cynet.com",
     "name": "Cynet",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "cynet.com",
+    "name": "Cynet",
     "reasons": ["f", "h"]
   },
   {
@@ -16887,6 +17252,11 @@
   {
     "selector": "cyoptics.com",
     "name": "CyOptics",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "cyota.com",
+    "name": "Cyota",
     "reasons": ["f"]
   },
   {
@@ -17052,11 +17422,6 @@
   {
     "selector": "dagon-aquaculture.com",
     "name": "Dagon Aquaculture",
-    "reasons": ["h"]
-  },
-  {
-    "selector": "dagshub.com",
-    "name": "DagsHub",
     "reasons": ["h"]
   },
   {
@@ -17392,6 +17757,11 @@
   {
     "selector": "dataheroes.cloud",
     "name": "DataHeroes",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "dataheroes.cloud",
+    "name": "DataHeroes",
     "reasons": ["f", "i"]
   },
   {
@@ -17472,12 +17842,22 @@
   {
     "selector": "datorios.com",
     "name": "Datorios",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "datorios.com",
+    "name": "Datorios",
     "reasons": ["f", "i"]
   },
   {
     "selector": "datos-health.com",
     "name": "Datos Health",
     "reasons": ["h"]
+  },
+  {
+    "selector": "datricks.com",
+    "name": "Datricks",
+    "reasons": ["f"]
   },
   {
     "selector": "datricks.com",
@@ -17588,6 +17968,11 @@
     "selector": "dayzz.com",
     "name": "Dayzz",
     "reasons": ["h"]
+  },
+  {
+    "selector": "dazz.io",
+    "name": "Dazz",
+    "reasons": ["f"]
   },
   {
     "selector": "dazz.io",
@@ -17741,11 +18126,6 @@
   },
   {
     "selector": "dealhub.io",
-    "name": "Dealhub",
-    "reasons": ["h"]
-  },
-  {
-    "selector": "dealhub.io",
     "name": "DealHub.io",
     "reasons": ["f"]
   },
@@ -17783,6 +18163,11 @@
     "selector": "decama.com",
     "name": "Decama",
     "reasons": ["h"]
+  },
+  {
+    "selector": "decart.ai",
+    "name": "Decart",
+    "reasons": ["f"]
   },
   {
     "selector": "decart.ai",
@@ -17842,12 +18227,12 @@
   {
     "selector": "deel.com",
     "name": "Deel",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "deel.com",
     "name": "Deel",
-    "reasons": ["f"]
+    "reasons": ["f", "h"]
   },
   {
     "selector": "deemedya.com",
@@ -18022,6 +18407,11 @@
   {
     "selector": "definity.ai",
     "name": "definity",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "definity.ai",
+    "name": "definity",
     "reasons": ["f", "i"]
   },
   {
@@ -18157,12 +18547,12 @@
   {
     "selector": "demoleap.com",
     "name": "Demoleap",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "demoleap.com",
     "name": "Demoleap",
-    "reasons": ["f"]
+    "reasons": ["f", "h"]
   },
   {
     "selector": "demostack.com",
@@ -18287,12 +18677,12 @@
   {
     "selector": "descope.com",
     "name": "Descope",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "descope.com",
     "name": "Descope",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i", "h"]
   },
   {
     "selector": "descuentocity.com",
@@ -18652,6 +19042,11 @@
   {
     "selector": "digitalowl.com",
     "name": "DigitalOwl",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "digitalowl.com",
+    "name": "DigitalOwl",
     "reasons": ["f", "i"]
   },
   {
@@ -18677,6 +19072,11 @@
   {
     "selector": "diglobal.tech",
     "name": "Dynamic Infrastructure",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "digma.ai",
+    "name": "Digma",
     "reasons": ["f"]
   },
   {
@@ -19022,6 +19422,11 @@
   {
     "selector": "docontrol.io",
     "name": "DoControl",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "docontrol.io",
+    "name": "DoControl",
     "reasons": ["f", "i"]
   },
   {
@@ -19112,6 +19517,11 @@
   {
     "selector": "dondesearch.com",
     "name": "Donde Search",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "dondesearch.com",
+    "name": "Donde Search",
     "reasons": ["f", "i"]
   },
   {
@@ -19143,6 +19553,11 @@
     "selector": "doogma.com",
     "name": "Doogma",
     "reasons": ["h"]
+  },
+  {
+    "selector": "doorloop.com",
+    "name": "DoorLoop",
+    "reasons": ["f"]
   },
   {
     "selector": "doorloop.com",
@@ -19540,6 +19955,11 @@
     "reasons": ["h"]
   },
   {
+    "selector": "drivetlv.com",
+    "name": "DRIVE Mobility Center",
+    "reasons": ["h"]
+  },
+  {
     "selector": "driveu.auto",
     "name": "DriveU.auto",
     "reasons": ["h"]
@@ -19601,7 +20021,7 @@
   },
   {
     "selector": "droxi.ai",
-    "name": "Droxi.ai",
+    "name": "Droxi",
     "reasons": ["h"]
   },
   {
@@ -19687,12 +20107,22 @@
   {
     "selector": "dualitytech.com",
     "name": "Duality Technologies",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "dualitytech.com",
+    "name": "Duality Technologies",
     "reasons": ["f", "i"]
   },
   {
     "selector": "dubidubstudios.com",
     "name": "DubiDub Studios",
     "reasons": ["h"]
+  },
+  {
+    "selector": "duda.co",
+    "name": "Duda",
+    "reasons": ["f"]
   },
   {
     "selector": "duda.co",
@@ -19805,6 +20235,11 @@
     "reasons": ["h"]
   },
   {
+    "selector": "duve.com",
+    "name": "Duve",
+    "reasons": ["h"]
+  },
+  {
     "selector": "dux-ai.com",
     "name": "DUX-AI",
     "reasons": ["h"]
@@ -19853,6 +20288,11 @@
     "selector": "dynamic-shipping.com",
     "name": "Dynamic Shipping Services",
     "reasons": ["h"]
+  },
+  {
+    "selector": "dynamicyield.com",
+    "name": "Dynamic Yield",
+    "reasons": ["f"]
   },
   {
     "selector": "dynamicyield.com",
@@ -19960,6 +20400,11 @@
     "reasons": ["i"]
   },
   {
+    "selector": "eapc.com",
+    "name": "Eilat Ashkelon Pipeline Company",
+    "reasons": ["h"]
+  },
+  {
     "selector": "earlysense.com",
     "name": "EarlySense",
     "reasons": ["h"]
@@ -20057,6 +20502,11 @@
   {
     "selector": "easysocialshop.com",
     "name": "Easy Social Shop",
+    "reasons": ["h"]
+  },
+  {
+    "selector": "easyteam.com",
+    "name": "EasyTeam",
     "reasons": ["h"]
   },
   {
@@ -20307,6 +20757,11 @@
   {
     "selector": "edge226.com",
     "name": "Edge226",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "edgecase.ai",
+    "name": "Edgecase.ai",
     "reasons": ["f"]
   },
   {
@@ -20597,6 +21052,11 @@
   {
     "selector": "eko.com",
     "name": "eko",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "eko.com",
+    "name": "eko",
     "reasons": ["f", "i"]
   },
   {
@@ -20810,11 +21270,6 @@
     "reasons": ["h"]
   },
   {
-    "selector": "elementor.com",
-    "name": "Elementor",
-    "reasons": ["h"]
-  },
-  {
     "selector": "elementsworld.io",
     "name": "Elements",
     "reasons": ["f"]
@@ -20827,12 +21282,12 @@
   {
     "selector": "eleos.health",
     "name": "Eleos Health",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "eleos.health",
     "name": "Eleos Health",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i", "h"]
   },
   {
     "selector": "elephant.healthcare",
@@ -20858,6 +21313,11 @@
     "selector": "elest.io",
     "name": "Elestio",
     "reasons": ["f"]
+  },
+  {
+    "selector": "elevation.ac",
+    "name": "Elevation Academy",
+    "reasons": ["h"]
   },
   {
     "selector": "elevation.ac",
@@ -21180,6 +21640,11 @@
     "reasons": ["i"]
   },
   {
+    "selector": "emberdigital.tech",
+    "name": "Ember",
+    "reasons": ["i"]
+  },
+  {
     "selector": "embieclinic.com",
     "name": "Embie",
     "reasons": ["h"]
@@ -21203,6 +21668,11 @@
     "selector": "emda.com",
     "name": "Emda Executive Search & Consulting",
     "reasons": ["h"]
+  },
+  {
+    "selector": "emedgene.com",
+    "name": "Emedgene",
+    "reasons": ["f"]
   },
   {
     "selector": "emedgene.com",
@@ -21292,6 +21762,11 @@
   {
     "selector": "empact.online",
     "name": "Empact",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "empathy.com",
+    "name": "Empathy",
     "reasons": ["f"]
   },
   {
@@ -21516,7 +21991,7 @@
   },
   {
     "selector": "endostream.com",
-    "name": "EndoStream Medical",
+    "name": "EndoStream",
     "reasons": ["h"]
   },
   {
@@ -21807,6 +22282,11 @@
   {
     "selector": "entitle.io",
     "name": "Entitle",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "entitle.io",
+    "name": "Entitle",
     "reasons": ["f", "i"]
   },
   {
@@ -21843,6 +22323,11 @@
     "selector": "entro.security",
     "name": "Entro Security - Non-human Identities",
     "reasons": ["i"]
+  },
+  {
+    "selector": "env0.com",
+    "name": "env0",
+    "reasons": ["f"]
   },
   {
     "selector": "env0.com",
@@ -21913,6 +22398,11 @@
     "selector": "eoisrael.com",
     "name": "EO Israel",
     "reasons": ["h"]
+  },
+  {
+    "selector": "eon.io",
+    "name": "Eon",
+    "reasons": ["f"]
   },
   {
     "selector": "eon.io",
@@ -22462,6 +22952,11 @@
   {
     "selector": "euno.ai",
     "name": "Euno",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "euno.ai",
+    "name": "Euno",
     "reasons": ["f", "i"]
   },
   {
@@ -22603,6 +23098,11 @@
     "selector": "everlane.com",
     "name": "Everlane",
     "reasons": ["i"]
+  },
+  {
+    "selector": "evermile.io",
+    "name": "Evermile",
+    "reasons": ["f"]
   },
   {
     "selector": "evermile.io",
@@ -22827,6 +23327,11 @@
   {
     "selector": "exceed.ai",
     "name": "Exceed.ai",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "exceed.ai",
+    "name": "Exceed.ai",
     "reasons": ["f", "i"]
   },
   {
@@ -22838,6 +23343,11 @@
     "selector": "excel-premiumutilities.com",
     "name": "metrics institute",
     "reasons": ["h"]
+  },
+  {
+    "selector": "excelero.com",
+    "name": "Excelero Storage",
+    "reasons": ["f"]
   },
   {
     "selector": "excelero.com",
@@ -22868,6 +23378,11 @@
     "selector": "executeapps.com",
     "name": "Execute",
     "reasons": ["h"]
+  },
+  {
+    "selector": "exelate.com",
+    "name": "eXelate",
+    "reasons": ["f"]
   },
   {
     "selector": "exelate.com",
@@ -23732,7 +24247,17 @@
   {
     "selector": "feedvisor.com",
     "name": "Feedvisor",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "feedvisor.com",
+    "name": "Feedvisor",
     "reasons": ["f", "i"]
+  },
+  {
+    "selector": "feel.tech",
+    "name": "Feel",
+    "reasons": ["f"]
   },
   {
     "selector": "feel.tech",
@@ -24097,7 +24622,12 @@
   {
     "selector": "finaloop.com",
     "name": "Finaloop",
-    "reasons": ["h", "f", "i"]
+    "reasons": ["f"]
+  },
+  {
+    "selector": "finaloop.com",
+    "name": "Finaloop",
+    "reasons": ["f", "i"]
   },
   {
     "selector": "financeaffiliateprograms.com",
@@ -24176,7 +24706,7 @@
   },
   {
     "selector": "finder.startupnationcentral.org",
-    "name": "StyleMe",
+    "name": "Green2Pass",
     "reasons": ["h"]
   },
   {
@@ -24280,17 +24810,17 @@
     "reasons": ["h"]
   },
   {
-    "selector": "finout.io",
-    "name": "Finout",
-    "reasons": ["h"]
-  },
-  {
     "selector": "finphil.com",
     "name": "Finphil",
     "reasons": ["h"]
   },
   {
     "selector": "finqai.com",
+    "name": "FINQ",
+    "reasons": ["h"]
+  },
+  {
+    "selector": "finqfinance.com",
     "name": "FINQ",
     "reasons": ["h"]
   },
@@ -24321,7 +24851,7 @@
   },
   {
     "selector": "fintastic.ai",
-    "name": "Fintastic",
+    "name": "fintastic",
     "reasons": ["h"]
   },
   {
@@ -24368,6 +24898,11 @@
     "selector": "fireberry.com",
     "name": "Fireberry",
     "reasons": ["h"]
+  },
+  {
+    "selector": "fireblocks.com",
+    "name": "Fireblocks",
+    "reasons": ["f"]
   },
   {
     "selector": "fireblocks.com",
@@ -24842,6 +25377,11 @@
   {
     "selector": "flolive.net",
     "name": "floLIVE",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "flolive.net",
+    "name": "floLIVE",
     "reasons": ["f", "i"]
   },
   {
@@ -24888,6 +25428,11 @@
     "selector": "flowsome.com",
     "name": "FLOW",
     "reasons": ["h"]
+  },
+  {
+    "selector": "flowspecialty.com",
+    "name": "Flow Specialty (Previously Capitola)",
+    "reasons": ["f"]
   },
   {
     "selector": "flowspecialty.com",
@@ -24961,7 +25506,7 @@
   },
   {
     "selector": "flyt.io",
-    "name": "Flyt",
+    "name": "Flypay",
     "reasons": ["i"]
   },
   {
@@ -25205,6 +25750,11 @@
     "reasons": ["h"]
   },
   {
+    "selector": "foreseehome.com",
+    "name": "ForeseeHome",
+    "reasons": ["h"]
+  },
+  {
     "selector": "foresightauto.com",
     "name": "Foresight Autonomous Holdings",
     "reasons": ["h"]
@@ -25322,12 +25872,12 @@
   {
     "selector": "forter.com",
     "name": "Forter",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "forter.com",
     "name": "Forter",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i", "h"]
   },
   {
     "selector": "forthscale.com",
@@ -25682,12 +26232,7 @@
   {
     "selector": "frogteam-security.com",
     "name": "Frogteam Security",
-    "reasons": ["f", "h"]
-  },
-  {
-    "selector": "frontegg.com",
-    "name": "Frontegg",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "frontegg.com",
@@ -25832,22 +26377,22 @@
   {
     "selector": "fundbox.com",
     "name": "Fundbox",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "fundbox.com",
     "name": "Fundbox",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i", "h"]
   },
   {
     "selector": "fundguard.com",
     "name": "FundGuard",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "fundguard.com",
     "name": "FundGuard",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i", "h"]
   },
   {
     "selector": "funds-back.com",
@@ -25922,12 +26467,22 @@
   {
     "selector": "fuse.io",
     "name": "Fuse Network",
-    "reasons": ["f", "h"]
+    "reasons": ["f"]
+  },
+  {
+    "selector": "fuseautotech.com",
+    "name": "FUSE Autotech",
+    "reasons": ["f"]
   },
   {
     "selector": "fuseautotech.com",
     "name": "FUSE Autotech",
     "reasons": ["f", "i"]
+  },
+  {
+    "selector": "fusenet.io",
+    "name": "Fuse.io",
+    "reasons": ["h"]
   },
   {
     "selector": "fusion-laser.com",
@@ -26657,6 +27212,11 @@
   {
     "selector": "gem.security",
     "name": "Gem",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "gem.security",
+    "name": "Gem",
     "reasons": ["f", "i"]
   },
   {
@@ -26683,6 +27243,11 @@
     "selector": "gemmacert.com",
     "name": "GemmaCert",
     "reasons": ["h"]
+  },
+  {
+    "selector": "gemmarobotics.com",
+    "name": "Gemma",
+    "reasons": ["f"]
   },
   {
     "selector": "gemmarobotics.com",
@@ -26822,6 +27387,11 @@
   {
     "selector": "genomecompiler.com",
     "name": "Genome Compiler",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "genomecompiler.com",
+    "name": "Genome Compiler",
     "reasons": ["f", "i"]
   },
   {
@@ -26902,7 +27472,17 @@
   {
     "selector": "geomage.com",
     "name": "Geomage",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "geomage.com",
+    "name": "Geomage",
     "reasons": ["f", "h"]
+  },
+  {
+    "selector": "geoquant.io",
+    "name": "GeoQuant",
+    "reasons": ["f"]
   },
   {
     "selector": "geoquant.io",
@@ -26987,6 +27567,11 @@
   {
     "selector": "get-grin.com",
     "name": "Grin",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "get-grin.com",
+    "name": "Grin",
     "reasons": ["f", "i"]
   },
   {
@@ -27043,6 +27628,11 @@
     "selector": "getanimate.com",
     "name": "Highlander Productions",
     "reasons": ["h"]
+  },
+  {
+    "selector": "getapril.com",
+    "name": "april",
+    "reasons": ["f"]
   },
   {
     "selector": "getapril.com",
@@ -27132,7 +27722,7 @@
   {
     "selector": "getfabric.com",
     "name": "Fabric",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "getfabric.com",
@@ -27197,6 +27787,11 @@
   {
     "selector": "getjones.com",
     "name": "Jones",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "getjones.com",
+    "name": "Jones",
     "reasons": ["f", "i"]
   },
   {
@@ -27228,6 +27823,11 @@
     "selector": "getleadsgeneration.com",
     "name": "GLG (Get Leads Generation)",
     "reasons": ["h"]
+  },
+  {
+    "selector": "getleaf.co",
+    "name": "LEAF",
+    "reasons": ["f"]
   },
   {
     "selector": "getleaf.co",
@@ -27277,6 +27877,11 @@
   {
     "selector": "getnexar.com",
     "name": "Nexar",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "getnexar.com",
+    "name": "Nexar",
     "reasons": ["f", "i"]
   },
   {
@@ -27308,6 +27913,11 @@
     "selector": "getpose.com",
     "name": "Pose",
     "reasons": ["h"]
+  },
+  {
+    "selector": "getprice.com.au",
+    "name": "GetPrice",
+    "reasons": ["f"]
   },
   {
     "selector": "getprice.com.au",
@@ -27353,6 +27963,11 @@
     "selector": "getsat.com",
     "name": "Get SAT",
     "reasons": ["h"]
+  },
+  {
+    "selector": "getsequence.io",
+    "name": "Sequence",
+    "reasons": ["f"]
   },
   {
     "selector": "getsequence.io",
@@ -27407,6 +28022,11 @@
   {
     "selector": "gett.com",
     "name": "Gett",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "gett.com",
+    "name": "Gett",
     "reasons": ["f", "i"]
   },
   {
@@ -27443,6 +28063,11 @@
     "selector": "getwaka.com",
     "name": "Waka",
     "reasons": ["h"]
+  },
+  {
+    "selector": "getwizer.com",
+    "name": "Getwizer",
+    "reasons": ["f"]
   },
   {
     "selector": "getwizer.com",
@@ -27518,6 +28143,11 @@
     "selector": "gh.agency",
     "name": "GH.Agency",
     "reasons": ["h"]
+  },
+  {
+    "selector": "gh.fido.money",
+    "name": "Fido",
+    "reasons": ["f"]
   },
   {
     "selector": "gh.fido.money",
@@ -27842,6 +28472,11 @@
   {
     "selector": "gizmox.com",
     "name": "Gizmox",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "gizmox.com",
+    "name": "Gizmox",
     "reasons": ["f", "i"]
   },
   {
@@ -27898,6 +28533,11 @@
     "selector": "glassesoff.com",
     "name": "InnoVision Labs",
     "reasons": ["h"]
+  },
+  {
+    "selector": "glassesusa.com",
+    "name": "GlassesUSA",
+    "reasons": ["f"]
   },
   {
     "selector": "glassesusa.com",
@@ -27977,6 +28617,11 @@
   {
     "selector": "gloat.com",
     "name": "Gloat",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "gloat.com",
+    "name": "Gloat",
     "reasons": ["f", "i"]
   },
   {
@@ -27992,12 +28637,12 @@
   {
     "selector": "global-e.com",
     "name": "Global-e",
-    "reasons": ["h"]
+    "reasons": ["i"]
   },
   {
     "selector": "global-e.com",
     "name": "Global-e",
-    "reasons": ["i"]
+    "reasons": ["i", "h"]
   },
   {
     "selector": "global-electric.com",
@@ -28097,6 +28742,11 @@
   {
     "selector": "globekeeper.com",
     "name": "GlobeKeeper",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "globekeeper.com",
+    "name": "GlobeKeeper",
     "reasons": ["f", "i"]
   },
   {
@@ -28150,11 +28800,6 @@
     "reasons": ["h"]
   },
   {
-    "selector": "gloww.com",
-    "name": "Gloww",
-    "reasons": ["h"]
-  },
-  {
     "selector": "glpigs.com",
     "name": "GLPigs",
     "reasons": ["h"]
@@ -28183,6 +28828,11 @@
     "selector": "gluecad-bio.com",
     "name": "GlueCAD",
     "reasons": ["h"]
+  },
+  {
+    "selector": "glueloyalty.com",
+    "name": "Glue Loyalty",
+    "reasons": ["f"]
   },
   {
     "selector": "glueloyalty.com",
@@ -28322,6 +28972,11 @@
   {
     "selector": "gocheetah.com",
     "name": "Cheetah",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "gocheetah.com",
+    "name": "Cheetah",
     "reasons": ["f", "i"]
   },
   {
@@ -28343,6 +28998,11 @@
     "selector": "goenvy.io",
     "name": "Marketing Envy",
     "reasons": ["h"]
+  },
+  {
+    "selector": "goessor.com",
+    "name": "Essor",
+    "reasons": ["f"]
   },
   {
     "selector": "goessor.com",
@@ -28447,12 +29107,12 @@
   {
     "selector": "gong.io",
     "name": "Gong",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "gong.io",
     "name": "Gong",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i", "h"]
   },
   {
     "selector": "gonggaming.com",
@@ -29012,7 +29672,12 @@
   {
     "selector": "greenq.gq",
     "name": "GreenQ",
-    "reasons": ["f", "h"]
+    "reasons": ["f"]
+  },
+  {
+    "selector": "greenroad.com",
+    "name": "GreenRoad Technologies",
+    "reasons": ["f"]
   },
   {
     "selector": "greenroad.com",
@@ -29232,12 +29897,12 @@
   {
     "selector": "growthspace.com",
     "name": "GrowthSpace",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "growthspace.com",
     "name": "GrowthSpace",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i", "h"]
   },
   {
     "selector": "grth.io",
@@ -29252,6 +29917,11 @@
   {
     "selector": "gsr-it.com",
     "name": "G.S.R",
+    "reasons": ["h"]
+  },
+  {
+    "selector": "gstat-bi.com",
+    "name": "G-Stat",
     "reasons": ["h"]
   },
   {
@@ -29342,6 +30012,11 @@
   {
     "selector": "guidde.space",
     "name": "Guidde",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "guidde.space",
+    "name": "Guidde",
     "reasons": ["f", "i"]
   },
   {
@@ -29413,6 +30088,11 @@
     "selector": "gurutraff.com",
     "name": "GURUTRAFF",
     "reasons": ["h"]
+  },
+  {
+    "selector": "gusto.com",
+    "name": "Gusto",
+    "reasons": ["f"]
   },
   {
     "selector": "gusto.com",
@@ -30052,6 +30732,11 @@
   {
     "selector": "healthee.com",
     "name": "Healthee",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "healthee.com",
+    "name": "Healthee",
     "reasons": ["f", "i"]
   },
   {
@@ -30062,11 +30747,6 @@
   {
     "selector": "healthierglobe.com",
     "name": "Healthier Globe",
-    "reasons": ["h"]
-  },
-  {
-    "selector": "healthy.io",
-    "name": "Healthy.io",
     "reasons": ["h"]
   },
   {
@@ -30212,6 +30892,11 @@
   {
     "selector": "hellocity.com",
     "name": "HelloCity",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "hellocity.com",
+    "name": "HelloCity",
     "reasons": ["f", "i"]
   },
   {
@@ -30232,6 +30917,11 @@
   {
     "selector": "helloheart.com",
     "name": "Hello Heart",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "helloheart.com",
+    "name": "Hello Heart",
     "reasons": ["f", "i"]
   },
   {
@@ -30247,7 +30937,12 @@
   {
     "selector": "hellorep.ai",
     "name": "Rep AI",
-    "reasons": ["f", "h", "i"]
+    "reasons": ["f"]
+  },
+  {
+    "selector": "hellorep.ai",
+    "name": "Rep AI",
+    "reasons": ["f", "i"]
   },
   {
     "selector": "hellosimply.com",
@@ -30496,8 +31191,8 @@
   },
   {
     "selector": "hibob.com",
-    "name": "HiBob",
-    "reasons": ["f", "i"]
+    "name": "Bob",
+    "reasons": ["h", "f", "i"]
   },
   {
     "selector": "hiclient.com",
@@ -30612,6 +31307,11 @@
   {
     "selector": "hippo.com",
     "name": "Hippo Insurance",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "hippo.com",
+    "name": "Hippo Insurance",
     "reasons": ["f", "i"]
   },
   {
@@ -30656,8 +31356,8 @@
   },
   {
     "selector": "hirupert.co",
-    "name": "Rupert AI",
-    "reasons": ["f"]
+    "name": "Rupert",
+    "reasons": ["h", "f"]
   },
   {
     "selector": "hishco.com",
@@ -30767,6 +31467,11 @@
   {
     "selector": "hola.org",
     "name": "Hola",
+    "reasons": ["h"]
+  },
+  {
+    "selector": "holaspark.com",
+    "name": "Spark",
     "reasons": ["h"]
   },
   {
@@ -30941,8 +31646,13 @@
   },
   {
     "selector": "honeybook.com",
-    "name": "HoneyBook",
-    "reasons": ["f", "i"]
+    "name": "Honeybook",
+    "reasons": ["h", "f", "i"]
+  },
+  {
+    "selector": "honeycombinsurance.com",
+    "name": "Honeycomb",
+    "reasons": ["f"]
   },
   {
     "selector": "honeycombinsurance.com",
@@ -31122,6 +31832,11 @@
   {
     "selector": "houseparty.com",
     "name": "Meerkat",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "housetable.com",
+    "name": "Housetable",
     "reasons": ["f"]
   },
   {
@@ -31312,6 +32027,11 @@
   {
     "selector": "hunterz.io",
     "name": "Hunterz",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "hunterz.io",
+    "name": "Hunterz",
     "reasons": ["f", "i"]
   },
   {
@@ -31492,7 +32212,17 @@
   {
     "selector": "hyprbrands.com",
     "name": "HYPR",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "hyprbrands.com",
+    "name": "HYPR",
     "reasons": ["f", "i"]
+  },
+  {
+    "selector": "hyro.ai",
+    "name": "Hyro",
+    "reasons": ["f"]
   },
   {
     "selector": "hyro.ai",
@@ -31881,7 +32611,7 @@
   },
   {
     "selector": "identiq.com",
-    "name": "Indeitq",
+    "name": "Identiq",
     "reasons": ["h"]
   },
   {
@@ -32392,6 +33122,11 @@
   {
     "selector": "imgn.media",
     "name": "IMGN Media",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "imgn.media",
+    "name": "IMGN Media",
     "reasons": ["f", "i"]
   },
   {
@@ -32462,12 +33197,12 @@
   {
     "selector": "immunai.com",
     "name": "Immunai",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "immunai.com",
     "name": "Immunai",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i", "h"]
   },
   {
     "selector": "immunarray.com",
@@ -32577,17 +33312,12 @@
   {
     "selector": "imperva.com",
     "name": "Imperva",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "imperva.com",
     "name": "Imperva",
-    "reasons": ["f"]
-  },
-  {
-    "selector": "imperva.com",
-    "name": "Imperva Incapsula",
-    "reasons": ["f"]
+    "reasons": ["f", "h"]
   },
   {
     "selector": "impjets.com",
@@ -33257,6 +33987,11 @@
   {
     "selector": "innovid.com",
     "name": "Innovid",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "innovid.com",
+    "name": "Innovid",
     "reasons": ["f", "i"]
   },
   {
@@ -33570,11 +34305,6 @@
     "reasons": ["h"]
   },
   {
-    "selector": "intail.ai",
-    "name": "Intail.ai",
-    "reasons": ["h"]
-  },
-  {
     "selector": "intaltech.com",
     "name": "InTalTech",
     "reasons": ["h"]
@@ -33693,6 +34423,11 @@
     "selector": "intellithings.net",
     "name": "Intellithings",
     "reasons": ["h"]
+  },
+  {
+    "selector": "intello.io",
+    "name": "Intello",
+    "reasons": ["f"]
   },
   {
     "selector": "intello.io",
@@ -33817,6 +34552,11 @@
   {
     "selector": "intezer.com",
     "name": "Intezer",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "intezer.com",
+    "name": "Intezer",
     "reasons": ["f", "i"]
   },
   {
@@ -33868,6 +34608,11 @@
     "selector": "introvein.com",
     "name": "Introvein",
     "reasons": ["h"]
+  },
+  {
+    "selector": "intsights.com",
+    "name": "IntSights",
+    "reasons": ["f"]
   },
   {
     "selector": "intsights.com",
@@ -34267,6 +35012,11 @@
   {
     "selector": "ironvest.com",
     "name": "IronVest",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "ironvest.com",
+    "name": "IronVest",
     "reasons": ["f", "i"]
   },
   {
@@ -34373,6 +35123,11 @@
     "selector": "ishence-grow.com",
     "name": "iShence AgTech",
     "reasons": ["h"]
+  },
+  {
+    "selector": "island.io",
+    "name": "Island",
+    "reasons": ["f"]
   },
   {
     "selector": "island.io",
@@ -34517,6 +35272,11 @@
   {
     "selector": "israelcyclingacademy.com",
     "name": "Israel – Premier Tech",
+    "reasons": ["h"]
+  },
+  {
+    "selector": "israeldefense.com",
+    "name": "Israel Defense",
     "reasons": ["h"]
   },
   {
@@ -34812,6 +35572,11 @@
   {
     "selector": "itiaccelerator.com",
     "name": "The Israeli Insurtech Accelerator",
+    "reasons": ["h"]
+  },
+  {
+    "selector": "itind.com",
+    "name": "iTind",
     "reasons": ["h"]
   },
   {
@@ -35122,12 +35887,12 @@
   {
     "selector": "jeeng.com",
     "name": "Jeeng",
-    "reasons": ["f", "i"]
+    "reasons": ["f"]
   },
   {
     "selector": "jeeng.com",
     "name": "Jeeng",
-    "reasons": ["h"]
+    "reasons": ["f", "h", "i"]
   },
   {
     "selector": "jeffsbrands.com",
@@ -35257,6 +36022,11 @@
   {
     "selector": "jethro.io",
     "name": "Jethro",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "jethro.io",
+    "name": "Jethro",
     "reasons": ["f", "i"]
   },
   {
@@ -35322,12 +36092,12 @@
   {
     "selector": "jfrog.com",
     "name": "JFrog",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "jfrog.com",
     "name": "JFrog",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i", "h"]
   },
   {
     "selector": "jgive.com",
@@ -35351,8 +36121,8 @@
   },
   {
     "selector": "jifiti.com",
-    "name": "Jifiti.com",
-    "reasons": ["f", "i"]
+    "name": "Jifiti",
+    "reasons": ["h", "f", "i"]
   },
   {
     "selector": "jifleet.com",
@@ -35523,6 +36293,11 @@
     "selector": "joinmindful.co",
     "name": "Mindful",
     "reasons": ["h"]
+  },
+  {
+    "selector": "joinreal.com",
+    "name": "Real",
+    "reasons": ["f"]
   },
   {
     "selector": "joinreal.com",
@@ -35877,6 +36652,11 @@
   {
     "selector": "justyo.co",
     "name": "Yo",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "justyo.co",
+    "name": "Yo",
     "reasons": ["f", "i"]
   },
   {
@@ -35978,6 +36758,11 @@
     "selector": "kaholo.io",
     "name": "Kaholo",
     "reasons": ["h"]
+  },
+  {
+    "selector": "kahoona.io",
+    "name": "Kahoona",
+    "reasons": ["f"]
   },
   {
     "selector": "kahoona.io",
@@ -36183,6 +36968,11 @@
     "selector": "kappix.com",
     "name": "Kappix",
     "reasons": ["h"]
+  },
+  {
+    "selector": "karambasecurity.com",
+    "name": "Karamba Security",
+    "reasons": ["f"]
   },
   {
     "selector": "karambasecurity.com",
@@ -36461,13 +37251,18 @@
   },
   {
     "selector": "keeprz.com",
-    "name": "Zipory",
+    "name": "Keeprz",
     "reasons": ["h"]
   },
   {
     "selector": "keepy.ai",
     "name": "Keepy AI",
     "reasons": ["h"]
+  },
+  {
+    "selector": "keepy.me",
+    "name": "Keepy",
+    "reasons": ["f"]
   },
   {
     "selector": "keepy.me",
@@ -36717,7 +37512,7 @@
   {
     "selector": "khealth.com",
     "name": "K Health",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "khealth.com",
@@ -36847,6 +37642,11 @@
   {
     "selector": "kilometer.io",
     "name": "Kilometer.io",
+    "reasons": ["h"]
+  },
+  {
+    "selector": "kima.finance",
+    "name": "KIMA Finance",
     "reasons": ["h"]
   },
   {
@@ -37260,11 +38060,6 @@
     "reasons": ["h"]
   },
   {
-    "selector": "komodor.com",
-    "name": "Komodor",
-    "reasons": ["h"]
-  },
-  {
     "selector": "komodosec.com",
     "name": "Komodo Consulting",
     "reasons": ["h"]
@@ -37492,6 +38287,11 @@
   {
     "selector": "kryonsystems.com",
     "name": "Kryon",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "kryonsystems.com",
+    "name": "Kryon",
     "reasons": ["f", "i"]
   },
   {
@@ -37691,7 +38491,7 @@
   },
   {
     "selector": "labradorhealth.com",
-    "name": "Labrador Health",
+    "name": "Labrador",
     "reasons": ["h"]
   },
   {
@@ -37957,6 +38757,11 @@
   {
     "selector": "latica.ai",
     "name": "Latica (Formerly Lynx.MD)",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "latica.ai",
+    "name": "Latica (Formerly Lynx.MD)",
     "reasons": ["f", "i"]
   },
   {
@@ -38147,6 +38952,11 @@
   {
     "selector": "leadspace.com",
     "name": "Leadspace",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "leadspace.com",
+    "name": "Leadspace",
     "reasons": ["f", "i"]
   },
   {
@@ -38173,6 +38983,11 @@
     "selector": "leakzon.com",
     "name": "LeakZon",
     "reasons": ["h"]
+  },
+  {
+    "selector": "leal.health",
+    "name": "Leal Health",
+    "reasons": ["f"]
   },
   {
     "selector": "leal.health",
@@ -38228,6 +39043,11 @@
     "selector": "lecturemonkey.com",
     "name": "LectureMonkey",
     "reasons": ["h"]
+  },
+  {
+    "selector": "ledge.co",
+    "name": "Ledge",
+    "reasons": ["f"]
   },
   {
     "selector": "ledge.co",
@@ -38347,6 +39167,11 @@
   {
     "selector": "lemon.io",
     "name": "Lemon.io",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "lemonade.com",
+    "name": "Lemonade",
     "reasons": ["f"]
   },
   {
@@ -38511,8 +39336,8 @@
   },
   {
     "selector": "letskipp.com",
-    "name": "Kipp Authorize More",
-    "reasons": ["h"]
+    "name": "Kipp",
+    "reasons": ["f", "h"]
   },
   {
     "selector": "letstok.com",
@@ -39007,6 +39832,11 @@
   {
     "selector": "lin.health",
     "name": "Lin Health",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "lin.health",
+    "name": "Lin Health",
     "reasons": ["f", "i"]
   },
   {
@@ -39023,6 +39853,11 @@
     "selector": "lineagecell.com",
     "name": "Lineage Cell Therapeutics",
     "reasons": ["i"]
+  },
+  {
+    "selector": "linearb.io",
+    "name": "LinearB",
+    "reasons": ["f"]
   },
   {
     "selector": "linearb.io",
@@ -39053,6 +39888,11 @@
     "selector": "lingotip.com",
     "name": "LingoTip",
     "reasons": ["h"]
+  },
+  {
+    "selector": "linguana.com",
+    "name": "Linguana",
+    "reasons": ["f"]
   },
   {
     "selector": "linguana.com",
@@ -39197,6 +40037,11 @@
   {
     "selector": "liquiditygroup.com",
     "name": "LIQUiDITY Group",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "liquiditygroup.com",
+    "name": "LIQUiDITY Group",
     "reasons": ["f", "i"]
   },
   {
@@ -39232,6 +40077,11 @@
   {
     "selector": "listen2myradio.com",
     "name": "listen2myradio.com",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "listfunding.com",
+    "name": "LiST Funding",
     "reasons": ["f"]
   },
   {
@@ -39427,6 +40277,11 @@
   {
     "selector": "locusview.com",
     "name": "Locusview",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "locusview.com",
+    "name": "Locusview",
     "reasons": ["f", "i"]
   },
   {
@@ -39557,11 +40412,6 @@
   {
     "selector": "logz.io",
     "name": "Logz.io",
-    "reasons": ["h"]
-  },
-  {
-    "selector": "logz.io",
-    "name": "Logz.io",
     "reasons": ["f"]
   },
   {
@@ -39608,6 +40458,11 @@
     "selector": "loolyan.com",
     "name": "Loolyan",
     "reasons": ["h"]
+  },
+  {
+    "selector": "loomsystems.com",
+    "name": "Loom Systems",
+    "reasons": ["f"]
   },
   {
     "selector": "loomsystems.com",
@@ -39737,6 +40592,11 @@
   {
     "selector": "lua.earth",
     "name": "Lua",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "lua.earth",
+    "name": "Lua",
     "reasons": ["f", "i"]
   },
   {
@@ -39831,7 +40691,7 @@
   },
   {
     "selector": "lumenis.com",
-    "name": "Lumenis Aesthetic Division",
+    "name": "Lumenis",
     "reasons": ["h"]
   },
   {
@@ -39921,8 +40781,8 @@
   },
   {
     "selector": "lusha.com",
-    "name": "Lusha Systems",
-    "reasons": ["f"]
+    "name": "Lusha",
+    "reasons": ["h", "f"]
   },
   {
     "selector": "lusha.shop",
@@ -40660,11 +41520,6 @@
     "reasons": ["h"]
   },
   {
-    "selector": "mapme.com",
-    "name": "Mapme",
-    "reasons": ["h"]
-  },
-  {
     "selector": "mapp.com",
     "name": "Mapp Digital",
     "reasons": ["f"]
@@ -40896,7 +41751,7 @@
   },
   {
     "selector": "marvell.com",
-    "name": "Marvell Software Solutions Israel",
+    "name": "Marvell Israel",
     "reasons": ["h"]
   },
   {
@@ -41077,6 +41932,11 @@
   {
     "selector": "mathlabs.io",
     "name": "Mathlabs",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "mathlabs.io",
+    "name": "Mathlabs",
     "reasons": ["f", "i"]
   },
   {
@@ -41088,6 +41948,11 @@
     "selector": "mathriders.com",
     "name": "MathRiders",
     "reasons": ["h"]
+  },
+  {
+    "selector": "matia.io",
+    "name": "Matia",
+    "reasons": ["f"]
   },
   {
     "selector": "matia.io",
@@ -42082,12 +42947,12 @@
   {
     "selector": "meliopayments.com",
     "name": "Melio",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "meliopayments.com",
     "name": "Melio",
-    "reasons": ["f"]
+    "reasons": ["f", "h"]
   },
   {
     "selector": "mellanox.com",
@@ -42192,12 +43057,12 @@
   {
     "selector": "mend.io",
     "name": "Mend",
-    "reasons": ["f", "i"]
+    "reasons": ["f"]
   },
   {
     "selector": "mend.io",
-    "name": "Mend Israel",
-    "reasons": ["h"]
+    "name": "Mend",
+    "reasons": ["f", "i", "h"]
   },
   {
     "selector": "mennenmedical.com",
@@ -42327,11 +43192,6 @@
   {
     "selector": "meshek76.com",
     "name": "Meshek 76",
-    "reasons": ["h"]
-  },
-  {
-    "selector": "meshpayments.com",
-    "name": "Mesh Payments",
     "reasons": ["h"]
   },
   {
@@ -42552,6 +43412,11 @@
   {
     "selector": "metrycom.com",
     "name": "Metrycom",
+    "reasons": ["h"]
+  },
+  {
+    "selector": "metzer-group.com",
+    "name": "Metzer",
     "reasons": ["h"]
   },
   {
@@ -42862,6 +43727,11 @@
   {
     "selector": "milagroai.com",
     "name": "Milagro AI",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "milagroai.com",
+    "name": "Milagro AI",
     "reasons": ["f", "i"]
   },
   {
@@ -43127,7 +43997,17 @@
   {
     "selector": "minutelab.io",
     "name": "Minute Lab",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "minutelab.io",
+    "name": "Minute Lab",
     "reasons": ["f", "i"]
+  },
+  {
+    "selector": "minutemedia.com",
+    "name": "Minute Media",
+    "reasons": ["f"]
   },
   {
     "selector": "minutemedia.com",
@@ -43178,6 +44058,11 @@
     "selector": "mirazwillinger.com",
     "name": "Mira Zwillinger",
     "reasons": ["h"]
+  },
+  {
+    "selector": "mircod.com",
+    "name": "Mircod",
+    "reasons": ["f"]
   },
   {
     "selector": "mircod.com",
@@ -43368,6 +44253,11 @@
     "selector": "mobaxe.com",
     "name": "MobAxe Software Solutions",
     "reasons": ["h"]
+  },
+  {
+    "selector": "mobb.dev",
+    "name": "Mobb",
+    "reasons": ["f"]
   },
   {
     "selector": "mobb.dev",
@@ -43582,6 +44472,11 @@
   {
     "selector": "moburst.com",
     "name": "Moburst",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "moburst.com",
+    "name": "Moburst",
     "reasons": ["f", "i"]
   },
   {
@@ -43782,6 +44677,11 @@
   {
     "selector": "monalabs.io",
     "name": "Mona",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "monalabs.io",
+    "name": "Mona",
     "reasons": ["f", "i"]
   },
   {
@@ -43792,11 +44692,6 @@
   {
     "selector": "monday.com",
     "name": "monday.com",
-    "reasons": ["h"]
-  },
-  {
-    "selector": "monday.com",
-    "name": "Monday.com",
     "reasons": ["h"]
   },
   {
@@ -43877,12 +44772,12 @@
   {
     "selector": "montopay.com",
     "name": "Monto",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "montopay.com",
     "name": "Monto",
-    "reasons": ["f"]
+    "reasons": ["f", "h"]
   },
   {
     "selector": "moodify.ai",
@@ -43972,6 +44867,11 @@
   {
     "selector": "moovingon.com",
     "name": "MoovingON",
+    "reasons": ["h"]
+  },
+  {
+    "selector": "moovit.com",
+    "name": "Moovit",
     "reasons": ["h"]
   },
   {
@@ -44142,7 +45042,12 @@
   {
     "selector": "motorad.com",
     "name": "MotoRad",
-    "reasons": ["h", "i"]
+    "reasons": ["h"]
+  },
+  {
+    "selector": "motoradusa.com",
+    "name": "MotoRad",
+    "reasons": ["i"]
   },
   {
     "selector": "motormia.co",
@@ -44248,6 +45153,11 @@
     "selector": "mp2141.org",
     "name": "2141 Club",
     "reasons": ["h"]
+  },
+  {
+    "selector": "mpharma.com",
+    "name": "mPharma",
+    "reasons": ["f"]
   },
   {
     "selector": "mpharma.com",
@@ -44911,8 +45821,8 @@
   },
   {
     "selector": "myquest.co",
-    "name": "MyQuest",
-    "reasons": ["f"]
+    "name": "myQuest",
+    "reasons": ["h", "f"]
   },
   {
     "selector": "myray.com",
@@ -45163,6 +46073,11 @@
     "selector": "naninstruments.com",
     "name": "NAN Instruments",
     "reasons": ["h"]
+  },
+  {
+    "selector": "nanit.com",
+    "name": "Nanit",
+    "reasons": ["f"]
   },
   {
     "selector": "nanit.com",
@@ -45467,12 +46382,12 @@
   {
     "selector": "navina.ai",
     "name": "Navina",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "navina.ai",
     "name": "Navina",
-    "reasons": ["f"]
+    "reasons": ["f", "h"]
   },
   {
     "selector": "navines.com",
@@ -46125,6 +47040,11 @@
     "reasons": ["f"]
   },
   {
+    "selector": "neurotrigger.info",
+    "name": "Neurotrigger",
+    "reasons": ["h"]
+  },
+  {
     "selector": "neva-team.com",
     "name": "NevaTeam",
     "reasons": ["h"]
@@ -46387,6 +47307,11 @@
   {
     "selector": "nextinsurance.com",
     "name": "Next Insurance",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "nextinsurance.com",
+    "name": "Next Insurance",
     "reasons": ["f", "i"]
   },
   {
@@ -46506,7 +47431,7 @@
   },
   {
     "selector": "nice.com",
-    "name": "Nice Systems",
+    "name": "NICE",
     "reasons": ["h"]
   },
   {
@@ -46582,6 +47507,11 @@
   {
     "selector": "nimblebeauty.com",
     "name": "Nimble Beauty",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "nimblebeauty.com",
+    "name": "Nimble Beauty",
     "reasons": ["f", "i"]
   },
   {
@@ -46608,6 +47538,11 @@
     "selector": "nineplus.life",
     "name": "Nine Plus Life",
     "reasons": ["h"]
+  },
+  {
+    "selector": "nipendo.com",
+    "name": "Nipendo",
+    "reasons": ["f"]
   },
   {
     "selector": "nipendo.com",
@@ -46887,11 +47822,6 @@
   {
     "selector": "nonamesecurity.com",
     "name": "Noname Security",
-    "reasons": ["h"]
-  },
-  {
-    "selector": "nonamesecurity.com",
-    "name": "Noname Security",
     "reasons": ["f"]
   },
   {
@@ -46972,7 +47902,7 @@
   {
     "selector": "notalvision.com",
     "name": "Notal Vision",
-    "reasons": ["f", "h"]
+    "reasons": ["f"]
   },
   {
     "selector": "notapplicable.com",
@@ -47021,7 +47951,12 @@
   },
   {
     "selector": "novaplasma.com",
-    "name": "NovaGreen",
+    "name": "Nova Plasma",
+    "reasons": ["h"]
+  },
+  {
+    "selector": "novaplasma.com",
+    "name": "Nova Plasma",
     "reasons": ["h"]
   },
   {
@@ -47202,12 +48137,12 @@
   {
     "selector": "nowreceive.com",
     "name": "Receive",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "nowreceive.com",
     "name": "Receive",
-    "reasons": ["f"]
+    "reasons": ["f", "h"]
   },
   {
     "selector": "nox-group.com",
@@ -47735,6 +48670,11 @@
     "reasons": ["h"]
   },
   {
+    "selector": "odigos.io",
+    "name": "Odigos",
+    "reasons": ["h"]
+  },
+  {
     "selector": "odisfiltering.com",
     "name": "Odis Filtering",
     "reasons": ["h"]
@@ -47962,6 +48902,11 @@
   {
     "selector": "oko.finance",
     "name": "OKO",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "oko.finance",
+    "name": "OKO",
     "reasons": ["f", "i"]
   },
   {
@@ -47972,7 +48917,12 @@
   {
     "selector": "ola.ai",
     "name": "Ola",
-    "reasons": ["f", "h"]
+    "reasons": ["f"]
+  },
+  {
+    "selector": "ola.co",
+    "name": "Ola.co",
+    "reasons": ["h"]
   },
   {
     "selector": "olamtogether.org",
@@ -48212,6 +49162,11 @@
   {
     "selector": "onaro.com",
     "name": "Onaro",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "onaro.com",
+    "name": "Onaro",
     "reasons": ["f", "i"]
   },
   {
@@ -48221,7 +49176,7 @@
   },
   {
     "selector": "oncehub.com",
-    "name": "ScheduleOnce",
+    "name": "OnceHub",
     "reasons": ["f"]
   },
   {
@@ -48582,6 +49537,11 @@
   {
     "selector": "openweb.com",
     "name": "OpenWeb",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "openweb.com",
+    "name": "OpenWeb",
     "reasons": ["f", "i"]
   },
   {
@@ -48703,6 +49663,11 @@
     "selector": "opticuldiagnostics.com",
     "name": "Opticul Diagnostics",
     "reasons": ["h"]
+  },
+  {
+    "selector": "optier.com",
+    "name": "OpTier",
+    "reasons": ["f"]
   },
   {
     "selector": "optier.com",
@@ -48978,6 +49943,11 @@
     "selector": "orchestragroup.com",
     "name": "Orchestra Group",
     "reasons": ["h"]
+  },
+  {
+    "selector": "orchid.security",
+    "name": "Orchid Security",
+    "reasons": ["f"]
   },
   {
     "selector": "orchid.security",
@@ -49402,6 +50372,11 @@
   {
     "selector": "outbrain.com",
     "name": "Outbrain",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "outbrain.com",
+    "name": "Outbrain",
     "reasons": ["f", "i"]
   },
   {
@@ -49582,6 +50557,11 @@
   {
     "selector": "owndata.com",
     "name": "Own Company",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "owndata.com",
+    "name": "Own Company",
     "reasons": ["f", "i"]
   },
   {
@@ -49672,6 +50652,11 @@
   {
     "selector": "ozvision.com",
     "name": "OzVision",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "ozvision.com",
+    "name": "OzVision",
     "reasons": ["f", "i"]
   },
   {
@@ -49757,12 +50742,12 @@
   {
     "selector": "pagaya.com",
     "name": "Pagaya",
-    "reasons": ["h"]
+    "reasons": ["i"]
   },
   {
     "selector": "pagaya.com",
-    "name": "Pagaya Tel Aviv",
-    "reasons": ["h", "i"]
+    "name": "Pagaya",
+    "reasons": ["i", "h"]
   },
   {
     "selector": "pagewiz.com",
@@ -49947,6 +50932,11 @@
   {
     "selector": "pandonetworks.com",
     "name": "Pando Networks",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "pandonetworks.com",
+    "name": "Pando Networks",
     "reasons": ["f", "i"]
   },
   {
@@ -49992,12 +50982,12 @@
   {
     "selector": "panorama.com",
     "name": "Panorama Software",
-    "reasons": ["f", "i"]
+    "reasons": ["f"]
   },
   {
-    "selector": "panorays.com",
-    "name": "Panoray",
-    "reasons": ["h"]
+    "selector": "panorama.com",
+    "name": "Panorama Software",
+    "reasons": ["f", "i"]
   },
   {
     "selector": "panorays.com",
@@ -50037,12 +51027,12 @@
   {
     "selector": "papayaglobal.com",
     "name": "Papaya Global",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "papayaglobal.com",
     "name": "Papaya Global",
-    "reasons": ["f"]
+    "reasons": ["f", "h"]
   },
   {
     "selector": "papelimos.com",
@@ -50103,6 +51093,11 @@
     "selector": "parallel.fi",
     "name": "Nirvana",
     "reasons": ["i"]
+  },
+  {
+    "selector": "parametrixinsurance.com",
+    "name": "Parametrix Insurance",
+    "reasons": ["f"]
   },
   {
     "selector": "parametrixinsurance.com",
@@ -50455,11 +51450,6 @@
     "reasons": ["h"]
   },
   {
-    "selector": "payem.co",
-    "name": "PayEm",
-    "reasons": ["h"]
-  },
-  {
     "selector": "payfinder.com",
     "name": "Payfinder",
     "reasons": ["h"]
@@ -50507,6 +51497,11 @@
   {
     "selector": "payoneer.com",
     "name": "Payoneer",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "payoneer.com",
+    "name": "Payoneer",
     "reasons": ["f", "i"]
   },
   {
@@ -50531,7 +51526,7 @@
   },
   {
     "selector": "paytongroup.com",
-    "name": "Payton Planar Magnetics",
+    "name": "Payton Industries",
     "reasons": ["h"]
   },
   {
@@ -50553,6 +51548,11 @@
     "selector": "payzday.com",
     "name": "Payzday",
     "reasons": ["h"]
+  },
+  {
+    "selector": "payzen.com",
+    "name": "PayZen",
+    "reasons": ["f"]
   },
   {
     "selector": "payzen.com",
@@ -50686,8 +51686,13 @@
   },
   {
     "selector": "pecan.ai",
-    "name": "Pecan New York",
-    "reasons": ["f", "h"]
+    "name": "Pecan",
+    "reasons": ["h"]
+  },
+  {
+    "selector": "pecan.ai",
+    "name": "Pecan",
+    "reasons": ["h", "f"]
   },
   {
     "selector": "peech-ai.com",
@@ -50912,6 +51917,11 @@
   {
     "selector": "perfecto.io",
     "name": "Perfecto Mobile",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "perfecto.io",
+    "name": "Perfecto Mobile",
     "reasons": ["f", "i"]
   },
   {
@@ -51007,6 +52017,11 @@
   {
     "selector": "personalics.com",
     "name": "Personalics",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "personalics.com",
+    "name": "Personalics",
     "reasons": ["f", "i"]
   },
   {
@@ -51021,8 +52036,13 @@
   },
   {
     "selector": "personetics.com",
-    "name": "Personetics Tel Aviv",
-    "reasons": ["h", "i"]
+    "name": "Personetics",
+    "reasons": ["i"]
+  },
+  {
+    "selector": "personetics.com",
+    "name": "Personetics",
+    "reasons": ["i", "h"]
   },
   {
     "selector": "personyze.com",
@@ -51452,6 +52472,11 @@
   {
     "selector": "pickspace.com",
     "name": "Pickspace",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "pickspace.com",
+    "name": "Pickspace",
     "reasons": ["f", "i"]
   },
   {
@@ -51512,6 +52537,11 @@
   {
     "selector": "picup.io",
     "name": "PicUP",
+    "reasons": ["h"]
+  },
+  {
+    "selector": "picyourlifeapps.com",
+    "name": "Pic Your Life",
     "reasons": ["h"]
   },
   {
@@ -51787,6 +52817,11 @@
   {
     "selector": "pixoneye.com",
     "name": "Pixoneye",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "pixoneye.com",
+    "name": "Pixoneye",
     "reasons": ["f", "i"]
   },
   {
@@ -51817,12 +52852,12 @@
   {
     "selector": "placer.ai",
     "name": "Placer.ai",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "placer.ai",
     "name": "Placer.ai",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i", "h"]
   },
   {
     "selector": "placesense.ai",
@@ -51872,6 +52907,11 @@
   {
     "selector": "planetome.com",
     "name": "Planetome",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "planetwatchers.com",
+    "name": "PlanetWatchers",
     "reasons": ["f"]
   },
   {
@@ -52146,8 +53186,8 @@
   },
   {
     "selector": "playstudios.com",
-    "name": "PLAYSTUDIOS ISRAEL",
-    "reasons": ["h"]
+    "name": "PLAYSTUDIOS",
+    "reasons": ["f", "h"]
   },
   {
     "selector": "playtag.ai",
@@ -52271,8 +53311,8 @@
   },
   {
     "selector": "plus500.com",
-    "name": "Plus500 Cyprus",
-    "reasons": ["f"]
+    "name": "Plus500",
+    "reasons": ["h", "f"]
   },
   {
     "selector": "plusmusic.ai",
@@ -52362,6 +53402,11 @@
   {
     "selector": "pocoz.com",
     "name": "Pocoz",
+    "reasons": ["h"]
+  },
+  {
+    "selector": "podiumadtech.com",
+    "name": "Podium Advertising Technologies",
     "reasons": ["h"]
   },
   {
@@ -52592,6 +53637,11 @@
   {
     "selector": "pontera.com",
     "name": "Pontera",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "pontera.com",
+    "name": "Pontera",
     "reasons": ["f", "i"]
   },
   {
@@ -52817,12 +53867,12 @@
   {
     "selector": "powtoon.com",
     "name": "Powtoon",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "powtoon.com",
     "name": "Powtoon",
-    "reasons": ["f"]
+    "reasons": ["f", "h"]
   },
   {
     "selector": "powwowmobile.com",
@@ -53051,7 +54101,7 @@
   },
   {
     "selector": "prettydamnquick.com",
-    "name": "PrettyDamnQuick",
+    "name": "PDQ",
     "reasons": ["h"]
   },
   {
@@ -53992,6 +55042,11 @@
   {
     "selector": "puddingmedia.com",
     "name": "Pudding Media",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "puddingmedia.com",
+    "name": "Pudding Media",
     "reasons": ["f", "i"]
   },
   {
@@ -54202,6 +55257,11 @@
   {
     "selector": "pyramidanalytics.com",
     "name": "Pyramid Analytics",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "pyramidanalytics.com",
+    "name": "Pyramid Analytics",
     "reasons": ["f", "i"]
   },
   {
@@ -54306,7 +55366,12 @@
   },
   {
     "selector": "qconf.com",
-    "name": "QCONF Conferencing",
+    "name": "Hipusheet Software LTD",
+    "reasons": ["h"]
+  },
+  {
+    "selector": "qconf.com",
+    "name": "Hipusheet Software LTD",
     "reasons": ["h"]
   },
   {
@@ -54827,6 +55892,11 @@
   {
     "selector": "qumranet.com",
     "name": "Qumranet",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "qumranet.com",
+    "name": "Qumranet",
     "reasons": ["f", "i"]
   },
   {
@@ -54873,6 +55943,11 @@
     "selector": "qwak.com",
     "name": "Qwak",
     "reasons": ["h"]
+  },
+  {
+    "selector": "qwilt.com",
+    "name": "Qwilt",
+    "reasons": ["f"]
   },
   {
     "selector": "qwilt.com",
@@ -54993,6 +56068,11 @@
     "selector": "radix-int.com",
     "name": "Radix Technologies Ltd",
     "reasons": ["h"]
+  },
+  {
+    "selector": "radlogics.com",
+    "name": "RadLogics",
+    "reasons": ["f"]
   },
   {
     "selector": "radlogics.com",
@@ -55252,12 +56332,12 @@
   {
     "selector": "rapyd.net",
     "name": "Rapyd",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "rapyd.net",
     "name": "Rapyd",
-    "reasons": ["f"]
+    "reasons": ["f", "h"]
   },
   {
     "selector": "rarefundingteam.com",
@@ -55333,6 +56413,11 @@
     "selector": "ravendb.net",
     "name": "RavenDB",
     "reasons": ["h"]
+  },
+  {
+    "selector": "ravin.ai",
+    "name": "Ravin AI",
+    "reasons": ["f"]
   },
   {
     "selector": "ravin.ai",
@@ -55488,6 +56573,11 @@
     "selector": "reacheffect.com",
     "name": "Reacheffect",
     "reasons": ["h"]
+  },
+  {
+    "selector": "reachhq.com",
+    "name": "REACH",
+    "reasons": ["f"]
   },
   {
     "selector": "reachhq.com",
@@ -55727,6 +56817,11 @@
   {
     "selector": "reco.ai",
     "name": "Reco",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "reco.ai",
+    "name": "Reco",
     "reasons": ["f", "i"]
   },
   {
@@ -55915,11 +57010,6 @@
     "reasons": ["f"]
   },
   {
-    "selector": "regatta.dev",
-    "name": "Regatta Data",
-    "reasons": ["h"]
-  },
-  {
     "selector": "regenacy.com",
     "name": "Regenacy Pharmaceuticals",
     "reasons": ["i"]
@@ -56055,6 +57145,11 @@
     "reasons": ["f"]
   },
   {
+    "selector": "remedor.com",
+    "name": "Remedor Biomed",
+    "reasons": ["h"]
+  },
+  {
     "selector": "remedycolab.com",
     "name": "Remedy CoLab",
     "reasons": ["h"]
@@ -56187,6 +57282,11 @@
   {
     "selector": "replay-technologies.com",
     "name": "Replay Technologies",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "replay-technologies.com",
+    "name": "Replay Technologies",
     "reasons": ["f", "i"]
   },
   {
@@ -56273,6 +57373,11 @@
     "selector": "reshuk.com",
     "name": "Reshuk",
     "reasons": ["h"]
+  },
+  {
+    "selector": "residenthome.com",
+    "name": "Resident",
+    "reasons": ["f"]
   },
   {
     "selector": "residenthome.com",
@@ -56438,6 +57543,11 @@
     "selector": "retorno.org",
     "name": "Retorno",
     "reasons": ["h"]
+  },
+  {
+    "selector": "retrain.ai",
+    "name": "retrain.ai",
+    "reasons": ["f"]
   },
   {
     "selector": "retrain.ai",
@@ -56642,6 +57752,11 @@
   {
     "selector": "rezonate.io",
     "name": "Rezonate",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "rezonate.io",
+    "name": "Rezonate",
     "reasons": ["f", "i"]
   },
   {
@@ -56702,6 +57817,11 @@
   {
     "selector": "rhino-eco.com",
     "name": "Rhino Eco",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "rhino-eco.com",
+    "name": "Rhino Eco",
     "reasons": ["f", "i"]
   },
   {
@@ -56747,6 +57867,11 @@
   {
     "selector": "ridehip.com",
     "name": "Hip",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "ridehip.com",
+    "name": "Hip",
     "reasons": ["f", "i"]
   },
   {
@@ -56787,12 +57912,22 @@
   {
     "selector": "ridewithvia.com",
     "name": "Via",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "ridewithvia.com",
+    "name": "Via",
     "reasons": ["f", "i"]
   },
   {
     "selector": "ridezoomo.com",
     "name": "Zoomo",
     "reasons": ["i"]
+  },
+  {
+    "selector": "ridge.co",
+    "name": "Ridge",
+    "reasons": ["f"]
   },
   {
     "selector": "ridge.co",
@@ -56808,6 +57943,11 @@
     "selector": "rightathome.net",
     "name": "Right at Home",
     "reasons": ["i"]
+  },
+  {
+    "selector": "rightbound.com",
+    "name": "RightBound",
+    "reasons": ["f"]
   },
   {
     "selector": "rightbound.com",
@@ -56952,6 +58092,11 @@
   {
     "selector": "risk-q.com",
     "name": "RiskQ Inc.",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "risk-q.com",
+    "name": "RiskQ Inc.",
     "reasons": ["f", "i"]
   },
   {
@@ -56962,12 +58107,12 @@
   {
     "selector": "riskified.com",
     "name": "Riskified",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "riskified.com",
     "name": "Riskified",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i", "h"]
   },
   {
     "selector": "riskrecon.com",
@@ -56990,14 +58135,9 @@
     "reasons": ["h"]
   },
   {
-    "selector": "riverside.fm",
-    "name": "Riverside.fm",
-    "reasons": ["h"]
-  },
-  {
     "selector": "rivery.io",
-    "name": "Rivery",
-    "reasons": ["h"]
+    "name": "Rivery.io",
+    "reasons": ["f"]
   },
   {
     "selector": "rivery.io",
@@ -57307,6 +58447,11 @@
   {
     "selector": "roomertravel.com",
     "name": "Roomer",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "roomertravel.com",
+    "name": "Roomer",
     "reasons": ["f", "i"]
   },
   {
@@ -57530,6 +58675,11 @@
     "reasons": ["h"]
   },
   {
+    "selector": "royalroadl.com",
+    "name": "Royal Road Legends",
+    "reasons": ["h"]
+  },
+  {
     "selector": "rp-optical-lab.com",
     "name": "RP Optical Lab",
     "reasons": ["h"]
@@ -57738,6 +58888,11 @@
     "selector": "ruya.ai",
     "name": "Ruya Israel",
     "reasons": ["h"]
+  },
+  {
+    "selector": "rxware.io",
+    "name": "RxWare",
+    "reasons": ["f"]
   },
   {
     "selector": "rxware.io",
@@ -57952,6 +59107,11 @@
   {
     "selector": "safebooks.ai",
     "name": "Safebooks AI",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "safebooks.ai",
+    "name": "Safebooks AI",
     "reasons": ["f", "i"]
   },
   {
@@ -58137,6 +59297,11 @@
   {
     "selector": "salaryo.com",
     "name": "Salaryo",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "salaryo.com",
+    "name": "Salaryo",
     "reasons": ["f", "i"]
   },
   {
@@ -58202,17 +59367,12 @@
   {
     "selector": "salt.security",
     "name": "Salt Security",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "salt.security",
     "name": "Salt Security",
     "reasons": ["f", "i"]
-  },
-  {
-    "selector": "salto.io",
-    "name": "Salto",
-    "reasons": ["h"]
   },
   {
     "selector": "salto.io",
@@ -58420,6 +59580,11 @@
     "reasons": ["h"]
   },
   {
+    "selector": "sarid-ins.com",
+    "name": "Sarid Research Institute",
+    "reasons": ["h"]
+  },
+  {
     "selector": "sarig.com",
     "name": "Sarig",
     "reasons": ["h"]
@@ -58582,6 +59747,11 @@
   {
     "selector": "sayanchor.com",
     "name": "Anchor",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "sayata.com",
+    "name": "Sayata",
     "reasons": ["f"]
   },
   {
@@ -59062,6 +60232,11 @@
   {
     "selector": "sealights.io",
     "name": "Sealights",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "sealights.io",
+    "name": "Sealights",
     "reasons": ["f", "i"]
   },
   {
@@ -59143,6 +60318,11 @@
     "selector": "second-opinion.com",
     "name": "Second opinion",
     "reasons": ["h"]
+  },
+  {
+    "selector": "secondnature.ai",
+    "name": "Second Nature AI",
+    "reasons": ["f"]
   },
   {
     "selector": "secondnature.ai",
@@ -59542,6 +60722,11 @@
   {
     "selector": "selina.com",
     "name": "Selina",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "selina.com",
+    "name": "Selina",
     "reasons": ["f", "i"]
   },
   {
@@ -59613,6 +60798,11 @@
     "selector": "semicom.biz",
     "name": "Semicom",
     "reasons": ["h"]
+  },
+  {
+    "selector": "semperis.com",
+    "name": "Semperis",
+    "reasons": ["f"]
   },
   {
     "selector": "semperis.com",
@@ -59852,6 +61042,11 @@
   {
     "selector": "sentinelone.com",
     "name": "SentinelOne",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "sentinelone.com",
+    "name": "SentinelOne",
     "reasons": ["f", "i"]
   },
   {
@@ -59927,6 +61122,11 @@
   {
     "selector": "sepiocyber.com",
     "name": "Sepio",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "sepiocyber.com",
+    "name": "Sepio",
     "reasons": ["f", "i"]
   },
   {
@@ -59943,6 +61143,11 @@
     "selector": "sequel.care",
     "name": "SequelCare Health",
     "reasons": ["h"]
+  },
+  {
+    "selector": "sequentech.io",
+    "name": "Sequent",
+    "reasons": ["f"]
   },
   {
     "selector": "sequentech.io",
@@ -60277,6 +61482,11 @@
   {
     "selector": "sharegain.com",
     "name": "Sharegain",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "sharegain.com",
+    "name": "Sharegain",
     "reasons": ["f", "i"]
   },
   {
@@ -60546,7 +61756,7 @@
   },
   {
     "selector": "shikunbinui.com",
-    "name": "Shikun & Binui Energy",
+    "name": "Shikun & Binui",
     "reasons": ["h"]
   },
   {
@@ -60971,7 +62181,12 @@
   },
   {
     "selector": "sightdx.com",
-    "name": "Yossi Pollak Jerusalem",
+    "name": "Sight Diagnostics",
+    "reasons": ["h"]
+  },
+  {
+    "selector": "sightdx.com",
+    "name": "Sight Diagnostics",
     "reasons": ["h"]
   },
   {
@@ -61117,6 +62332,11 @@
   {
     "selector": "silk.us",
     "name": "Silk",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "silk.us",
+    "name": "Silk",
     "reasons": ["f", "i"]
   },
   {
@@ -61247,12 +62467,12 @@
   {
     "selector": "similarweb.com",
     "name": "Similarweb",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "similarweb.com",
     "name": "Similarweb",
-    "reasons": ["f"]
+    "reasons": ["f", "h"]
   },
   {
     "selector": "simlat.com",
@@ -61502,12 +62722,12 @@
   {
     "selector": "sisense.com",
     "name": "Sisense",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "sisense.com",
     "name": "Sisense",
-    "reasons": ["f"]
+    "reasons": ["f", "h"]
   },
   {
     "selector": "sisram-medical.com",
@@ -61641,8 +62861,8 @@
   },
   {
     "selector": "skai.io",
-    "name": "SKAI LABS",
-    "reasons": ["f", "i"]
+    "name": "Skai",
+    "reasons": ["h", "f", "i"]
   },
   {
     "selector": "skalecrm.com",
@@ -61763,6 +62983,11 @@
     "selector": "skyhopper.biz",
     "name": "SkyHopper",
     "reasons": ["h"]
+  },
+  {
+    "selector": "skyline.ai",
+    "name": "Skyline AI",
+    "reasons": ["f"]
   },
   {
     "selector": "skyline.ai",
@@ -61918,6 +63143,11 @@
     "selector": "slitled.com",
     "name": "SlitLED Israel",
     "reasons": ["h"]
+  },
+  {
+    "selector": "sloyd.ai",
+    "name": "Sloyd",
+    "reasons": ["f"]
   },
   {
     "selector": "sloyd.ai",
@@ -62302,7 +63532,12 @@
   {
     "selector": "snappy.com",
     "name": "Snappy",
-    "reasons": ["f", "h", "i"]
+    "reasons": ["f"]
+  },
+  {
+    "selector": "snappy.com",
+    "name": "Snappy",
+    "reasons": ["f", "i", "h"]
   },
   {
     "selector": "snatchapp.me",
@@ -62382,11 +63617,6 @@
   {
     "selector": "snyk.io",
     "name": "Snyk",
-    "reasons": ["h"]
-  },
-  {
-    "selector": "snyk.io",
-    "name": "Snyk",
     "reasons": ["f"]
   },
   {
@@ -62413,6 +63643,11 @@
     "selector": "social-internet.co",
     "name": "SOCIAL-INTERNET LTD.",
     "reasons": ["h"]
+  },
+  {
+    "selector": "socialbicycles.com",
+    "name": "Social Bicycles",
+    "reasons": ["i"]
   },
   {
     "selector": "socialblendr.com",
@@ -62872,6 +64107,11 @@
   {
     "selector": "solvo.cloud",
     "name": "Solvo",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "solvo.cloud",
+    "name": "Solvo",
     "reasons": ["f", "i"]
   },
   {
@@ -62898,6 +64138,11 @@
     "selector": "something3d.com",
     "name": "Something3D",
     "reasons": ["h"]
+  },
+  {
+    "selector": "somite.ai",
+    "name": "Somite",
+    "reasons": ["f"]
   },
   {
     "selector": "somite.ai",
@@ -63202,6 +64447,11 @@
   {
     "selector": "space4p.com",
     "name": "SpacePharma",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "space4p.com",
+    "name": "SpacePharma",
     "reasons": ["f", "i"]
   },
   {
@@ -63232,6 +64482,11 @@
   {
     "selector": "spaceiq.com",
     "name": "SpaceIQ",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "spacemesh.io",
+    "name": "Spacemesh",
     "reasons": ["f"]
   },
   {
@@ -63488,6 +64743,11 @@
     "selector": "spetz.io",
     "name": "Spetz",
     "reasons": ["h"]
+  },
+  {
+    "selector": "sphera.com",
+    "name": "Sphera",
+    "reasons": ["f"]
   },
   {
     "selector": "sphera.com",
@@ -63767,6 +65027,11 @@
   {
     "selector": "spot.io",
     "name": "Spot",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "spot.io",
+    "name": "Spot",
     "reasons": ["f", "i"]
   },
   {
@@ -64002,6 +65267,11 @@
   {
     "selector": "staircase.ai",
     "name": "Staircase AI",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "staircase.ai",
+    "name": "Staircase AI",
     "reasons": ["f", "i"]
   },
   {
@@ -64113,6 +65383,11 @@
     "selector": "starplast.com",
     "name": "Star Plast",
     "reasons": ["h"]
+  },
+  {
+    "selector": "start.io",
+    "name": "Start.io",
+    "reasons": ["f"]
   },
   {
     "selector": "start.io",
@@ -64297,6 +65572,11 @@
   {
     "selector": "stellares.ai",
     "name": "STELLARES",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "stellares.ai",
+    "name": "STELLARES",
     "reasons": ["f", "i"]
   },
   {
@@ -64333,6 +65613,11 @@
     "selector": "step-ph.com",
     "name": "Step Pharma",
     "reasons": ["i"]
+  },
+  {
+    "selector": "stepac.com",
+    "name": "StePac",
+    "reasons": ["h"]
   },
   {
     "selector": "stepacppc.com",
@@ -64522,6 +65807,11 @@
   {
     "selector": "stor.ai",
     "name": "Stor.ai",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "stor.ai",
+    "name": "Stor.ai",
     "reasons": ["f", "i"]
   },
   {
@@ -64572,6 +65862,11 @@
   {
     "selector": "stormgain.com",
     "name": "StormGain",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "storone.com",
+    "name": "Storone",
     "reasons": ["f"]
   },
   {
@@ -64641,8 +65936,8 @@
   },
   {
     "selector": "stratasys.com",
-    "name": "Stratasys",
-    "reasons": ["i"]
+    "name": "Objet Geometries",
+    "reasons": ["h", "i"]
   },
   {
     "selector": "stratavar.com",
@@ -64738,6 +66033,11 @@
     "selector": "streamaya.com",
     "name": "Streamaya",
     "reasons": ["h"]
+  },
+  {
+    "selector": "streamelements.com",
+    "name": "StreamElements",
+    "reasons": ["f"]
   },
   {
     "selector": "streamelements.com",
@@ -65047,6 +66347,11 @@
   {
     "selector": "sunbit.com",
     "name": "Sunbit",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "sunbit.com",
+    "name": "Sunbit",
     "reasons": ["f", "i"]
   },
   {
@@ -65063,6 +66368,11 @@
     "selector": "sundaysecurity.com",
     "name": "Sunday Security",
     "reasons": ["h"]
+  },
+  {
+    "selector": "sundaysky.com",
+    "name": "SundaySky",
+    "reasons": ["f"]
   },
   {
     "selector": "sundaysky.com",
@@ -65187,6 +66497,11 @@
   {
     "selector": "superlegal.ai",
     "name": "Superlegal",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "superlegal.ai",
+    "name": "Superlegal",
     "reasons": ["f", "i"]
   },
   {
@@ -65233,6 +66548,11 @@
     "selector": "supersonas.com",
     "name": "Supersonas Israel",
     "reasons": ["h"]
+  },
+  {
+    "selector": "supersonic.com",
+    "name": "Supersonic Studios",
+    "reasons": ["f"]
   },
   {
     "selector": "supersonic.com",
@@ -65422,11 +66742,6 @@
   {
     "selector": "sweefit.com",
     "name": "Sweefit",
-    "reasons": ["h"]
-  },
-  {
-    "selector": "sweep.io",
-    "name": "Sweep",
     "reasons": ["h"]
   },
   {
@@ -66037,12 +67352,22 @@
   {
     "selector": "tailor-ed.com",
     "name": "Tailor-ED",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "tailor-ed.com",
+    "name": "Tailor-ED",
     "reasons": ["f", "i"]
   },
   {
     "selector": "tailor-ip.com",
     "name": "Tailor IP Inc.",
     "reasons": ["h"]
+  },
+  {
+    "selector": "tailorbrands.com",
+    "name": "Tailor Brands",
+    "reasons": ["f"]
   },
   {
     "selector": "tailorbrands.com",
@@ -66206,11 +67531,6 @@
   },
   {
     "selector": "talon-sec.com",
-    "name": "Talon",
-    "reasons": ["h"]
-  },
-  {
-    "selector": "talon-sec.com",
     "name": "Talon Cyber Security",
     "reasons": ["h"]
   },
@@ -66293,6 +67613,11 @@
     "selector": "tamnoon.com",
     "name": "Tamnoon",
     "reasons": ["h"]
+  },
+  {
+    "selector": "tamnoon.io",
+    "name": "Tamnoon",
+    "reasons": ["f"]
   },
   {
     "selector": "tamnoon.io",
@@ -66440,9 +67765,19 @@
     "reasons": ["h"]
   },
   {
+    "selector": "taranis.ag",
+    "name": "Taranis Israel",
+    "reasons": ["h"]
+  },
+  {
     "selector": "taranis.com",
     "name": "Taranis",
-    "reasons": ["f", "h", "i"]
+    "reasons": ["f"]
+  },
+  {
+    "selector": "taranis.com",
+    "name": "Taranis",
+    "reasons": ["f", "i"]
   },
   {
     "selector": "targedys.com",
@@ -66628,6 +67963,11 @@
     "selector": "taxonthera.com",
     "name": "Taxon Therapeutics",
     "reasons": ["h"]
+  },
+  {
+    "selector": "taykey.com",
+    "name": "Taykey",
+    "reasons": ["f"]
   },
   {
     "selector": "taykey.com",
@@ -66880,6 +68220,11 @@
     "reasons": ["h"]
   },
   {
+    "selector": "tecpodium.com",
+    "name": "Tecom Electronics",
+    "reasons": ["h"]
+  },
+  {
     "selector": "tectoltd.com",
     "name": "Tecto",
     "reasons": ["h"]
@@ -67023,6 +68368,11 @@
     "selector": "teliswitch.com",
     "name": "TeliSwitch Solutions",
     "reasons": ["h"]
+  },
+  {
+    "selector": "telit.com",
+    "name": "Telit",
+    "reasons": ["f"]
   },
   {
     "selector": "telit.com",
@@ -67218,6 +68568,11 @@
     "selector": "terem.com",
     "name": "Terem",
     "reasons": ["h"]
+  },
+  {
+    "selector": "teridion.com",
+    "name": "Teridion",
+    "reasons": ["f"]
   },
   {
     "selector": "teridion.com",
@@ -67478,6 +68833,11 @@
     "selector": "theagency.com.au",
     "name": "The Agency Group Australia",
     "reasons": ["i"]
+  },
+  {
+    "selector": "theator.io",
+    "name": "Theator",
+    "reasons": ["f"]
   },
   {
     "selector": "theator.io",
@@ -67747,6 +69107,11 @@
   {
     "selector": "theneura.com",
     "name": "Neura",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "theneura.com",
+    "name": "Neura",
     "reasons": ["f", "i"]
   },
   {
@@ -67792,6 +69157,11 @@
   {
     "selector": "thepanax.com",
     "name": "Panax Tech",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "thepanax.com",
+    "name": "Panax Tech",
     "reasons": ["f", "i"]
   },
   {
@@ -67818,6 +69188,11 @@
     "selector": "theposthostel.com",
     "name": "The Post Hostel",
     "reasons": ["h"]
+  },
+  {
+    "selector": "theproductive.me",
+    "name": "Knowmail",
+    "reasons": ["f"]
   },
   {
     "selector": "theproductive.me",
@@ -68170,6 +69545,11 @@
     "reasons": ["h"]
   },
   {
+    "selector": "tikalnetworks.com",
+    "name": "Tikal Networks",
+    "reasons": ["h"]
+  },
+  {
     "selector": "tikatok.com",
     "name": "Tikatok",
     "reasons": ["f"]
@@ -68237,12 +69617,12 @@
   {
     "selector": "timeos.ai",
     "name": "TimeOS",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "timeos.ai",
     "name": "TimeOS",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i", "h"]
   },
   {
     "selector": "timesofisrael.com",
@@ -68302,7 +69682,7 @@
   {
     "selector": "tipalti.com",
     "name": "Tipalti",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "tipalti.com",
@@ -68331,8 +69711,8 @@
   },
   {
     "selector": "tipranks.com",
-    "name": "TipRanks Tel Aviv",
-    "reasons": ["h"]
+    "name": "TipRanks",
+    "reasons": ["i", "h"]
   },
   {
     "selector": "tiselia.com",
@@ -68366,7 +69746,7 @@
   },
   {
     "selector": "titandxp.com",
-    "name": "DO IT NICE",
+    "name": "Titan",
     "reasons": ["h"]
   },
   {
@@ -68752,6 +70132,11 @@
   {
     "selector": "tonkean.com",
     "name": "Tonkean",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "tonkean.com",
+    "name": "Tonkean",
     "reasons": ["f", "i"]
   },
   {
@@ -68968,6 +70353,11 @@
     "selector": "totalviz.com",
     "name": "Total-Viz",
     "reasons": ["h"]
+  },
+  {
+    "selector": "totango.com",
+    "name": "Totango",
+    "reasons": ["f"]
   },
   {
     "selector": "totango.com",
@@ -69287,6 +70677,11 @@
   {
     "selector": "traiana.com",
     "name": "Traiana",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "traiana.com",
+    "name": "Traiana",
     "reasons": ["f", "i"]
   },
   {
@@ -69367,6 +70762,11 @@
   {
     "selector": "transmitsecurity.com",
     "name": "Transmit Security",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "transmitsecurity.com",
+    "name": "Transmit Security",
     "reasons": ["f", "i"]
   },
   {
@@ -69398,6 +70798,11 @@
     "selector": "tranzila.com",
     "name": "Tranzila",
     "reasons": ["h"]
+  },
+  {
+    "selector": "trapx.com",
+    "name": "TrapX Security",
+    "reasons": ["f"]
   },
   {
     "selector": "trapx.com",
@@ -69563,11 +70968,6 @@
     "selector": "trench.app",
     "name": "TRENCH",
     "reasons": ["f"]
-  },
-  {
-    "selector": "trendemon.com",
-    "name": "Trendemon",
-    "reasons": ["h"]
   },
   {
     "selector": "trendemon.com",
@@ -69811,7 +71211,7 @@
   },
   {
     "selector": "triplewhale.com",
-    "name": "TripleWhale",
+    "name": "Triple Whale",
     "reasons": ["h"]
   },
   {
@@ -69982,12 +71382,12 @@
   {
     "selector": "trullion.com",
     "name": "Trullion",
-    "reasons": ["h"]
+    "reasons": ["i"]
   },
   {
     "selector": "trullion.com",
     "name": "Trullion",
-    "reasons": ["i"]
+    "reasons": ["i", "h"]
   },
   {
     "selector": "trulyprotect.com",
@@ -70120,11 +71520,6 @@
     "reasons": ["h"]
   },
   {
-    "selector": "trywilco.com",
-    "name": "Wilco",
-    "reasons": ["h"]
-  },
-  {
     "selector": "tsadik.org",
     "name": "Tsadik Foundation",
     "reasons": ["h"]
@@ -70177,12 +71572,12 @@
   {
     "selector": "tufin.com",
     "name": "Tufin",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "tufin.com",
     "name": "Tufin",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i", "h"]
   },
   {
     "selector": "tugger.info",
@@ -70198,6 +71593,11 @@
     "selector": "tulip.co",
     "name": "Tulip Interfaces",
     "reasons": ["i"]
+  },
+  {
+    "selector": "tulu.io",
+    "name": "TULU",
+    "reasons": ["f"]
   },
   {
     "selector": "tulu.io",
@@ -70782,6 +72182,11 @@
   {
     "selector": "underworldfootball.com",
     "name": "Stanga Games",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "underworldfootball.com",
+    "name": "Stanga Games",
     "reasons": ["f", "i"]
   },
   {
@@ -70897,12 +72302,12 @@
   {
     "selector": "unit.co",
     "name": "Unit",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "unit.co",
     "name": "Unit",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i", "h"]
   },
   {
     "selector": "unitask-inc.com",
@@ -70938,6 +72343,11 @@
     "selector": "unitronicsplc.com",
     "name": "Unitronics - PLC & Automation products",
     "reasons": ["h"]
+  },
+  {
+    "selector": "unityscm.com",
+    "name": "Unity SCM",
+    "reasons": ["f"]
   },
   {
     "selector": "unityscm.com",
@@ -71157,6 +72567,11 @@
   {
     "selector": "upwind.io",
     "name": "Upwind Security",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "upwind.io",
+    "name": "Upwind Security",
     "reasons": ["f", "i"]
   },
   {
@@ -71323,6 +72738,11 @@
     "selector": "uturn.shop",
     "name": "UTurn AI",
     "reasons": ["h"]
+  },
+  {
+    "selector": "uveye.com",
+    "name": "UVeye",
+    "reasons": ["f"]
   },
   {
     "selector": "uveye.com",
@@ -71530,6 +72950,11 @@
     "reasons": ["h"]
   },
   {
+    "selector": "valooto.com",
+    "name": "Valooto",
+    "reasons": ["f"]
+  },
+  {
     "selector": "valorasc.com",
     "name": "Valor Automation Solutions",
     "reasons": ["h"]
@@ -71642,12 +73067,27 @@
   {
     "selector": "vastdata.com",
     "name": "VAST Data",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "vastdata.com",
+    "name": "VAST Data",
     "reasons": ["f", "i"]
   },
   {
     "selector": "vata.one",
     "name": "VATA",
     "reasons": ["h"]
+  },
+  {
+    "selector": "vatbox.com",
+    "name": "VATBox",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "vault-ai.com",
+    "name": "Vault AI",
+    "reasons": ["f"]
   },
   {
     "selector": "vault-ai.com",
@@ -71672,7 +73112,7 @@
   {
     "selector": "vaxil-bio.com",
     "name": "Vaxil Bio",
-    "reasons": ["f", "h"]
+    "reasons": ["f"]
   },
   {
     "selector": "vayar.com",
@@ -71766,7 +73206,12 @@
   },
   {
     "selector": "vectored-photonics.com",
-    "name": "Vectored Photonics",
+    "name": "Evan Spero",
+    "reasons": ["h"]
+  },
+  {
+    "selector": "vectored-photonics.com",
+    "name": "Evan Spero",
     "reasons": ["h"]
   },
   {
@@ -71823,6 +73268,11 @@
     "selector": "veestars.com",
     "name": "VeeStars",
     "reasons": ["h"]
+  },
+  {
+    "selector": "veev.com",
+    "name": "Veev",
+    "reasons": ["f"]
   },
   {
     "selector": "veev.com",
@@ -71947,7 +73397,12 @@
   {
     "selector": "venn.city",
     "name": "venn",
-    "reasons": ["f", "h", "i"]
+    "reasons": ["f"]
+  },
+  {
+    "selector": "venn.city",
+    "name": "venn",
+    "reasons": ["f", "i", "h"]
   },
   {
     "selector": "venndy.com",
@@ -72002,17 +73457,17 @@
   {
     "selector": "veraznetworks.com",
     "name": "Veraz Networks",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "veraznetworks.com",
+    "name": "Veraz Networks",
     "reasons": ["f", "i"]
   },
   {
     "selector": "verbato.ai",
     "name": "Verbato",
     "reasons": ["f"]
-  },
-  {
-    "selector": "verbit.ai",
-    "name": "Verbit",
-    "reasons": ["h"]
   },
   {
     "selector": "verbit.ai",
@@ -72103,6 +73558,11 @@
     "selector": "versatil.vc",
     "name": "Versatil.vc",
     "reasons": ["h"]
+  },
+  {
+    "selector": "versatile.ai",
+    "name": "VERSATILE",
+    "reasons": ["f"]
   },
   {
     "selector": "versatile.ai",
@@ -72327,6 +73787,11 @@
   {
     "selector": "vicarius.io",
     "name": "Vicarius",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "vicarius.io",
+    "name": "Vicarius",
     "reasons": ["f", "i"]
   },
   {
@@ -72407,6 +73872,11 @@
   {
     "selector": "vidisco.com",
     "name": "Vidisco",
+    "reasons": ["h"]
+  },
+  {
+    "selector": "vidit.ai",
+    "name": "GO Vidit Ltd.",
     "reasons": ["h"]
   },
   {
@@ -72752,6 +74222,11 @@
   {
     "selector": "visitt.io",
     "name": "Visitt.io",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "visitt.io",
+    "name": "Visitt.io",
     "reasons": ["f", "i"]
   },
   {
@@ -73007,6 +74482,11 @@
   {
     "selector": "vocalishealth.com",
     "name": "Vocalis Health",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "vocalishealth.com",
+    "name": "Vocalis Health",
     "reasons": ["f", "i"]
   },
   {
@@ -73047,6 +74527,11 @@
   {
     "selector": "voiceback.ai",
     "name": "Voiceback AI",
+    "reasons": ["h"]
+  },
+  {
+    "selector": "voicefront.ai",
+    "name": "Rep",
     "reasons": ["h"]
   },
   {
@@ -73167,12 +74652,22 @@
   {
     "selector": "voominsurance.com",
     "name": "VOOM Insurance",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "voominsurance.com",
+    "name": "VOOM Insurance",
     "reasons": ["f", "i"]
   },
   {
     "selector": "vootto.com",
     "name": "Vootto",
     "reasons": ["h"]
+  },
+  {
+    "selector": "vorlonsecurity.com",
+    "name": "Vorlon",
+    "reasons": ["f"]
   },
   {
     "selector": "vorlonsecurity.com",
@@ -73385,6 +74880,11 @@
     "reasons": ["h"]
   },
   {
+    "selector": "vxlbio.com",
+    "name": "Vaxil BioTherapeutics",
+    "reasons": ["h"]
+  },
+  {
     "selector": "vyoo.me",
     "name": "Vyoo",
     "reasons": ["h"]
@@ -73501,8 +75001,8 @@
   },
   {
     "selector": "walkme.com",
-    "name": "WalkMe",
-    "reasons": ["f", "i"]
+    "name": "Walkme",
+    "reasons": ["h", "f", "i"]
   },
   {
     "selector": "walkout.co",
@@ -73537,7 +75037,7 @@
   {
     "selector": "walnut.io",
     "name": "Walnut",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "walnut.io",
@@ -74011,8 +75511,8 @@
   },
   {
     "selector": "webpals.com",
-    "name": "Webpals Mobile",
-    "reasons": ["f"]
+    "name": "Webpals Group",
+    "reasons": ["h", "f"]
   },
   {
     "selector": "webselenese.com",
@@ -74127,6 +75627,11 @@
   {
     "selector": "wefi.com",
     "name": "WeFi",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "wefi.com",
+    "name": "WeFi",
     "reasons": ["f", "i"]
   },
   {
@@ -74163,6 +75668,11 @@
     "selector": "weissbeerger.com",
     "name": "BEES Tel Aviv by Weissbeerger",
     "reasons": ["h"]
+  },
+  {
+    "selector": "weka.io",
+    "name": "WEKA",
+    "reasons": ["f"]
   },
   {
     "selector": "weka.io",
@@ -74480,6 +75990,11 @@
     "reasons": ["h"]
   },
   {
+    "selector": "widdit.com",
+    "name": "Widdit",
+    "reasons": ["h"]
+  },
+  {
     "selector": "widemed.com",
     "name": "WideMed Technologies",
     "reasons": ["h"]
@@ -74697,6 +76212,11 @@
   {
     "selector": "wirexsystems.com",
     "name": "WireX Cube",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "wirexsystems.com",
+    "name": "WireX Cube",
     "reasons": ["f", "i"]
   },
   {
@@ -74763,6 +76283,11 @@
     "selector": "wiser-me.com",
     "name": "uiu",
     "reasons": ["h"]
+  },
+  {
+    "selector": "wiser.com",
+    "name": "Wiser Solutions",
+    "reasons": ["f"]
   },
   {
     "selector": "wiser.com",
@@ -74842,12 +76367,22 @@
   {
     "selector": "withconfetti.com",
     "name": "Confetti",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "withconfetti.com",
+    "name": "Confetti",
     "reasons": ["f", "i"]
   },
   {
     "selector": "withfaye.com",
     "name": "Faye",
     "reasons": ["h"]
+  },
+  {
+    "selector": "withfrank.org",
+    "name": "Frank Financial Aid",
+    "reasons": ["f"]
   },
   {
     "selector": "withfrank.org",
@@ -74907,12 +76442,12 @@
   {
     "selector": "wiz.io",
     "name": "Wiz",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "wiz.io",
     "name": "Wiz",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i", "h"]
   },
   {
     "selector": "wizapp.sourceforge.net",
@@ -75202,6 +76737,11 @@
   {
     "selector": "workiz.com",
     "name": "Workiz",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "workiz.com",
+    "name": "Workiz",
     "reasons": ["f", "i"]
   },
   {
@@ -75298,6 +76838,11 @@
     "selector": "wrappin.it",
     "name": "Wrapp",
     "reasons": ["h"]
+  },
+  {
+    "selector": "wristcam.com",
+    "name": "Wristcam",
+    "reasons": ["f"]
   },
   {
     "selector": "wristcam.com",
@@ -75517,6 +77062,11 @@
   {
     "selector": "xmpie.com",
     "name": "XMPie",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "xmpie.com",
+    "name": "XMPie",
     "reasons": ["f", "i"]
   },
   {
@@ -75636,7 +77186,7 @@
   },
   {
     "selector": "xsense.co",
-    "name": "Xsense",
+    "name": "BT9",
     "reasons": ["h"]
   },
   {
@@ -76007,6 +77557,11 @@
   {
     "selector": "ycdmultimedia.com",
     "name": "YCD Multimedia",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "ycdmultimedia.com",
+    "name": "YCD Multimedia",
     "reasons": ["f", "i"]
   },
   {
@@ -76197,6 +77752,11 @@
   {
     "selector": "yodas.com",
     "name": "Yodas.com",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "yodas.com",
+    "name": "Yodas.com",
     "reasons": ["f", "i"]
   },
   {
@@ -76312,12 +77872,12 @@
   {
     "selector": "yotpo.com",
     "name": "Yotpo",
-    "reasons": ["h"]
+    "reasons": ["f"]
   },
   {
     "selector": "yotpo.com",
     "name": "Yotpo",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i", "h"]
   },
   {
     "selector": "yottaenergy.com",
@@ -76337,6 +77897,11 @@
   {
     "selector": "youappi.com",
     "name": "YouAppi",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "youappi.com",
+    "name": "YouAppi",
     "reasons": ["f", "i"]
   },
   {
@@ -76347,6 +77912,11 @@
   {
     "selector": "youffer.com",
     "name": "Youffer",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "youfig.com",
+    "name": "YouFig",
     "reasons": ["f"]
   },
   {
@@ -76532,6 +78102,11 @@
   {
     "selector": "zadara.com",
     "name": "Zadara Storage",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "zadara.com",
+    "name": "Zadara Storage",
     "reasons": ["f", "i"]
   },
   {
@@ -76667,6 +78242,11 @@
   {
     "selector": "zend.com",
     "name": "Zend Technologies",
+    "reasons": ["f"]
+  },
+  {
+    "selector": "zend.com",
+    "name": "Zend Technologies",
     "reasons": ["f", "i"]
   },
   {
@@ -76722,12 +78302,12 @@
   {
     "selector": "zephyrtel.com",
     "name": "PeerApp",
-    "reasons": ["f", "i"]
+    "reasons": ["f"]
   },
   {
     "selector": "zephyrtel.com",
-    "name": "Vasona Networks",
-    "reasons": ["f"]
+    "name": "PeerApp",
+    "reasons": ["f", "i"]
   },
   {
     "selector": "zeraim.com",
@@ -76808,11 +78388,6 @@
     "selector": "zestsecurity.io",
     "name": "ZEST Security",
     "reasons": ["i"]
-  },
-  {
-    "selector": "zesty.co",
-    "name": "Zesty",
-    "reasons": ["h"]
   },
   {
     "selector": "zesty.co",
@@ -76971,7 +78546,7 @@
   },
   {
     "selector": "zmdgroup.com",
-    "name": "ZMD Diagnostics",
+    "name": "Z.M.D. Medical",
     "reasons": ["h"]
   },
   {
@@ -77058,6 +78633,11 @@
     "selector": "zombieworldz.io",
     "name": "Zombie Worldz",
     "reasons": ["i"]
+  },
+  {
+    "selector": "zone7.ai",
+    "name": "Zone7",
+    "reasons": ["f"]
   },
   {
     "selector": "zone7.ai",

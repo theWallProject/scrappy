@@ -1,6 +1,6 @@
 import { ScrappedItemType } from "../../types";
 
-export const manualDeleteNames = ["Corvid", "Tradeos", "ARJeannie Ltd."];
+export const manualDeleteIds = ["corvid", "arjeannie-ltd", "BIT_Affogata"];
 export const manualOverrides: [string, Partial<ScrappedItemType>][] = [
   ["Somite", { tw: "https://x.com/somiteai" }],
   ["Fiverr", { fb: "https://www.facebook.com/Fiverr" }],
