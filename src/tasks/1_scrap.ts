@@ -44,18 +44,27 @@ const filterStages: ScrappingConfig[] = [
       [3540001, 9999999],
     ],
   },
-  // {
-  //   cbSearchUrl:
-  //     "https://www.crunchbase.com/lists/isr-founder/4a567c09-b27f-4192-b60d-116133a09db6/organization.companies",
-  //   reasons: [APIListOfReasons.FounderInIL],
-  //   fileName: "FOUNDER_ISR",
-  //   cbSteps: [
-  //     [1, 30000],
-  //     [30001, 130000],
-  //     [130001, 999999999],
-  //   ],
-  // },
-
+  {
+    cbSearchUrl:
+      "https://www.crunchbase.com/discover/saved/israel-founder-active/a5dfe009-c869-4d34-8b3c-c0213f08056b",
+    reasons: [APIListOfReasons.FounderInIL],
+    fileName: "FOUNDER_ISR",
+    cbSteps: [
+      [1, 150000],
+      [150001, 1200000],
+      [1200001, 999999999],
+    ],
+  },
+  {
+    cbSearchUrl:
+      "https://www.crunchbase.com/discover/saved/israel-investor-active/04acb0ea-daee-4b71-955b-13c6b95a0483",
+    reasons: [APIListOfReasons.InvestorNotFounderInIL],
+    fileName: "INV_NOT_FOUNDER_ISR",
+    cbSteps: [
+      [1, 50000],
+      [50001, 999999999],
+    ],
+  },
   // {
   //   cbSearchUrl:
   //     "https://www.crunchbase.com/lists/berlin-halal-friendly/6dab6829-5be0-4038-a408-edf172fb269a/organization.companies",
