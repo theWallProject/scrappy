@@ -20,7 +20,7 @@ const injectStaticRows = () => {
         name: Name,
         reasons: ["h"],
         ws: Link,
-        id: Name,
+        id: `BIT_${Name}`,
       });
     } else {
       // todo: add satellite office

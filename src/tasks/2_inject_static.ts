@@ -24,7 +24,7 @@ const injectStaticRows = () => {
         name,
         reasons,
         ws: _website,
-        id: name,
+        id: `s_ws_${name}`,
       });
     }
 
@@ -36,7 +36,7 @@ const injectStaticRows = () => {
             reasons,
             li: cleanWebsite(linkedIn),
             ws: "",
-            id: name,
+            id: `s_li_${name}`,
           });
         }
       }
@@ -50,7 +50,7 @@ const injectStaticRows = () => {
             reasons,
             fb: cleanWebsite(facebook),
             ws: "",
-            id: name,
+            id: `s_fb_${name}`,
           });
         }
       }
@@ -64,7 +64,7 @@ const injectStaticRows = () => {
             reasons,
             tw: cleanWebsite(twitter),
             ws: "",
-            id: name,
+            id: `s_tw_${name}`,
           });
         }
       }

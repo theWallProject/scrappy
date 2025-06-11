@@ -5,7 +5,7 @@
       "h"
     ],
     "ws": "https://8fig.io",
-    "id": "8fig"
+    "id": "BIT_8fig"
   },
   {
     "name": "A.Team",
@@ -13,7 +13,7 @@
       "h"
     ],
     "ws": "https://a.team",
-    "id": "A.Team"
+    "id": "BIT_A.Team"
   },
   {
     "name": "Affogata",
@@ -21,7 +21,7 @@
       "h"
     ],
     "ws": "https://affogata.com",
-    "id": "Affogata"
+    "id": "BIT_Affogata"
   },
   {
     "name": "AI21 Labs",
@@ -29,7 +29,7 @@
       "h"
     ],
     "ws": "https://ai21.com",
-    "id": "AI21 Labs"
+    "id": "BIT_AI21 Labs"
   },
   {
     "name": "Aidoc",
@@ -37,7 +37,7 @@
       "h"
     ],
     "ws": "https://aidoc.com",
-    "id": "Aidoc"
+    "id": "BIT_Aidoc"
   },
   {
     "name": "Aligned",
@@ -45,7 +45,7 @@
       "h"
     ],
     "ws": "https://www.alignedup.com/",
-    "id": "Aligned"
+    "id": "BIT_Aligned"
   },
   {
     "name": "Amdocs",
@@ -53,7 +53,7 @@
       "h"
     ],
     "ws": "https://amdocs.com",
-    "id": "Amdocs"
+    "id": "BIT_Amdocs"
   },
   {
     "name": "Anima",
@@ -61,7 +61,7 @@
       "h"
     ],
     "ws": "https://animaapp.com",
-    "id": "Anima"
+    "id": "BIT_Anima"
   },
   {
     "name": "Apiiro",
@@ -69,7 +69,7 @@
       "h"
     ],
     "ws": "https://apiiro.com",
-    "id": "Apiiro"
+    "id": "BIT_Apiiro"
   },
   {
     "name": "Appsflyer",
@@ -77,7 +77,7 @@
       "h"
     ],
     "ws": "https://appsflyer.com",
-    "id": "Appsflyer"
+    "id": "BIT_Appsflyer"
   },
   {
     "name": "Appwrite",
@@ -85,7 +85,7 @@
       "h"
     ],
     "ws": "https://appwrite.io/",
-    "id": "Appwrite"
+    "id": "BIT_Appwrite"
   },
   {
     "name": "Aqua Security",
@@ -93,7 +93,7 @@
       "h"
     ],
     "ws": "https://aquasec.com",
-    "id": "Aqua Security"
+    "id": "BIT_Aqua Security"
   },
   {
     "name": "Axonius",
@@ -101,7 +101,7 @@
       "h"
     ],
     "ws": "https://axonius.com",
-    "id": "Axonius"
+    "id": "BIT_Axonius"
   },
   {
     "name": "Balance",
@@ -109,7 +109,7 @@
       "h"
     ],
     "ws": "https://getbalance.com",
-    "id": "Balance"
+    "id": "BIT_Balance"
   },
   {
     "name": "BigPanda",
@@ -117,7 +117,7 @@
       "h"
     ],
     "ws": "https://bigpanda.com",
-    "id": "BigPanda"
+    "id": "BIT_BigPanda"
   },
   {
     "name": "Blink Ops",
@@ -125,7 +125,7 @@
       "h"
     ],
     "ws": "https://blinkops.com",
-    "id": "Blink Ops"
+    "id": "BIT_Blink Ops"
   },
   {
     "name": "Bob",
@@ -133,7 +133,7 @@
       "h"
     ],
     "ws": "https://hibob.com",
-    "id": "Bob"
+    "id": "BIT_Bob"
   },
   {
     "name": "Bringg",
@@ -141,7 +141,7 @@
       "h"
     ],
     "ws": "https://bringg.com",
-    "id": "Bringg"
+    "id": "BIT_Bringg"
   },
   {
     "name": "Celery",
@@ -149,7 +149,7 @@
       "h"
     ],
     "ws": "https://Celery.cc",
-    "id": "Celery"
+    "id": "BIT_Celery"
   },
   {
     "name": "Chargeflow",
@@ -157,7 +157,7 @@
       "h"
     ],
     "ws": "https://chargeflow.io",
-    "id": "Chargeflow"
+    "id": "BIT_Chargeflow"
   },
   {
     "name": "CheckPoint",
@@ -165,7 +165,7 @@
       "h"
     ],
     "ws": "https://checkpoint.com",
-    "id": "CheckPoint"
+    "id": "BIT_CheckPoint"
   },
   {
     "name": "Claroty",
@@ -173,7 +173,7 @@
       "h"
     ],
     "ws": "https://claroty.com",
-    "id": "Claroty"
+    "id": "BIT_Claroty"
   },
   {
     "name": "Cloudinary",
@@ -181,7 +181,7 @@
       "h"
     ],
     "ws": "https://cloudinary.com/",
-    "id": "Cloudinary"
+    "id": "BIT_Cloudinary"
   },
   {
     "name": "Codium",
@@ -189,7 +189,7 @@
       "h"
     ],
     "ws": "https://codium.ai",
-    "id": "Codium"
+    "id": "BIT_Codium"
   },
   {
     "name": "Connecteam",
@@ -197,7 +197,7 @@
       "h"
     ],
     "ws": "https://connecteam.com",
-    "id": "Connecteam"
+    "id": "BIT_Connecteam"
   },
   {
     "name": "Coralogix",
@@ -205,7 +205,7 @@
       "h"
     ],
     "ws": "https://coralogix.com",
-    "id": "Coralogix"
+    "id": "BIT_Coralogix"
   },
   {
     "name": "CyberArk",
@@ -213,7 +213,7 @@
       "h"
     ],
     "ws": "https://cyberark.com",
-    "id": "CyberArk"
+    "id": "BIT_CyberArk"
   },
   {
     "name": "Cybereason",
@@ -221,7 +221,7 @@
       "h"
     ],
     "ws": "https://cybereason.com",
-    "id": "Cybereason"
+    "id": "BIT_Cybereason"
   },
   {
     "name": "DagsHub",
@@ -229,7 +229,7 @@
       "h"
     ],
     "ws": "https://dagshub.com",
-    "id": "DagsHub"
+    "id": "BIT_DagsHub"
   },
   {
     "name": "Dany",
@@ -237,7 +237,7 @@
       "h"
     ],
     "ws": "https://dany.ai",
-    "id": "Dany"
+    "id": "BIT_Dany"
   },
   {
     "name": "Dealhub",
@@ -245,7 +245,7 @@
       "h"
     ],
     "ws": "https://dealhub.io",
-    "id": "Dealhub"
+    "id": "BIT_Dealhub"
   },
   {
     "name": "Deel",
@@ -253,7 +253,7 @@
       "h"
     ],
     "ws": "https://Deel.com",
-    "id": "Deel"
+    "id": "BIT_Deel"
   },
   {
     "name": "DeepCure",
@@ -261,7 +261,7 @@
       "h"
     ],
     "ws": "https://deepcure.ai",
-    "id": "DeepCure"
+    "id": "BIT_DeepCure"
   },
   {
     "name": "Demoleap",
@@ -269,7 +269,7 @@
       "h"
     ],
     "ws": "https://demoleap.com",
-    "id": "Demoleap"
+    "id": "BIT_Demoleap"
   },
   {
     "name": "Descope",
@@ -277,7 +277,7 @@
       "h"
     ],
     "ws": "https://descope.com",
-    "id": "Descope"
+    "id": "BIT_Descope"
   },
   {
     "name": "Dig Security",
@@ -285,7 +285,7 @@
       "h"
     ],
     "ws": "https://www.dig.security/",
-    "id": "Dig Security"
+    "id": "BIT_Dig Security"
   },
   {
     "name": "Draftboard",
@@ -293,7 +293,7 @@
       "h"
     ],
     "ws": "https://draftboard.com",
-    "id": "Draftboard"
+    "id": "BIT_Draftboard"
   },
   {
     "name": "Droxi.ai",
@@ -301,7 +301,7 @@
       "h"
     ],
     "ws": "https://Droxi.ai",
-    "id": "Droxi.ai"
+    "id": "BIT_Droxi.ai"
   },
   {
     "name": "Elementor",
@@ -309,7 +309,7 @@
       "h"
     ],
     "ws": "https://elementor.com",
-    "id": "Elementor"
+    "id": "BIT_Elementor"
   },
   {
     "name": "Eleos Health",
@@ -317,7 +317,7 @@
       "h"
     ],
     "ws": "https://eleos.health",
-    "id": "Eleos Health"
+    "id": "BIT_Eleos Health"
   },
   {
     "name": "Explorium",
@@ -325,7 +325,7 @@
       "h"
     ],
     "ws": "https://explorium.ai",
-    "id": "Explorium"
+    "id": "BIT_Explorium"
   },
   {
     "name": "Fabric",
@@ -333,7 +333,7 @@
       "h"
     ],
     "ws": "https://getfabric.com",
-    "id": "Fabric"
+    "id": "BIT_Fabric"
   },
   {
     "name": "Finaloop",
@@ -341,7 +341,7 @@
       "h"
     ],
     "ws": "https://www.finaloop.com/",
-    "id": "Finaloop"
+    "id": "BIT_Finaloop"
   },
   {
     "name": "Finout",
@@ -349,7 +349,7 @@
       "h"
     ],
     "ws": "https://finout.io",
-    "id": "Finout"
+    "id": "BIT_Finout"
   },
   {
     "name": "Fintastic",
@@ -357,7 +357,7 @@
       "h"
     ],
     "ws": "https://fintastic.ai",
-    "id": "Fintastic"
+    "id": "BIT_Fintastic"
   },
   {
     "name": "Firebolt",
@@ -365,7 +365,7 @@
       "h"
     ],
     "ws": "https://firebolt.io/",
-    "id": "Firebolt"
+    "id": "BIT_Firebolt"
   },
   {
     "name": "Firefly",
@@ -373,7 +373,7 @@
       "h"
     ],
     "ws": "https://firefly.ai",
-    "id": "Firefly"
+    "id": "BIT_Firefly"
   },
   {
     "name": "Fiverr",
@@ -381,7 +381,7 @@
       "h"
     ],
     "ws": "https://fiverr.com",
-    "id": "Fiverr"
+    "id": "BIT_Fiverr"
   },
   {
     "name": "Forter",
@@ -389,7 +389,7 @@
       "h"
     ],
     "ws": "https://forter.com",
-    "id": "Forter"
+    "id": "BIT_Forter"
   },
   {
     "name": "Frontegg",
@@ -397,7 +397,7 @@
       "h"
     ],
     "ws": "https://frontegg.com",
-    "id": "Frontegg"
+    "id": "BIT_Frontegg"
   },
   {
     "name": "Fundbox",
@@ -405,7 +405,7 @@
       "h"
     ],
     "ws": "https://fundbox.com",
-    "id": "Fundbox"
+    "id": "BIT_Fundbox"
   },
   {
     "name": "FundGuard",
@@ -413,7 +413,7 @@
       "h"
     ],
     "ws": "https://fundguard.com",
-    "id": "FundGuard"
+    "id": "BIT_FundGuard"
   },
   {
     "name": "Gelt",
@@ -421,7 +421,7 @@
       "h"
     ],
     "ws": "https://www.joingelt.com",
-    "id": "Gelt"
+    "id": "BIT_Gelt"
   },
   {
     "name": "Global-e",
@@ -429,7 +429,7 @@
       "h"
     ],
     "ws": "https://global-e.com",
-    "id": "Global-e"
+    "id": "BIT_Global-e"
   },
   {
     "name": "Gloww",
@@ -437,7 +437,7 @@
       "h"
     ],
     "ws": "https://gloww.com",
-    "id": "Gloww"
+    "id": "BIT_Gloww"
   },
   {
     "name": "Gong",
@@ -445,7 +445,7 @@
       "h"
     ],
     "ws": "https://gong.io",
-    "id": "Gong"
+    "id": "BIT_Gong"
   },
   {
     "name": "Graphiti",
@@ -453,7 +453,7 @@
       "h"
     ],
     "ws": "https://graphiti.ai",
-    "id": "Graphiti"
+    "id": "BIT_Graphiti"
   },
   {
     "name": "Groove",
@@ -461,7 +461,7 @@
       "h"
     ],
     "ws": "https://Groove.ooo",
-    "id": "Groove"
+    "id": "BIT_Groove"
   },
   {
     "name": "GrowthSpace",
@@ -469,7 +469,7 @@
       "h"
     ],
     "ws": "https://growthspace.com",
-    "id": "GrowthSpace"
+    "id": "BIT_GrowthSpace"
   },
   {
     "name": "Healthy.io",
@@ -477,7 +477,7 @@
       "h"
     ],
     "ws": "https://healthy.io",
-    "id": "Healthy.io"
+    "id": "BIT_Healthy.io"
   },
   {
     "name": "Honeybook",
@@ -485,7 +485,7 @@
       "h"
     ],
     "ws": "https://honeybook.com",
-    "id": "Honeybook"
+    "id": "BIT_Honeybook"
   },
   {
     "name": "Immunai",
@@ -493,7 +493,7 @@
       "h"
     ],
     "ws": "https://immunai.com",
-    "id": "Immunai"
+    "id": "BIT_Immunai"
   },
   {
     "name": "Imperva",
@@ -501,7 +501,7 @@
       "h"
     ],
     "ws": "https://imperva.com",
-    "id": "Imperva"
+    "id": "BIT_Imperva"
   },
   {
     "name": "Indeitq",
@@ -509,7 +509,7 @@
       "h"
     ],
     "ws": "https://identiq.com",
-    "id": "Indeitq"
+    "id": "BIT_Indeitq"
   },
   {
     "name": "Intail.ai",
@@ -517,7 +517,7 @@
       "h"
     ],
     "ws": "https://intail.ai",
-    "id": "Intail.ai"
+    "id": "BIT_Intail.ai"
   },
   {
     "name": "JFrog",
@@ -525,7 +525,7 @@
       "h"
     ],
     "ws": "https://jfrog.com",
-    "id": "JFrog"
+    "id": "BIT_JFrog"
   },
   {
     "name": "Jifiti",
@@ -533,7 +533,7 @@
       "h"
     ],
     "ws": "https://jifiti.com",
-    "id": "Jifiti"
+    "id": "BIT_Jifiti"
   },
   {
     "name": "K Health",
@@ -541,7 +541,7 @@
       "h"
     ],
     "ws": "https://khealth.com",
-    "id": "K Health"
+    "id": "BIT_K Health"
   },
   {
     "name": "Kaltura",
@@ -549,7 +549,7 @@
       "h"
     ],
     "ws": "https://corp.kaltura.com",
-    "id": "Kaltura"
+    "id": "BIT_Kaltura"
   },
   {
     "name": "Komodor",
@@ -557,7 +557,7 @@
       "h"
     ],
     "ws": "https://komodor.com",
-    "id": "Komodor"
+    "id": "BIT_Komodor"
   },
   {
     "name": "Lightricks",
@@ -565,7 +565,7 @@
       "h"
     ],
     "ws": "https://lightricks.com",
-    "id": "Lightricks"
+    "id": "BIT_Lightricks"
   },
   {
     "name": "Logz.io",
@@ -573,7 +573,7 @@
       "h"
     ],
     "ws": "https://logz.io",
-    "id": "Logz.io"
+    "id": "BIT_Logz.io"
   },
   {
     "name": "Lusha",
@@ -581,7 +581,7 @@
       "h"
     ],
     "ws": "https://lusha.com",
-    "id": "Lusha"
+    "id": "BIT_Lusha"
   },
   {
     "name": "Mapme",
@@ -589,7 +589,7 @@
       "h"
     ],
     "ws": "https://mapme.com",
-    "id": "Mapme"
+    "id": "BIT_Mapme"
   },
   {
     "name": "Melio",
@@ -597,7 +597,7 @@
       "h"
     ],
     "ws": "https://meliopayments.com",
-    "id": "Melio"
+    "id": "BIT_Melio"
   },
   {
     "name": "Mesh Payments",
@@ -605,7 +605,7 @@
       "h"
     ],
     "ws": "https://meshpayments.com",
-    "id": "Mesh Payments"
+    "id": "BIT_Mesh Payments"
   },
   {
     "name": "Mixtiles",
@@ -613,7 +613,7 @@
       "h"
     ],
     "ws": "https://mixtiles.com",
-    "id": "Mixtiles"
+    "id": "BIT_Mixtiles"
   },
   {
     "name": "Monday.com",
@@ -621,7 +621,7 @@
       "h"
     ],
     "ws": "https://monday.com",
-    "id": "Monday.com"
+    "id": "BIT_Monday.com"
   },
   {
     "name": "Monto",
@@ -629,7 +629,7 @@
       "h"
     ],
     "ws": "https://montopay.com",
-    "id": "Monto"
+    "id": "BIT_Monto"
   },
   {
     "name": "myInterview",
@@ -637,7 +637,7 @@
       "h"
     ],
     "ws": "https://myinterview.com",
-    "id": "myInterview"
+    "id": "BIT_myInterview"
   },
   {
     "name": "myQuest",
@@ -645,7 +645,7 @@
       "h"
     ],
     "ws": "https://myquest.co",
-    "id": "myQuest"
+    "id": "BIT_myQuest"
   },
   {
     "name": "Navina",
@@ -653,7 +653,7 @@
       "h"
     ],
     "ws": "https://navina.ai",
-    "id": "Navina"
+    "id": "BIT_Navina"
   },
   {
     "name": "Nexite",
@@ -661,7 +661,7 @@
       "h"
     ],
     "ws": "https://nexite.io",
-    "id": "Nexite"
+    "id": "BIT_Nexite"
   },
   {
     "name": "Nice Systems",
@@ -669,7 +669,7 @@
       "h"
     ],
     "ws": "https://nice.com",
-    "id": "Nice Systems"
+    "id": "BIT_Nice Systems"
   },
   {
     "name": "Noble",
@@ -677,7 +677,7 @@
       "h"
     ],
     "ws": "https://benoblel.io",
-    "id": "Noble"
+    "id": "BIT_Noble"
   },
   {
     "name": "Noname Security",
@@ -685,7 +685,7 @@
       "h"
     ],
     "ws": "https://nonamesecurity.com",
-    "id": "Noname Security"
+    "id": "BIT_Noname Security"
   },
   {
     "name": "Optimove",
@@ -693,7 +693,7 @@
       "h"
     ],
     "ws": "https://optimove.com",
-    "id": "Optimove"
+    "id": "BIT_Optimove"
   },
   {
     "name": "Pagaya",
@@ -701,7 +701,7 @@
       "h"
     ],
     "ws": "https://pagaya.com",
-    "id": "Pagaya"
+    "id": "BIT_Pagaya"
   },
   {
     "name": "Panoray",
@@ -709,7 +709,7 @@
       "h"
     ],
     "ws": "https://panorays.com",
-    "id": "Panoray"
+    "id": "BIT_Panoray"
   },
   {
     "name": "Papaya Global",
@@ -717,7 +717,7 @@
       "h"
     ],
     "ws": "https://papayaglobal.com",
-    "id": "Papaya Global"
+    "id": "BIT_Papaya Global"
   },
   {
     "name": "PayEm",
@@ -725,7 +725,7 @@
       "h"
     ],
     "ws": "https://payem.co",
-    "id": "PayEm"
+    "id": "BIT_PayEm"
   },
   {
     "name": "PDQ",
@@ -733,7 +733,7 @@
       "h"
     ],
     "ws": "https://prettydamnquick.com",
-    "id": "PDQ"
+    "id": "BIT_PDQ"
   },
   {
     "name": "PeerSpot",
@@ -741,7 +741,7 @@
       "h"
     ],
     "ws": "https://peerspot.com",
-    "id": "PeerSpot"
+    "id": "BIT_PeerSpot"
   },
   {
     "name": "Permit.io",
@@ -749,7 +749,7 @@
       "h"
     ],
     "ws": "https://permit.io",
-    "id": "Permit.io"
+    "id": "BIT_Permit.io"
   },
   {
     "name": "Placer.ai",
@@ -757,7 +757,7 @@
       "h"
     ],
     "ws": "https://Placer.ai",
-    "id": "Placer.ai"
+    "id": "BIT_Placer.ai"
   },
   {
     "name": "Powtoon",
@@ -765,7 +765,7 @@
       "h"
     ],
     "ws": "https://powtoon.com",
-    "id": "Powtoon"
+    "id": "BIT_Powtoon"
   },
   {
     "name": "Qwak",
@@ -773,7 +773,7 @@
       "h"
     ],
     "ws": "https://qwak.com/",
-    "id": "Qwak"
+    "id": "BIT_Qwak"
   },
   {
     "name": "Rapyd",
@@ -781,7 +781,7 @@
       "h"
     ],
     "ws": "https://rapyd.net",
-    "id": "Rapyd"
+    "id": "BIT_Rapyd"
   },
   {
     "name": "Receive",
@@ -789,7 +789,7 @@
       "h"
     ],
     "ws": "https://www.nowreceive.com/",
-    "id": "Receive"
+    "id": "BIT_Receive"
   },
   {
     "name": "Regatta Data",
@@ -797,7 +797,7 @@
       "h"
     ],
     "ws": "https://regatta.dev",
-    "id": "Regatta Data"
+    "id": "BIT_Regatta Data"
   },
   {
     "name": "Riskified",
@@ -805,7 +805,7 @@
       "h"
     ],
     "ws": "https://riskified.com",
-    "id": "Riskified"
+    "id": "BIT_Riskified"
   },
   {
     "name": "Ritual",
@@ -813,7 +813,7 @@
       "h"
     ],
     "ws": "https://heyritual.com",
-    "id": "Ritual"
+    "id": "BIT_Ritual"
   },
   {
     "name": "Riverside.fm",
@@ -821,7 +821,7 @@
       "h"
     ],
     "ws": "https://riverside.fm",
-    "id": "Riverside.fm"
+    "id": "BIT_Riverside.fm"
   },
   {
     "name": "Rivery",
@@ -829,7 +829,7 @@
       "h"
     ],
     "ws": "https://rivery.io",
-    "id": "Rivery"
+    "id": "BIT_Rivery"
   },
   {
     "name": "Rupert",
@@ -837,7 +837,7 @@
       "h"
     ],
     "ws": "https://hirupert.co",
-    "id": "Rupert"
+    "id": "BIT_Rupert"
   },
   {
     "name": "Salt Security",
@@ -845,7 +845,7 @@
       "h"
     ],
     "ws": "https://salt.security",
-    "id": "Salt Security"
+    "id": "BIT_Salt Security"
   },
   {
     "name": "Salto",
@@ -853,7 +853,7 @@
       "h"
     ],
     "ws": "https://salto.io",
-    "id": "Salto"
+    "id": "BIT_Salto"
   },
   {
     "name": "Sentra",
@@ -861,7 +861,7 @@
       "h"
     ],
     "ws": "https://sentra.io",
-    "id": "Sentra"
+    "id": "BIT_Sentra"
   },
   {
     "name": "Silverfort",
@@ -869,7 +869,7 @@
       "h"
     ],
     "ws": "https://silverfort.com",
-    "id": "Silverfort"
+    "id": "BIT_Silverfort"
   },
   {
     "name": "Similarweb",
@@ -877,7 +877,7 @@
       "h"
     ],
     "ws": "https://similarweb.com",
-    "id": "Similarweb"
+    "id": "BIT_Similarweb"
   },
   {
     "name": "Sisense",
@@ -885,7 +885,7 @@
       "h"
     ],
     "ws": "https://sisense.com",
-    "id": "Sisense"
+    "id": "BIT_Sisense"
   },
   {
     "name": "Snyk",
@@ -893,7 +893,7 @@
       "h"
     ],
     "ws": "https://snyk.io",
-    "id": "Snyk"
+    "id": "BIT_Snyk"
   },
   {
     "name": "Stuff That Works",
@@ -901,7 +901,7 @@
       "h"
     ],
     "ws": "https://www.stuffthatworks.health/",
-    "id": "Stuff That Works"
+    "id": "BIT_Stuff That Works"
   },
   {
     "name": "Substrata",
@@ -909,7 +909,7 @@
       "h"
     ],
     "ws": "https://substrata.me",
-    "id": "Substrata"
+    "id": "BIT_Substrata"
   },
   {
     "name": "Sweep",
@@ -917,7 +917,7 @@
       "h"
     ],
     "ws": "https://sweep.io",
-    "id": "Sweep"
+    "id": "BIT_Sweep"
   },
   {
     "name": "Swimm",
@@ -925,7 +925,7 @@
       "h"
     ],
     "ws": "https://Swimm.io",
-    "id": "Swimm"
+    "id": "BIT_Swimm"
   },
   {
     "name": "Talon",
@@ -933,7 +933,7 @@
       "h"
     ],
     "ws": "https://talon-sec.com",
-    "id": "Talon"
+    "id": "BIT_Talon"
   },
   {
     "name": "TimeOS",
@@ -941,7 +941,7 @@
       "h"
     ],
     "ws": "https://timeos.ai",
-    "id": "TimeOS"
+    "id": "BIT_TimeOS"
   },
   {
     "name": "Tipalti",
@@ -949,7 +949,7 @@
       "h"
     ],
     "ws": "https://tipalti.com",
-    "id": "Tipalti"
+    "id": "BIT_Tipalti"
   },
   {
     "name": "Tolstoy",
@@ -957,7 +957,7 @@
       "h"
     ],
     "ws": "https://tolstoy.com",
-    "id": "Tolstoy"
+    "id": "BIT_Tolstoy"
   },
   {
     "name": "Trendemon",
@@ -965,7 +965,7 @@
       "h"
     ],
     "ws": "https://trendemon.com",
-    "id": "Trendemon"
+    "id": "BIT_Trendemon"
   },
   {
     "name": "Trigo",
@@ -973,7 +973,7 @@
       "h"
     ],
     "ws": "https://trigoretail.com",
-    "id": "Trigo"
+    "id": "BIT_Trigo"
   },
   {
     "name": "TripleWhale",
@@ -981,7 +981,7 @@
       "h"
     ],
     "ws": "https://triplewhale.com",
-    "id": "TripleWhale"
+    "id": "BIT_TripleWhale"
   },
   {
     "name": "Trullion",
@@ -989,7 +989,7 @@
       "h"
     ],
     "ws": "https://trullion.com",
-    "id": "Trullion"
+    "id": "BIT_Trullion"
   },
   {
     "name": "Tufin",
@@ -997,7 +997,7 @@
       "h"
     ],
     "ws": "https://tufin.com",
-    "id": "Tufin"
+    "id": "BIT_Tufin"
   },
   {
     "name": "Unit",
@@ -1005,7 +1005,7 @@
       "h"
     ],
     "ws": "https://unit.co",
-    "id": "Unit"
+    "id": "BIT_Unit"
   },
   {
     "name": "Verbit",
@@ -1013,7 +1013,7 @@
       "h"
     ],
     "ws": "https://verbit.ai",
-    "id": "Verbit"
+    "id": "BIT_Verbit"
   },
   {
     "name": "Walkme",
@@ -1021,7 +1021,7 @@
       "h"
     ],
     "ws": "https://walkme.com",
-    "id": "Walkme"
+    "id": "BIT_Walkme"
   },
   {
     "name": "Walnut",
@@ -1029,7 +1029,7 @@
       "h"
     ],
     "ws": "https://walnut.io",
-    "id": "Walnut"
+    "id": "BIT_Walnut"
   },
   {
     "name": "Wilco",
@@ -1037,7 +1037,7 @@
       "h"
     ],
     "ws": "http://trywilco.com/",
-    "id": "Wilco"
+    "id": "BIT_Wilco"
   },
   {
     "name": "Wix",
@@ -1045,7 +1045,7 @@
       "h"
     ],
     "ws": "https://wix.com",
-    "id": "Wix"
+    "id": "BIT_Wix"
   },
   {
     "name": "Wiz",
@@ -1053,7 +1053,7 @@
       "h"
     ],
     "ws": "https://wiz.io",
-    "id": "Wiz"
+    "id": "BIT_Wiz"
   },
   {
     "name": "Yotpo",
@@ -1061,7 +1061,7 @@
       "h"
     ],
     "ws": "https://yotpo.com",
-    "id": "Yotpo"
+    "id": "BIT_Yotpo"
   },
   {
     "name": "Zesty",
@@ -1069,6 +1069,6 @@
       "h"
     ],
     "ws": "https://zesty.co",
-    "id": "Zesty"
+    "id": "BIT_Zesty"
   }
 ]
