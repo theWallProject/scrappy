@@ -4,18 +4,26 @@ import { getMainDomain } from "@theWallProject/addonCommon";
 import { APIScrapperFileDataSchema } from "../types";
 import { log, cleanWebsite, error } from "../helper";
 import { manualDeleteIds, manualOverrides } from "./manual_resolve/duplicate";
-import MERGED_CB from "../../results/2_merged/1_MERGED_CB.json";
+// import MERGED_CB from "../../results/2_merged/1_MERGED_CB.json";
 
 const folderPath = path.join(__dirname, "../../results/1_batches/static");
+const mergedCBPath = path.join(
+  __dirname,
+  "../../results/2_merged/1_MERGED_CB.json",
+);
 
 const outputFilePath = path.join(
   __dirname,
   "../../results/2_merged/2_MERGED_ALL.json",
 );
 
-let combinedArray = APIScrapperFileDataSchema.parse(MERGED_CB);
-
 const loadJsonFiles = (folderPath: string) => {
+  const mergedCBContent = fs.readFileSync(mergedCBPath, "utf-8");
+
+  let combinedArray = APIScrapperFileDataSchema.parse(
+    JSON.parse(mergedCBContent),
+  );
+
   const files = fs
     .readdirSync(folderPath)
     .filter((file) => file.endsWith(".json"));
