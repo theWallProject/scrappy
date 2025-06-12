@@ -10,6 +10,17 @@ const ScrappedItemSchema = z.object({
   ws: z.string().optional(),
   fb: z.string().optional(),
   tw: z.string().optional(),
+  stock_symbol: z.string().optional(),
+  stock_exchange_symbol: z.string().optional(),
+  acquirer_identifier: z
+    .array(
+      z.object({
+        name: z.string(),
+        link: z.string().url(),
+      }),
+    )
+    .optional(),
+  hq_postal_code: z.string().optional(),
   founderIds: z
     .array(
       z.object({

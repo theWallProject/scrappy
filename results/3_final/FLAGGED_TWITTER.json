@@ -1454,13 +1454,6 @@
     ]
   },
   {
-    "selector": "AlSorag",
-    "name": "Al-Sorag",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
     "selector": "alacritaconsult",
     "name": "Alacrita",
     "reasons": [
@@ -1477,13 +1470,6 @@
   {
     "selector": "AlbeCredit",
     "name": "Albe",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
-    "selector": "albertaimktg",
-    "name": "Albert",
     "reasons": [
       "h"
     ]
@@ -4301,6 +4287,13 @@
     ]
   },
   {
+    "selector": "bbr_saatchi",
+    "name": "Baumann Ber Rivnay Saatchi & Saatchi",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "BaxoAR",
     "name": "Baxo",
     "reasons": [
@@ -5311,13 +5304,6 @@
   {
     "selector": "blackblot",
     "name": "Blackblot",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
-    "selector": "blackboardvfx",
-    "name": "BlackBoard Studios",
     "reasons": [
       "h"
     ]
@@ -10269,6 +10255,13 @@
     ]
   },
   {
+    "selector": "d_ledTech",
+    "name": "D-Led",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "DMarsAnalog",
     "name": "D-MARS",
     "reasons": [
@@ -10376,6 +10369,13 @@
   {
     "selector": "danilevycomm",
     "name": "Dani Levy Communications",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "danitpeleg3d",
+    "name": "Danit Peleg",
     "reasons": [
       "h"
     ]
@@ -11761,6 +11761,14 @@
     ]
   },
   {
+    "selector": "dreamhubai",
+    "name": "Dreamhub",
+    "reasons": [
+      "f",
+      "i"
+    ]
+  },
+  {
     "selector": "dreamsmagicltd",
     "name": "Dreams and Magic",
     "reasons": [
@@ -11819,13 +11827,6 @@
   {
     "selector": "droidsecurity",
     "name": "DroidSecurity",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
-    "selector": "dropicomobile",
-    "name": "Dropico Mobile",
     "reasons": [
       "h"
     ]
@@ -13465,13 +13466,6 @@
     ]
   },
   {
-    "selector": "everplatform",
-    "name": "Ever",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
     "selector": "evercteam",
     "name": "EverC",
     "reasons": [
@@ -13835,13 +13829,6 @@
   {
     "selector": "exxtract",
     "name": "Exxtract Innovation",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
-    "selector": "eyaldror",
-    "name": "Eyal Dror Consulting",
     "reasons": [
       "h"
     ]
@@ -15337,7 +15324,7 @@
     ]
   },
   {
-    "selector": "FortePlatform",
+    "selector": "ForteProtocol",
     "name": "Forte",
     "reasons": [
       "i"
@@ -17180,13 +17167,6 @@
   {
     "selector": "gottexswim",
     "name": "Gottex Swimwear Brands",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
-    "selector": "Israelgov",
-    "name": "Government ICT Authority",
     "reasons": [
       "h"
     ]
@@ -19516,13 +19496,6 @@
     ]
   },
   {
-    "selector": "IMNASolutions",
-    "name": "IMNA Solutions Israel",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
     "selector": "imonomy",
     "name": "Imonomy Interactive",
     "reasons": [
@@ -20739,13 +20712,6 @@
     ]
   },
   {
-    "selector": "israelexport",
-    "name": "Israel Export Institute",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
     "selector": "israel_habitat",
     "name": "Israel Habitat",
     "reasons": [
@@ -21247,13 +21213,6 @@
     "name": "JAGO",
     "reasons": [
       "f"
-    ]
-  },
-  {
-    "selector": "jammable",
-    "name": "Jammable",
-    "reasons": [
-      "h"
     ]
   },
   {
@@ -24453,13 +24412,6 @@
     ]
   },
   {
-    "selector": "madskillgames",
-    "name": "Madskil Gaming",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
     "selector": "madyzine",
     "name": "Madyzine",
     "reasons": [
@@ -24962,6 +24914,13 @@
     "name": "Mawari",
     "reasons": [
       "i"
+    ]
+  },
+  {
+    "selector": "maxsecurityltd",
+    "name": "MAX Security",
+    "reasons": [
+      "h"
     ]
   },
   {
@@ -27922,6 +27881,13 @@
     ]
   },
   {
+    "selector": "nextvision_com",
+    "name": "NextVision Stabilized Systems",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "NexusMutual",
     "name": "Nexus Mutual",
     "reasons": [
@@ -28165,13 +28131,6 @@
     "name": "Noname Security",
     "reasons": [
       "f"
-    ]
-  },
-  {
-    "selector": "NooBaaStorage",
-    "name": "NooBaa",
-    "reasons": [
-      "h"
     ]
   },
   {
@@ -31266,13 +31225,6 @@
     ]
   },
   {
-    "selector": "playform2",
-    "name": "Playform",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
     "selector": "playgammon",
     "name": "PlayGem",
     "reasons": [
@@ -31492,13 +31444,6 @@
   {
     "selector": "pointgrab",
     "name": "PointGrab",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
-    "selector": "pointsofyou",
-    "name": "Points of You",
     "reasons": [
       "h"
     ]
@@ -32244,6 +32189,13 @@
     "name": "Provision-ISR",
     "reasons": [
       "h"
+    ]
+  },
+  {
+    "selector": "proximafusion",
+    "name": "Proxima Fusion",
+    "reasons": [
+      "i"
     ]
   },
   {
@@ -35583,9 +35535,10 @@
   },
   {
     "selector": "sedricai",
-    "name": "Sedric.ai",
+    "name": "Sedric",
     "reasons": [
-      "h"
+      "f",
+      "i"
     ]
   },
   {
@@ -39582,6 +39535,13 @@
     ]
   },
   {
+    "selector": "SWYFTaerotech",
+    "name": "SWYFT Aeronautical Technology Ltd.",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "israelsyfan",
     "name": "Syfan",
     "reasons": [
@@ -40268,7 +40228,7 @@
     "selector": "tastewiseai",
     "name": "Tastewise",
     "reasons": [
-      "h"
+      "f"
     ]
   },
   {
@@ -40359,13 +40319,6 @@
   {
     "selector": "kramerniels",
     "name": "Team Niels",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
-    "selector": "team_stefansky",
-    "name": "Team Stefansky",
     "reasons": [
       "h"
     ]
@@ -40520,13 +40473,6 @@
   {
     "selector": "telavivdoctor",
     "name": "Tel Aviv Doctor",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
-    "selector": "TelAviv",
-    "name": "Tel Aviv Global",
     "reasons": [
       "h"
     ]
@@ -41161,13 +41107,6 @@
     "name": "The SimplyCity",
     "reasons": [
       "f"
-    ]
-  },
-  {
-    "selector": "smmgirl",
-    "name": "The Social Fairy",
-    "reasons": [
-      "h"
     ]
   },
   {
@@ -42406,6 +42345,13 @@
   {
     "selector": "LtdTriple",
     "name": "Triple A Logistics and Freight Forwarding",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "illustrations_d",
+    "name": "Triple D Illustrations",
     "reasons": [
       "h"
     ]
@@ -45758,13 +45704,6 @@
     ]
   },
   {
-    "selector": "WolfPrize_",
-    "name": "Wolf Foundation",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
     "selector": "wolflo",
     "name": "Wolflo",
     "reasons": [
@@ -46580,13 +46519,6 @@
   {
     "selector": "youmegoldjewel",
     "name": "youme Gold Jewelry",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
-    "selector": "yourmovetp",
-    "name": "YourMove",
     "reasons": [
       "h"
     ]

@@ -382,6 +382,17 @@ async function processTable(
               "—",
               "",
             ),
+            stock_symbol: getData("[data-columnid=stock_symbol]").replace(
+              "—",
+              "",
+            ),
+            hq_postal_code: getData("[data-columnid=hq_postal_code]").replace(
+              "—",
+              "",
+            ),
+            stock_exchange_symbol: getData(
+              "[data-columnid=stock_exchange_symbol]",
+            ).replace("—", ""),
             industries: getLinks("[data-columnid=categories] a").map(
               (link) => link.name,
             ),
