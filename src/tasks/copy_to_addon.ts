@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import { log } from "../helper";
 
-const sourceFolder = path.join(__dirname, `../../results/3_final`);
+const sourceFolder = path.join(__dirname, `../../results/3_networks`);
 const targetFolder = path.join(__dirname, `../../../addon/src/db/`);
 
 export const run = async () => {

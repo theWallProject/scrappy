@@ -136,7 +136,7 @@ const extractSocialLinks = (data: ScrappedFileType) => {
     linkedinFlagged.sort((a, b) => a.name.localeCompare(b.name)),
     path.join(
       __dirname,
-      `../../results/3_final/${DBFileNames.FLAGGED_LI_COMPANY}.json`,
+      `../../results/3_networks/${DBFileNames.FLAGGED_LI_COMPANY}.json`,
     ),
   );
 
@@ -144,7 +144,7 @@ const extractSocialLinks = (data: ScrappedFileType) => {
     facebookFlagged.sort((a, b) => a.name.localeCompare(b.name)),
     path.join(
       __dirname,
-      `../../results/3_final/${DBFileNames.FLAGGED_FACEBOOK}.json`,
+      `../../results/3_networks/${DBFileNames.FLAGGED_FACEBOOK}.json`,
     ),
   );
 
@@ -152,7 +152,7 @@ const extractSocialLinks = (data: ScrappedFileType) => {
     twitterFlagged.sort((a, b) => a.name.localeCompare(b.name)),
     path.join(
       __dirname,
-      `../../results/3_final/${DBFileNames.FLAGGED_TWITTER}.json`,
+      `../../results/3_networks/${DBFileNames.FLAGGED_TWITTER}.json`,
     ),
   );
 

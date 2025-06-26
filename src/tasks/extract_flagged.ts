@@ -11,7 +11,7 @@ import { error, log, warn } from "../helper";
 
 const outputFilePath = path.join(
   __dirname,
-  `../../results/3_final/${DBFileNames.FLAGGED}.json`,
+  `../../results/3_networks/${DBFileNames.FLAGGED}.json`,
 );
 
 export const run = async (merged: ScrappedFileType) => {
