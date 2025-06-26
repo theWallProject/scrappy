@@ -6,7 +6,7 @@ import { run as genStatic } from "./tasks/gen_static";
 import { run as genStaticBIT } from "./tasks/gen_buyIsraeliTech";
 import { run as validate } from "./tasks/validate";
 import { run as extractSocial } from "./tasks/extract_social";
-import { run as extractFlagged } from "./tasks/extract_flagged";
+import { run as extractWebsites } from "./tasks/extract_websites";
 import { run as copyToAddon } from "./tasks/copy_to_addon";
 import inquirer from "inquirer";
 
@@ -61,7 +61,7 @@ const main = async () => {
   await extractSocial(sorted);
 
   log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 7: Extracting Domains...");
-  await extractFlagged(sorted);
+  await extractWebsites(sorted);
 
   if (shouldCopyToAddon) {
     log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 8: Copy to Addon...");
