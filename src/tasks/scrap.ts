@@ -3,14 +3,17 @@ import fs from "fs";
 import path from "path";
 import { format } from "prettier";
 import { ScrappedItemType } from "../types";
-import { APIListOfReasons } from "@theWallProject/addonCommon";
+import {
+  APIListOfReasons,
+  valuesOfListOfReasons,
+} from "@theWallProject/addonCommon";
 import { error, log, warn } from "../helper";
 import dotenv from "dotenv";
 
 type ScrappingConfig = {
   cbSearchUrl: string;
   // cbRanges: [string, string][];
-  reasons: APIListOfReasons[];
+  reasons: valuesOfListOfReasons[];
   fileName: string;
   cbSteps: [number, number][];
 };

@@ -1,11 +1,11 @@
-import { ReasonsSchema } from "@theWallProject/addonCommon";
+import { APIListOfReasonsSchema } from "@theWallProject/addonCommon";
 import { z } from "zod";
 
 const ScrappedItemSchema = z.object({
   name: z.string(),
   id: z.string(),
   cbLink: z.string().optional(),
-  reasons: ReasonsSchema,
+  reasons: z.array(APIListOfReasonsSchema),
   li: z.string().optional(),
   ws: z.string().optional(),
   fb: z.string().optional(),
@@ -64,7 +64,7 @@ const ScrappedItemSchema = z.object({
 export const APIScrapperFileDataSchema = z.array(ScrappedItemSchema);
 
 export const ManualItemSchema = z.object({
-  reasons: ReasonsSchema,
+  reasons: z.array(APIListOfReasonsSchema),
   name: z.string().min(1, { message: "String cannot be empty" }),
   li: z.array(z.string()).optional(),
   ws: z.array(z.string()).min(1, { message: "String cannot be empty" }),
