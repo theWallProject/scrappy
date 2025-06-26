@@ -180,8 +180,6 @@ const loadJsonFiles = (folderPath: string) => {
   });
 
   const manuallyUpdatedArray = deDubeArray.map((row) => {
-    const result = manualOverrides.find(([name]) => name === row.name);
-
     row.tw = row.tw
       ?.replace("www.twitter.com", "x.com")
       ?.replace("twitter.com", "x.com");
@@ -191,6 +189,8 @@ const loadJsonFiles = (folderPath: string) => {
     if (row.ws) {
       row.ws = getMainDomain(row.ws);
     }
+
+    const result = manualOverrides.find(([name]) => name === row.name);
 
     if (result) {
       log(`Manually updated ${row.name}`);
