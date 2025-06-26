@@ -7,6 +7,7 @@ import { run as genStaticBIT } from "./tasks/gen_buyIsraeliTech";
 import { run as validate } from "./tasks/validate";
 import { run as extractSocial } from "./tasks/extract_social";
 import { run as extractWebsites } from "./tasks/extract_websites";
+import { run as final } from "./tasks/final";
 import { run as copyToAddon } from "./tasks/copy_to_addon";
 import inquirer from "inquirer";
 
@@ -63,13 +64,16 @@ const main = async () => {
   log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 7: Extracting Domains...");
   await extractWebsites(sorted);
 
+  log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 8: Generate final DB file...");
+  await final();
+
   if (shouldCopyToAddon) {
-    log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 8: Copy to Addon...");
+    log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 9: Copy to Addon...");
     await copyToAddon();
   }
 
   if (shouldValidate) {
-    log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 9: Validating URLs...");
+    log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 10: Validating URLs...");
     await validate();
   }
 };
