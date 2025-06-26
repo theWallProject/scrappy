@@ -71,6 +71,7 @@ export const run = async (merged: ScrappedFileType) => {
     // }
     const previousRows = duplicates[domain];
     const websiteResult = {
+      id: row.id,
       selector: domain,
       name: row.name,
       reasons: row.reasons,

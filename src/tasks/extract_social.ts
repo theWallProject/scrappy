@@ -26,7 +26,7 @@ const extractSocialLinks = (data: ScrappedFileType) => {
   const twitterMap: { [key: string]: boolean } = {};
 
   data.forEach((row) => {
-    const { name, ws, li, fb, tw, reasons } = row;
+    const { name, ws, li, fb, tw, reasons, id } = row;
 
     // if (namesMap[name]) {
     //   error(`Duplicate name [social]: ${row.name}`);
@@ -56,6 +56,7 @@ const extractSocialLinks = (data: ScrappedFileType) => {
           linkedinFlagged.push({
             selector: result,
             name: name,
+            id: row.id,
             reasons: reasons,
           });
         }
@@ -93,6 +94,7 @@ const extractSocialLinks = (data: ScrappedFileType) => {
           } else {
             fbMap[result] = true;
             facebookFlagged.push({
+              id: id,
               selector: result,
               name: name,
               reasons: reasons,
@@ -121,6 +123,7 @@ const extractSocialLinks = (data: ScrappedFileType) => {
           twitterMap[result] = true;
 
           twitterFlagged.push({
+            id: row.id,
             selector: result,
             name: row.name,
             reasons: row.reasons,
