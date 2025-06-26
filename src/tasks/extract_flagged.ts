@@ -96,6 +96,7 @@ export const run = async (merged: ScrappedFileType) => {
     }
   }
 
+  // to merge different reasons
   for (const [domain, rows] of Object.entries(duplicates)) {
     if (rows.length > 1) {
       warn(`Duplicate flagged domain: ${domain}`);
