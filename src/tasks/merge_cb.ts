@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import { ScrappedItemType, APIScrapperFileDataSchema } from "../types";
 import { log, warn } from "../helper";
+
 const folderPath = path.join(__dirname, "../../results/1_batches/cb");
 
 const outputFilePath = path.join(

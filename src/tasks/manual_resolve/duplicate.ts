@@ -13,4 +13,5 @@ export const manualOverrides: [string, Partial<ScrappedItemType>][] = [
     "Od Podcast",
     { li: "https://www.linkedin.com/company/guykatsovichpodcast", ws: "" },
   ],
+  ["Metis Technologies", { tw: "", fb: "" }],
 ];

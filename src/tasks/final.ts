@@ -7,6 +7,8 @@ import {
   FinalDBFileType,
 } from "@theWallProject/addonCommon";
 import { z } from "zod";
+import alternatives from "../../src/static_data/alternatives.json";
+
 const folderPath = path.join(__dirname, "../../results/3_networks");
 
 const outputFilePath = path.join(
@@ -56,6 +58,17 @@ const loadJsonFiles = (folderPath: string) => {
 
   log(`Combined data has ${Object.keys(idRecord).length} unique ids`);
   combinedArray = Object.values(idRecord);
+
+  combinedArray = combinedArray.map((item) => {
+    // @ts-expect-error -- ok here
+    const alt = alternatives[item.id];
+
+    if (alt) {
+      item.alt = alt;
+    }
+
+    return item;
+  });
 
   const sortedArray = combinedArray.sort((a, b) => a.n.localeCompare(b.n));
 

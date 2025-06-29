@@ -1,7 +1,7 @@
 import { APIListOfReasonsSchema } from "@theWallProject/addonCommon";
 import { z } from "zod";
 
-const ScrappedItemSchema = z.object({
+export const ScrappedItemSchema = z.object({
   name: z.string(),
   id: z.string(),
   cbLink: z.string().optional(),

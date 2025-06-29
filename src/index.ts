@@ -8,6 +8,7 @@ import { run as validate } from "./tasks/validate";
 import { run as extractSocial } from "./tasks/extract_social";
 import { run as extractWebsites } from "./tasks/extract_websites";
 import { run as final } from "./tasks/final";
+import { run as alternativesReport } from "./tasks/alternatives_report";
 import { run as copyToAddon } from "./tasks/copy_to_addon";
 import inquirer from "inquirer";
 
@@ -67,13 +68,16 @@ const main = async () => {
   log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 8: Generate final DB file...");
   await final();
 
+  log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 9: Show alternatives report...");
+  await alternativesReport();
+
   if (shouldCopyToAddon) {
-    log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 9: Copy to Addon...");
+    log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 10: Copy to Addon...");
     await copyToAddon();
   }
 
   if (shouldValidate) {
-    log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 10: Validating URLs...");
+    log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 11: Validating URLs...");
     await validate();
   }
 };
