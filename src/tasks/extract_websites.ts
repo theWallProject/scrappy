@@ -70,13 +70,14 @@ export const run = async (merged: ScrappedFileType) => {
     //   // log(`Website Domain extracted ${website} => ${domain}`);
     // }
     const previousRows = duplicates[domain];
+
     const websiteResult = {
       id: row.id,
       selector: domain,
       name: row.name,
       reasons: row.reasons,
+      ...(row.stock_symbol ? { s: row.stock_symbol } : {}),
     };
-
     if (Array.isArray(previousRows)) {
       // error(`Duplicate domain [flagged]: ${domain} of website ${website}`);
       // const isDuplicate = previousRows.some(

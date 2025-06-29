@@ -381,7 +381,8 @@
     "id": "dassault",
     "selector": "3ds.com",
     "name": "Dassault Systemes",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "DSY"
   },
   {
     "id": "3dsellers",
@@ -705,7 +706,8 @@
     "id": "89bio",
     "selector": "89bio.com",
     "name": "89bio",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "ETNB"
   },
   {
     "id": "8alert",
@@ -783,7 +785,8 @@
     "id": "ai-conversation-systems",
     "selector": "a-i.com",
     "name": "Ai Conversation Systems",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "AICS"
   },
   {
     "id": "a-love",
@@ -843,7 +846,8 @@
     "id": "a2z-technologies-canada",
     "selector": "a2zas.com",
     "name": "A2Z Advanced solutions",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "AZ"
   },
   {
     "id": "aa-consulting",
@@ -1023,7 +1027,8 @@
     "id": "absci",
     "selector": "absci.com",
     "name": "Absci",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "ABSI"
   },
   {
     "id": "pi-telecom-israel",
@@ -1359,7 +1364,8 @@
     "id": "actelis-networks",
     "selector": "actelis.com",
     "name": "Actelis Networks",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "ASNS"
   },
   {
     "id": "actics-medical",
@@ -1539,7 +1545,8 @@
     "id": "makhteshim-agan-industries-ltd",
     "selector": "adama.com",
     "name": "ADAMA Agricultural Solutions",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "200553"
   },
   {
     "id": "adap-tv",
@@ -1617,7 +1624,8 @@
     "id": "adcore",
     "selector": "adcore.com",
     "name": "ADCORE",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ADCO"
   },
   {
     "id": "adcytherix",
@@ -1689,7 +1697,8 @@
     "id": "adicet-bio",
     "selector": "adicetbio.com",
     "name": "Adicet Bio",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "ACET"
   },
   {
     "id": "adience",
@@ -1701,7 +1710,8 @@
     "id": "adika-style",
     "selector": "adika.com",
     "name": "Adika Style",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ADKA"
   },
   {
     "id": "adin-dental-implant-systems",
@@ -2115,7 +2125,8 @@
     "id": "dror-orthodesign-aerodentis",
     "selector": "aerodentis.com",
     "name": "Dror Ortho-Design",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "DROR"
   },
   {
     "id": "aerodrome-443e",
@@ -2493,7 +2504,8 @@
     "id": "agora-io",
     "selector": "agora.io",
     "name": "Agora.io",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "API"
   },
   {
     "id": "agora-real-estate-technologies",
@@ -3003,7 +3015,8 @@
     "id": "airtouch-6faf",
     "selector": "airtouchsolar.com",
     "name": "Airtouch",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ARTS"
   },
   {
     "id": "airvrix",
@@ -3225,13 +3238,15 @@
     "id": "safe-t",
     "selector": "alarum.io",
     "name": "Alarum Technologies",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ALAR"
   },
   {
     "id": "albaad-massuot-yitzhak",
     "selector": "albaad.com",
     "name": "Albaad",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ALBA"
   },
   {
     "id": "albarius",
@@ -3279,7 +3294,8 @@
     "id": "alcobra-pharmaceuticals",
     "selector": "alcobra-pharma.com",
     "name": "Alcobra Pharmaceuticals",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ADHD"
   },
   {
     "id": "alcon-systems",
@@ -3297,7 +3313,8 @@
     "id": "ald-software",
     "selector": "aldservice.com",
     "name": "ALD Advanced Logistics Developments",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ALD"
   },
   {
     "id": "alefo-interactive",
@@ -3609,7 +3626,8 @@
     "id": "alkemy-4054",
     "selector": "alkemy.solutions",
     "name": "Alkemy",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "AKMY"
   },
   {
     "id": "all-forward",
@@ -3675,7 +3693,8 @@
     "id": "allena-pharmaceuticals",
     "selector": "allenapharma.com",
     "name": "Allena Pharmaceuticals",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "ALNA"
   },
   {
     "id": "allerguard-2d81",
@@ -3729,7 +3748,8 @@
     "id": "allium-medical",
     "selector": "allium-medical.com",
     "name": "Allium Medical",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ALMD"
   },
   {
     "id": "allmusicrating",
@@ -3747,7 +3767,8 @@
     "id": "allot-communications",
     "selector": "allot.com",
     "name": "Allot",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ALLT"
   },
   {
     "id": "allprobe",
@@ -3891,7 +3912,8 @@
     "id": "alony-hetz",
     "selector": "alony-hetz.com",
     "name": "Alony Hetz",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ALHE"
   },
   {
     "id": "alony-media",
@@ -3951,7 +3973,8 @@
     "id": "alpha-tau-medical",
     "selector": "alphatau.com",
     "name": "Alpha Tau Medical",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "DRTS"
   },
   {
     "id": "alpha-vee-solutions",
@@ -3969,7 +3992,8 @@
     "id": "al-shark-electrode",
     "selector": "alshark-co.com",
     "name": "AL Shark Electrode",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ELECTRODE"
   },
   {
     "id": "alsomine",
@@ -4089,7 +4113,8 @@
     "id": "alvarion",
     "selector": "alvarion.com",
     "name": "Alvarion",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ALVRQ"
   },
   {
     "id": "alviere",
@@ -4227,7 +4252,8 @@
     "id": "amdocs",
     "selector": "amdocs.com",
     "name": "Amdocs",
-    "reasons": ["f", "h"]
+    "reasons": ["f", "h"],
+    "s": "DOX"
   },
   {
     "id": "ameetee",
@@ -4245,7 +4271,8 @@
     "id": "amiad",
     "selector": "amiad.com",
     "name": "Amiad",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "AFS"
   },
   {
     "id": "amidan-architects",
@@ -4365,7 +4392,8 @@
     "id": "spacecom",
     "selector": "amos-spacecom.com",
     "name": "Spacecom",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SCC"
   },
   {
     "id": "amount-com",
@@ -4515,7 +4543,8 @@
     "id": "amylyx-pharmaceutical",
     "selector": "amylyx.com",
     "name": "Amylyx Pharmaceuticals",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "AMLX"
   },
   {
     "id": "amza",
@@ -4905,7 +4934,8 @@
     "id": "answers",
     "selector": "answers.com",
     "name": "Answers Corporation",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i"],
+    "s": "ANSW"
   },
   {
     "id": "antaris",
@@ -5127,7 +5157,8 @@
     "id": "apc-paints",
     "selector": "apcpaints.ps",
     "name": "APC Paints",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "APC"
   },
   {
     "id": "apeiro-motion",
@@ -5277,7 +5308,8 @@
     "id": "aposense",
     "selector": "aposense.com",
     "name": "Aposense",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "APOS"
   },
   {
     "id": "aposhealth",
@@ -5463,7 +5495,8 @@
     "id": "applegreen",
     "selector": "applegreen.ie",
     "name": "Applegreen",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "APGN"
   },
   {
     "id": "appletec",
@@ -5523,7 +5556,8 @@
     "id": "apply-mobile-technologies",
     "selector": "apply-tech.com",
     "name": "Apply Mobile Technologies",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "APLY"
   },
   {
     "id": "apply-design",
@@ -5703,7 +5737,8 @@
     "id": "appyea-inc",
     "selector": "appyea.com",
     "name": "APPYEA Inc.",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "APYP"
   },
   {
     "id": "appyvent",
@@ -5715,7 +5750,8 @@
     "id": "aprea-ab",
     "selector": "aprea.com",
     "name": "Aprea",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "APRE"
   },
   {
     "id": "apregon",
@@ -5877,7 +5913,8 @@
     "id": "aquarius-engines-energy-generation",
     "selector": "aquariusengines.com",
     "name": "Aquarius Engines - Energy Generation",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "AQUA"
   },
   {
     "id": "aquasecurity",
@@ -5943,7 +5980,8 @@
     "id": "arab-investors",
     "selector": "arabinvestors.ps",
     "name": "Arab Investors",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ARAB"
   },
   {
     "id": "arad-co",
@@ -6021,7 +6059,8 @@
     "id": "arbe-robotics",
     "selector": "arberobotics.com",
     "name": "Arbe",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ARBE"
   },
   {
     "id": "arbitrip",
@@ -6387,7 +6426,8 @@
     "id": "arko-holdings",
     "selector": "arkocorp.com",
     "name": "Arko Holdings",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ARKO"
   },
   {
     "id": "armenian-ceramics",
@@ -6453,7 +6493,8 @@
     "id": "arno-therapeutics",
     "selector": "arnothera.com",
     "name": "Arno Therapeutics",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "ARNI"
   },
   {
     "id": "aromali-sa",
@@ -6903,7 +6944,8 @@
     "id": "aslan-pharmaceuticals",
     "selector": "aslanpharma.com",
     "name": "ASLAN Pharmaceuticals",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "ASLN"
   },
   {
     "id": "asocs",
@@ -7329,7 +7371,8 @@
     "id": "atyr-pharma",
     "selector": "atyrpharma.com",
     "name": "aTyr Pharma",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "LIFE"
   },
   {
     "id": "atz-software",
@@ -7377,7 +7420,8 @@
     "id": "audiocodes",
     "selector": "audiocodes.com",
     "name": "AudioCodes",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "AUDC"
   },
   {
     "id": "audiodots",
@@ -7389,7 +7433,8 @@
     "id": "audiopixels",
     "selector": "audiopixels.com.au",
     "name": "AudioPixels",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "AKP"
   },
   {
     "id": "auditech",
@@ -7407,7 +7452,8 @@
     "id": "augwind",
     "selector": "aug-wind.com",
     "name": "Augwind Ltd",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "AUGN.M"
   },
   {
     "id": "augma-biomaterials",
@@ -7461,7 +7507,8 @@
     "id": "aura-smart-air",
     "selector": "auraair.io",
     "name": "Aura Smart Air",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "AUSA"
   },
   {
     "id": "aura-united-company-inc",
@@ -7785,7 +7832,8 @@
     "id": "aviv-arlon",
     "selector": "avivarlon.com",
     "name": "Aviv Arlon",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "AVLN"
   },
   {
     "id": "aviv-group-d56e",
@@ -7875,7 +7923,8 @@
     "id": "advanced-vision-technology",
     "selector": "avt-inc.com",
     "name": "Advanced Vision Technology",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "VSJ"
   },
   {
     "id": "aware-labs",
@@ -7947,7 +7996,8 @@
     "id": "axilion",
     "selector": "axilion.com",
     "name": "Axilion Smart Mobility",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "AILN"
   },
   {
     "id": "axiom-security",
@@ -8031,7 +8081,8 @@
     "id": "ayala-pharmaceuticals",
     "selector": "ayalapharma.com",
     "name": "Ayala Pharmaceuticals",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "AYLA"
   },
   {
     "id": "ayana-pharma",
@@ -8109,7 +8160,8 @@
     "id": "azrieli-group-fa60",
     "selector": "azrieligroup.com",
     "name": "Azrieli Group",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "AZRG"
   },
   {
     "id": "azrom",
@@ -8511,7 +8563,8 @@
     "id": "bank-hapoalim",
     "selector": "bankhapoalim.com",
     "name": "Bank Hapoalim",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "POLI"
   },
   {
     "id": "crowded-b5d2",
@@ -8577,7 +8630,8 @@
     "id": "baran-group",
     "selector": "barangroup.com",
     "name": "Baran Group",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "BRAN"
   },
   {
     "id": "baranowitz-kronenberg-architecture-ltd-",
@@ -8799,7 +8853,8 @@
     "id": "batm",
     "selector": "batm.com",
     "name": "BATM Ltd",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "BVC"
   },
   {
     "id": "bat-shlomo-vineyards",
@@ -9045,7 +9100,8 @@
     "id": "beamr",
     "selector": "beamr.com",
     "name": "Beamr",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "BMR"
   },
   {
     "id": "beam-riders",
@@ -9735,7 +9791,8 @@
     "id": "beyon3d",
     "selector": "beyon3d.com",
     "name": "Beyon3D",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "BYON"
   },
   {
     "id": "beyond-electronics",
@@ -9759,7 +9816,8 @@
     "id": "ait",
     "selector": "beyondair.net",
     "name": "Beyond Air",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "AITB"
   },
   {
     "id": "chibs-technologies-beyondbenefits",
@@ -9777,7 +9835,8 @@
     "id": "beyond-oil",
     "selector": "beyondoil.co",
     "name": "Beyond Oil",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "BOIL"
   },
   {
     "id": "beyond-remotely",
@@ -10299,7 +10358,8 @@
     "id": "bioatla",
     "selector": "bioatla.com",
     "name": "BioAtla",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "BCAB"
   },
   {
     "id": "biobee",
@@ -10317,7 +10377,8 @@
     "id": "bioblast-pharma",
     "selector": "bioblast-pharma.com",
     "name": "BioBlast Pharma",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ORPN"
   },
   {
     "id": "biocatch",
@@ -10473,7 +10534,8 @@
     "id": "biolinerx",
     "selector": "biolinerx.com",
     "name": "BiolineRx",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "BLRX"
   },
   {
     "id": "biolojic-design",
@@ -10521,7 +10583,8 @@
     "id": "biomilk",
     "selector": "biomilk.com",
     "name": "Wilk",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "BMLK"
   },
   {
     "id": "biomonitech",
@@ -10533,7 +10596,8 @@
     "id": "biomx-inc",
     "selector": "biomx.com",
     "name": "BIOMx",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "PHGE"
   },
   {
     "id": "bionaut-labs",
@@ -10551,7 +10615,8 @@
     "id": "biondvax",
     "selector": "biondvax.com",
     "name": "Scinai Immunotherapeutics",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SCNI"
   },
   {
     "id": "bionegev",
@@ -10983,7 +11048,8 @@
     "id": "bladeranger",
     "selector": "bladeranger.com",
     "name": "BladeRanger",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "BLRN"
   },
   {
     "id": "blaick-technologies",
@@ -11025,7 +11091,8 @@
     "id": "v-finance-technologies-blender",
     "selector": "blender.global",
     "name": "Blender",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "BLND"
   },
   {
     "id": "blendo",
@@ -11415,7 +11482,8 @@
     "id": "blue-sphere",
     "selector": "bluespherecorporate.com",
     "name": "Blue Sphere",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "BLSP"
   },
   {
     "id": "bluespine",
@@ -11655,7 +11723,8 @@
     "id": "bonus-biogroup",
     "selector": "bonus-bio.com",
     "name": "Bonus BioGroup",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "BONS"
   },
   {
     "id": "bookaway-com",
@@ -11781,7 +11850,8 @@
     "id": "borderfree-inc",
     "selector": "borderfree.com",
     "name": "Borderfree",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "BRDR"
   },
   {
     "id": "boron-nitride-powders",
@@ -11805,7 +11875,8 @@
     "id": "bos-better-on-line-solutions",
     "selector": "boscom.com",
     "name": "BOS Better On-Line Solutions",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "BOSC"
   },
   {
     "id": "boson-energy",
@@ -12051,13 +12122,15 @@
     "id": "brainstorm-cell-therapeutics",
     "selector": "brainstorm-cell.com",
     "name": "BrainStorm Cell Therapeutics",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "BCLI"
   },
   {
     "id": "brainsway",
     "selector": "brainsway.com",
     "name": "Brainsway",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "BRIN"
   },
   {
     "id": "brainvivo",
@@ -12099,7 +12172,8 @@
     "id": "brand-industries",
     "selector": "brand-industries.com",
     "name": "Brand Industries",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "BRND"
   },
   {
     "id": "brandbow",
@@ -12141,7 +12215,8 @@
     "id": "brandshield",
     "selector": "brandshield.com",
     "name": "BrandShield",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "BRSD"
   },
   {
     "id": "brandspiker",
@@ -12261,7 +12336,8 @@
     "id": "brenmiller-energy",
     "selector": "bren-energy.com",
     "name": "Brenmiller Energy",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "BNRG"
   },
   {
     "id": "brh-medical-curesound",
@@ -12639,7 +12715,8 @@
     "id": "emblaze",
     "selector": "bsd-c.com",
     "name": "B.S.D Crown",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "BSD"
   },
   {
     "id": "bsecure",
@@ -13251,7 +13328,8 @@
     "id": "c4-therapeutics",
     "selector": "c4therapeutics.com",
     "name": "C4 Therapeutics",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "CCCC"
   },
   {
     "id": "cabiran",
@@ -13263,7 +13341,8 @@
     "id": "cabka",
     "selector": "cabka.com",
     "name": "Cabka",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "CABKA"
   },
   {
     "id": "cacao-media",
@@ -13305,7 +13384,8 @@
     "id": "caesarstone-sdot-yam",
     "selector": "caesarstoneus.com",
     "name": "CaesarStone",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "CSTE"
   },
   {
     "id": "caja",
@@ -13521,7 +13601,8 @@
     "id": "candela-medical",
     "selector": "candelamedical.com",
     "name": "Candela Medical",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "ELOS"
   },
   {
     "id": "candela-tech",
@@ -13581,7 +13662,8 @@
     "id": "canfite-biopharma",
     "selector": "canfite.com",
     "name": "CanFite BioPharma",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "CANFY"
   },
   {
     "id": "cann-il",
@@ -13599,7 +13681,8 @@
     "id": "cannapowder",
     "selector": "canna-powder.com",
     "name": "CannaPowder",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "CAPD"
   },
   {
     "id": "cannatech-5bef",
@@ -13623,7 +13706,8 @@
     "id": "cannabics-pharmaceuticals",
     "selector": "cannabics.com",
     "name": "Cannabics Pharmaceuticals",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "CNBX"
   },
   {
     "id": "cannabilog",
@@ -13641,7 +13725,8 @@
     "id": "cannabotech",
     "selector": "cannabotechpharma.com",
     "name": "Cannabotech",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "CNTC"
   },
   {
     "id": "cannadelics",
@@ -13713,7 +13798,8 @@
     "id": "proteo-logics",
     "selector": "cannomed.com",
     "name": "Cannomed Medical Cannabis Industries",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "CNMD"
   },
   {
     "id": "cannopeia",
@@ -14109,7 +14195,8 @@
     "id": "cardlytics",
     "selector": "cardlytics.com",
     "name": "Cardlytics",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "CDLX"
   },
   {
     "id": "cardoonz",
@@ -14283,7 +14370,8 @@
     "id": "carmit-candy",
     "selector": "carmitcandy.com",
     "name": "Carmit Candy",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "CRMT"
   },
   {
     "id": "carmor-integrated-vehicle-solutions",
@@ -14355,7 +14443,8 @@
     "id": "cartesian",
     "selector": "cartesian.com",
     "name": "Cartesian",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "CRTN"
   },
   {
     "id": "cartgateway",
@@ -14499,7 +14588,8 @@
     "id": "castro-model-ltd",
     "selector": "castro.com",
     "name": "Castro Model Ltd",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "CAST"
   },
   {
     "id": "castro-hoodies-group",
@@ -14637,7 +14727,8 @@
     "id": "cazoo",
     "selector": "cazoo.co.uk",
     "name": "Cazoo",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "CZOOF"
   },
   {
     "id": "c-b4",
@@ -14787,7 +14878,8 @@
     "id": "cell-source",
     "selector": "cell-source.com",
     "name": "Cell Source",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "CLCS"
   },
   {
     "id": "cella-v-telematics",
@@ -14823,7 +14915,8 @@
     "id": "cellebrite",
     "selector": "cellebrite.com",
     "name": "Cellebrite",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "CLBT"
   },
   {
     "id": "cellect-biotechnology",
@@ -15033,7 +15126,8 @@
     "id": "ceragon-networks",
     "selector": "ceragon.com",
     "name": "Ceragon Networks",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "CRNT"
   },
   {
     "id": "cerberus-trading-solutions",
@@ -15123,7 +15217,8 @@
     "id": "compugen",
     "selector": "cgen.com",
     "name": "Compugen",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "CGEN"
   },
   {
     "id": "cognitive-spark",
@@ -15327,7 +15422,8 @@
     "id": "check-cap",
     "selector": "check-cap.com",
     "name": "Check-Cap",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "CHEK"
   },
   {
     "id": "check-er",
@@ -15375,7 +15471,8 @@
     "id": "check-point",
     "selector": "checkpoint.com",
     "name": "Check Point Software Technologies",
-    "reasons": ["f", "h"]
+    "reasons": ["f", "h"],
+    "s": "CHKP"
   },
   {
     "id": "chef-global-fac1",
@@ -15405,7 +15502,8 @@
     "id": "chemomab",
     "selector": "chemomab.com",
     "name": "Chemomab",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "CMMB"
   },
   {
     "id": "cheq",
@@ -15567,7 +15665,8 @@
     "id": "ci-systems-israel",
     "selector": "ci-semi.com",
     "name": "CI Systems",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "CISY"
   },
   {
     "id": "ci-therapeutics",
@@ -15645,7 +15744,8 @@
     "id": "cimatron",
     "selector": "cimatron.com",
     "name": "Cimatron",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "CIMT"
   },
   {
     "id": "cimt-group",
@@ -15693,7 +15793,8 @@
     "id": "eyesight-mobile-technologies",
     "selector": "cipia.com",
     "name": "Cipia",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "CPIA"
   },
   {
     "id": "circle-star",
@@ -16689,7 +16790,8 @@
     "id": "cocohub",
     "selector": "cocohub.ai",
     "name": "Cocohub",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "AICS"
   },
   {
     "id": "coda-resources",
@@ -16941,7 +17043,8 @@
     "id": "cognyte",
     "selector": "cognyte.com",
     "name": "Cognyte",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "CGNT"
   },
   {
     "id": "cogress",
@@ -17067,7 +17170,8 @@
     "id": "collplant",
     "selector": "collplant.com",
     "name": "Collplant",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "CLPT"
   },
   {
     "id": "colnect-com",
@@ -17511,7 +17615,8 @@
     "id": "compulab-3",
     "selector": "compulab.com",
     "name": "CompuLab",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "CLAB"
   },
   {
     "id": "compulite-systems-2000",
@@ -17523,7 +17628,8 @@
     "id": "computer-direct",
     "selector": "computerdirectit.com",
     "name": "Computer Direct",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "CMDR"
   },
   {
     "id": "comrax",
@@ -17985,7 +18091,8 @@
     "id": "cell-mining",
     "selector": "continualexperience.com",
     "name": "Continual",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "CNTL"
   },
   {
     "id": "continue-ai",
@@ -18399,7 +18506,8 @@
     "id": "corindus",
     "selector": "corindus.com",
     "name": "Corindus",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "CVRS"
   },
   {
     "id": "coriunder",
@@ -18471,13 +18579,15 @@
     "id": "kaltura",
     "selector": "corp.kaltura.com",
     "name": "Kaltura",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "KLTR"
   },
   {
     "id": "raksul",
     "selector": "corp.raksul.com",
     "name": "Raksul",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "4384"
   },
   {
     "id": "corbomite-games",
@@ -18489,7 +18599,8 @@
     "id": "saga-2",
     "selector": "corporate.saga.co.uk",
     "name": "Saga",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "SAGA"
   },
   {
     "id": "corractions",
@@ -18897,7 +19008,8 @@
     "id": "epals",
     "selector": "cricketmedia.com",
     "name": "Cricket Media",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "CKT"
   },
   {
     "id": "criskco",
@@ -19473,7 +19585,8 @@
     "id": "cust2mate",
     "selector": "cust2mate.com",
     "name": "Cust2Mate",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "AZ"
   },
   {
     "id": "custodia",
@@ -19605,7 +19718,8 @@
     "id": "cyber-ark-software",
     "selector": "cyberark.com",
     "name": "CyberArk",
-    "reasons": ["f", "i", "h"]
+    "reasons": ["f", "i", "h"],
+    "s": "CYBR"
   },
   {
     "id": "cyberbee-fd18",
@@ -19833,7 +19947,8 @@
     "id": "cybin-corp",
     "selector": "cybin.com",
     "name": "Cybin",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "CYBN"
   },
   {
     "id": "cybonet-security-technologies",
@@ -20049,7 +20164,8 @@
     "id": "cyngn",
     "selector": "cyngn.com",
     "name": "CYNGN",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "CYN"
   },
   {
     "id": "cyngular-security",
@@ -20121,7 +20237,8 @@
     "id": "cyren",
     "selector": "cyren.com",
     "name": "Cyren",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "CYRN"
   },
   {
     "id": "cysight",
@@ -20217,7 +20334,8 @@
     "id": "direct-insurance-financial-investments",
     "selector": "d-ifi.com",
     "name": "Direct Insurance Financial Investments",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "DIFI"
   },
   {
     "id": "d-led",
@@ -20361,7 +20479,8 @@
     "id": "dalet",
     "selector": "dalet.com",
     "name": "Dalet",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "DLT"
   },
   {
     "id": "dali-medical-devices",
@@ -20415,7 +20534,8 @@
     "id": "the-dan-hotels",
     "selector": "danhotels.com",
     "name": "The Dan Hotels",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "DANH"
   },
   {
     "id": "albu-designs",
@@ -20499,7 +20619,8 @@
     "id": "labstyle-innovations",
     "selector": "dariohealth.com",
     "name": "DarioHealth",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "DRIO"
   },
   {
     "id": "dark-boot-investments",
@@ -21147,7 +21268,8 @@
     "id": "decama",
     "selector": "decama.com",
     "name": "Decama",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "DCMA"
   },
   {
     "id": "decart-abcd",
@@ -21189,7 +21311,8 @@
     "id": "deciphera-pharmaceuticals",
     "selector": "deciphera.com",
     "name": "Deciphera Pharmaceuticals",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "DCPH"
   },
   {
     "id": "decodea",
@@ -21453,7 +21576,8 @@
     "id": "dekeloil-public-ltd",
     "selector": "dekeloil.com",
     "name": "DekelOil Public Ltd",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "DKL"
   },
   {
     "id": "delasport",
@@ -21471,7 +21595,8 @@
     "id": "delek-group",
     "selector": "delek-group.com",
     "name": "Delek Group",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "DLEKG"
   },
   {
     "id": "delkol",
@@ -21513,7 +21638,8 @@
     "id": "deliveroo",
     "selector": "deliveroo.co.uk",
     "name": "Deliveroo",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "ROO"
   },
   {
     "id": "delivrd",
@@ -21543,7 +21669,8 @@
     "id": "delta-galil",
     "selector": "deltagalil.com",
     "name": "Delta Galil",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "DELT"
   },
   {
     "id": "delta-renovations",
@@ -21693,7 +21820,8 @@
     "id": "emerald",
     "selector": "dermacompare.com",
     "name": "Emerald Medical Applications",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "MRLA"
   },
   {
     "id": "dermadetect",
@@ -22479,7 +22607,8 @@
     "id": "dlocal",
     "selector": "dlocal.com",
     "name": "dLocal",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "DLO"
   },
   {
     "id": "deep-learning-robotics",
@@ -22809,7 +22938,8 @@
     "id": "doral-group",
     "selector": "doral-energy.com",
     "name": "Doral Energy Group",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "DORL"
   },
   {
     "id": "dorian",
@@ -22893,7 +23023,8 @@
     "id": "dotz-nano",
     "selector": "dotz.tech",
     "name": "Dotz Nano",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "DTZ"
   },
   {
     "id": "double-shoot",
@@ -22929,7 +23060,8 @@
     "id": "doubleverify",
     "selector": "doubleverify.com",
     "name": "DoubleVerify",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "DV"
   },
   {
     "id": "doublx-com",
@@ -22971,7 +23103,8 @@
     "id": "d-pharm-ltd",
     "selector": "dpharm.com",
     "name": "D Pharm LTD.",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "DPRM"
   },
   {
     "id": "dynamic-parking-management",
@@ -23043,7 +23176,8 @@
     "id": "dragontail-systems",
     "selector": "dragontailsystems.com",
     "name": "Dragontail Systems",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "DTS"
   },
   {
     "id": "dragonx",
@@ -24009,7 +24143,8 @@
     "id": "econergy-renewable-energy",
     "selector": "econergytech.com",
     "name": "Econergy Renewable Energy",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ECNR"
   },
   {
     "id": "econologic-systems",
@@ -24039,7 +24174,8 @@
     "id": "ecoppia",
     "selector": "ecoppia.com",
     "name": "Ecoppia",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ECPA"
   },
   {
     "id": "ecoprice",
@@ -24093,7 +24229,8 @@
     "id": "eco-wave-power",
     "selector": "ecowavepower.com",
     "name": "Eco Wave Power",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "EWP"
   },
   {
     "id": "ecozone-technologies",
@@ -24549,7 +24686,8 @@
     "id": "el-al-israeli-airlines",
     "selector": "elal.com",
     "name": "El Al Israeli Airlines",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ELAL"
   },
   {
     "id": "ela-pharma",
@@ -24573,13 +24711,15 @@
     "id": "elbit-imaginh-ltd",
     "selector": "elbitimaging.com",
     "name": "Elbit Imaging Ltd.",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "EMITF"
   },
   {
     "id": "elbit-systems",
     "selector": "elbitsystems.com",
     "name": "Elbit Systems",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ESLT"
   },
   {
     "id": "elcam-medical",
@@ -24651,7 +24791,8 @@
     "id": "electreon",
     "selector": "electreon.com",
     "name": "ElectReon",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ELWS"
   },
   {
     "id": "electric-fuel",
@@ -24687,7 +24828,8 @@
     "id": "electriq-power",
     "selector": "electriqpower.com",
     "name": "Electriq Power",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "ELIQ"
   },
   {
     "id": "electrotherm-industry",
@@ -24705,7 +24847,8 @@
     "id": "tokai-pharmaceuticals",
     "selector": "eledon.com",
     "name": "Eledon Pharmaceuticals",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "NVUS"
   },
   {
     "id": "elefend",
@@ -24885,13 +25028,15 @@
     "id": "elicio-therapeutics",
     "selector": "elicio.com",
     "name": "Elicio Therapeutics",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "ELTX"
   },
   {
     "id": "eliem-therapeutics",
     "selector": "eliemtx.com",
     "name": "Eliem Therapeutics",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "ELYM"
   },
   {
     "id": "elife-sysytems",
@@ -24981,7 +25126,8 @@
     "id": "ellomay-capital",
     "selector": "ellomay.com",
     "name": "Ellomay Capital",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ELLO"
   },
   {
     "id": "elloria-medical-technologies",
@@ -25029,7 +25175,8 @@
     "id": "eloxx",
     "selector": "eloxxpharma.com",
     "name": "Eloxx",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "ELOX"
   },
   {
     "id": "elpam-electronics",
@@ -25065,7 +25212,8 @@
     "id": "elron-electronic-industries",
     "selector": "elronventures.com",
     "name": "Elron Ventures",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ELRN"
   },
   {
     "id": "elscint-tomography-inc",
@@ -25077,7 +25225,8 @@
     "id": "else-nutrition",
     "selector": "elsenutrition.com",
     "name": "ELSE Nutrition",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "BABY"
   },
   {
     "id": "elsight",
@@ -25545,7 +25694,8 @@
     "id": "endochoice",
     "selector": "endochoice.com",
     "name": "EndoChoice",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "GI"
   },
   {
     "id": "endocure",
@@ -25605,7 +25755,8 @@
     "id": "endymed",
     "selector": "endymed.com",
     "name": "Endymed",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ENDY"
   },
   {
     "id": "esol-energy-solutions",
@@ -25623,7 +25774,8 @@
     "id": "energix",
     "selector": "energix-group.com",
     "name": "Energix",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ENRG"
   },
   {
     "id": "energix-renewables",
@@ -25641,7 +25793,8 @@
     "id": "energtek",
     "selector": "energtek.com",
     "name": "Energtek",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "EGTK"
   },
   {
     "id": "energy-re-connect",
@@ -25827,7 +25980,8 @@
     "id": "enlivex-therapeutics",
     "selector": "enlivex.com",
     "name": "Enlivex Therapeutics",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ENLV"
   },
   {
     "id": "enopace-biomedical",
@@ -25911,7 +26065,8 @@
     "id": "entera-bio",
     "selector": "enterabio.com",
     "name": "ENTERA BIO",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ENTX"
   },
   {
     "id": "entermedschool",
@@ -26145,7 +26300,8 @@
     "id": "epitomee-medical",
     "selector": "epitomeemedical.com",
     "name": "Epitomee Medical",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "EPIT"
   },
   {
     "id": "epm-group",
@@ -26385,7 +26541,8 @@
     "id": "esense-lab",
     "selector": "esense-lab.com",
     "name": "eSense-Lab",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ESE"
   },
   {
     "id": "esg-today",
@@ -26589,7 +26746,8 @@
     "id": "ethernity-networks",
     "selector": "ethernitynet.com",
     "name": "Ethernity Networks",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ENET"
   },
   {
     "id": "etherwaves",
@@ -26619,7 +26777,8 @@
     "id": "etoro",
     "selector": "etoro.com",
     "name": "eToro",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ETOR"
   },
   {
     "id": "etorox",
@@ -26961,13 +27120,15 @@
     "id": "evogene",
     "selector": "evogene.com",
     "name": "Evogene",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "EVGN"
   },
   {
     "id": "888-holdings",
     "selector": "evokeplc.com",
     "name": "Evoke PLC",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "888"
   },
   {
     "id": "evolero",
@@ -27093,7 +27254,8 @@
     "id": "exalenz-bioscience",
     "selector": "exalenz.com",
     "name": "Exalenz Bioscience",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "EXEN"
   },
   {
     "id": "exampal",
@@ -27933,7 +28095,8 @@
     "id": "fantasy-network",
     "selector": "fantasynetwork.com",
     "name": "Fantasy Network",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "FNTS"
   },
   {
     "id": "fantine-group",
@@ -28275,7 +28438,8 @@
     "id": "bynd-beyond-solutions",
     "selector": "femtocorp.com",
     "name": "Femto Technologies",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "BYND"
   },
   {
     "id": "fenavic",
@@ -28497,7 +28661,8 @@
     "id": "field-trip-health-inc",
     "selector": "fieldtriphealth.com",
     "name": "Field Trip Health",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "FTRP"
   },
   {
     "id": "fiftythree",
@@ -28797,7 +28962,8 @@
     "id": "finjan",
     "selector": "finjan.com",
     "name": "Finjan Holdings",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "FNJN"
   },
   {
     "id": "finnetrix-2",
@@ -28971,7 +29137,8 @@
     "id": "firefly-neuroscience",
     "selector": "fireflyneuro.com",
     "name": "Firefly Neuroscience",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "AIFF"
   },
   {
     "id": "firelayers",
@@ -28983,7 +29150,8 @@
     "id": "firering-strategic-minerals",
     "selector": "fireringplc.com",
     "name": "Firering Strategic Minerals",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "FRG"
   },
   {
     "id": "firescore-interactive",
@@ -29037,7 +29205,8 @@
     "id": "first-bitcoin-capital-corp",
     "selector": "firstbitcoin.io",
     "name": "First Bitcoin Capital Corp",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "BITCF"
   },
   {
     "id": "first-care-products",
@@ -29181,7 +29350,8 @@
     "id": "fiverr",
     "selector": "fiverr.com",
     "name": "Fiverr",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "FVRR"
   },
   {
     "id": "five-sigma",
@@ -29661,7 +29831,8 @@
     "id": "foamix",
     "selector": "foamix.com",
     "name": "Foamix",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "FOMX"
   },
   {
     "id": "foamotive",
@@ -29685,7 +29856,8 @@
     "id": "focus-home-interactive",
     "selector": "focus-entmt.com",
     "name": "Focus Home Interactive",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "ALFOC"
   },
   {
     "id": "focus-telecom",
@@ -29907,7 +30079,8 @@
     "id": "forescout",
     "selector": "forescout.com",
     "name": "ForeScout Technologies",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "FSCT"
   },
   {
     "id": "foresee-genomics",
@@ -29925,7 +30098,8 @@
     "id": "foresight-3",
     "selector": "foresightauto.com",
     "name": "Foresight Autonomous Holdings",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "FRSX"
   },
   {
     "id": "foresiight",
@@ -30003,7 +30177,8 @@
     "id": "formula-systems",
     "selector": "formulasystems.com",
     "name": "Formula Systems",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "FORTY"
   },
   {
     "id": "formulex",
@@ -30081,7 +30256,8 @@
     "id": "fortinet",
     "selector": "fortinet.com",
     "name": "Fortinet",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "FTNT"
   },
   {
     "id": "fortress-2dd7",
@@ -30339,7 +30515,8 @@
     "id": "freightos",
     "selector": "freightos.com",
     "name": "Freightos",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "CRGO"
   },
   {
     "id": "accutures",
@@ -30561,13 +30738,15 @@
     "id": "frutarom",
     "selector": "frutarom.com",
     "name": "Frutarom",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "FRUT"
   },
   {
     "id": "frx-polymers",
     "selector": "frx-innovations.com",
     "name": "FRX Innovations",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "FRXI"
   },
   {
     "id": "future-tense",
@@ -30951,7 +31130,8 @@
     "id": "g1-group",
     "selector": "g1-group.com",
     "name": "G1 Group",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "GOSS"
   },
   {
     "id": "g2mteam",
@@ -31173,7 +31353,8 @@
     "id": "galecto-biotech",
     "selector": "galecto.com",
     "name": "Galecto",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "GLTO"
   },
   {
     "id": "galia-lahav-bridal-evening-couture",
@@ -31293,7 +31474,8 @@
     "id": "galmed-pharmaceuticals",
     "selector": "galmedpharma.com",
     "name": "Galmed Pharmaceuticals",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "GLMD"
   },
   {
     "id": "galooli",
@@ -31359,7 +31541,8 @@
     "id": "gamida-cell",
     "selector": "gamida-cell.com",
     "name": "Gamida Cell",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "GMDA"
   },
   {
     "id": "gamoshi",
@@ -31407,7 +31590,8 @@
     "id": "gaon-group",
     "selector": "gaon.com",
     "name": "Gaon Group",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "GAGR"
   },
   {
     "id": "gaonic",
@@ -31437,7 +31621,8 @@
     "id": "gartner",
     "selector": "gartner.com",
     "name": "Gartner",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "IT"
   },
   {
     "id": "gasngo",
@@ -31485,7 +31670,8 @@
     "id": "gauzy",
     "selector": "gauzy.com",
     "name": "Gauzy",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "GAUZ"
   },
   {
     "id": "gavan",
@@ -31539,7 +31725,8 @@
     "id": "gazit-globe",
     "selector": "gazitglobe.com",
     "name": "Gazit Globe",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "GZT"
   },
   {
     "id": "gbo-international-financial-services",
@@ -31707,7 +31894,8 @@
     "id": "gencell",
     "selector": "gencellenergy.com",
     "name": "GenCell",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "GNCL"
   },
   {
     "id": "genda-185c",
@@ -31785,7 +31973,8 @@
     "id": "genesis-39d2",
     "selector": "genesis-reit.com",
     "name": "Genesis",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "MLGNS"
   },
   {
     "id": "genesis-tours",
@@ -31875,7 +32064,8 @@
     "id": "gensight-biologics",
     "selector": "gensight-biologics.com",
     "name": "GenSight Biologics",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "GNST"
   },
   {
     "id": "gensyn",
@@ -32769,7 +32959,8 @@
     "id": "gigas",
     "selector": "gigas.com",
     "name": "GIGAS",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "GIGA"
   },
   {
     "id": "gigaspaces-technologies",
@@ -32781,7 +32972,8 @@
     "id": "giga-information-group",
     "selector": "gigaweb.com",
     "name": "Giga Information Group",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "GIGX"
   },
   {
     "id": "gigbucks",
@@ -32793,13 +32985,15 @@
     "id": "gilat-satellite-networks",
     "selector": "gilat.com",
     "name": "Gilat Satellite Networks",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "GILT"
   },
   {
     "id": "gilat-satcom",
     "selector": "gilat.net",
     "name": "Gilat Satcom",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "STCM"
   },
   {
     "id": "gilboa-therapeutics",
@@ -32889,7 +33083,8 @@
     "id": "ginegar",
     "selector": "ginegar.com",
     "name": "Ginegar",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "GNGR"
   },
   {
     "id": "ginero-solutions",
@@ -33111,7 +33306,8 @@
     "id": "global-knafaim-leasing",
     "selector": "gkl-leasing.com",
     "name": "Global Knafaim Leasing",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "GKL"
   },
   {
     "id": "glare-marketing-technologies",
@@ -33123,13 +33319,15 @@
     "id": "glassboxdigital",
     "selector": "glassbox.com",
     "name": "Glassbox",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "GLBX"
   },
   {
     "id": "glassesoff",
     "selector": "glassesoff.com",
     "name": "InnoVision Labs",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "INVS"
   },
   {
     "id": "glassesusa",
@@ -33243,7 +33441,8 @@
     "id": "global-e",
     "selector": "global-e.com",
     "name": "Global-e",
-    "reasons": ["i", "h"]
+    "reasons": ["i", "h"],
+    "s": "GLBE"
   },
   {
     "id": "global-electric-4400",
@@ -33753,7 +33952,8 @@
     "id": "argo-medical-technologies",
     "selector": "golifeward.com",
     "name": "Lifeward",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "RWLK"
   },
   {
     "id": "gomboc-ai",
@@ -34587,7 +34787,8 @@
     "id": "nebius-group",
     "selector": "group.nebius.com",
     "name": "Nebius Group",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "NBISN"
   },
   {
     "id": "group-107",
@@ -35295,7 +35496,8 @@
     "id": "hamama-meir-trading",
     "selector": "hamama.biz",
     "name": "Hamama Meir Trading",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "HMAM"
   },
   {
     "id": "hamashkifa",
@@ -35499,7 +35701,8 @@
     "id": "harmonic",
     "selector": "harmonicinc.com",
     "name": "Harmonic",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "HLIT"
   },
   {
     "id": "harmoniz-seeds",
@@ -35967,7 +36170,8 @@
     "id": "heramed",
     "selector": "hera-med.com",
     "name": "HeraMED",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "HMD"
   },
   {
     "id": "herbamed",
@@ -36255,7 +36459,8 @@
     "id": "highcon",
     "selector": "highcon.net",
     "name": "Highcon",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "HICN"
   },
   {
     "id": "high-lander",
@@ -36363,7 +36568,8 @@
     "id": "hippo-insurance",
     "selector": "hippo.com",
     "name": "Hippo Insurance",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i"],
+    "s": "HIPO"
   },
   {
     "id": "hipposys",
@@ -36621,7 +36827,8 @@
     "id": "hearmeout",
     "selector": "home.hearmeoutapp.com",
     "name": "HearMeOut",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "HMO"
   },
   {
     "id": "payground-a478",
@@ -36657,7 +36864,8 @@
     "id": "homebiogas",
     "selector": "homebiogas.com",
     "name": "Homebiogas",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "HMGS"
   },
   {
     "id": "gaiagy",
@@ -37077,7 +37285,8 @@
     "id": "hub-security",
     "selector": "hubsecurity.com",
     "name": "HUB Security",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "HUBC"
   },
   {
     "id": "hubspace-tlv",
@@ -37131,7 +37340,8 @@
     "id": "human-xtensions",
     "selector": "human-x.com",
     "name": "Human Xtensions",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "HUMX"
   },
   {
     "id": "humaney",
@@ -37281,7 +37491,8 @@
     "id": "hyliion",
     "selector": "hyliion.com",
     "name": "Hyliion",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "HYLN"
   },
   {
     "id": "hypeindex",
@@ -37449,7 +37660,8 @@
     "id": "i-mab-biopharma",
     "selector": "i-mabbiopharma.com",
     "name": "I-Mab Biopharma",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "IMAB"
   },
   {
     "id": "io-tech-group",
@@ -37665,7 +37877,8 @@
     "id": "icb-biotechnology",
     "selector": "icbinvest.co",
     "name": "ICB Biotechnology",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ICB"
   },
   {
     "id": "icd-pharma",
@@ -37683,13 +37896,15 @@
     "id": "icecure-medical",
     "selector": "icecure-medical.com",
     "name": "IceCure Medical",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ICCM"
   },
   {
     "id": "icl-group",
     "selector": "icl-group.com",
     "name": "ICL Group",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ICL"
   },
   {
     "id": "icl-cdda",
@@ -38049,7 +38264,8 @@
     "id": "internet-gold-golden-lines",
     "selector": "igld.com",
     "name": "Internet Gold - Golden Lines",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "IGLD"
   },
   {
     "id": "igloo-creative-house",
@@ -38205,7 +38421,8 @@
     "id": "ilex-medical",
     "selector": "ilexmedical.com",
     "name": "Ilex Medical",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ILX"
   },
   {
     "id": "israeli-green-building-council",
@@ -38385,7 +38602,8 @@
     "id": "im-cannabis",
     "selector": "imcannabis.com",
     "name": "IM Cannabis",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "IMCC"
   },
   {
     "id": "imci-pharmaceuticals",
@@ -38511,7 +38729,8 @@
     "id": "immatics-biotechnologies",
     "selector": "immatics.com",
     "name": "immatics biotechnologies",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "IMTX"
   },
   {
     "id": "immediately",
@@ -38673,7 +38892,8 @@
     "id": "imperva",
     "selector": "imperva.com",
     "name": "Imperva",
-    "reasons": ["f", "h"]
+    "reasons": ["f", "h"],
+    "s": "IMPV"
   },
   {
     "id": "tuki-jets",
@@ -38727,7 +38947,8 @@
     "id": "imprivata",
     "selector": "imprivata.com",
     "name": "Imprivata",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "IMPR"
   },
   {
     "id": "improvate",
@@ -38757,7 +38978,8 @@
     "id": "immunic-ag",
     "selector": "imux.com",
     "name": "Immunic Therapeutics",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "IMUX"
   },
   {
     "id": "imvision-technologies",
@@ -38799,7 +39021,8 @@
     "id": "inbar-group",
     "selector": "inbar-group.com",
     "name": "Inbar Group",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "INBR"
   },
   {
     "id": "inbar-solar-energy",
@@ -39273,7 +39496,8 @@
     "id": "inmode",
     "selector": "inmodemd.com",
     "name": "InMode",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "INMD"
   },
   {
     "id": "inn7",
@@ -39357,7 +39581,8 @@
     "id": "innocan-pharma",
     "selector": "innocanpharma.com",
     "name": "InnoCan Pharma",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "INNO"
   },
   {
     "id": "innocap-ltd",
@@ -39477,7 +39702,8 @@
     "id": "innovid",
     "selector": "innovid.com",
     "name": "Innovid",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i"],
+    "s": "CTV"
   },
   {
     "id": "innovision-labs",
@@ -39489,7 +39715,8 @@
     "id": "innoviz-technologies",
     "selector": "innoviz.tech",
     "name": "Innoviz Technologies",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "INVZ"
   },
   {
     "id": "innovizeit",
@@ -39549,7 +39776,8 @@
     "id": "inotek-pharmaceuticals",
     "selector": "inotekcorp.com",
     "name": "Inotek Pharmaceuticals",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "ITEK"
   },
   {
     "id": "inova-diamonds",
@@ -39723,13 +39951,15 @@
     "id": "inspira-technologies",
     "selector": "inspira-technologies.com",
     "name": "Inspira Technologies",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "IINN"
   },
   {
     "id": "inspiremd-inc",
     "selector": "inspiremd.com",
     "name": "InspireMD",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "NSPR"
   },
   {
     "id": "inspir-labs",
@@ -39807,7 +40037,8 @@
     "id": "insuline-medical",
     "selector": "insuline-medical.com",
     "name": "Insuline Medical",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "INSL"
   },
   {
     "id": "insuranks",
@@ -39867,7 +40098,8 @@
     "id": "intec-pharma",
     "selector": "intecpharma.com",
     "name": "Intec Pharma",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "INTP"
   },
   {
     "id": "integral-marketing",
@@ -39903,7 +40135,8 @@
     "id": "intelicanna",
     "selector": "intelicanna.com",
     "name": "Intelicanna",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "INTL"
   },
   {
     "id": "intelici",
@@ -40071,7 +40304,8 @@
     "id": "ability-e688",
     "selector": "interceptors.com",
     "name": "Ability",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ABIL"
   },
   {
     "id": "interchan-corporation",
@@ -40083,13 +40317,15 @@
     "id": "intercure",
     "selector": "intercure.co",
     "name": "InterCure",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "INCR"
   },
   {
     "id": "intercure-inc",
     "selector": "intercure.com",
     "name": "InterCure",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "INCR"
   },
   {
     "id": "interionet-5cdb",
@@ -40305,7 +40541,8 @@
     "id": "therapix-biosciences",
     "selector": "investor.scisparc.com",
     "name": "SciSparc",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SPRC"
   },
   {
     "id": "invesus-financial-services-group",
@@ -40365,7 +40602,8 @@
     "id": "inx-limited",
     "selector": "inx.co",
     "name": "The INX Digital Company",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "INXDF"
   },
   {
     "id": "inziv",
@@ -40605,7 +40843,8 @@
     "id": "ir-med",
     "selector": "ir-medical.com",
     "name": "IR-MED",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "IRME"
   },
   {
     "id": "iron-6003",
@@ -40617,7 +40856,8 @@
     "id": "ppdai",
     "selector": "ir.finvgroup.com",
     "name": "FinVolution Group",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "FINV"
   },
   {
     "id": "goto",
@@ -40671,7 +40911,8 @@
     "id": "ironnet-cybersecurity",
     "selector": "ironnet.com",
     "name": "IronNet Cybersecurity",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "IRNTQ"
   },
   {
     "id": "ironscales",
@@ -40725,7 +40966,8 @@
     "id": "ironsource",
     "selector": "is.com",
     "name": "ironSource",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "IS"
   },
   {
     "id": "indoor-saffron",
@@ -40917,7 +41159,8 @@
     "id": "israel-shipyards",
     "selector": "israel-shipyards.com",
     "name": "Israel Shipyards",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ISHI"
   },
   {
     "id": "german-israeli-chamber-of-industry-commerce-ahk-israel",
@@ -41169,7 +41412,8 @@
     "id": "isramco",
     "selector": "isramcousa.com",
     "name": "Isramco",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ISRA.L"
   },
   {
     "id": "isramworld",
@@ -41265,7 +41509,8 @@
     "id": "itamar-medical",
     "selector": "itamar-medical.com",
     "name": "Itamar Medical",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ITMMF"
   },
   {
     "id": "ita-software",
@@ -41403,7 +41648,8 @@
     "id": "ituran",
     "selector": "ituran.com",
     "name": "Ituran",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "ITRN"
   },
   {
     "id": "itur-financial-intelligence",
@@ -41715,7 +41961,8 @@
     "id": "jeffs-brands",
     "selector": "jeffsbrands.com",
     "name": "Jeffs’ Brands",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "JFBR"
   },
   {
     "id": "jewish-student-centers",
@@ -41943,7 +42190,8 @@
     "id": "jfrog-ltd",
     "selector": "jfrog.com",
     "name": "JFrog",
-    "reasons": ["f", "i", "h"]
+    "reasons": ["f", "i", "h"],
+    "s": "FROG"
   },
   {
     "id": "jgive",
@@ -42177,7 +42425,8 @@
     "id": "real-3",
     "selector": "joinreal.com",
     "name": "Real",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i"],
+    "s": "REAX"
   },
   {
     "id": "saturn-technologies",
@@ -42675,7 +42924,8 @@
     "id": "kadimastem",
     "selector": "kadimastem.com",
     "name": "Kadimastem",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "KDST"
   },
   {
     "id": "klaw",
@@ -42819,7 +43069,8 @@
     "id": "kamada",
     "selector": "kamada.com",
     "name": "Kamada",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "KMDA"
   },
   {
     "id": "kamari-pharma",
@@ -42867,7 +43118,8 @@
     "id": "kanabo",
     "selector": "kanabogroup.com",
     "name": "Kanabo",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "KNB"
   },
   {
     "id": "kanarit-music-ltd",
@@ -42945,7 +43197,8 @@
     "id": "crossrider",
     "selector": "kape.com",
     "name": "Kape Technologies",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "KAPE"
   },
   {
     "id": "kapow-solutions",
@@ -43041,7 +43294,8 @@
     "id": "karyopharm-therapeutics",
     "selector": "karyopharm.com",
     "name": "Karyopharm Therapeutics",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "KPTI"
   },
   {
     "id": "kasa-2e9b",
@@ -43473,7 +43727,8 @@
     "id": "keros-therapeutics",
     "selector": "kerostx.com",
     "name": "Keros Therapeutics",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "KROS"
   },
   {
     "id": "kerv-interactive",
@@ -44355,7 +44610,8 @@
     "id": "kornit-digital",
     "selector": "kornit.com",
     "name": "Kornit Digital",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "KRNT"
   },
   {
     "id": "cognility",
@@ -44595,7 +44851,8 @@
     "id": "kudan",
     "selector": "kudan.io",
     "name": "Kudan",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "4425"
   },
   {
     "id": "kuli-alma",
@@ -44853,7 +45110,8 @@
     "id": "lahav",
     "selector": "lahavgroup.com",
     "name": "Lahav",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "LAHAV"
   },
   {
     "id": "lalalama",
@@ -45543,7 +45801,8 @@
     "id": "lemonade",
     "selector": "lemonade.com",
     "name": "Lemonade",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i"],
+    "s": "LMND"
   },
   {
     "id": "lemonaid-health",
@@ -45669,7 +45928,8 @@
     "id": "lesico-technologies",
     "selector": "lesico.com",
     "name": "Lesico Technologies",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "LSCO"
   },
   {
     "id": "lesico-process-piping",
@@ -45951,7 +46211,8 @@
     "id": "lianbio",
     "selector": "lianbio.com",
     "name": "LianBio",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "LIAN"
   },
   {
     "id": "liangold-studio",
@@ -46335,7 +46596,8 @@
     "id": "lineage-cell-therapeutics",
     "selector": "lineagecell.com",
     "name": "Lineage Cell Therapeutics",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "LCTX"
   },
   {
     "id": "linear-b",
@@ -47229,7 +47491,8 @@
     "id": "ludan-group",
     "selector": "ludan-group.com",
     "name": "Ludan Group",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "LUDN"
   },
   {
     "id": "edge-gaming",
@@ -47295,7 +47558,8 @@
     "id": "lumenis",
     "selector": "lumenis.com",
     "name": "Lumenis",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "LMNS"
   },
   {
     "id": "lumi-finance",
@@ -47505,7 +47769,8 @@
     "id": "lyra-therapeutics",
     "selector": "lyratherapeutics.com",
     "name": "Lyra Therapeutics",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "LYRA"
   },
   {
     "id": "m-adas-oci",
@@ -47523,7 +47788,8 @@
     "id": "micromedic",
     "selector": "m-medic.com",
     "name": "Micromedic",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "MCTC"
   },
   {
     "id": "m-t-hydraulics",
@@ -47547,7 +47813,8 @@
     "id": "coupang",
     "selector": "m.coupang.com",
     "name": "Coupang",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "CPNG"
   },
   {
     "id": "ae-media-solutions-msolutions",
@@ -47733,7 +48000,8 @@
     "id": "magal-security-systems",
     "selector": "magalsolutions.com",
     "name": "Magal Solutions",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "MAGS"
   },
   {
     "id": "magal",
@@ -47823,7 +48091,8 @@
     "id": "magic-software-enterprises",
     "selector": "magicsoftware.com",
     "name": "Magic Software Enterprises",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "MGIC"
   },
   {
     "id": "magicyard",
@@ -48081,7 +48350,8 @@
     "id": "malam-team",
     "selector": "malamteam.com",
     "name": "Malam Team",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "MLTM"
   },
   {
     "id": "malcam",
@@ -48381,7 +48651,8 @@
     "id": "maris-technologies-c19b",
     "selector": "maris-tech.com",
     "name": "Maris Tech Ltd.",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "MTEK"
   },
   {
     "id": "marjia-engineering",
@@ -48399,7 +48670,8 @@
     "id": "market-tech-holdings",
     "selector": "market-tech.com",
     "name": "Market Tech Holdings",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "MKT"
   },
   {
     "id": "yandex-market",
@@ -48651,7 +48923,8 @@
     "id": "massivit-3d",
     "selector": "massivit3d.com",
     "name": "Massivit 3D Printing Technologies Ltd.",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "MSVT"
   },
   {
     "id": "massless",
@@ -48795,7 +49068,8 @@
     "id": "matomy",
     "selector": "matomy.com",
     "name": "Matomy",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "MTMY"
   },
   {
     "id": "matricelf",
@@ -48807,7 +49081,8 @@
     "id": "matrix-it",
     "selector": "matrix-globalservices.com",
     "name": "Matrix IT",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "MTRX"
   },
   {
     "id": "matys-onboard",
@@ -48981,7 +49256,8 @@
     "id": "maytronics",
     "selector": "maytronics.com",
     "name": "Maytronics",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "MTRN"
   },
   {
     "id": "mayu-water",
@@ -49011,7 +49287,8 @@
     "id": "mazor-robotics",
     "selector": "mazorrobotics.com",
     "name": "Mazor Robotics",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "MZOR"
   },
   {
     "id": "mazzawi-advertising",
@@ -49527,7 +49804,8 @@
     "id": "medigus",
     "selector": "medigus.com",
     "name": "Medigus",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "MDGS"
   },
   {
     "id": "medilogos",
@@ -49659,7 +49937,8 @@
     "id": "mediwound",
     "selector": "mediwound.com",
     "name": "MediWound",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "MDWD"
   },
   {
     "id": "medmo",
@@ -49971,7 +50250,8 @@
     "id": "mellanox-technologies",
     "selector": "mellanox.com",
     "name": "Mellanox Technologies",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "MLNX"
   },
   {
     "id": "melodea",
@@ -49983,7 +50263,8 @@
     "id": "creso-pharma",
     "selector": "melodiolglobalhealth.com",
     "name": "Melodiol Global Health",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "CPH"
   },
   {
     "id": "memador",
@@ -50187,7 +50468,8 @@
     "id": "mereo-biopharma",
     "selector": "mereobiopharma.com",
     "name": "Mereo Biopharma",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "MPH"
   },
   {
     "id": "merkatus-partners",
@@ -50643,7 +50925,8 @@
     "id": "microbot-medical",
     "selector": "microbotmedical.com",
     "name": "Microbot Medical",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "MBOT"
   },
   {
     "id": "micro-bvm-systems",
@@ -50997,7 +51280,8 @@
     "id": "mind-c-t-i-ltd",
     "selector": "mindcti.com",
     "name": "MIND C.T.I.",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "MNDO"
   },
   {
     "id": "minded-ai",
@@ -51303,7 +51587,8 @@
     "id": "mishorim",
     "selector": "mishorim.com",
     "name": "Mishorim",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "MSHR"
   },
   {
     "id": "mishtag",
@@ -51621,7 +51906,8 @@
     "id": "mobileye-vision-technologies",
     "selector": "mobileye.com",
     "name": "Mobileye",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "MBLY"
   },
   {
     "id": "mobilibuy",
@@ -51639,7 +51925,8 @@
     "id": "mobilicom",
     "selector": "mobilicom.com",
     "name": "Mobilicom",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "MOB"
   },
   {
     "id": "mobilion-systems",
@@ -51777,7 +52064,8 @@
     "id": "model-n",
     "selector": "modeln.com",
     "name": "Model N",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "MODN"
   },
   {
     "id": "modelwise",
@@ -51831,7 +52119,8 @@
     "id": "modiin-energy",
     "selector": "modiin-energy.com",
     "name": "Modiin Energy",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "MDIN.L"
   },
   {
     "id": "mesh-modiin-entrepreneurs-startup-hub",
@@ -51987,7 +52276,8 @@
     "id": "mondaydotcom",
     "selector": "monday.com",
     "name": "monday.com",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "MNDY"
   },
   {
     "id": "monetize-plus",
@@ -52419,7 +52709,8 @@
     "id": "motus-gi",
     "selector": "motusgi.com",
     "name": "Motus GI",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "MOTS"
   },
   {
     "id": "mountaintop-studios",
@@ -52677,13 +52968,15 @@
     "id": "mti-wireless-edge",
     "selector": "mtiwe.com",
     "name": "MTI Wireless Edge",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "MWE"
   },
   {
     "id": "metalink",
     "selector": "mtlk.com",
     "name": "MetaLink",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "MTLK"
   },
   {
     "id": "mtr",
@@ -53337,7 +53630,8 @@
     "id": "mysizeid",
     "selector": "mysizeid.com",
     "name": "MySize",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "MYSZ"
   },
   {
     "id": "myskills",
@@ -53481,7 +53775,8 @@
     "id": "n2off",
     "selector": "n2off.com",
     "name": "N2OFF",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "NITO"
   },
   {
     "id": "n2w-software",
@@ -53619,7 +53914,8 @@
     "id": "nano-dimension",
     "selector": "nano-di.com",
     "name": "Nano Dimension",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "NNDM"
   },
   {
     "id": "nanodrops",
@@ -53751,7 +54047,8 @@
     "id": "nanox-imaging",
     "selector": "nanox.vision",
     "name": "Nanox Imaging",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "NNOX"
   },
   {
     "id": "nano-z-coating",
@@ -54021,7 +54318,8 @@
     "id": "nawi-brothers",
     "selector": "nawibros.com",
     "name": "Nawi Brothers",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "NAWI"
   },
   {
     "id": "nayacure-therapeutics-ltd",
@@ -54039,7 +54337,8 @@
     "id": "nayax",
     "selector": "nayax.com",
     "name": "Nayax",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "NYAX"
   },
   {
     "id": "nayo-organic",
@@ -54279,7 +54578,8 @@
     "id": "neogames-technologies",
     "selector": "neogames.com",
     "name": "NeoGames Technologies",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "NGMS"
   },
   {
     "id": "neolithics",
@@ -54585,7 +54885,8 @@
     "id": "netz-group",
     "selector": "netzgroup.com",
     "name": "Netz Group",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "NETZ"
   },
   {
     "id": "neuledge",
@@ -54669,7 +54970,8 @@
     "id": "neuroderm",
     "selector": "neuroderm.com",
     "name": "NeuroDerm",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "NDRM"
   },
   {
     "id": "neurogait",
@@ -54729,7 +55031,8 @@
     "id": "neurosense-therapeutics",
     "selector": "neurosense-tx.com",
     "name": "NeuroSense Therapeutics",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "NRSN"
   },
   {
     "id": "neurosteer",
@@ -54873,7 +55176,8 @@
     "id": "delek-drilling",
     "selector": "newmedenergy.com",
     "name": "NewMed Energy",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "NWMD"
   },
   {
     "id": "newmed-scientific",
@@ -55023,7 +55327,8 @@
     "id": "nextcom-group",
     "selector": "nextcomgroup.com",
     "name": "Nextcom Group",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "NXTM"
   },
   {
     "id": "nextec-2",
@@ -55041,7 +55346,8 @@
     "id": "nextferm",
     "selector": "nextferm.com",
     "name": "NextFerm",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "NXFR"
   },
   {
     "id": "nextgen-biomed",
@@ -55065,7 +55371,8 @@
     "id": "nextnav",
     "selector": "nextnav.com",
     "name": "NextNav",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "NN"
   },
   {
     "id": "nextnvest",
@@ -55083,7 +55390,8 @@
     "id": "nextpoint-capital-socimi",
     "selector": "nextpointsocimi.com",
     "name": "Nextpoint Capital",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "YNPC"
   },
   {
     "id": "nextpoint-therapeutics",
@@ -55119,7 +55427,8 @@
     "id": "nextvision-stabilized-systems",
     "selector": "nextvision-sys.com",
     "name": "NextVision Stabilized Systems",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "NXSN"
   },
   {
     "id": "nexus-mutual",
@@ -55167,7 +55476,8 @@
     "id": "ng-solutions-ngs",
     "selector": "ngsolutions.co",
     "name": "Nutritional Growth Solutions",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "NGS"
   },
   {
     "id": "ng-subtitling",
@@ -55203,7 +55513,8 @@
     "id": "nice-e1d1",
     "selector": "nice.com",
     "name": "NICE",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "NICE"
   },
   {
     "id": "actimize",
@@ -55407,7 +55718,8 @@
     "id": "eltek-2",
     "selector": "nisteceltek.com",
     "name": "Eltek",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ELTK"
   },
   {
     "id": "nanotech-industrial-solutions",
@@ -55563,7 +55875,8 @@
     "id": "nofar-energy",
     "selector": "nofar-energy.com",
     "name": "Nofar Energy",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "NOFR"
   },
   {
     "id": "noga-control-systems",
@@ -55725,7 +56038,8 @@
     "id": "northstar-gaming",
     "selector": "northstargaming.ca",
     "name": "NorthStar Gaming",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "BET"
   },
   {
     "id": "nosolo",
@@ -55737,7 +56051,8 @@
     "id": "nostromo",
     "selector": "nostromo.energy",
     "name": "Nostromo",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "NOST"
   },
   {
     "id": "notal-vision-com",
@@ -55797,7 +56112,8 @@
     "id": "nova-measuring-instruments",
     "selector": "novami.com",
     "name": "Nova",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "NVMI"
   },
   {
     "id": "nova-plasma",
@@ -55935,7 +56251,8 @@
     "id": "novocure",
     "selector": "novocure.com",
     "name": "NovoCure",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "NVCR"
   },
   {
     "id": "novodes",
@@ -56055,7 +56372,8 @@
     "id": "nrgene",
     "selector": "nrgene.com",
     "name": "NRGene",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "NRGN"
   },
   {
     "id": "nrg-spring",
@@ -56265,7 +56583,8 @@
     "id": "nur-ink-innovations",
     "selector": "nur-ink.com",
     "name": "Nur Ink Innovations",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "NURI"
   },
   {
     "id": "nur-macroprinters",
@@ -56283,7 +56602,8 @@
     "id": "nurexone-biologic",
     "selector": "nurexone.com",
     "name": "NurExone Biologic",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "NRXBF"
   },
   {
     "id": "nutek-b2f2",
@@ -56343,7 +56663,8 @@
     "id": "nuvo-group",
     "selector": "nuvocares.com",
     "name": "Nuvo Group",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "NUVO"
   },
   {
     "id": "nvu-systems",
@@ -56487,7 +56808,8 @@
     "id": "obseva",
     "selector": "obseva.com",
     "name": "ObsEva",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "OBSV"
   },
   {
     "id": "o-c-lines",
@@ -56517,7 +56839,8 @@
     "id": "oceansix",
     "selector": "oceansix.com",
     "name": "Oceansix",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "OSIX"
   },
   {
     "id": "ocon-medical",
@@ -56601,7 +56924,8 @@
     "id": "ocular-therapeutix",
     "selector": "ocutx.com",
     "name": "Ocular Therapeutix",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "OCUL"
   },
   {
     "id": "parento-o-daddy",
@@ -56667,7 +56991,8 @@
     "id": "odysight-ai",
     "selector": "odysight.ai",
     "name": "Odysight.AI",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ODYS"
   },
   {
     "id": "odysii",
@@ -57039,7 +57364,8 @@
     "id": "omada-health",
     "selector": "omadahealth.com",
     "name": "Omada Health",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "OMDA"
   },
   {
     "id": "omaiko",
@@ -57207,7 +57533,8 @@
     "id": "omrix-biopharmaceuticals",
     "selector": "omrix.com",
     "name": "Omrix Biopharmaceuticals",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "OMRI"
   },
   {
     "id": "onvedan",
@@ -57255,7 +57582,8 @@
     "id": "oncorus-inc",
     "selector": "oncorus.com",
     "name": "Oncorus",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "ONCR"
   },
   {
     "id": "ondema",
@@ -57591,7 +57919,8 @@
     "id": "opc-energy",
     "selector": "opc-energy.com",
     "name": "OPC Energy",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "OPCE"
   },
   {
     "id": "open-finance-ai",
@@ -57795,7 +58124,8 @@
     "id": "optibase",
     "selector": "optibase-holdings.com",
     "name": "optibase",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "OBAS"
   },
   {
     "id": "optibus",
@@ -58047,7 +58377,8 @@
     "id": "orad",
     "selector": "orad.cc",
     "name": "Orad",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ORAD"
   },
   {
     "id": "oralsave",
@@ -58059,13 +58390,15 @@
     "id": "oramed-pharmaceuticals",
     "selector": "oramed.com",
     "name": "Oramed Pharmaceuticals",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "ORMP"
   },
   {
     "id": "orbit-communication-systems",
     "selector": "orbit-cs.com",
     "name": "Orbit Communication Systems",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ORBI"
   },
   {
     "id": "orbograph",
@@ -58119,7 +58452,8 @@
     "id": "orchard-therapeutics",
     "selector": "orchard-tx.com",
     "name": "Orchard Therapeutics",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "ORTX"
   },
   {
     "id": "orchestra-group",
@@ -58161,7 +58495,8 @@
     "id": "orgenesis",
     "selector": "orgenesis.com",
     "name": "Orgenesis",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "ORGS"
   },
   {
     "id": "ori-8629",
@@ -58533,7 +58868,8 @@
     "id": "otonomo",
     "selector": "otonomo.io",
     "name": "Otonomo",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "OTMO"
   },
   {
     "id": "otorio",
@@ -58635,7 +58971,8 @@
     "id": "outbrain",
     "selector": "outbrain.com",
     "name": "Outbrain",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i"],
+    "s": "OB"
   },
   {
     "id": "outdoorsy-co",
@@ -58665,7 +59002,8 @@
     "id": "oncobiologics",
     "selector": "outlooktherapeutics.com",
     "name": "Outlook Therapeutics",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "OTLK"
   },
   {
     "id": "out-of-the-docs",
@@ -58779,7 +59117,8 @@
     "id": "ovid-therapeutics",
     "selector": "ovidrx.com",
     "name": "Ovid Therapeutics",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "OVID"
   },
   {
     "id": "ovio-c60f",
@@ -58809,7 +59148,8 @@
     "id": "owc-pharmaceutical-research",
     "selector": "owcpharma.com",
     "name": "OWC Pharmaceutical Research",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "OWCP"
   },
   {
     "id": "owl-global",
@@ -59061,7 +59401,8 @@
     "id": "the-pagaya-group",
     "selector": "pagaya.com",
     "name": "Pagaya",
-    "reasons": ["i", "h"]
+    "reasons": ["i", "h"],
+    "s": "PGY"
   },
   {
     "id": "pagewiz",
@@ -59103,7 +59444,8 @@
     "id": "painreform",
     "selector": "painreform.com",
     "name": "PainReform",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "PRFX"
   },
   {
     "id": "paint-your-life",
@@ -59475,7 +59817,8 @@
     "id": "parazero",
     "selector": "parazero.com",
     "name": "ParaZero - Drone Safety Systems",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "PRZ"
   },
   {
     "id": "parente-studio",
@@ -59871,7 +60214,8 @@
     "id": "paycor-inc",
     "selector": "paycor.com",
     "name": "Paycor",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "PYCR"
   },
   {
     "id": "payem-card",
@@ -59943,7 +60287,8 @@
     "id": "payoneer",
     "selector": "payoneer.com",
     "name": "Payoneer",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i"],
+    "s": "PAYO"
   },
   {
     "id": "payosu",
@@ -59967,7 +60312,8 @@
     "id": "payton-industries",
     "selector": "paytongroup.com",
     "name": "Payton Industries",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "PAY"
   },
   {
     "id": "tweed-payments",
@@ -60033,7 +60379,8 @@
     "id": "pcb-technologies-173e",
     "selector": "pcb-technologies.com",
     "name": "PCB Technologies",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "PCBT"
   },
   {
     "id": "pcentra",
@@ -60075,7 +60422,8 @@
     "id": "paradigm",
     "selector": "pdgm.com",
     "name": "Paradigm",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "PGEO"
   },
   {
     "id": "pdp-technologies-israel",
@@ -60291,7 +60639,8 @@
     "id": "pennantpark-investment-corp",
     "selector": "pennantpark.com",
     "name": "PennantPark Investment Corp",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "PFLT"
   },
   {
     "id": "pentaxi",
@@ -60465,7 +60814,8 @@
     "id": "perion",
     "selector": "perion.com",
     "name": "Perion",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "PERI"
   },
   {
     "id": "periscope-5ace",
@@ -60585,19 +60935,22 @@
     "id": "petrotx",
     "selector": "petrotxlp.com",
     "name": "PetroTx",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "PTX"
   },
   {
     "id": "palestine-securities-exchange-public-shareholding",
     "selector": "pex.ps",
     "name": "Palestine Securities Exchange Public Shareholding",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "PSE"
   },
   {
     "id": "golan-plastic-products",
     "selector": "pexgol.com",
     "name": "Golan Plastic Products",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "GLPL"
   },
   {
     "id": "pezzo-e133",
@@ -60687,7 +61040,8 @@
     "id": "pharmocann",
     "selector": "pharmocann.com",
     "name": "Pharmocann",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "PMCN"
   },
   {
     "id": "phase3-technologies",
@@ -60759,7 +61113,8 @@
     "id": "phinergy",
     "selector": "phinergy.com",
     "name": "Phinergy",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "PNRG"
   },
   {
     "id": "phinergy-marine",
@@ -60855,7 +61210,8 @@
     "id": "photomyne",
     "selector": "photomyne.com",
     "name": "Photomyne",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "PHTM"
   },
   {
     "id": "photonicsys",
@@ -61143,7 +61499,8 @@
     "id": "pieris-pharmaceuticals",
     "selector": "pieris.com",
     "name": "Pieris Pharmaceuticals",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "PIRS"
   },
   {
     "id": "piggy-d8f3",
@@ -61605,7 +61962,8 @@
     "id": "plantarcbio",
     "selector": "plantarcbio.com",
     "name": "PlantArcBio",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "PLNT"
   },
   {
     "id": "plantext",
@@ -61683,7 +62041,8 @@
     "id": "plasson",
     "selector": "plasson.com",
     "name": "Plasson",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "PLSN"
   },
   {
     "id": "plasson-livestock",
@@ -61719,7 +62078,8 @@
     "id": "plastopil-ltd",
     "selector": "plastopil.com",
     "name": "Plastopil Ltd.",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "PPIL"
   },
   {
     "id": "plataine",
@@ -61875,7 +62235,8 @@
     "id": "playstudios",
     "selector": "playstudios.com",
     "name": "PLAYSTUDIOS",
-    "reasons": ["f", "h"]
+    "reasons": ["f", "h"],
+    "s": "MYPS"
   },
   {
     "id": "play-tag-c7d3",
@@ -61887,7 +62248,8 @@
     "id": "playtech",
     "selector": "playtech.com",
     "name": "Playtech",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "PTEC"
   },
   {
     "id": "playtertainment",
@@ -61899,7 +62261,8 @@
     "id": "playtika",
     "selector": "playtika.com",
     "name": "Playtika",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "PLTK"
   },
   {
     "id": "playtium",
@@ -62013,13 +62376,15 @@
     "id": "pluristem-therapeutics",
     "selector": "pluri-biotech.com",
     "name": "Pluri",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "PSTI"
   },
   {
     "id": "plus500",
     "selector": "plus500.com",
     "name": "Plus500",
-    "reasons": ["h", "f"]
+    "reasons": ["h", "f"],
+    "s": "PLUS"
   },
   {
     "id": "plus-music",
@@ -62145,7 +62510,8 @@
     "id": "point-biopharma",
     "selector": "pointbiopharma.com",
     "name": "Point Biopharma",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "PNT"
   },
   {
     "id": "pointfive",
@@ -62313,13 +62679,15 @@
     "id": "polypid",
     "selector": "polypid.com",
     "name": "PolyPid",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "PYPD"
   },
   {
     "id": "polyram-plastic-industries-israel",
     "selector": "polyram-group.com",
     "name": "Polyram",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "RMN"
   },
   {
     "id": "polyraz",
@@ -62337,7 +62705,8 @@
     "id": "polyrizon",
     "selector": "polyrizon-biotech.com",
     "name": "Polyrizon",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "PLRZ"
   },
   {
     "id": "polysack-flexible-packaging",
@@ -62379,7 +62748,8 @@
     "id": "pomvom-paparazme",
     "selector": "pomvom.com",
     "name": "PomVom",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "PMVM"
   },
   {
     "id": "pond5",
@@ -62955,7 +63325,8 @@
     "id": "prevail-therapeutics",
     "selector": "prevailtherapeutics.com",
     "name": "Prevail Therapeutics",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "PRVL"
   },
   {
     "id": "prevera",
@@ -63021,7 +63392,8 @@
     "id": "prime-energy-pe-ltd",
     "selector": "prime-nergy.com",
     "name": "Prime energy",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "PRIM"
   },
   {
     "id": "prime-gaming",
@@ -63663,7 +64035,8 @@
     "id": "afi-properties",
     "selector": "prop.afi-g.com",
     "name": "Afi Properties",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "AFPR"
   },
   {
     "id": "propdo",
@@ -63711,7 +64084,8 @@
     "id": "proqr-therapeutics",
     "selector": "proqr.com",
     "name": "ProQR Therapeutics",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "PRQR"
   },
   {
     "id": "proquart",
@@ -63741,7 +64115,8 @@
     "id": "prospa",
     "selector": "prospa.com",
     "name": "Prospa",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "PGL"
   },
   {
     "id": "prospec-tany-technogene",
@@ -63783,7 +64158,8 @@
     "id": "protalix-biotherapeutics",
     "selector": "protalix.com",
     "name": "Protalix BioTherapeutics",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "PLX"
   },
   {
     "id": "proteantecs",
@@ -64095,7 +64471,8 @@
     "id": "pulsenmore",
     "selector": "pulsenmore.com",
     "name": "PulseNmore",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "PULS"
   },
   {
     "id": "pulser-field-construction",
@@ -64179,7 +64556,8 @@
     "id": "kitov-pharmaceuticals",
     "selector": "purple-biotech.com",
     "name": "Purple Biotech",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "PPBT"
   },
   {
     "id": "purple-lens",
@@ -64533,7 +64911,8 @@
     "id": "qlik-technologies",
     "selector": "qlik.com",
     "name": "Qlik",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "QLIK"
   },
   {
     "id": "qlika",
@@ -64635,7 +65014,8 @@
     "id": "qrons",
     "selector": "qrons.com",
     "name": "Qrons",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "QRON"
   },
   {
     "id": "quantum-source",
@@ -64917,7 +65297,8 @@
     "id": "queenco-leisure-international",
     "selector": "queenco.com",
     "name": "Queenco Leisure International",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "QNCO"
   },
   {
     "id": "query-solutions",
@@ -64977,13 +65358,15 @@
     "id": "quicklizard",
     "selector": "quicklizard.com",
     "name": "Quicklizard",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "QLRD"
   },
   {
     "id": "quick-med-technologies",
     "selector": "quickmedtech.com",
     "name": "Quick-Med Technologies",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "QMDT"
   },
   {
     "id": "quickode",
@@ -65073,7 +65456,8 @@
     "id": "quotium",
     "selector": "quotium.com",
     "name": "Quotium Technologies SA",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "QTE"
   },
   {
     "id": "qurate-tech-b392",
@@ -65181,13 +65565,15 @@
     "id": "rada-electronic-industries-ltd",
     "selector": "rada.com",
     "name": "RADA Electronic Industries",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "RADA"
   },
   {
     "id": "radcom",
     "selector": "radcom.com",
     "name": "Radcom",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "RDCM"
   },
   {
     "id": "radd",
@@ -65271,13 +65657,15 @@
     "id": "radview-software",
     "selector": "radview.com",
     "name": "Radview Software",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "RDVWF"
   },
   {
     "id": "radware",
     "selector": "radware.com",
     "name": "Radware",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "RDWR"
   },
   {
     "id": "radware-bot-manager",
@@ -65337,7 +65725,8 @@
     "id": "railvision",
     "selector": "railvision.io",
     "name": "RailVision",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "RVSN"
   },
   {
     "id": "railz",
@@ -65607,7 +65996,8 @@
     "id": "ratio-oil-exploration",
     "selector": "ratioil.com",
     "name": "Ratio Energy",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "RATI.L"
   },
   {
     "id": "rational-systems",
@@ -65619,7 +66009,8 @@
     "id": "ratio-petroleum-energy",
     "selector": "ratiopetroleum.com",
     "name": "Ratio Petroleum Energy",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "RTPT.L"
   },
   {
     "id": "rb-doors",
@@ -65745,7 +66136,8 @@
     "id": "razor-labs",
     "selector": "razor-labs.com",
     "name": "Razor Labs",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "RZR"
   },
   {
     "id": "razor-grip-solutions",
@@ -66213,7 +66605,8 @@
     "id": "redhill-biopharma",
     "selector": "redhillbio.com",
     "name": "RedHill Biopharma",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "RDHL"
   },
   {
     "id": "redis",
@@ -66291,7 +66684,8 @@
     "id": "ree-automotive",
     "selector": "ree.auto",
     "name": "REE Automotive",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "REE"
   },
   {
     "id": "reeco-3bca",
@@ -66483,7 +66877,8 @@
     "id": "rotem-energy-mines",
     "selector": "rem-energy.com",
     "name": "Rotem Energy Mines",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "RTEN"
   },
   {
     "id": "remarketing",
@@ -66741,7 +67136,8 @@
     "id": "africa-israel-residences",
     "selector": "res.afi-g.com",
     "name": "Africa Israel Residences",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "AFRE"
   },
   {
     "id": "rescana",
@@ -67029,7 +67425,8 @@
     "id": "reunion-neuroscience",
     "selector": "reunionneuro.com",
     "name": "Reunion Neuroscience",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "REUN"
   },
   {
     "id": "reup-mobile",
@@ -67485,7 +67882,8 @@
     "id": "rimoni-ind",
     "selector": "rimoni-ind.com",
     "name": "Rimoni Ind",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "RIMO"
   },
   {
     "id": "rimonim-design",
@@ -67599,7 +67997,8 @@
     "id": "riskified",
     "selector": "riskified.com",
     "name": "Riskified",
-    "reasons": ["f", "i", "h"]
+    "reasons": ["f", "i", "h"],
+    "s": "RSKD"
   },
   {
     "id": "riskrecon",
@@ -67611,7 +68010,8 @@
     "id": "rit-technologies-ltd",
     "selector": "rittech.com",
     "name": "RiT Technologies Ltd.",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "RITT"
   },
   {
     "id": "riverhead-networks",
@@ -67665,7 +68065,8 @@
     "id": "rmh-lachish-industries",
     "selector": "rmhmixer.com",
     "name": "RMH Lachish Industries",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "LHIS"
   },
   {
     "id": "r-a-data",
@@ -67779,7 +68180,8 @@
     "id": "robogroup",
     "selector": "robo-group.com",
     "name": "RoboGroup",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ROBOF"
   },
   {
     "id": "roboteam",
@@ -67893,7 +68295,8 @@
     "id": "roivant-sciences",
     "selector": "roivant.com",
     "name": "Roivant Sciences",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "ROIV"
   },
   {
     "id": "roket-media",
@@ -68163,7 +68566,8 @@
     "id": "rotem-shani-entrepreneurship-investment-ltd",
     "selector": "rotemshani.com",
     "name": "Rotem Shani Entrepreneurship & Investment",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "RTSN"
   },
   {
     "id": "rotlex",
@@ -68295,7 +68699,8 @@
     "id": "rr-media",
     "selector": "rrmedia.com",
     "name": "RR Media",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "RRST"
   },
   {
     "id": "rs-logistical-solutions",
@@ -69207,13 +69612,15 @@
     "id": "saniona",
     "selector": "saniona.com",
     "name": "Saniona",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "SANION"
   },
   {
     "id": "sanlakol",
     "selector": "sanlakol.com",
     "name": "Sanlakol",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ZNKL"
   },
   {
     "id": "sano-international",
@@ -69261,7 +69668,8 @@
     "id": "sapiens-international",
     "selector": "sapiens.com",
     "name": "Sapiens",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SPNS"
   },
   {
     "id": "sapir-capital-group",
@@ -69273,7 +69681,8 @@
     "id": "sapir-corp",
     "selector": "sapircorp.com",
     "name": "Sapir Corp",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SPIR"
   },
   {
     "id": "sapir-medical-clinic",
@@ -69411,7 +69820,8 @@
     "id": "satixfy",
     "selector": "satixfy.com",
     "name": "SatixFy",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SATX"
   },
   {
     "id": "satori-cyber",
@@ -69459,13 +69869,15 @@
     "id": "save-foods",
     "selector": "savefoods.co",
     "name": "Save Foods",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SVFD"
   },
   {
     "id": "saver1",
     "selector": "saver.one",
     "name": "SaverOne",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SAVR"
   },
   {
     "id": "savicell-diagnostics",
@@ -69483,7 +69895,8 @@
     "id": "savoreat",
     "selector": "savor-eat.com",
     "name": "SavorEat",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SVRT"
   },
   {
     "id": "savransky-partners",
@@ -69867,7 +70280,8 @@
     "id": "scope-metals-group",
     "selector": "scope-metal.com",
     "name": "Scope Metals Group",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SCOP"
   },
   {
     "id": "scopio-2",
@@ -69879,7 +70293,8 @@
     "id": "scopus-biopharma-israel",
     "selector": "scopusbiopharma.com",
     "name": "Scopus BioPharma",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "SCPS"
   },
   {
     "id": "scopus-security",
@@ -70407,7 +70822,8 @@
     "id": "seedo",
     "selector": "seedolab.com",
     "name": "Seedo",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SEDO"
   },
   {
     "id": "seedr",
@@ -70497,7 +70913,8 @@
     "id": "seer-b1f0",
     "selector": "seer.bio",
     "name": "Seer",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "SEER"
   },
   {
     "id": "seerbanc-ltd",
@@ -70611,7 +71028,8 @@
     "id": "selecta-biosciences",
     "selector": "selectabio.com",
     "name": "Selecta Biosciences",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "SELB"
   },
   {
     "id": "selectel",
@@ -70671,13 +71089,15 @@
     "id": "selina",
     "selector": "selina.com",
     "name": "Selina",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i"],
+    "s": "SLNA"
   },
   {
     "id": "sella-capital-real-estate",
     "selector": "sellacapital.com",
     "name": "Sella Capital Real Estate",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SLARL"
   },
   {
     "id": "sellaring",
@@ -71025,7 +71445,8 @@
     "id": "senti-biosciences",
     "selector": "sentibio.com",
     "name": "Senti Biosciences",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "SNTI"
   },
   {
     "id": "sentient-med",
@@ -71043,7 +71464,8 @@
     "id": "sentinel",
     "selector": "sentinelone.com",
     "name": "SentinelOne",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i"],
+    "s": "S"
   },
   {
     "id": "sentra",
@@ -71241,7 +71663,8 @@
     "id": "servision",
     "selector": "servision.net",
     "name": "SerVision",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "SEV"
   },
   {
     "id": "servotronix",
@@ -71463,7 +71886,8 @@
     "id": "shamaym",
     "selector": "shamaym.com",
     "name": "Shamaym",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SHMM"
   },
   {
     "id": "shamir-medical-centre",
@@ -71475,7 +71899,8 @@
     "id": "shamir-optical-industry",
     "selector": "shamirlens.com",
     "name": "Shamir Optical Industry",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "SHMR"
   },
   {
     "id": "shamrock-international-opportunities",
@@ -71511,7 +71936,8 @@
     "id": "shaniv-sasatech",
     "selector": "shaniv.com",
     "name": "Shaniv-Sasatech",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SHAN"
   },
   {
     "id": "shani-tech",
@@ -71685,7 +72111,8 @@
     "id": "shefa-gems",
     "selector": "shefagems.com",
     "name": "Shefa Gems",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SEFA"
   },
   {
     "id": "sheffer-aluminum-industries",
@@ -71709,7 +72136,8 @@
     "id": "shekel-brainweigh",
     "selector": "shekelbrainweigh.com",
     "name": "Shekel Brainweigh",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SBW"
   },
   {
     "id": "shekel-scales",
@@ -71721,7 +72149,8 @@
     "id": "shelfietech",
     "selector": "shelfietech.com",
     "name": "ShelfieTech",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SHLF"
   },
   {
     "id": "shelfx",
@@ -71853,7 +72282,8 @@
     "id": "shikun-binui",
     "selector": "shikunbinui.com",
     "name": "Shikun & Binui",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SKBN"
   },
   {
     "id": "shilatjewelers",
@@ -72015,7 +72445,8 @@
     "id": "shl-telemedicine",
     "selector": "shl-telemedicine.com",
     "name": "SHL Telemedicine",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SHLTN"
   },
   {
     "id": "shladot",
@@ -72051,7 +72482,8 @@
     "id": "shoham-business",
     "selector": "shohambiz.com",
     "name": "Shoham Business",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SHOM"
   },
   {
     "id": "shoodoo-analytics",
@@ -72525,7 +72957,8 @@
     "id": "silicom",
     "selector": "silicom-usa.com",
     "name": "Silicom",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SILC"
   },
   {
     "id": "silin",
@@ -72573,7 +73006,8 @@
     "id": "silverback-therapeutics",
     "selector": "silverbacktx.com",
     "name": "Silverback Therapeutics",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "SBTX"
   },
   {
     "id": "silverbyte",
@@ -72663,7 +73097,8 @@
     "id": "simigon",
     "selector": "simigon.com",
     "name": "SimiGon",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SIM"
   },
   {
     "id": "similari",
@@ -72687,7 +73122,8 @@
     "id": "similarweb",
     "selector": "similarweb.com",
     "name": "Similarweb",
-    "reasons": ["f", "h"]
+    "reasons": ["f", "h"],
+    "s": "SMWB"
   },
   {
     "id": "simlat",
@@ -72987,7 +73423,8 @@
     "id": "sisram-medical-ltd",
     "selector": "sisram-medical.com",
     "name": "Sisram Medical Ltd",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "1696"
   },
   {
     "id": "sister-no-4",
@@ -73263,7 +73700,8 @@
     "id": "nemus-bioscience",
     "selector": "skyebioscience.com",
     "name": "Skye Bioscience",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "SKYE"
   },
   {
     "id": "skyer-motors-technologies",
@@ -73587,7 +74025,8 @@
     "id": "smart-agro-c8b7",
     "selector": "smartagrofund.com",
     "name": "Smart Agro",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SMAG"
   },
   {
     "id": "amr-g-smart-water-meters",
@@ -74133,7 +74572,8 @@
     "id": "sodastream",
     "selector": "sodastream.com",
     "name": "SodaStream",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "PEPSICO"
   },
   {
     "id": "sodinu",
@@ -74265,7 +74705,8 @@
     "id": "sofwave",
     "selector": "sofwave.com",
     "name": "SofWave Medical",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SOFW"
   },
   {
     "id": "sogomatic",
@@ -74307,7 +74748,8 @@
     "id": "sol-gel-technologies",
     "selector": "sol-gel.com",
     "name": "Sol-Gel Technologies",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SLGL"
   },
   {
     "id": "sologic-systems-etree",
@@ -74361,7 +74803,8 @@
     "id": "solaredge-technologies",
     "selector": "solaredge.com",
     "name": "SolarEdge Technologiesa",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SEDG"
   },
   {
     "id": "solargik",
@@ -74649,7 +75092,8 @@
     "id": "somoto",
     "selector": "somoto.com",
     "name": "Somoto",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SMTO"
   },
   {
     "id": "somplo",
@@ -74745,7 +75189,8 @@
     "id": "nano-textile",
     "selector": "sonoviatech.com",
     "name": "Sonovia",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SONO"
   },
   {
     "id": "sookooroo",
@@ -74763,7 +75208,8 @@
     "id": "sophia-genetics",
     "selector": "sophiagenetics.com",
     "name": "SOPHiA GENETICS",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "SOPH"
   },
   {
     "id": "sophisticart",
@@ -75087,7 +75533,8 @@
     "id": "spark-networks",
     "selector": "spark.net",
     "name": "Spark Networks",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "LOVLY"
   },
   {
     "id": "sparkbeyond",
@@ -75561,7 +76008,8 @@
     "id": "payitsimple",
     "selector": "splitit.com",
     "name": "Splitit",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "SPT"
   },
   {
     "id": "fulcrum-sp-materials",
@@ -75579,7 +76027,8 @@
     "id": "spo",
     "selector": "spoglobal.com",
     "name": "SPO",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SPOM"
   },
   {
     "id": "spondoolies-tech",
@@ -75621,7 +76070,8 @@
     "id": "sportech",
     "selector": "sportechplc.com",
     "name": "Sportech",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "SPO"
   },
   {
     "id": "sportingo",
@@ -75903,7 +76353,8 @@
     "id": "sqz-biotech",
     "selector": "sqzbiotech.com",
     "name": "SQZ Biotech",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "SQZ"
   },
   {
     "id": "sr-accord",
@@ -76029,7 +76480,8 @@
     "id": "starcom-plc",
     "selector": "starcomsystems.com",
     "name": "Starcom Systems",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "STAR"
   },
   {
     "id": "stardat",
@@ -76077,7 +76529,8 @@
     "id": "starlims",
     "selector": "starlims.com",
     "name": "STARLIMS",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "LIMS"
   },
   {
     "id": "starling-b920",
@@ -76293,7 +76746,8 @@
     "id": "meatech",
     "selector": "steakholderfoods.com",
     "name": "Steakholder Foods",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "MEAT"
   },
   {
     "id": "ammanuel-co",
@@ -76563,7 +77017,8 @@
     "id": "stoke-therapeutics",
     "selector": "stoketherapeutics.com",
     "name": "Stoke Therapeutics",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "STOK"
   },
   {
     "id": "stomtop",
@@ -76737,7 +77192,8 @@
     "id": "objet-geometrics",
     "selector": "stratasys.com",
     "name": "Objet Geometries",
-    "reasons": ["h", "i"]
+    "reasons": ["h", "i"],
+    "s": "SSYS"
   },
   {
     "id": "stratavar",
@@ -76809,7 +77265,8 @@
     "id": "strauss-group",
     "selector": "strauss-group.com",
     "name": "Strauss Group",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "STRS"
   },
   {
     "id": "strauss-water",
@@ -77199,7 +77656,8 @@
     "id": "sumo-logic",
     "selector": "sumologic.com",
     "name": "Sumo Logic",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "SUMO"
   },
   {
     "id": "sum-substance",
@@ -77241,7 +77699,8 @@
     "id": "sunflower",
     "selector": "sunflower-sit.com",
     "name": "Sunflower",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SNFL"
   },
   {
     "id": "sunflowers-energy",
@@ -77331,13 +77790,15 @@
     "id": "superbuzz",
     "selector": "superbuzz.io",
     "name": "SuperBuzz",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SPZ"
   },
   {
     "id": "supercom-2",
     "selector": "supercom.com",
     "name": "SuperCom",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SPCB"
   },
   {
     "id": "supercreator-ai",
@@ -78003,7 +78464,8 @@
     "id": "synlogic",
     "selector": "synlogictx.com",
     "name": "Synlogic",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "SYBX"
   },
   {
     "id": "synoia-technologies-wishpro",
@@ -78189,7 +78651,8 @@
     "id": "taboola",
     "selector": "taboola.com",
     "name": "Taboola",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "TBLA"
   },
   {
     "id": "tabor-electronics",
@@ -78267,7 +78730,8 @@
     "id": "tadiran-group",
     "selector": "tadiran-international.com",
     "name": "Tadiran Group",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "TDRN"
   },
   {
     "id": "tadiran-telecom",
@@ -78585,7 +79049,8 @@
     "id": "talkspace",
     "selector": "talkspace.com",
     "name": "Talkspace",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "TALK"
   },
   {
     "id": "talksparks",
@@ -78777,7 +79242,8 @@
     "id": "tango-therapeutics",
     "selector": "tangotx.com",
     "name": "Tango Therapeutics",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "TNGX"
   },
   {
     "id": "tanku",
@@ -78957,7 +79423,8 @@
     "id": "taro-pharmaceuticals",
     "selector": "taro.com",
     "name": "Taro Pharmaceuticals",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "TARO"
   },
   {
     "id": "tarritech",
@@ -79035,7 +79502,8 @@
     "id": "tat-technologies",
     "selector": "tat-technologies.com",
     "name": "TAT Technologies",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "TATT"
   },
   {
     "id": "tata-communications-limited",
@@ -79287,7 +79755,8 @@
     "id": "techcare",
     "selector": "techcareltd.com",
     "name": "Techcare",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "TECR"
   },
   {
     "id": "techedup",
@@ -79305,7 +79774,8 @@
     "id": "techfinancials",
     "selector": "techfinancials.com",
     "name": "TechFinancials",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "TECH"
   },
   {
     "id": "techidomedia",
@@ -79413,7 +79883,8 @@
     "id": "tectona",
     "selector": "tectona.io",
     "name": "Tectona",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "TECT"
   },
   {
     "id": "tectu",
@@ -79449,7 +79920,8 @@
     "id": "tefen",
     "selector": "tefen.com",
     "name": "Tefen",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "TEFN"
   },
   {
     "id": "tefen-f663",
@@ -79461,7 +79933,8 @@
     "id": "tefron",
     "selector": "tefron.com",
     "name": "Tefron",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "TFRFF"
   },
   {
     "id": "tehuti-networks",
@@ -79581,7 +80054,8 @@
     "id": "telit-wireless-solutions",
     "selector": "telit.com",
     "name": "Telit",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i"],
+    "s": "TCM"
   },
   {
     "id": "telkoor-telecom",
@@ -80001,7 +80475,8 @@
     "id": "teva-pharmaceutical-industries",
     "selector": "tevapharm.com",
     "name": "Teva Pharmaceuticals",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "TEVA"
   },
   {
     "id": "tevatronic",
@@ -80121,7 +80596,8 @@
     "id": "the-agency-group-australia",
     "selector": "theagency.com.au",
     "name": "The Agency Group Australia",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "AU1"
   },
   {
     "id": "theator",
@@ -80211,7 +80687,8 @@
     "id": "the-crow-group",
     "selector": "thecrowgroup.com",
     "name": "The Crow Group",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "CRWTF"
   },
   {
     "id": "culture-trip",
@@ -80241,7 +80718,8 @@
     "id": "flying-spark",
     "selector": "theflyingspark.com",
     "name": "Flying SpArk",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "FLYS"
   },
   {
     "id": "the-b2c-s",
@@ -80919,7 +81397,8 @@
     "id": "tigi",
     "selector": "tigisolar.com",
     "name": "Tigi",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "TIGI"
   },
   {
     "id": "tigloo-29aa",
@@ -80931,7 +81410,8 @@
     "id": "tigo-energy",
     "selector": "tigoenergy.com",
     "name": "Tigo Energy",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "TYGO"
   },
   {
     "id": "tikal-center",
@@ -80961,7 +81441,8 @@
     "id": "tikcro",
     "selector": "tikcro.com",
     "name": "Tikcro",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "TIKRF"
   },
   {
     "id": "tikun-olam",
@@ -81315,7 +81796,8 @@
     "id": "tmt-investments",
     "selector": "tmtinvestments.com",
     "name": "TMT Investments",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "TMT"
   },
   {
     "id": "tmurot-tps",
@@ -81393,7 +81875,8 @@
     "id": "todos-medical",
     "selector": "todosmedical.com",
     "name": "Todos Medical",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "TOMDF"
   },
   {
     "id": "toga-networks",
@@ -81411,7 +81894,8 @@
     "id": "together-pharma",
     "selector": "together-pharma.com",
     "name": "Together Pharma",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "TGTR"
   },
   {
     "id": "together-strategy-communications",
@@ -81759,7 +82243,8 @@
     "id": "top-image-systems",
     "selector": "topimagesystems.com",
     "name": "Top Image Systems",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "TISA"
   },
   {
     "id": "top-implants",
@@ -81999,7 +82484,8 @@
     "id": "toutabo",
     "selector": "toutabo.com",
     "name": "Toutabo",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "MLABO"
   },
   {
     "id": "touti-ashbel-law-office",
@@ -82329,7 +82815,8 @@
     "id": "transatlantic-capital-inc",
     "selector": "transatlanticcapitalgroup.com",
     "name": "Transatlantic Capital Inc",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "TACI"
   },
   {
     "id": "transceptar-technologies",
@@ -82617,13 +83104,15 @@
     "id": "trendit",
     "selector": "trendit.net",
     "name": "trendit",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "TRIT"
   },
   {
     "id": "trendlines-group",
     "selector": "trendlines.com",
     "name": "Trendlines Group",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "42T"
   },
   {
     "id": "tres-c26a",
@@ -82995,7 +83484,8 @@
     "id": "trucknet-enterprise-ltd",
     "selector": "trucknet.io",
     "name": "Trucknet Enterprise",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "TRAN"
   },
   {
     "id": "trueaccord",
@@ -83247,7 +83737,8 @@
     "id": "tscan-therapeutics",
     "selector": "tscan.com",
     "name": "TScan Therapeutics",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "TCRX"
   },
   {
     "id": "tsg-it-advanced-systems",
@@ -83301,7 +83792,8 @@
     "id": "tufin",
     "selector": "tufin.com",
     "name": "Tufin",
-    "reasons": ["f", "i", "h"]
+    "reasons": ["f", "i", "h"],
+    "s": "TUFN"
   },
   {
     "id": "tugger",
@@ -84195,7 +84687,8 @@
     "id": "unitronics",
     "selector": "unitronics.com",
     "name": "Unitronics",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "UNIT"
   },
   {
     "id": "unitronics-plc-automation-products",
@@ -84225,7 +84718,8 @@
     "id": "univo-pharmaceuticals",
     "selector": "univopharma.com",
     "name": "UNIVO Pharmaceuticals",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "UNVO"
   },
   {
     "id": "univ",
@@ -84363,7 +84857,8 @@
     "id": "upland-software",
     "selector": "uplandsoftware.com",
     "name": "Upland BlueVenn",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "UPLD"
   },
   {
     "id": "uplifted-ai",
@@ -84441,7 +84936,8 @@
     "id": "upstream-bio",
     "selector": "upstreambio.com",
     "name": "Upstream Bio",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "UPB"
   },
   {
     "id": "upstream-peripheral-technologies",
@@ -84567,7 +85063,8 @@
     "id": "urogen-pharma",
     "selector": "urogen.com",
     "name": "UroGen Pharma",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "URGN"
   },
   {
     "id": "usa-mortgages",
@@ -84603,7 +85100,8 @@
     "id": "userway",
     "selector": "userway.org",
     "name": "UserWay",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "UWAY"
   },
   {
     "id": "sapi-bd28",
@@ -84807,7 +85305,8 @@
     "id": "valens-semiconductor",
     "selector": "valens.com",
     "name": "Valens Semiconductor",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "VLN"
   },
   {
     "id": "valentis-nanotech",
@@ -85101,7 +85600,8 @@
     "id": "vaxil-bio",
     "selector": "vaxil-bio.com",
     "name": "Vaxil Bio",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "VXL"
   },
   {
     "id": "vayar-vision",
@@ -85149,7 +85649,8 @@
     "id": "vbl-therapeutics",
     "selector": "vblrx.com",
     "name": "VBL Therapeutics",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "VBLT"
   },
   {
     "id": "mindex-international-vbookz",
@@ -85383,7 +85884,8 @@
     "id": "velti",
     "selector": "velti.com",
     "name": "Velti",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "VELT"
   },
   {
     "id": "velvet-8c36",
@@ -85497,7 +85999,8 @@
     "id": "veraz-networks",
     "selector": "veraznetworks.com",
     "name": "Veraz Networks",
-    "reasons": ["f", "i"]
+    "reasons": ["f", "i"],
+    "s": "VRAZ"
   },
   {
     "id": "verbato",
@@ -87291,7 +87794,8 @@
     "id": "BIT_Walkme",
     "selector": "walkme.com",
     "name": "Walkme",
-    "reasons": ["h", "f", "i"]
+    "reasons": ["h", "f", "i"],
+    "s": "WKME"
   },
   {
     "id": "walkout",
@@ -87501,7 +88005,8 @@
     "id": "wave-life-sciences",
     "selector": "wavelifesciences.com",
     "name": "Wave Life Sciences",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "WVE"
   },
   {
     "id": "waves",
@@ -87537,7 +88042,8 @@
     "id": "way2vat",
     "selector": "way2vat.com",
     "name": "WAY2VAT",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "W2V"
   },
   {
     "id": "waynerr",
@@ -87975,7 +88481,8 @@
     "id": "weebit-nano",
     "selector": "weebit-nano.com",
     "name": "Weebit Nano",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "WBT"
   },
   {
     "id": "weedout",
@@ -88209,7 +88716,8 @@
     "id": "werewolf-therapeutics",
     "selector": "werewolftx.com",
     "name": "Werewolf Therapeutics",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "HOWL"
   },
   {
     "id": "wervr-studio",
@@ -88281,7 +88789,8 @@
     "id": "wework",
     "selector": "wework.com",
     "name": "WeWork",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "WE"
   },
   {
     "id": "rotec-reverse-osmosis-technologies",
@@ -88329,7 +88838,8 @@
     "id": "world-health-energy-holdings",
     "selector": "whengroup.com",
     "name": "World Health Energy Holdings",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "WHEN"
   },
   {
     "id": "where-app",
@@ -88371,7 +88881,8 @@
     "id": "whitesmoke",
     "selector": "whitesmoke.com",
     "name": "WhiteSmoke",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "WSMK"
   },
   {
     "id": "riders-3",
@@ -88941,7 +89452,8 @@
     "id": "wix",
     "selector": "wix.com",
     "name": "Wix",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "WIX"
   },
   {
     "id": "wix-answers",
@@ -89019,7 +89531,8 @@
     "id": "wize-pharma-inc",
     "selector": "wizepharma.com",
     "name": "Wize Pharma",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "WIZP"
   },
   {
     "id": "wizer-co",
@@ -89661,13 +90174,15 @@
     "id": "xjet-2",
     "selector": "xjet3d.com",
     "name": "XJet",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "XJET"
   },
   {
     "id": "xlmedia",
     "selector": "xlmedia.com",
     "name": "XLMedia",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "XLM"
   },
   {
     "id": "xln",
@@ -89787,7 +90302,8 @@
     "id": "vringo",
     "selector": "xpresspagroup.com",
     "name": "XpresSpa Group",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "XSPA"
   },
   {
     "id": "xprogaming",
@@ -89883,7 +90399,8 @@
     "id": "xtl-biopharmaceuticals-ltd",
     "selector": "xtlbio.com",
     "name": "XTL Biopharmaceuticals Ltd.",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "XTLB"
   },
   {
     "id": "extremereality",
@@ -89943,7 +90460,8 @@
     "id": "xwell",
     "selector": "xwell.com",
     "name": "XWELL",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "XWEL"
   },
   {
     "id": "xxclone",
@@ -90159,7 +90677,8 @@
     "id": "yandex",
     "selector": "yandex.com",
     "name": "Yandex",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "YDEX"
   },
   {
     "id": "yandex-t-rkiye",
@@ -90687,7 +91206,8 @@
     "id": "yougov",
     "selector": "yougov.co.uk",
     "name": "YouGov",
-    "reasons": ["f"]
+    "reasons": ["f"],
+    "s": "YOU"
   },
   {
     "id": "youleap",
@@ -90789,7 +91309,8 @@
     "id": "ya-acobi-brothers-group",
     "selector": "ysbgroup.com",
     "name": "Ya'acobi Brothers Group",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "YAAC"
   },
   {
     "id": "ysicons",
@@ -90831,7 +91352,8 @@
     "id": "yumanity-therapeutics",
     "selector": "yumanity.com",
     "name": "Kineta (Reverse Merger With Yumanity Therapeutics)",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "YMTX"
   },
   {
     "id": "yung-etgar",
@@ -90957,7 +91479,8 @@
     "id": "zvi-sarfati-sons",
     "selector": "zarfati-zvi.com",
     "name": "Zvi Sarfati & Sons",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "SRFT"
   },
   {
     "id": "zarmon-group",
@@ -91005,7 +91528,8 @@
     "id": "zeekr",
     "selector": "zeekrlife.com",
     "name": "Zeekr",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "ZK"
   },
   {
     "id": "zeev-implants",
@@ -91155,7 +91679,8 @@
     "id": "zero-candida-technologies",
     "selector": "zero-candida.com",
     "name": "Zero Candida Technologies",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ZCT"
   },
   {
     "id": "zero21-innovation",
@@ -91305,7 +91830,8 @@
     "id": "zim-integrated-shipping-service-ltd",
     "selector": "zim.com",
     "name": "ZIM Integrated Shipping Services",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ZIM"
   },
   {
     "id": "zimark",
@@ -91545,13 +92071,15 @@
     "id": "zoomcar-india",
     "selector": "zoomcar.com",
     "name": "Zoomcar",
-    "reasons": ["i"]
+    "reasons": ["i"],
+    "s": "ZCAR"
   },
   {
     "id": "zoomd",
     "selector": "zoomd.com",
     "name": "Zoomd",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ZOMD"
   },
   {
     "id": "zoomin",
@@ -91587,7 +92115,8 @@
     "id": "chakratec",
     "selector": "zoozpower.com",
     "name": "ZOOZ Power",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ZOOZ"
   },
   {
     "id": "zorem",
@@ -91671,7 +92200,8 @@
     "id": "zur-shamir",
     "selector": "zur-shamir.com",
     "name": "Zur Shamir",
-    "reasons": ["h"]
+    "reasons": ["h"],
+    "s": "ZUR"
   },
   {
     "id": "zur-i-t-c",

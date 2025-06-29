@@ -21,12 +21,7 @@
     { "n": "Teamwork", "ws": "https://www.teamwork.com/" },
     { "n": "Basecamp", "ws": "https://basecamp.com/" },
     { "n": "Quire", "ws": "https://quire.io/" },
-    { "n": "Bitrix24", "ws": "https://www.bitrix24.com/" },
-    { "n": "GanttProject", "ws": "https://www.ganttproject.biz/" },
-    { "n": "Smartsheet", "ws": "https://www.smartsheet.com/" },
-    { "n": "Linear", "ws": "https://linear.app/" },
-    { "n": "Height", "ws": "https://height.app/" },
-    { "n": "Toggl Plan", "ws": "https://togglplan.com/" }
+    { "n": "Bitrix24", "ws": "https://www.bitrix24.com/" }
   ],
   "cellebrite": [
     { "n": "Oxygen Forensic Suite", "ws": "https://www.oxygenforensics.com/" },

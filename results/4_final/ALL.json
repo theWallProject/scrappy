@@ -6325,6 +6325,7 @@
       "h"
     ],
     "n": "AL Shark Electrode",
+    "s": "ELECTRODE",
     "ws": "alshark-co.com"
   },
   {
@@ -11677,6 +11678,7 @@
       "h"
     ],
     "n": "Arab Investors",
+    "s": "ARAB",
     "ws": "arabinvestors.ps"
   },
   {
@@ -15535,6 +15537,7 @@
       "h"
     ],
     "n": "Aviv Arlon",
+    "s": "AVLN",
     "ws": "avivarlon.com"
   },
   {
@@ -16531,6 +16534,7 @@
       "h"
     ],
     "n": "B.S.D Crown",
+    "s": "BSD",
     "ws": "bsd-c.com"
   },
   {
@@ -27806,6 +27810,7 @@
       "h"
     ],
     "n": "Cannomed Medical Cannabis Industries",
+    "s": "CNMD",
     "ws": "cannomed.com"
   },
   {
@@ -29817,6 +29822,7 @@
       "f"
     ],
     "n": "Cell Source",
+    "s": "CLCS",
     "ws": "cell-source.com"
   },
   {
@@ -40370,6 +40376,7 @@
       "h"
     ],
     "n": "D Pharm LTD.",
+    "s": "DPRM",
     "ws": "dpharm.com"
   },
   {
@@ -56924,6 +56931,7 @@
       "h"
     ],
     "n": "Femto Technologies",
+    "s": "BYND",
     "ws": "femtocorp.com"
   },
   {
@@ -64962,6 +64970,7 @@
       "f"
     ],
     "n": "Giga Information Group",
+    "s": "GIGX",
     "ws": "gigaweb.com"
   },
   {
@@ -65999,6 +66008,7 @@
       "h"
     ],
     "n": "Global Knafaim Leasing",
+    "s": "GKL",
     "ws": "gkl-leasing.com"
   },
   {
@@ -79115,6 +79125,7 @@
       "i"
     ],
     "n": "Inotek Pharmaceuticals",
+    "s": "ITEK",
     "ws": "inotekcorp.com"
   },
   {
@@ -80253,6 +80264,7 @@
       "h"
     ],
     "n": "InterCure",
+    "s": "INCR",
     "ws": "intercure.com"
   },
   {
@@ -80398,6 +80410,7 @@
       "h"
     ],
     "n": "Internet Gold - Golden Lines",
+    "s": "IGLD",
     "ws": "igld.com"
   },
   {
@@ -90187,6 +90200,7 @@
       "h"
     ],
     "n": "Lahav",
+    "s": "LAHAV",
     "ws": "lahavgroup.com"
   },
   {
@@ -91957,6 +91971,7 @@
       "h"
     ],
     "n": "Lesico Technologies",
+    "s": "LSCO",
     "ws": "lesico.com"
   },
   {
@@ -97437,6 +97452,7 @@
       "f"
     ],
     "n": "Market Tech Holdings",
+    "s": "MKT",
     "ws": "market-tech.com"
   },
   {
@@ -98276,6 +98292,7 @@
       "h"
     ],
     "n": "Matrix IT",
+    "s": "MTRX",
     "ws": "matrix-globalservices.com"
   },
   {
@@ -103755,6 +103772,7 @@
       "h"
     ],
     "n": "Mishorim",
+    "s": "MSHR",
     "ws": "mishorim.com"
   },
   {
@@ -105100,26 +105118,6 @@
       {
         "n": "Bitrix24",
         "ws": "https://www.bitrix24.com/"
-      },
-      {
-        "n": "GanttProject",
-        "ws": "https://www.ganttproject.biz/"
-      },
-      {
-        "n": "Smartsheet",
-        "ws": "https://www.smartsheet.com/"
-      },
-      {
-        "n": "Linear",
-        "ws": "https://linear.app/"
-      },
-      {
-        "n": "Height",
-        "ws": "https://height.app/"
-      },
-      {
-        "n": "Toggl Plan",
-        "ws": "https://togglplan.com/"
       }
     ]
   },
@@ -113891,6 +113889,7 @@
       "i"
     ],
     "n": "Objet Geometries",
+    "s": "SSYS",
     "ws": "stratasys.com"
   },
   {
@@ -131928,6 +131927,7 @@
       "h"
     ],
     "n": "Ratio Energy",
+    "s": "RATI.L",
     "ws": "ratioil.com"
   },
   {
@@ -145199,6 +145199,7 @@
       "h"
     ],
     "n": "Shoham Business",
+    "s": "SHOM",
     "ws": "shohambiz.com"
   },
   {
@@ -166285,6 +166286,7 @@
       "h"
     ],
     "n": "Transatlantic Capital Inc",
+    "s": "TACI",
     "ws": "transatlanticcapitalgroup.com"
   },
   {
@@ -175904,6 +175906,7 @@
       "i"
     ],
     "n": "Walkme",
+    "s": "WKME",
     "ws": "walkme.com"
   },
   {

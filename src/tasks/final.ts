@@ -48,6 +48,7 @@ const loadJsonFiles = (folderPath: string) => {
           id: newRow.id,
           r: newRow.reasons,
           n: newRow.name,
+          s: newRow.s,
           // ws: "",
           [key]: newRow.selector,
           // c: newRow;
