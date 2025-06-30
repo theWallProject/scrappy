@@ -39,10 +39,10 @@ const loadJsonFiles = (folderPath: string) => {
       let testRow = idRecord[newRow.id];
 
       if (testRow) {
-        idRecord[newRow.id] = {
-          ...idRecord[newRow.id],
-          [key]: newRow.selector,
-        };
+        idRecord[newRow.id][key] = newRow.selector;
+        if (newRow.s) {
+          idRecord[newRow.id]["s"] = newRow.s;
+        }
       } else {
         idRecord[newRow.id] = {
           id: newRow.id,

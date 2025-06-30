@@ -12815,12 +12815,6 @@
     "reasons": ["h"]
   },
   {
-    "id": "b-tselem",
-    "selector": "btselem.org",
-    "name": "B'Tselem",
-    "reasons": ["h"]
-  },
-  {
     "id": "beis-tefillah-yonah-avraham",
     "selector": "btya.org",
     "name": "Beis Tefillah Yonah Avraham",

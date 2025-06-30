@@ -4496,14 +4496,6 @@
     ]
   },
   {
-    "id": "b-tselem",
-    "selector": "btselem",
-    "name": "B'Tselem",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
     "id": "b-g-guitars",
     "selector": "bngguitars",
     "name": "B&G Guitars",
