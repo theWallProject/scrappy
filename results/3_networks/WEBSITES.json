@@ -5620,12 +5620,6 @@
     "reasons": ["f", "i"]
   },
   {
-    "id": "goodlook-6f1e",
-    "selector": "apps.apple.com",
-    "name": "Goodlook",
-    "reasons": ["f"]
-  },
-  {
     "id": "appscent-medical",
     "selector": "appscent.com",
     "name": "Appscent Medical",
@@ -77061,12 +77055,6 @@
     "selector": "store.flycatcher.toys",
     "name": "Flycatcher Toys",
     "reasons": ["f"]
-  },
-  {
-    "id": "overall-adventures-ltd",
-    "selector": "store.steampowered.com",
-    "name": "Overall Adventures Ltd.",
-    "reasons": ["h"]
   },
   {
     "id": "mystor-e",
