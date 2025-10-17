@@ -67,6 +67,12 @@ export const BDS: ManualItemType[] = [
     ],
   },
   {
+    name: "Jedyapps",
+    reasons: ["h"],
+    ws: ["https://www.jedyapps.com/"],
+    li: ["https://www.linkedin.com/company/jedyapps"],
+  },
+  {
     name: "Siemens",
     reasons: ["b"],
 

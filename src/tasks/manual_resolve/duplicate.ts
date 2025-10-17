@@ -5,6 +5,8 @@ export const manualDeleteIds = [
   "arjeannie-ltd",
   "BIT_Affogata",
   "b-tselem",
+  "applied-research-institute-jerusalem",
+  "sajilni",
 ];
 export const manualOverrides: [string, Partial<ScrappedItemType>][] = [
   ["Somite", { tw: "https://x.com/somiteai" }],
@@ -19,4 +21,5 @@ export const manualOverrides: [string, Partial<ScrappedItemType>][] = [
     { li: "https://www.linkedin.com/company/guykatsovichpodcast", ws: "" },
   ],
   ["Metis Technologies", { tw: "", fb: "" }],
+  ["01 Founders", { li: "https://www.linkedin.com/school/01-founders/" }],
 ];
