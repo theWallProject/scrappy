@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { getMainDomain } from "@theWallProject/addonCommon";
-import { APIScrapperFileDataSchema } from "../types";
+import { APIScrapperFileDataSchema, ScrappedItemType } from "../types";
 import { log, cleanWebsite, error } from "../helper";
 import { manualDeleteIds } from "./manual_resolve/manualDeleteIds";
 import { manualOverrides } from "./manual_resolve/manualOverrides";
@@ -194,8 +194,20 @@ const loadJsonFiles = (folderPath: string) => {
     const override = manualOverrides[row.name];
 
     if (override) {
-      log(`Manually updated ${row.name}`);
-      return { ...row, ...override };
+      // Apply override, but exclude the processed state flags
+      const excludeKeys = new Set(["_processed"]);
+      const overrideFields = Object.fromEntries(
+        Object.entries(override).filter(([key]) => !excludeKeys.has(key)),
+      ) as Partial<ScrappedItemType>;
+      const hasOverrideFields = Object.keys(overrideFields).length > 0;
+
+      if (hasOverrideFields) {
+        log(`Manually updated ${row.name}`);
+        return { ...row, ...overrideFields };
+      } else {
+        // No override fields means processed with no changes - skip
+        return row;
+      }
     } else {
       return row;
     }
