@@ -3,7 +3,8 @@ import path from "path";
 import { getMainDomain } from "@theWallProject/addonCommon";
 import { APIScrapperFileDataSchema } from "../types";
 import { log, cleanWebsite, error } from "../helper";
-import { manualDeleteIds, manualOverrides } from "./manual_resolve/duplicate";
+import { manualDeleteIds } from "./manual_resolve/manualDeleteIds";
+import { manualOverrides } from "./manual_resolve/manualOverrides";
 // import MERGED_CB from "../../results/2_merged/1_MERGED_CB.json";
 
 const folderPath = path.join(__dirname, "../../results/1_batches/static");
