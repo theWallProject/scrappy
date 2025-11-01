@@ -16,14 +16,6 @@
     ]
   },
   {
-    "selector": "01-founders",
-    "name": "01 Founders",
-    "id": "01-founders",
-    "reasons": [
-      "f"
-    ]
-  },
-  {
     "selector": "15248214",
     "name": "010 Data Protection",
     "id": "010-data-protection",
@@ -7945,14 +7937,6 @@
     "selector": "28861310",
     "name": "Applied mezo systems",
     "id": "applied-mezo-systems",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
-    "selector": "arij",
-    "name": "Applied Research Institute Jerusalem",
-    "id": "applied-research-institute-jerusalem",
     "reasons": [
       "h"
     ]
@@ -61214,6 +61198,14 @@
     ]
   },
   {
+    "selector": "jedyapps",
+    "name": "Jedyapps",
+    "id": "s_li_Jedyapps_0",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "jeen-ai",
     "name": "Jeen AI",
     "id": "jeen-ai",
@@ -100878,14 +100870,6 @@
     "id": "saitovision-information-systems",
     "reasons": [
       "h"
-    ]
-  },
-  {
-    "selector": "sajilni",
-    "name": "Sajilni",
-    "id": "sajilni",
-    "reasons": [
-      "f"
     ]
   },
   {

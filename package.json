@@ -18,8 +18,7 @@
     "@theWallProject/addonCommon": "github:theWallProject/addonCommon",
     "dotenv": "^16.4.7",
     "inquirer": "^12.2.0",
-    "puppeteer": "^24.10.0",
-    "terminal-image": "^3.0.0",
+    "puppeteer": "^24.25.0",
     "zod": "^3.24.1"
   },
   "devDependencies": {

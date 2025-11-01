@@ -641,6 +641,23 @@
     "id": "s_tw_HP_4"
   },
   {
+    "name": "Jedyapps",
+    "reasons": [
+      "h"
+    ],
+    "ws": "www.jedyapps.com",
+    "id": "s_ws_Jedyapps_0"
+  },
+  {
+    "name": "Jedyapps",
+    "reasons": [
+      "h"
+    ],
+    "li": "www.linkedin.com/company/jedyapps",
+    "ws": "",
+    "id": "s_li_Jedyapps_0"
+  },
+  {
     "name": "Puma",
     "reasons": [
       "b"

@@ -6339,12 +6339,6 @@
     "reasons": ["h"]
   },
   {
-    "id": "applied-research-institute-jerusalem",
-    "selector": "arij.org",
-    "name": "Applied Research Institute Jerusalem",
-    "reasons": ["h"]
-  },
-  {
     "id": "arilou-technologies",
     "selector": "ariloutech.com",
     "name": "Arilou Technologies",
@@ -41934,6 +41928,12 @@
     "reasons": ["h"]
   },
   {
+    "id": "s_ws_Jedyapps_0",
+    "selector": "jedyapps.com",
+    "name": "Jedyapps",
+    "reasons": ["h"]
+  },
+  {
     "id": "jeen-ai",
     "selector": "jeen.ai",
     "name": "Jeen AI",
@@ -69373,12 +69373,6 @@
     "selector": "saharatid.com",
     "name": "Sahar Atid",
     "reasons": ["h"]
-  },
-  {
-    "id": "sajilni",
-    "selector": "sajilni.com",
-    "name": "Sajilni",
-    "reasons": ["f"]
   },
   {
     "id": "salaryo",
