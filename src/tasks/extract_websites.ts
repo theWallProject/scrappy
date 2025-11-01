@@ -36,6 +36,7 @@ export const run = async (merged: ScrappedFileType) => {
           domain.includes("google.com") ||
           domain.includes("business.site") ||
           domain.includes(".steampowered") ||
+          domain.includes("meetup") ||
           domain.includes(".apple.com") ||
           domain.endsWith(".il")
         );
