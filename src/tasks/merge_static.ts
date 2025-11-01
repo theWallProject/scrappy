@@ -191,11 +191,11 @@ const loadJsonFiles = (folderPath: string) => {
       row.ws = getMainDomain(row.ws);
     }
 
-    const result = manualOverrides.find(([name]) => name === row.name);
+    const override = manualOverrides[row.name];
 
-    if (result) {
+    if (override) {
       log(`Manually updated ${row.name}`);
-      return { ...row, ...result[1] };
+      return { ...row, ...override };
     } else {
       return row;
     }
