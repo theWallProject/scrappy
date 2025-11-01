@@ -194,8 +194,8 @@ const loadJsonFiles = (folderPath: string) => {
     const override = manualOverrides[row.name];
 
     if (override) {
-      // Apply override, but exclude the processed state flags
-      const excludeKeys = new Set(["_processed"]);
+      // Apply override, but exclude the processed state flags and urls field
+      const excludeKeys = new Set(["_processed", "urls"]);
       const overrideFields = Object.fromEntries(
         Object.entries(override).filter(([key]) => !excludeKeys.has(key)),
       ) as Partial<ScrappedItemType>;

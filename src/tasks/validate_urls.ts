@@ -1,9 +1,10 @@
 import fs from "fs";
 import path from "path";
-import { chromium, Browser, BrowserContext, Page } from "playwright";
+import { chromium, BrowserContext, Page } from "playwright";
 import { APIScrapperFileDataSchema, ScrappedItemType } from "../types";
-import { error, log, cleanWebsite } from "../helper";
+import { error, log } from "../helper";
 import inquirer from "inquirer";
+import prettier from "prettier";
 
 type ProcessedState = {
   _processed: true;
@@ -37,7 +38,9 @@ const isProcessed = (
 
 const loadManualOverrides = (): Record<string, ManualOverrideValue> => {
   const modulePath = path.resolve(manualOverridesPath);
-  delete require.cache[require.resolve(modulePath)];
+  const resolvedPath = require.resolve(modulePath);
+  // eslint-disable-next-line @typescript-eslint/no-dynamic-delete
+  delete require.cache[resolvedPath];
   // eslint-disable-next-line @typescript-eslint/no-require-imports
   const module = require(modulePath);
   return (module.manualOverrides || {}) as Record<string, ManualOverrideValue>;
@@ -54,6 +57,8 @@ const formatValue = (value: ManualOverrideValue): string => {
       fields.push(`fb: ${JSON.stringify(value.fb)}`);
     if ("tw" in value && value.tw !== undefined)
       fields.push(`tw: ${JSON.stringify(value.tw)}`);
+    if ("urls" in value && value.urls !== undefined)
+      fields.push(`urls: ${JSON.stringify(value.urls)}`);
 
     if (fields.length > 0) {
       // Has changes - include both the fields and the processed state
@@ -69,6 +74,8 @@ const formatValue = (value: ManualOverrideValue): string => {
     if (value.li !== undefined) fields.push(`li: ${JSON.stringify(value.li)}`);
     if (value.fb !== undefined) fields.push(`fb: ${JSON.stringify(value.fb)}`);
     if (value.tw !== undefined) fields.push(`tw: ${JSON.stringify(value.tw)}`);
+    if ("urls" in value && value.urls !== undefined)
+      fields.push(`urls: ${JSON.stringify(value.urls)}`);
 
     if (fields.length > 0) {
       return `{ ${fields.join(", ")} }`;
@@ -78,7 +85,7 @@ const formatValue = (value: ManualOverrideValue): string => {
   }
 };
 
-const saveManualOverrides = (
+const saveManualOverrides = async (
   overrides: Record<string, ManualOverrideValue>,
 ) => {
   const keys = Object.keys(overrides).sort();
@@ -94,8 +101,25 @@ const saveManualOverrides = (
   }
 
   content += "};\n";
-  fs.writeFileSync(manualOverridesPath, content, "utf-8");
-  log(`Saved manualOverrides to ${manualOverridesPath}`);
+
+  // Format with prettier
+  try {
+    const prettierConfig = await prettier.resolveConfig(manualOverridesPath);
+    const formatted = await prettier.format(content, {
+      ...prettierConfig,
+      parser: "typescript",
+    });
+    fs.writeFileSync(manualOverridesPath, formatted, "utf-8");
+    log(
+      `Saved manualOverrides to ${manualOverridesPath} (formatted with prettier)`,
+    );
+  } catch (e) {
+    // If prettier fails, save without formatting
+    fs.writeFileSync(manualOverridesPath, content, "utf-8");
+    log(
+      `Saved manualOverrides to ${manualOverridesPath} (prettier failed: ${e})`,
+    );
+  }
 };
 
 const normalizeUrl = (url: string): string => {
@@ -172,12 +196,15 @@ const checkRedirect = async (
 };
 
 type LinkField = "ws" | "li" | "fb" | "tw";
+type OverrideWithUrls = Partial<Pick<ScrappedItemType, LinkField>> & {
+  urls?: string[];
+};
 
 const validateItemLinks = async (
   context: BrowserContext,
   item: ScrappedItemType,
-): Promise<Partial<Pick<ScrappedItemType, LinkField>> | null> => {
-  const changes: Partial<Pick<ScrappedItemType, LinkField>> = {};
+): Promise<OverrideWithUrls | null> => {
+  const changes: OverrideWithUrls = {};
   let hasChanges = false;
 
   const links: Array<{ field: LinkField; url: string }> = [];
@@ -213,16 +240,31 @@ const validateItemLinks = async (
       pages.push(page);
     } catch (e) {
       const errorMessage = e instanceof Error ? e.message : String(e);
-      error(`    ❌ Error checking ${field} (${url}): ${errorMessage}`);
-
-      // Close the page on error
-      if (!page.isClosed()) {
-        await page.close().catch(() => {});
-      }
-      throw new Error(
-        `Failed to validate ${field} for ${item.name}: ${errorMessage}`,
+      error(
+        `    ⚠️  Error checking ${field} (${url}): ${errorMessage}. Page kept open for manual verification.`,
       );
+
+      // Keep the page open for manual verification instead of closing it
+      // The user can manually check and update if needed
+      pages.push(page);
+      // Note: We don't set changes[field] here, so it won't be auto-updated
+      // User can manually update via the urls array or close the browser and continue
     }
+  }
+
+  // Open Ecosia search tab for the company name
+  try {
+    const searchPage = await context.newPage();
+    const searchUrl = `https://www.ecosia.org/search?q=${encodeURIComponent(item.name)}`;
+    log(`  🔍 Opening Ecosia search for "${item.name}"`);
+    await searchPage.goto(searchUrl, {
+      waitUntil: "domcontentloaded",
+      timeout: 30000,
+    });
+    pages.push(searchPage);
+    log(`  ✓ Ecosia search tab opened`);
+  } catch (e) {
+    log(`  [DEBUG] Could not open Ecosia search tab: ${e}`);
   }
 
   // Wait for entire browser to be closed by user
@@ -230,93 +272,239 @@ const validateItemLinks = async (
     `  ⏳ Browser windows are open (${pages.length} tabs). Close the browser to proceed...`,
   );
 
-  return new Promise<Partial<Pick<ScrappedItemType, LinkField>> | null>(
-    (resolve) => {
-      let resolved = false;
-      let pollInterval: NodeJS.Timeout | null = null;
+  // Track all pages including manually opened ones
+  const allTrackedPages = new Set<Page>(pages);
 
-      const cleanup = (reason: string) => {
-        if (resolved) {
+  // Listen for new pages created (including manually opened tabs)
+  context.on("page", (page) => {
+    try {
+      const pageUrl = page.url();
+      log(
+        `  [DEBUG] ✨ New page detected: ${pageUrl} (adding to tracked pages)`,
+      );
+      allTrackedPages.add(page);
+      log(`  [DEBUG] Total tracked pages now: ${allTrackedPages.size}`);
+    } catch (e) {
+      log(`  [DEBUG] Error in page event handler: ${e}`);
+    }
+  });
+
+  return new Promise<OverrideWithUrls | null>((resolve) => {
+    let resolved = false;
+    let pollInterval: NodeJS.Timeout | null = null;
+
+    const collectExtraUrls = (): string[] => {
+      const extraUrls: string[] = [];
+      log(`  [DEBUG] === Starting URL collection ===`);
+      log(
+        `  [DEBUG] Links we opened: ${JSON.stringify(links.map((l) => l.url))}`,
+      );
+      log(`  [DEBUG] Total tracked pages: ${allTrackedPages.size}`);
+      log(`  [DEBUG] Original pages array length: ${pages.length}`);
+
+      try {
+        // Try to get pages from context first
+        let pagesToCheck: Page[] = [];
+        try {
+          pagesToCheck = context.pages();
           log(
-            `  [DEBUG] cleanup called again with reason: ${reason}, but already resolved`,
+            `  [DEBUG] Found ${pagesToCheck.length} pages from context.pages()`,
           );
-          return;
+          log(
+            `  [DEBUG] Context pages: ${pagesToCheck.map((p, i) => `[${i}] ${p.isClosed() ? "CLOSED" : p.url()}`).join(", ")}`,
+          );
+        } catch (e) {
+          log(`  [DEBUG] Could not get pages from context: ${e}`);
+          // Fallback to tracked pages
+          pagesToCheck = Array.from(allTrackedPages);
+          log(`  [DEBUG] Using ${pagesToCheck.length} tracked pages`);
+          log(
+            `  [DEBUG] Tracked pages: ${pagesToCheck.map((p, i) => `[${i}] ${p.isClosed() ? "CLOSED" : p.url()}`).join(", ")}`,
+          );
         }
-        resolved = true;
-        if (pollInterval) {
-          clearInterval(pollInterval);
-          pollInterval = null;
-        }
-        log(`  ✓ Browser closed, continuing... (detected via: ${reason})`);
-        resolve(hasChanges ? changes : null);
-      };
 
-      const browser = context.browser();
-      log(`  [DEBUG] Browser instance: ${browser ? "exists" : "null"}`);
-
-      if (!browser) {
-        log(`  [DEBUG] No browser instance, cleaning up`);
-        cleanup("no browser instance");
-        return;
-      }
-
-      log(`  [DEBUG] Browser connected: ${browser.isConnected()}`);
-      log(`  [DEBUG] Setting up event listeners...`);
-
-      // Listen to multiple events with debug logging
-      browser.once("disconnected", () => {
-        log(`  [DEBUG] Browser 'disconnected' event fired`);
-        cleanup("disconnected event");
-      });
-
-      context.once("close", () => {
-        log(`  [DEBUG] Context 'close' event fired`);
-        cleanup("context close event");
-      });
-
-      // Also check if browser is already disconnected
-      if (!browser.isConnected()) {
-        log(`  [DEBUG] Browser already disconnected`);
-        cleanup("already disconnected");
-        return;
-      }
-
-      // Poll for browser disconnection as a fallback (in case events don't fire)
-      let pollCount = 0;
-      pollInterval = setInterval(() => {
-        pollCount++;
-        const isConnected = browser.isConnected();
-        const browserFromContext = context.browser();
-        const allPagesClosed = pages.every((p) => p.isClosed());
-
+        const openedUrls = new Set(
+          links.map((link) => normalizeUrlForComparison(link.url)),
+        );
+        // Also exclude the Ecosia search URL we opened
+        const ecosiaSearchUrl = normalizeUrlForComparison(
+          `https://www.ecosia.org/search?q=${encodeURIComponent(item.name)}`,
+        );
+        openedUrls.add(ecosiaSearchUrl);
         log(
-          `  [DEBUG] Poll #${pollCount}: browser.isConnected()=${isConnected}, context.browser()=${browserFromContext ? "exists" : "null"}, allPagesClosed=${allPagesClosed}`,
+          `  [DEBUG] Opened URLs (normalized) that we'll exclude: ${Array.from(openedUrls).join(", ")}`,
         );
 
-        if (!isConnected) {
-          log(`  [DEBUG] Poll detected browser disconnection`);
-          cleanup("polling (isConnected=false)");
-          return;
+        log(
+          `  [DEBUG] Checking ${pagesToCheck.length} pages for extra URLs...`,
+        );
+        for (let i = 0; i < pagesToCheck.length; i++) {
+          const page = pagesToCheck[i];
+          try {
+            const isClosed = page.isClosed();
+            log(`  [DEBUG] Page [${i}]: isClosed=${isClosed}`);
+
+            if (!isClosed) {
+              const pageUrl = page.url();
+              const normalizedPageUrl = normalizeUrlForComparison(pageUrl);
+
+              log(
+                `  [DEBUG] Page [${i}] URL: ${pageUrl} (normalized: ${normalizedPageUrl})`,
+              );
+
+              const isOpened = openedUrls.has(normalizedPageUrl);
+              const isAboutBlank = pageUrl === "about:blank";
+              log(
+                `  [DEBUG] Page [${i}] isOpened=${isOpened}, isAboutBlank=${isAboutBlank}`,
+              );
+
+              // Check if this URL is not one we opened
+              if (!isOpened && !isAboutBlank) {
+                log(`  [DEBUG] ✓ Adding extra URL: ${pageUrl}`);
+                extraUrls.push(pageUrl);
+              } else {
+                log(
+                  `  [DEBUG] ✗ Skipping page [${i}] (opened=${isOpened}, aboutBlank=${isAboutBlank})`,
+                );
+              }
+            } else {
+              log(`  [DEBUG] Page [${i}] is closed, skipping`);
+            }
+          } catch (e) {
+            log(`  [DEBUG] Error checking page [${i}]: ${e}`);
+            // Page might be closed or URL not available
+          }
         }
 
-        // Also check if context browser is null
-        if (browserFromContext === null) {
-          log(`  [DEBUG] Poll detected context browser is null`);
-          cleanup("polling (context.browser() === null)");
-          return;
+        log(`  [DEBUG] === URL collection complete ===`);
+        log(
+          `  [DEBUG] Collected ${extraUrls.length} extra URLs: ${JSON.stringify(extraUrls)}`,
+        );
+      } catch (e) {
+        log(`  [DEBUG] Error collecting extra URLs: ${e}`);
+        if (e instanceof Error) {
+          log(`  [DEBUG] Error stack: ${e.stack}`);
+        }
+      }
+      return extraUrls;
+    };
+
+    const cleanup = (reason: string) => {
+      if (resolved) {
+        log(
+          `  [DEBUG] cleanup called again with reason: ${reason}, but already resolved`,
+        );
+        return;
+      }
+      resolved = true;
+      if (pollInterval) {
+        clearInterval(pollInterval);
+        pollInterval = null;
+      }
+
+      // Collect URLs from all tabs before browser closes
+      log(`  [DEBUG] cleanup() called with reason: ${reason}`);
+      log(
+        `  [DEBUG] About to collect URLs, tracked pages: ${allTrackedPages.size}`,
+      );
+      (async () => {
+        // Small delay to ensure pages are still accessible
+        await new Promise((resolve) => setTimeout(resolve, 100));
+        log(`  [DEBUG] Collecting URLs after 100ms delay...`);
+
+        const extraUrls = collectExtraUrls();
+
+        log(`  [DEBUG] Collection returned ${extraUrls.length} URLs`);
+        log(
+          `  [DEBUG] Changes object before: ${JSON.stringify(Object.keys(changes))}`,
+        );
+
+        if (extraUrls.length > 0) {
+          log(`  📎 Found ${extraUrls.length} extra tab URL(s):`, extraUrls);
+          changes.urls = extraUrls;
+          log(
+            `  [DEBUG] Changes object after adding urls: ${JSON.stringify(Object.keys(changes))}`,
+          );
+        } else {
+          log(`  [DEBUG] No extra URLs found`);
         }
 
-        // If all pages are closed, browser was likely closed
-        if (allPagesClosed && pages.length > 0) {
-          log(`  [DEBUG] All pages are closed, assuming browser closed`);
-          cleanup("polling (all pages closed)");
-          return;
-        }
-      }, 1000); // Poll every second for better visibility
+        const finalHasChanges =
+          hasChanges || (changes.urls !== undefined && changes.urls.length > 0);
+        const hasUrls = changes.urls !== undefined && changes.urls.length > 0;
+        log(
+          `  [DEBUG] Final decision: hasChanges=${hasChanges}, hasUrls=${hasUrls}, finalHasChanges=${finalHasChanges}`,
+        );
+        log(`  ✓ Browser closed, continuing... (detected via: ${reason})`);
+        resolve(finalHasChanges ? changes : null);
+      })();
+    };
 
-      log(`  [DEBUG] Started polling interval, waiting for browser closure...`);
-    },
-  );
+    const browser = context.browser();
+    log(`  [DEBUG] Browser instance: ${browser ? "exists" : "null"}`);
+
+    if (!browser) {
+      log(`  [DEBUG] No browser instance, cleaning up`);
+      cleanup("no browser instance");
+      return;
+    }
+
+    log(`  [DEBUG] Browser connected: ${browser.isConnected()}`);
+    log(`  [DEBUG] Setting up event listeners...`);
+
+    // Listen to multiple events with debug logging
+    browser.once("disconnected", () => {
+      log(`  [DEBUG] Browser 'disconnected' event fired`);
+      cleanup("disconnected event");
+    });
+
+    context.once("close", () => {
+      log(`  [DEBUG] Context 'close' event fired`);
+      cleanup("context close event");
+    });
+
+    // Also check if browser is already disconnected
+    if (!browser.isConnected()) {
+      log(`  [DEBUG] Browser already disconnected`);
+      cleanup("already disconnected");
+      return;
+    }
+
+    // Poll for browser disconnection as a fallback (in case events don't fire)
+    let pollCount = 0;
+    pollInterval = setInterval(() => {
+      pollCount++;
+      const isConnected = browser.isConnected();
+      const browserFromContext = context.browser();
+      const allPagesClosed = pages.every((p) => p.isClosed());
+
+      log(
+        `  [DEBUG] Poll #${pollCount}: browser.isConnected()=${isConnected}, context.browser()=${browserFromContext ? "exists" : "null"}, allPagesClosed=${allPagesClosed}`,
+      );
+
+      if (!isConnected) {
+        log(`  [DEBUG] Poll detected browser disconnection`);
+        cleanup("polling (isConnected=false)");
+        return;
+      }
+
+      // Also check if context browser is null
+      if (browserFromContext === null) {
+        log(`  [DEBUG] Poll detected context browser is null`);
+        cleanup("polling (context.browser() === null)");
+        return;
+      }
+
+      // If all pages are closed, browser was likely closed
+      if (allPagesClosed && pages.length > 0) {
+        log(`  [DEBUG] All pages are closed, assuming browser closed`);
+        cleanup("polling (all pages closed)");
+        return;
+      }
+    }, 1000); // Poll every second for better visibility
+
+    log(`  [DEBUG] Started polling interval, waiting for browser closure...`);
+  });
 };
 
 const sortByCbRank = (items: ScrappedItemType[]): ScrappedItemType[] => {
@@ -332,7 +520,10 @@ const sortByCbRank = (items: ScrappedItemType[]): ScrappedItemType[] => {
 };
 
 export async function run() {
-  let browser: Browser | null = null;
+  let browserContext: BrowserContext | null = null;
+
+  // Persistent browser profile path
+  const userDataDir = path.join(__dirname, "../../.browser-profile");
 
   try {
     // Load data
@@ -369,19 +560,71 @@ export async function run() {
         `\n[${i + 1}/${unprocessedItems.length}] Processing: ${item.name} (cbRank: ${item.cbRank || "N/A"})`,
       );
 
-      // Launch browser for this item (single window, all tabs will be in this window)
-      log("Launching browser...");
-      browser = await chromium.launch({
+      // Launch browser with persistent profile (reuse same profile across items)
+      log("Launching browser with persistent profile...");
+      browserContext = await chromium.launchPersistentContext(userDataDir, {
         headless: false,
-        args: ["--start-maximized"], // Ensure single window
+        args: [
+          "--start-maximized", // Ensure single window
+          // Remove automation detection flags
+          "--disable-blink-features=AutomationControlled",
+          "--disable-dev-shm-usage",
+          "--no-sandbox",
+          // Use a realistic user agent
+          "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        ],
+        // Add viewport to make it look more realistic
+        viewport: { width: 1920, height: 1080 },
+        // Disable webdriver flag
+        ignoreHTTPSErrors: true,
       });
-      // Create a context - all pages in this context will be in the same window
-      const context = await browser.newContext();
-      log("Browser launched");
+      log("Browser launched (profile will persist cookies/login)");
 
-      const changes = await validateItemLinks(context, item);
+      // Remove webdriver property from all pages to avoid detection
+      const pages = browserContext.pages();
+      for (const page of pages) {
+        await page.addInitScript(() => {
+          // Remove webdriver property
+          Object.defineProperty(navigator, "webdriver", {
+            get: () => false,
+          });
+          // Override plugins to appear more realistic
+          Object.defineProperty(navigator, "plugins", {
+            get: () => [1, 2, 3, 4, 5],
+          });
+          // Override languages
+          Object.defineProperty(navigator, "languages", {
+            get: () => ["en-US", "en"],
+          });
+          // Remove Chrome automation indicator
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          (window as any).chrome = {
+            runtime: {},
+          };
+        });
+      }
 
-      // Context will be closed automatically when browser is closed by user
+      // Also apply to future pages
+      browserContext.on("page", async (page) => {
+        await page.addInitScript(() => {
+          Object.defineProperty(navigator, "webdriver", {
+            get: () => false,
+          });
+          Object.defineProperty(navigator, "plugins", {
+            get: () => [1, 2, 3, 4, 5],
+          });
+          Object.defineProperty(navigator, "languages", {
+            get: () => ["en-US", "en"],
+          });
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          (window as any).chrome = {
+            runtime: {},
+          };
+        });
+      });
+
+      // Use the persistent context directly
+      const changes = await validateItemLinks(browserContext, item);
 
       // Browser is closed now, process results
       if (changes && Object.keys(changes).length > 0) {
@@ -400,7 +643,7 @@ export async function run() {
       }
 
       // Save after each item
-      saveManualOverrides(currentOverrides);
+      await saveManualOverrides(currentOverrides);
       log("  💾 Progress saved");
 
       // Ask if user wants to continue
@@ -415,12 +658,16 @@ export async function run() {
 
       if (!continueProcessing) {
         log("Stopping...");
-        browser = null; // Don't try to close in finally block
+        if (browserContext) {
+          await browserContext.close();
+          browserContext = null;
+        }
         break;
       }
 
-      // Browser is already closed, set to null so finally block doesn't try to close it
-      browser = null;
+      // Browser is already closed by user, set to null
+      // It will be relaunched with the same profile for the next item
+      browserContext = null;
     }
 
     log("\nValidation complete!");
@@ -428,8 +675,8 @@ export async function run() {
     error("Error during validation:", err);
     throw err;
   } finally {
-    if (browser) {
-      await browser.close();
+    if (browserContext) {
+      await browserContext.close();
       log("Browser closed");
     }
   }
