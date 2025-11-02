@@ -834,150 +834,126 @@ export async function run() {
       return;
     }
 
-    // Process each item
-    for (let i = 0; i < unprocessedItems.length; i++) {
-      const item = unprocessedItems[i];
-      log(
-        `\n[${i + 1}/${unprocessedItems.length}] Processing: ${item.name} (cbRank: ${item.cbRank || "N/A"})`,
+    // Process only the first unprocessed item
+
+    const item = unprocessedItems[0];
+    log(
+      `\n[1/${unprocessedItems.length}] Processing: ${item.name} (cbRank: ${item.cbRank || "N/A"})`,
+    );
+
+    // Launch browser with persistent profile (reuse same profile across items)
+    log("Launching browser with persistent profile...");
+
+    const browserArgs = [
+      "--start-maximized", // Ensure single window
+      // Remove automation detection flags
+      "--disable-blink-features=AutomationControlled",
+      "--disable-dev-shm-usage",
+      "--no-sandbox",
+      // Use a realistic user agent
+      "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    ];
+
+    // Extension loading (enabled by ENABLE_EXTENSION flag)
+    if (ENABLE_EXTENSION) {
+      // Extension path relative to this script
+      const extensionManifestPath = path.join(
+        __dirname,
+        "../../../addon/build/chrome-mv3-dev/manifest.json",
       );
 
-      // Launch browser with persistent profile (reuse same profile across items)
-      log("Launching browser with persistent profile...");
-
-      const browserArgs = [
-        "--start-maximized", // Ensure single window
-        // Remove automation detection flags
-        "--disable-blink-features=AutomationControlled",
-        "--disable-dev-shm-usage",
-        "--no-sandbox",
-        // Use a realistic user agent
-        "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      ];
-
-      // Extension loading (enabled by ENABLE_EXTENSION flag)
-      if (ENABLE_EXTENSION) {
-        // Extension path relative to this script
-        const extensionManifestPath = path.join(
-          __dirname,
-          "../../../addon/build/chrome-mv3-dev/manifest.json",
+      // Check if extension exists - crash if not found
+      if (!fs.existsSync(extensionManifestPath)) {
+        throw new Error(
+          `Extension manifest not found at: ${extensionManifestPath}`,
         );
-
-        // Check if extension exists - crash if not found
-        if (!fs.existsSync(extensionManifestPath)) {
-          throw new Error(
-            `Extension manifest not found at: ${extensionManifestPath}`,
-          );
-        }
-
-        const extensionDir = path.dirname(extensionManifestPath);
-        browserArgs.push(`--load-extension=${extensionDir}`);
-        log(`Loading extension from: ${extensionDir}`);
-      } else {
-        log("Extension loading disabled (ENABLE_EXTENSION=false)");
       }
 
-      browserContext = await chromium.launchPersistentContext(userDataDir, {
-        headless: false,
-        channel: "chrome", // Use Playwright's Chrome channel support
-        args: browserArgs,
-        // Add viewport to make it look more realistic
-        viewport: { width: 1280, height: 720 },
-        // Disable webdriver flag
-        ignoreHTTPSErrors: true,
-      });
-      log("Browser launched (profile will persist cookies/login)");
-
-      // Remove webdriver property from all pages to avoid detection
-      const pages = browserContext.pages();
-      for (const page of pages) {
-        await page.addInitScript(() => {
-          // Remove webdriver property
-          Object.defineProperty(navigator, "webdriver", {
-            get: () => false,
-          });
-          // Override plugins to appear more realistic
-          Object.defineProperty(navigator, "plugins", {
-            get: () => [1, 2, 3, 4, 5],
-          });
-          // Override languages
-          Object.defineProperty(navigator, "languages", {
-            get: () => ["en-US", "en"],
-          });
-          // Remove Chrome automation indicator
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          (window as any).chrome = {
-            runtime: {},
-          };
-        });
-      }
-
-      // Also apply to future pages
-      browserContext.on("page", async (page) => {
-        await page.addInitScript(() => {
-          Object.defineProperty(navigator, "webdriver", {
-            get: () => false,
-          });
-          Object.defineProperty(navigator, "plugins", {
-            get: () => [1, 2, 3, 4, 5],
-          });
-          Object.defineProperty(navigator, "languages", {
-            get: () => ["en-US", "en"],
-          });
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          (window as any).chrome = {
-            runtime: {},
-          };
-        });
-      });
-
-      // Use the persistent context directly
-      const changes = await validateItemLinks(browserContext, item);
-
-      // Browser is closed now, process results
-      if (changes && Object.keys(changes).length > 0) {
-        // Has changes - update with the changes
-        log(`  ✏️ Changes detected for ${item.name}:`, changes);
-        currentOverrides[item.name] = {
-          ...changes,
-          _processed: true,
-        } as Partial<ScrappedItemType> & ProcessedState;
-      } else {
-        // No changes - mark as processed
-        log(`  ✓ No changes for ${item.name}`);
-        currentOverrides[item.name] = {
-          _processed: true,
-        } as ProcessedState;
-      }
-
-      // Save after each item
-      await saveManualOverrides(currentOverrides);
-      log("  💾 Progress saved");
-
-      // Ask if user wants to continue
-      const { continueProcessing } = await inquirer.prompt([
-        {
-          type: "confirm",
-          name: "continueProcessing",
-          message: "Continue to next item?",
-          default: true,
-        },
-      ]);
-
-      if (!continueProcessing) {
-        log("Stopping...");
-        if (browserContext) {
-          await browserContext.close();
-          browserContext = null;
-        }
-        break;
-      }
-
-      // Browser is already closed by user, set to null
-      // It will be relaunched with the same profile for the next item
-      browserContext = null;
+      const extensionDir = path.dirname(extensionManifestPath);
+      browserArgs.push(`--load-extension=${extensionDir}`);
+      log(`Loading extension from: ${extensionDir}`);
+    } else {
+      log("Extension loading disabled (ENABLE_EXTENSION=false)");
     }
 
-    log("\nValidation complete!");
+    browserContext = await chromium.launchPersistentContext(userDataDir, {
+      headless: false,
+      channel: "chrome", // Use Playwright's Chrome channel support
+      args: browserArgs,
+      // Add viewport to make it look more realistic
+      viewport: { width: 1280, height: 720 },
+      // Disable webdriver flag
+      ignoreHTTPSErrors: true,
+    });
+    log("Browser launched (profile will persist cookies/login)");
+
+    // Remove webdriver property from all pages to avoid detection
+    const pages = browserContext.pages();
+    for (const page of pages) {
+      await page.addInitScript(() => {
+        // Remove webdriver property
+        Object.defineProperty(navigator, "webdriver", {
+          get: () => false,
+        });
+        // Override plugins to appear more realistic
+        Object.defineProperty(navigator, "plugins", {
+          get: () => [1, 2, 3, 4, 5],
+        });
+        // Override languages
+        Object.defineProperty(navigator, "languages", {
+          get: () => ["en-US", "en"],
+        });
+        // Remove Chrome automation indicator
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        (window as any).chrome = {
+          runtime: {},
+        };
+      });
+    }
+
+    // Also apply to future pages
+    browserContext.on("page", async (page) => {
+      await page.addInitScript(() => {
+        Object.defineProperty(navigator, "webdriver", {
+          get: () => false,
+        });
+        Object.defineProperty(navigator, "plugins", {
+          get: () => [1, 2, 3, 4, 5],
+        });
+        Object.defineProperty(navigator, "languages", {
+          get: () => ["en-US", "en"],
+        });
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        (window as any).chrome = {
+          runtime: {},
+        };
+      });
+    });
+
+    // Use the persistent context directly
+    const changes = await validateItemLinks(browserContext, item);
+
+    // Browser is closed now, process results
+    if (changes && Object.keys(changes).length > 0) {
+      // Has changes - update with the changes
+      log(`  ✏️ Changes detected for ${item.name}:`, changes);
+      currentOverrides[item.name] = {
+        ...changes,
+        _processed: true,
+      } as Partial<ScrappedItemType> & ProcessedState;
+    } else {
+      // No changes - mark as processed
+      log(`  ✓ No changes for ${item.name}`);
+      currentOverrides[item.name] = {
+        _processed: true,
+      } as ProcessedState;
+    }
+
+    // Save after each item
+    await saveManualOverrides(currentOverrides);
+    log("  💾 Progress saved");
+    log(`\n✓ Item processed. Remaining items: ${unprocessedItems.length - 1}`);
+    log("Script will now exit. Run 'npm run dev' to update and process next item.");
   } catch (err) {
     error("Error during validation:", err);
     throw err;

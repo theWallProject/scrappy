@@ -142,6 +142,21 @@ export const manualOverrides: Record<
     ],
     _processed: true,
   },
+  SentinelOne: {
+    li: [
+      "https://www.linkedin.com/company/sentinelone-dach",
+      "https://www.linkedin.com/company/sentinelone-france",
+      "https://www.linkedin.com/showcase/sentinelone-apj",
+      "https://www.linkedin.com/company/sentinelone",
+    ],
+    urls: [
+      "https://github.com/Sentinel-One",
+      "https://play.google.com/store/search?q=SentinelOne&c=apps&hl=de",
+      "https://www.youtube.com/@Sentinelone-inc",
+      "https://www.youtube.com/channel/UCm-vzfQy1lNglsXRBY6Vu5w",
+    ],
+    _processed: true,
+  },
   Somite: { tw: "https://x.com/somiteai" },
   "The Agro Exchange": { ws: "https://www.agrox.io" },
   Wix: { tw: "https://x.com/Wix" },
