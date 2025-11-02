@@ -79378,9 +79378,17 @@
     ]
   },
   {
-    "selector": "nebius-group",
+    "selector": "toloka",
     "name": "Nebius Group",
-    "id": "nebius-group",
+    "id": "nebius-group_manual_li_toloka",
+    "reasons": [
+      "f"
+    ]
+  },
+  {
+    "selector": "tractoai",
+    "name": "Nebius Group",
+    "id": "nebius-group_manual_li_tractoai",
     "reasons": [
       "f"
     ]
@@ -119187,14 +119195,6 @@
     "id": "tollman-s",
     "reasons": [
       "h"
-    ]
-  },
-  {
-    "selector": "toloka",
-    "name": "Toloka",
-    "id": "toloka-5e39",
-    "reasons": [
-      "f"
     ]
   },
   {

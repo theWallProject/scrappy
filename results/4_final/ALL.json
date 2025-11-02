@@ -23247,6 +23247,14 @@
     "ws": "bsky.social"
   },
   {
+    "id": "bluesky-514d_manual_ws_bsky_app",
+    "r": [
+      "i"
+    ],
+    "n": "Bluesky",
+    "ws": "bsky.app"
+  },
+  {
     "id": "bluesky-energy",
     "r": [
       "f"
@@ -40030,7 +40038,7 @@
     "n": "Cyera",
     "li": "cyera",
     "tw": "cyera_io",
-    "ws": "cyera.io"
+    "ws": "cyera.com"
   },
   {
     "id": "cyfirma",
@@ -109480,8 +109488,57 @@
     ],
     "n": "Nebius Group",
     "s": "NBISN",
-    "li": "nebius-group",
-    "ws": "group.nebius.com"
+    "fb": "globaltoloka",
+    "tw": "TripleTenTech",
+    "ws": "nebius.com"
+  },
+  {
+    "id": "nebius-group_manual_fb_tripleten.tech",
+    "r": [
+      "f"
+    ],
+    "n": "Nebius Group",
+    "fb": "tripleten.tech"
+  },
+  {
+    "id": "nebius-group_manual_li_toloka",
+    "r": [
+      "f"
+    ],
+    "n": "Nebius Group",
+    "li": "toloka"
+  },
+  {
+    "id": "nebius-group_manual_li_tractoai",
+    "r": [
+      "f"
+    ],
+    "n": "Nebius Group",
+    "li": "tractoai"
+  },
+  {
+    "id": "nebius-group_manual_tw_avrideai",
+    "r": [
+      "f"
+    ],
+    "n": "Nebius Group",
+    "tw": "avrideai"
+  },
+  {
+    "id": "nebius-group_manual_tw_tolokaai",
+    "r": [
+      "f"
+    ],
+    "n": "Nebius Group",
+    "tw": "tolokaai"
+  },
+  {
+    "id": "nebius-group_manual_tw_tractoai",
+    "r": [
+      "f"
+    ],
+    "n": "Nebius Group",
+    "tw": "tractoai"
   },
   {
     "id": "neboola",
@@ -165116,9 +165173,6 @@
       "f"
     ],
     "n": "Toloka",
-    "fb": "globaltoloka",
-    "li": "toloka",
-    "tw": "tolokaai",
     "ws": "toloka.ai"
   },
   {

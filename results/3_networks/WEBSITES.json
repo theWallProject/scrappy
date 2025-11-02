@@ -12737,6 +12737,12 @@
     "reasons": ["h"]
   },
   {
+    "id": "bluesky-514d_manual_ws_bsky_app",
+    "selector": "bsky.app",
+    "name": "Bluesky",
+    "reasons": ["i"]
+  },
+  {
     "id": "bluesky-514d",
     "selector": "bsky.social",
     "name": "Bluesky",
@@ -20024,7 +20030,7 @@
   },
   {
     "id": "cyera",
-    "selector": "cyera.io",
+    "selector": "cyera.com",
     "name": "Cyera",
     "reasons": ["i"]
   },
@@ -34770,13 +34776,6 @@
     "selector": "groundworkbioag.com",
     "name": "Groundwork BioAg",
     "reasons": ["h"]
-  },
-  {
-    "id": "nebius-group",
-    "selector": "group.nebius.com",
-    "name": "Nebius Group",
-    "reasons": ["f"],
-    "s": "NBISN"
   },
   {
     "id": "group-107",
@@ -54429,6 +54428,13 @@
     "selector": "nebius.ai",
     "name": "Nebius AI",
     "reasons": ["f"]
+  },
+  {
+    "id": "nebius-group",
+    "selector": "nebius.com",
+    "name": "Nebius Group",
+    "reasons": ["f"],
+    "s": "NBISN"
   },
   {
     "id": "neboola",

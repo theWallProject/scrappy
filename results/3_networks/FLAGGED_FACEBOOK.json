@@ -46751,6 +46751,22 @@
     ]
   },
   {
+    "id": "nebius-group",
+    "selector": "globaltoloka",
+    "name": "Nebius Group",
+    "reasons": [
+      "f"
+    ]
+  },
+  {
+    "id": "nebius-group_manual_fb_tripleten.tech",
+    "selector": "tripleten.tech",
+    "name": "Nebius Group",
+    "reasons": [
+      "f"
+    ]
+  },
+  {
     "id": "neboola",
     "selector": "neboola",
     "name": "Neboola",
@@ -69970,14 +69986,6 @@
     "name": "Tollman’s",
     "reasons": [
       "h"
-    ]
-  },
-  {
-    "id": "toloka-5e39",
-    "selector": "globaltoloka",
-    "name": "Toloka",
-    "reasons": [
-      "f"
     ]
   },
   {
