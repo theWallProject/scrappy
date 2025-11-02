@@ -1034,9 +1034,6 @@ export async function run() {
       return !existing || !isProcessed(existing);
     });
 
-    // Display statistics before processing
-    displayStatistics(sortedData, currentOverrides);
-
     log(`\nFound ${unprocessedItems.length} unprocessed items`);
 
     if (unprocessedItems.length === 0) {
