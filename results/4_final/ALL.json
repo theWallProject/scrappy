@@ -105399,7 +105399,7 @@
     "s": "MNDY",
     "fb": "mondaydotcom",
     "li": "mondaydotcom",
-    "tw": "mondaysupport",
+    "tw": "mondaydotcom",
     "ws": "monday.com",
     "alt": [
       {
@@ -105441,12 +105441,12 @@
     "li": "2525169"
   },
   {
-    "id": "mondaydotcom_manual_tw_mondaydotcom",
+    "id": "mondaydotcom_manual_tw_mondaysupport",
     "r": [
       "h"
     ],
     "n": "monday.com",
-    "tw": "mondaydotcom"
+    "tw": "mondaysupport"
   },
   {
     "id": "mondaydotcom_manual_ws_mondayert_org",

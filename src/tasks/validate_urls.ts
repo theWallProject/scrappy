@@ -412,6 +412,38 @@ const validateItemLinks = async (
   // Open search pages for all configured services
   await openSearchPages(context, item.name, pages);
 
+  // Close any empty tabs that might have been opened
+  try {
+    const allPages = context.pages();
+    const emptyPages: Page[] = [];
+    for (const page of allPages) {
+      try {
+        if (!page.isClosed() && !pages.includes(page)) {
+          const url = page.url();
+          if (url === "about:blank" || url === "") {
+            emptyPages.push(page);
+          }
+        }
+      } catch {
+        // Page might already be closed or not accessible
+      }
+    }
+
+    // Close all empty pages (except the ones we're using)
+    for (const page of emptyPages) {
+      try {
+        await page.close();
+      } catch {
+        // Page might already be closed
+      }
+    }
+    if (emptyPages.length > 0) {
+      log(`  Closed ${emptyPages.length} empty tab(s)`);
+    }
+  } catch {
+    // Ignore errors when closing empty tabs
+  }
+
   // Wait for entire browser to be closed by user
   log(
     `  ⏳ Browser windows are open (${pages.length} tabs). Close the browser to proceed...`,
@@ -1185,8 +1217,17 @@ export async function run() {
     throw err;
   } finally {
     if (browserContext) {
-      await browserContext.close();
-      log("Browser closed");
+      try {
+        // Check if browser is still connected before trying to close
+        const browser = browserContext.browser();
+        const isConnected = browser?.isConnected() ?? false;
+        if (isConnected) {
+          await browserContext.close();
+          log("Browser closed");
+        }
+      } catch {
+        // Browser context already closed, ignore
+      }
     }
   }
 }

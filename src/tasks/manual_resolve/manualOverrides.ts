@@ -26,6 +26,31 @@ export const manualOverrides: Record<
     ],
     _processed: true,
   },
+  Cellebrite: {
+    li: [
+      "https://www.linkedin.com/company/cellebrite",
+      "http://www.linkedin.com/company/100045",
+    ],
+    fb: [
+      "https://www.facebook.com/cellebritedigitalintelligence",
+      "https://www.facebook.com/groups/1143744623008587",
+      "https://www.facebook.com/groups/571246666951707",
+      "https://www.facebook.com/groups/746270377207022",
+    ],
+    urls: [
+      "https://www.linkedin.com/showcase/cellebrite-careers",
+      "https://www.linkedin.com/showcase/cellebrite-enterprise-solutions",
+      "https://cellebrite.my.site.com/PartnerCommunity/s/login/?language=en_US",
+      "https://www.youtube.com/@cellebrite",
+      "https://www.youtube.com/@cellebrite-deutsch",
+      "https://www.youtube.com/@cellebrite-espanol",
+      "https://www.youtube.com/@cellebrite-francais",
+      "https://www.youtube.com/@cellebrite-portugues",
+      "https://www.youtube.com/@companycellebrite",
+      "https://www.youtube.com/@lifeatcellebrite7735",
+    ],
+    _processed: true,
+  },
   Cyera: {
     ws: "https://www.cyera.com",
     urls: [
@@ -225,11 +250,11 @@ export const manualOverrides: Record<
       "https://www.mondayert.org",
       "https://www.workcanvas.com",
     ],
-    tw: ["https://x.com/mondaydotcom", "https://x.com/mondaysupport"],
     li: [
       "https://www.linkedin.com/company/mondaydotcom/",
       "https://www.linkedin.com/company/2525169",
     ],
+    tw: ["https://x.com/mondaydotcom", "https://x.com/mondaysupport"],
     urls: [
       "https://www.facebook.com/groups/monday.community",
       "https://www.facebook.com/groups/183295877306250",

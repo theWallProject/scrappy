@@ -1,0 +1,1 @@
+- support linkedin.com/showcase/\* links
