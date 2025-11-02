@@ -111,7 +111,37 @@ export const manualOverrides: Record<
     ],
     _processed: true,
   },
+  "Protect AI": {
+    urls: [
+      "https://github.com/protectai",
+      "https://mlsecops.slack.com/signup#/domain-signup",
+      "https://www.youtube.com/@protectai",
+    ],
+    _processed: true,
+  },
   "Red Alert": { ws: "" },
+  Semperis: {
+    ws: ["https://www.hipconf.com", "https://www.semperis.com"],
+    li: [
+      "https://www.linkedin.com/company/hybrid-identity-protection-conference",
+      "https://www.linkedin.com/company/semperis",
+    ],
+    fb: [
+      "https://www.facebook.com/semperistech",
+      "https://www.facebook.com/HIPConf",
+    ],
+    tw: ["https://x.com/hipconf", "https://x.com/semperistech"],
+    urls: [
+      "https://hipconf.slack.com",
+      "https://marketplace.microsoft.com/en-us/product/saas/semperis.semperis-hybrid-active-directory-protection",
+      "https://www.instagram.com/hipconf",
+      // test
+      "https://www.threads.com/@semperistech",
+      "https://www.youtube.com/@semperistech",
+      "https://www.youtube.com/channel/UCycrWXhxOTaUQ0sidlyN9SA",
+    ],
+    _processed: true,
+  },
   Somite: { tw: "https://x.com/somiteai" },
   "The Agro Exchange": { ws: "https://www.agrox.io" },
   Wix: { tw: "https://x.com/Wix" },
