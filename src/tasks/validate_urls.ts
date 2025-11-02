@@ -91,7 +91,7 @@ const saveManualOverrides = async (
   const keys = Object.keys(overrides).sort();
   let content = 'import { ScrappedItemType } from "../../types";\n\n';
   content +=
-    "export const manualOverrides: Record<string, Partial<ScrappedItemType> | { _processed: true } | (Partial<ScrappedItemType> & { _processed: true })> = {\n";
+    "export const manualOverrides: Record<string, Partial<ScrappedItemType> | { _processed: true } | (Partial<ScrappedItemType> & { _processed: true }) | (Partial<ScrappedItemType> & { urls?: string[] }) | (Partial<ScrappedItemType> & { _processed: true; urls?: string[] })> = {\n";
 
   for (const key of keys) {
     const value = overrides[key];
@@ -274,16 +274,57 @@ const validateItemLinks = async (
 
   // Track all pages including manually opened ones
   const allTrackedPages = new Set<Page>(pages);
+  // Store URLs for pages even after they're closed
+  const pageUrls = new Map<Page, string>();
+
+  // Store URLs for initial pages
+  for (const page of pages) {
+    try {
+      const url = page.url();
+      pageUrls.set(page, url);
+    } catch {
+      // Page might not have a URL yet
+    }
+  }
 
   // Listen for new pages created (including manually opened tabs)
-  context.on("page", (page) => {
+  context.on("page", async (page) => {
     try {
-      const pageUrl = page.url();
-      log(
-        `  [DEBUG] ✨ New page detected: ${pageUrl} (adding to tracked pages)`,
-      );
       allTrackedPages.add(page);
-      log(`  [DEBUG] Total tracked pages now: ${allTrackedPages.size}`);
+      log(
+        `  [DEBUG] ✨ New page created (total tracked: ${allTrackedPages.size})`,
+      );
+
+      // Try to get URL immediately
+      const updatePageUrl = async () => {
+        try {
+          // Wait a bit for navigation to complete
+          await new Promise((resolve) => setTimeout(resolve, 500));
+          const pageUrl = page.url();
+          if (pageUrl && pageUrl !== "about:blank") {
+            const oldUrl = pageUrls.get(page);
+            pageUrls.set(page, pageUrl);
+            if (oldUrl !== pageUrl) {
+              log(`  [DEBUG] ✨ Page URL captured/updated: ${pageUrl}`);
+            }
+          }
+        } catch {
+          // Ignore errors getting URL
+        }
+      };
+
+      // Try immediately and after navigation
+      updatePageUrl().catch(() => {});
+
+      // Also listen for navigation to capture final URL
+      page.on("framenavigated", () => {
+        updatePageUrl().catch(() => {});
+      });
+
+      // Also listen for load to catch fully loaded pages
+      page.on("load", () => {
+        updatePageUrl().catch(() => {});
+      });
     } catch (e) {
       log(`  [DEBUG] Error in page event handler: ${e}`);
     }
@@ -303,36 +344,109 @@ const validateItemLinks = async (
       log(`  [DEBUG] Original pages array length: ${pages.length}`);
 
       try {
-        // Try to get pages from context first
+        // Try to get pages from context first, but fallback to tracked pages
+        // if context is closed (returns empty array)
         let pagesToCheck: Page[] = [];
         try {
           pagesToCheck = context.pages();
           log(
             `  [DEBUG] Found ${pagesToCheck.length} pages from context.pages()`,
           );
-          log(
-            `  [DEBUG] Context pages: ${pagesToCheck.map((p, i) => `[${i}] ${p.isClosed() ? "CLOSED" : p.url()}`).join(", ")}`,
-          );
+          if (pagesToCheck.length > 0) {
+            log(
+              `  [DEBUG] Context pages: ${pagesToCheck.map((p, i) => `[${i}] ${p.isClosed() ? "CLOSED" : p.url()}`).join(", ")}`,
+            );
+          } else {
+            // Context is closed or empty, use tracked pages
+            log(
+              `  [DEBUG] context.pages() returned empty (context closed), using tracked pages`,
+            );
+            pagesToCheck = Array.from(allTrackedPages);
+            log(`  [DEBUG] Using ${pagesToCheck.length} tracked pages`);
+          }
         } catch (e) {
           log(`  [DEBUG] Could not get pages from context: ${e}`);
           // Fallback to tracked pages
           pagesToCheck = Array.from(allTrackedPages);
           log(`  [DEBUG] Using ${pagesToCheck.length} tracked pages`);
+        }
+
+        // If still empty, use the original pages array as last resort
+        if (pagesToCheck.length === 0 && pages.length > 0) {
           log(
-            `  [DEBUG] Tracked pages: ${pagesToCheck.map((p, i) => `[${i}] ${p.isClosed() ? "CLOSED" : p.url()}`).join(", ")}`,
+            `  [DEBUG] Tracked pages empty, falling back to original pages array`,
+          );
+          pagesToCheck = pages;
+          log(
+            `  [DEBUG] Using ${pagesToCheck.length} pages from original array`,
           );
         }
 
-        const openedUrls = new Set(
-          links.map((link) => normalizeUrlForComparison(link.url)),
-        );
+        if (pagesToCheck.length > 0) {
+          log(
+            `  [DEBUG] Final pages to check: ${pagesToCheck.map((p, i) => `[${i}] ${p.isClosed() ? "CLOSED" : p.url()}`).join(", ")}`,
+          );
+        }
+
+        // Create set of normalized URLs to exclude:
+        // 1. URLs we automatically opened (ws, li, fb, tw tabs)
+        // 2. URLs already in the data
+        const excludedUrls = new Set<string>();
+
+        // Add the URLs we automatically opened (normalized)
+        for (const autoPage of pages) {
+          try {
+            const autoUrl = pageUrls.get(autoPage) || autoPage.url();
+            if (autoUrl && autoUrl !== "about:blank") {
+              const normalized = normalizeUrlForComparison(autoUrl);
+              excludedUrls.add(normalized);
+              log(
+                `  [DEBUG] Added auto-opened tab to exclude: ${autoUrl} -> ${normalized}`,
+              );
+            }
+          } catch {
+            // Page might be closed, skip
+          }
+        }
+
         // Also exclude the Ecosia search URL we opened
         const ecosiaSearchUrl = normalizeUrlForComparison(
           `https://www.ecosia.org/search?q=${encodeURIComponent(item.name)}`,
         );
-        openedUrls.add(ecosiaSearchUrl);
+        excludedUrls.add(ecosiaSearchUrl);
+
+        // Add the URLs that are already in the item data (normalized)
+        if (item.ws) {
+          const normalized = normalizeUrlForComparison(item.ws);
+          excludedUrls.add(normalized);
+          log(
+            `  [DEBUG] Added existing ws to exclude: ${item.ws} -> ${normalized}`,
+          );
+        }
+        if (item.li) {
+          const normalized = normalizeUrlForComparison(item.li);
+          excludedUrls.add(normalized);
+          log(
+            `  [DEBUG] Added existing li to exclude: ${item.li} -> ${normalized}`,
+          );
+        }
+        if (item.fb) {
+          const normalized = normalizeUrlForComparison(item.fb);
+          excludedUrls.add(normalized);
+          log(
+            `  [DEBUG] Added existing fb to exclude: ${item.fb} -> ${normalized}`,
+          );
+        }
+        if (item.tw) {
+          const normalized = normalizeUrlForComparison(item.tw);
+          excludedUrls.add(normalized);
+          log(
+            `  [DEBUG] Added existing tw to exclude: ${item.tw} -> ${normalized}`,
+          );
+        }
+
         log(
-          `  [DEBUG] Opened URLs (normalized) that we'll exclude: ${Array.from(openedUrls).join(", ")}`,
+          `  [DEBUG] Total URLs to exclude (normalized): ${Array.from(excludedUrls).join(", ")}`,
         );
 
         log(
@@ -344,31 +458,54 @@ const validateItemLinks = async (
             const isClosed = page.isClosed();
             log(`  [DEBUG] Page [${i}]: isClosed=${isClosed}`);
 
+            // Try to get URL - either from live page or cached
+            let pageUrl: string | null = null;
             if (!isClosed) {
-              const pageUrl = page.url();
+              try {
+                pageUrl = page.url();
+              } catch {
+                // Page might be closing
+              }
+            }
+
+            // If page is closed or we couldn't get URL, try cached URL
+            if (!pageUrl || pageUrl === "about:blank") {
+              pageUrl = pageUrls.get(page) || null;
+              if (pageUrl) {
+                log(`  [DEBUG] Page [${i}] using cached URL: ${pageUrl}`);
+              }
+            }
+
+            if (pageUrl && pageUrl !== "about:blank") {
               const normalizedPageUrl = normalizeUrlForComparison(pageUrl);
 
               log(
                 `  [DEBUG] Page [${i}] URL: ${pageUrl} (normalized: ${normalizedPageUrl})`,
               );
 
-              const isOpened = openedUrls.has(normalizedPageUrl);
-              const isAboutBlank = pageUrl === "about:blank";
+              // Ignore ecosia domains
+              const isEcosia = /ecosia\.(org|com|net)/i.test(pageUrl);
+              if (isEcosia) {
+                log(`  [DEBUG] ✗ Skipping page [${i}] (ecosia domain)`);
+                continue;
+              }
+
+              const isExcluded = excludedUrls.has(normalizedPageUrl);
               log(
-                `  [DEBUG] Page [${i}] isOpened=${isOpened}, isAboutBlank=${isAboutBlank}`,
+                `  [DEBUG] Page [${i}] isExcluded=${isExcluded} (checking against ${excludedUrls.size} excluded URLs)`,
               );
 
-              // Check if this URL is not one we opened
-              if (!isOpened && !isAboutBlank) {
-                log(`  [DEBUG] ✓ Adding extra URL: ${pageUrl}`);
+              // Check if this URL is new information (not auto-opened and not already in data)
+              if (!isExcluded) {
+                log(`  [DEBUG] ✓ Adding NEW URL: ${pageUrl}`);
                 extraUrls.push(pageUrl);
               } else {
                 log(
-                  `  [DEBUG] ✗ Skipping page [${i}] (opened=${isOpened}, aboutBlank=${isAboutBlank})`,
+                  `  [DEBUG] ✗ Skipping page [${i}] (excluded: ${normalizedPageUrl})`,
                 );
               }
             } else {
-              log(`  [DEBUG] Page [${i}] is closed, skipping`);
+              log(`  [DEBUG] Page [${i}] no URL available (closed or blank)`);
             }
           } catch (e) {
             log(`  [DEBUG] Error checking page [${i}]: ${e}`);
@@ -407,12 +544,20 @@ const validateItemLinks = async (
       log(
         `  [DEBUG] About to collect URLs, tracked pages: ${allTrackedPages.size}`,
       );
-      (async () => {
-        // Small delay to ensure pages are still accessible
-        await new Promise((resolve) => setTimeout(resolve, 100));
-        log(`  [DEBUG] Collecting URLs after 100ms delay...`);
 
-        const extraUrls = collectExtraUrls();
+      // Try to collect URLs immediately before context fully closes
+      // Also try after a small delay as fallback
+      (async () => {
+        // First attempt: immediate collection (before delay)
+        log(`  [DEBUG] Attempting immediate URL collection...`);
+        let extraUrls = collectExtraUrls();
+
+        // If that didn't work and we have tracked pages, try again after delay
+        if (extraUrls.length === 0 && allTrackedPages.size > 0) {
+          await new Promise((resolve) => setTimeout(resolve, 100));
+          log(`  [DEBUG] Retrying URL collection after 100ms delay...`);
+          extraUrls = collectExtraUrls();
+        }
 
         log(`  [DEBUG] Collection returned ${extraUrls.length} URLs`);
         log(
@@ -471,39 +616,28 @@ const validateItemLinks = async (
     }
 
     // Poll for browser disconnection as a fallback (in case events don't fire)
-    let pollCount = 0;
     pollInterval = setInterval(() => {
-      pollCount++;
       const isConnected = browser.isConnected();
       const browserFromContext = context.browser();
       const allPagesClosed = pages.every((p) => p.isClosed());
 
-      log(
-        `  [DEBUG] Poll #${pollCount}: browser.isConnected()=${isConnected}, context.browser()=${browserFromContext ? "exists" : "null"}, allPagesClosed=${allPagesClosed}`,
-      );
-
       if (!isConnected) {
-        log(`  [DEBUG] Poll detected browser disconnection`);
         cleanup("polling (isConnected=false)");
         return;
       }
 
       // Also check if context browser is null
       if (browserFromContext === null) {
-        log(`  [DEBUG] Poll detected context browser is null`);
         cleanup("polling (context.browser() === null)");
         return;
       }
 
       // If all pages are closed, browser was likely closed
       if (allPagesClosed && pages.length > 0) {
-        log(`  [DEBUG] All pages are closed, assuming browser closed`);
         cleanup("polling (all pages closed)");
         return;
       }
-    }, 1000); // Poll every second for better visibility
-
-    log(`  [DEBUG] Started polling interval, waiting for browser closure...`);
+    }, 1000); // Poll every second
   });
 };
 
