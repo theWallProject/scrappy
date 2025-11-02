@@ -94,5 +94,9 @@ const main = async () => {
     shouldCopyToAddon: answers.shouldCopyToAddon,
   });
 };
-// process.stdin.once("data", () => log("done"));
-main();
+
+// Only run main() if this file is executed directly (not imported)
+if (require.main === module) {
+  // process.stdin.once("data", () => log("done"));
+  main();
+}

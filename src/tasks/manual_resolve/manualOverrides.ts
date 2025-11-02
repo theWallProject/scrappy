@@ -179,6 +179,15 @@ export const manualOverrides: Record<
   },
   Somite: { tw: "https://x.com/somiteai" },
   "The Agro Exchange": { ws: "https://www.agrox.io" },
+  "VAST Data": {
+    urls: [
+      "https://aws.amazon.com/marketplace/seller-profile?id=seller-rhponql53yee4",
+      "https://github.com/vast-data",
+      "https://www.carahsoft.com/vast",
+      "https://www.youtube.com/vastdata",
+    ],
+    _processed: true,
+  },
   Wix: { tw: "https://x.com/Wix" },
   eToro: {
     ws: ["https://www.etoro.com", "https://etoropartners.com"],

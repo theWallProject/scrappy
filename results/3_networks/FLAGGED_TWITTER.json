@@ -14672,7 +14672,7 @@
   },
   {
     "id": "empathy-5cb4",
-    "selector": "empathy_app",
+    "selector": "empathy",
     "name": "Empathy",
     "reasons": [
       "f",

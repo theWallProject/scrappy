@@ -964,6 +964,9 @@ export async function run() {
     }
 
     log("\nScript complete. Run again to process next item.");
+
+    // Exit cleanly to prevent hanging prompts from index.ts
+    process.exit(0);
   } catch (err) {
     error("Error during validation:", err);
     throw err;
