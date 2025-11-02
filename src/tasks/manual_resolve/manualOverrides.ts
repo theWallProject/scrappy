@@ -1,12 +1,20 @@
 import { ScrappedItemType } from "../../types";
 
+// Allow arrays for link fields in overrides
+type ManualOverrideFields = {
+  ws?: string | string[];
+  li?: string | string[];
+  fb?: string | string[];
+  tw?: string | string[];
+} & Omit<Partial<ScrappedItemType>, "ws" | "li" | "fb" | "tw">;
+
 export const manualOverrides: Record<
   string,
-  | Partial<ScrappedItemType>
+  | ManualOverrideFields
   | { _processed: true }
-  | (Partial<ScrappedItemType> & { _processed: true })
-  | (Partial<ScrappedItemType> & { urls?: string[] })
-  | (Partial<ScrappedItemType> & { _processed: true; urls?: string[] })
+  | (ManualOverrideFields & { _processed: true })
+  | (ManualOverrideFields & { urls?: string[] })
+  | (ManualOverrideFields & { _processed: true; urls?: string[] })
 > = {
   "01 Founders": { li: "https://www.linkedin.com/school/01-founders/" },
   Fiverr: { fb: "https://www.facebook.com/Fiverr" },
@@ -35,4 +43,34 @@ export const manualOverrides: Record<
   Somite: { tw: "https://x.com/somiteai" },
   "The Agro Exchange": { ws: "https://www.agrox.io" },
   Wix: { tw: "https://x.com/Wix" },
+  eToro: {
+    fb: [
+      "https://www.facebook.com/eToroDEofficial",
+      "https://www.facebook.com/106007086252277",
+      "https://www.facebook.com/183379648361597",
+      "https://www.facebook.com/152479438248050",
+    ],
+    tw: [
+      "https://x.com/eToroES",
+      "https://x.com/eToroAr",
+      "https://x.com/eToroItalia",
+    ],
+    ws: ["https://www.etoro.com", "https://etoropartners.com"],
+    urls: [
+      "https://www.tiktok.com/@etoro_official",
+      "https://www.youtube.com/@etoro",
+      "https://www.youtube.com/@eToroItalia",
+      "https://www.youtube.com/@eToroAR",
+      "https://www.youtube.com/@eToro_ES",
+      "https://www.youtube.com/@eToroDE",
+      "https://www.youtube.com/@etorofrance877",
+      "https://www.youtube.com/eToroDeutsch",
+      "https://www.threads.com/@etoro_official",
+      "https://www.instagram.com/etoro_italia",
+      "https://www.instagram.com/etoro_official",
+      "https://apps.apple.com/us/developer/etoro/id491658374",
+      "https://play.google.com/store/apps/developer?id=eToro&hl=de",
+    ],
+    _processed: true,
+  },
 };

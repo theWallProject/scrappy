@@ -1,10 +1,54 @@
 import fs from "fs";
 import path from "path";
-import { getMainDomain } from "@theWallProject/addonCommon";
+import {
+  getMainDomain,
+  API_ENDPOINT_RULE_LINKEDIN,
+  API_ENDPOINT_RULE_FACEBOOK,
+  API_ENDPOINT_RULE_TWITTER,
+} from "@theWallProject/addonCommon";
 import { APIScrapperFileDataSchema, ScrappedItemType } from "../types";
 import { log, cleanWebsite, error } from "../helper";
 import { manualDeleteIds } from "./manual_resolve/manualDeleteIds";
 import { manualOverrides } from "./manual_resolve/manualOverrides";
+
+// Helper to extract identifier from URL for ID generation
+const extractIdentifier = (
+  url: string,
+  field: "ws" | "li" | "fb" | "tw",
+): string => {
+  if (field === "ws") {
+    // For websites, use domain (match extract_websites.ts logic)
+    const domain = url
+      .replace(/^https?:\/\//, "")
+      .replace(/^www\./, "")
+      .split("/")[0]
+      .replace(/\./g, "_");
+    return domain;
+  } else if (field === "li") {
+    const regex = new RegExp(API_ENDPOINT_RULE_LINKEDIN.regex);
+    const results = regex.exec(url);
+    if (!results || !results[1]) {
+      throw new Error(`Failed to extract LinkedIn identifier from: ${url}`);
+    }
+    return results[1].replace(/\//g, "_");
+  } else if (field === "fb") {
+    const regex = new RegExp(API_ENDPOINT_RULE_FACEBOOK.regex);
+    const normalizedUrl = url.replace("/pg/", "/").replace("/p/", "/");
+    const results = regex.exec(normalizedUrl);
+    if (!results || !results[1]) {
+      throw new Error(`Failed to extract Facebook identifier from: ${url}`);
+    }
+    return results[1].replace(/\//g, "_");
+  } else if (field === "tw") {
+    const regex = new RegExp(API_ENDPOINT_RULE_TWITTER.regex);
+    const results = regex.exec(url);
+    if (!results || !results[1]) {
+      throw new Error(`Failed to extract Twitter identifier from: ${url}`);
+    }
+    return results[1].replace(/\//g, "_");
+  }
+  throw new Error(`Unknown field: ${field}`);
+};
 // import MERGED_CB from "../../results/2_merged/1_MERGED_CB.json";
 
 const folderPath = path.join(__dirname, "../../results/1_batches/static");
@@ -180,7 +224,11 @@ const loadJsonFiles = (folderPath: string) => {
     // }
   });
 
-  const manuallyUpdatedArray = deDubeArray.map((row) => {
+  // First pass: normalize URLs and apply overrides (including arrays)
+  const processedItems: ScrappedItemType[] = [];
+  const additionalItems: ScrappedItemType[] = [];
+
+  for (const row of deDubeArray) {
     row.tw = row.tw
       ?.replace("www.twitter.com", "x.com")
       ?.replace("twitter.com", "x.com");
@@ -191,6 +239,17 @@ const loadJsonFiles = (folderPath: string) => {
       row.ws = getMainDomain(row.ws);
     }
 
+    // Remove https:// and http:// from all URL fields
+    const removeProtocol = (url: string | undefined): string | undefined => {
+      if (!url) return url;
+      return url.replace(/^https?:\/\//, "");
+    };
+
+    row.ws = removeProtocol(row.ws);
+    row.li = removeProtocol(row.li);
+    row.fb = removeProtocol(row.fb);
+    row.tw = removeProtocol(row.tw);
+
     const override = manualOverrides[row.name];
 
     if (override) {
@@ -198,20 +257,101 @@ const loadJsonFiles = (folderPath: string) => {
       const excludeKeys = new Set(["_processed", "urls"]);
       const overrideFields = Object.fromEntries(
         Object.entries(override).filter(([key]) => !excludeKeys.has(key)),
-      ) as Partial<ScrappedItemType>;
+      );
       const hasOverrideFields = Object.keys(overrideFields).length > 0;
 
-      if (hasOverrideFields) {
-        log(`Manually updated ${row.name}`);
-        return { ...row, ...overrideFields };
-      } else {
+      if (!hasOverrideFields) {
         // No override fields means processed with no changes - skip
-        return row;
+        processedItems.push(row);
+        continue;
       }
+
+      log(`Manually updated ${row.name}`);
+
+      // Process each override field, handling arrays
+      const updatedRow = { ...row };
+      const linkFields: Array<"ws" | "li" | "fb" | "tw"> = [
+        "ws",
+        "li",
+        "fb",
+        "tw",
+      ];
+
+      // Helper to remove protocol from URLs
+      const removeProtocol = (url: string | undefined): string | undefined => {
+        if (!url) return url;
+        return url.replace(/^https?:\/\//, "");
+      };
+
+      for (const field of linkFields) {
+        const overrideValue = overrideFields[field];
+        if (overrideValue === undefined) continue;
+
+        if (Array.isArray(overrideValue)) {
+          // Update original with first element
+          if (overrideValue.length > 0) {
+            const firstUrl = overrideValue[0];
+            if (typeof firstUrl === "string") {
+              updatedRow[field] = removeProtocol(firstUrl);
+            }
+          }
+
+          // Create new minimal entries for remaining elements
+          for (let i = 1; i < overrideValue.length; i++) {
+            const url = overrideValue[i];
+            if (!url || url === "" || typeof url !== "string") continue;
+
+            try {
+              const identifier = extractIdentifier(url, field);
+              const newId = `${row.id}_manual_${field}_${identifier}`;
+
+              const newItem: ScrappedItemType = {
+                id: newId,
+                name: row.name,
+                reasons: row.reasons,
+                [field]: removeProtocol(url),
+              };
+              additionalItems.push(newItem);
+              log(`Created new entry: ${newId} for ${field}: ${url}`);
+            } catch (e) {
+              error(
+                `Failed to extract identifier from ${url} for ${row.name}: ${e}`,
+              );
+              throw e;
+            }
+          }
+        } else if (typeof overrideValue === "string") {
+          // Single string value - apply normally, remove protocol
+          updatedRow[field] = removeProtocol(overrideValue);
+        }
+      }
+
+      // Apply other non-link override fields
+      for (const [key, value] of Object.entries(overrideFields)) {
+        if (
+          !linkFields.includes(key as "ws" | "li" | "fb" | "tw") &&
+          key !== "_processed" &&
+          key !== "urls"
+        ) {
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          (updatedRow as any)[key] = value;
+        }
+      }
+
+      // Remove protocol from override-applied URLs
+      updatedRow.ws = updatedRow.ws?.replace(/^https?:\/\//, "");
+      updatedRow.li = updatedRow.li?.replace(/^https?:\/\//, "");
+      updatedRow.fb = updatedRow.fb?.replace(/^https?:\/\//, "");
+      updatedRow.tw = updatedRow.tw?.replace(/^https?:\/\//, "");
+
+      processedItems.push(updatedRow);
     } else {
-      return row;
+      processedItems.push(row);
     }
-  });
+  }
+
+  // Combine processed items with additional items
+  const manuallyUpdatedArray = [...processedItems, ...additionalItems];
 
   const sortedArray = manuallyUpdatedArray.sort((a, b) =>
     a.name.localeCompare(b.name),

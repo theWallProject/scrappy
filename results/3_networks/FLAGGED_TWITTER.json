@@ -15228,7 +15228,23 @@
   },
   {
     "id": "etoro",
-    "selector": "eToro",
+    "selector": "eToroES",
+    "name": "eToro",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "id": "etoro_manual_tw_eToroAr",
+    "selector": "eToroAr",
+    "name": "eToro",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "id": "etoro_manual_tw_eToroItalia",
+    "selector": "eToroItalia",
     "name": "eToro",
     "reasons": [
       "h"

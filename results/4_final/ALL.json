@@ -53567,9 +53567,9 @@
     ],
     "n": "eToro",
     "s": "ETOR",
-    "fb": "etoro",
+    "fb": "eToroDEofficial",
     "li": "etoro",
-    "tw": "eToro",
+    "tw": "eToroES",
     "ws": "etoro.com",
     "alt": [
       {
@@ -53601,6 +53601,54 @@
         "ws": "https://www.azaforex.com/"
       }
     ]
+  },
+  {
+    "id": "etoro_manual_fb_106007086252277",
+    "r": [
+      "h"
+    ],
+    "n": "eToro",
+    "fb": "106007086252277"
+  },
+  {
+    "id": "etoro_manual_fb_183379648361597",
+    "r": [
+      "h"
+    ],
+    "n": "eToro",
+    "fb": "183379648361597"
+  },
+  {
+    "id": "etoro_manual_fb_152479438248050",
+    "r": [
+      "h"
+    ],
+    "n": "eToro",
+    "fb": "152479438248050"
+  },
+  {
+    "id": "etoro_manual_tw_eToroAr",
+    "r": [
+      "h"
+    ],
+    "n": "eToro",
+    "tw": "eToroAr"
+  },
+  {
+    "id": "etoro_manual_tw_eToroItalia",
+    "r": [
+      "h"
+    ],
+    "n": "eToro",
+    "tw": "eToroItalia"
+  },
+  {
+    "id": "etoro_manual_ws_etoropartners_com",
+    "r": [
+      "h"
+    ],
+    "n": "eToro",
+    "ws": "etoropartners.com"
   },
   {
     "id": "etorox",

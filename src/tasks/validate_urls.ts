@@ -1,6 +1,11 @@
 import fs from "fs";
 import path from "path";
 import { chromium, BrowserContext, Page } from "playwright";
+import {
+  API_ENDPOINT_RULE_LINKEDIN,
+  API_ENDPOINT_RULE_FACEBOOK,
+  API_ENDPOINT_RULE_TWITTER,
+} from "@theWallProject/addonCommon";
 import { APIScrapperFileDataSchema, ScrappedItemType } from "../types";
 import { error, log } from "../helper";
 import inquirer from "inquirer";
@@ -91,7 +96,9 @@ const saveManualOverrides = async (
   const keys = Object.keys(overrides).sort();
   let content = 'import { ScrappedItemType } from "../../types";\n\n';
   content +=
-    "export const manualOverrides: Record<string, Partial<ScrappedItemType> | { _processed: true } | (Partial<ScrappedItemType> & { _processed: true }) | (Partial<ScrappedItemType> & { urls?: string[] }) | (Partial<ScrappedItemType> & { _processed: true; urls?: string[] })> = {\n";
+    '// Allow arrays for link fields in overrides\ntype ManualOverrideFields = {\n  ws?: string | string[];\n  li?: string | string[];\n  fb?: string | string[];\n  tw?: string | string[];\n} & Omit<Partial<ScrappedItemType>, "ws" | "li" | "fb" | "tw">;\n\n';
+  content +=
+    "export const manualOverrides: Record<string, ManualOverrideFields | { _processed: true } | (ManualOverrideFields & { _processed: true }) | (ManualOverrideFields & { urls?: string[] }) | (ManualOverrideFields & { _processed: true; urls?: string[] })> = {\n";
 
   for (const key of keys) {
     const value = overrides[key];
@@ -136,6 +143,10 @@ const normalizeUrl = (url: string): string => {
   }
 
   return url;
+};
+
+const removeTrailingSlash = (url: string): string => {
+  return url.replace(/\/+$/, "");
 };
 
 const normalizeUrlForComparison = (url: string): string => {
@@ -196,7 +207,69 @@ const checkRedirect = async (
 };
 
 type LinkField = "ws" | "li" | "fb" | "tw";
-type OverrideWithUrls = Partial<Pick<ScrappedItemType, LinkField>> & {
+type CategorizedUrls = {
+  ws?: string[];
+  li?: string[];
+  fb?: string[];
+  tw?: string[];
+  urls?: string[]; // Unsupported URLs only
+};
+
+// Categorize a URL into ws, li, fb, tw, or null (unsupported)
+const categorizeUrl = (url: string): LinkField | null => {
+  try {
+    // Check LinkedIn
+    const regexLinkedin = new RegExp(API_ENDPOINT_RULE_LINKEDIN.regex);
+    if (regexLinkedin.test(url)) {
+      return "li";
+    }
+
+    // Check Facebook
+    const regexFacebook = new RegExp(API_ENDPOINT_RULE_FACEBOOK.regex);
+    const normalizedFb = url.replace("/pg/", "/").replace("/p/", "/");
+    if (regexFacebook.test(normalizedFb)) {
+      return "fb";
+    }
+
+    // Check Twitter/X
+    const regexTwitter = new RegExp(API_ENDPOINT_RULE_TWITTER.regex);
+    if (regexTwitter.test(url)) {
+      return "tw";
+    }
+
+    // Don't auto-categorize websites - keep them in urls for manual organization
+    // Exclude obvious non-website URLs
+    const excludePatterns = [
+      /youtube\./i,
+      /instagram\./i,
+      /tiktok\./i,
+      /threads\./i,
+      /apps\.apple\./i,
+      /play\.google\./i,
+      /vimeo\./i,
+      /greenhouse\./i,
+      /consent\.yahoo\./i,
+      /cnbc\./i,
+    ];
+
+    const isExcluded = excludePatterns.some((pattern) => pattern.test(url));
+    if (isExcluded) {
+      return null; // Unsupported
+    }
+
+    // Websites stay in urls array for manual organization
+    return null;
+  } catch (e) {
+    log(`  [DEBUG] Error categorizing URL ${url}: ${e}`);
+    return null;
+  }
+};
+
+type OverrideWithUrls = {
+  ws?: string | string[];
+  li?: string | string[];
+  fb?: string | string[];
+  tw?: string | string[];
   urls?: string[];
 };
 
@@ -230,7 +303,7 @@ const validateItemLinks = async (
 
       if (redirected) {
         log(`    → Redirected to: ${finalUrl} (from ${url})`);
-        changes[field] = finalUrl;
+        changes[field] = removeTrailingSlash(finalUrl);
         hasChanges = true;
       } else {
         // URLs are equivalent after normalization
@@ -497,8 +570,9 @@ const validateItemLinks = async (
 
               // Check if this URL is new information (not auto-opened and not already in data)
               if (!isExcluded) {
-                log(`  [DEBUG] ✓ Adding NEW URL: ${pageUrl}`);
-                extraUrls.push(pageUrl);
+                const cleanedUrl = removeTrailingSlash(pageUrl);
+                log(`  [DEBUG] ✓ Adding NEW URL: ${cleanedUrl}`);
+                extraUrls.push(cleanedUrl);
               } else {
                 log(
                   `  [DEBUG] ✗ Skipping page [${i}] (excluded: ${normalizedPageUrl})`,
@@ -513,17 +587,23 @@ const validateItemLinks = async (
           }
         }
 
+        // Remove duplicates and sort
+        const uniqueUrls = Array.from(new Set(extraUrls));
+        uniqueUrls.sort();
+
         log(`  [DEBUG] === URL collection complete ===`);
         log(
-          `  [DEBUG] Collected ${extraUrls.length} extra URLs: ${JSON.stringify(extraUrls)}`,
+          `  [DEBUG] Collected ${extraUrls.length} URLs (${uniqueUrls.length} unique): ${JSON.stringify(uniqueUrls)}`,
         );
+
+        return uniqueUrls;
       } catch (e) {
         log(`  [DEBUG] Error collecting extra URLs: ${e}`);
         if (e instanceof Error) {
           log(`  [DEBUG] Error stack: ${e.stack}`);
         }
+        return [];
       }
-      return extraUrls;
     };
 
     const cleanup = (reason: string) => {
@@ -566,10 +646,74 @@ const validateItemLinks = async (
 
         if (extraUrls.length > 0) {
           log(`  📎 Found ${extraUrls.length} extra tab URL(s):`, extraUrls);
-          changes.urls = extraUrls;
-          log(
-            `  [DEBUG] Changes object after adding urls: ${JSON.stringify(Object.keys(changes))}`,
-          );
+
+          // Categorize URLs into appropriate keys
+          const categorized: CategorizedUrls = {};
+
+          for (const url of extraUrls) {
+            const category = categorizeUrl(url);
+            if (category === "li") {
+              if (!categorized.li) categorized.li = [];
+              categorized.li.push(url);
+            } else if (category === "fb") {
+              if (!categorized.fb) categorized.fb = [];
+              categorized.fb.push(url);
+            } else if (category === "tw") {
+              if (!categorized.tw) categorized.tw = [];
+              categorized.tw.push(url);
+            } else {
+              // Unsupported URL or website - keep in urls array for manual organization
+              if (!categorized.urls) categorized.urls = [];
+              categorized.urls.push(url);
+            }
+          }
+
+          // Merge categorized URLs into changes object
+          // Note: Websites are kept in urls array for manual organization
+
+          if (categorized.li && categorized.li.length > 0) {
+            if (Array.isArray(changes.li)) {
+              changes.li = [...changes.li, ...categorized.li];
+            } else if (typeof changes.li === "string") {
+              changes.li = [changes.li, ...categorized.li];
+            } else {
+              changes.li = categorized.li;
+            }
+            hasChanges = true;
+            log(`  ✓ Categorized ${categorized.li.length} LinkedIn URL(s)`);
+          }
+
+          if (categorized.fb && categorized.fb.length > 0) {
+            if (Array.isArray(changes.fb)) {
+              changes.fb = [...changes.fb, ...categorized.fb];
+            } else if (typeof changes.fb === "string") {
+              changes.fb = [changes.fb, ...categorized.fb];
+            } else {
+              changes.fb = categorized.fb;
+            }
+            hasChanges = true;
+            log(`  ✓ Categorized ${categorized.fb.length} Facebook URL(s)`);
+          }
+
+          if (categorized.tw && categorized.tw.length > 0) {
+            if (Array.isArray(changes.tw)) {
+              changes.tw = [...changes.tw, ...categorized.tw];
+            } else if (typeof changes.tw === "string") {
+              changes.tw = [changes.tw, ...categorized.tw];
+            } else {
+              changes.tw = categorized.tw;
+            }
+            hasChanges = true;
+            log(`  ✓ Categorized ${categorized.tw.length} Twitter/X URL(s)`);
+          }
+
+          // Only keep unsupported URLs in urls array
+          if (categorized.urls && categorized.urls.length > 0) {
+            changes.urls = categorized.urls;
+            log(
+              `  ✓ Kept ${categorized.urls.length} unsupported URL(s) in urls array`,
+            );
+          }
         } else {
           log(`  [DEBUG] No extra URLs found`);
         }
@@ -656,6 +800,9 @@ const sortByCbRank = (items: ScrappedItemType[]): ScrappedItemType[] => {
 export async function run() {
   let browserContext: BrowserContext | null = null;
 
+  // Enable extension loading (set to false to disable)
+  const ENABLE_EXTENSION = false;
+
   // Persistent browser profile path
   const userDataDir = path.join(__dirname, "../../.browser-profile");
 
@@ -696,19 +843,45 @@ export async function run() {
 
       // Launch browser with persistent profile (reuse same profile across items)
       log("Launching browser with persistent profile...");
+
+      const browserArgs = [
+        "--start-maximized", // Ensure single window
+        // Remove automation detection flags
+        "--disable-blink-features=AutomationControlled",
+        "--disable-dev-shm-usage",
+        "--no-sandbox",
+        // Use a realistic user agent
+        "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      ];
+
+      // Extension loading (enabled by ENABLE_EXTENSION flag)
+      if (ENABLE_EXTENSION) {
+        // Extension path relative to this script
+        const extensionManifestPath = path.join(
+          __dirname,
+          "../../../addon/build/chrome-mv3-dev/manifest.json",
+        );
+
+        // Check if extension exists - crash if not found
+        if (!fs.existsSync(extensionManifestPath)) {
+          throw new Error(
+            `Extension manifest not found at: ${extensionManifestPath}`,
+          );
+        }
+
+        const extensionDir = path.dirname(extensionManifestPath);
+        browserArgs.push(`--load-extension=${extensionDir}`);
+        log(`Loading extension from: ${extensionDir}`);
+      } else {
+        log("Extension loading disabled (ENABLE_EXTENSION=false)");
+      }
+
       browserContext = await chromium.launchPersistentContext(userDataDir, {
         headless: false,
-        args: [
-          "--start-maximized", // Ensure single window
-          // Remove automation detection flags
-          "--disable-blink-features=AutomationControlled",
-          "--disable-dev-shm-usage",
-          "--no-sandbox",
-          // Use a realistic user agent
-          "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-        ],
+        channel: "chrome", // Use Playwright's Chrome channel support
+        args: browserArgs,
         // Add viewport to make it look more realistic
-        viewport: { width: 1920, height: 1080 },
+        viewport: { width: 1280, height: 720 },
         // Disable webdriver flag
         ignoreHTTPSErrors: true,
       });

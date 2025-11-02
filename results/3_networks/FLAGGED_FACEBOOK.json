@@ -22135,7 +22135,31 @@
   },
   {
     "id": "etoro",
-    "selector": "etoro",
+    "selector": "eToroDEofficial",
+    "name": "eToro",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "id": "etoro_manual_fb_106007086252277",
+    "selector": "106007086252277",
+    "name": "eToro",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "id": "etoro_manual_fb_183379648361597",
+    "selector": "183379648361597",
+    "name": "eToro",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "id": "etoro_manual_fb_152479438248050",
+    "selector": "152479438248050",
     "name": "eToro",
     "reasons": [
       "h"

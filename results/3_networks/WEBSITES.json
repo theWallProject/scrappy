@@ -26763,6 +26763,12 @@
     "s": "ETOR"
   },
   {
+    "id": "etoro_manual_ws_etoropartners_com",
+    "selector": "etoropartners.com",
+    "name": "eToro",
+    "reasons": ["h"]
+  },
+  {
     "id": "etorox",
     "selector": "etorox.com",
     "name": "eToroX",
