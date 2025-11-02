@@ -76576,9 +76576,17 @@
     ]
   },
   {
-    "selector": "monday.com",
+    "selector": "mondaydotcom",
     "name": "monday.com",
     "id": "mondaydotcom",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "2525169",
+    "name": "monday.com",
+    "id": "mondaydotcom_manual_li_2525169",
     "reasons": [
       "h"
     ]

@@ -273,6 +273,90 @@ type OverrideWithUrls = {
   urls?: string[];
 };
 
+// Search service configuration
+type SearchService = {
+  name: string;
+  urlTemplate: (query: string) => string;
+};
+
+const searchServices: SearchService[] = [
+  {
+    name: "Ecosia",
+    urlTemplate: (query) =>
+      `https://www.ecosia.org/search?q=${encodeURIComponent(query)}`,
+  },
+  {
+    name: "GitHub",
+    urlTemplate: (query) =>
+      `https://github.com/search?q=${encodeURIComponent(query)}&type=users`,
+  },
+  {
+    name: "YouTube",
+    urlTemplate: (query) =>
+      `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}&sp=EgIQAg%253D%253D`,
+  },
+  {
+    name: "TikTok",
+    urlTemplate: (query) =>
+      `https://www.tiktok.com/search/user?q=${encodeURIComponent(query)}`,
+  },
+  {
+    name: "Play Store",
+    urlTemplate: (query) =>
+      `https://play.google.com/store/search?q=${encodeURIComponent(query)}&c=apps`,
+  },
+  {
+    name: "Apple Store",
+    urlTemplate: (query) =>
+      `https://www.apple.com/us/search/${encodeURIComponent(query)}?src=globalnav`,
+  },
+  {
+    name: "Chrome Web Store",
+    urlTemplate: (query) =>
+      `https://chrome.google.com/webstore/search/${encodeURIComponent(query)}`,
+  },
+  {
+    name: "Facebook",
+    urlTemplate: (query) =>
+      `https://www.facebook.com/search/top/?q=${encodeURIComponent(query)}`,
+  },
+  {
+    name: "Threads",
+    urlTemplate: (query) =>
+      `https://www.threads.net/search?q=${encodeURIComponent(query)}`,
+  },
+  {
+    name: "Instagram",
+    urlTemplate: (query) =>
+      `https://www.instagram.com/explore/search/keyword/?q=${encodeURIComponent(query)}`,
+  },
+];
+
+/**
+ * Opens search pages for all configured search services
+ */
+const openSearchPages = async (
+  context: BrowserContext,
+  query: string,
+  pages: Page[],
+): Promise<void> => {
+  for (const service of searchServices) {
+    try {
+      const searchPage = await context.newPage();
+      const searchUrl = service.urlTemplate(query);
+      log(`  🔍 Opening ${service.name} search for "${query}"`);
+      await searchPage.goto(searchUrl, {
+        waitUntil: "domcontentloaded",
+        timeout: 30000,
+      });
+      pages.push(searchPage);
+      log(`  ✓ ${service.name} search tab opened`);
+    } catch (e) {
+      log(`  [DEBUG] Could not open ${service.name} search tab: ${e}`);
+    }
+  }
+};
+
 const validateItemLinks = async (
   context: BrowserContext,
   item: ScrappedItemType,
@@ -325,20 +409,8 @@ const validateItemLinks = async (
     }
   }
 
-  // Open Ecosia search tab for the company name
-  try {
-    const searchPage = await context.newPage();
-    const searchUrl = `https://www.ecosia.org/search?q=${encodeURIComponent(item.name)}`;
-    log(`  🔍 Opening Ecosia search for "${item.name}"`);
-    await searchPage.goto(searchUrl, {
-      waitUntil: "domcontentloaded",
-      timeout: 30000,
-    });
-    pages.push(searchPage);
-    log(`  ✓ Ecosia search tab opened`);
-  } catch (e) {
-    log(`  [DEBUG] Could not open Ecosia search tab: ${e}`);
-  }
+  // Open search pages for all configured services
+  await openSearchPages(context, item.name, pages);
 
   // Wait for entire browser to be closed by user
   log(
@@ -482,12 +554,6 @@ const validateItemLinks = async (
           }
         }
 
-        // Also exclude the Ecosia search URL we opened
-        const ecosiaSearchUrl = normalizeUrlForComparison(
-          `https://www.ecosia.org/search?q=${encodeURIComponent(item.name)}`,
-        );
-        excludedUrls.add(ecosiaSearchUrl);
-
         // Add the URLs that are already in the item data (normalized)
         if (item.ws) {
           const normalized = normalizeUrlForComparison(item.ws);
@@ -555,13 +621,6 @@ const validateItemLinks = async (
               log(
                 `  [DEBUG] Page [${i}] URL: ${pageUrl} (normalized: ${normalizedPageUrl})`,
               );
-
-              // Ignore ecosia domains
-              const isEcosia = /ecosia\.(org|com|net)/i.test(pageUrl);
-              if (isEcosia) {
-                log(`  [DEBUG] ✗ Skipping page [${i}] (ecosia domain)`);
-                continue;
-              }
 
               const isExcluded = excludedUrls.has(normalizedPageUrl);
               log(
@@ -785,8 +844,156 @@ const validateItemLinks = async (
   });
 };
 
-const sortByCbRank = (items: ScrappedItemType[]): ScrappedItemType[] => {
+/**
+ * Draws a progress bar
+ */
+const drawProgressBar = (
+  current: number,
+  total: number,
+  width: number = 40,
+): string => {
+  const percentage = total > 0 ? Math.min((current / total) * 100, 100) : 0;
+  const filled = Math.round((percentage / 100) * width);
+  const empty = width - filled;
+  const bar = "█".repeat(filled) + "░".repeat(empty);
+  return `[${bar}] ${percentage.toFixed(1)}% (${current}/${total})`;
+};
+
+/**
+ * Gets statistics about processed/unprocessed items
+ */
+const getStatistics = (
+  allItems: ScrappedItemType[],
+  processedItems: Record<string, ManualOverrideValue>,
+) => {
+  const total = allItems.length;
+  let processed = 0;
+  let unprocessed = 0;
+  const byReason: Record<string, { total: number; processed: number }> = {
+    h: { total: 0, processed: 0 },
+    f: { total: 0, processed: 0 },
+    other: { total: 0, processed: 0 },
+  };
+
+  for (const item of allItems) {
+    const isProcessedItem =
+      processedItems[item.name] && isProcessed(processedItems[item.name]);
+
+    if (isProcessedItem) {
+      processed++;
+    } else {
+      unprocessed++;
+    }
+
+    // Count by reason
+    const priority = getReasonPriority(item);
+    if (priority === 1) {
+      // "h" reason
+      byReason.h.total++;
+      if (isProcessedItem) byReason.h.processed++;
+    } else if (priority === 2) {
+      // "f" reason
+      byReason.f.total++;
+      if (isProcessedItem) byReason.f.processed++;
+    } else {
+      // other reasons
+      byReason.other.total++;
+      if (isProcessedItem) byReason.other.processed++;
+    }
+  }
+
+  return {
+    total,
+    processed,
+    unprocessed,
+    byReason,
+  };
+};
+
+/**
+ * Displays statistics and progress bar
+ */
+const displayStatistics = (
+  allItems: ScrappedItemType[],
+  processedItems: Record<string, ManualOverrideValue>,
+) => {
+  const stats = getStatistics(allItems, processedItems);
+
+  log("\n" + "=".repeat(60));
+  log("📊 VALIDATION STATISTICS");
+  log("=".repeat(60));
+
+  // Overall progress
+  log("\n📈 Overall Progress:");
+  log(`   ${drawProgressBar(stats.processed, stats.total, 50)}`);
+
+  // By reason
+  log("\n📋 By Reason:");
+  log(
+    `   Reason "h": ${drawProgressBar(stats.byReason.h.processed, stats.byReason.h.total, 30)}`,
+  );
+  log(
+    `   Reason "f": ${drawProgressBar(stats.byReason.f.processed, stats.byReason.f.total, 30)}`,
+  );
+  log(
+    `   Others:    ${drawProgressBar(stats.byReason.other.processed, stats.byReason.other.total, 30)}`,
+  );
+
+  // Summary
+  log("\n📊 Summary:");
+  log(`   Total companies:     ${stats.total}`);
+  log(
+    `   ✅ Processed:        ${stats.processed} (${((stats.processed / stats.total) * 100).toFixed(1)}%)`,
+  );
+  log(
+    `   ⏳ Remaining:        ${stats.unprocessed} (${((stats.unprocessed / stats.total) * 100).toFixed(1)}%)`,
+  );
+
+  log("\n📋 Remaining by Reason:");
+  log(
+    `   Reason "h":          ${stats.byReason.h.total - stats.byReason.h.processed} remaining`,
+  );
+  log(
+    `   Reason "f":          ${stats.byReason.f.total - stats.byReason.f.processed} remaining`,
+  );
+  log(
+    `   Others:              ${stats.byReason.other.total - stats.byReason.other.processed} remaining`,
+  );
+
+  log("\n" + "=".repeat(60));
+};
+
+/**
+ * Gets the priority of an item based on its reasons:
+ * - "h" reason = priority 1 (highest)
+ * - "f" reason = priority 2
+ * - others = priority 3 (lowest)
+ */
+const getReasonPriority = (item: ScrappedItemType): number => {
+  if (!item.reasons || item.reasons.length === 0) {
+    return 3; // No reasons = lowest priority
+  }
+  if (item.reasons.includes("h")) {
+    return 1; // Highest priority
+  }
+  if (item.reasons.includes("f")) {
+    return 2; // Second priority
+  }
+  return 3; // Other reasons = lowest priority
+};
+
+const sortByReasonAndCbRank = (
+  items: ScrappedItemType[],
+): ScrappedItemType[] => {
   return [...items].sort((a, b) => {
+    // First sort by reason priority (h first, then f, then others)
+    const priorityA = getReasonPriority(a);
+    const priorityB = getReasonPriority(b);
+    if (priorityA !== priorityB) {
+      return priorityA - priorityB;
+    }
+
+    // If same priority, sort by cbRank (lowest first)
     const rankA = a.cbRank
       ? parseInt(a.cbRank.replace(/,/g, ""), 10)
       : Infinity;
@@ -817,9 +1024,9 @@ export async function run() {
     let currentOverrides = loadManualOverrides();
     log(`Loaded ${Object.keys(currentOverrides).length} existing overrides`);
 
-    // Sort by cbRank (lowest first)
-    const sortedData = sortByCbRank(data);
-    log("Sorted by cbRank (lowest first)");
+    // Sort by reason priority (h first, then f, then others) and cbRank
+    const sortedData = sortByReasonAndCbRank(data);
+    log("Sorted by reason priority (h > f > others) and cbRank");
 
     // Filter out already processed items
     const unprocessedItems = sortedData.filter((item) => {
@@ -827,7 +1034,10 @@ export async function run() {
       return !existing || !isProcessed(existing);
     });
 
-    log(`Found ${unprocessedItems.length} unprocessed items`);
+    // Display statistics before processing
+    displayStatistics(sortedData, currentOverrides);
+
+    log(`\nFound ${unprocessedItems.length} unprocessed items`);
 
     if (unprocessedItems.length === 0) {
       log("All items have been processed!");
@@ -963,7 +1173,13 @@ export async function run() {
       throw err;
     }
 
-    log("\nScript complete. Run again to process next item.");
+    // Reload overrides to get updated statistics
+    const updatedOverrides = loadManualOverrides();
+
+    // Display updated statistics after processing
+    displayStatistics(sortedData, updatedOverrides);
+
+    log("\n✅ Script complete. Run again to process next item.");
 
     // Exit cleanly to prevent hanging prompts from index.ts
     process.exit(0);

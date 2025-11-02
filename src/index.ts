@@ -12,15 +12,29 @@ import { run as alternativesReport } from "./tasks/alternatives_report";
 import { run as copyToAddon } from "./tasks/copy_to_addon";
 import inquirer from "inquirer";
 
-process.on("unhandledRejection", (reason) => {
-  error("INDEX_ERROR Unhandled Rejection:", reason);
-  throw new Error("INDEX_ERROR Unhandled Rejection");
-});
+// Only register error handlers when this file is executed directly (not imported)
+if (require.main === module) {
+  process.on("unhandledRejection", (reason) => {
+    // Ignore ExitPromptError from inquirer when process exits
+    if (
+      reason &&
+      typeof reason === "object" &&
+      (("name" in reason && reason.name === "ExitPromptError") ||
+        ("constructor" in reason &&
+          reason.constructor &&
+          (reason.constructor as { name?: string }).name === "ExitPromptError"))
+    ) {
+      return;
+    }
+    error("INDEX_ERROR Unhandled Rejection:", reason);
+    throw new Error("INDEX_ERROR Unhandled Rejection");
+  });
 
-process.on("uncaughtException", (err) => {
-  error("INDEX_ERROR Uncaught Exception:", err);
-  throw new Error("INDEX_ERROR Uncaught Exception");
-});
+  process.on("uncaughtException", (err) => {
+    error("INDEX_ERROR Uncaught Exception:", err);
+    throw new Error("INDEX_ERROR Uncaught Exception");
+  });
+}
 
 export const runUpdateSteps = async (options?: {
   shouldScrap?: boolean;

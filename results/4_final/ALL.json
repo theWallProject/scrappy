@@ -105398,8 +105398,8 @@
     "n": "monday.com",
     "s": "MNDY",
     "fb": "mondaydotcom",
-    "li": "monday.com",
-    "tw": "mondaydotcom",
+    "li": "mondaydotcom",
+    "tw": "mondaysupport",
     "ws": "monday.com",
     "alt": [
       {
@@ -105431,6 +105431,38 @@
         "ws": "https://www.bitrix24.com/"
       }
     ]
+  },
+  {
+    "id": "mondaydotcom_manual_li_2525169",
+    "r": [
+      "h"
+    ],
+    "n": "monday.com",
+    "li": "2525169"
+  },
+  {
+    "id": "mondaydotcom_manual_tw_mondaydotcom",
+    "r": [
+      "h"
+    ],
+    "n": "monday.com",
+    "tw": "mondaydotcom"
+  },
+  {
+    "id": "mondaydotcom_manual_ws_mondayert_org",
+    "r": [
+      "h"
+    ],
+    "n": "monday.com",
+    "ws": "mondayert.org"
+  },
+  {
+    "id": "mondaydotcom_manual_ws_workcanvas_com",
+    "r": [
+      "h"
+    ],
+    "n": "monday.com",
+    "ws": "workcanvas.com"
   },
   {
     "id": "monetize-plus",

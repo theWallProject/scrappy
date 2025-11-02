@@ -52273,6 +52273,12 @@
     "s": "MNDY"
   },
   {
+    "id": "mondaydotcom_manual_ws_mondayert_org",
+    "selector": "mondayert.org",
+    "name": "monday.com",
+    "reasons": ["h"]
+  },
+  {
     "id": "monetize-plus",
     "selector": "monetizeplus.com",
     "name": "MonetizePlus",
@@ -89784,6 +89790,12 @@
     "id": "taryag-workcapital-bsd",
     "selector": "work.capital",
     "name": "Work Capital",
+    "reasons": ["h"]
+  },
+  {
+    "id": "mondaydotcom_manual_ws_workcanvas_com",
+    "selector": "workcanvas.com",
+    "name": "monday.com",
     "reasons": ["h"]
   },
   {

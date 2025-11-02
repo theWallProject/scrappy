@@ -30175,6 +30175,14 @@
   },
   {
     "id": "mondaydotcom",
+    "selector": "mondaysupport",
+    "name": "monday.com",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "id": "mondaydotcom_manual_tw_mondaydotcom",
     "selector": "mondaydotcom",
     "name": "monday.com",
     "reasons": [
