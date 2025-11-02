@@ -37,6 +37,17 @@ export const manualOverrides: Record<
     ],
     _processed: true,
   },
+  Empathy: {
+    tw: ["https://x.com/empathy"],
+    urls: [
+      "https://apps.apple.com/us/developer/empathy/id1536395194",
+      "https://play.google.com/store/apps/dev?id=7573398188169424467&gl=US",
+      "https://sprout.link/empathy_com",
+      "https://www.instagram.com/empathy_com",
+      "https://www.threads.com/@empathy_com",
+    ],
+    _processed: true,
+  },
   Fiverr: { fb: "https://www.facebook.com/Fiverr" },
   "Maris Tech Ltd.": { fb: "https://www.facebook.com/MarisTech" },
   "Metis Technologies": { fb: "", tw: "" },

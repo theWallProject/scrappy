@@ -142842,8 +142842,44 @@
     ],
     "n": "Semperis",
     "fb": "semperistech",
-    "li": "semperis",
-    "tw": "semperistech",
+    "li": "hybrid-identity-protection-conference",
+    "tw": "hipconf",
+    "ws": "hipconf.com"
+  },
+  {
+    "id": "semperis_manual_fb_HIPConf",
+    "r": [
+      "f",
+      "i"
+    ],
+    "n": "Semperis",
+    "fb": "HIPConf"
+  },
+  {
+    "id": "semperis_manual_li_semperis",
+    "r": [
+      "f",
+      "i"
+    ],
+    "n": "Semperis",
+    "li": "semperis"
+  },
+  {
+    "id": "semperis_manual_tw_semperistech",
+    "r": [
+      "f",
+      "i"
+    ],
+    "n": "Semperis",
+    "tw": "semperistech"
+  },
+  {
+    "id": "semperis_manual_ws_semperis_com",
+    "r": [
+      "f",
+      "i"
+    ],
+    "n": "Semperis",
     "ws": "semperis.com"
   },
   {
@@ -143343,9 +143379,36 @@
     "n": "SentinelOne",
     "s": "S",
     "fb": "SentinelOne",
-    "li": "sentinelone",
+    "li": "sentinelone-dach",
     "tw": "SentinelOne",
     "ws": "sentinelone.com"
+  },
+  {
+    "id": "sentinel_manual_li_sentinelone-france",
+    "r": [
+      "f",
+      "i"
+    ],
+    "n": "SentinelOne",
+    "li": "sentinelone-france"
+  },
+  {
+    "id": "sentinel_manual_li_sentinelone-apj",
+    "r": [
+      "f",
+      "i"
+    ],
+    "n": "SentinelOne",
+    "li": "sentinelone-apj"
+  },
+  {
+    "id": "sentinel_manual_li_sentinelone",
+    "r": [
+      "f",
+      "i"
+    ],
+    "n": "SentinelOne",
+    "li": "sentinelone"
   },
   {
     "id": "sentra",

@@ -60032,6 +60032,15 @@
     ]
   },
   {
+    "id": "semperis_manual_fb_HIPConf",
+    "selector": "HIPConf",
+    "name": "Semperis",
+    "reasons": [
+      "f",
+      "i"
+    ]
+  },
+  {
     "id": "semsolutions",
     "selector": "semsolutions.net",
     "name": "SEMsolutions",

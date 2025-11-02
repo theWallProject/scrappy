@@ -36540,6 +36540,12 @@
     "reasons": ["h"]
   },
   {
+    "id": "semperis",
+    "selector": "hipconf.com",
+    "name": "Semperis",
+    "reasons": ["f", "i"]
+  },
+  {
     "id": "hipitched",
     "selector": "hipitched.com",
     "name": "HiPitched",
@@ -71166,7 +71172,7 @@
     "reasons": ["h"]
   },
   {
-    "id": "semperis",
+    "id": "semperis_manual_ws_semperis_com",
     "selector": "semperis.com",
     "name": "Semperis",
     "reasons": ["f", "i"]

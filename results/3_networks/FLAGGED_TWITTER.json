@@ -40841,6 +40841,15 @@
   },
   {
     "id": "semperis",
+    "selector": "hipconf",
+    "name": "Semperis",
+    "reasons": [
+      "f",
+      "i"
+    ]
+  },
+  {
+    "id": "semperis_manual_tw_semperistech",
     "selector": "semperistech",
     "name": "Semperis",
     "reasons": [

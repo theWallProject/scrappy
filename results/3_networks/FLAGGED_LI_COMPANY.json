@@ -103320,9 +103320,18 @@
     ]
   },
   {
-    "selector": "semperis",
+    "selector": "hybrid-identity-protection-conference",
     "name": "Semperis",
     "id": "semperis",
+    "reasons": [
+      "f",
+      "i"
+    ]
+  },
+  {
+    "selector": "semperis",
+    "name": "Semperis",
+    "id": "semperis_manual_li_semperis",
     "reasons": [
       "f",
       "i"
@@ -103705,9 +103714,36 @@
     ]
   },
   {
-    "selector": "sentinelone",
+    "selector": "sentinelone-dach",
     "name": "SentinelOne",
     "id": "sentinel",
+    "reasons": [
+      "f",
+      "i"
+    ]
+  },
+  {
+    "selector": "sentinelone-france",
+    "name": "SentinelOne",
+    "id": "sentinel_manual_li_sentinelone-france",
+    "reasons": [
+      "f",
+      "i"
+    ]
+  },
+  {
+    "selector": "sentinelone-apj",
+    "name": "SentinelOne",
+    "id": "sentinel_manual_li_sentinelone-apj",
+    "reasons": [
+      "f",
+      "i"
+    ]
+  },
+  {
+    "selector": "sentinelone",
+    "name": "SentinelOne",
+    "id": "sentinel_manual_li_sentinelone",
     "reasons": [
       "f",
       "i"
