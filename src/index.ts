@@ -22,27 +22,14 @@ process.on("uncaughtException", (err) => {
   throw new Error("INDEX_ERROR Uncaught Exception");
 });
 
-const main = async () => {
-  const { shouldScrap, shouldValidate, shouldCopyToAddon } =
-    await inquirer.prompt([
-      {
-        type: "confirm",
-        name: "shouldScrap",
-        message: "Scrap?",
-      },
-      {
-        type: "confirm",
-        name: "shouldValidate",
-        message: "Validate URLs?",
-      },
-      {
-        type: "confirm",
-        name: "shouldCopyToAddon",
-        message: "Copy to Addon?",
-      },
-    ]);
+export const runUpdateSteps = async (options?: {
+  shouldScrap?: boolean;
+  shouldValidate?: boolean;
+  shouldCopyToAddon?: boolean;
+}) => {
+  const opts = options || {};
 
-  if (shouldScrap) {
+  if (opts.shouldScrap) {
     log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 1: Scraping...");
     await scrap();
   }
@@ -71,15 +58,41 @@ const main = async () => {
   log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 9: Show alternatives report...");
   await alternativesReport();
 
-  if (shouldCopyToAddon) {
+  if (opts.shouldCopyToAddon) {
     log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 10: Copy to Addon...");
     await copyToAddon();
   }
 
-  if (shouldValidate) {
+  if (opts.shouldValidate) {
     log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Step 11: Validating URLs...");
     await validate();
   }
+};
+
+const main = async () => {
+  const answers = await inquirer.prompt([
+    {
+      type: "confirm",
+      name: "shouldScrap",
+      message: "Scrap?",
+    },
+    {
+      type: "confirm",
+      name: "shouldValidate",
+      message: "Validate URLs?",
+    },
+    {
+      type: "confirm",
+      name: "shouldCopyToAddon",
+      message: "Copy to Addon?",
+    },
+  ]);
+
+  await runUpdateSteps({
+    shouldScrap: answers.shouldScrap,
+    shouldValidate: answers.shouldValidate,
+    shouldCopyToAddon: answers.shouldCopyToAddon,
+  });
 };
 // process.stdin.once("data", () => log("done"));
 main();

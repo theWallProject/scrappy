@@ -40,6 +40,16 @@ export const manualOverrides: Record<
   Fiverr: { fb: "https://www.facebook.com/Fiverr" },
   "Maris Tech Ltd.": { fb: "https://www.facebook.com/MarisTech" },
   "Metis Technologies": { fb: "", tw: "" },
+  MoonPay: {
+    urls: [
+      "https://apps.apple.com/de/app/moonpay-krypto-kaufen/id1635031432",
+      "https://play.google.com/store/apps/details?id=com.moonpay&hl=de",
+      "https://www.instagram.com/moonpay",
+      "https://www.threads.com/@moonpay",
+      "https://www.youtube.com/channel/UC9hQtWpGGNaZ8yiwFsBkRBg",
+    ],
+    _processed: true,
+  },
   MyHeritage: { li: "https://www.linkedin.com/company/myheritage" },
   "Nebius Group": {
     ws: "https://nebius.com/about",
@@ -135,7 +145,6 @@ export const manualOverrides: Record<
       "https://hipconf.slack.com",
       "https://marketplace.microsoft.com/en-us/product/saas/semperis.semperis-hybrid-active-directory-protection",
       "https://www.instagram.com/hipconf",
-      // test
       "https://www.threads.com/@semperistech",
       "https://www.youtube.com/@semperistech",
       "https://www.youtube.com/channel/UCycrWXhxOTaUQ0sidlyN9SA",

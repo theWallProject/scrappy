@@ -8,8 +8,8 @@ import {
 } from "@theWallProject/addonCommon";
 import { APIScrapperFileDataSchema, ScrappedItemType } from "../types";
 import { error, log } from "../helper";
-import inquirer from "inquirer";
 import prettier from "prettier";
+import { runUpdateSteps } from "../index";
 
 type ProcessedState = {
   _processed: true;
@@ -953,7 +953,17 @@ export async function run() {
     await saveManualOverrides(currentOverrides);
     log("  💾 Progress saved");
     log(`\n✓ Item processed. Remaining items: ${unprocessedItems.length - 1}`);
-    log("Script will now exit. Run 'npm run dev' to update and process next item.");
+    log("Running update steps (skipping questions)...");
+
+    try {
+      await runUpdateSteps();
+      log("✓ Update steps completed successfully");
+    } catch (err) {
+      error("Error running update steps:", err);
+      throw err;
+    }
+
+    log("\nScript complete. Run again to process next item.");
   } catch (err) {
     error("Error during validation:", err);
     throw err;
