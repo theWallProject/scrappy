@@ -451,111 +451,116 @@ const validateItemLinks = async (
 
   // CRITICAL: Store tracking data OUTSIDE browser context scope
   // These persist even after browser/context closes
-  const urlStorage = new Map<Page, string>(); // Page -> URL mapping (current/final URL)
-  const trackedPages = new Set<Page>(); // All tracked pages
+  const urlStorage = new Map<Page, string>(); // Tab -> URL mapping (final URL per tab)
+  const trackedTabs = new Set<Page>(); // All tracked tabs
 
-  // Initialize with pages we opened
-  for (const page of pages) {
-    trackedPages.add(page);
+  // Initialize with tabs we opened
+  for (const tab of pages) {
+    trackedTabs.add(tab);
     try {
-      const url = page.url();
+      const url = tab.url();
       if (url && url !== "about:blank") {
-        urlStorage.set(page, url);
+        urlStorage.set(tab, url); // Store tab->URL mapping
       }
     } catch {
-      // Page might not have URL yet
+      // Tab might not have URL yet
     }
   }
 
-  // Helper to update and store a page's URL (synchronous for events)
-  // This only reads from browser, but writes to external storage
-  const updatePageUrl = (page: Page, source: string = "unknown") => {
+  // Helper to update and store a tab's URL (synchronous for events)
+  // Maintains clear tab->URL mapping (final URL per tab)
+  const updateTabUrl = (tab: Page, source: string = "unknown") => {
     try {
-      if (page.isClosed()) {
-        // If page is closed, don't try to access it
-        // But keep the last cached URL in storage
+      if (tab.isClosed()) {
         return;
       }
-      const pageUrl = page.url();
-      if (pageUrl && pageUrl !== "about:blank") {
-        const oldUrl = urlStorage.get(page);
-        urlStorage.set(page, pageUrl); // Store in external storage
-        if (oldUrl !== pageUrl) {
+      const tabUrl = tab.url();
+      if (tabUrl && tabUrl !== "about:blank") {
+        const oldUrl = urlStorage.get(tab);
+        urlStorage.set(tab, tabUrl); // Update tab->URL mapping
+
+        if (oldUrl && oldUrl !== tabUrl && oldUrl !== "about:blank") {
           log(
-            `  [DEBUG] ✨ Page URL captured/updated from ${source}: ${pageUrl}`,
+            `  [DEBUG] ✨ Tab URL updated from ${source}: ${oldUrl} → ${tabUrl}`,
           );
+        } else if (oldUrl !== tabUrl) {
+          log(`  [DEBUG] ✨ Tab URL captured from ${source}: ${tabUrl}`);
         }
       }
     } catch {
-      // Page might be closing or not accessible - ignore silently
-      // Events might fire during page close, this is expected
-      // The URL remains in external storage from previous updates
+      // Tab might be closing or not accessible - ignore silently
     }
   };
 
-  // Store URLs for initial pages and set up navigation listeners
-  for (const page of pages) {
+  // Store URLs for initial tabs and set up navigation listeners
+  for (const tab of pages) {
     try {
-      updatePageUrl(page, "initial");
+      updateTabUrl(tab, "initial");
 
-      // Set up navigation listeners for all initial pages
-      page.on("framenavigated", () => {
-        updatePageUrl(page, "framenavigated");
+      // Set up navigation listeners for all initial tabs
+      tab.on("framenavigated", () => {
+        updateTabUrl(tab, "framenavigated");
       });
 
-      page.on("load", () => {
-        updatePageUrl(page, "load");
+      tab.on("load", () => {
+        updateTabUrl(tab, "load");
       });
 
-      // Listen for page close - remove from storage when user closes tab
-      page.on("close", () => {
-        urlStorage.delete(page);
-        trackedPages.delete(page);
-        log(`  [DEBUG] ✗ Page closed, removed from storage`);
+      // Listen for tab close - remove tab->URL mapping when user closes tab
+      tab.on("close", () => {
+        // Remove tab from storage (user doesn't want this tab)
+        const url = urlStorage.get(tab);
+        if (url && url !== "about:blank") {
+          log(`  [DEBUG] ✗ Tab closed, removed tab mapping: ${url}`);
+        }
+        urlStorage.delete(tab); // Remove tab->URL mapping
+        trackedTabs.delete(tab);
       });
     } catch {
-      // Page might not have a URL yet
+      // Tab might not have a URL yet
     }
   }
 
-  // Listen for new pages created (including manually opened tabs)
+  // Listen for new tabs created (including manually opened tabs)
   // This event fires synchronously when a new tab is created
   // Events write to external storage, independent of browser lifecycle
-  context.on("page", (page) => {
+  context.on("page", (tab) => {
     try {
-      trackedPages.add(page); // Track in external storage
-      log(
-        `  [DEBUG] ✨ New page created (total tracked: ${trackedPages.size})`,
-      );
+      trackedTabs.add(tab); // Track in external storage
+      log(`  [DEBUG] ✨ New tab created (total tracked: ${trackedTabs.size})`);
 
       // Try to get URL immediately if available
       try {
-        const initialUrl = page.url();
+        const initialUrl = tab.url();
         if (initialUrl && initialUrl !== "about:blank") {
-          urlStorage.set(page, initialUrl);
+          urlStorage.set(tab, initialUrl); // Store tab->URL mapping
         }
       } catch {
-        // Page might not have URL yet
+        // Tab might not have URL yet
       }
 
       // Listen for navigation to capture final URL (stores externally)
-      page.on("framenavigated", () => {
-        updatePageUrl(page, "framenavigated");
+      tab.on("framenavigated", () => {
+        updateTabUrl(tab, "framenavigated");
       });
 
-      // Also listen for load to catch fully loaded pages (stores externally)
-      page.on("load", () => {
-        updatePageUrl(page, "load");
+      // Also listen for load to catch fully loaded tabs (stores externally)
+      tab.on("load", () => {
+        updateTabUrl(tab, "load");
       });
 
-      // Listen for page close - remove from storage when user closes tab
-      page.on("close", () => {
-        urlStorage.delete(page);
-        trackedPages.delete(page);
-        log(`  [DEBUG] ✗ Page closed, removed from storage`);
+      // Listen for tab close - remove tab->URL mapping when user closes tab
+      tab.on("close", () => {
+        // Remove tab from storage (user doesn't want this tab)
+        const url = urlStorage.get(tab);
+        if (url && url !== "about:blank") {
+          log(`  [DEBUG] ✗ Tab closed, removed tab mapping: ${url}`);
+        }
+        urlStorage.delete(tab); // Remove tab->URL mapping
+        trackedTabs.delete(tab);
       });
     } catch (e) {
-      log(`  [DEBUG] Error in page event handler: ${e}`);
+      log(`  [DEBUG] Error in tab event handler: ${e}`);
     }
   });
 
@@ -570,55 +575,32 @@ const validateItemLinks = async (
       log(
         `  [DEBUG] Links we opened: ${JSON.stringify(links.map((l) => l.url))}`,
       );
-      log(`  [DEBUG] Total tracked pages: ${trackedPages.size}`);
-      log(`  [DEBUG] URLs in external storage: ${urlStorage.size}`);
+      log(`  [DEBUG] Total tracked tabs: ${trackedTabs.size}`);
+      log(`  [DEBUG] Tabs with URLs in storage: ${urlStorage.size}`);
 
+      // NO browser access during collection - all data already prepared by events
       try {
-        // Try to get final URLs from still-open pages (browser might still be open)
-        // This is optional - we already have URLs in external storage
-        try {
-          const contextPages = context.pages();
-          log(
-            `  [DEBUG] Found ${contextPages.length} live pages (optional update)`,
-          );
-          for (const page of contextPages) {
-            trackedPages.add(page);
-            try {
-              if (!page.isClosed()) {
-                const liveUrl = page.url();
-                if (liveUrl && liveUrl !== "about:blank") {
-                  urlStorage.set(page, liveUrl); // Update external storage
-                  log(
-                    `  [DEBUG] Updated external storage with live URL: ${liveUrl}`,
-                  );
-                }
-              }
-            } catch {
-              // Page might be closing - that's fine, we have it in storage
-            }
-          }
-        } catch (e) {
-          log(
-            `  [DEBUG] Browser context closed, using external storage only: ${e}`,
-          );
-          // This is expected and fine - we collect from external storage
-        }
-
         // No exclusion logic - collect ALL URLs from all tabs
         // User will manually close tabs they don't need
 
-        // Collect ALL URLs from external storage (no browser dependency)
-        // This works even if all pages are closed - storage persists
+        // Collect ALL URLs from urlStorage - maintains clear tab->URL separation
+        // Each entry in urlStorage represents one tab with its final URL
+        const tabUrls = new Map<Page, string>(); // Tab -> final URL (maintains separation)
         const allCachedUrls = new Map<string, string>(); // normalized -> original url (for deduplication)
-        for (const [, url] of urlStorage.entries()) {
+
+        // Collect from urlStorage - maintains tab->URL relationship
+        for (const [tab, url] of urlStorage.entries()) {
           if (url && url !== "about:blank") {
+            tabUrls.set(tab, url); // Keep tab->URL mapping
             const normalized = normalizeUrlForComparison(url);
-            // Keep the first non-normalized URL for each normalized version
             if (!allCachedUrls.has(normalized)) {
               allCachedUrls.set(normalized, url);
             }
+            log(`  [DEBUG] Tab has final URL: ${url}`);
           }
         }
+
+        log(`  [DEBUG] Collected ${tabUrls.size} tabs with URLs`);
 
         log(
           `  [DEBUG] Found ${allCachedUrls.size} unique cached URLs to check`,
@@ -671,36 +653,15 @@ const validateItemLinks = async (
         pollInterval = null;
       }
 
-      // Collect URLs from external storage (no browser dependency)
+      // Collect URLs - NO processing during cleanup, just read tab->URL mappings
       log(`  [DEBUG] cleanup() called with reason: ${reason}`);
       log(
-        `  [DEBUG] About to collect URLs, tracked pages: ${trackedPages.size}, URLs in external storage: ${urlStorage.size}`,
+        `  [DEBUG] Reading tab->URL mappings (no browser access needed): ${urlStorage.size} tabs with URLs`,
       );
 
-      // OPTIONAL: Try to capture final URLs from still-open pages (browser might still be open)
-      // If this fails, we still have all URLs in external storage
-      try {
-        const contextPages = context.pages();
-        log(
-          `  [DEBUG] Final capture attempt: Found ${contextPages.length} live pages`,
-        );
-        for (const page of contextPages) {
-          trackedPages.add(page);
-          // Update external storage with final URL
-          updatePageUrl(page, "cleanup final");
-        }
-      } catch (e) {
-        log(
-          `  [DEBUG] Browser already closed, using external storage only: ${e}`,
-        );
-        // This is fine - all URLs are already in external storage from events
-      }
-
-      // Collect from external storage - completely independent of browser state
-      // All URLs were stored by events, so we can read them now even if browser is closed
+      // Simply read from urlStorage - tab->URL mappings prepared by events
       (async () => {
-        log(`  [DEBUG] Collecting URLs from external storage...`);
-        log(`  [DEBUG] External storage has ${urlStorage.size} URLs`);
+        log(`  [DEBUG] Collecting from tab->URL mappings...`);
         const extraUrls = collectExtraUrls();
 
         log(`  [DEBUG] Collection returned ${extraUrls.length} URLs`);
@@ -1171,7 +1132,26 @@ export async function run() {
 
     // Save after each item
     await saveManualOverrides(currentOverrides);
-    log("  💾 Progress saved");
+
+    // CRITICAL: Ensure file is fully written and readable before proceeding
+    // Verify the file exists and is readable to ensure it's saved on disk
+    try {
+      const exists = fs.existsSync(manualOverridesPath);
+      if (!exists) {
+        throw new Error(
+          `manualOverrides file not found after save: ${manualOverridesPath}`,
+        );
+      }
+      // Try to read it to ensure it's fully written
+      fs.readFileSync(manualOverridesPath, "utf-8");
+      log("  💾 Progress saved and verified");
+    } catch (e) {
+      error(`  ⚠️  Failed to verify manualOverrides save: ${e}`);
+      throw new Error(
+        `Cannot proceed: manualOverrides file not saved correctly`,
+      );
+    }
+
     log(`\n✓ Item processed. Remaining items: ${unprocessedItems.length - 1}`);
     log("Running update steps (skipping questions)...");
 
@@ -1186,10 +1166,10 @@ export async function run() {
     // Reload overrides to get updated statistics
     const updatedOverrides = loadManualOverrides();
 
-    // Display updated statistics after processing
-    displayStatistics(sortedData, updatedOverrides);
-
     log("\n✅ Script complete. Run again to process next item.");
+
+    // Display statistics at the very end
+    displayStatistics(sortedData, updatedOverrides);
 
     // Exit cleanly to prevent hanging prompts from index.ts
     process.exit(0);

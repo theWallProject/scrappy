@@ -64019,6 +64019,14 @@
     ]
   },
   {
+    "id": "speedata",
+    "selector": "speedata.io",
+    "name": "Speedata",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "id": "spekit-inc",
     "selector": "spekitapp",
     "name": "Spekit",
