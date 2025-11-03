@@ -8,7 +8,12 @@ type ManualOverrideFields = {
   tw?: string | string[];
   ig?: string | string[];
   gh?: string | string[];
-} & Omit<Partial<ScrappedItemType>, "ws" | "li" | "fb" | "tw" | "ig" | "gh">;
+  ytp?: string | string[];
+  ytc?: string | string[];
+} & Omit<
+  Partial<ScrappedItemType>,
+  "ws" | "li" | "fb" | "tw" | "ig" | "gh" | "ytp" | "ytc"
+>;
 
 export const manualOverrides: Record<
   string,
@@ -36,6 +41,8 @@ export const manualOverrides: Record<
       "https://github.com/AI21X",
       "https://github.com/mangate",
     ],
+    ytp: ["https://www.youtube.com/@ai21labs"],
+    ytc: ["https://www.youtube.com/channel/UCDQlFKBK11jIxm4iVymoAtA"],
     urls: [
       "https://apps.apple.com/us/developer/ai21-labs-inc/id1628773286",
       "https://aws.amazon.com/bedrock/ai21",
@@ -49,8 +56,6 @@ export const manualOverrides: Record<
       "https://microsoftedge.microsoft.com/addons/detail/wordtune-aipowered-wri/fgngodlaekdlibajobmkaklibdggemdd",
       "https://www.linkedin.com/newsletters/6995001803318681600",
       "https://www.tiktok.com/@wordtune_official",
-      "https://www.youtube.com/@ai21labs",
-      "https://www.youtube.com/channel/UCDQlFKBK11jIxm4iVymoAtA",
       "https://www.youtube.com/watch?v=DyE0YkoFFEE",
     ],
     _processed: true,
@@ -75,10 +80,7 @@ export const manualOverrides: Record<
       "https://www.facebook.com/groups/571246666951707",
       "https://www.facebook.com/groups/746270377207022",
     ],
-    urls: [
-      "https://www.linkedin.com/showcase/cellebrite-careers",
-      "https://www.linkedin.com/showcase/cellebrite-enterprise-solutions",
-      "https://cellebrite.my.site.com/PartnerCommunity/s/login/?language=en_US",
+    ytp: [
       "https://www.youtube.com/@cellebrite",
       "https://www.youtube.com/@cellebrite-deutsch",
       "https://www.youtube.com/@cellebrite-espanol",
@@ -87,16 +89,20 @@ export const manualOverrides: Record<
       "https://www.youtube.com/@companycellebrite",
       "https://www.youtube.com/@lifeatcellebrite7735",
     ],
+    urls: [
+      "https://www.linkedin.com/showcase/cellebrite-careers",
+      "https://www.linkedin.com/showcase/cellebrite-enterprise-solutions",
+      "https://cellebrite.my.site.com/PartnerCommunity/s/login/?language=en_US",
+    ],
     _processed: true,
   },
   Cyera: {
     ws: "https://www.cyera.com",
+    ytp: ["https://www.youtube.com/@CyeraSecurity"],
+    ytc: ["https://www.youtube.com/channel/UCQZhCZIe6xRDjCkfzzwPBCg"],
     urls: [
       "https://marketplace.microsoft.com/de-de/product/web-apps/cyera1658314682323.cyera_cloud_data_security?tab=overview",
-      "https://www.cyera.com/careers",
       "https://www.elastic.co/docs/reference/integrations/cyera",
-      "https://www.youtube.com/@CyeraSecurity",
-      "https://www.youtube.com/channel/UCQZhCZIe6xRDjCkfzzwPBCg",
     ],
     _processed: true,
   },
@@ -116,17 +122,24 @@ export const manualOverrides: Record<
   "Metis Technologies": { fb: "", tw: "" },
   MoonPay: {
     ig: ["https://www.instagram.com/moonpay"],
+    ytc: ["https://www.youtube.com/channel/UC9hQtWpGGNaZ8yiwFsBkRBg"],
+    ytp: ["https://www.youtube.com/@moonpayhq"],
     urls: [
       "https://apps.apple.com/de/app/moonpay-krypto-kaufen/id1635031432",
       "https://play.google.com/store/apps/details?id=com.moonpay&hl=de",
       "https://www.threads.com/@moonpay",
-      "https://www.youtube.com/channel/UC9hQtWpGGNaZ8yiwFsBkRBg",
     ],
     _processed: true,
   },
   MyHeritage: { li: "https://www.linkedin.com/company/myheritage" },
   "Nebius Group": {
-    ws: "https://nebius.com/about",
+    ws: [
+      "https://nebius.com",
+      "https://tripleten.com",
+      "https://toloka.ai",
+      "https://www.avride.ai",
+      "https://tracto.ai",
+    ],
     li: [
       "https://www.linkedin.com/company/avrideai",
       "https://www.linkedin.com/company/nebius",
@@ -154,29 +167,30 @@ export const manualOverrides: Record<
       "https://github.com/nebius",
       "https://github.com/tractoai",
     ],
+    ytp: [
+      "https://www.youtube.com/@TripleTenTech",
+      "https://www.youtube.com/@nebiusofficial",
+      "https://www.youtube.com/@TolokaAi",
+    ],
+    ytc: [
+      "https://www.youtube.com/channel/UCGvsgFPVyOwuN8aJJbMem9A",
+      "https://www.youtube.com/channel/UCCIwsFWZNuugtW1U2X89t7A",
+      "https://www.youtube.com/channel/UCGvsgFPVyOwuN8aJJbMem9A",
+    ],
     urls: [
       "https://clickhouse.com",
-      "https://de.finance.yahoo.com/quote/NBIS/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZWNvc2lhLm9yZy8&guce_referrer_sig=AQAAALwBGTNYy8lfeJM_nDuQ2jR8jYNYblL9Mb2FqXEdZzSYEJj0izM8TuTNBsbJVEiB5Ioql2PjlWHRNrBh-4-_hj8YHUU7Giyt4ZXqb7NjJTAns9a4-tP6i_Vag4gmGRiJvEzbsL0vNvFz6C_aIZtwEXCcni4p9OyQvthXnb17kwh5",
-      "https://de.finance.yahoo.com/quote/NBIS/news",
+      "https://de.finance.yahoo.com/quote/NBIS",
       "https://discord.com/login",
       "https://linktr.ee/TripleTen",
       "https://linktr.ee/TripleTen.Tech",
       "https://medium.com/nebius",
       "https://open.spotify.com/user/31wd6uyi4z7s3no2ll2anlssxplq?utm_campaign=Spotify&utm_medium=Organic&utm_source=Linktree&utm_term=SocialMedia&utm_content=Music",
       "https://podcasts.apple.com/us/podcast/techstart/id1711188418",
-      "https://toloka.ai",
-      "https://tracto.ai/?_gl=1*etrccq*_ga*MTQwOTA1MzcyNS4xNzYyMDUyNjM1*_ga_DHKV2ZED15*czE3NjIwNTI2MzQkbzEkZzEkdDE3NjIwNTI3NDMkajMyJGwwJGgxNjkyMTI5MzU2*_ga_RC5DG41GHF*czE3NjIwNTI2MzUkbzEkZzEkdDE3NjIwNTI3NDMkajM1JGwwJGgw*_gcl_au*MTcyNTEwMjE5Ni4xNzYyMDUyNjU1",
-      "https://tripleten.com",
-      "https://www.avride.ai",
+
       "https://www.google.com/search?q=Nebius+Group+N.V.&rlz=1C1MMCH_enDE1105DE1105&sourceid=chrome&ie=UTF-8&sei=FssGadmOBrmH7NYPu4iEqAQ",
       "https://www.linkedin.com/school/tripleten",
-      "https://www.threads.com/@tripleten.tech?xmt=AQF0i0ywc_hD3hJ_6C0u9FO2-PnCORMKZmpPswDPZFmpxXU",
+      "https://www.threads.com/@tripleten.tech",
       "https://www.tiktok.com/@tripleten.tech",
-      "https://www.tiktok.com/@tripleten.tech?_t=8dABuoZ4By2&_r=1",
-      "https://www.youtube.com",
-      "https://www.youtube.com/@TripleTenTech",
-      "https://www.youtube.com/@nebiusofficial",
-      "https://www.youtube.com/channel/UCGvsgFPVyOwuN8aJJbMem9A",
     ],
     _processed: true,
   },
@@ -186,12 +200,12 @@ export const manualOverrides: Record<
   },
   "Omada Health": {
     ig: ["https://www.instagram.com/omadahealth/?hl=de"],
+    ytp: ["https://www.youtube.com/@Omadahealth"],
     urls: [
       "https://consent.yahoo.com/v2/collectConsent?sessionId=3_cc-session_5fdcb969-50cc-4b7f-ba83-69d67d8bf9a7",
       "https://play.google.com/store/apps/details?id=com.omada.prevent&hl=de",
       "https://www.youtube.com/c/omadahealth",
       "https://apps.apple.com/us/app/omada/id805711008",
-      "https://www.youtube.com/@Omadahealth",
       "https://www.cnbc.com/quotes/OMDA",
       "https://vimeo.com/weareomadahealth",
       "https://job-boards.greenhouse.io/omadahealth",
@@ -200,10 +214,8 @@ export const manualOverrides: Record<
   },
   "Protect AI": {
     gh: ["https://github.com/protectai"],
-    urls: [
-      "https://mlsecops.slack.com/signup#/domain-signup",
-      "https://www.youtube.com/@protectai",
-    ],
+    ytp: ["https://www.youtube.com/@protectai"],
+    urls: ["https://mlsecops.slack.com/signup#/domain-signup"],
     _processed: true,
   },
   "Red Alert": { ws: "" },
@@ -219,12 +231,12 @@ export const manualOverrides: Record<
     ],
     tw: ["https://x.com/hipconf", "https://x.com/semperistech"],
     ig: ["https://www.instagram.com/hipconf"],
+    ytp: ["https://www.youtube.com/@semperistech"],
+    ytc: ["https://www.youtube.com/channel/UCycrWXhxOTaUQ0sidlyN9SA"],
     urls: [
       "https://hipconf.slack.com",
       "https://marketplace.microsoft.com/en-us/product/saas/semperis.semperis-hybrid-active-directory-protection",
       "https://www.threads.com/@semperistech",
-      "https://www.youtube.com/@semperistech",
-      "https://www.youtube.com/channel/UCycrWXhxOTaUQ0sidlyN9SA",
     ],
     _processed: true,
   },
@@ -236,29 +248,25 @@ export const manualOverrides: Record<
       "https://www.linkedin.com/company/sentinelone",
     ],
     gh: ["https://github.com/Sentinel-One"],
-    urls: [
-      "https://play.google.com/store/search?q=SentinelOne&c=apps&hl=de",
-      "https://www.youtube.com/@Sentinelone-inc",
-      "https://www.youtube.com/channel/UCm-vzfQy1lNglsXRBY6Vu5w",
-    ],
+    ytp: ["https://www.youtube.com/@Sentinelone-inc"],
+    ytc: ["https://www.youtube.com/channel/UCm-vzfQy1lNglsXRBY6Vu5w"],
+    urls: ["https://play.google.com/store/search?q=SentinelOne&c=apps&hl=de"],
     _processed: true,
   },
   Sentra: {
     gh: ["https://github.com/sentraio"],
-    urls: [
-      "https://www.facebook.com/profile.php?id=100091748057784",
-      "https://www.youtube.com/@sentra_security",
-    ],
+    ytp: ["https://www.youtube.com/@sentra_security"],
+    urls: ["https://www.facebook.com/profile.php?id=100091748057784"],
     _processed: true,
   },
   Silverfort: {
     ig: ["https://www.instagram.com/life_at_silverfort"],
     gh: ["https://github.com/silverfort-open-source"],
+    ytp: ["https://www.youtube.com/@silverfort"],
     urls: [
       "https://apps.apple.com/de/developer/silverfort/id1227704144",
       "https://chromewebstore.google.com/detail/silverfort/pehheafegmblicfcnkpacblgfeabpgim",
       "https://play.google.com/store/apps/developer?id=Silverfort+Inc.&hl=gsw",
-      "https://www.youtube.com/@silverfort",
     ],
     _processed: true,
   },
@@ -267,7 +275,7 @@ export const manualOverrides: Record<
     li: ["https://www.linkedin.com/company/speedataio"],
     fb: ["https://www.facebook.com/speedata.io"],
     gh: ["https://github.com/Speedata-io"],
-    urls: ["https://www.youtube.com/@Speedata-io"],
+    ytp: ["https://www.youtube.com/@Speedata-io"],
     _processed: true,
   },
   "The Agro Exchange": { ws: "https://www.agrox.io" },
@@ -276,10 +284,10 @@ export const manualOverrides: Record<
     tw: ["https://x.com/torq_io"],
     ig: ["https://www.instagram.com/torq_io"],
     gh: ["https://github.com/torqio"],
+    ytp: ["https://www.youtube.com/@torq_io"],
     urls: [
       "https://job-boards.greenhouse.io/torq",
       "https://www.tiktok.com/@torq.io",
-      "https://www.youtube.com/@torq_io",
     ],
     _processed: true,
   },
@@ -310,14 +318,16 @@ export const manualOverrides: Record<
       "https://www.instagram.com/etoro_italia",
       "https://www.instagram.com/etoro_official",
     ],
-    urls: [
-      "https://www.tiktok.com/@etoro_official",
+    ytp: [
       "https://www.youtube.com/@etoro",
       "https://www.youtube.com/@eToroItalia",
       "https://www.youtube.com/@eToroAR",
       "https://www.youtube.com/@eToro_ES",
       "https://www.youtube.com/@eToroDE",
       "https://www.youtube.com/@etorofrance877",
+    ],
+    urls: [
+      "https://www.tiktok.com/@etoro_official",
       "https://www.youtube.com/eToroDeutsch",
       "https://www.threads.com/@etoro_official",
       "https://apps.apple.com/us/developer/etoro/id491658374",
@@ -342,6 +352,13 @@ export const manualOverrides: Record<
       "https://www.instagram.com/monday.com_engineering",
       "https://www.instagram.com/peopleofmonday",
     ],
+    ytp: [
+      "https://www.youtube.com/@mondaydotcom",
+      "https://www.youtube.com/@mastering-monday",
+      "https://www.youtube.com/@mondayappdeveloper",
+      "https://www.youtube.com/@tryvechannel",
+    ],
+    ytc: ["https://www.youtube.com/channel/UCA9UvBiKHly15rN8u_Km3BQ"],
     urls: [
       "https://www.facebook.com/groups/monday.community",
       "https://www.facebook.com/groups/183295877306250",
@@ -355,11 +372,6 @@ export const manualOverrides: Record<
       "https://www.reddit.com/r/mondaydotcom",
       "https://www.threads.com/@mondaydotcom",
       "https://www.tiktok.com/@mondayinsights",
-      "https://www.youtube.com/@mondaydotcom",
-      "https://www.youtube.com/@mastering-monday",
-      "https://www.youtube.com/@mondayappdeveloper",
-      "https://www.youtube.com/@tryvechannel",
-      "https://www.youtube.com/channel/UCA9UvBiKHly15rN8u_Km3BQ",
       "https://www.linkedin.com/products/mondaydotcom-monday-sales-crm",
       "https://www.linkedin.com/products/mondaydotcom-monday-dev",
       "https://www.linkedin.com/products/mondaydotcom-mondaycom",

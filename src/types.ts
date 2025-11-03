@@ -72,6 +72,8 @@ export const ManualItemSchema = z.object({
   tw: z.array(z.string()).optional(),
   ig: z.array(z.string()).optional(),
   gh: z.array(z.string()).optional(),
+  ytp: z.array(z.string()).optional(),
+  ytc: z.array(z.string()).optional(),
 });
 
 export const BuyIsraeliTechSchema = z.array(

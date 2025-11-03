@@ -7,6 +7,8 @@ import {
   API_ENDPOINT_RULE_TWITTER,
   API_ENDPOINT_RULE_INSTAGRAM,
   API_ENDPOINT_RULE_GITHUB,
+  API_ENDPOINT_RULE_YOUTUBE_PROFILE,
+  API_ENDPOINT_RULE_YOUTUBE_CHANNEL,
 } from "@theWallProject/addonCommon";
 import { APIScrapperFileDataSchema, ScrappedItemType } from "../types";
 import { log, cleanWebsite, error } from "../helper";
@@ -14,10 +16,12 @@ import { manualDeleteIds } from "./manual_resolve/manualDeleteIds";
 import { manualOverrides } from "./manual_resolve/manualOverrides";
 import { LinkField } from "./validate_urls";
 
-// Type for items that may have ig/gh from manual overrides (not in base ScrappedItemType)
+// Type for items that may have ig/gh/ytp/ytc from manual overrides (not in base ScrappedItemType)
 type ScrappedItemWithOverrides = ScrappedItemType & {
   ig?: string;
   gh?: string;
+  ytp?: string;
+  ytc?: string;
 };
 
 // Helper to extract identifier from URL for ID generation
@@ -64,6 +68,20 @@ const extractIdentifier = (url: string, field: LinkField): string => {
     const results = regex.exec(url);
     if (!results || !results[1]) {
       throw new Error(`Failed to extract GitHub identifier from: ${url}`);
+    }
+    return results[1].replace(/\//g, "_");
+  } else if (field === "ytp") {
+    const regex = new RegExp(API_ENDPOINT_RULE_YOUTUBE_PROFILE.regex);
+    const results = regex.exec(url);
+    if (!results || !results[1]) {
+      throw new Error(`Failed to extract YouTube Profile identifier from: ${url}`);
+    }
+    return results[1].replace(/\//g, "_");
+  } else if (field === "ytc") {
+    const regex = new RegExp(API_ENDPOINT_RULE_YOUTUBE_CHANNEL.regex);
+    const results = regex.exec(url);
+    if (!results || !results[1]) {
+      throw new Error(`Failed to extract YouTube Channel identifier from: ${url}`);
     }
     return results[1].replace(/\//g, "_");
   }
@@ -290,7 +308,7 @@ const loadJsonFiles = (folderPath: string) => {
 
       // Process each override field, handling arrays
       const updatedRow: ScrappedItemWithOverrides = { ...row };
-      const linkFields: LinkField[] = ["ws", "li", "fb", "tw", "ig", "gh"];
+      const linkFields: LinkField[] = ["ws", "li", "fb", "tw", "ig", "gh", "ytp", "ytc"];
 
       // Helper to remove protocol from URLs
       const removeProtocol = (url: string | undefined): string | undefined => {
@@ -310,6 +328,8 @@ const loadJsonFiles = (folderPath: string) => {
         else if (field === "tw") obj.tw = value;
         else if (field === "ig") obj.ig = value;
         else if (field === "gh") obj.gh = value;
+        else if (field === "ytp") obj.ytp = value;
+        else if (field === "ytc") obj.ytc = value;
       };
 
       for (const field of linkFields) {
@@ -371,7 +391,9 @@ const loadJsonFiles = (folderPath: string) => {
           key === "fb" ||
           key === "tw" ||
           key === "ig" ||
-          key === "gh"
+          key === "gh" ||
+          key === "ytp" ||
+          key === "ytc"
         ) {
           continue;
         }
@@ -389,7 +411,7 @@ const loadJsonFiles = (folderPath: string) => {
       }
 
       // Remove protocol from override-applied URLs
-      // Note: ig and gh are handled through linkFields loop above with protocol already removed
+      // Note: ig, gh, ytp, and ytc are handled through linkFields loop above with protocol already removed
       updatedRow.ws = updatedRow.ws?.replace(/^https?:\/\//, "");
       updatedRow.li = updatedRow.li?.replace(/^https?:\/\//, "");
       updatedRow.fb = updatedRow.fb?.replace(/^https?:\/\//, "");

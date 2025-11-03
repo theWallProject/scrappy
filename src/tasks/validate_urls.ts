@@ -7,6 +7,8 @@ import {
   API_ENDPOINT_RULE_TWITTER,
   API_ENDPOINT_RULE_INSTAGRAM,
   API_ENDPOINT_RULE_GITHUB,
+  API_ENDPOINT_RULE_YOUTUBE_PROFILE,
+  API_ENDPOINT_RULE_YOUTUBE_CHANNEL,
 } from "@theWallProject/addonCommon";
 import { APIScrapperFileDataSchema, ScrappedItemType } from "../types";
 import { error, log } from "../helper";
@@ -20,6 +22,8 @@ type ProcessedState = {
 type ManualOverrideFields = Partial<ScrappedItemType> & {
   ig?: string | string[];
   gh?: string | string[];
+  ytp?: string | string[];
+  ytc?: string | string[];
 };
 
 type ManualOverrideValue =
@@ -77,6 +81,10 @@ const formatValue = (value: ManualOverrideValue): string => {
       fields.push(`ig: ${JSON.stringify(value.ig)}`);
     if ("gh" in value && value.gh !== undefined)
       fields.push(`gh: ${JSON.stringify(value.gh)}`);
+    if ("ytp" in value && value.ytp !== undefined)
+      fields.push(`ytp: ${JSON.stringify(value.ytp)}`);
+    if ("ytc" in value && value.ytc !== undefined)
+      fields.push(`ytc: ${JSON.stringify(value.ytc)}`);
     if ("urls" in value && value.urls !== undefined)
       fields.push(`urls: ${JSON.stringify(value.urls)}`);
 
@@ -96,6 +104,8 @@ const formatValue = (value: ManualOverrideValue): string => {
     if (value.tw !== undefined) fields.push(`tw: ${JSON.stringify(value.tw)}`);
     if (value.ig !== undefined) fields.push(`ig: ${JSON.stringify(value.ig)}`);
     if (value.gh !== undefined) fields.push(`gh: ${JSON.stringify(value.gh)}`);
+    if (value.ytp !== undefined) fields.push(`ytp: ${JSON.stringify(value.ytp)}`);
+    if (value.ytc !== undefined) fields.push(`ytc: ${JSON.stringify(value.ytc)}`);
     if ("urls" in value && value.urls !== undefined)
       fields.push(`urls: ${JSON.stringify(value.urls)}`);
 
@@ -113,7 +123,7 @@ const saveManualOverrides = async (
   const keys = Object.keys(overrides).sort();
   let content = 'import { ScrappedItemType } from "../../types";\n\n';
   content +=
-    '// Allow arrays for link fields in overrides\ntype ManualOverrideFields = {\n  ws?: string | string[];\n  li?: string | string[];\n  fb?: string | string[];\n  tw?: string | string[];\n  ig?: string | string[];\n  gh?: string | string[];\n} & Omit<Partial<ScrappedItemType>, "ws" | "li" | "fb" | "tw" | "ig" | "gh">;\n\n';
+    '// Allow arrays for link fields in overrides\ntype ManualOverrideFields = {\n  ws?: string | string[];\n  li?: string | string[];\n  fb?: string | string[];\n  tw?: string | string[];\n  ig?: string | string[];\n  gh?: string | string[];\n  ytp?: string | string[];\n  ytc?: string | string[];\n} & Omit<Partial<ScrappedItemType>, "ws" | "li" | "fb" | "tw" | "ig" | "gh" | "ytp" | "ytc">;\n\n';
   content +=
     "export const manualOverrides: Record<string, ManualOverrideFields | { _processed: true } | (ManualOverrideFields & { _processed: true }) | (ManualOverrideFields & { urls?: string[] }) | (ManualOverrideFields & { _processed: true; urls?: string[] })> = {\n";
 
@@ -223,7 +233,7 @@ const checkRedirect = async (
   return { finalUrl, redirected };
 };
 
-export type LinkField = "ws" | "li" | "fb" | "tw" | "ig" | "gh";
+export type LinkField = "ws" | "li" | "fb" | "tw" | "ig" | "gh" | "ytp" | "ytc";
 type CategorizedUrls = {
   ws?: string[];
   li?: string[];
@@ -231,10 +241,12 @@ type CategorizedUrls = {
   tw?: string[];
   ig?: string[];
   gh?: string[];
+  ytp?: string[];
+  ytc?: string[];
   urls?: string[]; // Unsupported URLs only
 };
 
-// Categorize a URL into ws, li, fb, tw, ig, gh, or null (unsupported)
+// Categorize a URL into ws, li, fb, tw, ig, gh, ytp, ytc, or null (unsupported)
 const categorizeUrl = (url: string): LinkField | null => {
   try {
     // Check LinkedIn
@@ -268,10 +280,24 @@ const categorizeUrl = (url: string): LinkField | null => {
       return "gh";
     }
 
+    // Check YouTube Profile
+    const regexYouTubeProfile = new RegExp(API_ENDPOINT_RULE_YOUTUBE_PROFILE.regex);
+    if (regexYouTubeProfile.test(url)) {
+      return "ytp";
+    }
+
+    // Check YouTube Channel
+    const regexYouTubeChannel = new RegExp(API_ENDPOINT_RULE_YOUTUBE_CHANNEL.regex);
+    if (regexYouTubeChannel.test(url)) {
+      return "ytc";
+    }
+
     // Don't auto-categorize websites - keep them in urls for manual organization
-    // Exclude obvious non-website URLs
+    // Exclude obvious non-website URLs (Note: YouTube profile/channel URLs are handled above)
+    // Exclude YouTube video/watch URLs, but allow other YouTube URLs to stay in urls
     const excludePatterns = [
-      /youtube\./i,
+      /youtube\.com\/watch/i,
+      /youtube\.com\/shorts/i,
       /tiktok\./i,
       /threads\./i,
       /apps\.apple\./i,
@@ -302,6 +328,8 @@ type OverrideWithUrls = {
   tw?: string | string[];
   ig?: string | string[];
   gh?: string | string[];
+  ytp?: string | string[];
+  ytc?: string | string[];
   urls?: string[];
 };
 
@@ -915,6 +943,12 @@ const validateItemLinks = async (
             } else if (category === "gh") {
               if (!categorized.gh) categorized.gh = [];
               categorized.gh.push(url);
+            } else if (category === "ytp") {
+              if (!categorized.ytp) categorized.ytp = [];
+              categorized.ytp.push(url);
+            } else if (category === "ytc") {
+              if (!categorized.ytc) categorized.ytc = [];
+              categorized.ytc.push(url);
             } else {
               // Unsupported URL or website - keep in urls array for manual organization
               if (!categorized.urls) categorized.urls = [];
@@ -983,6 +1017,30 @@ const validateItemLinks = async (
             }
             hasChanges = true;
             log(`  ✓ Categorized ${categorized.gh.length} GitHub URL(s)`);
+          }
+
+          if (categorized.ytp && categorized.ytp.length > 0) {
+            if (Array.isArray(changes.ytp)) {
+              changes.ytp = [...changes.ytp, ...categorized.ytp];
+            } else if (typeof changes.ytp === "string") {
+              changes.ytp = [changes.ytp, ...categorized.ytp];
+            } else {
+              changes.ytp = categorized.ytp;
+            }
+            hasChanges = true;
+            log(`  ✓ Categorized ${categorized.ytp.length} YouTube Profile URL(s)`);
+          }
+
+          if (categorized.ytc && categorized.ytc.length > 0) {
+            if (Array.isArray(changes.ytc)) {
+              changes.ytc = [...changes.ytc, ...categorized.ytc];
+            } else if (typeof changes.ytc === "string") {
+              changes.ytc = [changes.ytc, ...categorized.ytc];
+            } else {
+              changes.ytc = categorized.ytc;
+            }
+            hasChanges = true;
+            log(`  ✓ Categorized ${categorized.ytc.length} YouTube Channel URL(s)`);
           }
 
           // Only keep unsupported URLs in urls array
@@ -1429,7 +1487,7 @@ export async function run() {
             // Convert array to first element
             override[key] = value[0];
           }
-        } else if (key === "ig" || key === "gh") {
+        } else if (key === "ig" || key === "gh" || key === "ytp" || key === "ytc") {
           // These can be arrays in ManualOverrideFields
           override[key] = value;
         }

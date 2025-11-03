@@ -81967,9 +81967,9 @@
     "reasons": ["h"]
   },
   {
-    "id": "toloka-5e39",
+    "id": "nebius-group_manual_ws_toloka_ai",
     "selector": "toloka.ai",
-    "name": "Toloka",
+    "name": "Nebius Group",
     "reasons": ["f"]
   },
   {
@@ -82627,6 +82627,12 @@
     "selector": "tracston.com",
     "name": "Tracston",
     "reasons": ["h"]
+  },
+  {
+    "id": "nebius-group_manual_ws_tracto_ai",
+    "selector": "tracto.ai",
+    "name": "Nebius Group",
+    "reasons": ["f"]
   },
   {
     "id": "tracx",
@@ -83338,6 +83344,12 @@
     "selector": "tripleplus.io",
     "name": "Triple+",
     "reasons": ["h"]
+  },
+  {
+    "id": "nebius-group_manual_ws_tripleten_com",
+    "selector": "tripleten.com",
+    "name": "Nebius Group",
+    "reasons": ["f"]
   },
   {
     "id": "tripletes",

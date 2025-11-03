@@ -7,15 +7,19 @@ import {
   API_ENDPOINT_RULE_TWITTER,
   API_ENDPOINT_RULE_INSTAGRAM,
   API_ENDPOINT_RULE_GITHUB,
+  API_ENDPOINT_RULE_YOUTUBE_PROFILE,
+  API_ENDPOINT_RULE_YOUTUBE_CHANNEL,
   DBFileNames,
 } from "@theWallProject/addonCommon";
 import { APIScrapperFileDataSchema, ScrappedFileType } from "../types";
 import { error, log, warn } from "../helper";
 
-// Type for merged data that may include ig/gh from manual overrides
+// Type for merged data that may include ig/gh/ytp/ytc from manual overrides
 type MergedDataItem = ScrappedFileType[number] & {
   ig?: string;
   gh?: string;
+  ytp?: string;
+  ytc?: string;
 };
 
 const extractSocialLinks = (data: MergedDataItem[]) => {
@@ -24,12 +28,20 @@ const extractSocialLinks = (data: MergedDataItem[]) => {
   const twitterFlagged: APIEndpointDomains = [];
   const instagramFlagged: APIEndpointDomains = [];
   const githubFlagged: APIEndpointDomains = [];
+  const youtubeProfileFlagged: APIEndpointDomains = [];
+  const youtubeChannelFlagged: APIEndpointDomains = [];
 
   const regexLinkedin = new RegExp(API_ENDPOINT_RULE_LINKEDIN.regex);
   const regexFacebook = new RegExp(API_ENDPOINT_RULE_FACEBOOK.regex);
   const regexTwitter = new RegExp(API_ENDPOINT_RULE_TWITTER.regex);
   const regexInstagram = new RegExp(API_ENDPOINT_RULE_INSTAGRAM.regex);
   const regexGitHub = new RegExp(API_ENDPOINT_RULE_GITHUB.regex);
+  const regexYouTubeProfile = new RegExp(
+    API_ENDPOINT_RULE_YOUTUBE_PROFILE.regex,
+  );
+  const regexYouTubeChannel = new RegExp(
+    API_ENDPOINT_RULE_YOUTUBE_CHANNEL.regex,
+  );
 
   // const namesMap: { [key: string]: boolean } = {};
   const websitesMap: { [key: string]: boolean } = {};
@@ -38,9 +50,11 @@ const extractSocialLinks = (data: MergedDataItem[]) => {
   const twitterMap: { [key: string]: boolean } = {};
   const instagramMap: { [key: string]: boolean } = {};
   const githubMap: { [key: string]: boolean } = {};
+  const youtubeProfileMap: { [key: string]: boolean } = {};
+  const youtubeChannelMap: { [key: string]: boolean } = {};
 
   data.forEach((row) => {
-    const { name, ws, li, fb, tw, reasons, id, ig, gh } = row;
+    const { name, ws, li, fb, tw, reasons, id, ig, gh, ytp, ytc } = row;
 
     // if (namesMap[name]) {
     //   error(`Duplicate name [social]: ${row.name}`);
@@ -203,6 +217,54 @@ const extractSocialLinks = (data: MergedDataItem[]) => {
         warn(`GitHub processing ${gh} had no result! [${result}]`);
       }
     }
+
+    // Extract YouTube Profile (from manual overrides)
+    if (ytp && ytp !== "") {
+      const results = regexYouTubeProfile.exec(ytp);
+      const result = results && results[1];
+
+      if (result) {
+        if (youtubeProfileMap[result]) {
+          error(`Duplicate YouTube Profile [social]: ${result}`);
+        } else {
+          youtubeProfileMap[result] = true;
+
+          youtubeProfileFlagged.push({
+            id: row.id,
+            selector: result,
+            name: row.name,
+            reasons: row.reasons,
+            ...(row.stock_symbol ? { s: row.stock_symbol } : {}),
+          });
+        }
+      } else {
+        warn(`YouTube Profile processing ${ytp} had no result! [${result}]`);
+      }
+    }
+
+    // Extract YouTube Channel (from manual overrides)
+    if (ytc && ytc !== "") {
+      const results = regexYouTubeChannel.exec(ytc);
+      const result = results && results[1];
+
+      if (result) {
+        if (youtubeChannelMap[result]) {
+          error(`Duplicate YouTube Channel [social]: ${result}`);
+        } else {
+          youtubeChannelMap[result] = true;
+
+          youtubeChannelFlagged.push({
+            id: row.id,
+            selector: result,
+            name: row.name,
+            reasons: row.reasons,
+            ...(row.stock_symbol ? { s: row.stock_symbol } : {}),
+          });
+        }
+      } else {
+        warn(`YouTube Channel processing ${ytc} had no result! [${result}]`);
+      }
+    }
   });
 
   saveJsonToFile(
@@ -245,11 +307,29 @@ const extractSocialLinks = (data: MergedDataItem[]) => {
     ),
   );
 
+  saveJsonToFile(
+    youtubeProfileFlagged.sort((a, b) => a.name.localeCompare(b.name)),
+    path.join(
+      __dirname,
+      `../../results/3_networks/${DBFileNames.FLAGGED_YOUTUBE_PROFILE}.json`,
+    ),
+  );
+
+  saveJsonToFile(
+    youtubeChannelFlagged.sort((a, b) => a.name.localeCompare(b.name)),
+    path.join(
+      __dirname,
+      `../../results/3_networks/${DBFileNames.FLAGGED_YOUTUBE_CHANNEL}.json`,
+    ),
+  );
+
   log(`Wrote ${linkedinFlagged.length} li rows...`);
   log(`Wrote ${facebookFlagged.length} fb rows..`);
   log(`Wrote ${twitterFlagged.length} tw rows..`);
   log(`Wrote ${instagramFlagged.length} ig rows..`);
   log(`Wrote ${githubFlagged.length} gh rows..`);
+  log(`Wrote ${youtubeProfileFlagged.length} ytp rows..`);
+  log(`Wrote ${youtubeChannelFlagged.length} ytc rows..`);
 };
 
 const saveJsonToFile = (data: unknown, outputFilePath: string) => {
