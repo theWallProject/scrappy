@@ -202,6 +202,14 @@ export const manualOverrides: Record<
     ],
     _processed: true,
   },
+  Sentra: {
+    urls: [
+      "https://www.facebook.com/profile.php?id=100091748057784",
+      "https://github.com/sentraio",
+      "https://www.youtube.com/@sentra_security",
+    ],
+    _processed: true,
+  },
   Somite: { tw: "https://x.com/somiteai" },
   Speedata: {
     li: ["https://www.linkedin.com/company/speedataio"],

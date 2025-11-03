@@ -453,6 +453,10 @@ const validateItemLinks = async (
   // These persist even after browser/context closes
   const urlStorage = new Map<Page, string>(); // Tab -> URL mapping (final URL per tab)
   const trackedTabs = new Set<Page>(); // All tracked tabs
+  const finalUrls = new Set<string>(); // PERSISTENT: All URLs ever seen - NEVER deleted, collected at end
+  const userClosedUrls = new Set<string>(); // URLs user manually closed (exclude from collection)
+  let isContextClosing = false; // Track if context is closing (prevents URL deletion during bulk close)
+  const TAB_CLOSE_DELAY_MS = 3000; // Wait 3 seconds after tab close - if browser still open, it's manual close
 
   // Initialize with tabs we opened
   for (const tab of pages) {
@@ -461,6 +465,7 @@ const validateItemLinks = async (
       const url = tab.url();
       if (url && url !== "about:blank") {
         urlStorage.set(tab, url); // Store tab->URL mapping
+        finalUrls.add(url); // Add to persistent collection
       }
     } catch {
       // Tab might not have URL yet
@@ -469,6 +474,7 @@ const validateItemLinks = async (
 
   // Helper to update and store a tab's URL (synchronous for events)
   // Maintains clear tab->URL mapping (final URL per tab)
+  // ALSO stores in finalUrls for persistent collection (never deleted)
   const updateTabUrl = (tab: Page, source: string = "unknown") => {
     try {
       if (tab.isClosed()) {
@@ -478,6 +484,7 @@ const validateItemLinks = async (
       if (tabUrl && tabUrl !== "about:blank") {
         const oldUrl = urlStorage.get(tab);
         urlStorage.set(tab, tabUrl); // Update tab->URL mapping
+        finalUrls.add(tabUrl); // ALWAYS add to persistent collection (never deleted)
 
         if (oldUrl && oldUrl !== tabUrl && oldUrl !== "about:blank") {
           log(
@@ -506,15 +513,77 @@ const validateItemLinks = async (
         updateTabUrl(tab, "load");
       });
 
-      // Listen for tab close - remove tab->URL mapping when user closes tab
+      // Listen for tab close - wait 3 seconds, if browser still open then it's manual close
       tab.on("close", () => {
-        // Remove tab from storage (user doesn't want this tab)
         const url = urlStorage.get(tab);
-        if (url && url !== "about:blank") {
-          log(`  [DEBUG] ✗ Tab closed, removed tab mapping: ${url}`);
-        }
-        urlStorage.delete(tab); // Remove tab->URL mapping
+
+        // Immediately remove from active tracking
+        urlStorage.delete(tab);
         trackedTabs.delete(tab);
+
+        if (!url || url === "about:blank") {
+          return;
+        }
+
+        // Check if context is already closed (definitely shutdown)
+        let isShuttingDown = isContextClosing;
+        if (!isShuttingDown) {
+          try {
+            const tabContext = tab.context();
+            isShuttingDown = !tabContext || tabContext.browser() === null;
+          } catch {
+            // Context already closed - definitely shutdown
+            isShuttingDown = true;
+          }
+        }
+
+        if (isShuttingDown) {
+          // Browser is already closing - keep URL in finalUrls (already there)
+          log(
+            `  [DEBUG] ⚠️ Tab closed during context shutdown, URL preserved: ${url}`,
+          );
+          return;
+        }
+
+        // Wait 3 seconds - if browser still open, it was manual close
+        setTimeout(() => {
+          // Check if browser/context is still open
+          let browserStillOpen = false;
+          try {
+            const tabContext = tab.context();
+            if (tabContext) {
+              const browser = tabContext.browser();
+              browserStillOpen = browser !== null && browser.isConnected();
+            }
+          } catch {
+            // Context closed - browser was closing
+            browserStillOpen = false;
+          }
+
+          // Also check the main context
+          if (!browserStillOpen) {
+            try {
+              const mainBrowser = context.browser();
+              browserStillOpen =
+                mainBrowser !== null && mainBrowser.isConnected();
+            } catch {
+              browserStillOpen = false;
+            }
+          }
+
+          if (browserStillOpen && !isContextClosing) {
+            // Browser still open after 3 seconds = user manually closed this tab
+            userClosedUrls.add(url);
+            log(
+              `  [DEBUG] ✗ Tab closed (user action - browser still open after ${TAB_CLOSE_DELAY_MS}ms), marking as excluded: ${url}`,
+            );
+          } else {
+            // Browser closed = it was shutdown, keep URL
+            log(
+              `  [DEBUG] ⚠️ Tab close was browser shutdown (browser closed within ${TAB_CLOSE_DELAY_MS}ms), keeping URL: ${url}`,
+            );
+          }
+        }, TAB_CLOSE_DELAY_MS);
       });
     } catch {
       // Tab might not have a URL yet
@@ -534,6 +603,7 @@ const validateItemLinks = async (
         const initialUrl = tab.url();
         if (initialUrl && initialUrl !== "about:blank") {
           urlStorage.set(tab, initialUrl); // Store tab->URL mapping
+          finalUrls.add(initialUrl); // Add to persistent collection
         }
       } catch {
         // Tab might not have URL yet
@@ -549,15 +619,77 @@ const validateItemLinks = async (
         updateTabUrl(tab, "load");
       });
 
-      // Listen for tab close - remove tab->URL mapping when user closes tab
+      // Listen for tab close - wait 3 seconds, if browser still open then it's manual close
       tab.on("close", () => {
-        // Remove tab from storage (user doesn't want this tab)
         const url = urlStorage.get(tab);
-        if (url && url !== "about:blank") {
-          log(`  [DEBUG] ✗ Tab closed, removed tab mapping: ${url}`);
-        }
-        urlStorage.delete(tab); // Remove tab->URL mapping
+
+        // Immediately remove from active tracking
+        urlStorage.delete(tab);
         trackedTabs.delete(tab);
+
+        if (!url || url === "about:blank") {
+          return;
+        }
+
+        // Check if context is already closed (definitely shutdown)
+        let isShuttingDown = isContextClosing;
+        if (!isShuttingDown) {
+          try {
+            const tabContext = tab.context();
+            isShuttingDown = !tabContext || tabContext.browser() === null;
+          } catch {
+            // Context already closed - definitely shutdown
+            isShuttingDown = true;
+          }
+        }
+
+        if (isShuttingDown) {
+          // Browser is already closing - keep URL in finalUrls (already there)
+          log(
+            `  [DEBUG] ⚠️ Tab closed during context shutdown, URL preserved: ${url}`,
+          );
+          return;
+        }
+
+        // Wait 3 seconds - if browser still open, it was manual close
+        setTimeout(() => {
+          // Check if browser/context is still open
+          let browserStillOpen = false;
+          try {
+            const tabContext = tab.context();
+            if (tabContext) {
+              const browser = tabContext.browser();
+              browserStillOpen = browser !== null && browser.isConnected();
+            }
+          } catch {
+            // Context closed - browser was closing
+            browserStillOpen = false;
+          }
+
+          // Also check the main context
+          if (!browserStillOpen) {
+            try {
+              const mainBrowser = context.browser();
+              browserStillOpen =
+                mainBrowser !== null && mainBrowser.isConnected();
+            } catch {
+              browserStillOpen = false;
+            }
+          }
+
+          if (browserStillOpen && !isContextClosing) {
+            // Browser still open after 3 seconds = user manually closed this tab
+            userClosedUrls.add(url);
+            log(
+              `  [DEBUG] ✗ Tab closed (user action - browser still open after ${TAB_CLOSE_DELAY_MS}ms), marking as excluded: ${url}`,
+            );
+          } else {
+            // Browser closed = it was shutdown, keep URL
+            log(
+              `  [DEBUG] ⚠️ Tab close was browser shutdown (browser closed within ${TAB_CLOSE_DELAY_MS}ms), keeping URL: ${url}`,
+            );
+          }
+        }, TAB_CLOSE_DELAY_MS);
       });
     } catch (e) {
       log(`  [DEBUG] Error in tab event handler: ${e}`);
@@ -568,7 +700,7 @@ const validateItemLinks = async (
     let resolved = false;
     let pollInterval: NodeJS.Timeout | null = null;
 
-    // Collect URLs from external storage (no dependency on browser context)
+    // Collect URLs from persistent finalUrls collection (never deleted)
     const collectExtraUrls = (): string[] => {
       const extraUrls: string[] = [];
       log(`  [DEBUG] === Starting URL collection ===`);
@@ -576,49 +708,74 @@ const validateItemLinks = async (
         `  [DEBUG] Links we opened: ${JSON.stringify(links.map((l) => l.url))}`,
       );
       log(`  [DEBUG] Total tracked tabs: ${trackedTabs.size}`);
-      log(`  [DEBUG] Tabs with URLs in storage: ${urlStorage.size}`);
+      log(`  [DEBUG] Tabs with URLs in active storage: ${urlStorage.size}`);
+      log(`  [DEBUG] Total URLs in persistent collection: ${finalUrls.size}`);
+      log(
+        `  [DEBUG] URLs user manually closed (excluded): ${userClosedUrls.size}`,
+      );
+      log(`  [DEBUG] Context closing flag: ${isContextClosing}`);
 
-      // NO browser access during collection - all data already prepared by events
+      // Collect from finalUrls (persistent, never deleted) - exclude user-closed URLs
       try {
-        // No exclusion logic - collect ALL URLs from all tabs
-        // User will manually close tabs they don't need
+        const openedUrls = new Set(
+          links.map((l) => normalizeUrlForComparison(l.url)),
+        );
+        const allCachedUrls = new Map<string, string>(); // normalized -> original url
 
-        // Collect ALL URLs from urlStorage - maintains clear tab->URL separation
-        // Each entry in urlStorage represents one tab with its final URL
-        const tabUrls = new Map<Page, string>(); // Tab -> final URL (maintains separation)
-        const allCachedUrls = new Map<string, string>(); // normalized -> original url (for deduplication)
+        log(
+          `  [DEBUG] Processing ${finalUrls.size} URLs from persistent collection...`,
+        );
 
-        // Collect from urlStorage - maintains tab->URL relationship
-        for (const [tab, url] of urlStorage.entries()) {
-          if (url && url !== "about:blank") {
-            tabUrls.set(tab, url); // Keep tab->URL mapping
-            const normalized = normalizeUrlForComparison(url);
-            if (!allCachedUrls.has(normalized)) {
-              allCachedUrls.set(normalized, url);
-            }
-            log(`  [DEBUG] Tab has final URL: ${url}`);
+        // Collect from finalUrls, excluding user-closed URLs and opened URLs
+        let validUrlsFound = 0;
+        let userClosedSkipped = 0;
+        let openedSkipped = 0;
+        let blankUrlsSkipped = 0;
+
+        for (const url of finalUrls) {
+          if (!url || url === "about:blank") {
+            blankUrlsSkipped++;
+            continue;
+          }
+
+          // Skip if user manually closed this URL
+          if (userClosedUrls.has(url)) {
+            userClosedSkipped++;
+            log(`  [DEBUG] ⊙ Skipped user-closed URL: ${url}`);
+            continue;
+          }
+
+          const normalized = normalizeUrlForComparison(url);
+
+          // Skip if this is one of the URLs we originally opened
+          if (openedUrls.has(normalized)) {
+            openedSkipped++;
+            log(`  [DEBUG] ⊙ Skipped originally opened URL: ${url}`);
+            continue;
+          }
+
+          // Add to collection (deduplicate by normalized URL)
+          if (!allCachedUrls.has(normalized)) {
+            allCachedUrls.set(normalized, url);
+            validUrlsFound++;
+            log(
+              `  [DEBUG] ✓ Collected URL: ${url} (normalized: ${normalized})`,
+            );
+          } else {
+            log(
+              `  [DEBUG] ⊙ Duplicate URL skipped: ${url} (already have normalized: ${normalized})`,
+            );
           }
         }
 
-        log(`  [DEBUG] Collected ${tabUrls.size} tabs with URLs`);
-
         log(
-          `  [DEBUG] Found ${allCachedUrls.size} unique cached URLs to check`,
+          `  [DEBUG] Summary: ${validUrlsFound} valid, ${userClosedSkipped} user-closed, ${openedSkipped} opened, ${blankUrlsSkipped} blank`,
         );
 
-        // Process all cached URLs - no exclusions, collect everything
+        // Process all cached URLs
         for (const [, originalUrl] of allCachedUrls.entries()) {
           const cleanedUrl = removeTrailingSlash(originalUrl);
-          log(`  [DEBUG] ✓ Adding URL: ${cleanedUrl}`);
           extraUrls.push(cleanedUrl);
-        }
-
-        // Log summary
-        log(`  [DEBUG] Total cached URLs processed: ${allCachedUrls.size}`);
-        if (allCachedUrls.size > 0) {
-          log(
-            `  [DEBUG] All cached URLs: ${Array.from(allCachedUrls.values()).join(", ")}`,
-          );
         }
 
         // Remove duplicates and sort
@@ -627,7 +784,7 @@ const validateItemLinks = async (
 
         log(`  [DEBUG] === URL collection complete ===`);
         log(
-          `  [DEBUG] Collected ${extraUrls.length} URLs (${uniqueUrls.length} unique): ${JSON.stringify(uniqueUrls)}`,
+          `  [DEBUG] Collected ${uniqueUrls.length} unique URLs: ${JSON.stringify(uniqueUrls)}`,
         );
 
         return uniqueUrls;
@@ -653,11 +810,36 @@ const validateItemLinks = async (
         pollInterval = null;
       }
 
+      // Mark context as closing BEFORE tabs start closing
+      // This prevents tab close handlers from deleting URLs
+      isContextClosing = true;
+      log(
+        `  [DEBUG] Context closing flag set to prevent URL deletion during tab close events`,
+      );
+
       // Collect URLs - NO processing during cleanup, just read tab->URL mappings
       log(`  [DEBUG] cleanup() called with reason: ${reason}`);
       log(
         `  [DEBUG] Reading tab->URL mappings (no browser access needed): ${urlStorage.size} tabs with URLs`,
       );
+      log(`  [DEBUG] Total tracked tabs before cleanup: ${trackedTabs.size}`);
+
+      // Log all URLs currently in storage for debugging
+      if (urlStorage.size > 0) {
+        log(`  [DEBUG] URLs in storage before collection:`);
+        for (const [tab, url] of urlStorage.entries()) {
+          try {
+            const isClosed = tab.isClosed();
+            log(`  [DEBUG]   - ${url} (tab closed: ${isClosed})`);
+          } catch {
+            log(`  [DEBUG]   - ${url} (tab status: unknown - likely closed)`);
+          }
+        }
+      } else {
+        log(
+          `  [DEBUG] ⚠️ WARNING: urlStorage is empty! All URLs may have been deleted.`,
+        );
+      }
 
       // Simply read from urlStorage - tab->URL mappings prepared by events
       (async () => {
@@ -776,12 +958,27 @@ const validateItemLinks = async (
 
     // Listen to multiple events with debug logging
     browser.once("disconnected", () => {
-      log(`  [DEBUG] Browser 'disconnected' event fired`);
+      log(
+        `  [DEBUG] Browser 'disconnected' event fired - setting closing flag`,
+      );
+      // Set flag immediately when browser disconnects (this happens before context closes)
+      isContextClosing = true;
+      log(
+        `  [DEBUG] Context closing flag set from browser disconnect, urlStorage size: ${urlStorage.size}`,
+      );
       cleanup("disconnected event");
     });
 
     context.once("close", () => {
-      log(`  [DEBUG] Context 'close' event fired`);
+      log(
+        `  [DEBUG] Context 'close' event fired - setting closing flag and collecting URLs`,
+      );
+      // Set flag immediately when context starts closing
+      // This prevents tab close handlers from deleting URLs
+      isContextClosing = true;
+      log(
+        `  [DEBUG] Context closing flag set, urlStorage size: ${urlStorage.size}`,
+      );
       cleanup("context close event");
     });
 
@@ -799,18 +996,30 @@ const validateItemLinks = async (
       const allPagesClosed = pages.every((p) => p.isClosed());
 
       if (!isConnected) {
+        isContextClosing = true;
+        log(
+          `  [DEBUG] Browser disconnected detected in polling - setting closing flag`,
+        );
         cleanup("polling (isConnected=false)");
         return;
       }
 
       // Also check if context browser is null
       if (browserFromContext === null) {
+        isContextClosing = true;
+        log(
+          `  [DEBUG] Context browser null detected in polling - setting closing flag`,
+        );
         cleanup("polling (context.browser() === null)");
         return;
       }
 
       // If all pages are closed, browser was likely closed
       if (allPagesClosed && pages.length > 0) {
+        isContextClosing = true;
+        log(
+          `  [DEBUG] All pages closed detected in polling - setting closing flag`,
+        );
         cleanup("polling (all pages closed)");
         return;
       }
@@ -1156,7 +1365,11 @@ export async function run() {
     log("Running update steps (skipping questions)...");
 
     try {
-      await runUpdateSteps();
+      await runUpdateSteps({
+        shouldScrap: false,
+        shouldValidate: false,
+        shouldCopyToAddon: false,
+      });
       log("✓ Update steps completed successfully");
     } catch (err) {
       error("Error running update steps:", err);
@@ -1172,6 +1385,7 @@ export async function run() {
     displayStatistics(sortedData, updatedOverrides);
 
     // Exit cleanly to prevent hanging prompts from index.ts
+    // Note: If called from validate_index.ts, it will continue to apply overrides there
     process.exit(0);
   } catch (err) {
     error("Error during validation:", err);
