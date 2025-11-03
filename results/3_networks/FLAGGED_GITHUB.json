@@ -1,0 +1,118 @@
+[
+  {
+    "id": "ai21",
+    "selector": "AI21Labs",
+    "name": "AI21 Labs",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "id": "ai21_manual_gh_AI21X",
+    "selector": "AI21X",
+    "name": "AI21 Labs",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "id": "ai21_manual_gh_mangate",
+    "selector": "mangate",
+    "name": "AI21 Labs",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "id": "bluesky-514d",
+    "selector": "bluesky-social",
+    "name": "Bluesky",
+    "reasons": [
+      "i"
+    ]
+  },
+  {
+    "id": "nebius-group",
+    "selector": "Toloka",
+    "name": "Nebius Group",
+    "reasons": [
+      "f"
+    ],
+    "s": "NBISN"
+  },
+  {
+    "id": "nebius-group_manual_gh_nebius",
+    "selector": "nebius",
+    "name": "Nebius Group",
+    "reasons": [
+      "f"
+    ]
+  },
+  {
+    "id": "nebius-group_manual_gh_tractoai",
+    "selector": "tractoai",
+    "name": "Nebius Group",
+    "reasons": [
+      "f"
+    ]
+  },
+  {
+    "id": "protect-ai",
+    "selector": "protectai",
+    "name": "Protect AI",
+    "reasons": [
+      "i"
+    ]
+  },
+  {
+    "id": "sentinel",
+    "selector": "Sentinel-One",
+    "name": "SentinelOne",
+    "reasons": [
+      "f",
+      "i"
+    ],
+    "s": "S"
+  },
+  {
+    "id": "sentra",
+    "selector": "sentraio",
+    "name": "Sentra",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "id": "silverfort-2",
+    "selector": "silverfort-open-source",
+    "name": "Silverfort",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "id": "speedata",
+    "selector": "Speedata-io",
+    "name": "Speedata",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "id": "torq-technologies",
+    "selector": "torqio",
+    "name": "Torq",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "id": "vast-data",
+    "selector": "vast-data",
+    "name": "VAST Data",
+    "reasons": [
+      "f",
+      "i"
+    ]
+  }
+]

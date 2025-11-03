@@ -22,7 +22,8 @@
     "name": "eToro",
     "reasons": [
       "h"
-    ]
+    ],
+    "s": "ETOR"
   },
   {
     "id": "etoro_manual_ig_etoro_official",
@@ -38,7 +39,8 @@
     "name": "monday.com",
     "reasons": [
       "h"
-    ]
+    ],
+    "s": "MNDY"
   },
   {
     "id": "mondaydotcom_manual_ig_monday.com.design",
@@ -78,7 +80,8 @@
     "name": "Nebius Group",
     "reasons": [
       "f"
-    ]
+    ],
+    "s": "NBISN"
   },
   {
     "id": "nebius-group_manual_ig_tripleten.tech",
@@ -94,7 +97,8 @@
     "name": "Omada Health",
     "reasons": [
       "i"
-    ]
+    ],
+    "s": "OMDA"
   },
   {
     "id": "semperis",

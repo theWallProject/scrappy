@@ -5,28 +5,42 @@ import {
   API_ENDPOINT_RULE_LINKEDIN,
   API_ENDPOINT_RULE_FACEBOOK,
   API_ENDPOINT_RULE_TWITTER,
+  API_ENDPOINT_RULE_INSTAGRAM,
+  API_ENDPOINT_RULE_GITHUB,
   DBFileNames,
 } from "@theWallProject/addonCommon";
 import { APIScrapperFileDataSchema, ScrappedFileType } from "../types";
 import { error, log, warn } from "../helper";
 
-const extractSocialLinks = (data: ScrappedFileType) => {
+// Type for merged data that may include ig/gh from manual overrides
+type MergedDataItem = ScrappedFileType[number] & {
+  ig?: string;
+  gh?: string;
+};
+
+const extractSocialLinks = (data: MergedDataItem[]) => {
   const linkedinFlagged: APIEndpointDomains = [];
   const facebookFlagged: APIEndpointDomains = [];
   const twitterFlagged: APIEndpointDomains = [];
+  const instagramFlagged: APIEndpointDomains = [];
+  const githubFlagged: APIEndpointDomains = [];
 
   const regexLinkedin = new RegExp(API_ENDPOINT_RULE_LINKEDIN.regex);
   const regexFacebook = new RegExp(API_ENDPOINT_RULE_FACEBOOK.regex);
   const regexTwitter = new RegExp(API_ENDPOINT_RULE_TWITTER.regex);
+  const regexInstagram = new RegExp(API_ENDPOINT_RULE_INSTAGRAM.regex);
+  const regexGitHub = new RegExp(API_ENDPOINT_RULE_GITHUB.regex);
 
   // const namesMap: { [key: string]: boolean } = {};
   const websitesMap: { [key: string]: boolean } = {};
   const fbMap: { [key: string]: boolean } = {};
   const liMap: { [key: string]: boolean } = {};
   const twitterMap: { [key: string]: boolean } = {};
+  const instagramMap: { [key: string]: boolean } = {};
+  const githubMap: { [key: string]: boolean } = {};
 
   data.forEach((row) => {
-    const { name, ws, li, fb, tw, reasons, id } = row;
+    const { name, ws, li, fb, tw, reasons, id, ig, gh } = row;
 
     // if (namesMap[name]) {
     //   error(`Duplicate name [social]: ${row.name}`);
@@ -58,6 +72,7 @@ const extractSocialLinks = (data: ScrappedFileType) => {
             name: name,
             id: row.id,
             reasons: reasons,
+            ...(row.stock_symbol ? { s: row.stock_symbol } : {}),
           });
         }
       } else {
@@ -98,6 +113,7 @@ const extractSocialLinks = (data: ScrappedFileType) => {
               selector: result,
               name: name,
               reasons: reasons,
+              ...(row.stock_symbol ? { s: row.stock_symbol } : {}),
             });
           }
         }
@@ -127,10 +143,64 @@ const extractSocialLinks = (data: ScrappedFileType) => {
             selector: result,
             name: row.name,
             reasons: row.reasons,
+            ...(row.stock_symbol ? { s: row.stock_symbol } : {}),
           });
         }
       } else {
         warn(`Twitter processing ${tw} had no result! [${result}]`);
+      }
+    }
+
+    // Extract Instagram (from manual overrides)
+    if (ig && ig !== "") {
+      const results = regexInstagram.exec(ig);
+      const result = results && results[1];
+
+      if (result) {
+        if (
+          ["explore", "accounts", "direct", "stories", "reels"].includes(result)
+        ) {
+          return;
+        }
+        if (instagramMap[result]) {
+          error(`Duplicate Instagram [social]: ${result}`);
+        } else {
+          instagramMap[result] = true;
+
+          instagramFlagged.push({
+            id: row.id,
+            selector: result,
+            name: row.name,
+            reasons: row.reasons,
+            ...(row.stock_symbol ? { s: row.stock_symbol } : {}),
+          });
+        }
+      } else {
+        warn(`Instagram processing ${ig} had no result! [${result}]`);
+      }
+    }
+
+    // Extract GitHub (from manual overrides)
+    if (gh && gh !== "") {
+      const results = regexGitHub.exec(gh);
+      const result = results && results[1];
+
+      if (result) {
+        if (githubMap[result]) {
+          error(`Duplicate GitHub [social]: ${result}`);
+        } else {
+          githubMap[result] = true;
+
+          githubFlagged.push({
+            id: row.id,
+            selector: result,
+            name: row.name,
+            reasons: row.reasons,
+            ...(row.stock_symbol ? { s: row.stock_symbol } : {}),
+          });
+        }
+      } else {
+        warn(`GitHub processing ${gh} had no result! [${result}]`);
       }
     }
   });
@@ -159,9 +229,27 @@ const extractSocialLinks = (data: ScrappedFileType) => {
     ),
   );
 
+  saveJsonToFile(
+    instagramFlagged.sort((a, b) => a.name.localeCompare(b.name)),
+    path.join(
+      __dirname,
+      `../../results/3_networks/${DBFileNames.FLAGGED_INSTAGRAM}.json`,
+    ),
+  );
+
+  saveJsonToFile(
+    githubFlagged.sort((a, b) => a.name.localeCompare(b.name)),
+    path.join(
+      __dirname,
+      `../../results/3_networks/${DBFileNames.FLAGGED_GITHUB}.json`,
+    ),
+  );
+
   log(`Wrote ${linkedinFlagged.length} li rows...`);
   log(`Wrote ${facebookFlagged.length} fb rows..`);
   log(`Wrote ${twitterFlagged.length} tw rows..`);
+  log(`Wrote ${instagramFlagged.length} ig rows..`);
+  log(`Wrote ${githubFlagged.length} gh rows..`);
 };
 
 const saveJsonToFile = (data: unknown, outputFilePath: string) => {
@@ -169,8 +257,9 @@ const saveJsonToFile = (data: unknown, outputFilePath: string) => {
   log(`Data successfully written to ${outputFilePath}`);
 };
 
-export async function run(merged: ScrappedFileType) {
-  const tested = APIScrapperFileDataSchema.parse(merged);
+export async function run(merged: ScrappedFileType | MergedDataItem[]) {
+  // Validate base structure (ig/gh may be present but not in schema)
+  APIScrapperFileDataSchema.parse(merged);
 
-  extractSocialLinks(tested);
+  extractSocialLinks(merged);
 }

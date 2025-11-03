@@ -296,11 +296,32 @@ async function setFilter(
     throw new Error(`Field at index ${index} not found`);
   }
 
-  // Focus and click using page.evaluate with proper type casting
-  await page.evaluate((element) => {
-    const inputElement = element as HTMLInputElement;
-    inputElement.focus();
-    inputElement.select();
+  // Focus and click using page.evaluate with property checks
+  await page.evaluate((element: unknown) => {
+    // Type narrowing without assertions: check if element has required methods
+    if (
+      element &&
+      typeof element === "object" &&
+      element !== null &&
+      "focus" in element &&
+      "select" in element
+    ) {
+      // Use Object.getOwnPropertyDescriptor or direct property access
+      // Since we're in browser context, element is a DOM element with these methods
+      const elementRecord: Record<string, unknown> = {};
+      Object.assign(elementRecord, element);
+      const focusMethod = elementRecord["focus"];
+      const selectMethod = elementRecord["select"];
+
+      if (
+        typeof focusMethod === "function" &&
+        typeof selectMethod === "function"
+      ) {
+        // Use Function.prototype.call to invoke without type assertions
+        Function.prototype.call.call(focusMethod, element);
+        Function.prototype.call.call(selectMethod, element);
+      }
+    }
   }, fields[index]);
 
   await new Promise((resolve) => setTimeout(resolve, 1000));

@@ -357,14 +357,35 @@ const loadJsonFiles = (folderPath: string) => {
       }
 
       // Apply other non-link override fields
+      // Skip link fields as they're already handled above
       for (const [key, value] of Object.entries(overrideFields)) {
-        if (
-          !linkFields.includes(key as LinkField) &&
-          key !== "_processed" &&
-          key !== "urls"
-        ) {
-          Object.assign(updatedRow, { [key]: value });
+        // Skip special fields
+        if (key === "_processed" || key === "urls") {
+          continue;
         }
+
+        // Skip link fields (already handled in linkFields loop above)
+        if (
+          key === "ws" ||
+          key === "li" ||
+          key === "fb" ||
+          key === "tw" ||
+          key === "ig" ||
+          key === "gh"
+        ) {
+          continue;
+        }
+
+        // Hard fail if key doesn't exist in the row object (invalid property)
+        if (!(key in updatedRow)) {
+          const validKeys = Object.keys(updatedRow).join(", ");
+          error(
+            `Unexpected override key "${key}" for ${row.name}. Valid keys: ${validKeys}`,
+          );
+          throw new Error(`Invalid override key "${key}" for ${row.name}`);
+        }
+
+        Object.assign(updatedRow, { [key]: value });
       }
 
       // Remove protocol from override-applied URLs

@@ -25,6 +25,12 @@ export default [
       ...prettier.configs.recommended.rules, // Prettier plugin rules
       ...tseslint.configs.strict.rules, // TypeScript strict rules
       "no-undef": "off",
+      "@typescript-eslint/consistent-type-assertions": [
+        "error",
+        {
+          assertionStyle: "never",
+        },
+      ],
       "promise/always-return": "error",
       "promise/no-return-wrap": "error",
       "promise/param-names": "error",

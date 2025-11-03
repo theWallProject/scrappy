@@ -2347,6 +2347,7 @@
       "h"
     ],
     "n": "ACE network",
+    "s": "ACE",
     "fb": "AceHomePage",
     "li": "ace-israel"
   },
@@ -3338,6 +3339,7 @@
       "h"
     ],
     "n": "Adgar Investments & Developments",
+    "s": "ADGR",
     "li": "adgar-investments-&-development"
   },
   {
@@ -5496,6 +5498,7 @@
     ],
     "n": "AI21 Labs",
     "fb": "AI21Labs",
+    "gh": "AI21Labs",
     "ig": "wordtune_official",
     "li": "ai21",
     "tw": "AI21Labs",
@@ -5526,6 +5529,22 @@
     ],
     "n": "AI21 Labs",
     "fb": "wordtune"
+  },
+  {
+    "id": "ai21_manual_gh_AI21X",
+    "r": [
+      "h"
+    ],
+    "n": "AI21 Labs",
+    "gh": "AI21X"
+  },
+  {
+    "id": "ai21_manual_gh_mangate",
+    "r": [
+      "h"
+    ],
+    "n": "AI21 Labs",
+    "gh": "mangate"
   },
   {
     "id": "ai21_manual_li_wordtune",
@@ -7768,6 +7787,7 @@
       "h"
     ],
     "n": "Alon Blue Square",
+    "s": "BSI",
     "li": "alon-blue-square-israel-ltd"
   },
   {
@@ -7787,6 +7807,7 @@
       "h"
     ],
     "n": "Alon Gas Energy Development",
+    "s": "ALGS",
     "li": "alon-natural-gas-exploration-ltd"
   },
   {
@@ -7982,6 +8003,7 @@
       "h"
     ],
     "n": "Alrov Group",
+    "s": "ALRPR",
     "li": "alrov-group"
   },
   {
@@ -8450,6 +8472,7 @@
       "h"
     ],
     "n": "Amanet",
+    "s": "AMAN",
     "li": "aman-amanet"
   },
   {
@@ -8972,6 +8995,7 @@
       "h"
     ],
     "n": "Amot Investments",
+    "s": "AMOT",
     "fb": "%D7%90%D7%9E%D7%95%D7%AA-%D7%94%D7%A9%D7%A7%D7%A2%D7%95%D7%AA-%D7%91%D7%A2%D7%9E-138056042880892",
     "li": "amot-investments-ltd."
   },
@@ -9335,6 +9359,7 @@
       "h"
     ],
     "n": "Analyst IMS Investment Management Services",
+    "s": "ANLT",
     "li": "analyst-ims-investment-management-services-ltd-anlt-"
   },
   {
@@ -9548,6 +9573,7 @@
       "h"
     ],
     "n": "Angel Bakeries",
+    "s": "ANGL",
     "fb": "AngelBakeryIL",
     "li": "angel-bakeries"
   },
@@ -13440,6 +13466,7 @@
       "h"
     ],
     "n": "Ashot Ashkelon",
+    "s": "ASHO",
     "li": "ashot---ashkelon-ltd"
   },
   {
@@ -13457,6 +13484,7 @@
       "h"
     ],
     "n": "Ashtrom Group",
+    "s": "ASHG",
     "li": "ashtrom-group"
   },
   {
@@ -13465,6 +13493,7 @@
       "h"
     ],
     "n": "Ashtrom Properties",
+    "s": "ASPR",
     "li": "ashtrom-properties"
   },
   {
@@ -13727,6 +13756,7 @@
       "h"
     ],
     "n": "Aspen Group",
+    "s": "ASGR",
     "li": "aspen-group-ltd"
   },
   {
@@ -14902,6 +14932,7 @@
       "h"
     ],
     "n": "Aura Investments",
+    "s": "AURA",
     "fb": "auraisrael",
     "li": "aura-israel"
   },
@@ -15237,6 +15268,7 @@
       "h"
     ],
     "n": "AutoMax Motors",
+    "s": "AMX",
     "li": "global-automax"
   },
   {
@@ -15522,6 +15554,7 @@
       "h"
     ],
     "n": "Aviation Links",
+    "s": "AVIA",
     "fb": "kishrey",
     "li": "kishrey-teufa"
   },
@@ -15797,6 +15830,7 @@
       "h"
     ],
     "n": "Avrot Industries",
+    "s": "AVRT",
     "li": "avrot-industries-ltd"
   },
   {
@@ -16299,6 +16333,7 @@
       "h"
     ],
     "n": "Ayalon Insurance",
+    "s": "AYAL",
     "li": "ayalon"
   },
   {
@@ -16415,6 +16450,7 @@
       "h"
     ],
     "n": "Azorim",
+    "s": "AZRM",
     "fb": "Azorimil",
     "li": "azorim",
     "tw": "Azorim_IL"
@@ -16479,6 +16515,7 @@
       "h"
     ],
     "n": "B Communications",
+    "s": "BCOM",
     "li": "bcom1"
   },
   {
@@ -17324,6 +17361,7 @@
       "h"
     ],
     "n": "Bank Leumi",
+    "s": "LUMI",
     "fb": "LeumiDigital",
     "li": "bank-leumi",
     "tw": "leumidigital"
@@ -17353,6 +17391,7 @@
       "h"
     ],
     "n": "Bank of Jerusalem",
+    "s": "JBNK",
     "li": "bank-of-jerusalem"
   },
   {
@@ -18030,6 +18069,7 @@
       "h"
     ],
     "n": "Bazan Group ltd",
+    "s": "ORL",
     "fb": "BazanIL",
     "li": "orl",
     "tw": "BazanGroup"
@@ -19632,6 +19672,7 @@
       "h"
     ],
     "n": "Bet Shemesh Engines Holdings",
+    "s": "BSEN",
     "fb": "betshemeshengines",
     "li": "bet-shemesh-engines-ltd."
   },
@@ -20135,6 +20176,7 @@
       "h"
     ],
     "n": "Bezeq Israeli Telecommunication Corp Ltd",
+    "s": "BEZQ",
     "fb": "Bezeq",
     "li": "bezeq",
     "tw": "bezeq"
@@ -20435,6 +20477,7 @@
       "h"
     ],
     "n": "BIG Shopping Centers",
+    "s": "BIG",
     "fb": "BIGCheckPost",
     "li": "big-shopping-centers"
   },
@@ -20611,6 +20654,7 @@
       "h"
     ],
     "n": "Bikurey Hasade Holdings",
+    "s": "BKRY",
     "li": "bikurey-hasade-darom-agriculture-products-marketing-2002-ltd"
   },
   {
@@ -21338,6 +21382,7 @@
       "h"
     ],
     "n": "BioLight Israeli Life Sciences Investments Ltd",
+    "s": "BOLT",
     "li": "bio-light"
   },
   {
@@ -21731,6 +21776,7 @@
       "h"
     ],
     "n": "BioView",
+    "s": "BIOV",
     "li": "80102"
   },
   {
@@ -21825,6 +21871,7 @@
       "h"
     ],
     "n": "Birman Wood & Hardware",
+    "s": "BIRM",
     "li": "birman-ltd-"
   },
   {
@@ -22207,6 +22254,7 @@
       "h"
     ],
     "n": "Bizportal",
+    "s": "TREN",
     "fb": "BizportalPage",
     "li": "bizportal.co.il",
     "tw": "bizportalnews"
@@ -23275,6 +23323,7 @@
     ],
     "n": "Bluesky",
     "fb": "blueskysocialweb",
+    "gh": "bluesky-social",
     "li": "bluesky-pbllc",
     "tw": "bluesky",
     "ws": "bsky.social"
@@ -23746,6 +23795,7 @@
       "h"
     ],
     "n": "Bonei Hatichon",
+    "s": "BOTI",
     "fb": "boneihatichon",
     "li": "boneihatihon"
   },
@@ -25419,6 +25469,7 @@
       "h"
     ],
     "n": "Brimag Digital",
+    "s": "BRMG",
     "fb": "BrimagDigital",
     "li": "brimag-service"
   },
@@ -27527,6 +27578,7 @@
       "h"
     ],
     "n": "Camtek",
+    "s": "CAMT",
     "li": "camtek"
   },
   {
@@ -28356,6 +28408,7 @@
       "h"
     ],
     "n": "Carasso Motors",
+    "s": "CRSO",
     "fb": "RENAULT.CO.IL",
     "li": "carasso-motors"
   },
@@ -28998,6 +29051,7 @@
       "h"
     ],
     "n": "Carmit",
+    "s": "CRMT",
     "fb": "carmit.il"
   },
   {
@@ -29979,6 +30033,7 @@
       "h"
     ],
     "n": "Cellcom Israel",
+    "s": "CEL",
     "fb": "cellcom.apps",
     "li": "cellcom",
     "tw": "cellcom_il"
@@ -30690,6 +30745,7 @@
       "h"
     ],
     "n": "Cham Foods",
+    "s": "CHAM",
     "li": "cham-foods-israel-ltd-cham-"
   },
   {
@@ -32121,6 +32177,7 @@
       "h"
     ],
     "n": "Clal Biotechnology Industries",
+    "s": "CBI",
     "li": "clal-biotechnology-industries"
   },
   {
@@ -32129,6 +32186,7 @@
       "h"
     ],
     "n": "Clal Credit Insurance",
+    "s": "CLIS",
     "fb": "347786717159",
     "li": "clal-credit-insurance"
   },
@@ -32138,6 +32196,7 @@
       "h"
     ],
     "n": "Clal Insurance Enterprises Holdings",
+    "s": "CLIS",
     "li": "clal-insurance"
   },
   {
@@ -34122,6 +34181,7 @@
       "h"
     ],
     "n": "Cofix",
+    "s": "CFX",
     "fb": "Cofix.co.il",
     "li": "cofix",
     "tw": "cofix_il"
@@ -41105,6 +41165,7 @@
       "h"
     ],
     "n": "Danel Group",
+    "s": "DANE",
     "fb": "DanelTeam",
     "li": "danel-group-adir-yehoshua-ltd"
   },
@@ -41233,6 +41294,7 @@
       "h"
     ],
     "n": "Danya Cebus Construction LLC",
+    "s": "DNYA",
     "fb": "Denyagroup",
     "li": "danya-cebus-ltd."
   },
@@ -43184,6 +43246,7 @@
       "h"
     ],
     "n": "Delek Motors",
+    "s": "DLEA",
     "li": "delek-motors-ltd-"
   },
   {
@@ -45894,6 +45957,7 @@
       "h"
     ],
     "n": "Dor Alon",
+    "s": "DRAL",
     "fb": "dor.alon.il",
     "li": "dor-alon-group"
   },
@@ -47302,6 +47366,7 @@
       "h"
     ],
     "n": "Duniec",
+    "s": "DUNI",
     "fb": "%D7%90%D7%97%D7%99%D7%9D-%D7%93%D7%95%D7%A0%D7%99%D7%A5-%D7%91%D7%A0%D7%99%D7%94-%D7%A4%D7%99%D7%AA%D7%95%D7%97-%D7%95%D7%99%D7%96%D7%9E%D7%95%D7%AA-Dunietz-105322930808530"
   },
   {
@@ -49578,6 +49643,7 @@
       "h"
     ],
     "n": "El-Mor Electric",
+    "s": "ELMR",
     "li": "el-mor-industries"
   },
   {
@@ -49717,6 +49783,7 @@
       "h"
     ],
     "n": "Elco Israel",
+    "s": "ELCO",
     "li": "elco-ltd"
   },
   {
@@ -49788,6 +49855,7 @@
       "h"
     ],
     "n": "Eldav Investments",
+    "s": "ELDAV",
     "li": "eldav-investments"
   },
   {
@@ -49841,6 +49909,7 @@
       "h"
     ],
     "n": "Electra",
+    "s": "ELCRE",
     "fb": "ElectraGroup.OfficialPage",
     "li": "electra"
   },
@@ -49850,6 +49919,7 @@
       "h"
     ],
     "n": "Electra Consumer Products",
+    "s": "ECP",
     "li": "electra-consumer-products-ltd"
   },
   {
@@ -51095,6 +51165,7 @@
       "h"
     ],
     "n": "Emilia",
+    "s": "EMDV",
     "li": "emilia-development"
   },
   {
@@ -56750,6 +56821,7 @@
       "h"
     ],
     "n": "Fattal Hotels",
+    "s": "FTAL",
     "fb": "FattalHotelsIsrael",
     "li": "fattal-hotels",
     "tw": "fattal_hotels"
@@ -57413,6 +57485,7 @@
       "h"
     ],
     "n": "FIBI Holding",
+    "s": "FIBI",
     "li": "first-international-bank-of-israel"
   },
   {
@@ -60890,6 +60963,7 @@
       "h"
     ],
     "n": "Fox-Wizel",
+    "s": "FOX",
     "li": "fox-wizel-ltd"
   },
   {
@@ -61352,6 +61426,7 @@
       "h"
     ],
     "n": "Fridenson",
+    "s": "FRDN",
     "fb": "Fridenson-160550060627485",
     "li": "fridenson"
   },
@@ -62315,6 +62390,7 @@
       "h"
     ],
     "n": "G. Willi-Food",
+    "s": "WILC",
     "li": "willi-food"
   },
   {
@@ -62349,6 +62425,7 @@
       "h"
     ],
     "n": "G.P. Global Power",
+    "s": "GPGB",
     "fb": "GP-Global-Power-2280633422024104",
     "li": "globalpowerltd"
   },
@@ -62894,6 +62971,7 @@
       "h"
     ],
     "n": "Gali",
+    "s": "BRIL",
     "fb": "galimenicure"
   },
   {
@@ -63637,6 +63715,7 @@
       "h"
     ],
     "n": "Gav-Yam",
+    "s": "BYSD",
     "fb": "Gav-Yam-%D7%92%D7%91-%D7%99%D7%9D-1534546986785517",
     "li": "gav-yam"
   },
@@ -65913,6 +65992,7 @@
       "h"
     ],
     "n": "Givot Olam Oil Exploration",
+    "s": "GIVO.L",
     "li": "givot-olam-oil-exploration-lp-gooxf-"
   },
   {
@@ -67291,6 +67371,7 @@
       "h"
     ],
     "n": "Golf Group",
+    "s": "GOLF",
     "fb": "golf.il",
     "li": "golfisrael"
   },
@@ -70033,6 +70114,7 @@
       "h"
     ],
     "n": "Hadera Paper",
+    "s": "HAP",
     "li": "haderapaper2"
   },
   {
@@ -70068,6 +70150,7 @@
       "h"
     ],
     "n": "Hagag Group",
+    "s": "HGG",
     "fb": "HAGAGROUP",
     "li": "hagag-group-real-estate-development-ltd"
   },
@@ -70375,6 +70458,7 @@
       "h"
     ],
     "n": "Hamashbir 365",
+    "s": "MSBI",
     "fb": "mashbir",
     "li": "hamashbir-lazarchan"
   },
@@ -70394,6 +70478,7 @@
       "h"
     ],
     "n": "Hamat",
+    "s": "HAMAT",
     "fb": "HamatHarsa",
     "li": "hamat"
   },
@@ -70468,6 +70553,7 @@
       "h"
     ],
     "n": "Hanan Mor Group",
+    "s": "HNMR",
     "li": "hanan-mor-group-holdings-ltd-hnmr-"
   },
   {
@@ -71166,6 +71252,7 @@
       "h"
     ],
     "n": "HBL Hadasit Bio Holdings",
+    "s": "HADSY",
     "li": "hadasit-bio-holdings-ltd-",
     "tw": "HadasitBio"
   },
@@ -71764,6 +71851,7 @@
       "h"
     ],
     "n": "Helman-Aldubi Investment House",
+    "s": "HAIN",
     "li": "halman-aldubi-group",
     "tw": "Halman_Aldubi"
   },
@@ -72576,6 +72664,7 @@
       "h"
     ],
     "n": "Hilan Tech",
+    "s": "HLAN",
     "li": "hilan"
   },
   {
@@ -73049,6 +73138,7 @@
       "h"
     ],
     "n": "Hod Assaf Industries",
+    "s": "HOD",
     "li": "hod-assaf-industries"
   },
   {
@@ -76240,6 +76330,7 @@
       "h"
     ],
     "n": "IDI Insurance",
+    "s": "IDIN",
     "fb": "555.yashir",
     "li": "%D7%91%D7%99%D7%98%D7%95%D7%97-%D7%99%D7%A9%D7%99%D7%A8-bituach-yashir-"
   },
@@ -78406,6 +78497,7 @@
       "h"
     ],
     "n": "Infinity Medical",
+    "s": "IMED.L",
     "fb": "InfinityMedicalIMED",
     "li": "infinity-medical-imed"
   },
@@ -80420,6 +80512,7 @@
       "h"
     ],
     "n": "Inter Industries",
+    "s": "ININ",
     "li": "inter-industries-plus"
   },
   {
@@ -80459,6 +80552,7 @@
       "h"
     ],
     "n": "Inter-Gamma Investment",
+    "s": "INTR",
     "fb": "Intergamma122"
   },
   {
@@ -82087,6 +82181,7 @@
       "h"
     ],
     "n": "Isracard",
+    "s": "ISCD",
     "fb": "Isracardfb",
     "li": "isracard",
     "tw": "Isracard"
@@ -82155,6 +82250,7 @@
       "h"
     ],
     "n": "Israel Canada",
+    "s": "ISCN",
     "fb": "Israel.Canada.Group",
     "li": "israel-canada-real-estate"
   },
@@ -82251,6 +82347,7 @@
       "h"
     ],
     "n": "Israel Discount Bank",
+    "s": "DSCT",
     "fb": "discountbank",
     "li": "15113",
     "tw": "discountbank"
@@ -82270,6 +82367,7 @@
       "h"
     ],
     "n": "Israel Electric Corporation",
+    "s": "ILCO",
     "fb": "israelelectric",
     "li": "israel-electric-company",
     "tw": "IecIsrael"
@@ -82423,6 +82521,7 @@
       "h"
     ],
     "n": "Israel Land Development Company",
+    "s": "ILDC",
     "li": "the-israel-land-development-company-ltd"
   },
   {
@@ -82431,6 +82530,7 @@
       "h"
     ],
     "n": "Israel Land Development Urban Renewal",
+    "s": "ILDR",
     "fb": "%D7%94%D7%9B%D7%A9%D7%A8%D7%AA-%D7%94%D7%99%D7%A9%D7%95%D7%91-%D7%94%D7%AA%D7%97%D7%93%D7%A9%D7%95%D7%AA-%D7%A2%D7%99%D7%A8%D7%95%D7%A0%D7%99%D7%AA-237667493801258",
     "li": "%D7%94%D7%9B%D7%A9%D7%A8%D7%AA-%D7%94%D7%99%D7%A9%D7%95%D7%91-%D7%94%D7%AA%D7%97%D7%93%D7%A9%D7%95%D7%AA-%D7%A2%D7%99%D7%A8%D7%95%D7%A0%D7%99%D7%AA"
   },
@@ -82506,6 +82606,7 @@
       "h"
     ],
     "n": "Israel Opportunity",
+    "s": "ISOP.L",
     "li": "israel-opportunity-energy-resources-lp"
   },
   {
@@ -83173,6 +83274,7 @@
       "h"
     ],
     "n": "Isrotel Hotel Chain",
+    "s": "ISRO",
     "fb": "Isrotel",
     "li": "isrotel-hotel-chain",
     "tw": "IsrotelHotels"
@@ -83183,6 +83285,7 @@
       "h"
     ],
     "n": "Issta Sport",
+    "s": "ISTA",
     "fb": "issta",
     "li": "issta",
     "tw": "issta"
@@ -86627,6 +86730,7 @@
       "h"
     ],
     "n": "Kardan Real Estate",
+    "s": "KARE",
     "li": "kardan-nadlan"
   },
   {
@@ -88797,6 +88901,7 @@
       "h"
     ],
     "n": "Klil Industries",
+    "s": "KLIL",
     "fb": "klil.ind",
     "li": "klil-ind"
   },
@@ -90888,6 +90993,7 @@
       "h"
     ],
     "n": "Lapidoth Capital",
+    "s": "LAPD",
     "li": "lapidoth-israel-oil-prospectors-corp-"
   },
   {
@@ -91438,6 +91544,7 @@
       "h"
     ],
     "n": "Leader Holdings & Investments",
+    "s": "LDER",
     "li": "leader-capital-markets-ltd"
   },
   {
@@ -92619,6 +92726,7 @@
       "h"
     ],
     "n": "Levinstein Properties",
+    "s": "LVPR",
     "fb": "levinstein.group",
     "li": "levinstein"
   },
@@ -95252,6 +95360,7 @@
       "h"
     ],
     "n": "LUDAN Engineering Co.",
+    "s": "LUDN",
     "li": "105052"
   },
   {
@@ -97136,6 +97245,7 @@
       "h"
     ],
     "n": "Maman",
+    "s": "MMAN",
     "li": "maman"
   },
   {
@@ -98293,6 +98403,7 @@
       "h"
     ],
     "n": "Maslavi Construction",
+    "s": "MSLA",
     "fb": "matzlawiLtd",
     "li": "%D7%9E%D7%A6%D7%9C%D7%90%D7%95%D7%99-%D7%91%D7%A0%D7%99%D7%94-%D7%95%D7%99%D7%96%D7%9E%D7%95%D7%AA-%D7%A0%D7%93%D7%9C-%D7%9F-matzlawi-construction-co-ltd"
   },
@@ -98612,6 +98723,7 @@
       "h"
     ],
     "n": "Matrix",
+    "s": "MTRX",
     "fb": "Matrixtechnology",
     "li": "matrix"
   },
@@ -100553,6 +100665,7 @@
       "h"
     ],
     "n": "Medtechnica Ltd",
+    "s": "MEDI",
     "li": "medtechnica"
   },
   {
@@ -100795,6 +100908,7 @@
       "h"
     ],
     "n": "Mega Or",
+    "s": "MGOR",
     "li": "mega-or-holdings-ltd"
   },
   {
@@ -100867,6 +100981,7 @@
       "h"
     ],
     "n": "Mehadrin Tnuport Export",
+    "s": "MEDN",
     "fb": "mehadrin",
     "li": "mehadrin-tnuport-export-l-p-",
     "tw": "MehadrinTnuport"
@@ -101101,6 +101216,7 @@
       "h"
     ],
     "n": "Melisron",
+    "s": "MLSR",
     "li": "melisron"
   },
   {
@@ -101383,6 +101499,7 @@
       "h"
     ],
     "n": "Menora Mivtachim Insurance",
+    "s": "MMHD",
     "li": "125279"
   },
   {
@@ -101729,6 +101846,7 @@
       "h"
     ],
     "n": "Meshek Energy Renewable Energies",
+    "s": "MSKE",
     "fb": "meshekenergy",
     "li": "meshek-energy"
   },
@@ -102531,6 +102649,7 @@
       "h"
     ],
     "n": "Michman Basad",
+    "s": "MCMN",
     "fb": "%D7%9E%D7%99%D7%9B%D7%9E%D7%9F-%D7%90%D7%A9%D7%A8%D7%90%D7%99-%D7%9C%D7%A2%D7%A1%D7%A7%D7%99%D7%9D-2085636588352259",
     "li": "michman-bsd"
   },
@@ -103054,6 +103173,7 @@
       "h"
     ],
     "n": "Migdal Insurance and Financial Holdings",
+    "s": "MGDL",
     "fb": "migdalnet",
     "li": "migdal-group"
   },
@@ -103824,6 +103944,7 @@
       "h"
     ],
     "n": "Minrav",
+    "s": "MNRV",
     "fb": "MinravGroupltd",
     "li": "minrav-group-ltd"
   },
@@ -104259,6 +104380,7 @@
       "h"
     ],
     "n": "Mivne Group",
+    "s": "MVNE",
     "fb": "mivnegroup.co.il",
     "li": "mivne-group"
   },
@@ -104277,6 +104399,7 @@
       "h"
     ],
     "n": "Mivtach Shamir Holdings LTD",
+    "s": "MISH",
     "li": "mivtach-shamir-energy-ltd"
   },
   {
@@ -104379,6 +104502,7 @@
       "h"
     ],
     "n": "Mizrahi Tefahot Bank",
+    "s": "MZTF",
     "li": "92665"
   },
   {
@@ -104424,6 +104548,7 @@
       "h"
     ],
     "n": "MLRN Projects and Trade",
+    "s": "MLRN",
     "li": "mlrn"
   },
   {
@@ -106094,6 +106219,7 @@
       "h"
     ],
     "n": "More Investment House",
+    "s": "MRIN",
     "fb": "moreinvest.co.il",
     "li": "more-investment-house"
   },
@@ -109598,6 +109724,7 @@
     "n": "Nebius Group",
     "s": "NBISN",
     "fb": "globaltoloka",
+    "gh": "Toloka",
     "ig": "avride.ai",
     "tw": "TripleTenTech",
     "ws": "nebius.com"
@@ -109609,6 +109736,22 @@
     ],
     "n": "Nebius Group",
     "fb": "tripleten.tech"
+  },
+  {
+    "id": "nebius-group_manual_gh_nebius",
+    "r": [
+      "f"
+    ],
+    "n": "Nebius Group",
+    "gh": "nebius"
+  },
+  {
+    "id": "nebius-group_manual_gh_tractoai",
+    "r": [
+      "f"
+    ],
+    "n": "Nebius Group",
+    "gh": "tractoai"
   },
   {
     "id": "nebius-group_manual_ig_tripleten.tech",
@@ -110465,6 +110608,7 @@
       "h"
     ],
     "n": "Neto Group",
+    "s": "NTO",
     "li": "neto-group"
   },
   {
@@ -111976,7 +112120,6 @@
       "h"
     ],
     "n": "NICE",
-    "s": "NICE",
     "fb": "OfficialNICELtd",
     "li": "nice-systems",
     "tw": "NICELtd",
@@ -113444,6 +113587,7 @@
       "h"
     ],
     "n": "Novolog",
+    "s": "NVLG",
     "fb": "Novolog-Group-285353635695351",
     "li": "novolog"
   },
@@ -114397,7 +114541,6 @@
       "i"
     ],
     "n": "Objet Geometries",
-    "s": "SSYS",
     "ws": "stratasys.com"
   },
   {
@@ -116147,6 +116290,7 @@
       "h"
     ],
     "n": "One1",
+    "s": "ONE",
     "li": "one1"
   },
   {
@@ -116620,6 +116764,7 @@
       "h"
     ],
     "n": "Opal Balance",
+    "s": "OPAL",
     "fb": "opalbalance1"
   },
   {
@@ -118158,6 +118303,7 @@
       "h"
     ],
     "n": "Oron Group",
+    "s": "ORON",
     "li": "oron-group-investments-and-holdings-ltd"
   },
   {
@@ -118267,6 +118413,7 @@
       "h"
     ],
     "n": "Ortal",
+    "s": "TDGN",
     "li": "ortal-diecasting-ltd-"
   },
   {
@@ -118999,6 +119146,7 @@
       "h"
     ],
     "n": "Overseas Commerce",
+    "s": "OVRS",
     "li": "overseas-commerce"
   },
   {
@@ -119488,6 +119636,7 @@
       "h"
     ],
     "n": "P.L.T. Financ",
+    "s": "PLTF",
     "fb": "PLTIL"
   },
   {
@@ -120017,6 +120166,7 @@
       "h"
     ],
     "n": "Panaxia Pharmaceutical Industries",
+    "s": "PNAX",
     "li": "panaxia-pharmaceutical-industries-ltd."
   },
   {
@@ -121444,7 +121594,6 @@
       "h"
     ],
     "n": "Payton Industries",
-    "s": "PAY",
     "fb": "Payton-America-Inc-346566595418860",
     "li": "payton-planar-magnetics-ltd",
     "ws": "paytongroup.com"
@@ -121513,6 +121662,7 @@
       "h"
     ],
     "n": "Paz Oil Company",
+    "s": "PZOL",
     "fb": "yellowpaz",
     "li": "paz-oil-company"
   },
@@ -123099,6 +123249,7 @@
       "h"
     ],
     "n": "Phoenix Financial",
+    "s": "PHOE",
     "fb": "fnx.co.il",
     "li": "phoenixfinancialltd"
   },
@@ -124882,6 +125033,7 @@
       "h"
     ],
     "n": "Plasto-Cargal Group",
+    "s": "PLCR",
     "li": "cargal-limited"
   },
   {
@@ -125522,6 +125674,7 @@
       "f"
     ],
     "n": "Plus500 Cyprus",
+    "s": "P55",
     "li": "plus500-official-page"
   },
   {
@@ -126965,6 +127118,7 @@
       "h"
     ],
     "n": "Prashkovsky",
+    "s": "PRSK",
     "fb": "prashkovsky.ashi",
     "li": "prashkovsky-investments-and-construction-ltd-prsk-"
   },
@@ -128678,6 +128832,7 @@
       "h"
     ],
     "n": "Property & Building Corp.",
+    "s": "PTBL",
     "li": "pbc-usa-idb-group"
   },
   {
@@ -128903,6 +129058,7 @@
       "i"
     ],
     "n": "Protect AI",
+    "gh": "protectai",
     "li": "protect-ai",
     "tw": "protectaicorp",
     "ws": "protectai.com"
@@ -131152,6 +131308,7 @@
       "h"
     ],
     "n": "Quik",
+    "s": "QUIK",
     "li": "bringbring"
   },
   {
@@ -131983,6 +132140,7 @@
       "h"
     ],
     "n": "Ralco Agencies",
+    "s": "RLCO",
     "li": "ralco-agencies-rlco-"
   },
   {
@@ -132057,6 +132215,7 @@
       "h"
     ],
     "n": "Ramdor Computer Systems",
+    "s": "TOPS",
     "li": "ramdor"
   },
   {
@@ -132268,6 +132427,7 @@
       "h"
     ],
     "n": "Rapac",
+    "s": "RPAC",
     "li": "rapac-group"
   },
   {
@@ -134283,6 +134443,7 @@
       "h"
     ],
     "n": "REIT1",
+    "s": "RIT1",
     "li": "reit-1-ltd"
   },
   {
@@ -137811,6 +137972,7 @@
       "h"
     ],
     "n": "Rotshtein",
+    "s": "ROTS",
     "fb": "rotshtein.il",
     "li": "rotshtein-realestate-ltd"
   },
@@ -140013,6 +140175,7 @@
       "h"
     ],
     "n": "Sano",
+    "s": "SANO1",
     "fb": "Sano-297078520972787",
     "li": "sano-ltd"
   },
@@ -143499,6 +143662,7 @@
     "n": "SentinelOne",
     "s": "S",
     "fb": "SentinelOne",
+    "gh": "Sentinel-One",
     "li": "sentinelone-dach",
     "tw": "SentinelOne",
     "ws": "sentinelone.com"
@@ -143536,6 +143700,7 @@
       "h"
     ],
     "n": "Sentra",
+    "gh": "sentraio",
     "li": "sentra-io",
     "tw": "sentra_security",
     "ws": "sentra.io",
@@ -144366,6 +144531,7 @@
       "h"
     ],
     "n": "Shagrir Group",
+    "s": "SHGR",
     "fb": "shagrir.fans",
     "li": "shagrir-systems",
     "tw": "Shagrir2"
@@ -144748,6 +144914,7 @@
       "h"
     ],
     "n": "Shapir",
+    "s": "SPEN",
     "fb": "Shapir-engineering-148610365231663",
     "li": "shapir-civil-and-marine-engineering-ltd-"
   },
@@ -145245,6 +145412,7 @@
       "h"
     ],
     "n": "Shemen Industries",
+    "s": "SMNIN",
     "li": "shemen-industries-ltd"
   },
   {
@@ -145484,6 +145652,7 @@
       "h"
     ],
     "n": "Shikun & Binui Energy",
+    "s": "SBEN",
     "li": "shikun-binui-renewable-energy"
   },
   {
@@ -146250,6 +146419,7 @@
       "h"
     ],
     "n": "Shufersal",
+    "s": "SAE",
     "fb": "shufersal",
     "li": "shufersal"
   },
@@ -147135,6 +147305,7 @@
     ],
     "n": "Silverfort",
     "fb": "silverfort",
+    "gh": "silverfort-open-source",
     "ig": "life_at_silverfort",
     "li": "silverfort",
     "tw": "silverfort",
@@ -150685,6 +150856,7 @@
       "h"
     ],
     "n": "Solegreen",
+    "s": "SLGN",
     "li": "solegreen"
   },
   {
@@ -152349,6 +152521,7 @@
     ],
     "n": "Speedata",
     "fb": "speedata.io",
+    "gh": "Speedata-io",
     "li": "speedataio",
     "ws": "speedata.io",
     "alt": [
@@ -154551,6 +154724,7 @@
       "h"
     ],
     "n": "STG International",
+    "s": "STG",
     "li": "stg-int"
   },
   {
@@ -155077,6 +155251,7 @@
       "i"
     ],
     "n": "Stratasys",
+    "s": "SSYS",
     "fb": "stratasys",
     "li": "415728",
     "tw": "Stratasys"
@@ -156094,6 +156269,7 @@
       "h"
     ],
     "n": "Summit Real Estate",
+    "s": "SMT",
     "li": "summit-real-estate-holdings-ltd-smt-"
   },
   {
@@ -159533,6 +159709,7 @@
       "h"
     ],
     "n": "Tapuz",
+    "s": "USER",
     "fb": "tapuz.co.il",
     "li": "tapuz",
     "tw": "TapuzAnashim"
@@ -160869,6 +161046,7 @@
       "h"
     ],
     "n": "Tel Aviv Stock Exchange",
+    "s": "TVAVF",
     "fb": "tase.il",
     "li": "tel-aviv-stock-exchange",
     "tw": "tase_he"
@@ -161172,6 +161350,7 @@
       "h"
     ],
     "n": "Telsys",
+    "s": "TLSY",
     "li": "telsys"
   },
   {
@@ -164220,6 +164399,7 @@
       "h"
     ],
     "n": "Tigbur",
+    "s": "TIGBUR",
     "li": "tigbur-ltd",
     "tw": "tigbur1978"
   },
@@ -164846,6 +165026,7 @@
       "h"
     ],
     "n": "Tiv Taam",
+    "s": "TTAM",
     "fb": "TivTaamIL",
     "li": "tivtaam"
   },
@@ -165757,6 +165938,7 @@
       "h"
     ],
     "n": "Top Group",
+    "s": "TOPS",
     "fb": "topgroupisrael",
     "li": "top-group-software-solutions"
   },
@@ -166056,6 +166238,7 @@
     ],
     "n": "Torq",
     "fb": "torqhq",
+    "gh": "torqio",
     "ig": "torq_io",
     "li": "torqio",
     "tw": "torq_io",
@@ -169154,6 +169337,7 @@
       "h"
     ],
     "n": "Turpaz",
+    "s": "TRPZ",
     "li": "turpaz-industries-ltd"
   },
   {
@@ -170431,6 +170615,7 @@
       "h"
     ],
     "n": "Unicorn Technologies",
+    "s": "UNCT",
     "li": "unicorn-technologies-limited-partnership"
   },
   {
@@ -172497,6 +172682,7 @@
     ],
     "n": "VAST Data",
     "fb": "vastdata",
+    "gh": "vast-data",
     "li": "vast-data",
     "tw": "VAST_data",
     "ws": "vastdata.com"
@@ -174101,6 +174287,7 @@
       "h"
     ],
     "n": "Victory",
+    "s": "VCTR",
     "li": "victory-supermarket"
   },
   {
@@ -174526,6 +174713,7 @@
       "h"
     ],
     "n": "Villar International",
+    "s": "VILR",
     "fb": "VillarInternational",
     "li": "villar-international-ltd"
   },
@@ -175346,6 +175534,7 @@
       "h"
     ],
     "n": "Vitania",
+    "s": "VTNA",
     "fb": "vitaniaisrael"
   },
   {
@@ -176649,7 +176838,6 @@
       "i"
     ],
     "n": "Walkme",
-    "s": "WKME",
     "ws": "walkme.com"
   },
   {
@@ -176659,6 +176847,7 @@
       "i"
     ],
     "n": "WalkMe",
+    "s": "WKME",
     "fb": "WalkMe",
     "li": "walkme",
     "tw": "WalkMeInc"
@@ -177347,6 +177536,7 @@
       "h"
     ],
     "n": "Wearable Devices",
+    "s": "WLDS",
     "fb": "mudrawld",
     "li": "wearable-devices-ltd",
     "tw": "Mudra_Strap"
@@ -178612,6 +178802,7 @@
       "h"
     ],
     "n": "weSure",
+    "s": "WESR",
     "fb": "wesureins",
     "li": "wesure-insurance-company-ltd"
   },
@@ -181159,6 +181350,7 @@
       "h"
     ],
     "n": "Xenia Venture Capital",
+    "s": "XENIA",
     "li": "xenia-ventures"
   },
   {
@@ -181826,6 +182018,7 @@
       "h"
     ],
     "n": "Y.H.Dimri",
+    "s": "DIMRI",
     "li": "y-h-dimri"
   },
   {
@@ -182474,6 +182667,7 @@
       "h"
     ],
     "n": "YBOX",
+    "s": "YBOX",
     "fb": "yboxrealestate",
     "li": "ybox-real-estate-ltd"
   },
@@ -183735,6 +183929,7 @@
       "h"
     ],
     "n": "Z.M.H Hammerman",
+    "s": "ZMH",
     "li": "z.m.h-hammerman-ltd"
   },
   {
@@ -184608,6 +184803,7 @@
       "h"
     ],
     "n": "Zim Urban",
+    "s": "RANI",
     "fb": "zimarad",
     "li": "zim-urban-usa"
   },

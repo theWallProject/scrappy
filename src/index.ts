@@ -22,7 +22,9 @@ if (require.main === module) {
       (("name" in reason && reason.name === "ExitPromptError") ||
         ("constructor" in reason &&
           reason.constructor &&
-          (reason.constructor as { name?: string }).name === "ExitPromptError"))
+          typeof reason.constructor === "function" &&
+          "name" in reason.constructor &&
+          reason.constructor.name === "ExitPromptError"))
     ) {
       return;
     }

@@ -55519,8 +55519,7 @@
     "id": "nice-e1d1",
     "selector": "nice.com",
     "name": "NICE",
-    "reasons": ["h"],
-    "s": "NICE"
+    "reasons": ["h"]
   },
   {
     "id": "actimize",
@@ -60318,8 +60317,7 @@
     "id": "payton-industries",
     "selector": "paytongroup.com",
     "name": "Payton Industries",
-    "reasons": ["h"],
-    "s": "PAY"
+    "reasons": ["h"]
   },
   {
     "id": "tweed-payments",
@@ -77186,8 +77184,7 @@
     "id": "objet-geometrics",
     "selector": "stratasys.com",
     "name": "Objet Geometries",
-    "reasons": ["h", "i"],
-    "s": "SSYS"
+    "reasons": ["h", "i"]
   },
   {
     "id": "stratavar",
@@ -87788,8 +87785,7 @@
     "id": "BIT_Walkme",
     "selector": "walkme.com",
     "name": "Walkme",
-    "reasons": ["h", "f", "i"],
-    "s": "WKME"
+    "reasons": ["h", "f", "i"]
   },
   {
     "id": "walkout",

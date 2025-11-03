@@ -55,7 +55,11 @@ const loadManualOverrides = (): Record<string, ManualOverrideValue> => {
   delete require.cache[resolvedPath];
   // eslint-disable-next-line @typescript-eslint/no-require-imports
   const module = require(modulePath);
-  return (module.manualOverrides || {}) as Record<string, ManualOverrideValue>;
+  const overrides = (module.manualOverrides || {}) satisfies Record<
+    string,
+    ManualOverrideValue
+  >;
+  return overrides;
 };
 
 const formatValue = (value: ManualOverrideValue): string => {
@@ -1361,10 +1365,13 @@ export async function run() {
           get: () => ["en-US", "en"],
         });
         // Remove Chrome automation indicator
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        (window as any).chrome = {
-          runtime: {},
-        };
+        // Extend Window interface for chrome property
+        // Use Object.defineProperty to avoid type assertion
+        Object.defineProperty(window, "chrome", {
+          value: { runtime: {} },
+          writable: true,
+          configurable: true,
+        });
       });
     }
 
@@ -1380,10 +1387,13 @@ export async function run() {
         Object.defineProperty(navigator, "languages", {
           get: () => ["en-US", "en"],
         });
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        (window as any).chrome = {
-          runtime: {},
-        };
+        // Extend Window interface for chrome property
+        // Use Object.defineProperty to avoid type assertion
+        Object.defineProperty(window, "chrome", {
+          value: { runtime: {} },
+          writable: true,
+          configurable: true,
+        });
       });
     });
 
@@ -1394,16 +1404,45 @@ export async function run() {
     if (changes && Object.keys(changes).length > 0) {
       // Has changes - update with the changes
       log(`  ✏️ Changes detected for ${item.name}:`, changes);
-      currentOverrides[item.name] = {
-        ...changes,
+      // OverrideWithUrls returns single string values, convert to ManualOverrideFields format
+      // ManualOverrideFields allows arrays for ig/gh, but ws/li/fb/tw must be single strings
+      const override: ManualOverrideFields &
+        ProcessedState & {
+          urls?: string[];
+        } = {
         _processed: true,
-      } as Partial<ScrappedItemType> & ProcessedState;
+      };
+
+      for (const [key, value] of Object.entries(changes)) {
+        if (key === "urls" && Array.isArray(value)) {
+          override.urls = value;
+        } else if (
+          key === "ws" ||
+          key === "li" ||
+          key === "fb" ||
+          key === "tw"
+        ) {
+          // These must be single strings (from ScrappedItemType)
+          if (typeof value === "string") {
+            override[key] = value;
+          } else if (Array.isArray(value) && value.length > 0) {
+            // Convert array to first element
+            override[key] = value[0];
+          }
+        } else if (key === "ig" || key === "gh") {
+          // These can be arrays in ManualOverrideFields
+          override[key] = value;
+        }
+      }
+
+      currentOverrides[item.name] = override;
     } else {
       // No changes - mark as processed
       log(`  ✓ No changes for ${item.name}`);
-      currentOverrides[item.name] = {
+      const override: ProcessedState = {
         _processed: true,
-      } as ProcessedState;
+      };
+      currentOverrides[item.name] = override;
     }
 
     // Save after each item

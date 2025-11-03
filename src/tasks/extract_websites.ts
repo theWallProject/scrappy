@@ -140,7 +140,17 @@ function mergeObjects(
 ): APIEndpointDomainsResult {
   const merged: APIEndpointDomainsResult = { ...obj1 };
 
-  for (const key of Object.keys(obj2) as (keyof APIEndpointDomainsResult)[]) {
+  // Type guard helper
+  const isAPIEndpointKey = (
+    key: string,
+  ): key is keyof APIEndpointDomainsResult => {
+    return key in obj1;
+  };
+
+  for (const key of Object.keys(obj2)) {
+    if (!isAPIEndpointKey(key)) {
+      continue;
+    }
     if (
       key === "reasons"
       // Array.isArray(obj2Value) &&

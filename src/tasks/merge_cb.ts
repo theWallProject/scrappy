@@ -87,7 +87,15 @@ function mergeObjects(
 ): ScrappedItemType {
   const merged: ScrappedItemType = { ...obj1 };
 
-  for (const key of Object.keys(obj2) as (keyof ScrappedItemType)[]) {
+  // Type guard helper
+  const isScrappedItemKey = (key: string): key is keyof ScrappedItemType => {
+    return key in obj1;
+  };
+
+  for (const key of Object.keys(obj2)) {
+    if (!isScrappedItemKey(key)) {
+      continue;
+    }
     if (
       key === "reasons"
       // Array.isArray(obj2Value) &&

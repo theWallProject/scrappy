@@ -18,7 +18,10 @@ const injectStaticRows = () => {
     const { name, reasons, ws, li, fb, tw } = safeItem;
 
     for (const [index, website] of ws.entries()) {
-      const _website = cleanWebsite(website) as string;
+      const _website = cleanWebsite(website);
+      if (!_website) {
+        continue;
+      }
 
       merged.push({
         name,
