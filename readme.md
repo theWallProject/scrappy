@@ -111,3 +111,26 @@ Defined in `src/tasks/manual_resolve/duplicate.ts`:
 - Scraping can be time-consuming; existing batch files are skipped
 - Pipeline is resumable
 - Manual resolution handles edge cases
+
+## Adding a New Social Media Platform
+
+Follow these steps (use Instagram as reference):
+
+1. **`@theWallProject/addonCommon`**: Add `API_ENDPOINT_RULE_PLATFORM_NAME` (regex capturing username in group 1), `DBFileNames.FLAGGED_PLATFORM_NAME`, and `platformName?: string` to `FinalDBFileType`
+
+2. **`src/types.ts`**: Add `platformName: z.string().optional()` to `ScrappedItemSchema` and `platformName: z.array(z.string()).optional()` to `ManualItemSchema`
+   - Field naming: use short lowercase (e.g., Instagram → `ig`)
+
+3. **`src/tasks/manual_resolve/manualOverrides.ts`**: Add `platformName?: string | string[]` to `ManualOverrideFields` type and extract platform URLs from `urls` arrays
+
+4. **`src/tasks/extract_social.ts`**: Import constants, add extraction logic (follow Facebook/Twitter pattern), add file output using `DBFileNames.FLAGGED_PLATFORM_NAME`, add log
+
+5. **`src/tasks/merge_static.ts`**: Import rule, add `"platformName"` to `extractIdentifier` field union and linkFields array, add extraction case, add protocol removal
+
+6. **`src/tasks/validate_urls.ts`**: Import rule, add `"platformName"` to `LinkField`, `CategorizedUrls`, and `OverrideWithUrls` types, add detection in `categorizeUrl`, remove from exclude patterns, update `formatValue` and `saveManualOverrides` template, add to `validateItemLinks`, **add `platformName` case in `collectExtraUrls` categorization loop and merging logic**
+
+7. **`src/tasks/final.ts`**: Add `"platformName"` to return type and add case `DBFileNames.FLAGGED_PLATFORM_NAME`
+
+8. **Addon (`theWallAddon/src/storage.ts`)**: Add case to `getSelectorKey` function mapping domain to selector key (e.g., `"instagram.com"` → `"ig"`)
+
+**Checklist**: Extract URLs from overrides, regex extracts usernames correctly, output files created, addon updated, no linter errors

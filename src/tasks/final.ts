@@ -8,6 +8,7 @@ import {
 } from "@theWallProject/addonCommon";
 import { z } from "zod";
 import alternatives from "../../src/static_data/alternatives.json";
+import { LinkField } from "./validate_urls";
 
 const folderPath = path.join(__dirname, "../../results/3_networks");
 
@@ -85,7 +86,7 @@ const saveJsonToFile = (data: unknown, outputFilePath: string) => {
 export async function run() {
   return loadJsonFiles(folderPath);
 }
-function keyFromFileName(fileName: string): "ws" | "li" | "fb" | "tw" {
+function keyFromFileName(fileName: string): LinkField {
   switch (fileName.split(".")[0]) {
     case DBFileNames.FLAGGED_FACEBOOK:
       return "fb";
@@ -95,6 +96,8 @@ function keyFromFileName(fileName: string): "ws" | "li" | "fb" | "tw" {
       return "tw";
     case DBFileNames.WEBSITES:
       return "ws";
+    case DBFileNames.FLAGGED_INSTAGRAM:
+      return "ig";
 
     default:
       throw new Error(`Unknown file name: ${fileName}`);

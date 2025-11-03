@@ -6,7 +6,8 @@ type ManualOverrideFields = {
   li?: string | string[];
   fb?: string | string[];
   tw?: string | string[];
-} & Omit<Partial<ScrappedItemType>, "ws" | "li" | "fb" | "tw">;
+  ig?: string | string[];
+} & Omit<Partial<ScrappedItemType>, "ws" | "li" | "fb" | "tw" | "ig">;
 
 export const manualOverrides: Record<
   string,
@@ -28,6 +29,7 @@ export const manualOverrides: Record<
       "https://www.facebook.com/wordtune",
     ],
     tw: ["https://x.com/AI21Labs", "https://x.com/wordtune"],
+    ig: ["https://www.instagram.com/wordtune_official"],
     urls: [
       "https://apps.apple.com/us/developer/ai21-labs-inc/id1628773286",
       "https://aws.amazon.com/bedrock/ai21",
@@ -42,7 +44,6 @@ export const manualOverrides: Record<
       "https://huggingface.co/ai21labs",
       "https://microsoftedge.microsoft.com/addons/detail/wordtune-ai-paraphrasing/fgngodlaekdlibajobmkaklibdggemdd",
       "https://microsoftedge.microsoft.com/addons/detail/wordtune-aipowered-wri/fgngodlaekdlibajobmkaklibdggemdd",
-      "https://www.instagram.com/wordtune_official",
       "https://www.linkedin.com/newsletters/6995001803318681600",
       "https://www.tiktok.com/@wordtune_official",
       "https://www.youtube.com/@ai21labs",
@@ -98,11 +99,11 @@ export const manualOverrides: Record<
   },
   Empathy: {
     tw: ["https://x.com/empathy"],
+    ig: ["https://www.instagram.com/empathy_com"],
     urls: [
       "https://apps.apple.com/us/developer/empathy/id1536395194",
       "https://play.google.com/store/apps/dev?id=7573398188169424467&gl=US",
       "https://sprout.link/empathy_com",
-      "https://www.instagram.com/empathy_com",
       "https://www.threads.com/@empathy_com",
     ],
     _processed: true,
@@ -111,10 +112,10 @@ export const manualOverrides: Record<
   "Maris Tech Ltd.": { fb: "https://www.facebook.com/MarisTech" },
   "Metis Technologies": { fb: "", tw: "" },
   MoonPay: {
+    ig: ["https://www.instagram.com/moonpay"],
     urls: [
       "https://apps.apple.com/de/app/moonpay-krypto-kaufen/id1635031432",
       "https://play.google.com/store/apps/details?id=com.moonpay&hl=de",
-      "https://www.instagram.com/moonpay",
       "https://www.threads.com/@moonpay",
       "https://www.youtube.com/channel/UC9hQtWpGGNaZ8yiwFsBkRBg",
     ],
@@ -141,6 +142,10 @@ export const manualOverrides: Record<
       "https://x.com/tolokaai",
       "https://x.com/tractoai",
     ],
+    ig: [
+      "https://www.instagram.com/avride.ai",
+      "https://www.instagram.com/tripleten.tech",
+    ],
     urls: [
       "https://clickhouse.com",
       "https://de.finance.yahoo.com/quote/NBIS/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZWNvc2lhLm9yZy8&guce_referrer_sig=AQAAALwBGTNYy8lfeJM_nDuQ2jR8jYNYblL9Mb2FqXEdZzSYEJj0izM8TuTNBsbJVEiB5Ioql2PjlWHRNrBh-4-_hj8YHUU7Giyt4ZXqb7NjJTAns9a4-tP6i_Vag4gmGRiJvEzbsL0vNvFz6C_aIZtwEXCcni4p9OyQvthXnb17kwh5",
@@ -160,8 +165,6 @@ export const manualOverrides: Record<
       "https://tripleten.com",
       "https://www.avride.ai",
       "https://www.google.com/search?q=Nebius+Group+N.V.&rlz=1C1MMCH_enDE1105DE1105&sourceid=chrome&ie=UTF-8&sei=FssGadmOBrmH7NYPu4iEqAQ",
-      "https://www.instagram.com/avride.ai",
-      "https://www.instagram.com/tripleten.tech",
       "https://www.linkedin.com/school/tripleten",
       "https://www.threads.com/@tripleten.tech?xmt=AQF0i0ywc_hD3hJ_6C0u9FO2-PnCORMKZmpPswDPZFmpxXU",
       "https://www.tiktok.com/@tripleten.tech",
@@ -178,11 +181,11 @@ export const manualOverrides: Record<
     li: "https://www.linkedin.com/company/guykatsovichpodcast",
   },
   "Omada Health": {
+    ig: ["https://www.instagram.com/omadahealth/?hl=de"],
     urls: [
       "https://consent.yahoo.com/v2/collectConsent?sessionId=3_cc-session_5fdcb969-50cc-4b7f-ba83-69d67d8bf9a7",
       "https://play.google.com/store/apps/details?id=com.omada.prevent&hl=de",
       "https://www.youtube.com/c/omadahealth",
-      "https://www.instagram.com/omadahealth/?hl=de",
       "https://apps.apple.com/us/app/omada/id805711008",
       "https://www.youtube.com/@Omadahealth",
       "https://www.cnbc.com/quotes/OMDA",
@@ -211,10 +214,10 @@ export const manualOverrides: Record<
       "https://www.facebook.com/HIPConf",
     ],
     tw: ["https://x.com/hipconf", "https://x.com/semperistech"],
+    ig: ["https://www.instagram.com/hipconf"],
     urls: [
       "https://hipconf.slack.com",
       "https://marketplace.microsoft.com/en-us/product/saas/semperis.semperis-hybrid-active-directory-protection",
-      "https://www.instagram.com/hipconf",
       "https://www.threads.com/@semperistech",
       "https://www.youtube.com/@semperistech",
       "https://www.youtube.com/channel/UCycrWXhxOTaUQ0sidlyN9SA",
@@ -245,13 +248,13 @@ export const manualOverrides: Record<
     _processed: true,
   },
   Silverfort: {
+    ig: ["https://www.instagram.com/life_at_silverfort"],
     urls: [
       "https://apps.apple.com/de/developer/silverfort/id1227704144",
       "https://chromewebstore.google.com/detail/silverfort/pehheafegmblicfcnkpacblgfeabpgim",
       "https://github.com/DanielZiv-SF",
       "https://github.com/silverfort-open-source",
       "https://play.google.com/store/apps/developer?id=Silverfort+Inc.&hl=gsw",
-      "https://www.instagram.com/life_at_silverfort",
       "https://www.youtube.com/@silverfort",
     ],
     _processed: true,
@@ -270,10 +273,10 @@ export const manualOverrides: Record<
   Torq: {
     fb: ["https://www.facebook.com/torqhq"],
     tw: ["https://x.com/torq_io"],
+    ig: ["https://www.instagram.com/torq_io"],
     urls: [
       "https://github.com/torqio",
       "https://job-boards.greenhouse.io/torq",
-      "https://www.instagram.com/torq_io",
       "https://www.tiktok.com/@torq.io",
       "https://www.youtube.com/@torq_io",
     ],
@@ -302,6 +305,10 @@ export const manualOverrides: Record<
       "https://x.com/eToroAr",
       "https://x.com/eToroItalia",
     ],
+    ig: [
+      "https://www.instagram.com/etoro_italia",
+      "https://www.instagram.com/etoro_official",
+    ],
     urls: [
       "https://www.tiktok.com/@etoro_official",
       "https://www.youtube.com/@etoro",
@@ -312,8 +319,6 @@ export const manualOverrides: Record<
       "https://www.youtube.com/@etorofrance877",
       "https://www.youtube.com/eToroDeutsch",
       "https://www.threads.com/@etoro_official",
-      "https://www.instagram.com/etoro_italia",
-      "https://www.instagram.com/etoro_official",
       "https://apps.apple.com/us/developer/etoro/id491658374",
       "https://play.google.com/store/apps/developer?id=eToro&hl=de",
     ],
@@ -330,6 +335,12 @@ export const manualOverrides: Record<
       "https://www.linkedin.com/company/2525169",
     ],
     tw: ["https://x.com/mondaydotcom", "https://x.com/mondaysupport"],
+    ig: [
+      "https://www.instagram.com/mondaydotcom",
+      "https://www.instagram.com/monday.com.design",
+      "https://www.instagram.com/monday.com_engineering",
+      "https://www.instagram.com/peopleofmonday",
+    ],
     urls: [
       "https://www.facebook.com/groups/monday.community",
       "https://www.facebook.com/groups/183295877306250",
@@ -340,10 +351,6 @@ export const manualOverrides: Record<
       "https://play.google.com/store/apps/developer?id=monday.com",
       "https://apps.apple.com/de/developer/monday-com-ltd/id964740028",
       "https://sprout.link/mondaydotcom",
-      "https://www.instagram.com/mondaydotcom",
-      "https://www.instagram.com/monday.com.design",
-      "https://www.instagram.com/monday.com_engineering",
-      "https://www.instagram.com/peopleofmonday",
       "https://www.reddit.com/r/mondaydotcom",
       "https://www.threads.com/@mondaydotcom",
       "https://www.tiktok.com/@mondayinsights",

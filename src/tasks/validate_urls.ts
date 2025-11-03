@@ -5,6 +5,7 @@ import {
   API_ENDPOINT_RULE_LINKEDIN,
   API_ENDPOINT_RULE_FACEBOOK,
   API_ENDPOINT_RULE_TWITTER,
+  API_ENDPOINT_RULE_INSTAGRAM,
 } from "@theWallProject/addonCommon";
 import { APIScrapperFileDataSchema, ScrappedItemType } from "../types";
 import { error, log } from "../helper";
@@ -62,6 +63,8 @@ const formatValue = (value: ManualOverrideValue): string => {
       fields.push(`fb: ${JSON.stringify(value.fb)}`);
     if ("tw" in value && value.tw !== undefined)
       fields.push(`tw: ${JSON.stringify(value.tw)}`);
+    if ("ig" in value && value.ig !== undefined)
+      fields.push(`ig: ${JSON.stringify(value.ig)}`);
     if ("urls" in value && value.urls !== undefined)
       fields.push(`urls: ${JSON.stringify(value.urls)}`);
 
@@ -79,6 +82,7 @@ const formatValue = (value: ManualOverrideValue): string => {
     if (value.li !== undefined) fields.push(`li: ${JSON.stringify(value.li)}`);
     if (value.fb !== undefined) fields.push(`fb: ${JSON.stringify(value.fb)}`);
     if (value.tw !== undefined) fields.push(`tw: ${JSON.stringify(value.tw)}`);
+    if (value.ig !== undefined) fields.push(`ig: ${JSON.stringify(value.ig)}`);
     if ("urls" in value && value.urls !== undefined)
       fields.push(`urls: ${JSON.stringify(value.urls)}`);
 
@@ -96,7 +100,7 @@ const saveManualOverrides = async (
   const keys = Object.keys(overrides).sort();
   let content = 'import { ScrappedItemType } from "../../types";\n\n';
   content +=
-    '// Allow arrays for link fields in overrides\ntype ManualOverrideFields = {\n  ws?: string | string[];\n  li?: string | string[];\n  fb?: string | string[];\n  tw?: string | string[];\n} & Omit<Partial<ScrappedItemType>, "ws" | "li" | "fb" | "tw">;\n\n';
+    '// Allow arrays for link fields in overrides\ntype ManualOverrideFields = {\n  ws?: string | string[];\n  li?: string | string[];\n  fb?: string | string[];\n  tw?: string | string[];\n  ig?: string | string[];\n} & Omit<Partial<ScrappedItemType>, "ws" | "li" | "fb" | "tw" | "ig">;\n\n';
   content +=
     "export const manualOverrides: Record<string, ManualOverrideFields | { _processed: true } | (ManualOverrideFields & { _processed: true }) | (ManualOverrideFields & { urls?: string[] }) | (ManualOverrideFields & { _processed: true; urls?: string[] })> = {\n";
 
@@ -206,16 +210,17 @@ const checkRedirect = async (
   return { finalUrl, redirected };
 };
 
-type LinkField = "ws" | "li" | "fb" | "tw";
+export type LinkField = "ws" | "li" | "fb" | "tw" | "ig";
 type CategorizedUrls = {
   ws?: string[];
   li?: string[];
   fb?: string[];
   tw?: string[];
+  ig?: string[];
   urls?: string[]; // Unsupported URLs only
 };
 
-// Categorize a URL into ws, li, fb, tw, or null (unsupported)
+// Categorize a URL into ws, li, fb, tw, ig, or null (unsupported)
 const categorizeUrl = (url: string): LinkField | null => {
   try {
     // Check LinkedIn
@@ -237,11 +242,16 @@ const categorizeUrl = (url: string): LinkField | null => {
       return "tw";
     }
 
+    // Check Instagram
+    const regexInstagram = new RegExp(API_ENDPOINT_RULE_INSTAGRAM.regex);
+    if (regexInstagram.test(url)) {
+      return "ig";
+    }
+
     // Don't auto-categorize websites - keep them in urls for manual organization
     // Exclude obvious non-website URLs
     const excludePatterns = [
       /youtube\./i,
-      /instagram\./i,
       /tiktok\./i,
       /threads\./i,
       /apps\.apple\./i,
@@ -270,6 +280,7 @@ type OverrideWithUrls = {
   li?: string | string[];
   fb?: string | string[];
   tw?: string | string[];
+  ig?: string | string[];
   urls?: string[];
 };
 
@@ -369,6 +380,7 @@ const validateItemLinks = async (
   if (item.li) links.push({ field: "li", url: item.li });
   if (item.fb) links.push({ field: "fb", url: item.fb });
   if (item.tw) links.push({ field: "tw", url: item.tw });
+  if (item.ig) links.push({ field: "ig", url: item.ig });
 
   if (links.length === 0) {
     log(`  No links to validate for ${item.name}`);
@@ -664,7 +676,9 @@ const validateItemLinks = async (
     try {
       // Initialize URL history for this tab
       tabUrlHistory.set(tab, new Set<string>());
-      log(`  [DEBUG] ✨ New tab created (total tracked: ${tabUrlHistory.size})`);
+      log(
+        `  [DEBUG] ✨ New tab created (total tracked: ${tabUrlHistory.size})`,
+      );
 
       // Try to get URL immediately if available
       try {
@@ -874,6 +888,9 @@ const validateItemLinks = async (
             } else if (category === "tw") {
               if (!categorized.tw) categorized.tw = [];
               categorized.tw.push(url);
+            } else if (category === "ig") {
+              if (!categorized.ig) categorized.ig = [];
+              categorized.ig.push(url);
             } else {
               // Unsupported URL or website - keep in urls array for manual organization
               if (!categorized.urls) categorized.urls = [];
@@ -918,6 +935,18 @@ const validateItemLinks = async (
             }
             hasChanges = true;
             log(`  ✓ Categorized ${categorized.tw.length} Twitter/X URL(s)`);
+          }
+
+          if (categorized.ig && categorized.ig.length > 0) {
+            if (Array.isArray(changes.ig)) {
+              changes.ig = [...changes.ig, ...categorized.ig];
+            } else if (typeof changes.ig === "string") {
+              changes.ig = [changes.ig, ...categorized.ig];
+            } else {
+              changes.ig = categorized.ig;
+            }
+            hasChanges = true;
+            log(`  ✓ Categorized ${categorized.ig.length} Instagram URL(s)`);
           }
 
           // Only keep unsupported URLs in urls array

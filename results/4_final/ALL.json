@@ -5496,6 +5496,7 @@
     ],
     "n": "AI21 Labs",
     "fb": "AI21Labs",
+    "ig": "wordtune_official",
     "li": "ai21",
     "tw": "AI21Labs",
     "ws": "ai21.com",
@@ -51219,6 +51220,7 @@
     ],
     "n": "Empathy",
     "fb": "empathyforfamilies",
+    "ig": "empathy_com",
     "li": "empathy-com",
     "tw": "empathy",
     "ws": "empathy.com"
@@ -53616,6 +53618,7 @@
     "n": "eToro",
     "s": "ETOR",
     "fb": "eToroDEofficial",
+    "ig": "etoro_italia",
     "li": "etoro",
     "tw": "eToroES",
     "ws": "etoro.com",
@@ -53673,6 +53676,14 @@
     ],
     "n": "eToro",
     "fb": "152479438248050"
+  },
+  {
+    "id": "etoro_manual_ig_etoro_official",
+    "r": [
+      "h"
+    ],
+    "n": "eToro",
+    "ig": "etoro_official"
   },
   {
     "id": "etoro_manual_tw_eToroAr",
@@ -105438,6 +105449,7 @@
     "n": "monday.com",
     "s": "MNDY",
     "fb": "mondaydotcom",
+    "ig": "mondaydotcom",
     "li": "mondaydotcom",
     "tw": "mondaydotcom",
     "ws": "monday.com",
@@ -105471,6 +105483,30 @@
         "ws": "https://www.bitrix24.com/"
       }
     ]
+  },
+  {
+    "id": "mondaydotcom_manual_ig_monday.com.design",
+    "r": [
+      "h"
+    ],
+    "n": "monday.com",
+    "ig": "monday.com.design"
+  },
+  {
+    "id": "mondaydotcom_manual_ig_monday.com_engineering",
+    "r": [
+      "h"
+    ],
+    "n": "monday.com",
+    "ig": "monday.com_engineering"
+  },
+  {
+    "id": "mondaydotcom_manual_ig_peopleofmonday",
+    "r": [
+      "h"
+    ],
+    "n": "monday.com",
+    "ig": "peopleofmonday"
   },
   {
     "id": "mondaydotcom_manual_li_2525169",
@@ -105861,6 +105897,7 @@
     ],
     "n": "MoonPay",
     "fb": "officialmoonpay",
+    "ig": "moonpay",
     "li": "moonpay",
     "tw": "moonpay",
     "ws": "moonpay.com"
@@ -109561,6 +109598,7 @@
     "n": "Nebius Group",
     "s": "NBISN",
     "fb": "globaltoloka",
+    "ig": "avride.ai",
     "tw": "TripleTenTech",
     "ws": "nebius.com"
   },
@@ -109571,6 +109609,14 @@
     ],
     "n": "Nebius Group",
     "fb": "tripleten.tech"
+  },
+  {
+    "id": "nebius-group_manual_ig_tripleten.tech",
+    "r": [
+      "f"
+    ],
+    "n": "Nebius Group",
+    "ig": "tripleten.tech"
   },
   {
     "id": "nebius-group_manual_li_toloka",
@@ -115521,6 +115567,7 @@
     "n": "Omada Health",
     "s": "OMDA",
     "fb": "omadahealth",
+    "ig": "omadahealth",
     "li": "omada-health",
     "tw": "omadahealth",
     "ws": "omadahealth.com"
@@ -142914,6 +142961,7 @@
     ],
     "n": "Semperis",
     "fb": "semperistech",
+    "ig": "hipconf",
     "li": "hybrid-identity-protection-conference",
     "tw": "hipconf",
     "ws": "hipconf.com"
@@ -147087,6 +147135,7 @@
     ],
     "n": "Silverfort",
     "fb": "silverfort",
+    "ig": "life_at_silverfort",
     "li": "silverfort",
     "tw": "silverfort",
     "ws": "silverfort.com",
@@ -166007,6 +166056,7 @@
     ],
     "n": "Torq",
     "fb": "torqhq",
+    "ig": "torq_io",
     "li": "torqio",
     "tw": "torq_io",
     "ws": "torq.io",

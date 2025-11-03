@@ -5,6 +5,7 @@ import {
   API_ENDPOINT_RULE_LINKEDIN,
   API_ENDPOINT_RULE_FACEBOOK,
   API_ENDPOINT_RULE_TWITTER,
+  API_ENDPOINT_RULE_INSTAGRAM,
   DBFileNames,
 } from "@theWallProject/addonCommon";
 import { APIScrapperFileDataSchema, ScrappedFileType } from "../types";
@@ -14,19 +15,22 @@ const extractSocialLinks = (data: ScrappedFileType) => {
   const linkedinFlagged: APIEndpointDomains = [];
   const facebookFlagged: APIEndpointDomains = [];
   const twitterFlagged: APIEndpointDomains = [];
+  const instagramFlagged: APIEndpointDomains = [];
 
   const regexLinkedin = new RegExp(API_ENDPOINT_RULE_LINKEDIN.regex);
   const regexFacebook = new RegExp(API_ENDPOINT_RULE_FACEBOOK.regex);
   const regexTwitter = new RegExp(API_ENDPOINT_RULE_TWITTER.regex);
+  const regexInstagram = new RegExp(API_ENDPOINT_RULE_INSTAGRAM.regex);
 
   // const namesMap: { [key: string]: boolean } = {};
   const websitesMap: { [key: string]: boolean } = {};
   const fbMap: { [key: string]: boolean } = {};
   const liMap: { [key: string]: boolean } = {};
   const twitterMap: { [key: string]: boolean } = {};
+  const instagramMap: { [key: string]: boolean } = {};
 
   data.forEach((row) => {
-    const { name, ws, li, fb, tw, reasons, id } = row;
+    const { name, ws, li, fb, tw, ig, reasons, id } = row;
 
     // if (namesMap[name]) {
     //   error(`Duplicate name [social]: ${row.name}`);
@@ -133,6 +137,34 @@ const extractSocialLinks = (data: ScrappedFileType) => {
         warn(`Twitter processing ${tw} had no result! [${result}]`);
       }
     }
+
+    if (ig && ig !== "") {
+      const results = regexInstagram.exec(ig);
+      const result = results && results[1];
+
+      if (result) {
+        // log(`Instagram extracted ${insta} => ${result}`);
+        if (
+          ["explore", "accounts", "direct", "stories", "reels"].includes(result)
+        ) {
+          return;
+        }
+        if (instagramMap[result]) {
+          error(`Duplicate Instagram [social]: ${result}`);
+        } else {
+          instagramMap[result] = true;
+
+          instagramFlagged.push({
+            id: row.id,
+            selector: result,
+            name: row.name,
+            reasons: row.reasons,
+          });
+        }
+      } else {
+        warn(`Instagram processing ${ig} had no result! [${result}]`);
+      }
+    }
   });
 
   saveJsonToFile(
@@ -159,9 +191,18 @@ const extractSocialLinks = (data: ScrappedFileType) => {
     ),
   );
 
+  saveJsonToFile(
+    instagramFlagged.sort((a, b) => a.name.localeCompare(b.name)),
+    path.join(
+      __dirname,
+      `../../results/3_networks/${DBFileNames.FLAGGED_INSTAGRAM}.json`,
+    ),
+  );
+
   log(`Wrote ${linkedinFlagged.length} li rows...`);
   log(`Wrote ${facebookFlagged.length} fb rows..`);
   log(`Wrote ${twitterFlagged.length} tw rows..`);
+  log(`Wrote ${instagramFlagged.length} ig rows..`);
 };
 
 const saveJsonToFile = (data: unknown, outputFilePath: string) => {

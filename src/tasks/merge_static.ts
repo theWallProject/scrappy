@@ -5,17 +5,16 @@ import {
   API_ENDPOINT_RULE_LINKEDIN,
   API_ENDPOINT_RULE_FACEBOOK,
   API_ENDPOINT_RULE_TWITTER,
+  API_ENDPOINT_RULE_INSTAGRAM,
 } from "@theWallProject/addonCommon";
 import { APIScrapperFileDataSchema, ScrappedItemType } from "../types";
 import { log, cleanWebsite, error } from "../helper";
 import { manualDeleteIds } from "./manual_resolve/manualDeleteIds";
 import { manualOverrides } from "./manual_resolve/manualOverrides";
+import { LinkField } from "./validate_urls";
 
 // Helper to extract identifier from URL for ID generation
-const extractIdentifier = (
-  url: string,
-  field: "ws" | "li" | "fb" | "tw",
-): string => {
+const extractIdentifier = (url: string, field: LinkField): string => {
   if (field === "ws") {
     // For websites, use domain (match extract_websites.ts logic)
     const domain = url
@@ -44,6 +43,13 @@ const extractIdentifier = (
     const results = regex.exec(url);
     if (!results || !results[1]) {
       throw new Error(`Failed to extract Twitter identifier from: ${url}`);
+    }
+    return results[1].replace(/\//g, "_");
+  } else if (field === "ig") {
+    const regex = new RegExp(API_ENDPOINT_RULE_INSTAGRAM.regex);
+    const results = regex.exec(url);
+    if (!results || !results[1]) {
+      throw new Error(`Failed to extract Instagram identifier from: ${url}`);
     }
     return results[1].replace(/\//g, "_");
   }
@@ -130,6 +136,7 @@ const loadJsonFiles = (folderPath: string) => {
     row.ws = cleanWebsite(row.ws);
     row.fb = cleanWebsite(row.fb);
     row.tw = cleanWebsite(row.tw);
+    row.ig = cleanWebsite(row.ig);
 
     const { id } = row;
 
@@ -249,6 +256,7 @@ const loadJsonFiles = (folderPath: string) => {
     row.li = removeProtocol(row.li);
     row.fb = removeProtocol(row.fb);
     row.tw = removeProtocol(row.tw);
+    row.ig = removeProtocol(row.ig);
 
     const override = manualOverrides[row.name];
 
@@ -270,12 +278,7 @@ const loadJsonFiles = (folderPath: string) => {
 
       // Process each override field, handling arrays
       const updatedRow = { ...row };
-      const linkFields: Array<"ws" | "li" | "fb" | "tw"> = [
-        "ws",
-        "li",
-        "fb",
-        "tw",
-      ];
+      const linkFields: LinkField[] = ["ws", "li", "fb", "tw", "ig"];
 
       // Helper to remove protocol from URLs
       const removeProtocol = (url: string | undefined): string | undefined => {
@@ -329,7 +332,7 @@ const loadJsonFiles = (folderPath: string) => {
       // Apply other non-link override fields
       for (const [key, value] of Object.entries(overrideFields)) {
         if (
-          !linkFields.includes(key as "ws" | "li" | "fb" | "tw") &&
+          !linkFields.includes(key as LinkField) &&
           key !== "_processed" &&
           key !== "urls"
         ) {
@@ -343,6 +346,7 @@ const loadJsonFiles = (folderPath: string) => {
       updatedRow.li = updatedRow.li?.replace(/^https?:\/\//, "");
       updatedRow.fb = updatedRow.fb?.replace(/^https?:\/\//, "");
       updatedRow.tw = updatedRow.tw?.replace(/^https?:\/\//, "");
+      updatedRow.ig = updatedRow.ig?.replace(/^https?:\/\//, "");
 
       processedItems.push(updatedRow);
     } else {
