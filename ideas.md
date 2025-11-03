@@ -1,1 +1,5 @@
 - support linkedin.com/showcase/\* links
+- check addons
+- check youtube history
+- collect npm and python packages
+- add youtube videos blacklist using search

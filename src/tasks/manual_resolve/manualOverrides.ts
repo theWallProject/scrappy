@@ -18,6 +18,7 @@ export const manualOverrides: Record<
 > = {
   "01 Founders": { li: "https://www.linkedin.com/school/01-founders/" },
   "AI21 Labs": {
+    ws: ["https://www.ai21.com", "https://www.wordtune.com"],
     li: [
       "https://www.linkedin.com/company/ai21",
       "https://www.linkedin.com/showcase/wordtune",
@@ -28,7 +29,6 @@ export const manualOverrides: Record<
     ],
     tw: ["https://x.com/AI21Labs", "https://x.com/wordtune"],
     urls: [
-      "https://app.wordtune.com/editor/welcome",
       "https://apps.apple.com/us/developer/ai21-labs-inc/id1628773286",
       "https://aws.amazon.com/bedrock/ai21",
       "https://chromewebstore.google.com/detail/wordtune-ai-paraphrasing/nllcnknpjnininklegdoijpljgdjkijc",
@@ -45,7 +45,6 @@ export const manualOverrides: Record<
       "https://www.instagram.com/wordtune_official",
       "https://www.linkedin.com/newsletters/6995001803318681600",
       "https://www.tiktok.com/@wordtune_official",
-      "https://www.wordtune.com",
       "https://www.youtube.com/@ai21labs",
       "https://www.youtube.com/channel/UCDQlFKBK11jIxm4iVymoAtA",
       "https://www.youtube.com/watch?v=DyE0YkoFFEE",

@@ -89781,6 +89781,12 @@
     "reasons": ["h"]
   },
   {
+    "id": "ai21_manual_ws_wordtune_com",
+    "selector": "wordtune.com",
+    "name": "AI21 Labs",
+    "reasons": ["h"]
+  },
+  {
     "id": "worknest-technologies",
     "selector": "work-nest.com",
     "name": "WorkNest Technologies",

@@ -1405,6 +1405,14 @@
     ]
   },
   {
+    "id": "ai21_manual_tw_wordtune",
+    "selector": "wordtune",
+    "name": "AI21 Labs",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "id": "aicaption",
     "selector": "aicaption",
     "name": "AiCaption",

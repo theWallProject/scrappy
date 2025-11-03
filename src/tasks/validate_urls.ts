@@ -455,6 +455,7 @@ const validateItemLinks = async (
   const trackedTabs = new Set<Page>(); // All tracked tabs
   const finalUrls = new Set<string>(); // PERSISTENT: All URLs ever seen - NEVER deleted, collected at end
   const userClosedUrls = new Set<string>(); // URLs user manually closed (exclude from collection)
+  const pendingTabCloseChecks = new Set<NodeJS.Timeout>(); // Track pending timeout checks
   let isContextClosing = false; // Track if context is closing (prevents URL deletion during bulk close)
   const TAB_CLOSE_DELAY_MS = 3000; // Wait 3 seconds after tab close - if browser still open, it's manual close
 
@@ -546,7 +547,9 @@ const validateItemLinks = async (
         }
 
         // Wait 3 seconds - if browser still open, it was manual close
-        setTimeout(() => {
+        const timeoutId = setTimeout(() => {
+          pendingTabCloseChecks.delete(timeoutId);
+
           // Check if browser/context is still open
           let browserStillOpen = false;
           try {
@@ -584,6 +587,8 @@ const validateItemLinks = async (
             );
           }
         }, TAB_CLOSE_DELAY_MS);
+
+        pendingTabCloseChecks.add(timeoutId);
       });
     } catch {
       // Tab might not have a URL yet
@@ -652,7 +657,9 @@ const validateItemLinks = async (
         }
 
         // Wait 3 seconds - if browser still open, it was manual close
-        setTimeout(() => {
+        const timeoutId = setTimeout(() => {
+          pendingTabCloseChecks.delete(timeoutId);
+
           // Check if browser/context is still open
           let browserStillOpen = false;
           try {
@@ -690,6 +697,8 @@ const validateItemLinks = async (
             );
           }
         }, TAB_CLOSE_DELAY_MS);
+
+        pendingTabCloseChecks.add(timeoutId);
       });
     } catch (e) {
       log(`  [DEBUG] Error in tab event handler: ${e}`);
@@ -817,7 +826,38 @@ const validateItemLinks = async (
         `  [DEBUG] Context closing flag set to prevent URL deletion during tab close events`,
       );
 
-      // Collect URLs - NO processing during cleanup, just read tab->URL mappings
+      // Wait for all pending tab close checks to complete (or timeout after 4 seconds)
+      const waitForPendingChecks = async () => {
+        if (pendingTabCloseChecks.size > 0) {
+          log(
+            `  [DEBUG] Waiting for ${pendingTabCloseChecks.size} pending tab close checks to complete...`,
+          );
+          const maxWait = TAB_CLOSE_DELAY_MS + 1000; // Wait slightly longer than the delay
+          const startTime = Date.now();
+
+          while (
+            pendingTabCloseChecks.size > 0 &&
+            Date.now() - startTime < maxWait
+          ) {
+            await new Promise((resolve) => setTimeout(resolve, 100));
+          }
+
+          if (pendingTabCloseChecks.size > 0) {
+            log(
+              `  [DEBUG] ⚠️ Still ${pendingTabCloseChecks.size} pending checks, proceeding anyway`,
+            );
+            // Clear remaining timeouts
+            for (const timeoutId of pendingTabCloseChecks) {
+              clearTimeout(timeoutId);
+            }
+            pendingTabCloseChecks.clear();
+          } else {
+            log(`  [DEBUG] ✓ All pending tab close checks completed`);
+          }
+        }
+      };
+
+      // Collect URLs - wait for pending checks first
       log(`  [DEBUG] cleanup() called with reason: ${reason}`);
       log(
         `  [DEBUG] Reading tab->URL mappings (no browser access needed): ${urlStorage.size} tabs with URLs`,
@@ -843,7 +883,11 @@ const validateItemLinks = async (
 
       // Simply read from urlStorage - tab->URL mappings prepared by events
       (async () => {
+        // Wait for pending tab close checks before collecting
+        await waitForPendingChecks();
+
         log(`  [DEBUG] Collecting from tab->URL mappings...`);
+        log(`  [DEBUG] Final user-closed URLs count: ${userClosedUrls.size}`);
         const extraUrls = collectExtraUrls();
 
         log(`  [DEBUG] Collection returned ${extraUrls.length} URLs`);
@@ -1362,17 +1406,25 @@ export async function run() {
     }
 
     log(`\n✓ Item processed. Remaining items: ${unprocessedItems.length - 1}`);
-    log("Running update steps (skipping questions)...");
+    log(
+      "🔄 Running update steps to apply manual overrides to ALL.json and other files...",
+    );
 
     try {
+      // Force regeneration of all output files with latest manualOverrides
       await runUpdateSteps({
         shouldScrap: false,
         shouldValidate: false,
         shouldCopyToAddon: false,
       });
-      log("✓ Update steps completed successfully");
+      log(
+        "✅ Update steps completed successfully - ALL.json and other files updated!",
+      );
     } catch (err) {
-      error("Error running update steps:", err);
+      error("❌ Error running update steps:", err);
+      error(
+        "This means your manual overrides may not be reflected in output files!",
+      );
       throw err;
     }
 

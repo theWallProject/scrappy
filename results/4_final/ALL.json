@@ -5519,6 +5519,38 @@
     ]
   },
   {
+    "id": "ai21_manual_fb_wordtune",
+    "r": [
+      "h"
+    ],
+    "n": "AI21 Labs",
+    "fb": "wordtune"
+  },
+  {
+    "id": "ai21_manual_li_wordtune",
+    "r": [
+      "h"
+    ],
+    "n": "AI21 Labs",
+    "li": "wordtune"
+  },
+  {
+    "id": "ai21_manual_tw_wordtune",
+    "r": [
+      "h"
+    ],
+    "n": "AI21 Labs",
+    "tw": "wordtune"
+  },
+  {
+    "id": "ai21_manual_ws_wordtune_com",
+    "r": [
+      "h"
+    ],
+    "n": "AI21 Labs",
+    "ws": "wordtune.com"
+  },
+  {
     "id": "aicaption",
     "r": [
       "h"

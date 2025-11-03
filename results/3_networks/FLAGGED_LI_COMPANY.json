@@ -4008,6 +4008,14 @@
     ]
   },
   {
+    "selector": "wordtune",
+    "name": "AI21 Labs",
+    "id": "ai21_manual_li_wordtune",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "selector": "18959908",
     "name": "Aidey",
     "id": "aidey",
