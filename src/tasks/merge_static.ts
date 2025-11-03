@@ -6,12 +6,19 @@ import {
   API_ENDPOINT_RULE_FACEBOOK,
   API_ENDPOINT_RULE_TWITTER,
   API_ENDPOINT_RULE_INSTAGRAM,
+  API_ENDPOINT_RULE_GITHUB,
 } from "@theWallProject/addonCommon";
 import { APIScrapperFileDataSchema, ScrappedItemType } from "../types";
 import { log, cleanWebsite, error } from "../helper";
 import { manualDeleteIds } from "./manual_resolve/manualDeleteIds";
 import { manualOverrides } from "./manual_resolve/manualOverrides";
 import { LinkField } from "./validate_urls";
+
+// Type for items that may have ig/gh from manual overrides (not in base ScrappedItemType)
+type ScrappedItemWithOverrides = ScrappedItemType & {
+  ig?: string;
+  gh?: string;
+};
 
 // Helper to extract identifier from URL for ID generation
 const extractIdentifier = (url: string, field: LinkField): string => {
@@ -50,6 +57,13 @@ const extractIdentifier = (url: string, field: LinkField): string => {
     const results = regex.exec(url);
     if (!results || !results[1]) {
       throw new Error(`Failed to extract Instagram identifier from: ${url}`);
+    }
+    return results[1].replace(/\//g, "_");
+  } else if (field === "gh") {
+    const regex = new RegExp(API_ENDPOINT_RULE_GITHUB.regex);
+    const results = regex.exec(url);
+    if (!results || !results[1]) {
+      throw new Error(`Failed to extract GitHub identifier from: ${url}`);
     }
     return results[1].replace(/\//g, "_");
   }
@@ -136,7 +150,6 @@ const loadJsonFiles = (folderPath: string) => {
     row.ws = cleanWebsite(row.ws);
     row.fb = cleanWebsite(row.fb);
     row.tw = cleanWebsite(row.tw);
-    row.ig = cleanWebsite(row.ig);
 
     const { id } = row;
 
@@ -232,8 +245,8 @@ const loadJsonFiles = (folderPath: string) => {
   });
 
   // First pass: normalize URLs and apply overrides (including arrays)
-  const processedItems: ScrappedItemType[] = [];
-  const additionalItems: ScrappedItemType[] = [];
+  const processedItems: ScrappedItemWithOverrides[] = [];
+  const additionalItems: ScrappedItemWithOverrides[] = [];
 
   for (const row of deDubeArray) {
     row.tw = row.tw
@@ -256,7 +269,6 @@ const loadJsonFiles = (folderPath: string) => {
     row.li = removeProtocol(row.li);
     row.fb = removeProtocol(row.fb);
     row.tw = removeProtocol(row.tw);
-    row.ig = removeProtocol(row.ig);
 
     const override = manualOverrides[row.name];
 
@@ -277,13 +289,27 @@ const loadJsonFiles = (folderPath: string) => {
       log(`Manually updated ${row.name}`);
 
       // Process each override field, handling arrays
-      const updatedRow = { ...row };
-      const linkFields: LinkField[] = ["ws", "li", "fb", "tw", "ig"];
+      const updatedRow: ScrappedItemWithOverrides = { ...row };
+      const linkFields: LinkField[] = ["ws", "li", "fb", "tw", "ig", "gh"];
 
       // Helper to remove protocol from URLs
       const removeProtocol = (url: string | undefined): string | undefined => {
         if (!url) return url;
         return url.replace(/^https?:\/\//, "");
+      };
+
+      // Helper to set field on object using proper typing
+      const setField = (
+        obj: ScrappedItemWithOverrides,
+        field: LinkField,
+        value: string | undefined,
+      ) => {
+        if (field === "ws") obj.ws = value;
+        else if (field === "li") obj.li = value;
+        else if (field === "fb") obj.fb = value;
+        else if (field === "tw") obj.tw = value;
+        else if (field === "ig") obj.ig = value;
+        else if (field === "gh") obj.gh = value;
       };
 
       for (const field of linkFields) {
@@ -295,7 +321,7 @@ const loadJsonFiles = (folderPath: string) => {
           if (overrideValue.length > 0) {
             const firstUrl = overrideValue[0];
             if (typeof firstUrl === "string") {
-              updatedRow[field] = removeProtocol(firstUrl);
+              setField(updatedRow, field, removeProtocol(firstUrl));
             }
           }
 
@@ -308,12 +334,13 @@ const loadJsonFiles = (folderPath: string) => {
               const identifier = extractIdentifier(url, field);
               const newId = `${row.id}_manual_${field}_${identifier}`;
 
-              const newItem: ScrappedItemType = {
+              const newItem: ScrappedItemWithOverrides = {
                 id: newId,
                 name: row.name,
                 reasons: row.reasons,
-                [field]: removeProtocol(url),
               };
+              setField(newItem, field, removeProtocol(url));
+
               additionalItems.push(newItem);
               log(`Created new entry: ${newId} for ${field}: ${url}`);
             } catch (e) {
@@ -325,7 +352,7 @@ const loadJsonFiles = (folderPath: string) => {
           }
         } else if (typeof overrideValue === "string") {
           // Single string value - apply normally, remove protocol
-          updatedRow[field] = removeProtocol(overrideValue);
+          setField(updatedRow, field, removeProtocol(overrideValue));
         }
       }
 
@@ -336,17 +363,16 @@ const loadJsonFiles = (folderPath: string) => {
           key !== "_processed" &&
           key !== "urls"
         ) {
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          (updatedRow as any)[key] = value;
+          Object.assign(updatedRow, { [key]: value });
         }
       }
 
       // Remove protocol from override-applied URLs
+      // Note: ig and gh are handled through linkFields loop above with protocol already removed
       updatedRow.ws = updatedRow.ws?.replace(/^https?:\/\//, "");
       updatedRow.li = updatedRow.li?.replace(/^https?:\/\//, "");
       updatedRow.fb = updatedRow.fb?.replace(/^https?:\/\//, "");
       updatedRow.tw = updatedRow.tw?.replace(/^https?:\/\//, "");
-      updatedRow.ig = updatedRow.ig?.replace(/^https?:\/\//, "");
 
       processedItems.push(updatedRow);
     } else {

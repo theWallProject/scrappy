@@ -98,6 +98,8 @@ function keyFromFileName(fileName: string): LinkField {
       return "ws";
     case DBFileNames.FLAGGED_INSTAGRAM:
       return "ig";
+    case DBFileNames.FLAGGED_GITHUB:
+      return "gh";
 
     default:
       throw new Error(`Unknown file name: ${fileName}`);

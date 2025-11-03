@@ -7,7 +7,8 @@ type ManualOverrideFields = {
   fb?: string | string[];
   tw?: string | string[];
   ig?: string | string[];
-} & Omit<Partial<ScrappedItemType>, "ws" | "li" | "fb" | "tw" | "ig">;
+  gh?: string | string[];
+} & Omit<Partial<ScrappedItemType>, "ws" | "li" | "fb" | "tw" | "ig" | "gh">;
 
 export const manualOverrides: Record<
   string,
@@ -30,6 +31,11 @@ export const manualOverrides: Record<
     ],
     tw: ["https://x.com/AI21Labs", "https://x.com/wordtune"],
     ig: ["https://www.instagram.com/wordtune_official"],
+    gh: [
+      "https://github.com/AI21Labs",
+      "https://github.com/AI21X",
+      "https://github.com/mangate",
+    ],
     urls: [
       "https://apps.apple.com/us/developer/ai21-labs-inc/id1628773286",
       "https://aws.amazon.com/bedrock/ai21",
@@ -38,9 +44,6 @@ export const manualOverrides: Record<
       "https://discord.com/app/invite-with-guild-onboarding/cKzg6GEAyB",
       "https://discord.com/invite/cKzg6GEAyB",
       "https://finance.yahoo.com/news/nvidia-google-back-ai21-labs-140222256.html",
-      "https://github.com/AI21Labs",
-      "https://github.com/AI21X",
-      "https://github.com/mangate",
       "https://huggingface.co/ai21labs",
       "https://microsoftedge.microsoft.com/addons/detail/wordtune-ai-paraphrasing/fgngodlaekdlibajobmkaklibdggemdd",
       "https://microsoftedge.microsoft.com/addons/detail/wordtune-aipowered-wri/fgngodlaekdlibajobmkaklibdggemdd",
@@ -54,9 +57,9 @@ export const manualOverrides: Record<
   },
   Bluesky: {
     ws: ["https://bsky.social", "https://bsky.app"],
+    gh: ["https://github.com/bluesky-social"],
     urls: [
       "https://apps.apple.com/de/developer/bluesky-pbllc/id1654243552",
-      "https://github.com/bluesky-social",
       "https://play.google.com/store/apps/developer?id=Bluesky+PBLLC&hl=de",
     ],
     _processed: true,
@@ -146,15 +149,16 @@ export const manualOverrides: Record<
       "https://www.instagram.com/avride.ai",
       "https://www.instagram.com/tripleten.tech",
     ],
+    gh: [
+      "https://github.com/Toloka",
+      "https://github.com/nebius",
+      "https://github.com/tractoai",
+    ],
     urls: [
       "https://clickhouse.com",
       "https://de.finance.yahoo.com/quote/NBIS/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZWNvc2lhLm9yZy8&guce_referrer_sig=AQAAALwBGTNYy8lfeJM_nDuQ2jR8jYNYblL9Mb2FqXEdZzSYEJj0izM8TuTNBsbJVEiB5Ioql2PjlWHRNrBh-4-_hj8YHUU7Giyt4ZXqb7NjJTAns9a4-tP6i_Vag4gmGRiJvEzbsL0vNvFz6C_aIZtwEXCcni4p9OyQvthXnb17kwh5",
       "https://de.finance.yahoo.com/quote/NBIS/news",
       "https://discord.com/login",
-      "https://github.com/Toloka/toloka-kit#toloka-kit",
-      "https://github.com/nebius",
-      "https://github.com/nebius/nebius-solutions-library",
-      "https://github.com/tractoai",
       "https://linktr.ee/TripleTen",
       "https://linktr.ee/TripleTen.Tech",
       "https://medium.com/nebius",
@@ -195,8 +199,8 @@ export const manualOverrides: Record<
     _processed: true,
   },
   "Protect AI": {
+    gh: ["https://github.com/protectai"],
     urls: [
-      "https://github.com/protectai",
       "https://mlsecops.slack.com/signup#/domain-signup",
       "https://www.youtube.com/@protectai",
     ],
@@ -231,8 +235,8 @@ export const manualOverrides: Record<
       "https://www.linkedin.com/showcase/sentinelone-apj",
       "https://www.linkedin.com/company/sentinelone",
     ],
+    gh: ["https://github.com/Sentinel-One"],
     urls: [
-      "https://github.com/Sentinel-One",
       "https://play.google.com/store/search?q=SentinelOne&c=apps&hl=de",
       "https://www.youtube.com/@Sentinelone-inc",
       "https://www.youtube.com/channel/UCm-vzfQy1lNglsXRBY6Vu5w",
@@ -240,20 +244,19 @@ export const manualOverrides: Record<
     _processed: true,
   },
   Sentra: {
+    gh: ["https://github.com/sentraio"],
     urls: [
       "https://www.facebook.com/profile.php?id=100091748057784",
-      "https://github.com/sentraio",
       "https://www.youtube.com/@sentra_security",
     ],
     _processed: true,
   },
   Silverfort: {
     ig: ["https://www.instagram.com/life_at_silverfort"],
+    gh: ["https://github.com/silverfort-open-source"],
     urls: [
       "https://apps.apple.com/de/developer/silverfort/id1227704144",
       "https://chromewebstore.google.com/detail/silverfort/pehheafegmblicfcnkpacblgfeabpgim",
-      "https://github.com/DanielZiv-SF",
-      "https://github.com/silverfort-open-source",
       "https://play.google.com/store/apps/developer?id=Silverfort+Inc.&hl=gsw",
       "https://www.youtube.com/@silverfort",
     ],
@@ -263,10 +266,8 @@ export const manualOverrides: Record<
   Speedata: {
     li: ["https://www.linkedin.com/company/speedataio"],
     fb: ["https://www.facebook.com/speedata.io"],
-    urls: [
-      "https://github.com/Speedata-io",
-      "https://www.youtube.com/@Speedata-io",
-    ],
+    gh: ["https://github.com/Speedata-io"],
+    urls: ["https://www.youtube.com/@Speedata-io"],
     _processed: true,
   },
   "The Agro Exchange": { ws: "https://www.agrox.io" },
@@ -274,8 +275,8 @@ export const manualOverrides: Record<
     fb: ["https://www.facebook.com/torqhq"],
     tw: ["https://x.com/torq_io"],
     ig: ["https://www.instagram.com/torq_io"],
+    gh: ["https://github.com/torqio"],
     urls: [
-      "https://github.com/torqio",
       "https://job-boards.greenhouse.io/torq",
       "https://www.tiktok.com/@torq.io",
       "https://www.youtube.com/@torq_io",
@@ -283,9 +284,9 @@ export const manualOverrides: Record<
     _processed: true,
   },
   "VAST Data": {
+    gh: ["https://github.com/vast-data"],
     urls: [
       "https://aws.amazon.com/marketplace/seller-profile?id=seller-rhponql53yee4",
-      "https://github.com/vast-data",
       "https://www.carahsoft.com/vast",
       "https://www.youtube.com/vastdata",
     ],

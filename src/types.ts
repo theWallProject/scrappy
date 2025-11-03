@@ -10,7 +10,6 @@ export const ScrappedItemSchema = z.object({
   ws: z.string().optional(),
   fb: z.string().optional(),
   tw: z.string().optional(),
-  ig: z.string().optional(),
   stock_symbol: z.string().optional(),
   stock_exchange_symbol: z.string().optional(),
   acquirer_identifier: z
@@ -72,6 +71,7 @@ export const ManualItemSchema = z.object({
   fb: z.array(z.string()).optional(),
   tw: z.array(z.string()).optional(),
   ig: z.array(z.string()).optional(),
+  gh: z.array(z.string()).optional(),
 });
 
 export const BuyIsraeliTechSchema = z.array(
