@@ -21960,9 +21960,17 @@
     ]
   },
   {
-    "selector": "100045",
+    "selector": "cellebrite",
     "name": "Cellebrite",
     "id": "cellebrite",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
+    "selector": "100045",
+    "name": "Cellebrite",
+    "id": "cellebrite_manual_li_100045",
     "reasons": [
       "h"
     ]

@@ -449,58 +449,110 @@ const validateItemLinks = async (
     `  ⏳ Browser windows are open (${pages.length} tabs). Close the browser to proceed...`,
   );
 
-  // Track all pages including manually opened ones
-  const allTrackedPages = new Set<Page>(pages);
-  // Store URLs for pages even after they're closed
-  const pageUrls = new Map<Page, string>();
+  // CRITICAL: Store tracking data OUTSIDE browser context scope
+  // These persist even after browser/context closes
+  const urlStorage = new Map<Page, string>(); // Page -> URL mapping (current/final URL)
+  const trackedPages = new Set<Page>(); // All tracked pages
 
-  // Store URLs for initial pages
+  // Initialize with pages we opened
   for (const page of pages) {
+    trackedPages.add(page);
     try {
       const url = page.url();
-      pageUrls.set(page, url);
+      if (url && url !== "about:blank") {
+        urlStorage.set(page, url);
+      }
+    } catch {
+      // Page might not have URL yet
+    }
+  }
+
+  // Helper to update and store a page's URL (synchronous for events)
+  // This only reads from browser, but writes to external storage
+  const updatePageUrl = (page: Page, source: string = "unknown") => {
+    try {
+      if (page.isClosed()) {
+        // If page is closed, don't try to access it
+        // But keep the last cached URL in storage
+        return;
+      }
+      const pageUrl = page.url();
+      if (pageUrl && pageUrl !== "about:blank") {
+        const oldUrl = urlStorage.get(page);
+        urlStorage.set(page, pageUrl); // Store in external storage
+        if (oldUrl !== pageUrl) {
+          log(
+            `  [DEBUG] ✨ Page URL captured/updated from ${source}: ${pageUrl}`,
+          );
+        }
+      }
+    } catch {
+      // Page might be closing or not accessible - ignore silently
+      // Events might fire during page close, this is expected
+      // The URL remains in external storage from previous updates
+    }
+  };
+
+  // Store URLs for initial pages and set up navigation listeners
+  for (const page of pages) {
+    try {
+      updatePageUrl(page, "initial");
+
+      // Set up navigation listeners for all initial pages
+      page.on("framenavigated", () => {
+        updatePageUrl(page, "framenavigated");
+      });
+
+      page.on("load", () => {
+        updatePageUrl(page, "load");
+      });
+
+      // Listen for page close - remove from storage when user closes tab
+      page.on("close", () => {
+        urlStorage.delete(page);
+        trackedPages.delete(page);
+        log(`  [DEBUG] ✗ Page closed, removed from storage`);
+      });
     } catch {
       // Page might not have a URL yet
     }
   }
 
   // Listen for new pages created (including manually opened tabs)
-  context.on("page", async (page) => {
+  // This event fires synchronously when a new tab is created
+  // Events write to external storage, independent of browser lifecycle
+  context.on("page", (page) => {
     try {
-      allTrackedPages.add(page);
+      trackedPages.add(page); // Track in external storage
       log(
-        `  [DEBUG] ✨ New page created (total tracked: ${allTrackedPages.size})`,
+        `  [DEBUG] ✨ New page created (total tracked: ${trackedPages.size})`,
       );
 
-      // Try to get URL immediately
-      const updatePageUrl = async () => {
-        try {
-          // Wait a bit for navigation to complete
-          await new Promise((resolve) => setTimeout(resolve, 500));
-          const pageUrl = page.url();
-          if (pageUrl && pageUrl !== "about:blank") {
-            const oldUrl = pageUrls.get(page);
-            pageUrls.set(page, pageUrl);
-            if (oldUrl !== pageUrl) {
-              log(`  [DEBUG] ✨ Page URL captured/updated: ${pageUrl}`);
-            }
-          }
-        } catch {
-          // Ignore errors getting URL
+      // Try to get URL immediately if available
+      try {
+        const initialUrl = page.url();
+        if (initialUrl && initialUrl !== "about:blank") {
+          urlStorage.set(page, initialUrl);
         }
-      };
+      } catch {
+        // Page might not have URL yet
+      }
 
-      // Try immediately and after navigation
-      updatePageUrl().catch(() => {});
-
-      // Also listen for navigation to capture final URL
+      // Listen for navigation to capture final URL (stores externally)
       page.on("framenavigated", () => {
-        updatePageUrl().catch(() => {});
+        updatePageUrl(page, "framenavigated");
       });
 
-      // Also listen for load to catch fully loaded pages
+      // Also listen for load to catch fully loaded pages (stores externally)
       page.on("load", () => {
-        updatePageUrl().catch(() => {});
+        updatePageUrl(page, "load");
+      });
+
+      // Listen for page close - remove from storage when user closes tab
+      page.on("close", () => {
+        urlStorage.delete(page);
+        trackedPages.delete(page);
+        log(`  [DEBUG] ✗ Page closed, removed from storage`);
       });
     } catch (e) {
       log(`  [DEBUG] Error in page event handler: ${e}`);
@@ -511,171 +563,80 @@ const validateItemLinks = async (
     let resolved = false;
     let pollInterval: NodeJS.Timeout | null = null;
 
+    // Collect URLs from external storage (no dependency on browser context)
     const collectExtraUrls = (): string[] => {
       const extraUrls: string[] = [];
       log(`  [DEBUG] === Starting URL collection ===`);
       log(
         `  [DEBUG] Links we opened: ${JSON.stringify(links.map((l) => l.url))}`,
       );
-      log(`  [DEBUG] Total tracked pages: ${allTrackedPages.size}`);
-      log(`  [DEBUG] Original pages array length: ${pages.length}`);
+      log(`  [DEBUG] Total tracked pages: ${trackedPages.size}`);
+      log(`  [DEBUG] URLs in external storage: ${urlStorage.size}`);
 
       try {
-        // Try to get pages from context first, but fallback to tracked pages
-        // if context is closed (returns empty array)
-        let pagesToCheck: Page[] = [];
+        // Try to get final URLs from still-open pages (browser might still be open)
+        // This is optional - we already have URLs in external storage
         try {
-          pagesToCheck = context.pages();
+          const contextPages = context.pages();
           log(
-            `  [DEBUG] Found ${pagesToCheck.length} pages from context.pages()`,
+            `  [DEBUG] Found ${contextPages.length} live pages (optional update)`,
           );
-          if (pagesToCheck.length > 0) {
-            log(
-              `  [DEBUG] Context pages: ${pagesToCheck.map((p, i) => `[${i}] ${p.isClosed() ? "CLOSED" : p.url()}`).join(", ")}`,
-            );
-          } else {
-            // Context is closed or empty, use tracked pages
-            log(
-              `  [DEBUG] context.pages() returned empty (context closed), using tracked pages`,
-            );
-            pagesToCheck = Array.from(allTrackedPages);
-            log(`  [DEBUG] Using ${pagesToCheck.length} tracked pages`);
+          for (const page of contextPages) {
+            trackedPages.add(page);
+            try {
+              if (!page.isClosed()) {
+                const liveUrl = page.url();
+                if (liveUrl && liveUrl !== "about:blank") {
+                  urlStorage.set(page, liveUrl); // Update external storage
+                  log(
+                    `  [DEBUG] Updated external storage with live URL: ${liveUrl}`,
+                  );
+                }
+              }
+            } catch {
+              // Page might be closing - that's fine, we have it in storage
+            }
           }
         } catch (e) {
-          log(`  [DEBUG] Could not get pages from context: ${e}`);
-          // Fallback to tracked pages
-          pagesToCheck = Array.from(allTrackedPages);
-          log(`  [DEBUG] Using ${pagesToCheck.length} tracked pages`);
+          log(
+            `  [DEBUG] Browser context closed, using external storage only: ${e}`,
+          );
+          // This is expected and fine - we collect from external storage
         }
 
-        // If still empty, use the original pages array as last resort
-        if (pagesToCheck.length === 0 && pages.length > 0) {
-          log(
-            `  [DEBUG] Tracked pages empty, falling back to original pages array`,
-          );
-          pagesToCheck = pages;
-          log(
-            `  [DEBUG] Using ${pagesToCheck.length} pages from original array`,
-          );
-        }
+        // No exclusion logic - collect ALL URLs from all tabs
+        // User will manually close tabs they don't need
 
-        if (pagesToCheck.length > 0) {
-          log(
-            `  [DEBUG] Final pages to check: ${pagesToCheck.map((p, i) => `[${i}] ${p.isClosed() ? "CLOSED" : p.url()}`).join(", ")}`,
-          );
-        }
-
-        // Create set of normalized URLs to exclude:
-        // 1. URLs we automatically opened (ws, li, fb, tw tabs)
-        // 2. URLs already in the data
-        const excludedUrls = new Set<string>();
-
-        // Add the URLs we automatically opened (normalized)
-        for (const autoPage of pages) {
-          try {
-            const autoUrl = pageUrls.get(autoPage) || autoPage.url();
-            if (autoUrl && autoUrl !== "about:blank") {
-              const normalized = normalizeUrlForComparison(autoUrl);
-              excludedUrls.add(normalized);
-              log(
-                `  [DEBUG] Added auto-opened tab to exclude: ${autoUrl} -> ${normalized}`,
-              );
+        // Collect ALL URLs from external storage (no browser dependency)
+        // This works even if all pages are closed - storage persists
+        const allCachedUrls = new Map<string, string>(); // normalized -> original url (for deduplication)
+        for (const [, url] of urlStorage.entries()) {
+          if (url && url !== "about:blank") {
+            const normalized = normalizeUrlForComparison(url);
+            // Keep the first non-normalized URL for each normalized version
+            if (!allCachedUrls.has(normalized)) {
+              allCachedUrls.set(normalized, url);
             }
-          } catch {
-            // Page might be closed, skip
           }
         }
 
-        // Add the URLs that are already in the item data (normalized)
-        if (item.ws) {
-          const normalized = normalizeUrlForComparison(item.ws);
-          excludedUrls.add(normalized);
-          log(
-            `  [DEBUG] Added existing ws to exclude: ${item.ws} -> ${normalized}`,
-          );
-        }
-        if (item.li) {
-          const normalized = normalizeUrlForComparison(item.li);
-          excludedUrls.add(normalized);
-          log(
-            `  [DEBUG] Added existing li to exclude: ${item.li} -> ${normalized}`,
-          );
-        }
-        if (item.fb) {
-          const normalized = normalizeUrlForComparison(item.fb);
-          excludedUrls.add(normalized);
-          log(
-            `  [DEBUG] Added existing fb to exclude: ${item.fb} -> ${normalized}`,
-          );
-        }
-        if (item.tw) {
-          const normalized = normalizeUrlForComparison(item.tw);
-          excludedUrls.add(normalized);
-          log(
-            `  [DEBUG] Added existing tw to exclude: ${item.tw} -> ${normalized}`,
-          );
-        }
-
         log(
-          `  [DEBUG] Total URLs to exclude (normalized): ${Array.from(excludedUrls).join(", ")}`,
+          `  [DEBUG] Found ${allCachedUrls.size} unique cached URLs to check`,
         );
 
-        log(
-          `  [DEBUG] Checking ${pagesToCheck.length} pages for extra URLs...`,
-        );
-        for (let i = 0; i < pagesToCheck.length; i++) {
-          const page = pagesToCheck[i];
-          try {
-            const isClosed = page.isClosed();
-            log(`  [DEBUG] Page [${i}]: isClosed=${isClosed}`);
+        // Process all cached URLs - no exclusions, collect everything
+        for (const [, originalUrl] of allCachedUrls.entries()) {
+          const cleanedUrl = removeTrailingSlash(originalUrl);
+          log(`  [DEBUG] ✓ Adding URL: ${cleanedUrl}`);
+          extraUrls.push(cleanedUrl);
+        }
 
-            // Try to get URL - either from live page or cached
-            let pageUrl: string | null = null;
-            if (!isClosed) {
-              try {
-                pageUrl = page.url();
-              } catch {
-                // Page might be closing
-              }
-            }
-
-            // If page is closed or we couldn't get URL, try cached URL
-            if (!pageUrl || pageUrl === "about:blank") {
-              pageUrl = pageUrls.get(page) || null;
-              if (pageUrl) {
-                log(`  [DEBUG] Page [${i}] using cached URL: ${pageUrl}`);
-              }
-            }
-
-            if (pageUrl && pageUrl !== "about:blank") {
-              const normalizedPageUrl = normalizeUrlForComparison(pageUrl);
-
-              log(
-                `  [DEBUG] Page [${i}] URL: ${pageUrl} (normalized: ${normalizedPageUrl})`,
-              );
-
-              const isExcluded = excludedUrls.has(normalizedPageUrl);
-              log(
-                `  [DEBUG] Page [${i}] isExcluded=${isExcluded} (checking against ${excludedUrls.size} excluded URLs)`,
-              );
-
-              // Check if this URL is new information (not auto-opened and not already in data)
-              if (!isExcluded) {
-                const cleanedUrl = removeTrailingSlash(pageUrl);
-                log(`  [DEBUG] ✓ Adding NEW URL: ${cleanedUrl}`);
-                extraUrls.push(cleanedUrl);
-              } else {
-                log(
-                  `  [DEBUG] ✗ Skipping page [${i}] (excluded: ${normalizedPageUrl})`,
-                );
-              }
-            } else {
-              log(`  [DEBUG] Page [${i}] no URL available (closed or blank)`);
-            }
-          } catch (e) {
-            log(`  [DEBUG] Error checking page [${i}]: ${e}`);
-            // Page might be closed or URL not available
-          }
+        // Log summary
+        log(`  [DEBUG] Total cached URLs processed: ${allCachedUrls.size}`);
+        if (allCachedUrls.size > 0) {
+          log(
+            `  [DEBUG] All cached URLs: ${Array.from(allCachedUrls.values()).join(", ")}`,
+          );
         }
 
         // Remove duplicates and sort
@@ -710,25 +671,37 @@ const validateItemLinks = async (
         pollInterval = null;
       }
 
-      // Collect URLs from all tabs before browser closes
+      // Collect URLs from external storage (no browser dependency)
       log(`  [DEBUG] cleanup() called with reason: ${reason}`);
       log(
-        `  [DEBUG] About to collect URLs, tracked pages: ${allTrackedPages.size}`,
+        `  [DEBUG] About to collect URLs, tracked pages: ${trackedPages.size}, URLs in external storage: ${urlStorage.size}`,
       );
 
-      // Try to collect URLs immediately before context fully closes
-      // Also try after a small delay as fallback
-      (async () => {
-        // First attempt: immediate collection (before delay)
-        log(`  [DEBUG] Attempting immediate URL collection...`);
-        let extraUrls = collectExtraUrls();
-
-        // If that didn't work and we have tracked pages, try again after delay
-        if (extraUrls.length === 0 && allTrackedPages.size > 0) {
-          await new Promise((resolve) => setTimeout(resolve, 100));
-          log(`  [DEBUG] Retrying URL collection after 100ms delay...`);
-          extraUrls = collectExtraUrls();
+      // OPTIONAL: Try to capture final URLs from still-open pages (browser might still be open)
+      // If this fails, we still have all URLs in external storage
+      try {
+        const contextPages = context.pages();
+        log(
+          `  [DEBUG] Final capture attempt: Found ${contextPages.length} live pages`,
+        );
+        for (const page of contextPages) {
+          trackedPages.add(page);
+          // Update external storage with final URL
+          updatePageUrl(page, "cleanup final");
         }
+      } catch (e) {
+        log(
+          `  [DEBUG] Browser already closed, using external storage only: ${e}`,
+        );
+        // This is fine - all URLs are already in external storage from events
+      }
+
+      // Collect from external storage - completely independent of browser state
+      // All URLs were stored by events, so we can read them now even if browser is closed
+      (async () => {
+        log(`  [DEBUG] Collecting URLs from external storage...`);
+        log(`  [DEBUG] External storage has ${urlStorage.size} URLs`);
+        const extraUrls = collectExtraUrls();
 
         log(`  [DEBUG] Collection returned ${extraUrls.length} URLs`);
         log(
@@ -801,6 +774,7 @@ const validateItemLinks = async (
           // Only keep unsupported URLs in urls array
           if (categorized.urls && categorized.urls.length > 0) {
             changes.urls = categorized.urls;
+            hasChanges = true;
             log(
               `  ✓ Kept ${categorized.urls.length} unsupported URL(s) in urls array`,
             );
@@ -808,6 +782,13 @@ const validateItemLinks = async (
         } else {
           log(`  [DEBUG] No extra URLs found`);
         }
+
+        log(
+          `  [DEBUG] Final changes object: ${JSON.stringify(changes, null, 2)}`,
+        );
+        log(
+          `  [DEBUG] hasChanges=${hasChanges}, changes.keys=${Object.keys(changes).join(", ")}`,
+        );
 
         const finalHasChanges =
           hasChanges || (changes.urls !== undefined && changes.urls.length > 0);

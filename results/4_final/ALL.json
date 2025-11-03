@@ -29957,8 +29957,8 @@
     ],
     "n": "Cellebrite",
     "s": "CLBT",
-    "fb": "cellebrite",
-    "li": "100045",
+    "fb": "cellebritedigitalintelligence",
+    "li": "cellebrite",
     "tw": "cellebrite",
     "ws": "cellebrite.com",
     "alt": [
@@ -29979,6 +29979,14 @@
         "ws": "https://belkasoft.com/"
       }
     ]
+  },
+  {
+    "id": "cellebrite_manual_li_100045",
+    "r": [
+      "h"
+    ],
+    "n": "Cellebrite",
+    "li": "100045"
   },
   {
     "id": "cellect-biotechnology",

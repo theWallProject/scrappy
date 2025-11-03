@@ -203,6 +203,15 @@ export const manualOverrides: Record<
     _processed: true,
   },
   Somite: { tw: "https://x.com/somiteai" },
+  Speedata: {
+    li: ["https://www.linkedin.com/company/speedataio"],
+    fb: ["https://www.facebook.com/speedata.io"],
+    urls: [
+      "https://github.com/Speedata-io",
+      "https://www.youtube.com/@Speedata-io",
+    ],
+    _processed: true,
+  },
   "The Agro Exchange": { ws: "https://www.agrox.io" },
   "VAST Data": {
     urls: [
