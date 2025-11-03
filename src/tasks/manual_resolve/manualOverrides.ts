@@ -267,6 +267,18 @@ export const manualOverrides: Record<
     _processed: true,
   },
   "The Agro Exchange": { ws: "https://www.agrox.io" },
+  Torq: {
+    fb: ["https://www.facebook.com/torqhq"],
+    tw: ["https://x.com/torq_io"],
+    urls: [
+      "https://github.com/torqio",
+      "https://job-boards.greenhouse.io/torq",
+      "https://www.instagram.com/torq_io",
+      "https://www.tiktok.com/@torq.io",
+      "https://www.youtube.com/@torq_io",
+    ],
+    _processed: true,
+  },
   "VAST Data": {
     urls: [
       "https://aws.amazon.com/marketplace/seller-profile?id=seller-rhponql53yee4",
