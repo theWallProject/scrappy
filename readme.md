@@ -114,23 +114,82 @@ Defined in `src/tasks/manual_resolve/duplicate.ts`:
 
 ## Adding a New Social Media Platform
 
-Follow these steps (use Instagram as reference):
+**Important**: There are two types of platforms:
+
+- **Platforms from Crunchbase** (e.g., LinkedIn, Facebook, Twitter): Extracted automatically from scraped data
+- **Platforms only from manual overrides** (e.g., Instagram, GitHub): Only added manually, not scraped from Crunchbase
+
+### Step 1: Common Setup (All Platforms)
 
 1. **`@theWallProject/addonCommon`**: Add `API_ENDPOINT_RULE_PLATFORM_NAME` (regex capturing username in group 1), `DBFileNames.FLAGGED_PLATFORM_NAME`, and `platformName?: string` to `FinalDBFileType`
+   - Field naming: use short lowercase (e.g., Instagram → `ig`, GitHub → `gh`)
 
-2. **`src/types.ts`**: Add `platformName: z.string().optional()` to `ScrappedItemSchema` and `platformName: z.array(z.string()).optional()` to `ManualItemSchema`
-   - Field naming: use short lowercase (e.g., Instagram → `ig`)
+### Step 2: Platform-Specific Setup
 
-3. **`src/tasks/manual_resolve/manualOverrides.ts`**: Add `platformName?: string | string[]` to `ManualOverrideFields` type and extract platform URLs from `urls` arrays
+#### For Platforms from Crunchbase (LinkedIn, Facebook, Twitter pattern)
 
-4. **`src/tasks/extract_social.ts`**: Import constants, add extraction logic (follow Facebook/Twitter pattern), add file output using `DBFileNames.FLAGGED_PLATFORM_NAME`, add log
+2. **`src/types.ts`**:
 
-5. **`src/tasks/merge_static.ts`**: Import rule, add `"platformName"` to `extractIdentifier` field union and linkFields array, add extraction case, add protocol removal
+   - Add `platformName: z.string().optional()` to `ScrappedItemSchema`
+   - Add `platformName: z.array(z.string()).optional()` to `ManualItemSchema`
 
-6. **`src/tasks/validate_urls.ts`**: Import rule, add `"platformName"` to `LinkField`, `CategorizedUrls`, and `OverrideWithUrls` types, add detection in `categorizeUrl`, remove from exclude patterns, update `formatValue` and `saveManualOverrides` template, add to `validateItemLinks`, **add `platformName` case in `collectExtraUrls` categorization loop and merging logic**
+3. **`src/tasks/extract_social.ts`**:
 
-7. **`src/tasks/final.ts`**: Add `"platformName"` to return type and add case `DBFileNames.FLAGGED_PLATFORM_NAME`
+   - Import `API_ENDPOINT_RULE_PLATFORM_NAME` and `DBFileNames.FLAGGED_PLATFORM_NAME`
+   - Add extraction logic (follow Facebook/Twitter pattern)
+   - Add file output using `DBFileNames.FLAGGED_PLATFORM_NAME`
+   - Add log statement
 
-8. **Addon (`theWallAddon/src/storage.ts`)**: Add case to `getSelectorKey` function mapping domain to selector key (e.g., `"instagram.com"` → `"ig"`)
+4. **`src/tasks/validate_urls.ts`**:
+   - Add `"platformName"` to `validateItemLinks` links array (since it exists on `ScrappedItemType`)
 
-**Checklist**: Extract URLs from overrides, regex extracts usernames correctly, output files created, addon updated, no linter errors
+#### For Platforms Only from Manual Overrides (Instagram, GitHub pattern)
+
+2. **`src/types.ts`**:
+
+   - **DO NOT** add to `ScrappedItemSchema` (only in manual overrides)
+   - Add `platformName: z.array(z.string()).optional()` to `ManualItemSchema`
+
+3. **`src/tasks/extract_social.ts`**:
+
+   - **SKIP** this step (not extracted from Crunchbase)
+
+4. **`src/tasks/validate_urls.ts`**:
+   - **DO NOT** add to `validateItemLinks` links array (field doesn't exist on `ScrappedItemType`)
+
+### Step 3: Common Steps (All Platforms)
+
+5. **`src/tasks/manual_resolve/manualOverrides.ts`**: Add `platformName?: string | string[]` to `ManualOverrideFields` type
+
+6. **`src/tasks/merge_static.ts`**:
+
+   - Import `API_ENDPOINT_RULE_PLATFORM_NAME`
+   - Add `"platformName"` to `extractIdentifier` function (add new case)
+   - Add `"platformName"` to `linkFields` array
+   - Update `ScrappedItemWithOverrides` type to include `platformName?: string`
+   - Add `platformName` case to the `setField` helper function
+   - Protocol removal is handled automatically via `setField`
+
+7. **`src/tasks/validate_urls.ts`**:
+
+   - Import `API_ENDPOINT_RULE_PLATFORM_NAME`
+   - Add `"platformName"` to `LinkField` type
+   - Add `platformName?: string[]` to `CategorizedUrls` and `OverrideWithUrls` types
+   - Add detection in `categorizeUrl` function
+   - Add `platformName` case in `formatValue` function (both processed and unprocessed branches)
+   - Update `saveManualOverrides` template to include `platformName` in `ManualOverrideFields`
+   - Add `platformName` case in `collectExtraUrls` categorization loop and merging logic
+   - Update `ManualOverrideValue` type to include `platformName?: string | string[]`
+
+8. **`src/tasks/final.ts`**: Add case `DBFileNames.FLAGGED_PLATFORM_NAME` returning `"platformName"` in `keyFromFileName` function
+
+9. **Addon (`theWallAddon/src/storage.ts`)**: Add case to `getSelectorKey` function mapping domain to selector key (e.g., `"github.com"` → `"gh"`)
+
+**Checklist**:
+
+- Regex extracts usernames correctly
+- Output files created (if platform from Crunchbase)
+- Manual override extraction works
+- Addon updated
+- No linter errors
+- No `any` type hacks used
