@@ -65,7 +65,7 @@ export const manualOverrides: Record<
     gh: ["https://github.com/bluesky-social"],
     urls: [
       "https://apps.apple.com/de/developer/bluesky-pbllc/id1654243552",
-      "https://play.google.com/store/apps/developer?id=Bluesky+PBLLC&hl=de",
+      "https://play.google.com/store/apps/developer?id=Bluesky+PBLLC",
     ],
     _processed: true,
   },
@@ -111,7 +111,7 @@ export const manualOverrides: Record<
     ig: ["https://www.instagram.com/empathy_com"],
     urls: [
       "https://apps.apple.com/us/developer/empathy/id1536395194",
-      "https://play.google.com/store/apps/dev?id=7573398188169424467&gl=US",
+      "https://play.google.com/store/apps/dev?id=7573398188169424467",
       "https://sprout.link/empathy_com",
       "https://www.threads.com/@empathy_com",
     ],
@@ -126,7 +126,7 @@ export const manualOverrides: Record<
     ytp: ["https://www.youtube.com/@moonpayhq"],
     urls: [
       "https://apps.apple.com/de/app/moonpay-krypto-kaufen/id1635031432",
-      "https://play.google.com/store/apps/details?id=com.moonpay&hl=de",
+      "https://play.google.com/store/apps/developer?id=MoonPay",
       "https://www.threads.com/@moonpay",
     ],
     _processed: true,
@@ -203,7 +203,7 @@ export const manualOverrides: Record<
     ytp: ["https://www.youtube.com/@Omadahealth"],
     urls: [
       "https://consent.yahoo.com/v2/collectConsent?sessionId=3_cc-session_5fdcb969-50cc-4b7f-ba83-69d67d8bf9a7",
-      "https://play.google.com/store/apps/details?id=com.omada.prevent&hl=de",
+      "https://play.google.com/store/apps/developer?id=Omada+Health",
       "https://www.youtube.com/c/omadahealth",
       "https://apps.apple.com/us/app/omada/id805711008",
       "https://www.cnbc.com/quotes/OMDA",
@@ -250,7 +250,7 @@ export const manualOverrides: Record<
     gh: ["https://github.com/Sentinel-One"],
     ytp: ["https://www.youtube.com/@Sentinelone-inc"],
     ytc: ["https://www.youtube.com/channel/UCm-vzfQy1lNglsXRBY6Vu5w"],
-    urls: ["https://play.google.com/store/search?q=SentinelOne&c=apps&hl=de"],
+    urls: ["https://play.google.com/store/apps/developer?id=Zimperium+INC."],
     _processed: true,
   },
   Sentra: {
@@ -266,7 +266,7 @@ export const manualOverrides: Record<
     urls: [
       "https://apps.apple.com/de/developer/silverfort/id1227704144",
       "https://chromewebstore.google.com/detail/silverfort/pehheafegmblicfcnkpacblgfeabpgim",
-      "https://play.google.com/store/apps/developer?id=Silverfort+Inc.&hl=gsw",
+      "https://play.google.com/store/apps/developer?id=Silverfort+Inc.",
     ],
     _processed: true,
   },
@@ -331,7 +331,7 @@ export const manualOverrides: Record<
       "https://www.youtube.com/eToroDeutsch",
       "https://www.threads.com/@etoro_official",
       "https://apps.apple.com/us/developer/etoro/id491658374",
-      "https://play.google.com/store/apps/developer?id=eToro&hl=de",
+      "https://play.google.com/store/apps/developer?id=eToro",
     ],
     _processed: true,
   },
