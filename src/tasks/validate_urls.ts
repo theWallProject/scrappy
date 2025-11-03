@@ -453,16 +453,127 @@ const validateItemLinks = async (
   // These persist even after browser/context closes
   const urlStorage = new Map<Page, string>(); // Tab -> URL mapping (final URL per tab)
   const tabUrlHistory = new Map<Page, Set<string>>(); // Tab -> Set of ALL URLs seen in this tab (navigation chain)
-  const trackedTabs = new Set<Page>(); // All tracked tabs
   const finalUrls = new Set<string>(); // PERSISTENT: All URLs ever seen - NEVER deleted, collected at end
   const userClosedUrls = new Set<string>(); // URLs user manually closed (exclude from collection)
   const pendingTabCloseChecks = new Set<NodeJS.Timeout>(); // Track pending timeout checks
   let isContextClosing = false; // Track if context is closing (prevents URL deletion during bulk close)
   const TAB_CLOSE_DELAY_MS = 3000; // Wait 3 seconds after tab close - if browser still open, it's manual close
 
+  // Helper to check if browser/context is still open
+  const isBrowserStillOpen = (tab: Page): boolean => {
+    try {
+      const tabContext = tab.context();
+      if (tabContext) {
+        const browser = tabContext.browser();
+        if (browser !== null && browser.isConnected()) {
+          return true;
+        }
+      }
+    } catch {
+      // Context closed - browser was closing
+    }
+
+    // Also check the main context
+    try {
+      const mainBrowser = context.browser();
+      return mainBrowser !== null && mainBrowser.isConnected();
+    } catch {
+      return false;
+    }
+  };
+
+  // Helper to handle tab close - wait 3 seconds, if browser still open then it's manual close
+  const setupTabCloseHandler = (tab: Page) => {
+    tab.on("close", () => {
+      const url = urlStorage.get(tab);
+      const urlHistory = tabUrlHistory.get(tab) || new Set<string>();
+
+      // Immediately remove from active tracking
+      urlStorage.delete(tab);
+      tabUrlHistory.delete(tab);
+
+      if (!url || url === "about:blank") {
+        return;
+      }
+
+      // Check if context is already closed (definitely shutdown)
+      let isShuttingDown = isContextClosing;
+      if (!isShuttingDown) {
+        try {
+          const tabContext = tab.context();
+          isShuttingDown = !tabContext || tabContext.browser() === null;
+        } catch {
+          // Context already closed - definitely shutdown
+          isShuttingDown = true;
+        }
+      }
+
+      if (isShuttingDown) {
+        // Browser is already closing - keep URLs in finalUrls (already there)
+        log(
+          `  [DEBUG] ⚠️ Tab closed during context shutdown, ${urlHistory.size} URLs preserved`,
+        );
+        return;
+      }
+
+      // Wait 3 seconds - if browser still open, it was manual close
+      const timeoutId = setTimeout(() => {
+        pendingTabCloseChecks.delete(timeoutId);
+
+        if (isBrowserStillOpen(tab) && !isContextClosing) {
+          // Browser still open after 3 seconds = user manually closed this tab
+          // Mark ALL URLs from this tab's navigation history as user-closed
+          for (const historyUrl of urlHistory) {
+            userClosedUrls.add(historyUrl);
+          }
+          log(
+            `  [DEBUG] ✗ Tab closed (user action - browser still open after ${TAB_CLOSE_DELAY_MS}ms), marking ${urlHistory.size} URLs as excluded: ${Array.from(urlHistory).join(", ")}`,
+          );
+        } else {
+          // Browser closed = it was shutdown, keep URLs
+          log(
+            `  [DEBUG] ⚠️ Tab close was browser shutdown (browser closed within ${TAB_CLOSE_DELAY_MS}ms), keeping ${urlHistory.size} URLs`,
+          );
+        }
+      }, TAB_CLOSE_DELAY_MS);
+
+      pendingTabCloseChecks.add(timeoutId);
+    });
+  };
+
+  // Wait for all pending tab close checks to complete (or timeout after 4 seconds)
+  const waitForPendingChecks = async () => {
+    if (pendingTabCloseChecks.size > 0) {
+      log(
+        `  [DEBUG] Waiting for ${pendingTabCloseChecks.size} pending tab close checks to complete...`,
+      );
+      const maxWait = TAB_CLOSE_DELAY_MS + 1000; // Wait slightly longer than the delay
+      const startTime = Date.now();
+
+      while (
+        pendingTabCloseChecks.size > 0 &&
+        Date.now() - startTime < maxWait
+      ) {
+        await new Promise((resolve) => setTimeout(resolve, 100));
+      }
+
+      if (pendingTabCloseChecks.size > 0) {
+        log(
+          `  [DEBUG] ⚠️ Still ${pendingTabCloseChecks.size} pending checks, proceeding anyway`,
+        );
+        // Clear remaining timeouts
+        for (const timeoutId of pendingTabCloseChecks) {
+          clearTimeout(timeoutId);
+        }
+        pendingTabCloseChecks.clear();
+      } else {
+        log(`  [DEBUG] ✓ All pending tab close checks completed`);
+      }
+    }
+  };
+
   // Initialize with tabs we opened
   for (const tab of pages) {
-    trackedTabs.add(tab);
     tabUrlHistory.set(tab, new Set<string>()); // Initialize URL history for this tab
     try {
       const url = tab.url();
@@ -539,87 +650,8 @@ const validateItemLinks = async (
         updateTabUrl(tab, "load");
       });
 
-      // Listen for tab close - wait 3 seconds, if browser still open then it's manual close
-      tab.on("close", () => {
-        const url = urlStorage.get(tab);
-        const urlHistory = tabUrlHistory.get(tab) || new Set<string>();
-
-        // Immediately remove from active tracking
-        urlStorage.delete(tab);
-        tabUrlHistory.delete(tab);
-        trackedTabs.delete(tab);
-
-        if (!url || url === "about:blank") {
-          return;
-        }
-
-        // Check if context is already closed (definitely shutdown)
-        let isShuttingDown = isContextClosing;
-        if (!isShuttingDown) {
-          try {
-            const tabContext = tab.context();
-            isShuttingDown = !tabContext || tabContext.browser() === null;
-          } catch {
-            // Context already closed - definitely shutdown
-            isShuttingDown = true;
-          }
-        }
-
-        if (isShuttingDown) {
-          // Browser is already closing - keep URLs in finalUrls (already there)
-          log(
-            `  [DEBUG] ⚠️ Tab closed during context shutdown, ${urlHistory.size} URLs preserved`,
-          );
-          return;
-        }
-
-        // Wait 3 seconds - if browser still open, it was manual close
-        const timeoutId = setTimeout(() => {
-          pendingTabCloseChecks.delete(timeoutId);
-
-          // Check if browser/context is still open
-          let browserStillOpen = false;
-          try {
-            const tabContext = tab.context();
-            if (tabContext) {
-              const browser = tabContext.browser();
-              browserStillOpen = browser !== null && browser.isConnected();
-            }
-          } catch {
-            // Context closed - browser was closing
-            browserStillOpen = false;
-          }
-
-          // Also check the main context
-          if (!browserStillOpen) {
-            try {
-              const mainBrowser = context.browser();
-              browserStillOpen =
-                mainBrowser !== null && mainBrowser.isConnected();
-            } catch {
-              browserStillOpen = false;
-            }
-          }
-
-          if (browserStillOpen && !isContextClosing) {
-            // Browser still open after 3 seconds = user manually closed this tab
-            // Mark ALL URLs from this tab's navigation history as user-closed
-            for (const historyUrl of urlHistory) {
-              userClosedUrls.add(historyUrl);
-            }
-            log(
-              `  [DEBUG] ✗ Tab closed (user action - browser still open after ${TAB_CLOSE_DELAY_MS}ms), marking ${urlHistory.size} URLs as excluded: ${Array.from(urlHistory).join(", ")}`,
-            );
-          } else {
-            // Browser closed = it was shutdown, keep URLs
-            log(
-              `  [DEBUG] ⚠️ Tab close was browser shutdown (browser closed within ${TAB_CLOSE_DELAY_MS}ms), keeping ${urlHistory.size} URLs`,
-            );
-          }
-        }, TAB_CLOSE_DELAY_MS);
-
-        pendingTabCloseChecks.add(timeoutId);
-      });
+      // Set up tab close handler
+      setupTabCloseHandler(tab);
     } catch {
       // Tab might not have a URL yet
     }
@@ -630,11 +662,9 @@ const validateItemLinks = async (
   // Events write to external storage, independent of browser lifecycle
   context.on("page", (tab) => {
     try {
-      trackedTabs.add(tab); // Track in external storage
-      log(`  [DEBUG] ✨ New tab created (total tracked: ${trackedTabs.size})`);
-
       // Initialize URL history for this tab
       tabUrlHistory.set(tab, new Set<string>());
+      log(`  [DEBUG] ✨ New tab created (total tracked: ${tabUrlHistory.size})`);
 
       // Try to get URL immediately if available
       try {
@@ -661,87 +691,8 @@ const validateItemLinks = async (
         updateTabUrl(tab, "load");
       });
 
-      // Listen for tab close - wait 3 seconds, if browser still open then it's manual close
-      tab.on("close", () => {
-        const url = urlStorage.get(tab);
-        const urlHistory = tabUrlHistory.get(tab) || new Set<string>();
-
-        // Immediately remove from active tracking
-        urlStorage.delete(tab);
-        tabUrlHistory.delete(tab);
-        trackedTabs.delete(tab);
-
-        if (!url || url === "about:blank") {
-          return;
-        }
-
-        // Check if context is already closed (definitely shutdown)
-        let isShuttingDown = isContextClosing;
-        if (!isShuttingDown) {
-          try {
-            const tabContext = tab.context();
-            isShuttingDown = !tabContext || tabContext.browser() === null;
-          } catch {
-            // Context already closed - definitely shutdown
-            isShuttingDown = true;
-          }
-        }
-
-        if (isShuttingDown) {
-          // Browser is already closing - keep URLs in finalUrls (already there)
-          log(
-            `  [DEBUG] ⚠️ Tab closed during context shutdown, ${urlHistory.size} URLs preserved`,
-          );
-          return;
-        }
-
-        // Wait 3 seconds - if browser still open, it was manual close
-        const timeoutId = setTimeout(() => {
-          pendingTabCloseChecks.delete(timeoutId);
-
-          // Check if browser/context is still open
-          let browserStillOpen = false;
-          try {
-            const tabContext = tab.context();
-            if (tabContext) {
-              const browser = tabContext.browser();
-              browserStillOpen = browser !== null && browser.isConnected();
-            }
-          } catch {
-            // Context closed - browser was closing
-            browserStillOpen = false;
-          }
-
-          // Also check the main context
-          if (!browserStillOpen) {
-            try {
-              const mainBrowser = context.browser();
-              browserStillOpen =
-                mainBrowser !== null && mainBrowser.isConnected();
-            } catch {
-              browserStillOpen = false;
-            }
-          }
-
-          if (browserStillOpen && !isContextClosing) {
-            // Browser still open after 3 seconds = user manually closed this tab
-            // Mark ALL URLs from this tab's navigation history as user-closed
-            for (const historyUrl of urlHistory) {
-              userClosedUrls.add(historyUrl);
-            }
-            log(
-              `  [DEBUG] ✗ Tab closed (user action - browser still open after ${TAB_CLOSE_DELAY_MS}ms), marking ${urlHistory.size} URLs as excluded: ${Array.from(urlHistory).join(", ")}`,
-            );
-          } else {
-            // Browser closed = it was shutdown, keep URLs
-            log(
-              `  [DEBUG] ⚠️ Tab close was browser shutdown (browser closed within ${TAB_CLOSE_DELAY_MS}ms), keeping ${urlHistory.size} URLs`,
-            );
-          }
-        }, TAB_CLOSE_DELAY_MS);
-
-        pendingTabCloseChecks.add(timeoutId);
-      });
+      // Set up tab close handler
+      setupTabCloseHandler(tab);
     } catch (e) {
       log(`  [DEBUG] Error in tab event handler: ${e}`);
     }
@@ -758,7 +709,7 @@ const validateItemLinks = async (
       log(
         `  [DEBUG] Links we opened: ${JSON.stringify(links.map((l) => l.url))}`,
       );
-      log(`  [DEBUG] Total tracked tabs: ${trackedTabs.size}`);
+      log(`  [DEBUG] Total tracked tabs: ${tabUrlHistory.size}`);
       log(`  [DEBUG] Tabs with URLs in active storage: ${urlStorage.size}`);
       log(`  [DEBUG] Total URLs in persistent collection: ${finalUrls.size}`);
       log(
@@ -868,43 +819,12 @@ const validateItemLinks = async (
         `  [DEBUG] Context closing flag set to prevent URL deletion during tab close events`,
       );
 
-      // Wait for all pending tab close checks to complete (or timeout after 4 seconds)
-      const waitForPendingChecks = async () => {
-        if (pendingTabCloseChecks.size > 0) {
-          log(
-            `  [DEBUG] Waiting for ${pendingTabCloseChecks.size} pending tab close checks to complete...`,
-          );
-          const maxWait = TAB_CLOSE_DELAY_MS + 1000; // Wait slightly longer than the delay
-          const startTime = Date.now();
-
-          while (
-            pendingTabCloseChecks.size > 0 &&
-            Date.now() - startTime < maxWait
-          ) {
-            await new Promise((resolve) => setTimeout(resolve, 100));
-          }
-
-          if (pendingTabCloseChecks.size > 0) {
-            log(
-              `  [DEBUG] ⚠️ Still ${pendingTabCloseChecks.size} pending checks, proceeding anyway`,
-            );
-            // Clear remaining timeouts
-            for (const timeoutId of pendingTabCloseChecks) {
-              clearTimeout(timeoutId);
-            }
-            pendingTabCloseChecks.clear();
-          } else {
-            log(`  [DEBUG] ✓ All pending tab close checks completed`);
-          }
-        }
-      };
-
       // Collect URLs - wait for pending checks first
       log(`  [DEBUG] cleanup() called with reason: ${reason}`);
       log(
         `  [DEBUG] Reading tab->URL mappings (no browser access needed): ${urlStorage.size} tabs with URLs`,
       );
-      log(`  [DEBUG] Total tracked tabs before cleanup: ${trackedTabs.size}`);
+      log(`  [DEBUG] Total tracked tabs before cleanup: ${tabUrlHistory.size}`);
 
       // Log all URLs currently in storage for debugging
       if (urlStorage.size > 0) {
