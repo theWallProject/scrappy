@@ -17,6 +17,41 @@ export const manualOverrides: Record<
   | (ManualOverrideFields & { _processed: true; urls?: string[] })
 > = {
   "01 Founders": { li: "https://www.linkedin.com/school/01-founders/" },
+  "AI21 Labs": {
+    li: [
+      "https://www.linkedin.com/company/ai21",
+      "https://www.linkedin.com/showcase/wordtune",
+    ],
+    fb: [
+      "https://www.facebook.com/AI21Labs",
+      "https://www.facebook.com/wordtune",
+    ],
+    tw: ["https://x.com/AI21Labs", "https://x.com/wordtune"],
+    urls: [
+      "https://app.wordtune.com/editor/welcome",
+      "https://apps.apple.com/us/developer/ai21-labs-inc/id1628773286",
+      "https://aws.amazon.com/bedrock/ai21",
+      "https://chromewebstore.google.com/detail/wordtune-ai-paraphrasing/nllcnknpjnininklegdoijpljgdjkijc",
+      "https://cloud.google.com/customers/ai21",
+      "https://discord.com/app/invite-with-guild-onboarding/cKzg6GEAyB",
+      "https://discord.com/invite/cKzg6GEAyB",
+      "https://finance.yahoo.com/news/nvidia-google-back-ai21-labs-140222256.html",
+      "https://github.com/AI21Labs",
+      "https://github.com/AI21X",
+      "https://github.com/mangate",
+      "https://huggingface.co/ai21labs",
+      "https://microsoftedge.microsoft.com/addons/detail/wordtune-ai-paraphrasing/fgngodlaekdlibajobmkaklibdggemdd",
+      "https://microsoftedge.microsoft.com/addons/detail/wordtune-aipowered-wri/fgngodlaekdlibajobmkaklibdggemdd",
+      "https://www.instagram.com/wordtune_official",
+      "https://www.linkedin.com/newsletters/6995001803318681600",
+      "https://www.tiktok.com/@wordtune_official",
+      "https://www.wordtune.com",
+      "https://www.youtube.com/@ai21labs",
+      "https://www.youtube.com/channel/UCDQlFKBK11jIxm4iVymoAtA",
+      "https://www.youtube.com/watch?v=DyE0YkoFFEE",
+    ],
+    _processed: true,
+  },
   Bluesky: {
     ws: ["https://bsky.social", "https://bsky.app"],
     urls: [
