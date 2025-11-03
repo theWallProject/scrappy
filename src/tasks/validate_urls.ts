@@ -452,6 +452,7 @@ const validateItemLinks = async (
   // CRITICAL: Store tracking data OUTSIDE browser context scope
   // These persist even after browser/context closes
   const urlStorage = new Map<Page, string>(); // Tab -> URL mapping (final URL per tab)
+  const tabUrlHistory = new Map<Page, Set<string>>(); // Tab -> Set of ALL URLs seen in this tab (navigation chain)
   const trackedTabs = new Set<Page>(); // All tracked tabs
   const finalUrls = new Set<string>(); // PERSISTENT: All URLs ever seen - NEVER deleted, collected at end
   const userClosedUrls = new Set<string>(); // URLs user manually closed (exclude from collection)
@@ -462,10 +463,15 @@ const validateItemLinks = async (
   // Initialize with tabs we opened
   for (const tab of pages) {
     trackedTabs.add(tab);
+    tabUrlHistory.set(tab, new Set<string>()); // Initialize URL history for this tab
     try {
       const url = tab.url();
       if (url && url !== "about:blank") {
         urlStorage.set(tab, url); // Store tab->URL mapping
+        const history = tabUrlHistory.get(tab);
+        if (history) {
+          history.add(url); // Add to tab's URL history
+        }
         finalUrls.add(url); // Add to persistent collection
       }
     } catch {
@@ -476,6 +482,7 @@ const validateItemLinks = async (
   // Helper to update and store a tab's URL (synchronous for events)
   // Maintains clear tab->URL mapping (final URL per tab)
   // ALSO stores in finalUrls for persistent collection (never deleted)
+  // ALSO tracks all URLs in tab's navigation history
   const updateTabUrl = (tab: Page, source: string = "unknown") => {
     try {
       if (tab.isClosed()) {
@@ -485,6 +492,24 @@ const validateItemLinks = async (
       if (tabUrl && tabUrl !== "about:blank") {
         const oldUrl = urlStorage.get(tab);
         urlStorage.set(tab, tabUrl); // Update tab->URL mapping
+
+        // Ensure tab has URL history set
+        if (!tabUrlHistory.has(tab)) {
+          tabUrlHistory.set(tab, new Set<string>());
+        }
+        const history = tabUrlHistory.get(tab);
+        if (!history) {
+          return;
+        }
+
+        // Add old URL to history if it exists
+        if (oldUrl && oldUrl !== tabUrl && oldUrl !== "about:blank") {
+          history.add(oldUrl);
+          finalUrls.add(oldUrl); // Keep old URL in collection
+        }
+
+        // Add new URL to history and collection
+        history.add(tabUrl);
         finalUrls.add(tabUrl); // ALWAYS add to persistent collection (never deleted)
 
         if (oldUrl && oldUrl !== tabUrl && oldUrl !== "about:blank") {
@@ -517,9 +542,11 @@ const validateItemLinks = async (
       // Listen for tab close - wait 3 seconds, if browser still open then it's manual close
       tab.on("close", () => {
         const url = urlStorage.get(tab);
+        const urlHistory = tabUrlHistory.get(tab) || new Set<string>();
 
         // Immediately remove from active tracking
         urlStorage.delete(tab);
+        tabUrlHistory.delete(tab);
         trackedTabs.delete(tab);
 
         if (!url || url === "about:blank") {
@@ -539,9 +566,9 @@ const validateItemLinks = async (
         }
 
         if (isShuttingDown) {
-          // Browser is already closing - keep URL in finalUrls (already there)
+          // Browser is already closing - keep URLs in finalUrls (already there)
           log(
-            `  [DEBUG] ⚠️ Tab closed during context shutdown, URL preserved: ${url}`,
+            `  [DEBUG] ⚠️ Tab closed during context shutdown, ${urlHistory.size} URLs preserved`,
           );
           return;
         }
@@ -576,14 +603,17 @@ const validateItemLinks = async (
 
           if (browserStillOpen && !isContextClosing) {
             // Browser still open after 3 seconds = user manually closed this tab
-            userClosedUrls.add(url);
+            // Mark ALL URLs from this tab's navigation history as user-closed
+            for (const historyUrl of urlHistory) {
+              userClosedUrls.add(historyUrl);
+            }
             log(
-              `  [DEBUG] ✗ Tab closed (user action - browser still open after ${TAB_CLOSE_DELAY_MS}ms), marking as excluded: ${url}`,
+              `  [DEBUG] ✗ Tab closed (user action - browser still open after ${TAB_CLOSE_DELAY_MS}ms), marking ${urlHistory.size} URLs as excluded: ${Array.from(urlHistory).join(", ")}`,
             );
           } else {
-            // Browser closed = it was shutdown, keep URL
+            // Browser closed = it was shutdown, keep URLs
             log(
-              `  [DEBUG] ⚠️ Tab close was browser shutdown (browser closed within ${TAB_CLOSE_DELAY_MS}ms), keeping URL: ${url}`,
+              `  [DEBUG] ⚠️ Tab close was browser shutdown (browser closed within ${TAB_CLOSE_DELAY_MS}ms), keeping ${urlHistory.size} URLs`,
             );
           }
         }, TAB_CLOSE_DELAY_MS);
@@ -603,11 +633,18 @@ const validateItemLinks = async (
       trackedTabs.add(tab); // Track in external storage
       log(`  [DEBUG] ✨ New tab created (total tracked: ${trackedTabs.size})`);
 
+      // Initialize URL history for this tab
+      tabUrlHistory.set(tab, new Set<string>());
+
       // Try to get URL immediately if available
       try {
         const initialUrl = tab.url();
         if (initialUrl && initialUrl !== "about:blank") {
           urlStorage.set(tab, initialUrl); // Store tab->URL mapping
+          const history = tabUrlHistory.get(tab);
+          if (history) {
+            history.add(initialUrl); // Add to tab's URL history
+          }
           finalUrls.add(initialUrl); // Add to persistent collection
         }
       } catch {
@@ -627,9 +664,11 @@ const validateItemLinks = async (
       // Listen for tab close - wait 3 seconds, if browser still open then it's manual close
       tab.on("close", () => {
         const url = urlStorage.get(tab);
+        const urlHistory = tabUrlHistory.get(tab) || new Set<string>();
 
         // Immediately remove from active tracking
         urlStorage.delete(tab);
+        tabUrlHistory.delete(tab);
         trackedTabs.delete(tab);
 
         if (!url || url === "about:blank") {
@@ -649,9 +688,9 @@ const validateItemLinks = async (
         }
 
         if (isShuttingDown) {
-          // Browser is already closing - keep URL in finalUrls (already there)
+          // Browser is already closing - keep URLs in finalUrls (already there)
           log(
-            `  [DEBUG] ⚠️ Tab closed during context shutdown, URL preserved: ${url}`,
+            `  [DEBUG] ⚠️ Tab closed during context shutdown, ${urlHistory.size} URLs preserved`,
           );
           return;
         }
@@ -686,14 +725,17 @@ const validateItemLinks = async (
 
           if (browserStillOpen && !isContextClosing) {
             // Browser still open after 3 seconds = user manually closed this tab
-            userClosedUrls.add(url);
+            // Mark ALL URLs from this tab's navigation history as user-closed
+            for (const historyUrl of urlHistory) {
+              userClosedUrls.add(historyUrl);
+            }
             log(
-              `  [DEBUG] ✗ Tab closed (user action - browser still open after ${TAB_CLOSE_DELAY_MS}ms), marking as excluded: ${url}`,
+              `  [DEBUG] ✗ Tab closed (user action - browser still open after ${TAB_CLOSE_DELAY_MS}ms), marking ${urlHistory.size} URLs as excluded: ${Array.from(urlHistory).join(", ")}`,
             );
           } else {
-            // Browser closed = it was shutdown, keep URL
+            // Browser closed = it was shutdown, keep URLs
             log(
-              `  [DEBUG] ⚠️ Tab close was browser shutdown (browser closed within ${TAB_CLOSE_DELAY_MS}ms), keeping URL: ${url}`,
+              `  [DEBUG] ⚠️ Tab close was browser shutdown (browser closed within ${TAB_CLOSE_DELAY_MS}ms), keeping ${urlHistory.size} URLs`,
             );
           }
         }, TAB_CLOSE_DELAY_MS);
@@ -1436,9 +1478,8 @@ export async function run() {
     // Display statistics at the very end
     displayStatistics(sortedData, updatedOverrides);
 
-    // Exit cleanly to prevent hanging prompts from index.ts
-    // Note: If called from validate_index.ts, it will continue to apply overrides there
-    process.exit(0);
+    // Don't exit here - let validate_index.ts handle exit after applying overrides
+    // This allows validate_index.ts to run apply-overrides command after validation
   } catch (err) {
     error("Error during validation:", err);
     throw err;

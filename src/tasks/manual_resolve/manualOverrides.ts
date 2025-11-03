@@ -244,6 +244,18 @@ export const manualOverrides: Record<
     ],
     _processed: true,
   },
+  Silverfort: {
+    urls: [
+      "https://apps.apple.com/de/developer/silverfort/id1227704144",
+      "https://chromewebstore.google.com/detail/silverfort/pehheafegmblicfcnkpacblgfeabpgim",
+      "https://github.com/DanielZiv-SF",
+      "https://github.com/silverfort-open-source",
+      "https://play.google.com/store/apps/developer?id=Silverfort+Inc.&hl=gsw",
+      "https://www.instagram.com/life_at_silverfort",
+      "https://www.youtube.com/@silverfort",
+    ],
+    _processed: true,
+  },
   Somite: { tw: "https://x.com/somiteai" },
   Speedata: {
     li: ["https://www.linkedin.com/company/speedataio"],

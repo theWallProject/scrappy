@@ -1,6 +1,6 @@
 import { error, log } from "./helper";
 import { run as validateUrls } from "./tasks/validate_urls";
-import { runUpdateSteps } from "./index";
+import { execSync } from "child_process";
 
 process.on("unhandledRejection", (reason) => {
   error("VALIDATE_ERROR Unhandled Rejection:", reason);
@@ -17,14 +17,21 @@ const main = async () => {
     await validateUrls();
   } catch (err) {
     error("Validation error:", err);
-    throw err;
+    // Still try to apply overrides even if validation had errors
   }
-  
-  // Note: validateUrls() calls process.exit(0) at the end, so this code won't run
-  // unless we handle the exit. But validateUrls() already calls runUpdateSteps()
-  // internally after processing each item, so manual overrides are already applied.
-  // This is kept as documentation that overrides are applied automatically.
+
+  // Run apply-overrides automatically after validation completes
+  log("\n🔄 Automatically applying manual overrides to output files...");
+  try {
+    execSync("npm run apply-overrides", { stdio: "inherit" });
+    log("✅ All files updated successfully!");
+    process.exit(0);
+  } catch (err) {
+    error(
+      "⚠️  Failed to apply overrides automatically. Run 'npm run apply-overrides' manually.",
+    );
+    process.exit(1);
+  }
 };
 
 main();
-
