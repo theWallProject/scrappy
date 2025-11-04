@@ -2,24 +2,28 @@ import fs from "fs";
 import path from "path";
 import {
   APIEndpointDomains,
-  API_ENDPOINT_RULE_LINKEDIN,
+  API_ENDPOINT_RULE_LINKEDIN_COMPANY,
   API_ENDPOINT_RULE_FACEBOOK,
   API_ENDPOINT_RULE_TWITTER,
   API_ENDPOINT_RULE_INSTAGRAM,
   API_ENDPOINT_RULE_GITHUB,
   API_ENDPOINT_RULE_YOUTUBE_PROFILE,
   API_ENDPOINT_RULE_YOUTUBE_CHANNEL,
+  API_ENDPOINT_RULE_TIKTOK,
+  API_ENDPOINT_RULE_THREADS,
   DBFileNames,
 } from "@theWallProject/addonCommon";
 import { APIScrapperFileDataSchema, ScrappedFileType } from "../types";
 import { error, log, warn } from "../helper";
 
-// Type for merged data that may include ig/gh/ytp/ytc from manual overrides
+// Type for merged data that may include ig/gh/ytp/ytc/tt/th from manual overrides
 type MergedDataItem = ScrappedFileType[number] & {
   ig?: string;
   gh?: string;
   ytp?: string;
   ytc?: string;
+  tt?: string;
+  th?: string;
 };
 
 const extractSocialLinks = (data: MergedDataItem[]) => {
@@ -30,8 +34,10 @@ const extractSocialLinks = (data: MergedDataItem[]) => {
   const githubFlagged: APIEndpointDomains = [];
   const youtubeProfileFlagged: APIEndpointDomains = [];
   const youtubeChannelFlagged: APIEndpointDomains = [];
+  const tiktokFlagged: APIEndpointDomains = [];
+  const threadsFlagged: APIEndpointDomains = [];
 
-  const regexLinkedin = new RegExp(API_ENDPOINT_RULE_LINKEDIN.regex);
+  const regexLinkedin = new RegExp(API_ENDPOINT_RULE_LINKEDIN_COMPANY.regex);
   const regexFacebook = new RegExp(API_ENDPOINT_RULE_FACEBOOK.regex);
   const regexTwitter = new RegExp(API_ENDPOINT_RULE_TWITTER.regex);
   const regexInstagram = new RegExp(API_ENDPOINT_RULE_INSTAGRAM.regex);
@@ -42,6 +48,8 @@ const extractSocialLinks = (data: MergedDataItem[]) => {
   const regexYouTubeChannel = new RegExp(
     API_ENDPOINT_RULE_YOUTUBE_CHANNEL.regex,
   );
+  const regexTikTok = new RegExp(API_ENDPOINT_RULE_TIKTOK.regex);
+  const regexThreads = new RegExp(API_ENDPOINT_RULE_THREADS.regex);
 
   // const namesMap: { [key: string]: boolean } = {};
   const websitesMap: { [key: string]: boolean } = {};
@@ -52,9 +60,11 @@ const extractSocialLinks = (data: MergedDataItem[]) => {
   const githubMap: { [key: string]: boolean } = {};
   const youtubeProfileMap: { [key: string]: boolean } = {};
   const youtubeChannelMap: { [key: string]: boolean } = {};
+  const tiktokMap: { [key: string]: boolean } = {};
+  const threadsMap: { [key: string]: boolean } = {};
 
   data.forEach((row) => {
-    const { name, ws, li, fb, tw, reasons, id, ig, gh, ytp, ytc } = row;
+    const { name, ws, li, fb, tw, reasons, id, ig, gh, ytp, ytc, tt, th } = row;
 
     // if (namesMap[name]) {
     //   error(`Duplicate name [social]: ${row.name}`);
@@ -219,8 +229,11 @@ const extractSocialLinks = (data: MergedDataItem[]) => {
     }
 
     // Extract YouTube Profile (from manual overrides)
+    // Use common regex as only source of truth
     if (ytp && ytp !== "") {
-      const results = regexYouTubeProfile.exec(ytp);
+      // Normalize URL to handle www. prefix for regex matching
+      const normalizedYtp = ytp.replace(/^www\./, "");
+      const results = regexYouTubeProfile.exec(normalizedYtp);
       const result = results && results[1];
 
       if (result) {
@@ -263,6 +276,56 @@ const extractSocialLinks = (data: MergedDataItem[]) => {
         }
       } else {
         warn(`YouTube Channel processing ${ytc} had no result! [${result}]`);
+      }
+    }
+
+    // Extract TikTok (from manual overrides)
+    // Use common regex as only source of truth
+    if (tt && tt !== "") {
+      const results = regexTikTok.exec(tt);
+      const result = results && results[1];
+
+      if (result) {
+        if (tiktokMap[result]) {
+          error(`Duplicate TikTok [social]: ${result}`);
+        } else {
+          tiktokMap[result] = true;
+
+          tiktokFlagged.push({
+            id: row.id,
+            selector: result,
+            name: row.name,
+            reasons: row.reasons,
+            ...(row.stock_symbol ? { s: row.stock_symbol } : {}),
+          });
+        }
+      } else {
+        warn(`TikTok processing ${tt} had no result! [${result}]`);
+      }
+    }
+
+    // Extract Threads (from manual overrides)
+    // Use common regex as only source of truth
+    if (th && th !== "") {
+      const results = regexThreads.exec(th);
+      const result = results && results[1];
+
+      if (result) {
+        if (threadsMap[result]) {
+          error(`Duplicate Threads [social]: ${result}`);
+        } else {
+          threadsMap[result] = true;
+
+          threadsFlagged.push({
+            id: row.id,
+            selector: result,
+            name: row.name,
+            reasons: row.reasons,
+            ...(row.stock_symbol ? { s: row.stock_symbol } : {}),
+          });
+        }
+      } else {
+        warn(`Threads processing ${th} had no result! [${result}]`);
       }
     }
   });
@@ -323,6 +386,22 @@ const extractSocialLinks = (data: MergedDataItem[]) => {
     ),
   );
 
+  saveJsonToFile(
+    tiktokFlagged.sort((a, b) => a.name.localeCompare(b.name)),
+    path.join(
+      __dirname,
+      `../../results/3_networks/${DBFileNames.FLAGGED_TIKTOK}.json`,
+    ),
+  );
+
+  saveJsonToFile(
+    threadsFlagged.sort((a, b) => a.name.localeCompare(b.name)),
+    path.join(
+      __dirname,
+      `../../results/3_networks/${DBFileNames.FLAGGED_THREADS}.json`,
+    ),
+  );
+
   log(`Wrote ${linkedinFlagged.length} li rows...`);
   log(`Wrote ${facebookFlagged.length} fb rows..`);
   log(`Wrote ${twitterFlagged.length} tw rows..`);
@@ -330,6 +409,8 @@ const extractSocialLinks = (data: MergedDataItem[]) => {
   log(`Wrote ${githubFlagged.length} gh rows..`);
   log(`Wrote ${youtubeProfileFlagged.length} ytp rows..`);
   log(`Wrote ${youtubeChannelFlagged.length} ytc rows..`);
+  log(`Wrote ${tiktokFlagged.length} tt rows..`);
+  log(`Wrote ${threadsFlagged.length} th rows..`);
 };
 
 const saveJsonToFile = (data: unknown, outputFilePath: string) => {

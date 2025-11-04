@@ -14827,15 +14827,6 @@
     ]
   },
   {
-    "id": "withconfetti",
-    "selector": "eventswithconfetti",
-    "name": "Confetti",
-    "reasons": [
-      "f",
-      "i"
-    ]
-  },
-  {
     "id": "conffit",
     "selector": "conffit",
     "name": "Conffit",

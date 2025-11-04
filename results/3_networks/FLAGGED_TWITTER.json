@@ -23241,14 +23241,6 @@
     ]
   },
   {
-    "id": "intentia",
-    "selector": "intentiaerp",
-    "name": "Intentia",
-    "reasons": [
-      "h"
-    ]
-  },
-  {
     "id": "inter-jeans",
     "selector": "interjeans1990",
     "name": "Inter Jeans",
@@ -40726,14 +40718,6 @@
     "reasons": [
       "f",
       "i"
-    ]
-  },
-  {
-    "id": "searchshops",
-    "selector": "searchshops_com",
-    "name": "SearchShops",
-    "reasons": [
-      "h"
     ]
   },
   {

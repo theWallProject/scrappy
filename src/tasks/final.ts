@@ -104,6 +104,10 @@ function keyFromFileName(fileName: string): LinkField {
       return "ytp";
     case DBFileNames.FLAGGED_YOUTUBE_CHANNEL:
       return "ytc";
+    case DBFileNames.FLAGGED_TIKTOK:
+      return "tt";
+    case DBFileNames.FLAGGED_THREADS:
+      return "th";
 
     default:
       throw new Error(`Unknown file name: ${fileName}`);

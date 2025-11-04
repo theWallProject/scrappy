@@ -10,9 +10,11 @@ type ManualOverrideFields = {
   gh?: string | string[];
   ytp?: string | string[];
   ytc?: string | string[];
+  tt?: string | string[];
+  th?: string | string[];
 } & Omit<
   Partial<ScrappedItemType>,
-  "ws" | "li" | "fb" | "tw" | "ig" | "gh" | "ytp" | "ytc"
+  "ws" | "li" | "fb" | "tw" | "ig" | "gh" | "ytp" | "ytc" | "tt" | "th"
 >;
 
 export const manualOverrides: Record<
@@ -43,6 +45,7 @@ export const manualOverrides: Record<
     ],
     ytp: ["https://www.youtube.com/@ai21labs"],
     ytc: ["https://www.youtube.com/channel/UCDQlFKBK11jIxm4iVymoAtA"],
+    tt: ["https://www.tiktok.com/@wordtune_official"],
     urls: [
       "https://apps.apple.com/us/developer/ai21-labs-inc/id1628773286",
       "https://aws.amazon.com/bedrock/ai21",
@@ -53,9 +56,7 @@ export const manualOverrides: Record<
       "https://finance.yahoo.com/news/nvidia-google-back-ai21-labs-140222256.html",
       "https://huggingface.co/ai21labs",
       "https://microsoftedge.microsoft.com/addons/detail/wordtune-ai-paraphrasing/fgngodlaekdlibajobmkaklibdggemdd",
-      "https://microsoftedge.microsoft.com/addons/detail/wordtune-aipowered-wri/fgngodlaekdlibajobmkaklibdggemdd",
       "https://www.linkedin.com/newsletters/6995001803318681600",
-      "https://www.tiktok.com/@wordtune_official",
       "https://www.youtube.com/watch?v=DyE0YkoFFEE",
     ],
     _processed: true,
@@ -64,7 +65,7 @@ export const manualOverrides: Record<
     ws: ["https://bsky.social", "https://bsky.app"],
     gh: ["https://github.com/bluesky-social"],
     urls: [
-      "https://apps.apple.com/de/developer/bluesky-pbllc/id1654243552",
+      "https://apps.apple.com/us/developer/bluesky-pbllc/id1654243552",
       "https://play.google.com/store/apps/developer?id=Bluesky+PBLLC",
     ],
     _processed: true,
@@ -74,12 +75,7 @@ export const manualOverrides: Record<
       "https://www.linkedin.com/company/cellebrite",
       "http://www.linkedin.com/company/100045",
     ],
-    fb: [
-      "https://www.facebook.com/cellebritedigitalintelligence",
-      "https://www.facebook.com/groups/1143744623008587",
-      "https://www.facebook.com/groups/571246666951707",
-      "https://www.facebook.com/groups/746270377207022",
-    ],
+    fb: ["https://www.facebook.com/cellebritedigitalintelligence"],
     ytp: [
       "https://www.youtube.com/@cellebrite",
       "https://www.youtube.com/@cellebrite-deutsch",
@@ -90,6 +86,9 @@ export const manualOverrides: Record<
       "https://www.youtube.com/@lifeatcellebrite7735",
     ],
     urls: [
+      "https://www.facebook.com/groups/1143744623008587",
+      "https://www.facebook.com/groups/571246666951707",
+      "https://www.facebook.com/groups/746270377207022",
       "https://www.linkedin.com/showcase/cellebrite-careers",
       "https://www.linkedin.com/showcase/cellebrite-enterprise-solutions",
       "https://cellebrite.my.site.com/PartnerCommunity/s/login/?language=en_US",
@@ -109,11 +108,11 @@ export const manualOverrides: Record<
   Empathy: {
     tw: ["https://x.com/empathy"],
     ig: ["https://www.instagram.com/empathy_com"],
+    th: ["https://www.threads.com/@empathy_com"],
     urls: [
       "https://apps.apple.com/us/developer/empathy/id1536395194",
       "https://play.google.com/store/apps/dev?id=7573398188169424467",
       "https://sprout.link/empathy_com",
-      "https://www.threads.com/@empathy_com",
     ],
     _processed: true,
   },
@@ -124,10 +123,10 @@ export const manualOverrides: Record<
     ig: ["https://www.instagram.com/moonpay"],
     ytc: ["https://www.youtube.com/channel/UC9hQtWpGGNaZ8yiwFsBkRBg"],
     ytp: ["https://www.youtube.com/@moonpayhq"],
+    th: ["https://www.threads.com/@moonpay"],
     urls: [
-      "https://apps.apple.com/de/app/moonpay-krypto-kaufen/id1635031432",
+      "https://apps.apple.com/us/developer/moonpay/id1635031434",
       "https://play.google.com/store/apps/developer?id=MoonPay",
-      "https://www.threads.com/@moonpay",
     ],
     _processed: true,
   },
@@ -177,6 +176,8 @@ export const manualOverrides: Record<
       "https://www.youtube.com/channel/UCCIwsFWZNuugtW1U2X89t7A",
       "https://www.youtube.com/channel/UCGvsgFPVyOwuN8aJJbMem9A",
     ],
+    tt: ["https://www.tiktok.com/@tripleten.tech"],
+    th: ["https://www.threads.com/@tripleten.tech"],
     urls: [
       "https://clickhouse.com",
       "https://de.finance.yahoo.com/quote/NBIS",
@@ -186,11 +187,8 @@ export const manualOverrides: Record<
       "https://medium.com/nebius",
       "https://open.spotify.com/user/31wd6uyi4z7s3no2ll2anlssxplq?utm_campaign=Spotify&utm_medium=Organic&utm_source=Linktree&utm_term=SocialMedia&utm_content=Music",
       "https://podcasts.apple.com/us/podcast/techstart/id1711188418",
-
       "https://www.google.com/search?q=Nebius+Group+N.V.&rlz=1C1MMCH_enDE1105DE1105&sourceid=chrome&ie=UTF-8&sei=FssGadmOBrmH7NYPu4iEqAQ",
       "https://www.linkedin.com/school/tripleten",
-      "https://www.threads.com/@tripleten.tech",
-      "https://www.tiktok.com/@tripleten.tech",
     ],
     _processed: true,
   },
@@ -199,13 +197,15 @@ export const manualOverrides: Record<
     li: "https://www.linkedin.com/company/guykatsovichpodcast",
   },
   "Omada Health": {
-    ig: ["https://www.instagram.com/omadahealth/?hl=de"],
-    ytp: ["https://www.youtube.com/@Omadahealth"],
+    ig: ["https://www.instagram.com/omadahealth"],
+    ytp: [
+      "https://www.youtube.com/@Omadahealth",
+      "https://www.youtube.com/omadahealth",
+    ],
     urls: [
       "https://consent.yahoo.com/v2/collectConsent?sessionId=3_cc-session_5fdcb969-50cc-4b7f-ba83-69d67d8bf9a7",
       "https://play.google.com/store/apps/developer?id=Omada+Health",
-      "https://www.youtube.com/c/omadahealth",
-      "https://apps.apple.com/us/app/omada/id805711008",
+      "https://apps.apple.com/us/developer/omada-health-inc/id805711011",
       "https://www.cnbc.com/quotes/OMDA",
       "https://vimeo.com/weareomadahealth",
       "https://job-boards.greenhouse.io/omadahealth",
@@ -233,10 +233,10 @@ export const manualOverrides: Record<
     ig: ["https://www.instagram.com/hipconf"],
     ytp: ["https://www.youtube.com/@semperistech"],
     ytc: ["https://www.youtube.com/channel/UCycrWXhxOTaUQ0sidlyN9SA"],
+    th: ["https://www.threads.com/@semperistech"],
     urls: [
       "https://hipconf.slack.com",
       "https://marketplace.microsoft.com/en-us/product/saas/semperis.semperis-hybrid-active-directory-protection",
-      "https://www.threads.com/@semperistech",
     ],
     _processed: true,
   },
@@ -264,7 +264,7 @@ export const manualOverrides: Record<
     gh: ["https://github.com/silverfort-open-source"],
     ytp: ["https://www.youtube.com/@silverfort"],
     urls: [
-      "https://apps.apple.com/de/developer/silverfort/id1227704144",
+      "https://apps.apple.com/us/developer/silverfort/id1227704144",
       "https://chromewebstore.google.com/detail/silverfort/pehheafegmblicfcnkpacblgfeabpgim",
       "https://play.google.com/store/apps/developer?id=Silverfort+Inc.",
     ],
@@ -285,18 +285,19 @@ export const manualOverrides: Record<
     ig: ["https://www.instagram.com/torq_io"],
     gh: ["https://github.com/torqio"],
     ytp: ["https://www.youtube.com/@torq_io"],
-    urls: [
-      "https://job-boards.greenhouse.io/torq",
-      "https://www.tiktok.com/@torq.io",
-    ],
+    tt: ["https://www.tiktok.com/@torq.io"],
+    urls: ["https://job-boards.greenhouse.io/torq"],
     _processed: true,
   },
   "VAST Data": {
     gh: ["https://github.com/vast-data"],
+    ytp: [
+      "https://www.youtube.com/vastdata",
+      "https://www.youtube.com/@VASTData",
+    ],
     urls: [
       "https://aws.amazon.com/marketplace/seller-profile?id=seller-rhponql53yee4",
       "https://www.carahsoft.com/vast",
-      "https://www.youtube.com/vastdata",
     ],
     _processed: true,
   },
@@ -325,11 +326,11 @@ export const manualOverrides: Record<
       "https://www.youtube.com/@eToro_ES",
       "https://www.youtube.com/@eToroDE",
       "https://www.youtube.com/@etorofrance877",
-    ],
-    urls: [
-      "https://www.tiktok.com/@etoro_official",
       "https://www.youtube.com/eToroDeutsch",
-      "https://www.threads.com/@etoro_official",
+    ],
+    tt: ["https://www.tiktok.com/@etoro_official"],
+    th: ["https://www.threads.com/@etoro_official"],
+    urls: [
       "https://apps.apple.com/us/developer/etoro/id491658374",
       "https://play.google.com/store/apps/developer?id=eToro",
     ],
@@ -359,6 +360,8 @@ export const manualOverrides: Record<
       "https://www.youtube.com/@tryvechannel",
     ],
     ytc: ["https://www.youtube.com/channel/UCA9UvBiKHly15rN8u_Km3BQ"],
+    tt: ["https://www.tiktok.com/@mondayinsights"],
+    th: ["https://www.threads.com/@mondaydotcom"],
     urls: [
       "https://www.facebook.com/groups/monday.community",
       "https://www.facebook.com/groups/183295877306250",
@@ -367,11 +370,9 @@ export const manualOverrides: Record<
       "https://www.facebook.com/groups/monday.com.forenterprise",
       "https://linktr.ee/mondaydotcom",
       "https://play.google.com/store/apps/developer?id=monday.com",
-      "https://apps.apple.com/de/developer/monday-com-ltd/id964740028",
+      "https://apps.apple.com/us/developer/monday-com-ltd/id964740028",
       "https://sprout.link/mondaydotcom",
       "https://www.reddit.com/r/mondaydotcom",
-      "https://www.threads.com/@mondaydotcom",
-      "https://www.tiktok.com/@mondayinsights",
       "https://www.linkedin.com/products/mondaydotcom-monday-sales-crm",
       "https://www.linkedin.com/products/mondaydotcom-monday-dev",
       "https://www.linkedin.com/products/mondaydotcom-mondaycom",
