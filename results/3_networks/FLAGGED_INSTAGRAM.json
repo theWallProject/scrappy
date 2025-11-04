@@ -118,6 +118,14 @@
     ]
   },
   {
+    "id": "team8",
+    "selector": "team8group",
+    "name": "Team8",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "id": "torq-technologies",
     "selector": "torq_io",
     "name": "Torq",

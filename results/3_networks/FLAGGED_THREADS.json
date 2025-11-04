@@ -51,5 +51,13 @@
       "f",
       "i"
     ]
+  },
+  {
+    "id": "team8",
+    "selector": "@team8group",
+    "name": "Team8",
+    "reasons": [
+      "h"
+    ]
   }
 ]
