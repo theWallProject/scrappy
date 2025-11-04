@@ -440,21 +440,40 @@ const openSearchPages = async (
   query: string,
   pages: Page[],
 ): Promise<void> => {
+  // Open all search tabs first (without waiting for navigation)
+  const searchPages: Array<{
+    page: Page;
+    service: SearchService;
+    url: string;
+  }> = [];
+
   for (const service of searchServices) {
     try {
       const searchPage = await context.newPage();
       const searchUrl = service.urlTemplate(query);
       log(`  🔍 Opening ${service.name} search for "${query}"`);
-      await searchPage.goto(searchUrl, {
+      searchPages.push({ page: searchPage, service, url: searchUrl });
+      pages.push(searchPage);
+    } catch (e) {
+      log(`  [DEBUG] Could not create ${service.name} search tab: ${e}`);
+    }
+  }
+
+  // Navigate all search tabs in parallel (don't wait for each to finish)
+  const navigationPromises = searchPages.map(async ({ page, service, url }) => {
+    try {
+      await page.goto(url, {
         waitUntil: "domcontentloaded",
         timeout: 30000,
       });
-      pages.push(searchPage);
       log(`  ✓ ${service.name} search tab opened`);
     } catch (e) {
-      log(`  [DEBUG] Could not open ${service.name} search tab: ${e}`);
+      log(`  [DEBUG] Could not navigate ${service.name} search tab: ${e}`);
     }
-  }
+  });
+
+  // Wait for all navigations to complete (but they're already running in parallel)
+  await Promise.all(navigationPromises);
 };
 
 const validateItemLinks = async (
@@ -477,12 +496,18 @@ const validateItemLinks = async (
   }
 
   const pages: Page[] = [];
+  const linkPages: Array<{ page: Page; field: LinkField; url: string }> = [];
 
-  // Open all links in separate tabs (using context ensures same window)
+  // Open all link tabs first (without waiting for navigation)
   for (const { field, url } of links) {
     log(`  Opening ${field}: ${url}`);
     const page = await context.newPage();
+    linkPages.push({ page, field, url });
+    pages.push(page);
+  }
 
+  // Navigate all tabs in parallel (don't wait for each to finish)
+  const navigationPromises = linkPages.map(async ({ page, field, url }) => {
     try {
       const { finalUrl, redirected } = await checkRedirect(page, url);
 
@@ -494,21 +519,19 @@ const validateItemLinks = async (
         // URLs are equivalent after normalization
         log(`    ✓ No redirect (URLs are equivalent: ${url} === ${finalUrl})`);
       }
-
-      pages.push(page);
     } catch (e) {
       const errorMessage = e instanceof Error ? e.message : String(e);
       error(
         `    ⚠️  Error checking ${field} (${url}): ${errorMessage}. Page kept open for manual verification.`,
       );
-
       // Keep the page open for manual verification instead of closing it
-      // The user can manually check and update if needed
-      pages.push(page);
       // Note: We don't set changes[field] here, so it won't be auto-updated
       // User can manually update via the urls array or close the browser and continue
     }
-  }
+  });
+
+  // Wait for all navigations to complete (but they're already running in parallel)
+  await Promise.all(navigationPromises);
 
   // Open search pages for all configured services
   await openSearchPages(context, item.name, pages);
