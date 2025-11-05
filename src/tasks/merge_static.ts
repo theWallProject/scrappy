@@ -326,10 +326,15 @@ const loadJsonFiles = (folderPath: string) => {
         continue;
       }
 
-      log(`Manually updated ${row.name}`);
-
       // Process each override field, handling arrays
       const updatedRow: ScrappedItemWithOverrides = { ...row };
+      
+      // Apply name override first if present (before logging)
+      if (overrideFields.name && typeof overrideFields.name === "string") {
+        updatedRow.name = overrideFields.name;
+      }
+      
+      log(`Manually updated ${updatedRow.name}`);
       const linkFields: LinkField[] = [
         "ws",
         "li",
@@ -416,6 +421,11 @@ const loadJsonFiles = (folderPath: string) => {
       for (const [key, value] of Object.entries(overrideFields)) {
         // Skip special fields
         if (key === "_processed" || key === "urls") {
+          continue;
+        }
+
+        // Skip name (already handled above)
+        if (key === "name") {
           continue;
         }
 

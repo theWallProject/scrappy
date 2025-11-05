@@ -21,7 +21,14 @@ type ProcessedState = {
   _processed: true;
 };
 
-type ManualOverrideFields = Partial<ScrappedItemType> & {
+type ManualOverrideFields = Omit<
+  Partial<ScrappedItemType>,
+  "ws" | "li" | "fb" | "tw" | "ig" | "gh" | "ytp" | "ytc" | "tt" | "th"
+> & {
+  ws?: string | string[];
+  li?: string | string[];
+  fb?: string | string[];
+  tw?: string | string[];
   ig?: string | string[];
   gh?: string | string[];
   ytp?: string | string[];
@@ -418,7 +425,7 @@ const searchServices: SearchService[] = [
   {
     name: "Facebook",
     urlTemplate: (query) =>
-      `https://www.facebook.com/search/top/?q=${encodeURIComponent(query)}`,
+      `https://www.facebook.com/search/pages/?q=${encodeURIComponent(query)}`,
   },
   {
     name: "Threads",
@@ -1165,6 +1172,32 @@ const validateItemLinks = async (
         log(
           `  [DEBUG] Final decision: hasChanges=${hasChanges}, hasUrls=${hasUrls}, finalHasChanges=${finalHasChanges}`,
         );
+
+        // Save final URLs to tmp.txt for debugging (no processing, just raw final URL of each tab)
+        // Exclude URLs from manually closed tabs
+        try {
+          const tmpFilePath = path.join(__dirname, "../../tmp.txt");
+          const finalUrlList: string[] = [];
+
+          // Collect from finalUrls set, but exclude user-closed URLs
+          for (const url of finalUrls) {
+            if (url && url !== "about:blank" && !userClosedUrls.has(url)) {
+              finalUrlList.push(url);
+            }
+          }
+
+          fs.writeFileSync(
+            tmpFilePath,
+            finalUrlList.join("\n") + "\n",
+            "utf-8",
+          );
+          log(
+            `  💾 Saved ${finalUrlList.length} final URLs to tmp.txt (excluded ${userClosedUrls.size} manually closed URLs)`,
+          );
+        } catch (e) {
+          log(`  ⚠️  Failed to save tmp.txt: ${e}`);
+        }
+
         log(`  ✓ Browser closed, continuing... (detected via: ${reason})`);
         resolve(finalHasChanges ? changes : null);
       })();
@@ -1416,9 +1449,6 @@ const sortByReasonAndCbRank = (
 export async function run() {
   let browserContext: BrowserContext | null = null;
 
-  // Enable extension loading (set to false to disable)
-  const ENABLE_EXTENSION = false;
-
   // Persistent browser profile path
   const userDataDir = path.join(__dirname, "../../.browser-profile");
 
@@ -1470,31 +1500,33 @@ export async function run() {
       "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     ];
 
-    // Extension loading (enabled by ENABLE_EXTENSION flag)
-    if (ENABLE_EXTENSION) {
-      // Extension path relative to this script
-      const extensionManifestPath = path.join(
-        __dirname,
-        "../../../addon/build/chrome-mv3-dev/manifest.json",
+    // Load The Wall extension from local path
+    // Path from src/tasks/validate_urls.ts: go up 3 levels (to parent of scrapper repo), then into addon/build/chrome-mv3-dev/
+    const extensionDir = path.join(
+      __dirname,
+      "../../../addon/build/chrome-mv3-dev",
+    );
+    const extensionManifestPath = path.join(extensionDir, "manifest.json");
+
+    // Check if extension exists - crash if not found
+    if (!fs.existsSync(extensionManifestPath)) {
+      throw new Error(
+        `Extension manifest not found at: ${extensionManifestPath}. ` +
+          `Please ensure the extension is built at: ${extensionDir}`,
       );
-
-      // Check if extension exists - crash if not found
-      if (!fs.existsSync(extensionManifestPath)) {
-        throw new Error(
-          `Extension manifest not found at: ${extensionManifestPath}`,
-        );
-      }
-
-      const extensionDir = path.dirname(extensionManifestPath);
-      browserArgs.push(`--load-extension=${extensionDir}`);
-      log(`Loading extension from: ${extensionDir}`);
-    } else {
-      log("Extension loading disabled (ENABLE_EXTENSION=false)");
     }
+
+    // According to Playwright docs, use --disable-extensions-except and --load-extension
+    // Use absolute path to avoid issues with relative paths
+    const absoluteExtensionDir = path.resolve(extensionDir);
+    browserArgs.push(`--disable-extensions-except=${absoluteExtensionDir}`);
+    browserArgs.push(`--load-extension=${absoluteExtensionDir}`);
+    log(`Loading The Wall extension from: ${absoluteExtensionDir}`);
 
     browserContext = await chromium.launchPersistentContext(userDataDir, {
       headless: false,
-      channel: "chrome", // Use Playwright's Chrome channel support
+      // Use Playwright's bundled Chromium (required for extensions)
+      // Chrome/Edge removed extension loading flags, so we must use Chromium
       args: browserArgs,
       // Add viewport to make it look more realistic
       viewport: { width: 1280, height: 720 },
@@ -1559,8 +1591,8 @@ export async function run() {
     if (changes && Object.keys(changes).length > 0) {
       // Has changes - update with the changes
       log(`  ✏️ Changes detected for ${item.name}:`, changes);
-      // OverrideWithUrls returns single string values, convert to ManualOverrideFields format
-      // ManualOverrideFields allows arrays for ig/gh, but ws/li/fb/tw must be single strings
+      // OverrideWithUrls can return arrays for any link field, convert to ManualOverrideFields format
+      // ManualOverrideFields allows arrays for all link fields (ws/li/fb/tw/ig/gh/ytp/ytc/tt/th)
       const override: ManualOverrideFields &
         ProcessedState & {
           urls?: string[];
@@ -1568,34 +1600,18 @@ export async function run() {
         _processed: true,
       };
 
-      for (const [key, value] of Object.entries(changes)) {
-        if (key === "urls" && Array.isArray(value)) {
-          override.urls = value;
-        } else if (
-          key === "ws" ||
-          key === "li" ||
-          key === "fb" ||
-          key === "tw"
-        ) {
-          // These must be single strings (from ScrappedItemType)
-          if (typeof value === "string") {
-            override[key] = value;
-          } else if (Array.isArray(value) && value.length > 0) {
-            // Convert array to first element
-            override[key] = value[0];
-          }
-        } else if (
-          key === "ig" ||
-          key === "gh" ||
-          key === "ytp" ||
-          key === "ytc" ||
-          key === "tt" ||
-          key === "th"
-        ) {
-          // These can be arrays in ManualOverrideFields
-          override[key] = value;
-        }
-      }
+      // Type-safe assignment for each link field
+      if (changes.urls) override.urls = changes.urls;
+      if (changes.ws !== undefined) override.ws = changes.ws;
+      if (changes.li !== undefined) override.li = changes.li;
+      if (changes.fb !== undefined) override.fb = changes.fb;
+      if (changes.tw !== undefined) override.tw = changes.tw;
+      if (changes.ig !== undefined) override.ig = changes.ig;
+      if (changes.gh !== undefined) override.gh = changes.gh;
+      if (changes.ytp !== undefined) override.ytp = changes.ytp;
+      if (changes.ytc !== undefined) override.ytc = changes.ytc;
+      if (changes.tt !== undefined) override.tt = changes.tt;
+      if (changes.th !== undefined) override.th = changes.th;
 
       currentOverrides[item.name] = override;
     } else {
