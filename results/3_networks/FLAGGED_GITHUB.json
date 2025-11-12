@@ -65,6 +65,14 @@
     ]
   },
   {
+    "id": "ox-security",
+    "selector": "oxsecurity",
+    "name": "Ox Security",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "id": "protect-ai",
     "selector": "protectai",
     "name": "Protect AI",

@@ -221,6 +221,14 @@
     ]
   },
   {
+    "id": "ox-security",
+    "selector": "@OXSecurity",
+    "name": "Ox Security",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "id": "protect-ai",
     "selector": "@protectai",
     "name": "Protect AI",

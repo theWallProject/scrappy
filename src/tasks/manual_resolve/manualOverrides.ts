@@ -219,6 +219,25 @@ export const manualOverrides: Record<
     ],
     _processed: true,
   },
+  "Ox Security": {
+    li: ["https://www.linkedin.com/company/ox-security"],
+    tw: ["https://x.com/OX__Security"],
+    ig: ["https://www.instagram.com/lifeatox"],
+    gh: ["https://github.com/oxsecurity"],
+    ytp: ["https://www.youtube.com/@OXSecurity"],
+    urls: [
+      "https://aws.amazon.com/marketplace/seller-profile?id=a25fc18e-8294-4c7d-83ed-0c6feaa8f203",
+      "https://github.com/marketplace/actions/ox-security-scan",
+      "https://hub.docker.com/r/oxsecurity/megalinter-only-typescript_prettier",
+      "https://hub.docker.com/u/oxsecurity",
+      "https://marketplace.microsoft.com/en-us/product/saas/oxappsecsecurityltd1676898384401.ox_appsec_security",
+      "https://megalinter.io",
+      "https://www.g2.com/products/ox-security",
+      "https://www.youtube.com/watch?v=NKmSq_IP6lU",
+      "https://www.facebook.com/profile.php?id=61567333454839",
+    ],
+    _processed: true,
+  },
   "Protect AI": {
     gh: ["https://github.com/protectai"],
     ytp: ["https://www.youtube.com/@protectai"],
@@ -306,17 +325,13 @@ export const manualOverrides: Record<
   },
   "The Agro Exchange": { ws: "https://www.agrox.io" },
   ThetaRay: {
+    ws: ["https://thetaray.com"],
     li: ["https://www.linkedin.com/company/thetaray"],
-    fb: [
-      // todo: allow multible fb links
-      // "https://www.facebook.com/TheThetaRayTeam",
-      "https://www.facebook.com/thetaray",
-    ],
+    fb: ["https://www.facebook.com/thetaray"],
     tw: ["https://x.com/ThetaRayTeam"],
     ig: ["https://www.instagram.com/thetaray"],
     ytp: ["https://www.youtube.com/@thetaray5752"],
     ytc: ["https://www.youtube.com/channel/UCnygTgxdaLM9mUcGUThTrxQ"],
-    ws: ["https://thetaray.com"],
     urls: [
       "https://marketplace.microsoft.com/en-us/product/saas/thetaray.tr-aml-cb-saas",
       "https://open.spotify.com/show/0WORVS3Noo9CqL3FWNLjqY",

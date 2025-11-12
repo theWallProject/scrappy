@@ -101,6 +101,14 @@
     "s": "OMDA"
   },
   {
+    "id": "ox-security",
+    "selector": "lifeatox",
+    "name": "Ox Security",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "id": "semperis",
     "selector": "hipconf",
     "name": "Semperis",
