@@ -975,41 +975,43 @@ const validateItemLinks = async (
           log(`  📎 Found ${extraUrls.length} extra tab URL(s):`, extraUrls);
 
           // Categorize URLs into appropriate keys
+          // CRITICAL: Collect ALL URLs - if multiple tabs have the same URL type,
+          // all will be collected in the array (no deduplication)
           const categorized: CategorizedUrls = {};
 
           for (const url of extraUrls) {
             const category = categorizeUrl(url);
             if (category === "li") {
               if (!categorized.li) categorized.li = [];
-              categorized.li.push(url);
+              categorized.li.push(url); // Add ALL LinkedIn URLs (including duplicates)
             } else if (category === "fb") {
               if (!categorized.fb) categorized.fb = [];
-              categorized.fb.push(url);
+              categorized.fb.push(url); // Add ALL Facebook URLs (including duplicates)
             } else if (category === "tw") {
               if (!categorized.tw) categorized.tw = [];
-              categorized.tw.push(url);
+              categorized.tw.push(url); // Add ALL Twitter/X URLs (including duplicates)
             } else if (category === "ig") {
               if (!categorized.ig) categorized.ig = [];
-              categorized.ig.push(url);
+              categorized.ig.push(url); // Add ALL Instagram URLs (including duplicates)
             } else if (category === "gh") {
               if (!categorized.gh) categorized.gh = [];
-              categorized.gh.push(url);
+              categorized.gh.push(url); // Add ALL GitHub URLs (including duplicates)
             } else if (category === "ytp") {
               if (!categorized.ytp) categorized.ytp = [];
-              categorized.ytp.push(url);
+              categorized.ytp.push(url); // Add ALL YouTube Profile URLs (including duplicates)
             } else if (category === "ytc") {
               if (!categorized.ytc) categorized.ytc = [];
-              categorized.ytc.push(url);
+              categorized.ytc.push(url); // Add ALL YouTube Channel URLs (including duplicates)
             } else if (category === "tt") {
               if (!categorized.tt) categorized.tt = [];
-              categorized.tt.push(url);
+              categorized.tt.push(url); // Add ALL TikTok URLs (including duplicates)
             } else if (category === "th") {
               if (!categorized.th) categorized.th = [];
-              categorized.th.push(url);
+              categorized.th.push(url); // Add ALL Threads URLs (including duplicates)
             } else {
               // Unsupported URL or website - keep in urls array for manual organization
               if (!categorized.urls) categorized.urls = [];
-              categorized.urls.push(url);
+              categorized.urls.push(url); // Add ALL unsupported URLs (including duplicates)
             }
           }
 

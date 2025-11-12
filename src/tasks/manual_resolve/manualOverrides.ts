@@ -305,6 +305,24 @@ export const manualOverrides: Record<
     _processed: true,
   },
   "The Agro Exchange": { ws: "https://www.agrox.io" },
+  ThetaRay: {
+    li: ["https://www.linkedin.com/company/thetaray"],
+    fb: [
+      // todo: allow multible fb links
+      // "https://www.facebook.com/TheThetaRayTeam",
+      "https://www.facebook.com/thetaray",
+    ],
+    tw: ["https://x.com/ThetaRayTeam"],
+    ig: ["https://www.instagram.com/thetaray"],
+    ytp: ["https://www.youtube.com/@thetaray5752"],
+    ytc: ["https://www.youtube.com/channel/UCnygTgxdaLM9mUcGUThTrxQ"],
+    ws: ["https://thetaray.com"],
+    urls: [
+      "https://marketplace.microsoft.com/en-us/product/saas/thetaray.tr-aml-cb-saas",
+      "https://open.spotify.com/show/0WORVS3Noo9CqL3FWNLjqY",
+    ],
+    _processed: true,
+  },
   Torq: {
     fb: ["https://www.facebook.com/torqhq"],
     tw: ["https://x.com/torq_io"],

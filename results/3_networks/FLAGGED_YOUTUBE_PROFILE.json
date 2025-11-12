@@ -280,6 +280,14 @@
     ]
   },
   {
+    "id": "thetaray",
+    "selector": "@thetaray5752",
+    "name": "ThetaRay",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "id": "torq-technologies",
     "selector": "@torq_io",
     "name": "Torq",
