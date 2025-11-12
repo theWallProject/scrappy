@@ -192,6 +192,14 @@ export const manualOverrides: Record<
     ],
     _processed: true,
   },
+  Noma: {
+    li: ["https://www.linkedin.com/company/noma-security"],
+    tw: ["https://x.com/NomaSecurity"],
+    gh: ["https://github.com/Noma-Security"],
+    ytp: ["https://www.youtube.com/@NomaSecurity"],
+    urls: ["https://noma.security"],
+    _processed: true,
+  },
   "Od Podcast": {
     ws: "",
     li: "https://www.linkedin.com/company/guykatsovichpodcast",
@@ -203,7 +211,6 @@ export const manualOverrides: Record<
       "https://www.youtube.com/omadahealth",
     ],
     urls: [
-      "https://consent.yahoo.com/v2/collectConsent?sessionId=3_cc-session_5fdcb969-50cc-4b7f-ba83-69d67d8bf9a7",
       "https://play.google.com/store/apps/developer?id=Omada+Health",
       "https://apps.apple.com/us/developer/omada-health-inc/id805711011",
       "https://www.cnbc.com/quotes/OMDA",
@@ -282,8 +289,8 @@ export const manualOverrides: Record<
     li: "https://www.linkedin.com/company/team8group",
     tw: "https://x.com/team8group",
     ig: ["https://www.instagram.com/team8group"],
-    ytc: ["https://www.youtube.com/channel/UCyHEyZPo7EMoHcWyDtMxMFA"],
     ytp: ["https://www.youtube.com/@team8group"],
+    ytc: ["https://www.youtube.com/channel/UCyHEyZPo7EMoHcWyDtMxMFA"],
     th: ["https://www.threads.com/@team8group"],
     urls: [
       "https://medium.com/@fleur.s",

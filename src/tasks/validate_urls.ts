@@ -15,7 +15,6 @@ import {
 import { APIScrapperFileDataSchema, ScrappedItemType } from "../types";
 import { error, log } from "../helper";
 import prettier from "prettier";
-import { runUpdateSteps } from "../index";
 
 type ProcessedState = {
   _processed: true;
@@ -582,9 +581,8 @@ const validateItemLinks = async (
 
   // CRITICAL: Store tracking data OUTSIDE browser context scope
   // These persist even after browser/context closes
-  const urlStorage = new Map<Page, string>(); // Tab -> URL mapping (final URL per tab)
-  const tabUrlHistory = new Map<Page, Set<string>>(); // Tab -> Set of ALL URLs seen in this tab (navigation chain)
-  const finalUrls = new Set<string>(); // PERSISTENT: All URLs ever seen - NEVER deleted, collected at end
+  const persistentTabUrls = new Map<Page, string>(); // Tab -> Final URL mapping (single source of truth)
+  const tabUrlHistory = new Map<Page, Set<string>>(); // Tab -> Set of URLs seen (only for user-closed detection)
   const userClosedUrls = new Set<string>(); // URLs user manually closed (exclude from collection)
   const pendingTabCloseChecks = new Set<NodeJS.Timeout>(); // Track pending timeout checks
   let isContextClosing = false; // Track if context is closing (prevents URL deletion during bulk close)
@@ -616,12 +614,15 @@ const validateItemLinks = async (
   // Helper to handle tab close - wait 3 seconds, if browser still open then it's manual close
   const setupTabCloseHandler = (tab: Page) => {
     tab.on("close", () => {
-      const url = urlStorage.get(tab);
+      // Get final URL and history (persistentTabUrls already has the final URL)
+      const url = persistentTabUrls.get(tab);
       const urlHistory = tabUrlHistory.get(tab) || new Set<string>();
 
-      // Immediately remove from active tracking
-      urlStorage.delete(tab);
-      tabUrlHistory.delete(tab);
+      // Only remove from tracking if context is NOT closing
+      // If context is closing, keep data for collection
+      if (!isContextClosing) {
+        tabUrlHistory.delete(tab);
+      }
 
       if (!url || url === "about:blank") {
         return;
@@ -709,12 +710,11 @@ const validateItemLinks = async (
     try {
       const url = tab.url();
       if (url && url !== "about:blank") {
-        urlStorage.set(tab, url); // Store tab->URL mapping
+        persistentTabUrls.set(tab, url); // Store final URL (single source of truth)
         const history = tabUrlHistory.get(tab);
         if (history) {
-          history.add(url); // Add to tab's URL history
+          history.add(url); // Add to tab's URL history (for user-closed detection)
         }
-        finalUrls.add(url); // Add to persistent collection
       }
     } catch {
       // Tab might not have URL yet
@@ -722,9 +722,8 @@ const validateItemLinks = async (
   }
 
   // Helper to update and store a tab's URL (synchronous for events)
-  // Maintains clear tab->URL mapping (final URL per tab)
-  // ALSO stores in finalUrls for persistent collection (never deleted)
-  // ALSO tracks all URLs in tab's navigation history
+  // DETERMINISTIC: Use persistentTabUrls as the single source of truth
+  // Updates persistentTabUrls with final URL and tracks history for user-closed detection only
   const updateTabUrl = (tab: Page, source: string = "unknown") => {
     try {
       if (tab.isClosed()) {
@@ -732,27 +731,22 @@ const validateItemLinks = async (
       }
       const tabUrl = tab.url();
       if (tabUrl && tabUrl !== "about:blank") {
-        const oldUrl = urlStorage.get(tab);
-        urlStorage.set(tab, tabUrl); // Update tab->URL mapping
+        const oldUrl = persistentTabUrls.get(tab);
+        persistentTabUrls.set(tab, tabUrl); // Update final URL (single source of truth)
 
-        // Ensure tab has URL history set
+        // Ensure tab has URL history set (for user-closed detection)
         if (!tabUrlHistory.has(tab)) {
           tabUrlHistory.set(tab, new Set<string>());
         }
         const history = tabUrlHistory.get(tab);
-        if (!history) {
-          return;
+        if (history) {
+          // Add old URL to history if it exists (for user-closed detection)
+          if (oldUrl && oldUrl !== tabUrl && oldUrl !== "about:blank") {
+            history.add(oldUrl);
+          }
+          // Add new URL to history
+          history.add(tabUrl);
         }
-
-        // Add old URL to history if it exists
-        if (oldUrl && oldUrl !== tabUrl && oldUrl !== "about:blank") {
-          history.add(oldUrl);
-          finalUrls.add(oldUrl); // Keep old URL in collection
-        }
-
-        // Add new URL to history and collection
-        history.add(tabUrl);
-        finalUrls.add(tabUrl); // ALWAYS add to persistent collection (never deleted)
 
         if (oldUrl && oldUrl !== tabUrl && oldUrl !== "about:blank") {
           log(
@@ -803,12 +797,11 @@ const validateItemLinks = async (
       try {
         const initialUrl = tab.url();
         if (initialUrl && initialUrl !== "about:blank") {
-          urlStorage.set(tab, initialUrl); // Store tab->URL mapping
+          persistentTabUrls.set(tab, initialUrl); // Store final URL (single source of truth)
           const history = tabUrlHistory.get(tab);
           if (history) {
-            history.add(initialUrl); // Add to tab's URL history
+            history.add(initialUrl); // Add to tab's URL history (for user-closed detection)
           }
-          finalUrls.add(initialUrl); // Add to persistent collection
         }
       } catch {
         // Tab might not have URL yet
@@ -835,39 +828,33 @@ const validateItemLinks = async (
     let resolved = false;
     let pollInterval: NodeJS.Timeout | null = null;
 
-    // Collect URLs from persistent finalUrls collection (never deleted)
+    // Collect URLs from ALL open tabs when browser closes
+    // DETERMINISTIC METHOD: Use persistentTabUrls as the single source of truth
+    // CRITICAL: One URL per tab - number of tabs MUST equal number of final URLs
+    // Only collect FINAL URLs (ignore intermediate redirects)
+    // Collect ALL URLs regardless of who opened them
     const collectExtraUrls = (): string[] => {
       const extraUrls: string[] = [];
-      log(`  [DEBUG] === Starting URL collection ===`);
+      log(`  [DEBUG] === Starting URL collection (deterministic method) ===`);
       log(
         `  [DEBUG] Links we opened: ${JSON.stringify(links.map((l) => l.url))}`,
       );
       log(`  [DEBUG] Total tracked tabs: ${tabUrlHistory.size}`);
-      log(`  [DEBUG] Tabs with URLs in active storage: ${urlStorage.size}`);
-      log(`  [DEBUG] Total URLs in persistent collection: ${finalUrls.size}`);
+      log(
+        `  [DEBUG] Tabs with URLs in persistent storage: ${persistentTabUrls.size}`,
+      );
       log(
         `  [DEBUG] URLs user manually closed (excluded): ${userClosedUrls.size}`,
       );
-      log(`  [DEBUG] Context closing flag: ${isContextClosing}`);
 
-      // Collect from finalUrls (persistent, never deleted) - exclude user-closed URLs
       try {
-        const openedUrls = new Set(
-          links.map((l) => normalizeUrlForComparison(l.url)),
-        );
-        const allCachedUrls = new Map<string, string>(); // normalized -> original url
-
-        log(
-          `  [DEBUG] Processing ${finalUrls.size} URLs from persistent collection...`,
-        );
-
-        // Collect from finalUrls, excluding user-closed URLs and opened URLs
+        // DETERMINISTIC: Use persistentTabUrls as the single source of truth
+        // Collect ONE final URL from EACH tab
         let validUrlsFound = 0;
         let userClosedSkipped = 0;
-        let openedSkipped = 0;
         let blankUrlsSkipped = 0;
 
-        for (const url of finalUrls) {
+        for (const [, url] of persistentTabUrls.entries()) {
           if (!url || url === "about:blank") {
             blankUrlsSkipped++;
             continue;
@@ -880,49 +867,38 @@ const validateItemLinks = async (
             continue;
           }
 
-          const normalized = normalizeUrlForComparison(url);
-
-          // Skip if this is one of the URLs we originally opened
-          if (openedUrls.has(normalized)) {
-            openedSkipped++;
-            log(`  [DEBUG] ⊙ Skipped originally opened URL: ${url}`);
-            continue;
-          }
-
-          // Add to collection (deduplicate by normalized URL)
-          if (!allCachedUrls.has(normalized)) {
-            allCachedUrls.set(normalized, url);
-            validUrlsFound++;
-            log(
-              `  [DEBUG] ✓ Collected URL: ${url} (normalized: ${normalized})`,
-            );
-          } else {
-            log(
-              `  [DEBUG] ⊙ Duplicate URL skipped: ${url} (already have normalized: ${normalized})`,
-            );
-          }
-        }
-
-        log(
-          `  [DEBUG] Summary: ${validUrlsFound} valid, ${userClosedSkipped} user-closed, ${openedSkipped} opened, ${blankUrlsSkipped} blank`,
-        );
-
-        // Process all cached URLs
-        for (const [, originalUrl] of allCachedUrls.entries()) {
-          const cleanedUrl = removeTrailingSlash(originalUrl);
+          // Collect final URL (one per tab)
+          // If multiple tabs have the same URL, that's fine - we want one URL per tab
+          const cleanedUrl = removeTrailingSlash(url);
           extraUrls.push(cleanedUrl);
+          validUrlsFound++;
+          log(`  [DEBUG] ✓ Collected final URL: ${cleanedUrl}`);
         }
 
-        // Remove duplicates and sort
-        const uniqueUrls = Array.from(new Set(extraUrls));
-        uniqueUrls.sort();
+        // Sort for consistency
+        extraUrls.sort();
 
         log(`  [DEBUG] === URL collection complete ===`);
         log(
-          `  [DEBUG] Collected ${uniqueUrls.length} unique URLs: ${JSON.stringify(uniqueUrls)}`,
+          `  [DEBUG] Summary: ${validUrlsFound} valid URLs from ${persistentTabUrls.size} tabs, ${userClosedSkipped} user-closed, ${blankUrlsSkipped} blank`,
         );
+        log(`  [DEBUG] URLs: ${JSON.stringify(extraUrls)}`);
 
-        return uniqueUrls;
+        // Verify: number of tabs should equal number of URLs
+        if (
+          persistentTabUrls.size !==
+          extraUrls.length + userClosedSkipped + blankUrlsSkipped
+        ) {
+          log(
+            `  [DEBUG] ⚠️ WARNING: Tab count (${persistentTabUrls.size}) does not match collected URLs (${extraUrls.length} + ${userClosedSkipped} skipped + ${blankUrlsSkipped} blank)`,
+          );
+        } else {
+          log(
+            `  [DEBUG] ✓ Verified: ${persistentTabUrls.size} tabs = ${extraUrls.length} URLs (+ ${userClosedSkipped} user-closed + ${blankUrlsSkipped} blank)`,
+          );
+        }
+
+        return extraUrls;
       } catch (e) {
         log(`  [DEBUG] Error collecting extra URLs: ${e}`);
         if (e instanceof Error) {
@@ -945,24 +921,29 @@ const validateItemLinks = async (
         pollInterval = null;
       }
 
-      // Mark context as closing BEFORE tabs start closing
-      // This prevents tab close handlers from deleting URLs
+      // DETERMINISTIC: persistentTabUrls is already populated and persists
+      // No need to capture URLs here - they're already in persistentTabUrls
+      log(`  [DEBUG] cleanup() called with reason: ${reason}`);
+      log(
+        `  [DEBUG] Using persistentTabUrls (${persistentTabUrls.size} tabs) as single source of truth`,
+      );
+
+      // Mark context as closing
+      // This prevents tab close handlers from interfering
       isContextClosing = true;
       log(
         `  [DEBUG] Context closing flag set to prevent URL deletion during tab close events`,
       );
 
-      // Collect URLs - wait for pending checks first
-      log(`  [DEBUG] cleanup() called with reason: ${reason}`);
       log(
-        `  [DEBUG] Reading tab->URL mappings (no browser access needed): ${urlStorage.size} tabs with URLs`,
+        `  [DEBUG] Reading tab->URL mappings (no browser access needed): ${persistentTabUrls.size} tabs with URLs`,
       );
       log(`  [DEBUG] Total tracked tabs before cleanup: ${tabUrlHistory.size}`);
 
       // Log all URLs currently in storage for debugging
-      if (urlStorage.size > 0) {
-        log(`  [DEBUG] URLs in storage before collection:`);
-        for (const [tab, url] of urlStorage.entries()) {
+      if (persistentTabUrls.size > 0) {
+        log(`  [DEBUG] URLs in persistent storage before collection:`);
+        for (const [tab, url] of persistentTabUrls.entries()) {
           try {
             const isClosed = tab.isClosed();
             log(`  [DEBUG]   - ${url} (tab closed: ${isClosed})`);
@@ -972,11 +953,11 @@ const validateItemLinks = async (
         }
       } else {
         log(
-          `  [DEBUG] ⚠️ WARNING: urlStorage is empty! All URLs may have been deleted.`,
+          `  [DEBUG] ⚠️ WARNING: persistentTabUrls is empty! All URLs may have been deleted.`,
         );
       }
 
-      // Simply read from urlStorage - tab->URL mappings prepared by events
+      // Simply read from persistentTabUrls - tab->URL mappings prepared by events
       (async () => {
         // Wait for pending tab close checks before collecting
         await waitForPendingChecks();
@@ -1173,18 +1154,28 @@ const validateItemLinks = async (
           `  [DEBUG] Final decision: hasChanges=${hasChanges}, hasUrls=${hasUrls}, finalHasChanges=${finalHasChanges}`,
         );
 
-        // Save final URLs to tmp.txt for debugging (no processing, just raw final URL of each tab)
-        // Exclude URLs from manually closed tabs
+        // Save final URLs to tmp.txt for debugging - use same deterministic method
+        // DETERMINISTIC: Use persistentTabUrls as the single source of truth
         try {
           const tmpFilePath = path.join(__dirname, "../../tmp.txt");
           const finalUrlList: string[] = [];
 
-          // Collect from finalUrls set, but exclude user-closed URLs
-          for (const url of finalUrls) {
-            if (url && url !== "about:blank" && !userClosedUrls.has(url)) {
-              finalUrlList.push(url);
+          // Use persistentTabUrls (same as collectExtraUrls)
+          for (const [, url] of persistentTabUrls.entries()) {
+            if (!url || url === "about:blank") {
+              continue;
             }
+
+            // Skip if user manually closed this URL
+            if (userClosedUrls.has(url)) {
+              continue;
+            }
+
+            finalUrlList.push(removeTrailingSlash(url));
           }
+
+          // Sort for consistency
+          finalUrlList.sort();
 
           fs.writeFileSync(
             tmpFilePath,
@@ -1192,7 +1183,7 @@ const validateItemLinks = async (
             "utf-8",
           );
           log(
-            `  💾 Saved ${finalUrlList.length} final URLs to tmp.txt (excluded ${userClosedUrls.size} manually closed URLs)`,
+            `  💾 Saved ${finalUrlList.length} final URLs to tmp.txt from ${persistentTabUrls.size} tabs (one URL per tab, excluded ${userClosedUrls.size} manually closed URLs)`,
           );
         } catch (e) {
           log(`  ⚠️  Failed to save tmp.txt: ${e}`);
@@ -1218,12 +1209,12 @@ const validateItemLinks = async (
     // Listen to multiple events with debug logging
     browser.once("disconnected", () => {
       log(
-        `  [DEBUG] Browser 'disconnected' event fired - setting closing flag`,
+        `  [DEBUG] Browser 'disconnected' event fired - using persistentTabUrls`,
       );
-      // Set flag immediately when browser disconnects (this happens before context closes)
+      // DETERMINISTIC: persistentTabUrls already has all URLs, no need to capture
       isContextClosing = true;
       log(
-        `  [DEBUG] Context closing flag set from browser disconnect, urlStorage size: ${urlStorage.size}`,
+        `  [DEBUG] Context closing flag set from browser disconnect, persistentTabUrls size: ${persistentTabUrls.size}`,
       );
       cleanup("disconnected event");
     });
@@ -1236,7 +1227,7 @@ const validateItemLinks = async (
       // This prevents tab close handlers from deleting URLs
       isContextClosing = true;
       log(
-        `  [DEBUG] Context closing flag set, urlStorage size: ${urlStorage.size}`,
+        `  [DEBUG] Context closing flag set, persistentTabUrls size: ${persistentTabUrls.size}`,
       );
       cleanup("context close event");
     });
@@ -1254,22 +1245,13 @@ const validateItemLinks = async (
       const browserFromContext = context.browser();
       const allPagesClosed = pages.every((p) => p.isClosed());
 
-      if (!isConnected) {
+      // DETERMINISTIC: persistentTabUrls already has all URLs, no need to capture
+      if (!isConnected || browserFromContext === null) {
         isContextClosing = true;
         log(
-          `  [DEBUG] Browser disconnected detected in polling - setting closing flag`,
+          `  [DEBUG] Browser disconnected detected in polling - using persistentTabUrls (${persistentTabUrls.size} tabs)`,
         );
         cleanup("polling (isConnected=false)");
-        return;
-      }
-
-      // Also check if context browser is null
-      if (browserFromContext === null) {
-        isContextClosing = true;
-        log(
-          `  [DEBUG] Context browser null detected in polling - setting closing flag`,
-        );
-        cleanup("polling (context.browser() === null)");
         return;
       }
 
@@ -1277,7 +1259,7 @@ const validateItemLinks = async (
       if (allPagesClosed && pages.length > 0) {
         isContextClosing = true;
         log(
-          `  [DEBUG] All pages closed detected in polling - setting closing flag`,
+          `  [DEBUG] All pages closed detected in polling - using persistentTabUrls (${persistentTabUrls.size} tabs)`,
         );
         cleanup("polling (all pages closed)");
         return;
@@ -1646,27 +1628,6 @@ export async function run() {
     }
 
     log(`\n✓ Item processed. Remaining items: ${unprocessedItems.length - 1}`);
-    log(
-      "🔄 Running update steps to apply manual overrides to ALL.json and other files...",
-    );
-
-    try {
-      // Force regeneration of all output files with latest manualOverrides
-      await runUpdateSteps({
-        shouldScrap: false,
-        shouldValidate: false,
-        shouldCopyToAddon: false,
-      });
-      log(
-        "✅ Update steps completed successfully - ALL.json and other files updated!",
-      );
-    } catch (err) {
-      error("❌ Error running update steps:", err);
-      error(
-        "This means your manual overrides may not be reflected in output files!",
-      );
-      throw err;
-    }
 
     // Reload overrides to get updated statistics
     const updatedOverrides = loadManualOverrides();

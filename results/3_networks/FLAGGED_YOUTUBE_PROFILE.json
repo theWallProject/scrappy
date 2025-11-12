@@ -196,6 +196,14 @@
     ]
   },
   {
+    "id": "noma-94e0",
+    "selector": "@NomaSecurity",
+    "name": "Noma",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "id": "omada-health",
     "selector": "@Omadahealth",
     "name": "Omada Health",

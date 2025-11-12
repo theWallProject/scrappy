@@ -57,6 +57,14 @@
     ]
   },
   {
+    "id": "noma-94e0",
+    "selector": "Noma-Security",
+    "name": "Noma",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "id": "protect-ai",
     "selector": "protectai",
     "name": "Protect AI",
