@@ -8,6 +8,14 @@
     ]
   },
   {
+    "id": "au10tix",
+    "selector": "life_at_au10tix",
+    "name": "AU10TIX",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "id": "earnix",
     "selector": "earnix_inc",
     "name": "Earnix",
