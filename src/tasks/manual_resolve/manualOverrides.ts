@@ -408,6 +408,14 @@ export const manualOverrides: Record<
     _processed: true,
   },
   Wix: { tw: "https://x.com/Wix" },
+  Zenity: {
+    li: ["https://www.linkedin.com/company/zenitysec"],
+    tw: ["https://x.com/zenitysec"],
+    gh: ["https://github.com/zenitysec"],
+    ytp: ["https://www.youtube.com/@ZenitySecurity"],
+    urls: ["https://github.com/zenitysec/sphinx-rego"],
+    _processed: true,
+  },
   eToro: {
     ws: ["https://www.etoro.com", "https://etoropartners.com"],
     fb: [

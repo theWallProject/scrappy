@@ -344,5 +344,13 @@
       "f",
       "i"
     ]
+  },
+  {
+    "id": "zenity",
+    "selector": "ZenitySecurity",
+    "name": "Zenity",
+    "reasons": [
+      "h"
+    ]
   }
 ]
