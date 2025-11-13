@@ -95,6 +95,19 @@ export const manualOverrides: Record<
     ],
     _processed: true,
   },
+  "Classiq Technologies": {
+    ws: ["https://www.classiq.io"],
+    li: ["https://www.linkedin.com/company/classiq-technologies"],
+    fb: ["https://www.facebook.com/ClassiqTech"],
+    tw: ["https://x.com/classiqtech"],
+    gh: ["https://github.com/Classiq"],
+    ytp: ["https://www.youtube.com/@ClassiqTechnologies"],
+    tt: ["https://www.tiktok.com/@classiqtech"],
+    urls: [
+      "https://classiq-community.slack.com/join/shared_invite/zt-39du2mz80-fE_GBGxMaDxBFRBr_4nrjw",
+    ],
+    _processed: true,
+  },
   Cyera: {
     ws: "https://www.cyera.com",
     ytp: ["https://www.youtube.com/@CyeraSecurity"],

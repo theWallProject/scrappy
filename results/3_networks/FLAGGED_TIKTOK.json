@@ -8,6 +8,14 @@
     ]
   },
   {
+    "id": "classiq",
+    "selector": "@classiqtech",
+    "name": "Classiq Technologies",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "id": "etoro",
     "selector": "@etoro_official",
     "name": "eToro",

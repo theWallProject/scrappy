@@ -65,6 +65,14 @@
     ]
   },
   {
+    "id": "classiq",
+    "selector": "@ClassiqTechnologies",
+    "name": "Classiq Technologies",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "id": "cyera",
     "selector": "@CyeraSecurity",
     "name": "Cyera",
