@@ -5716,7 +5716,7 @@
   },
   {
     "id": "biocatch",
-    "selector": "BioCatch",
+    "selector": "biocatch",
     "name": "BioCatch",
     "reasons": [
       "h"
@@ -48467,14 +48467,6 @@
     "name": "TravelPerk",
     "reasons": [
       "i"
-    ]
-  },
-  {
-    "id": "israeli-ministry-of-finance",
-    "selector": "company",
-    "name": "Tre Capital GP Ltd",
-    "reasons": [
-      "h"
     ]
   },
   {

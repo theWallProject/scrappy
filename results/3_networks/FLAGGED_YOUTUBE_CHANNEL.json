@@ -8,6 +8,14 @@
     ]
   },
   {
+    "id": "biocatch",
+    "selector": "UCGHkBeKgH_6-B8CjRcCqm-A",
+    "name": "BioCatch",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "id": "cyera",
     "selector": "UCQZhCZIe6xRDjCkfzzwPBCg",
     "name": "Cyera",

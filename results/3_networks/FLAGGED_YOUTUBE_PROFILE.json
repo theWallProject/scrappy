@@ -1,15 +1,23 @@
 [
   {
     "id": "ai21",
-    "selector": "@ai21labs",
+    "selector": "ai21labs",
     "name": "AI21 Labs",
     "reasons": [
       "h"
     ]
   },
   {
+    "id": "biocatch",
+    "selector": "biocatch.official",
+    "name": "BioCatch",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "id": "cellebrite",
-    "selector": "@cellebrite",
+    "selector": "cellebrite",
     "name": "Cellebrite",
     "reasons": [
       "h"
@@ -17,48 +25,48 @@
     "s": "CLBT"
   },
   {
-    "id": "cellebrite_manual_ytp_@cellebrite-deutsch",
-    "selector": "@cellebrite-deutsch",
+    "id": "cellebrite_manual_ytp_cellebrite-deutsch",
+    "selector": "cellebrite-deutsch",
     "name": "Cellebrite",
     "reasons": [
       "h"
     ]
   },
   {
-    "id": "cellebrite_manual_ytp_@cellebrite-espanol",
-    "selector": "@cellebrite-espanol",
+    "id": "cellebrite_manual_ytp_cellebrite-espanol",
+    "selector": "cellebrite-espanol",
     "name": "Cellebrite",
     "reasons": [
       "h"
     ]
   },
   {
-    "id": "cellebrite_manual_ytp_@cellebrite-francais",
-    "selector": "@cellebrite-francais",
+    "id": "cellebrite_manual_ytp_cellebrite-francais",
+    "selector": "cellebrite-francais",
     "name": "Cellebrite",
     "reasons": [
       "h"
     ]
   },
   {
-    "id": "cellebrite_manual_ytp_@cellebrite-portugues",
-    "selector": "@cellebrite-portugues",
+    "id": "cellebrite_manual_ytp_cellebrite-portugues",
+    "selector": "cellebrite-portugues",
     "name": "Cellebrite",
     "reasons": [
       "h"
     ]
   },
   {
-    "id": "cellebrite_manual_ytp_@companycellebrite",
-    "selector": "@companycellebrite",
+    "id": "cellebrite_manual_ytp_companycellebrite",
+    "selector": "companycellebrite",
     "name": "Cellebrite",
     "reasons": [
       "h"
     ]
   },
   {
-    "id": "cellebrite_manual_ytp_@lifeatcellebrite7735",
-    "selector": "@lifeatcellebrite7735",
+    "id": "cellebrite_manual_ytp_lifeatcellebrite7735",
+    "selector": "lifeatcellebrite7735",
     "name": "Cellebrite",
     "reasons": [
       "h"
@@ -66,7 +74,7 @@
   },
   {
     "id": "classiq",
-    "selector": "@ClassiqTechnologies",
+    "selector": "ClassiqTechnologies",
     "name": "Classiq Technologies",
     "reasons": [
       "h"
@@ -74,7 +82,7 @@
   },
   {
     "id": "cyera",
-    "selector": "@CyeraSecurity",
+    "selector": "CyeraSecurity",
     "name": "Cyera",
     "reasons": [
       "i"
@@ -82,7 +90,7 @@
   },
   {
     "id": "earnix",
-    "selector": "@Earnix_Inc",
+    "selector": "Earnix_Inc",
     "name": "Earnix",
     "reasons": [
       "h"
@@ -90,7 +98,7 @@
   },
   {
     "id": "etoro",
-    "selector": "@etoro",
+    "selector": "etoro",
     "name": "eToro",
     "reasons": [
       "h"
@@ -98,40 +106,40 @@
     "s": "ETOR"
   },
   {
-    "id": "etoro_manual_ytp_@eToroItalia",
-    "selector": "@eToroItalia",
+    "id": "etoro_manual_ytp_eToroItalia",
+    "selector": "eToroItalia",
     "name": "eToro",
     "reasons": [
       "h"
     ]
   },
   {
-    "id": "etoro_manual_ytp_@eToroAR",
-    "selector": "@eToroAR",
+    "id": "etoro_manual_ytp_eToroAR",
+    "selector": "eToroAR",
     "name": "eToro",
     "reasons": [
       "h"
     ]
   },
   {
-    "id": "etoro_manual_ytp_@eToro_ES",
-    "selector": "@eToro_ES",
+    "id": "etoro_manual_ytp_eToro_ES",
+    "selector": "eToro_ES",
     "name": "eToro",
     "reasons": [
       "h"
     ]
   },
   {
-    "id": "etoro_manual_ytp_@eToroDE",
-    "selector": "@eToroDE",
+    "id": "etoro_manual_ytp_eToroDE",
+    "selector": "eToroDE",
     "name": "eToro",
     "reasons": [
       "h"
     ]
   },
   {
-    "id": "etoro_manual_ytp_@etorofrance877",
-    "selector": "@etorofrance877",
+    "id": "etoro_manual_ytp_etorofrance877",
+    "selector": "etorofrance877",
     "name": "eToro",
     "reasons": [
       "h"
@@ -147,7 +155,7 @@
   },
   {
     "id": "mondaydotcom",
-    "selector": "@mondaydotcom",
+    "selector": "mondaydotcom",
     "name": "monday.com",
     "reasons": [
       "h"
@@ -155,24 +163,24 @@
     "s": "MNDY"
   },
   {
-    "id": "mondaydotcom_manual_ytp_@mastering-monday",
-    "selector": "@mastering-monday",
+    "id": "mondaydotcom_manual_ytp_mastering-monday",
+    "selector": "mastering-monday",
     "name": "monday.com",
     "reasons": [
       "h"
     ]
   },
   {
-    "id": "mondaydotcom_manual_ytp_@mondayappdeveloper",
-    "selector": "@mondayappdeveloper",
+    "id": "mondaydotcom_manual_ytp_mondayappdeveloper",
+    "selector": "mondayappdeveloper",
     "name": "monday.com",
     "reasons": [
       "h"
     ]
   },
   {
-    "id": "mondaydotcom_manual_ytp_@tryvechannel",
-    "selector": "@tryvechannel",
+    "id": "mondaydotcom_manual_ytp_tryvechannel",
+    "selector": "tryvechannel",
     "name": "monday.com",
     "reasons": [
       "h"
@@ -180,7 +188,7 @@
   },
   {
     "id": "moonpay",
-    "selector": "@moonpayhq",
+    "selector": "moonpayhq",
     "name": "MoonPay",
     "reasons": [
       "i"
@@ -188,7 +196,7 @@
   },
   {
     "id": "nebius-group",
-    "selector": "@TripleTenTech",
+    "selector": "TripleTenTech",
     "name": "Nebius Group",
     "reasons": [
       "f"
@@ -196,16 +204,16 @@
     "s": "NBISN"
   },
   {
-    "id": "nebius-group_manual_ytp_@nebiusofficial",
-    "selector": "@nebiusofficial",
+    "id": "nebius-group_manual_ytp_nebiusofficial",
+    "selector": "nebiusofficial",
     "name": "Nebius Group",
     "reasons": [
       "f"
     ]
   },
   {
-    "id": "nebius-group_manual_ytp_@TolokaAi",
-    "selector": "@TolokaAi",
+    "id": "nebius-group_manual_ytp_TolokaAi",
+    "selector": "TolokaAi",
     "name": "Nebius Group",
     "reasons": [
       "f"
@@ -213,7 +221,7 @@
   },
   {
     "id": "noma-94e0",
-    "selector": "@NomaSecurity",
+    "selector": "NomaSecurity",
     "name": "Noma",
     "reasons": [
       "h"
@@ -221,7 +229,7 @@
   },
   {
     "id": "omada-health",
-    "selector": "@Omadahealth",
+    "selector": "Omadahealth",
     "name": "Omada Health",
     "reasons": [
       "i"
@@ -238,7 +246,7 @@
   },
   {
     "id": "ox-security",
-    "selector": "@OXSecurity",
+    "selector": "OXSecurity",
     "name": "Ox Security",
     "reasons": [
       "h"
@@ -246,7 +254,7 @@
   },
   {
     "id": "protect-ai",
-    "selector": "@protectai",
+    "selector": "protectai",
     "name": "Protect AI",
     "reasons": [
       "i"
@@ -254,7 +262,7 @@
   },
   {
     "id": "semperis",
-    "selector": "@semperistech",
+    "selector": "semperistech",
     "name": "Semperis",
     "reasons": [
       "f",
@@ -263,7 +271,7 @@
   },
   {
     "id": "sentinel",
-    "selector": "@Sentinelone-inc",
+    "selector": "Sentinelone-inc",
     "name": "SentinelOne",
     "reasons": [
       "f",
@@ -273,7 +281,7 @@
   },
   {
     "id": "sentra",
-    "selector": "@sentra_security",
+    "selector": "sentra_security",
     "name": "Sentra",
     "reasons": [
       "h"
@@ -281,7 +289,7 @@
   },
   {
     "id": "silverfort-2",
-    "selector": "@silverfort",
+    "selector": "silverfort",
     "name": "Silverfort",
     "reasons": [
       "h"
@@ -289,7 +297,7 @@
   },
   {
     "id": "speedata",
-    "selector": "@Speedata-io",
+    "selector": "Speedata-io",
     "name": "Speedata",
     "reasons": [
       "h"
@@ -297,7 +305,7 @@
   },
   {
     "id": "team8",
-    "selector": "@team8group",
+    "selector": "team8group",
     "name": "Team8",
     "reasons": [
       "h"
@@ -305,7 +313,7 @@
   },
   {
     "id": "thetaray",
-    "selector": "@thetaray5752",
+    "selector": "thetaray5752",
     "name": "ThetaRay",
     "reasons": [
       "h"
@@ -313,7 +321,7 @@
   },
   {
     "id": "torq-technologies",
-    "selector": "@torq_io",
+    "selector": "torq_io",
     "name": "Torq",
     "reasons": [
       "h"
@@ -329,8 +337,8 @@
     ]
   },
   {
-    "id": "vast-data_manual_ytp_@VASTData",
-    "selector": "@VASTData",
+    "id": "vast-data_manual_ytp_VASTData",
+    "selector": "VASTData",
     "name": "VAST Data",
     "reasons": [
       "f",

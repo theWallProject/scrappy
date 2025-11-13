@@ -67,9 +67,21 @@ export const manualOverrides: Record<
     tw: ["https://x.com/AU10TIXLimited"],
     ig: ["https://www.instagram.com/life_at_au10tix"],
     gh: ["https://github.com/au10tixmobile"],
+    urls: ["https://play.google.com/store/apps/developer?id=Au10tix&hl=de"],
+    _processed: true,
+  },
+  BioCatch: {
+    li: ["https://www.linkedin.com/company/biocatch"],
+    fb: ["https://www.facebook.com/behvioral"],
+    tw: ["https://x.com/biocatch"],
+    gh: ["https://github.com/biocatchltd"],
+    ytp: ["https://www.youtube.com/@biocatch.official"],
+    ytc: ["https://www.youtube.com/channel/UCGHkBeKgH_6-B8CjRcCqm-A"],
     urls: [
-      "https://play.google.com/store/apps/developer?id=Au10tix&hl=de",
-      // "https://www.threads.com/@ajplus/post/CwQ9GrlOavI",
+      "https://marketplace.microsoft.com/en-gb/product/saas/biocatch.biocatch_behavioral_biometrics?tab=Overview",
+      "https://medium.com/@BioCatchTechBlog",
+      "https://play.google.com/store/apps/developer?id=BioCatch+Ltd.",
+      "https://www.comeet.com/jobs/biocatch/03.00E/data-engineer/0C.759",
     ],
     _processed: true,
   },
@@ -382,6 +394,7 @@ export const manualOverrides: Record<
     urls: ["https://job-boards.greenhouse.io/torq"],
     _processed: true,
   },
+  "Tre Capital GP Ltd": { tw: [""] },
   "VAST Data": {
     gh: ["https://github.com/vast-data"],
     ytp: [
