@@ -975,117 +975,118 @@ const validateItemLinks = async (
           log(`  📎 Found ${extraUrls.length} extra tab URL(s):`, extraUrls);
 
           // Categorize URLs into appropriate keys
-          // CRITICAL: Collect ALL URLs - if multiple tabs have the same URL type,
-          // all will be collected in the array (no deduplication)
+          // CRITICAL: Collect ALL URLs from different tabs, but deduplicate within each category
+          // If multiple tabs have the same URL, it will only appear once per category
           const categorized: CategorizedUrls = {};
+          const seenUrls = new Map<LinkField | "urls", Set<string>>(); // Track seen URLs per category to avoid duplicates
 
           for (const url of extraUrls) {
             const category = categorizeUrl(url);
+            const categoryKey = category || "urls";
+            const cleanedUrl = removeTrailingSlash(url);
+
+            // Initialize Set for this category if needed
+            if (!seenUrls.has(categoryKey)) {
+              seenUrls.set(categoryKey, new Set<string>());
+            }
+            const seen = seenUrls.get(categoryKey);
+            if (!seen) continue;
+
+            // Skip if we've already seen this exact URL in this category
+            if (seen.has(cleanedUrl)) {
+              log(
+                `  [DEBUG] ⊙ Skipped duplicate URL in ${categoryKey}: ${cleanedUrl}`,
+              );
+              continue;
+            }
+
+            // Mark as seen and add to category
+            seen.add(cleanedUrl);
+
             if (category === "li") {
               if (!categorized.li) categorized.li = [];
-              categorized.li.push(url); // Add ALL LinkedIn URLs (including duplicates)
+              categorized.li.push(cleanedUrl);
             } else if (category === "fb") {
               if (!categorized.fb) categorized.fb = [];
-              categorized.fb.push(url); // Add ALL Facebook URLs (including duplicates)
+              categorized.fb.push(cleanedUrl);
             } else if (category === "tw") {
               if (!categorized.tw) categorized.tw = [];
-              categorized.tw.push(url); // Add ALL Twitter/X URLs (including duplicates)
+              categorized.tw.push(cleanedUrl);
             } else if (category === "ig") {
               if (!categorized.ig) categorized.ig = [];
-              categorized.ig.push(url); // Add ALL Instagram URLs (including duplicates)
+              categorized.ig.push(cleanedUrl);
             } else if (category === "gh") {
               if (!categorized.gh) categorized.gh = [];
-              categorized.gh.push(url); // Add ALL GitHub URLs (including duplicates)
+              categorized.gh.push(cleanedUrl);
             } else if (category === "ytp") {
               if (!categorized.ytp) categorized.ytp = [];
-              categorized.ytp.push(url); // Add ALL YouTube Profile URLs (including duplicates)
+              categorized.ytp.push(cleanedUrl);
             } else if (category === "ytc") {
               if (!categorized.ytc) categorized.ytc = [];
-              categorized.ytc.push(url); // Add ALL YouTube Channel URLs (including duplicates)
+              categorized.ytc.push(cleanedUrl);
             } else if (category === "tt") {
               if (!categorized.tt) categorized.tt = [];
-              categorized.tt.push(url); // Add ALL TikTok URLs (including duplicates)
+              categorized.tt.push(cleanedUrl);
             } else if (category === "th") {
               if (!categorized.th) categorized.th = [];
-              categorized.th.push(url); // Add ALL Threads URLs (including duplicates)
+              categorized.th.push(cleanedUrl);
             } else {
               // Unsupported URL or website - keep in urls array for manual organization
               if (!categorized.urls) categorized.urls = [];
-              categorized.urls.push(url); // Add ALL unsupported URLs (including duplicates)
+              categorized.urls.push(cleanedUrl);
             }
           }
 
-          // Merge categorized URLs into changes object
+          // Helper to merge arrays and deduplicate
+          const mergeAndDeduplicate = (
+            existing: string | string[] | undefined,
+            newUrls: string[],
+          ): string[] => {
+            const existingArray = Array.isArray(existing)
+              ? existing
+              : existing
+                ? [existing]
+                : [];
+            const combined = [...existingArray, ...newUrls];
+            // Deduplicate by converting to Set and back to array
+            return Array.from(new Set(combined));
+          };
+
+          // Merge categorized URLs into changes object (with deduplication)
           // Note: Websites are kept in urls array for manual organization
 
           if (categorized.li && categorized.li.length > 0) {
-            if (Array.isArray(changes.li)) {
-              changes.li = [...changes.li, ...categorized.li];
-            } else if (typeof changes.li === "string") {
-              changes.li = [changes.li, ...categorized.li];
-            } else {
-              changes.li = categorized.li;
-            }
+            changes.li = mergeAndDeduplicate(changes.li, categorized.li);
             hasChanges = true;
             log(`  ✓ Categorized ${categorized.li.length} LinkedIn URL(s)`);
           }
 
           if (categorized.fb && categorized.fb.length > 0) {
-            if (Array.isArray(changes.fb)) {
-              changes.fb = [...changes.fb, ...categorized.fb];
-            } else if (typeof changes.fb === "string") {
-              changes.fb = [changes.fb, ...categorized.fb];
-            } else {
-              changes.fb = categorized.fb;
-            }
+            changes.fb = mergeAndDeduplicate(changes.fb, categorized.fb);
             hasChanges = true;
             log(`  ✓ Categorized ${categorized.fb.length} Facebook URL(s)`);
           }
 
           if (categorized.tw && categorized.tw.length > 0) {
-            if (Array.isArray(changes.tw)) {
-              changes.tw = [...changes.tw, ...categorized.tw];
-            } else if (typeof changes.tw === "string") {
-              changes.tw = [changes.tw, ...categorized.tw];
-            } else {
-              changes.tw = categorized.tw;
-            }
+            changes.tw = mergeAndDeduplicate(changes.tw, categorized.tw);
             hasChanges = true;
             log(`  ✓ Categorized ${categorized.tw.length} Twitter/X URL(s)`);
           }
 
           if (categorized.ig && categorized.ig.length > 0) {
-            if (Array.isArray(changes.ig)) {
-              changes.ig = [...changes.ig, ...categorized.ig];
-            } else if (typeof changes.ig === "string") {
-              changes.ig = [changes.ig, ...categorized.ig];
-            } else {
-              changes.ig = categorized.ig;
-            }
+            changes.ig = mergeAndDeduplicate(changes.ig, categorized.ig);
             hasChanges = true;
             log(`  ✓ Categorized ${categorized.ig.length} Instagram URL(s)`);
           }
 
           if (categorized.gh && categorized.gh.length > 0) {
-            if (Array.isArray(changes.gh)) {
-              changes.gh = [...changes.gh, ...categorized.gh];
-            } else if (typeof changes.gh === "string") {
-              changes.gh = [changes.gh, ...categorized.gh];
-            } else {
-              changes.gh = categorized.gh;
-            }
+            changes.gh = mergeAndDeduplicate(changes.gh, categorized.gh);
             hasChanges = true;
             log(`  ✓ Categorized ${categorized.gh.length} GitHub URL(s)`);
           }
 
           if (categorized.ytp && categorized.ytp.length > 0) {
-            if (Array.isArray(changes.ytp)) {
-              changes.ytp = [...changes.ytp, ...categorized.ytp];
-            } else if (typeof changes.ytp === "string") {
-              changes.ytp = [changes.ytp, ...categorized.ytp];
-            } else {
-              changes.ytp = categorized.ytp;
-            }
+            changes.ytp = mergeAndDeduplicate(changes.ytp, categorized.ytp);
             hasChanges = true;
             log(
               `  ✓ Categorized ${categorized.ytp.length} YouTube Profile URL(s)`,
@@ -1093,13 +1094,7 @@ const validateItemLinks = async (
           }
 
           if (categorized.ytc && categorized.ytc.length > 0) {
-            if (Array.isArray(changes.ytc)) {
-              changes.ytc = [...changes.ytc, ...categorized.ytc];
-            } else if (typeof changes.ytc === "string") {
-              changes.ytc = [changes.ytc, ...categorized.ytc];
-            } else {
-              changes.ytc = categorized.ytc;
-            }
+            changes.ytc = mergeAndDeduplicate(changes.ytc, categorized.ytc);
             hasChanges = true;
             log(
               `  ✓ Categorized ${categorized.ytc.length} YouTube Channel URL(s)`,
@@ -1107,32 +1102,20 @@ const validateItemLinks = async (
           }
 
           if (categorized.tt && categorized.tt.length > 0) {
-            if (Array.isArray(changes.tt)) {
-              changes.tt = [...changes.tt, ...categorized.tt];
-            } else if (typeof changes.tt === "string") {
-              changes.tt = [changes.tt, ...categorized.tt];
-            } else {
-              changes.tt = categorized.tt;
-            }
+            changes.tt = mergeAndDeduplicate(changes.tt, categorized.tt);
             hasChanges = true;
             log(`  ✓ Categorized ${categorized.tt.length} TikTok URL(s)`);
           }
 
           if (categorized.th && categorized.th.length > 0) {
-            if (Array.isArray(changes.th)) {
-              changes.th = [...changes.th, ...categorized.th];
-            } else if (typeof changes.th === "string") {
-              changes.th = [changes.th, ...categorized.th];
-            } else {
-              changes.th = categorized.th;
-            }
+            changes.th = mergeAndDeduplicate(changes.th, categorized.th);
             hasChanges = true;
             log(`  ✓ Categorized ${categorized.th.length} Threads URL(s)`);
           }
 
-          // Only keep unsupported URLs in urls array
+          // Only keep unsupported URLs in urls array (with deduplication)
           if (categorized.urls && categorized.urls.length > 0) {
-            changes.urls = categorized.urls;
+            changes.urls = mergeAndDeduplicate(changes.urls, categorized.urls);
             hasChanges = true;
             log(
               `  ✓ Kept ${categorized.urls.length} unsupported URL(s) in urls array`,

@@ -32,6 +32,14 @@
     ]
   },
   {
+    "id": "earnix",
+    "selector": "Earnix",
+    "name": "Earnix",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "id": "nebius-group",
     "selector": "Toloka",
     "name": "Nebius Group",

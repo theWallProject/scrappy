@@ -105,6 +105,15 @@ export const manualOverrides: Record<
     ],
     _processed: true,
   },
+  Earnix: {
+    fb: ["https://www.facebook.com/earnix"],
+    tw: ["https://x.com/Earnix_Inc"],
+    ig: ["https://www.instagram.com/earnix_inc"],
+    gh: ["https://github.com/Earnix"],
+    ytp: ["https://www.youtube.com/@Earnix_Inc"],
+    urls: ["https://play.google.com/store/apps/developer?id=Earnix+Ltd"],
+    _processed: true,
+  },
   Empathy: {
     tw: ["https://x.com/empathy"],
     ig: ["https://www.instagram.com/empathy_com"],

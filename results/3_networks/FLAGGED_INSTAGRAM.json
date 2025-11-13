@@ -8,6 +8,14 @@
     ]
   },
   {
+    "id": "earnix",
+    "selector": "earnix_inc",
+    "name": "Earnix",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "id": "empathy-5cb4",
     "selector": "empathy_com",
     "name": "Empathy",

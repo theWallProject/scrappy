@@ -73,6 +73,14 @@
     ]
   },
   {
+    "id": "earnix",
+    "selector": "@Earnix_Inc",
+    "name": "Earnix",
+    "reasons": [
+      "h"
+    ]
+  },
+  {
     "id": "etoro",
     "selector": "@etoro",
     "name": "eToro",
